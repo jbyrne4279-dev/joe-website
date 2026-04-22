@@ -35,7 +35,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Get in <span className="text-shine">Contact.</span>
           </>
         }
       />

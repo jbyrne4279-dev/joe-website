@@ -36,18 +36,16 @@ export default function Footer() {
       </div>
 
       {/* RICS Regulated badge */}
-      <div className="max-w-7xl mx-auto mt-16 flex flex-col items-center gap-4">
-        <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-zinc-400">Accredited &amp; Regulated</span>
-        <div className="bg-white rounded-2xl px-8 py-5 shadow-[0_8px_32px_rgba(255,255,255,0.08)]">
-          <Image
-            src="/rics-logo.png"
-            alt="Regulated by RICS"
-            width={900}
-            height={600}
-            className="h-16 md:h-20 w-auto object-contain"
-            priority={false}
-          />
-        </div>
+      <div className="max-w-7xl mx-auto mt-20 flex flex-col items-center gap-5">
+        <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-zinc-300">Accredited &amp; Regulated</span>
+        <Image
+          src="/rics-logo.png"
+          alt="Regulated by RICS"
+          width={900}
+          height={600}
+          className="h-28 md:h-40 w-auto object-contain invert drop-shadow-[0_4px_24px_rgba(255,255,255,0.12)]"
+          priority={false}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">

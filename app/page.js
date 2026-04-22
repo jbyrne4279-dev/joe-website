@@ -42,7 +42,7 @@ export default function HomePage() {
       </section>
 
       {/* What is an RCA */}
-      <section className="bg-surface pt-20 pb-32 px-8">
+      <section className="bg-surface pt-6 pb-32 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
           <div className="space-y-12">
             <div className="space-y-6">
@@ -188,7 +188,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who <span className="text-shine">We Serve</span></h2>
+              <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who <span className="text-shine">We Serve.</span></h2>
               <p className="text-on-surface-variant leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
             </div>
           </div>
@@ -197,8 +197,12 @@ export default function HomePage() {
               { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE', alt: 'British country home', title: 'Homeowners', desc: 'Protecting your legacy and ensuring accurate coverage for bespoke architectural features.' },
               { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c', alt: 'Modern office interior', title: 'Commercial Landlords', desc: 'Minimizing business interruption risks and maintaining rigorous compliance standards.' },
               { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU', alt: 'Professional boardroom', title: 'Asset Managers', desc: 'Streamlined reporting and audit-ready data for multi-national property portfolios.' },
-            ].map(({ src, alt, title, desc }) => (
-              <div key={title} className="group relative overflow-hidden rounded-xl h-96">
+            ].map(({ src, alt, title, desc }, i) => (
+              <div
+                key={title}
+                className="group relative overflow-hidden rounded-xl h-96 float-card"
+                style={{ animationDelay: `${i * 2.3}s` }}
+              >
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={src} alt={alt} />
                 <div className="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
                 <div className="absolute bottom-0 left-0 p-8">
@@ -214,7 +218,7 @@ export default function HomePage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Get in <span className="text-shine">Contact.</span>
           </>
         }
       />

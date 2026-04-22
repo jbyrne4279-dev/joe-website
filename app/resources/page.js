@@ -86,7 +86,7 @@ export default function ResourcesPage() {
         {/* Averaging Clause */}
         <section className="py-20 bg-surface-container-low -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-lg">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">The &ldquo;Averaging Clause&rdquo; Trap</h2>
+            <h2 className="text-4xl font-bold text-primary mb-6">The <span className="text-shine-yellow">&ldquo;Averaging Clause&rdquo;</span> Trap</h2>
             <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -237,7 +237,7 @@ export default function ResourcesPage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Get in <span className="text-shine">Contact.</span>
           </>
         }
       />

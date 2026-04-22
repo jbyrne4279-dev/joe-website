@@ -11,7 +11,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <h5 className="text-white font-bold mb-6">Ser333vices</h5>
+          <h5 className="text-white font-bold mb-6">Services</h5>
           <ul className="space-y-4 text-sm">
             <li><Link className="hover:text-emerald-400 transition-colors" href="/services">Desktop Assessment</Link></li>
             <li><Link className="hover:text-emerald-400 transition-colors" href="/services">3-Year Protection</Link></li>

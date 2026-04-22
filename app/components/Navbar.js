@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const links = [
@@ -15,9 +16,19 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 w-full bg-white/55 dark:bg-neutral-900/55 backdrop-blur-[24px] saturate-[180%] z-50 transition-colors duration-300">
       <nav className="flex items-center px-8 py-4 max-w-full mx-auto">
-        <div className="flex-1 text-xl font-bold text-zinc-900 dark:text-white tracking-tighter">
-          RCA-LTD
-        </div>
+        <Link href="/" className="flex-1 flex items-center gap-2.5">
+          <Image
+            src="/rca_logo.png"
+            alt="RCA-LTD logo"
+            width={80}
+            height={64}
+            priority
+            className="h-8 w-auto object-contain"
+          />
+          <span className="text-xl font-bold text-zinc-900 dark:text-white tracking-tighter">
+            RCA-LTD
+          </span>
+        </Link>
         <div className="hidden md:flex items-center justify-center gap-8">
           {links.map(({ href, label }) => {
             const isActive = pathname === href

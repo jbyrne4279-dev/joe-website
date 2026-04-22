@@ -43,7 +43,7 @@ export default function ResourcesPage() {
           <div className="space-y-10 w-full">
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Common Misconception</span>
-              <h2 className="text-4xl font-bold text-primary leading-tight">Your building is probably insured for the wrong amount.</h2>
+              <h2 className="text-4xl font-bold text-primary leading-tight">Your building is probably <span className="text-shine-red">insured for the wrong amount.</span></h2>
               <p className="text-secondary leading-relaxed max-w-lg mx-auto">
                 Market value and rebuild cost are not the same figure yet most property owners confuse the two. The consequences of getting this wrong can be financially devastating.
               </p>
@@ -129,7 +129,7 @@ export default function ResourcesPage() {
         <section className="py-24 max-w-2xl mx-auto flex flex-col items-center text-center gap-10">
           <div className="space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Rising Costs</span>
-            <h2 className="text-4xl font-bold text-primary leading-tight">The Surge in Construction Materials</h2>
+            <h2 className="text-4xl font-bold text-primary leading-tight"><span className="text-shine-red">The Surge</span> in Construction Materials</h2>
             <p className="text-secondary leading-relaxed">
               Global supply chain volatility and labour shortages have pushed rebuild costs up by <span className="text-shine-slow font-bold">over 25%</span> since <span className="font-semibold text-primary">2019</span>. If your valuation hasn&rsquo;t been updated since <span className="font-semibold text-primary">2021</span>, you are almost certainly underinsured today.
             </p>
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
         <section className="py-20 text-center">
           <div className="max-w-2xl mx-auto mb-16 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Our Standard</span>
-            <h2 className="text-4xl font-bold text-primary">Why RICS &amp; BCIS Matter</h2>
+            <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter</span></h2>
             <p className="text-secondary leading-relaxed">
               Rebuild Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data — the industry standard for surveyors — combined with local site knowledge to provide a figure you can stand behind.
             </p>
@@ -192,7 +192,7 @@ export default function ResourcesPage() {
         <section className="py-24">
           <div className="text-center mb-16 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Best Practice</span>
-            <h2 className="text-4xl font-bold text-primary">The Rebuild Cost Assessment Lifecycle</h2>
+            <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Rebuild Cost Assessment Lifecycle</span></h2>
           </div>
           <div className="liquid-glass p-12 rounded-2xl sovereign-shadow border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] max-w-2xl mx-auto">
             <div className="flex flex-col">

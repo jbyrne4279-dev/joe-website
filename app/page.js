@@ -34,7 +34,7 @@ export default function HomePage() {
             <Link href="/contact" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
               Get your RCA
             </Link>
-            <Link href="/resources" className="bg-white/50 backdrop-blur-md px-8 py-4 rounded-full font-bold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10">
+            <Link href="/resources" className="bg-white/50 backdrop-blur-md px-6 py-3 text-sm rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10 self-center">
               Do I need a RCA?
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function HomePage() {
       </section>
 
       {/* What is an RCA */}
-      <section className="bg-surface py-32 px-8">
+      <section className="bg-surface pt-20 pb-32 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
           <div className="space-y-12">
             <div className="space-y-6">
@@ -91,7 +91,7 @@ export default function HomePage() {
             <div className="md:w-1/2 space-y-6 relative z-10">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
-                The Risk of <span className="text-[#1A6B4A]">Underinsurance.</span>
+                The Risk of <span className="text-[#991b1b]">Underinsurance.</span>
               </h2>
               <p className="text-lg text-secondary leading-relaxed">
                 Recent data suggests that over <span className="font-semibold text-primary">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
@@ -109,7 +109,7 @@ export default function HomePage() {
             </div>
 
             <div className="md:w-1/2 space-y-5 relative z-10">
-              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex items-start gap-5">
+              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-red-400 text-xl">report</span>
                 </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
                   <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount — even for partial damage.</p>
                 </div>
               </div>
-              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex items-start gap-5">
+              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[#1A6B4A] text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who We Serve</h2>
+              <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who <span className="text-shine">We Serve</span></h2>
               <p className="text-on-surface-variant leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
             </div>
           </div>

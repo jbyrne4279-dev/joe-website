@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="hidden md:flex flex-1 justify-end">
           <Link
             href="/contact"
-            className="bg-[#1A6B4A] text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"
+            className="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"
           >
             Get a Quote
           </Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-3 bg-[#1A6B4A] text-white text-center px-8 py-3 rounded-full font-semibold active:scale-[0.97] transition-transform"
+              className="mt-3 btn-shine text-white text-center px-8 py-3 rounded-full font-semibold active:scale-[0.97] transition-transform"
             >
               Get a Quote
             </Link>

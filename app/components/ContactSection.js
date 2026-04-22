@@ -8,11 +8,11 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
           <div>
             <div className="mb-12 space-y-5">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Get In Touch</span>
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] text-primary">{heading}</h2>
               <div className="inline-flex items-center gap-3 bg-[#1A6B4A]/10 px-5 py-2.5 rounded-full border border-[#1A6B4A]/20">
                 <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1rem' }}>bolt</span>
                 <span className="text-[#1A6B4A] font-bold text-xs tracking-widest uppercase">24 Hour Response Promise</span>
               </div>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] text-primary">{heading}</h2>
             </div>
 
             <form action="https://formspree.io/f/xkokvlpr" method="POST" className="space-y-10">

@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block" style={{ letterSpacing: '0.3em' }}>Our Services</span>
         <h1 className="text-4xl sm:text-5xl md:text-[5rem] font-bold tracking-tight text-primary" style={{ lineHeight: '1.08' }}>
-          <span className="text-shine-red">Insurers profit</span> from<br className="hidden md:block" /> your underinsurance.
+          <span className="text-shine-red">Insurers profit</span> from<br /><span className="text-shine-red">your underinsurance.</span>
           <br />
           <span className="text-shine-slow" style={{ fontSize: '0.85em' }}>We don&rsquo;t let them.</span>
         </h1>

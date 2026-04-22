@@ -10,7 +10,7 @@ export default function ContactPage() {
         <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-primary leading-[1.08]">
           Don&rsquo;t find out you&rsquo;re<br />underinsured <span className="text-shine-slow">the hard way.</span>
         </h1>
-        <div className="w-12 h-0.5 bg-[#1A6B4A]/40 rounded-full"></div>
+        <div className="w-12 h-0.5" aria-hidden="true"></div>
         <p className="text-xl text-secondary font-light max-w-xl leading-relaxed">
           Over 80% of UK properties are insured for the wrong amount. A RICS-regulated RCA takes less than 48 hours — and could save you hundreds of thousands in an uncapped claim.
         </p>

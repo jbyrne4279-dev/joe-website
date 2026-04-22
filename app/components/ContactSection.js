@@ -1,5 +1,3 @@
-import MapboxMap from './MapboxMap'
-
 export default function ContactSection({ heading = 'Get In Touch' }) {
   return (
     <section className="bg-surface-container-low py-20 my-16 mx-4 md:mx-8 rounded-3xl">
@@ -141,20 +139,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
             </form>
           </div>
 
-          {/* Right: Contact Info + Map */}
+          {/* Right: Contact Info + Map + Protection Image */}
           <div className="space-y-6">
             <div className="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
-              <div className="flex items-center gap-5 mb-8">
-                <img
-                  className="w-16 h-16 rounded-xl object-cover sovereign-shadow"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d72qR4-i-yGafkqrWIDL9pAhkvGNZCOrFhVLpv9083wCMx7sq2Y2KV38gNwy8EdxBiZ2J_jWdh6tNDVhMdT3OK-c-oiztkFuFnoJJsOAaQr6QZv-MySrs3nM_LeLRvGYkQvog11s67XHENlLCLFUqs0oPgKM_ZmvrR10m7AFruj0qVfsUyVkyPg5SKZSe0-gWL43p-9jzQi-3rGljOYSHpv8AdVW8sABDM0tNXww5XJ1smfQySJcH_lUjGdo2lMlAYVmcw74gg"
-                  alt="Expert Lead Surveyor"
-                />
-                <div>
-                  <h4 className="text-lg font-bold text-primary">Expert Lead Surveyor</h4>
-                  <p className="text-[#1A6B4A] text-sm font-semibold">Head of Practice</p>
-                </div>
-              </div>
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
@@ -186,7 +173,32 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               </div>
             </div>
 
-            <MapboxMap />
+            <iframe
+              title="17 Hanover Square London W1S 1BN"
+              src="https://www.google.com/maps?q=17+Hanover+Square,+London+W1S+1BN&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-[260px] rounded-2xl border border-[#1A6B4A]/20 sovereign-shadow"
+              allowFullScreen
+            />
+
+            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80"
+                alt="RICS-regulated protection safeguarding your property assets"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A6B4A]/80 via-[#1A6B4A]/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified_user</span>
+                  </div>
+                  <span className="text-white font-bold text-xs tracking-widest uppercase">RICS Protection</span>
+                </div>
+                <p className="text-white text-lg font-bold leading-tight max-w-xs">Your assets, accurately valued and fully protected.</p>
+              </div>
+            </div>
           </div>
 
         </div>

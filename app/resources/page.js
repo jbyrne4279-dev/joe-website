@@ -234,12 +234,12 @@ export default function ResourcesPage() {
         </section>
 
         <ContactSection heading="Find Out If You're Underinsured" />
-        <FaqSection
-          description="Learn how reinstatement cost assessments work, why RICS compliance matters, and how to avoid costly underinsurance."
-          items={resourcesFaqItems}
-        />
 
       </div>
+      <FaqSection
+        description="Learn how reinstatement cost assessments work, why RICS compliance matters, and how to avoid costly underinsurance."
+        items={resourcesFaqItems}
+      />
     </main>
   )
 }

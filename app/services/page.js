@@ -17,7 +17,8 @@ const servicesFaqItems = [
 
 export default function ServicesPage() {
   return (
-    <main className="max-w-7xl mx-auto px-8">
+    <main>
+      <div className="max-w-7xl mx-auto px-8">
 
       {/* Hero */}
       <section className="py-16 md:py-24 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
@@ -27,7 +28,7 @@ export default function ServicesPage() {
           <br />
           <span className="text-shine-slow" style={{ fontSize: '0.85em' }}>We don&rsquo;t let them.</span>
         </h1>
-        <div className="w-12 h-0.5 bg-[#1A6B4A]/40 rounded-full"></div>
+        <div className="w-12 h-0.5" aria-hidden="true"></div>
         <p className="text-lg text-secondary max-w-md leading-relaxed">
           Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS-regulated RCA gives you the one figure that keeps your insurer honest.
         </p>
@@ -199,6 +200,7 @@ export default function ServicesPage() {
       </section>
 
       <ContactSection heading="Protect Your Property Today." />
+      </div>
       <FaqSection
         description="Everything you need to choose the right RCA service, stay compliant, and protect your property from underinsurance."
         items={servicesFaqItems}

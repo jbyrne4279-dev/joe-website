@@ -5,13 +5,13 @@ export default function Footer() {
     <footer className="bg-[#0A0A0F] text-zinc-500 py-20 px-12 rounded-t-[24px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
-          <div className="text-lg font-bold text-white uppercase tracking-widest">REBUILDCOST</div>
+          <div className="text-lg font-bold text-white uppercase tracking-widest">Reinstatement Cost Assessment</div>
           <p className="text-sm leading-relaxed">
             Providing the standard for building reinstatement valuations across the UK insurance market.
           </p>
         </div>
         <div>
-          <h5 className="text-white font-bold mb-6">Services</h5>
+          <h5 className="text-white font-bold mb-6">Ser333vices</h5>
           <ul className="space-y-4 text-sm">
             <li><Link className="hover:text-emerald-400 transition-colors" href="/services">Desktop Assessment</Link></li>
             <li><Link className="hover:text-emerald-400 transition-colors" href="/services">3-Year Protection</Link></li>

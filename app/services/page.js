@@ -199,8 +199,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ContactSection heading="Protect Your Property Today." />
       </div>
+      <ContactSection heading="Protect Your Property Today." />
       <FaqSection
         description="Everything you need to choose the right RCA service, stay compliant, and protect your property from underinsurance."
         items={servicesFaqItems}

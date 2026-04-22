@@ -233,9 +233,16 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-        <ContactSection heading="Find Out If You're Underinsured" />
-
       </div>
+      <ContactSection
+        heading={
+          <>
+            <span className="text-shine">Find Out If</span>
+            <br />
+            <span className="text-shine-red">You&rsquo;re Underinsured</span>
+          </>
+        }
+      />
       <FaqSection
         description="Learn how reinstatement cost assessments work, why RICS compliance matters, and how to avoid costly underinsurance."
         items={resourcesFaqItems}

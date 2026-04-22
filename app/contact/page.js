@@ -2,7 +2,8 @@ import ContactSection from '../components/ContactSection'
 
 export default function ContactPage() {
   return (
-    <main className="max-w-7xl mx-auto px-8">
+    <main>
+      <div className="max-w-7xl mx-auto px-8">
 
       {/* Hero */}
       <section className="py-24 md:py-32 flex flex-col items-center text-center max-w-4xl mx-auto gap-6">
@@ -30,7 +31,16 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ContactSection heading="Find Out If You're Underinsured" />
+      </div>
+      <ContactSection
+        heading={
+          <>
+            <span className="text-shine">Find Out If</span>
+            <br />
+            <span className="text-shine-red">You&rsquo;re Underinsured</span>
+          </>
+        }
+      />
 
     </main>
   )

@@ -9,7 +9,7 @@ export default function MapboxMap() {
   const initialized = useRef(false)
 
   function initMap() {
-    if (!mapRef.current || initialized.current || !window.mapboxgl) return
+    if (!mapRef.current || initialized.current || !window.mapboxgl || !MAPBOX_TOKEN) return
     initialized.current = true
 
     const mapboxgl = window.mapboxgl
@@ -48,6 +48,10 @@ export default function MapboxMap() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
+  if (!MAPBOX_TOKEN) return (
+    <div className="relative h-[280px] w-full rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20 bg-[#1A6B4A]/5" />
+  )
 
   return (
     <>

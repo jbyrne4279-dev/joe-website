@@ -138,6 +138,16 @@
   background-clip: text;
 }
 
+.text-shine-silver {
+  background: linear-gradient(105deg, #1f2937 35%, #b8bcc4 50%, #1f2937 65%);
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.12));
+}
+
 .pop-in {
   animation: pop-in 0.5s ease-out forwards;
 }
@@ -148,7 +158,7 @@
 
 @keyframes levitate {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  50% { transform: translateY(-2px); }
 }
 
 @keyframes logo-sheen {

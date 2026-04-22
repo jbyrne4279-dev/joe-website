@@ -17,18 +17,18 @@ const resourcesFaqItems = [
 export default function ResourcesPage() {
   return (
     <main>
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-5xl mx-auto px-6 md:px-8">
 
         {/* Hero */}
-        <section className="py-24 lg:py-32 flex flex-col items-center text-center">
+        <section className="py-16 md:py-24 lg:py-32 flex flex-col items-center text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 block">Expert Insight Guide</span>
-          <h1 className="text-5xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
+          <h1 className="text-4xl sm:text-5xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
             <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
           </h1>
           <p className="text-lg text-secondary max-w-2xl leading-relaxed mb-12">
             In a rapidly shifting economy, the gap between what a building is worth and what it costs to rebuild is widening at an alarming rate. Discover why your current valuation might be leaving you dangerously exposed.
           </p>
-          <div className="w-full h-[400px] rounded-2xl overflow-hidden relative sovereign-shadow">
+          <div className="w-full h-[260px] md:h-[400px] rounded-2xl overflow-hidden relative sovereign-shadow">
             <img
               className="w-full h-full object-cover opacity-90"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuALOMaU4yAO0fABDemBrPwIW0_JHcg5OCUfDCMgrVnZfZMHPdmT_UxkLb4VH-nCQaLW11YFCFg9voqLjC25o9B2GI89LFrZExDjKVvoCm5QrpahvM2W_qQdNDaJnxc-B-d6CSLkebPqSlNLFOwgIsozfCOc0LxX2-ogBKGB57cebbKp3u4T-W8NGtEdynuZhsleRozYnKGxhyPvQaBbot6EX5zIE0p1c2JH1GQsMOcTsxgBc1PINPZoKGlpyPIU3PtwWB3Fg4n1IL8"
@@ -39,11 +39,11 @@ export default function ResourcesPage() {
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="py-20 flex flex-col items-center text-center max-w-2xl mx-auto">
+        <section className="py-14 md:py-20 flex flex-col items-center text-center max-w-2xl mx-auto">
           <div className="space-y-10 w-full">
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Common Misconception</span>
-              <h2 className="text-4xl font-bold text-primary leading-tight">Your building is probably insured for the wrong amount.</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary leading-tight">Your building is probably insured for the wrong amount.</h2>
               <p className="text-secondary leading-relaxed max-w-lg mx-auto">
                 Market value and rebuild cost are not the same figure yet most property owners confuse the two. The consequences of getting this wrong can be financially devastating.
               </p>
@@ -84,13 +84,13 @@ export default function ResourcesPage() {
         </section>
 
         {/* Averaging Clause */}
-        <section className="py-20 bg-surface-container-low -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-lg">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">The &ldquo;Averaging Clause&rdquo; Trap</h2>
+        <section className="py-14 md:py-20 bg-surface-container-low -mx-6 md:-mx-8 lg:-mx-12 px-6 md:px-8 lg:px-12 rounded-lg">
+          <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6">The &ldquo;Averaging Clause&rdquo; Trap</h2>
             <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="liquid-glass p-10 rounded-lg sovereign-shadow flex flex-col justify-between">
+            <div className="liquid-glass p-8 md:p-10 rounded-lg sovereign-shadow flex flex-col justify-between">
               <div>
                 <h3 className="text-lg font-semibold text-[#1A6B4A] mb-8">Scenario: The Reality Gap</h3>
                 <div className="space-y-4">
@@ -237,7 +237,7 @@ export default function ResourcesPage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Request Your <span className="text-shine">RICS-Regulated RCA</span>
           </>
         }
       />

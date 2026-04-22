@@ -35,7 +35,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Request Your <span className="text-shine">RICS-Regulated RCA</span>
           </>
         }
       />

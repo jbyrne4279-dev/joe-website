@@ -18,7 +18,7 @@ const servicesFaqItems = [
 export default function ServicesPage() {
   return (
     <main>
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
 
       {/* Hero */}
       <section className="py-16 md:py-24 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
@@ -35,10 +35,10 @@ export default function ServicesPage() {
       </section>
 
       {/* Which service */}
-      <section className="py-16" id="which">
+      <section className="py-12 md:py-16" id="which">
         <div className="text-center mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Right for you?</span>
-          <h2 className="text-4xl font-bold text-primary">Which service do I need?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">Which service do I need?</h2>
           <p className="text-secondary max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
         </div>
         <div className="max-w-3xl mx-auto space-y-4">
@@ -64,17 +64,17 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Grid */}
-      <section className="py-16" id="pricing">
+      <section className="py-12 md:py-16" id="pricing">
         <div className="text-center mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
-          <h2 className="text-4xl font-bold text-primary">Choose your assessment</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">Choose your assessment</h2>
           <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
         </div>
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
+        <div className="max-w-5xl mx-auto px-0 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
             {/* Desktop Assessment */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div className="liquid-glass rounded-2xl p-8 md:p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -104,7 +104,7 @@ export default function ServicesPage() {
             </div>
 
             {/* 3-Year Protection */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+            <div className="liquid-glass rounded-2xl p-8 md:p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] md:scale-105">
               <div className="absolute top-6 right-6">
                 <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
               </div>
@@ -137,7 +137,7 @@ export default function ServicesPage() {
             </div>
 
             {/* On-Site Survey */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div className="liquid-glass rounded-2xl p-8 md:p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -171,10 +171,10 @@ export default function ServicesPage() {
       </section>
 
       {/* What's included */}
-      <section className="py-16 bg-surface-container-low rounded-2xl px-8 md:px-12 mt-8">
+      <section className="py-12 md:py-16 bg-surface-container-low rounded-2xl px-6 sm:px-8 md:px-12 mt-8">
         <div className="text-center mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Every Assessment Includes</span>
-          <h2 className="text-4xl font-bold text-primary">What you always get</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary">What you always get</h2>
           <p className="text-secondary max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
@@ -203,7 +203,7 @@ export default function ServicesPage() {
       <ContactSection
         heading={
           <>
-            Get My <span className="text-shine">Free</span> Consultation
+            Request Your <span className="text-shine">RICS-Regulated RCA</span>
           </>
         }
       />

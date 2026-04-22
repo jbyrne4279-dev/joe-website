@@ -211,7 +211,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ContactSection heading="Start Your Assessment" />
+      <ContactSection
+        heading={
+          <>
+            Get My <span className="text-shine">Free</span> Consultation
+          </>
+        }
+      />
       <FaqSection
         description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}

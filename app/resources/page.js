@@ -23,7 +23,7 @@ export default function ResourcesPage() {
         <section className="py-24 lg:py-32 flex flex-col items-center text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 block">Expert Insight Guide</span>
           <h1 className="text-5xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
-            The quiet crisis inside most buildings insurance policies.
+            <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
           </h1>
           <p className="text-lg text-secondary max-w-2xl leading-relaxed mb-12">
             In a rapidly shifting economy, the gap between what a building is worth and what it costs to rebuild is widening at an alarming rate. Discover why your current valuation might be leaving you dangerously exposed.
@@ -237,9 +237,7 @@ export default function ResourcesPage() {
       <ContactSection
         heading={
           <>
-            <span className="text-shine">Find Out If</span>
-            <br />
-            <span className="text-shine-red">You&rsquo;re Underinsured</span>
+            Get My <span className="text-shine">Free</span> Consultation
           </>
         }
       />

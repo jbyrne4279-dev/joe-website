@@ -19,14 +19,16 @@ export default function Navbar() {
     <header className="sticky top-0 w-full bg-white z-50 border-b border-zinc-200">
       <nav className="flex items-center px-6 md:px-8 py-4 max-w-full mx-auto">
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
-          <Image
-            src="/rca_logo.png"
-            alt="RCA-LTD logo"
-            width={80}
-            height={64}
-            priority
-            className="h-8 w-auto object-contain"
-          />
+          <span className="logo-shine">
+            <Image
+              src="/rca_logo.png"
+              alt="RCA-LTD logo"
+              width={80}
+              height={64}
+              priority
+              className="h-8 w-auto object-contain logo-levitate"
+            />
+          </span>
           <span className="text-xl font-bold text-zinc-900 tracking-tighter">
             RCA-LTD
           </span>

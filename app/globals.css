@@ -145,3 +145,36 @@
 .pill-pulse {
   animation: pill-pulse 3s ease-in-out infinite;
 }
+
+@keyframes levitate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes logo-sheen {
+  0% { transform: translateX(-140%) skewX(-18deg); }
+  60%, 100% { transform: translateX(260%) skewX(-18deg); }
+}
+
+.logo-levitate {
+  animation: levitate 3.5s ease-in-out infinite;
+}
+
+.logo-shine {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.75) 50%, transparent 100%);
+  transform: translateX(-140%) skewX(-18deg);
+  animation: logo-sheen 4.5s ease-in-out infinite;
+  pointer-events: none;
+}

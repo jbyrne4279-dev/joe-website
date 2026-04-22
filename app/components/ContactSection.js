@@ -139,26 +139,8 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
             </form>
           </div>
 
-          {/* Right: Protection Image + Map + Contact Info */}
+          {/* Right: Map + Contact Info + Protection Image */}
           <div className="space-y-6">
-            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20">
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80"
-                alt="RICS-regulated protection safeguarding your property assets"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1A6B4A]/80 via-[#1A6B4A]/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified_user</span>
-                  </div>
-                  <span className="text-white font-bold text-xs tracking-widest uppercase">RICS Protection</span>
-                </div>
-                <p className="text-white text-lg font-bold leading-tight max-w-xs">Your assets, accurately valued and fully protected.</p>
-              </div>
-            </div>
-
             <iframe
               title="17 Hanover Square London W1S 1BN"
               src="https://www.google.com/maps?q=17+Hanover+Square,+London+W1S+1BN&output=embed"
@@ -197,6 +179,24 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                     <p className="text-primary font-medium">17 Hanover Square London W1S 1BN</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80"
+                alt="RICS-regulated protection safeguarding your property assets"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A6B4A]/80 via-[#1A6B4A]/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified_user</span>
+                  </div>
+                  <span className="text-white font-bold text-xs tracking-widest uppercase">RICS Protection</span>
+                </div>
+                <p className="text-white text-lg font-bold leading-tight max-w-xs">Your assets, accurately valued and fully protected.</p>
               </div>
             </div>
           </div>

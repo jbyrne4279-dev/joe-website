@@ -8,8 +8,8 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="py-24 md:py-32 flex flex-col items-center text-center max-w-4xl mx-auto gap-6">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block" style={{ letterSpacing: '0.3em' }}>Professional Consultation</span>
-        <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-primary leading-[1.08]">
-          Don&rsquo;t find out you&rsquo;re<br />underinsured <span className="text-shine-slow">the hard way.</span>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-primary leading-[1.08]">
+          Don&rsquo;t find out you&rsquo;re<br className="hidden md:block" /> <span className="text-shine-red">underinsured the hard way.</span>
         </h1>
         <div className="w-12 h-0.5" aria-hidden="true"></div>
         <p className="text-xl text-secondary font-light max-w-xl leading-relaxed">
@@ -35,9 +35,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            <span className="text-shine">Find Out If</span>
-            <br />
-            <span className="text-shine-red">You&rsquo;re Underinsured</span>
+            Get My <span className="text-shine">Free</span> Consultation
           </>
         }
       />

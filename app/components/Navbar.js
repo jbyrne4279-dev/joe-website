@@ -38,7 +38,7 @@ export default function Navbar() {
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="hidden sm:block h-7 md:h-8 w-auto object-contain"
+            className="hidden sm:block h-9 md:h-10 w-auto object-contain"
           />
         </Link>
 

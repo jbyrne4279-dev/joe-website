@@ -32,6 +32,14 @@ export default function Navbar() {
           <span className="text-xl font-bold text-zinc-900 tracking-tighter">
             RCA-LTD
           </span>
+          <span className="hidden sm:inline-block h-6 w-px bg-zinc-300 mx-1" aria-hidden="true" />
+          <Image
+            src="/rics-logo.png"
+            alt="Regulated by RICS"
+            width={900}
+            height={600}
+            className="hidden sm:block h-7 md:h-8 w-auto object-contain"
+          />
         </Link>
 
         <div className="hidden md:flex items-center justify-center gap-8">

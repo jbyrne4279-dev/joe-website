@@ -14,9 +14,9 @@ export default function Footer() {
         <div>
           <h5 className="text-white font-bold mb-6">Services</h5>
           <ul className="space-y-4 text-sm">
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services">Desktop Assessment</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services">3-Year Protection</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services">On-Site Survey</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">Desktop Assessment</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">3-Year Protection</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">On-Site Survey</Link></li>
           </ul>
         </div>
         <div>
@@ -36,28 +36,24 @@ export default function Footer() {
       </div>
 
       {/* RICS Regulated trust band */}
-      <div className="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/10 flex flex-col items-center gap-6">
+      <div className="max-w-7xl mx-auto mt-14 pt-8 border-t border-white/10 flex flex-col items-center gap-3">
         <Image
           src="/rics-logo.png"
           alt="Regulated by RICS"
           width={900}
           height={600}
-          className="h-32 md:h-48 w-auto object-contain invert drop-shadow-[0_6px_32px_rgba(255,255,255,0.15)]"
+          className="h-14 md:h-16 w-auto object-contain invert"
           priority={false}
         />
-        <div className="flex items-center gap-4">
-          <span className="h-px w-10 bg-white/20" />
-          <span className="text-[11px] font-bold uppercase tracking-[0.35em] text-zinc-300">RICS Regulated Practice</span>
-          <span className="h-px w-10 bg-white/20" />
+        <div className="flex items-center gap-3">
+          <span className="h-px w-8 bg-white/15" />
+          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-400">RICS Regulated Practice</span>
+          <span className="h-px w-8 bg-white/15" />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
+      <div className="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
         <p>© 2024 RebuildCostAssessment.com. RICS Regulated. Part of RiskSTOP Group.</p>
-        <div className="flex gap-6">
-          <a className="hover:text-white transition-colors" href="#">Privacy Policy</a>
-          <a className="hover:text-white transition-colors" href="#">Terms of Use</a>
-        </div>
       </div>
     </footer>
   )

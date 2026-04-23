@@ -146,12 +146,11 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               src="https://www.google.com/maps?q=17+Hanover+Square,+London+W1S+1BN&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-[260px] rounded-2xl border border-[#1A6B4A]/20 sovereign-shadow float-card"
-              style={{ animationDelay: '0s' }}
+              className="w-full h-[260px] rounded-2xl border border-[#1A6B4A]/20 sovereign-shadow"
               allowFullScreen
             />
 
-            <div className="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] float-card" style={{ animationDelay: '2.3s' }}>
+            <div className="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
@@ -183,7 +182,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               </div>
             </div>
 
-            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20 float-card" style={{ animationDelay: '4.6s' }}>
+            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20">
               <img
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80"
                 alt="RICS-regulated protection safeguarding your property assets"

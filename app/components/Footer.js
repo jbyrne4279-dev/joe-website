@@ -4,25 +4,22 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <footer className="bg-[#0A0A0F] text-zinc-500 pt-16 pb-10 px-6 md:px-12 rounded-t-[24px]">
-      {/* RICS Regulated badge */}
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-5 mb-16">
-        <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-zinc-300">Accredited &amp; Regulated</span>
-        <Image
-          src="/rics-logo.png"
-          alt="Regulated by RICS"
-          width={900}
-          height={600}
-          className="h-28 md:h-40 w-auto object-contain invert drop-shadow-[0_4px_24px_rgba(255,255,255,0.12)]"
-          priority={false}
-        />
-      </div>
-
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="space-y-6">
-          <div className="text-lg font-bold text-white uppercase tracking-widest">Reinstatement Cost Assessment</div>
-          <p className="text-sm leading-relaxed">
-            Providing the standard for building reinstatement valuations across the UK insurance market.
-          </p>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12">
+        <div className="md:col-span-2 flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
+          <Image
+            src="/rics-logo.png"
+            alt="Regulated by RICS"
+            width={900}
+            height={600}
+            className="h-20 md:h-24 w-auto object-contain invert drop-shadow-[0_4px_24px_rgba(255,255,255,0.12)] flex-shrink-0"
+            priority={false}
+          />
+          <div className="space-y-4">
+            <div className="text-lg font-bold text-white uppercase tracking-widest">Reinstatement Cost Assessment</div>
+            <p className="text-sm leading-relaxed">
+              Providing the standard for building reinstatement valuations across the UK insurance market.
+            </p>
+          </div>
         </div>
         <div>
           <h5 className="text-white font-bold mb-6">Services</h5>

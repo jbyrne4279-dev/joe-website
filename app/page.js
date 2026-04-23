@@ -47,6 +47,7 @@ export default function HomePage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <span className="text-sm font-bold text-[#1A6B4A] uppercase tracking-[0.2em]">The Framework</span>
+              <div aria-hidden="true" className="h-6" />
               <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
                 What is a <span className="text-shine-slow">Rebuild Cost Assessment?</span>
               </h2>

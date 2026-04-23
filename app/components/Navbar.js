@@ -32,14 +32,6 @@ export default function Navbar() {
           <span className="text-xl font-bold text-zinc-900 tracking-tighter">
             RCA-LTD
           </span>
-          <span className="hidden sm:inline-block h-6 w-px bg-zinc-300 mx-1" aria-hidden="true" />
-          <Image
-            src="/rics-logo.png"
-            alt="Regulated by RICS"
-            width={900}
-            height={600}
-            className="hidden sm:block h-9 md:h-10 w-auto object-contain"
-          />
         </Link>
 
         <div className="hidden md:flex items-center justify-center gap-8">
@@ -61,7 +53,15 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end">
+        <div className="hidden md:flex flex-1 justify-end items-center gap-4">
+          <Image
+            src="/rics-logo.png"
+            alt="Regulated by RICS"
+            width={900}
+            height={600}
+            className="h-11 lg:h-12 w-auto object-contain"
+          />
+          <span className="h-7 w-px bg-zinc-300" aria-hidden="true" />
           <Link
             href="/contact"
             className="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"

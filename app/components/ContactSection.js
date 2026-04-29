@@ -6,7 +6,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
 
           {/* Left: Contact Form */}
           <div>
-            <div className="mb-12 space-y-5">
+            <div id="contact-form" className="mb-12 space-y-5 scroll-mt-28">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Get In Touch</span>
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] text-primary">{heading}</h2>
               <div className="inline-flex items-center gap-3 bg-[#1A6B4A]/10 px-5 py-2.5 rounded-full border border-[#1A6B4A]/20">

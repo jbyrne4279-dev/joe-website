@@ -63,7 +63,7 @@ export default function Navbar() {
           />
           <span className="h-7 w-px bg-zinc-300" aria-hidden="true" />
           <Link
-            href="/contact"
+            href="/contact#contact-form"
             className="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"
           >
             Get a Quote
@@ -104,7 +104,7 @@ export default function Navbar() {
               )
             })}
             <Link
-              href="/contact"
+              href="/contact#contact-form"
               onClick={() => setOpen(false)}
               className="mt-3 btn-shine text-white text-center px-8 py-3 rounded-full font-semibold active:scale-[0.97] transition-transform"
             >

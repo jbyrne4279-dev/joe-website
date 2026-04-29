@@ -31,8 +31,8 @@ export default function HomePage() {
             We provide RICS-regulated Reinstatement Cost Assessments. Giving you the exact figure that protects your assets.
           </p>
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Link href="/contact" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
-              Get your RCA
+            <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
+              Get your RICS-Certified RCA
             </Link>
             <Link href="/resources" className="bg-white/50 backdrop-blur-md px-6 py-3 text-sm rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10 self-center">
               Do I need a RCA?
@@ -60,8 +60,8 @@ export default function HomePage() {
             </div>
             <img
               className="w-full h-80 object-cover rounded-xl sovereign-shadow"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjNFcUmx4iVvKMaS5g4eXg4Y_kYPhasFXI9CfrwkuXePz-zXktmWxY_8A6eoHAZ7b-9pc3OeQ86ld0lqAe_FJnUqQKX3KS7-FSvhAzRA5LQN11WgNDP46WcOj7VHd0Sb3fHYdzX2HtSxealWxBV5G-mHdGLmAiGWF4IplVSfjeC0t5C2UkC75dXoYETgDQj156ib13jDhbSSXCYt_pJbE7TwlTdIoCyruaS5_R-BmDJ1fnx7aq1ePMjk5MYgKfxisK9uGQjVGy3t4"
-              alt="Architectural blueprint on a sustainable timber building"
+              src="/rebuild-cost-assessment-london.jpeg"
+              alt="Rebuild cost assessment of a London property"
             />
           </div>
 

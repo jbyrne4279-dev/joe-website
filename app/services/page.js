@@ -100,7 +100,7 @@ export default function ServicesPage() {
                   <span className="text-secondary">Site visit not included</span>
                 </li>
               </ul>
-              <Link href="/contact" className="w-full py-4 bg-[#1A6B4A] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+              <Link href="/contact#contact-form" className="w-full py-4 bg-[#1A6B4A] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
             </div>
 
             {/* 3-Year Protection */}
@@ -133,7 +133,7 @@ export default function ServicesPage() {
                   <span className="text-secondary">Advanced market index tracking</span>
                 </li>
               </ul>
-              <Link href="/contact" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Protect Now</Link>
+              <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Protect Now</Link>
             </div>
 
             {/* On-Site Survey */}
@@ -163,7 +163,7 @@ export default function ServicesPage() {
                   <span className="text-secondary">Expert surveyor consultancy</span>
                 </li>
               </ul>
-              <Link href="/contact" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#1A6B4A] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+              <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#1A6B4A] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
             </div>
 
           </div>

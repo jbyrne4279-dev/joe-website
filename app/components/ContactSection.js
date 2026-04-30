@@ -16,7 +16,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
             </div>
 
             <form action="https://formspree.io/f/xkokvlpr" method="POST" className="space-y-10">
-              <input type="hidden" name="_next" value="/thank-you" />
+              <input type="hidden" name="_next" value="https://rcaltd.up.railway.app/thank-you" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">

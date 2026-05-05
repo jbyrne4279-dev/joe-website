@@ -2,12 +2,12 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 const resourcesFaqItems = [
-  { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss — including demolition, professional fees, materials, and compliance with current regulations.' },
+  { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss. This includes demolition, professional fees, materials, and compliance with current regulations.' },
   { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need RCAs to ensure their buildings are insured for the correct rebuild value.' },
   { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate RCA, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
-  { question: 'How is reinstatement cost different from market value?', answer: 'Market value reflects what a property sells for. Reinstatement cost reflects the cost to rebuild it — often significantly higher due to construction costs, fees, and compliance requirements.' },
-  { question: 'Do I need an RCA for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without an RCA, you are estimating — which increases the risk of being under or over insured.' },
-  { question: 'How is a reinstatement cost calculated?', answer: 'It is calculated based on building size, materials, specification, location, demolition costs, professional fees, and current construction rates — not purchase price.' },
+  { question: 'How is reinstatement cost different from market value?', answer: 'Market value reflects what a property sells for. Reinstatement cost reflects the cost to rebuild it, often significantly higher due to construction costs, fees, and compliance requirements.' },
+  { question: 'Do I need an RCA for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without an RCA, you are estimating, which increases the risk of being under or over insured.' },
+  { question: 'How is a reinstatement cost calculated?', answer: 'It is calculated based on building size, materials, specification, location, demolition costs, professional fees, and current construction rates, not purchase price.' },
   { question: 'How long does a rebuild cost assessment take?', answer: 'Most assessments are completed within 48 hours after inspection. Larger or more complex properties may take slightly longer to ensure full accuracy.' },
   { question: 'What happens if my property is underinsured?', answer: 'If underinsured, insurers can reduce your claim payout proportionally. This means you may not receive enough to fully rebuild your property after damage or loss.' },
   { question: 'Do I need an RCA for a commercial property?', answer: 'Yes. Commercial properties often have higher rebuild complexity and cost. An RCA ensures your insurance fully reflects the risk and scale of the asset.' },
@@ -56,7 +56,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Overinsured in rural areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth <strong className="font-bold text-primary">£800k</strong> may cost only <strong className="font-bold text-primary">£320k</strong> to rebuild — you could be paying premiums on a <strong className="font-bold text-primary">£480k</strong> fiction.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth <strong className="font-bold text-primary">£800k</strong> may cost only <strong className="font-bold text-primary">£320k</strong> to rebuild. You could be paying premiums on a <strong className="font-bold text-primary">£480k</strong> fiction.</p>
                 </div>
               </div>
 
@@ -66,7 +66,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth <strong className="font-bold text-primary">£350k</strong> could cost <strong className="font-bold text-primary">£510k</strong> to rebuild — leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth <strong className="font-bold text-primary">£350k</strong> could cost <strong className="font-bold text-primary">£510k</strong> to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Rising Costs</span>
             <h2 className="text-4xl font-bold text-primary leading-tight"><span className="text-shine-red">The Surge</span> in Construction Materials.</h2>
             <p className="text-secondary leading-relaxed">
-              Global supply chain volatility and labour shortages have pushed rebuild costs up by <span className="text-shine-slow font-bold">over 25%</span> since <span className="font-semibold text-primary">2019</span>. If your valuation hasn&rsquo;t been updated since <span className="font-semibold text-primary">2021</span>, you are almost certainly underinsured today.
+              Global supply chain volatility and labour shortages have pushed rebuild costs up by <strong className="font-bold text-primary">over 25%</strong> since <span className="font-semibold text-primary">2019</span>. If your valuation hasn&rsquo;t been updated since <span className="font-semibold text-primary">2021</span>, you are almost certainly underinsured today.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
             <p className="text-secondary leading-relaxed">
-              Rebuild Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data — the industry standard for surveyors — combined with local site knowledge to provide a figure you can stand behind.
+              Rebuild Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">

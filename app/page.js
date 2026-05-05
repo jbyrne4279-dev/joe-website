@@ -4,14 +4,14 @@ import FaqSection from './components/FaqSection'
 
 const homeFaqItems = [
   { question: 'How much does a typical RCA cost?', answer: 'Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.' },
-  { question: 'How often should I update my RCA?', answer: 'RICS recommends a full RCA every 3 years, with annual desktop indexing in between — accounting for sharp rises in construction materials and labour rates.' },
-  { question: 'What are the risks of under-insurance?', answer: 'Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20% — leaving a major shortfall in a total loss scenario.' },
-  { question: 'Does a market valuation work for insurance?', answer: 'No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild — including demolition, fees, and modern materials. They are rarely the same.' },
+  { question: 'How often should I update my RCA?', answer: 'RICS recommends a full RCA every 3 years, with annual desktop indexing in between. This accounts for sharp rises in construction materials and labour rates.' },
+  { question: 'What are the risks of under-insurance?', answer: 'Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20%, leaving a major shortfall in a total loss scenario.' },
+  { question: 'Does a market valuation work for insurance?', answer: 'No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild, including demolition, fees, and modern materials. They are rarely the same.' },
   { question: 'Are VAT costs included in the assessment?', answer: "Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type." },
-  { question: 'Do you assess listed buildings?', answer: 'Absolutely. Listed buildings require specialist RCA knowledge — authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.' },
+  { question: 'Do you assess listed buildings?', answer: 'Absolutely. Listed buildings require specialist RCA knowledge. Authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.' },
   { question: 'How long does a site visit take?', answer: 'A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.' },
   { question: 'Can you provide RCAs for a multi-asset portfolio?', answer: 'Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.' },
-  { question: 'Do RCAs cover outbuildings and fences?', answer: 'Yes. Our assessments include curtilage assets — external parking, boundary walls, and ancillary structures — unless explicitly excluded by the client.' },
+  { question: 'Do RCAs cover outbuildings and fences?', answer: 'Yes. Our assessments include curtilage assets such as external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.' },
   { question: 'Is the 48-hour turnaround guaranteed?', answer: 'For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.' },
 ]
 
@@ -116,7 +116,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Financial Consequences</h4>
-                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount — even for partial damage.</p>
+                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
                 </div>
               </div>
               <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
@@ -125,7 +125,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Rebuild Cost Assessments that align with current construction costs and inflationary trends — giving you a figure you can rely on.</p>
+                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Rebuild Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
                 </div>
               </div>
             </div>

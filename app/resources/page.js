@@ -2,13 +2,13 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 const resourcesFaqItems = [
-  { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss — including demolition, professional fees, materials, and compliance with current regulations.' },
-  { question: 'Who needs a reinstatement cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need RCAs to ensure their buildings are insured for the correct rebuild value.' },
-  { question: 'Why is a reinstatement cost assessment important?', answer: 'Without an accurate RCA, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
+  { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss — including demolition, professional fees, materials, and compliance with current regulations.' },
+  { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need RCAs to ensure their buildings are insured for the correct rebuild value.' },
+  { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate RCA, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
   { question: 'How is reinstatement cost different from market value?', answer: 'Market value reflects what a property sells for. Reinstatement cost reflects the cost to rebuild it — often significantly higher due to construction costs, fees, and compliance requirements.' },
   { question: 'Do I need an RCA for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without an RCA, you are estimating — which increases the risk of being under or over insured.' },
   { question: 'How is a reinstatement cost calculated?', answer: 'It is calculated based on building size, materials, specification, location, demolition costs, professional fees, and current construction rates — not purchase price.' },
-  { question: 'How long does a reinstatement cost assessment take?', answer: 'Most assessments are completed within 48 hours after inspection. Larger or more complex properties may take slightly longer to ensure full accuracy.' },
+  { question: 'How long does a rebuild cost assessment take?', answer: 'Most assessments are completed within 48 hours after inspection. Larger or more complex properties may take slightly longer to ensure full accuracy.' },
   { question: 'What happens if my property is underinsured?', answer: 'If underinsured, insurers can reduce your claim payout proportionally. This means you may not receive enough to fully rebuild your property after damage or loss.' },
   { question: 'Do I need an RCA for a commercial property?', answer: 'Yes. Commercial properties often have higher rebuild complexity and cost. An RCA ensures your insurance fully reflects the risk and scale of the asset.' },
   { question: 'Can I estimate rebuild cost myself?', answer: 'Online calculators can give rough estimates, but they often miss key costs. A professional RCA provides an accurate, defensible figure aligned with insurer expectations.' },
@@ -56,7 +56,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Overinsured in rural areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild — you could be paying premiums on a £480k fiction.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth <strong className="font-bold text-primary">£800k</strong> may cost only <strong className="font-bold text-primary">£320k</strong> to rebuild — you could be paying premiums on a <strong className="font-bold text-primary">£480k</strong> fiction.</p>
                 </div>
               </div>
 
@@ -66,7 +66,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild — leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth <strong className="font-bold text-primary">£350k</strong> could cost <strong className="font-bold text-primary">£510k</strong> to rebuild — leaving a six-figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ export default function ResourcesPage() {
         <section className="py-20 bg-surface-container-low -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-lg">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">The <span className="text-shine-yellow">&ldquo;Averaging Clause&rdquo;</span> Trap.</h2>
-            <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
+            <p className="text-secondary text-lg">If you are underinsured by <strong className="font-bold text-primary">40%</strong>, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by <strong className="font-bold text-primary">40%</strong>.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="liquid-glass p-10 rounded-lg sovereign-shadow flex flex-col justify-between">
@@ -112,7 +112,7 @@ export default function ResourcesPage() {
             <div className="bg-primary text-on-primary p-10 rounded-lg sovereign-shadow flex flex-col justify-center">
               <span className="material-symbols-outlined text-4xl mb-6">account_balance_wallet</span>
               <h3 className="text-2xl font-bold mb-4">The Payout Result</h3>
-              <p className="text-on-primary-container mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
+              <p className="text-on-primary-container mb-8">Even if you have a claim for <strong className="font-bold">£100,000</strong>, the insurer applies the <strong className="font-bold">40%</strong> reduction based on your total underinsurance.</p>
               <div className="bg-white/10 p-6 rounded-lg">
                 <span className="text-sm uppercase tracking-widest opacity-60">You receive only</span>
                 <div className="text-4xl font-black mt-1">£60,000</div>
@@ -242,7 +242,7 @@ export default function ResourcesPage() {
         }
       />
       <FaqSection
-        description="Learn how reinstatement cost assessments work, why RICS compliance matters, and how to avoid costly underinsurance."
+        description="Learn how rebuild cost assessments work, why RICS compliance matters, and how to avoid costly underinsurance."
         items={resourcesFaqItems}
       />
     </main>

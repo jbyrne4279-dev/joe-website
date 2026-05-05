@@ -70,17 +70,26 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <button
-          type="button"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-          onClick={() => setOpen(v => !v)}
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors"
-        >
-          <span className="material-symbols-outlined" style={{ fontSize: '1.6rem' }}>
-            {open ? 'close' : 'menu'}
-          </span>
-        </button>
+        <div className="md:hidden flex flex-1 justify-end items-center gap-3">
+          <Image
+            src="/rics-logo.png"
+            alt="Regulated by RICS"
+            width={900}
+            height={600}
+            className="h-9 w-auto object-contain"
+          />
+          <button
+            type="button"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+            onClick={() => setOpen(v => !v)}
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors"
+          >
+            <span className="material-symbols-outlined" style={{ fontSize: '1.6rem' }}>
+              {open ? 'close' : 'menu'}
+            </span>
+          </button>
+        </div>
       </nav>
 
       {open && (

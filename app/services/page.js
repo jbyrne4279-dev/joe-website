@@ -4,7 +4,7 @@ import FaqSection from '../components/FaqSection'
 
 const servicesFaqItems = [
   { question: 'Which RCA service is right for my property?', answer: 'Desktop Assessments suit standard properties needing fast, cost-effective valuations. On-Site Surveys are best for complex or high-value buildings. Our 3-Year Protection plan is ideal for long-term compliance with automatic updates.' },
-  { question: 'What is a desktop reinstatement cost assessment?', answer: 'A desktop RCA uses remote data, property records, and construction cost modelling to deliver a fast and efficient rebuild valuation — without the need for a site visit.' },
+  { question: 'What is a desktop rebuild cost assessment?', answer: 'A desktop RCA uses remote data, property records, and construction cost modelling to deliver a fast and efficient rebuild valuation — without the need for a site visit.' },
   { question: 'When do I need an on-site survey instead of desktop?', answer: 'On-site surveys are recommended for listed buildings, complex structures, non-standard construction, or high-value assets where accuracy and detail are critical.' },
   { question: 'What is included in the 3-year protection plan?', answer: 'Our 3-Year Protection plan includes a full RCA plus automated annual updates, ensuring your rebuild value stays accurate and compliant as construction costs change.' },
   { question: 'Do I really need annual updates to my RCA?', answer: 'Yes. Construction costs change rapidly. Without updates, your policy can quickly become inaccurate. Our automated updates keep your valuation aligned with current market rates.' },

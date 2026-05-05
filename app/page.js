@@ -28,7 +28,7 @@ export default function HomePage() {
             <span className="text-3xl md:text-4xl font-semibold text-secondary mt-4 block">Is yours one of them?</span>
           </h1>
           <p className="text-xl text-secondary max-w-lg leading-relaxed">
-            We provide RICS-regulated Reinstatement Cost Assessments. Giving you the exact figure that protects your assets.
+            We provide RICS-regulated Rebuild Cost Assessments. Giving you the exact figure that protects your assets.
           </p>
           <div className="flex flex-wrap gap-4 justify-center pt-4">
             <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
@@ -42,7 +42,7 @@ export default function HomePage() {
       </section>
 
       {/* What is an RCA */}
-      <section className="bg-surface pt-6 pb-32 px-8">
+      <section className="bg-surface pt-12 pb-32 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
           <div className="space-y-12">
             <div className="space-y-6">
@@ -68,7 +68,7 @@ export default function HomePage() {
           <div className="space-y-6">
             {[
               { step: '1', title: 'Instruct', desc: 'Provide basic property details through our secure digital portal or request an on-site survey.' },
-              { step: '2', title: 'Assess', desc: 'Our experts use RICS-certified data to analyze structural elements, materials, and external site features.' },
+              { step: '2', title: 'Assess', desc: <>Our experts use <strong className="font-bold text-primary">RICS-certified</strong> data to analyze structural elements, materials, and external site features.</> },
               { step: '3', title: 'Report', desc: 'Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.' },
               { step: '4', title: 'Correct', desc: 'Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.' },
             ].map(({ step, title, desc }) => (
@@ -125,7 +125,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends — giving you a figure you can rely on.</p>
+                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Rebuild Cost Assessments that align with current construction costs and inflationary trends — giving you a figure you can rely on.</p>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function HomePage() {
             <div className="space-y-12">
               <div>
                 <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
-                <p className="text-secondary text-lg leading-relaxed">With over 50 years of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
+                <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
               <div className="space-y-8">
                 {[
@@ -224,7 +224,7 @@ export default function HomePage() {
         }
       />
       <FaqSection
-        description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
+        description="Everything you need to know about Rebuild Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}
       />
     </main>

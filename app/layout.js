@@ -11,8 +11,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'RCA Ltd — Reinstatement Cost Assessments',
-  description: 'RICS-regulated Reinstatement Cost Assessments for UK property owners, landlords, and asset managers.',
+  title: 'RCA Ltd — Rebuild Cost Assessments',
+  description: 'RICS-regulated Rebuild Cost Assessments for UK property owners, landlords, and asset managers.',
 }
 
 export default function RootLayout({ children }) {

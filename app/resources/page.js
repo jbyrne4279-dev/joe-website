@@ -1,6 +1,19 @@
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
+export const metadata = {
+  title: 'Rebuild Cost Assessment Guide | Avoid UK Underinsurance',
+  description:
+    'Learn how rebuild cost assessments work, why RICS compliance matters, and how to avoid the Averaging Clause. Expert guidance from RICS-regulated surveyors.',
+  alternates: { canonical: '/resources' },
+  openGraph: {
+    title: 'Rebuild Cost Assessment Guide | Avoid UK Underinsurance',
+    description:
+      'How rebuild cost assessments work, why RICS compliance matters, and how to avoid the Averaging Clause. Expert insight from RICS-regulated surveyors.',
+    url: '/resources',
+  },
+}
+
 const resourcesFaqItems = [
   { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss. This includes demolition, professional fees, materials, and compliance with current regulations.' },
   { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need RCAs to ensure their buildings are insured for the correct rebuild value.' },

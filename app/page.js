@@ -2,6 +2,19 @@ import Link from 'next/link'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 
+export const metadata = {
+  title: 'Rebuild Cost Assessment UK | RICS-Regulated RCAs from £210',
+  description:
+    '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours. Trusted by homeowners, landlords, and asset managers.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Rebuild Cost Assessment UK | RICS-Regulated RCAs from £210',
+    description:
+      '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours.',
+    url: '/',
+  },
+}
+
 const homeFaqItems = [
   { question: 'How much does a typical RCA cost?', answer: 'Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.' },
   { question: 'How often should I update my RCA?', answer: 'RICS recommends a full RCA every 3 years, with annual desktop indexing in between. This accounts for sharp rises in construction materials and labour rates.' },

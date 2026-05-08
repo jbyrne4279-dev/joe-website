@@ -2,6 +2,19 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
+export const metadata = {
+  title: 'Rebuild Cost Assessment Services & Pricing | RICS-Regulated',
+  description:
+    'Choose Desktop Assessment from £210, 3-Year Protection at £298.15, or On-Site Survey from £675. All RICS-regulated, BCIS-certified, and broker-ready within 48 hours.',
+  alternates: { canonical: '/services' },
+  openGraph: {
+    title: 'Rebuild Cost Assessment Services & Pricing | RICS-Regulated',
+    description:
+      'Desktop Assessments from £210, 3-Year Protection, and On-Site Surveys. All RICS-regulated and broker-ready within 48 hours.',
+    url: '/services',
+  },
+}
+
 const servicesFaqItems = [
   { question: 'Which RCA service is right for my property?', answer: 'Desktop Assessments suit standard properties needing fast, cost-effective valuations. On-Site Surveys are best for complex or high-value buildings. Our 3-Year Protection plan is ideal for long-term compliance with automatic updates.' },
   { question: 'What is a desktop rebuild cost assessment?', answer: 'A desktop RCA uses remote data, property records, and construction cost modelling to deliver a fast and efficient rebuild valuation, without the need for a site visit.' },

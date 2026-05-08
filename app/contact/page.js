@@ -1,6 +1,19 @@
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
+export const metadata = {
+  title: 'Contact RCA Ltd | Get Your RICS-Regulated Rebuild Cost Assessment',
+  description:
+    'Get in touch for a RICS-regulated Rebuild Cost Assessment. 24-hour response promise from a chartered surveyor. Based at 17 Hanover Square, London.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact RCA Ltd | RICS-Regulated Rebuild Cost Assessments',
+    description:
+      'Get in touch for a RICS-regulated Rebuild Cost Assessment. 24-hour response promise from a chartered surveyor.',
+    url: '/contact',
+  },
+}
+
 const contactFaqItems = [
   { question: 'What is the average rebuild cost per square foot in the UK?', answer: 'Rebuild costs vary by property type and region. As of 2024, typical UK rebuild costs range from £1,500 to £3,500 per square metre depending on specification, location, and construction complexity. A RICS-regulated RCA gives you the exact figure for your specific building.' },
   { question: 'How do rising construction costs affect my building insurance?', answer: "UK construction costs have risen over 25% since 2019 due to material shortages and labour inflation. If your sum insured hasn't been updated, your policy is almost certainly below the true rebuild cost, leaving you exposed to a proportional reduction in any claim." },

@@ -11,8 +11,67 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'RCA Ltd — Rebuild Cost Assessments',
-  description: 'RICS-regulated Rebuild Cost Assessments for UK property owners, landlords, and asset managers.',
+  metadataBase: new URL('https://rcaltd.up.railway.app'),
+  title: {
+    default: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    template: '%s | RCA Ltd',
+  },
+  description:
+    '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours. Trusted by homeowners, landlords, and asset managers.',
+  keywords: [
+    'rebuild cost assessment',
+    'reinstatement cost assessment',
+    'RICS regulated',
+    'building insurance valuation',
+    'underinsurance UK',
+    'BCIS rebuild value',
+    'commercial property insurance',
+    'desktop assessment',
+    'on-site survey',
+    'professional indemnity',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  icons: {
+    icon: '/rca_logo.png',
+    shortcut: '/rca_logo.png',
+    apple: '/rca_logo.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://rcaltd.up.railway.app',
+    siteName: 'RCA Ltd',
+    title: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    description:
+      '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours.',
+    images: [
+      {
+        url: '/rebuild-cost-assessment-london.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Rebuild Cost Assessment of a London property',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    description:
+      '80% of UK buildings are underinsured. Get an accurate RICS-regulated rebuild figure from £210, delivered in 48 hours.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({ children }) {

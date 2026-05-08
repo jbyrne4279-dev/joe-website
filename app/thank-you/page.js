@@ -1,5 +1,12 @@
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Thank You',
+  description: 'Thank you for contacting RCA Ltd. We will respond within 24 working hours.',
+  robots: { index: false, follow: false },
+  alternates: { canonical: '/thank-you' },
+}
+
 export default function ThankYouPage() {
   return (
     <main className="flex-1 flex items-center justify-center px-8 py-32">

@@ -11,7 +11,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://rcaltd.up.railway.app'),
+  metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
     default: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
     template: '%s | RCA Ltd',
@@ -41,7 +41,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://rcaltd.up.railway.app',
+    url: 'https://reinstatementcostassessment.org',
     siteName: 'RCA Ltd',
     title: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
     description:

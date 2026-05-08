@@ -1,4 +1,4 @@
-const SITE_URL = 'https://rcaltd.up.railway.app'
+const SITE_URL = 'https://reinstatementcostassessment.org'
 
 export default function robots() {
   return {

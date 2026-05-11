@@ -32,43 +32,18 @@ export default function Footer() {
           <p className="text-xs leading-relaxed">
             Regulated by the Royal Institution of Chartered Surveyors. Professional indemnity cover in place for all assessments.
           </p>
+          <Image
+            src="/rics-logo.png"
+            alt="Regulated by RICS"
+            width={900}
+            height={600}
+            className="h-12 w-auto object-contain invert mt-6"
+            priority={false}
+          />
         </div>
       </div>
 
-      {/* RICS Regulated trust band */}
-      <div className="max-w-7xl mx-auto mt-14 pt-8 border-t border-white/10 flex flex-col items-center gap-4">
-        <Image
-          src="/rics-logo.png"
-          alt="Regulated by RICS"
-          width={900}
-          height={600}
-          className="h-14 md:h-16 w-auto object-contain invert"
-          priority={false}
-        />
-        <div className="flex items-center gap-3">
-          <span className="h-px w-8 bg-white/15" />
-          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-zinc-400">Trusted Accreditations</span>
-          <span className="h-px w-8 bg-white/15" />
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-2.5 md:gap-3 mt-2 max-w-3xl">
-          {[
-            { icon: 'workspace_premium', label: 'RICS Regulated' },
-            { icon: 'analytics', label: 'BCIS Data Partner' },
-            { icon: 'shield', label: 'Professional Indemnity' },
-            { icon: 'verified', label: 'ISO 9001 Quality' },
-            { icon: 'security', label: 'Cyber Essentials' },
-            { icon: 'corporate_fare', label: 'RiskSTOP Group' },
-          ].map(({ icon, label }) => (
-            <div key={label} className="flex items-center gap-2 bg-white/[0.04] border border-white/10 rounded-full px-3.5 py-1.5">
-              <span className="material-symbols-outlined text-zinc-300" style={{ fontSize: '0.95rem' }}>{icon}</span>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-300">{label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
+      <div className="max-w-7xl mx-auto mt-14 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
         <p>© 2024 ReinstatementCostAssessment.org. RICS Regulated. Part of RiskSTOP Group.</p>
       </div>
     </footer>

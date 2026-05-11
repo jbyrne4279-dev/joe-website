@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[#0A0A0F] text-zinc-500 pt-20 pb-10 px-6 md:px-12 rounded-t-[24px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
-          <div className="text-lg font-bold text-white uppercase tracking-widest">Rebuild Cost Assessment</div>
+          <div className="text-lg font-bold text-white uppercase tracking-widest">Reinstatement Cost Assessment</div>
           <p className="text-sm leading-relaxed">
             Providing the standard for building reinstatement valuations across the UK insurance market.
           </p>
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
-        <p>© 2024 RebuildCostAssessment.com. RICS Regulated. Part of RiskSTOP Group.</p>
+        <p>© 2024 ReinstatementCostAssessment.org. RICS Regulated. Part of RiskSTOP Group.</p>
       </div>
     </footer>
   )

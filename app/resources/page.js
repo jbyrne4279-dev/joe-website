@@ -211,7 +211,7 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
             <p className="text-secondary leading-relaxed">
-              Rebuild Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
+              Reinstatement Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -235,7 +235,7 @@ export default function ResourcesPage() {
         <section className="py-24">
           <div className="text-center mb-16 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Best Practice</span>
-            <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Rebuild Cost Assessment Lifecycle.</span></h2>
+            <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Reinstatement Cost Assessment Lifecycle.</span></h2>
           </div>
           <div className="liquid-glass p-12 rounded-2xl sovereign-shadow border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] max-w-2xl mx-auto">
             <div className="flex flex-col">

@@ -34,13 +34,13 @@ const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   '@id': `${SITE_URL}/#organization`,
-  name: 'RCA Ltd',
-  alternateName: 'Reinstatement Cost Assessment Ltd',
+  name: 'Reinstatement Cost Assessment Ltd',
+  alternateName: ['RCA Ltd', 'Rebuild Cost Assessment Ltd'],
   url: SITE_URL,
   logo: `${SITE_URL}/rca_logo.png`,
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   description:
-    'RICS-regulated Rebuild Cost Assessments for UK properties. Accurate reinstatement valuations from £210, delivered in 48 hours.',
+    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations from £210, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
   email: 'info@rca-ltd.com',
   priceRange: '£210-£675',
@@ -67,7 +67,7 @@ const websiteJsonLd = {
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
   url: SITE_URL,
-  name: 'RCA Ltd',
+  name: 'Reinstatement Cost Assessment Ltd',
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-GB',
 }
@@ -108,7 +108,7 @@ export default function HomePage() {
             <span className="text-3xl md:text-4xl font-semibold text-secondary mt-4 block">Is yours one of them?</span>
           </h1>
           <p className="text-xl text-secondary max-w-lg leading-relaxed">
-            We provide RICS-regulated Rebuild Cost Assessments. Giving you the exact figure that protects your assets.
+            We provide RICS-regulated Reinstatement Cost Assessments. Giving you the exact figure that protects your assets.
           </p>
           <div className="flex flex-wrap gap-4 justify-center pt-4">
             <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
@@ -129,10 +129,10 @@ export default function HomePage() {
               <span className="text-sm font-bold text-[#1A6B4A] uppercase tracking-[0.2em]">The Framework</span>
               <div aria-hidden="true" className="h-6" />
               <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
-                What is a <span className="text-shine-slow">Rebuild Cost Assessment?</span>
+                What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
               </h2>
               <p className="text-lg text-secondary leading-relaxed">
-                A Rebuild Cost Assessment (RCA) is a detailed professional calculation of the exact cost to rebuild a property from scratch after total destruction.
+                A Reinstatement Cost Assessment (RCA), also known as a Rebuild Cost Assessment, is a detailed professional calculation of the exact cost to rebuild a property from scratch after total destruction.
               </p>
               <p className="text-lg text-secondary leading-relaxed">
                 Unlike generic valuations, our RICS-regulated process accounts for regional labor costs, current material inflation, and professional fees, ensuring your insurance policy is built on facts, not estimates.
@@ -205,7 +205,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Rebuild Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
+                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
                 </div>
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function HomePage() {
         }
       />
       <FaqSection
-        description="Everything you need to know about Rebuild Cost Assessments, RICS compliance, and how we protect your assets."
+        description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}
       />
     </main>

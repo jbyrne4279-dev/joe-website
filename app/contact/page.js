@@ -27,8 +27,62 @@ const contactFaqItems = [
   { question: 'Can a rebuild cost assessment be used as evidence in an insurance dispute?', answer: 'Yes. A RICS-regulated RCA is a professionally certified document that carries legal weight in insurance disputes and claim negotiations. It provides an independently verified rebuild figure that insurers cannot easily challenge.' },
 ]
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const contactBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: `${SITE_URL}/contact` },
+  ],
+}
+
+const contactPageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  url: `${SITE_URL}/contact`,
+  name: 'Contact RCA Ltd',
+  mainEntity: {
+    '@type': 'ProfessionalService',
+    name: 'RCA Ltd',
+    telephone: '+44-20-3178-8099',
+    email: 'info@rca-ltd.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '17 Hanover Square',
+      addressLocality: 'London',
+      postalCode: 'W1S 1BN',
+      addressCountry: 'GB',
+    },
+  },
+}
+
+const contactFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: contactFaqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function ContactPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqJsonLd) }}
+      />
     <main>
       <div className="max-w-7xl mx-auto px-8">
 
@@ -58,5 +112,6 @@ export default function ContactPage() {
       />
 
     </main>
+    </>
   )
 }

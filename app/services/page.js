@@ -28,8 +28,77 @@ const servicesFaqItems = [
   { question: 'Is the 3-year plan better value than single assessments?', answer: 'Yes. The 3-Year Protection plan spreads cost while ensuring ongoing compliance and accuracy, removing the risk of outdated valuations between assessments.' },
 ]
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const servicesBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
+  ],
+}
+
+const servicesOfferJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Rebuild Cost Assessment',
+  provider: { '@type': 'ProfessionalService', name: 'RCA Ltd', url: SITE_URL },
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Rebuild Cost Assessment Services',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Desktop Assessment',
+        price: '210',
+        priceCurrency: 'GBP',
+        description: 'RICS-regulated desktop Rebuild Cost Assessment delivered within 48 hours.',
+      },
+      {
+        '@type': 'Offer',
+        name: '3-Year Protection',
+        price: '298.15',
+        priceCurrency: 'GBP',
+        description: 'Full RCA with automated annual updates for three years.',
+      },
+      {
+        '@type': 'Offer',
+        name: 'On-Site Survey',
+        price: '675',
+        priceCurrency: 'GBP',
+        description: 'Full on-site Rebuild Cost Assessment for complex or high-value buildings.',
+      },
+    ],
+  },
+}
+
+const servicesFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: servicesFaqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function ServicesPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesOfferJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }}
+      />
     <main>
       <div className="max-w-7xl mx-auto px-8">
 
@@ -226,5 +295,6 @@ export default function ServicesPage() {
       />
 
     </main>
+    </>
   )
 }

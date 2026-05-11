@@ -28,8 +28,75 @@ const homeFaqItems = [
   { question: 'Is the 48-hour turnaround guaranteed?', answer: 'For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.' },
 ]
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': `${SITE_URL}/#organization`,
+  name: 'RCA Ltd',
+  alternateName: 'Reinstatement Cost Assessment Ltd',
+  url: SITE_URL,
+  logo: `${SITE_URL}/rca_logo.png`,
+  image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
+  description:
+    'RICS-regulated Rebuild Cost Assessments for UK properties. Accurate reinstatement valuations from £210, delivered in 48 hours.',
+  telephone: '+44-20-3178-8099',
+  email: 'info@rca-ltd.com',
+  priceRange: '£210-£675',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '17 Hanover Square',
+    addressLocality: 'London',
+    postalCode: 'W1S 1BN',
+    addressCountry: 'GB',
+  },
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  serviceType: 'Rebuild Cost Assessment',
+  knowsAbout: [
+    'Rebuild Cost Assessment',
+    'Reinstatement Cost Assessment',
+    'Building Insurance Valuation',
+    'BCIS Construction Costs',
+    'RICS Regulated Surveying',
+  ],
+}
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: 'RCA Ltd',
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en-GB',
+}
+
+const homeFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function HomePage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
     <main>
       {/* Hero */}
       <section className="bg-surface-container-low py-24 md:py-32 px-8">
@@ -241,5 +308,6 @@ export default function HomePage() {
         items={homeFaqItems}
       />
     </main>
+    </>
   )
 }

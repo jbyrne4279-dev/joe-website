@@ -27,8 +27,38 @@ const resourcesFaqItems = [
   { question: 'Can I estimate rebuild cost myself?', answer: 'Online calculators can give rough estimates, but they often miss key costs. A professional RCA provides an accurate, defensible figure aligned with insurer expectations.' },
 ]
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const resourcesBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: `${SITE_URL}/resources` },
+  ],
+}
+
+const resourcesFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: resourcesFaqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function ResourcesPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesFaqJsonLd) }}
+      />
     <main>
       <div className="max-w-5xl mx-auto px-8">
 
@@ -259,5 +289,6 @@ export default function ResourcesPage() {
         items={resourcesFaqItems}
       />
     </main>
+    </>
   )
 }

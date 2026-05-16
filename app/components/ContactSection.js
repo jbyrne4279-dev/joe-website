@@ -20,10 +20,11 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">
+                  <label htmlFor="contact-name" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">
                     Full Name <span className="text-red-400">*</span>
                   </label>
                   <input
+                    id="contact-name"
                     name="name"
                     required
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
@@ -32,10 +33,11 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">
+                  <label htmlFor="contact-email" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">
                     Email Address <span className="text-red-400">*</span>
                   </label>
                   <input
+                    id="contact-email"
                     name="email"
                     required
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
@@ -47,8 +49,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Phone Number</label>
+                  <label htmlFor="contact-phone" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Phone Number</label>
                   <input
+                    id="contact-phone"
                     name="phone"
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
                     placeholder="+44 7700 900000"
@@ -56,8 +59,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Company</label>
+                  <label htmlFor="contact-company" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Company</label>
                   <input
+                    id="contact-company"
                     name="company"
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
                     placeholder="London Estates Ltd"
@@ -68,9 +72,10 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Property Type</label>
+                  <label htmlFor="contact-property-type" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Property Type</label>
                   <div className="relative">
                     <select
+                      id="contact-property-type"
                       name="property_type"
                       defaultValue=""
                       className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base appearance-none cursor-pointer py-2 transition-all"
@@ -87,8 +92,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">No. of Properties</label>
+                  <label htmlFor="contact-num-properties" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">No. of Properties</label>
                   <input
+                    id="contact-num-properties"
                     name="num_properties"
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
                     placeholder="1"
@@ -99,9 +105,10 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Service Needed</label>
+                <label htmlFor="contact-service" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Service Needed</label>
                 <div className="relative">
                   <select
+                    id="contact-service"
                     name="service"
                     defaultValue=""
                     className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base appearance-none cursor-pointer py-2 transition-all"
@@ -118,8 +125,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Notes</label>
+                <label htmlFor="contact-notes" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Notes</label>
                 <textarea
+                  id="contact-notes"
                   name="notes"
                   className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none"
                   placeholder="Briefly describe your property and requirements..."
@@ -150,7 +158,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               allowFullScreen
             />
 
-            <div className="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
+            <address className="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] not-italic">
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
@@ -158,7 +166,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">Phone</p>
-                    <p className="text-primary font-medium">020 3178 8099</p>
+                    <a href="tel:+442031788099" className="text-primary font-medium hover:text-[#1A6B4A] transition-colors">020 3178 8099</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -167,7 +175,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">Email</p>
-                    <p className="text-primary font-medium">info@rca-ltd.com</p>
+                    <a href="mailto:info@rca-ltd.com" className="text-primary font-medium hover:text-[#1A6B4A] transition-colors">info@rca-ltd.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -176,17 +184,18 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">Address</p>
-                    <p className="text-primary font-medium">17 Hanover Square London W1S 1BN</p>
+                    <p className="text-primary font-medium">17 Hanover Square, London W1S 1BN</p>
                   </div>
                 </div>
               </div>
-            </div>
+            </address>
 
             <div className="relative w-full h-[220px] rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20">
               <img
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&auto=format&fit=crop&q=80"
                 alt="RICS-regulated protection safeguarding your property assets"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A6B4A]/80 via-[#1A6B4A]/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-6">

@@ -1,31 +1,34 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 
 export const metadata = {
-  title: 'Rebuild Cost Assessment UK | RICS-Regulated RCAs from £210',
+  title: {
+    absolute: 'Reinstatement & Rebuild Cost Assessment UK | RICS from £210',
+  },
   description:
-    '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours. Trusted by homeowners, landlords, and asset managers.',
+    'Get a RICS-regulated Reinstatement Cost Assessment (Rebuild Cost Assessment) from £210. Delivered in 48 hours across the UK. Protect your buildings insurance today.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Rebuild Cost Assessment UK | RICS-Regulated RCAs from £210',
+    title: 'Reinstatement & Rebuild Cost Assessment UK | RICS from £210',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
     url: '/',
   },
 }
 
 const homeFaqItems = [
   { question: 'How much does a typical RCA cost?', answer: 'Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.' },
-  { question: 'How often should I update my RCA?', answer: 'RICS recommends a full RCA every 3 years, with annual desktop indexing in between. This accounts for sharp rises in construction materials and labour rates.' },
-  { question: 'What are the risks of under-insurance?', answer: 'Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20%, leaving a major shortfall in a total loss scenario.' },
-  { question: 'Does a market valuation work for insurance?', answer: 'No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild, including demolition, fees, and modern materials. They are rarely the same.' },
+  { question: 'Is RCA Ltd regulated by RICS?', answer: 'Yes. Reinstatement Cost Assessment Ltd is a RICS Regulated Firm. Every assessment is conducted by or under the supervision of a RICS-registered member, ensuring full regulatory compliance and professional accountability.' },
+  { question: 'What areas of the UK do you cover?', answer: 'We provide Reinstatement Cost Assessments across the whole of the United Kingdom. Desktop assessments are available nationally. On-site surveys are available throughout England, Scotland, Wales, and Northern Ireland.' },
+  { question: 'What information do you need to get started?', answer: 'We need the property address, approximate floor area, construction type, and your contact details. Once received, we confirm your instruction and get started within one business day.' },
   { question: 'Are VAT costs included in the assessment?', answer: "Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type." },
   { question: 'Do you assess listed buildings?', answer: 'Absolutely. Listed buildings require specialist RCA knowledge. Authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.' },
   { question: 'How long does a site visit take?', answer: 'A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.' },
   { question: 'Can you provide RCAs for a multi-asset portfolio?', answer: 'Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.' },
   { question: 'Do RCAs cover outbuildings and fences?', answer: 'Yes. Our assessments include curtilage assets such as external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.' },
-  { question: 'Is the 48-hour turnaround guaranteed?', answer: 'For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.' },
+  { question: 'Can I instruct you directly or do I go through a broker?', answer: 'You can instruct us directly. Many clients come to us independently before placing or renewing their insurance. We also work alongside brokers and insurers where required.' },
 ]
 
 const SITE_URL = 'https://reinstatementcostassessment.org'
@@ -37,7 +40,7 @@ const organizationJsonLd = {
   name: 'Reinstatement Cost Assessment Ltd',
   alternateName: ['RCA Ltd', 'Rebuild Cost Assessment Ltd'],
   url: SITE_URL,
-  logo: `${SITE_URL}/rca_logo.png`,
+  logo: `${SITE_URL}/rca48.png`,
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   description:
     'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations from £210, delivered in 48 hours.',
@@ -52,6 +55,12 @@ const organizationJsonLd = {
     addressCountry: 'GB',
   },
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 51.5120,
+    longitude: -0.1444,
+  },
+  hasMap: 'https://maps.google.com/?q=17+Hanover+Square,+London+W1S+1BN',
   serviceType: 'Rebuild Cost Assessment',
   knowsAbout: [
     'Rebuild Cost Assessment',
@@ -135,14 +144,18 @@ export default function HomePage() {
                 A Reinstatement Cost Assessment (RCA), also known as a Rebuild Cost Assessment, is a detailed professional calculation of the exact cost to rebuild a property from scratch after total destruction.
               </p>
               <p className="text-lg text-secondary leading-relaxed">
-                Unlike generic valuations, our RICS-regulated process accounts for regional labor costs, current material inflation, and professional fees, ensuring your insurance policy is built on facts, not estimates.
+                Unlike generic valuations, our RICS-regulated process accounts for regional labour costs, current material inflation, and professional fees, ensuring your insurance policy is built on facts, not estimates.
               </p>
             </div>
-            <img
-              className="w-full h-80 object-cover rounded-xl sovereign-shadow"
-              src="/rebuild-cost-assessment-london.jpeg"
-              alt="Rebuild cost assessment of a London property"
-            />
+            <div className="relative w-full h-80">
+              <Image
+                src="/rebuild-cost-assessment-london.jpeg"
+                alt="RICS-regulated reinstatement cost assessment of a London commercial property"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover rounded-xl sovereign-shadow"
+              />
+            </div>
           </div>
 
           <div className="space-y-6">
@@ -222,7 +235,7 @@ export default function HomePage() {
               <img
                 className="rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWItcC8v66o-s9bC9mNHI66TaDd3NFgyOp2ibu_8afpGEuK9j9erHt0Amq7E8BKl3IhxLVcHFN8fE7GaEf_iFn8tth3VSRSmsOrH81GqWMT7ow9RgHZOoAwZ_QSVox8E2GiZxblnD_FmK2Z5AMVuC-tcfKvRXFcLa-DSjLtruJ1xLV6XmgES9Arz03vSBpr1p2S_Xrw3HI3JP8AvkH3euKbvezG9g9-l8euF2k8PuL7vyHH8rzfKhT4erkdbWvEK8emFBYU8aPOek"
-                alt="Professional chartered surveyor reviewing blueprints"
+                alt="RICS-regulated surveyor conducting a reinstatement cost assessment inspection"
               />
               <div className="absolute -bottom-6 -right-6 liquid-glass p-6 rounded-lg z-20 hidden md:block">
                 <div className="flex items-center gap-4">
@@ -275,9 +288,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE', alt: 'British country home', title: 'Homeowners', desc: 'Protecting your legacy and ensuring accurate coverage for bespoke architectural features.' },
-              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c', alt: 'Modern office interior', title: 'Commercial Landlords', desc: 'Minimizing business interruption risks and maintaining rigorous compliance standards.' },
-              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU', alt: 'Professional boardroom', title: 'Asset Managers', desc: 'Streamlined reporting and audit-ready data for multi-national property portfolios.' },
+              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE', alt: 'Residential homeowner reinstatement cost assessment for buildings insurance', title: 'Homeowners', desc: 'Protecting your legacy and ensuring accurate coverage for bespoke architectural features.' },
+              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c', alt: 'Commercial landlord rebuild cost assessment for office and retail property UK', title: 'Commercial Landlords', desc: 'Minimizing business interruption risks and maintaining rigorous compliance standards.' },
+              { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU', alt: 'Asset manager portfolio reinstatement valuation for multi-site UK property', title: 'Asset Managers', desc: 'Streamlined reporting and audit-ready data for multi-national property portfolios.' },
             ].map(({ src, alt, title, desc }, i) => (
               <div
                 key={title}

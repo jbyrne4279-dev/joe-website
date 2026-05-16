@@ -4,7 +4,6 @@ export const metadata = {
   title: 'Thank You',
   description: 'Thank you for contacting RCA Ltd. We will respond within 24 working hours.',
   robots: { index: false, follow: false },
-  alternates: { canonical: '/thank-you' },
 }
 
 export default function ThankYouPage() {

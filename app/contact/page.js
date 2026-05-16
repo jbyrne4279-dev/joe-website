@@ -2,14 +2,16 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Contact RCA Ltd | Get Your RICS-Regulated Rebuild Cost Assessment',
+  title: {
+    absolute: 'Get a Reinstatement Cost Assessment | RCA Ltd London',
+  },
   description:
-    'Get in touch for a RICS-regulated Rebuild Cost Assessment. 24-hour response promise from a chartered surveyor. Based at 17 Hanover Square, London.',
+    'Instruct a RICS-regulated Reinstatement Cost Assessment online. Rebuild cost reports from £210, delivered in 48 hours. London-based. 24-hour response guaranteed.',
   alternates: { canonical: '/contact' },
   openGraph: {
-    title: 'Contact RCA Ltd | RICS-Regulated Rebuild Cost Assessments',
+    title: 'Get a Reinstatement Cost Assessment | RCA Ltd London',
     description:
-      'Get in touch for a RICS-regulated Rebuild Cost Assessment. 24-hour response promise from a chartered surveyor.',
+      'Book a RICS-regulated Reinstatement Cost Assessment. Desktop rebuild cost reports from £210, on-site surveys from £675. 24-hour response guarantee.',
     url: '/contact',
   },
 }

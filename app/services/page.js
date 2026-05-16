@@ -3,14 +3,16 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Rebuild Cost Assessment Services & Pricing | RICS-Regulated',
+  title: {
+    absolute: 'Reinstatement Cost Assessment Services & Pricing | RCA Ltd',
+  },
   description:
-    'Choose Desktop Assessment from £210, 3-Year Protection at £298.15, or On-Site Survey from £675. All RICS-regulated, BCIS-certified, and broker-ready within 48 hours.',
+    'Desktop Reinstatement Cost Assessment from £210. On-Site Rebuild Cost Survey from £675. 3-Year Protection from £298. All RICS-regulated, BCIS-certified, broker-ready.',
   alternates: { canonical: '/services' },
   openGraph: {
-    title: 'Rebuild Cost Assessment Services & Pricing | RICS-Regulated',
+    title: 'Reinstatement Cost Assessment Services & Pricing | RCA Ltd',
     description:
-      'Desktop Assessments from £210, 3-Year Protection, and On-Site Surveys. All RICS-regulated and broker-ready within 48 hours.',
+      'Compare Reinstatement Cost Assessment services: Desktop, On-Site Survey, and 3-Year Protection. All RICS-regulated and broker-ready in 48 hours.',
     url: '/services',
   },
 }

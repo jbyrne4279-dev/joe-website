@@ -14,17 +14,17 @@ export default function Footer() {
         <div>
           <h5 className="text-white font-bold mb-6">Services</h5>
           <ul className="space-y-4 text-sm">
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">Desktop Assessment</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">3-Year Protection</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">On-Site Survey</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">Desktop Reinstatement Cost Assessment</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">3-Year RCA Protection Plan</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/services#pricing">On-Site Rebuild Cost Survey</Link></li>
           </ul>
         </div>
         <div>
           <h5 className="text-white font-bold mb-6">Company</h5>
           <ul className="space-y-4 text-sm">
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/">Home</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/resources">Resources</Link></li>
-            <li><Link className="hover:text-emerald-400 transition-colors" href="/contact">Contact</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/">Reinstatement Cost Assessment Home</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/resources">Reinstatement Cost Assessment Guide</Link></li>
+            <li><Link className="hover:text-emerald-400 transition-colors" href="/contact">Get a Rebuild Cost Assessment</Link></li>
           </ul>
         </div>
         <div>
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-14 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-center md:text-left">
-        <p>© 2024 ReinstatementCostAssessment.org. RICS Regulated. Part of RiskSTOP Group.</p>
+        <p>© 2025 ReinstatementCostAssessment.org. RICS Regulated. Part of RiskSTOP Group.</p>
       </div>
     </footer>
   )

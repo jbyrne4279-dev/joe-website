@@ -13,53 +13,52 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
-    default: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    default: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     template: '%s | RCA Ltd',
   },
   description:
-    '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours. Trusted by homeowners, landlords, and asset managers.',
+    'RICS-regulated Reinstatement Cost Assessments for UK properties from £210, delivered in 48 hours. Trusted by homeowners, landlords and asset managers.',
   keywords: [
-    'rebuild cost assessment',
     'reinstatement cost assessment',
-    'RICS regulated',
-    'building insurance valuation',
+    'rebuild cost assessment',
+    'reinstatement cost assessment UK',
+    'rebuild cost assessment UK',
+    'RICS regulated reinstatement cost assessment',
+    'building insurance valuation UK',
     'underinsurance UK',
-    'BCIS rebuild value',
-    'commercial property insurance',
-    'desktop assessment',
-    'on-site survey',
-    'professional indemnity',
+    'BCIS rebuild cost',
+    'commercial property reinstatement',
+    'desktop rebuild cost assessment',
+    'on-site reinstatement survey',
+    'professional indemnity surveyor',
   ],
-  alternates: {
-    canonical: '/',
-  },
   icons: {
-    icon: '/rca_logo.png',
-    shortcut: '/rca_logo.png',
-    apple: '/rca_logo.png',
+    icon: '/rca48.png',
+    shortcut: '/rca48.png',
+    apple: '/rca48.png',
   },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://reinstatementcostassessment.org',
     siteName: 'RCA Ltd',
-    title: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Rebuild Cost Assessment of a London property',
+        alt: 'Reinstatement Cost Assessment of a London property',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RICS-Regulated Rebuild Cost Assessments UK | RCA Ltd',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. Get an accurate RICS-regulated rebuild figure from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
   robots: {
@@ -76,7 +75,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} light`}>
+    <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -88,8 +87,16 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-surface font-body text-on-surface">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:font-bold focus:rounded-lg focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
         <Navbar />
-        {children}
+        <div id="main-content">
+          {children}
+        </div>
         <Footer />
         <ScrollReveal />
       </body>

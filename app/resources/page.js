@@ -2,14 +2,16 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Rebuild Cost Assessment Guide | Avoid UK Underinsurance',
+  title: {
+    absolute: 'Reinstatement Cost Assessment Guide | UK Underinsurance',
+  },
   description:
-    'Learn how rebuild cost assessments work, why RICS compliance matters, and how to avoid the Averaging Clause. Expert guidance from RICS-regulated surveyors.',
+    'What is a Reinstatement Cost Assessment? Learn how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured in the UK.',
   alternates: { canonical: '/resources' },
   openGraph: {
-    title: 'Rebuild Cost Assessment Guide | Avoid UK Underinsurance',
+    title: 'Reinstatement Cost Assessment Guide | UK Underinsurance',
     description:
-      'How rebuild cost assessments work, why RICS compliance matters, and how to avoid the Averaging Clause. Expert insight from RICS-regulated surveyors.',
+      'Understand Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and why RICS regulation matters.',
     url: '/resources',
   },
 }
@@ -28,6 +30,42 @@ const resourcesFaqItems = [
 ]
 
 const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const resourcesArticleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Reinstatement Cost Assessment Guide | UK Underinsurance',
+  description: 'What is a Reinstatement Cost Assessment? Learn how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured in the UK.',
+  url: `${SITE_URL}/resources`,
+  datePublished: '2025-05-16',
+  dateModified: '2025-05-16',
+  inLanguage: 'en-GB',
+  author: {
+    '@type': 'Organization',
+    name: 'Reinstatement Cost Assessment Ltd',
+    url: SITE_URL,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Reinstatement Cost Assessment Ltd',
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/rca48.png`,
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}/resources`,
+  },
+  about: [
+    { '@type': 'Thing', name: 'Reinstatement Cost Assessment' },
+    { '@type': 'Thing', name: 'Rebuild Cost Assessment' },
+    { '@type': 'Thing', name: 'Building Insurance Underinsurance UK' },
+    { '@type': 'Thing', name: 'RICS Regulated Surveying' },
+    { '@type': 'Thing', name: 'Averaging Clause Insurance' },
+  ],
+}
 
 const resourcesBreadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -53,6 +91,10 @@ export default function ResourcesPage() {
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesArticleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesBreadcrumbJsonLd) }}
       />
       <script
@@ -75,7 +117,7 @@ export default function ResourcesPage() {
             <img
               className="w-full h-full object-cover opacity-90"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuALOMaU4yAO0fABDemBrPwIW0_JHcg5OCUfDCMgrVnZfZMHPdmT_UxkLb4VH-nCQaLW11YFCFg9voqLjC25o9B2GI89LFrZExDjKVvoCm5QrpahvM2W_qQdNDaJnxc-B-d6CSLkebPqSlNLFOwgIsozfCOc0LxX2-ogBKGB57cebbKp3u4T-W8NGtEdynuZhsleRozYnKGxhyPvQaBbot6EX5zIE0p1c2JH1GQsMOcTsxgBc1PINPZoKGlpyPIU3PtwWB3Fg4n1IL8"
-              alt="Buildings insurance crisis"
+              alt="UK buildings underinsured — reinstatement cost versus market value gap explained"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           </div>

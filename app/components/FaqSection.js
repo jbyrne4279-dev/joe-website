@@ -4,7 +4,7 @@ export default function FaqSection({ description, items }) {
       <div className="max-w-6xl mx-auto px-8">
         <div className="text-center mb-20">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4 block">Got Questions?</span>
-          <h2 className="text-5xl font-bold tracking-tight text-primary">Frequently Asked Questions</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-primary">Frequently Asked Questions</h2>
           <p className="text-secondary mt-4 max-w-xl mx-auto leading-relaxed">{description}</p>
         </div>
 

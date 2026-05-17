@@ -4,7 +4,16 @@
       "Bash(npm install:*)",
       "Bash(git init:*)",
       "Bash(git remote:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m ' *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(git -C \"C:/Users/jbyrn/Desktop/joe-website\" merge claude/quirky-pike-0daedf)",
+      "Bash(git -C \"C:/Users/jbyrn/Desktop/joe-website\" push origin main)",
+      "Bash(Copy-Item \"C:\\\\Users\\\\jbyrn\\\\Desktop\\\\rca-for-my-property.png\" \"C:\\\\Users\\\\jbyrn\\\\Desktop\\\\joe-website\\\\.claude\\\\worktrees\\\\quirky-pike-0daedf\\\\public\\\\rca-for-my-property.png\")",
+      "Bash(cp \"C:/Users/jbyrn/Desktop/rca-for-my-property.png\" \"C:/Users/jbyrn/Desktop/joe-website/.claude/worktrees/quirky-pike-0daedf/public/rca-for-my-property.png\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx next *)"
     ]
   }
 }

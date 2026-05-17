@@ -113,24 +113,35 @@ export default function HomePage() {
       />
     <main>
       {/* Hero */}
-      <section className="bg-surface-container-low py-24 md:py-32 px-8">
-        <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-8">
-          <h1 className="text-5xl md:text-[5rem] font-bold leading-[1.05] tracking-tight text-primary">
-            <span className="text-shine-red">80%</span> of UK buildings are{' '}
-            <span className="text-shine-red">underinsured.</span>
-            <br />
-            <span className="text-3xl md:text-4xl font-semibold text-secondary mt-4 block">Is yours one of them?</span>
-          </h1>
-          <p className="text-xl text-secondary max-w-lg leading-relaxed">
-            We provide RICS-regulated Reinstatement Cost Assessments. Giving you the exact figure that protects your assets.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
-              Get your RICS-Certified RCA
-            </Link>
-            <Link href="/resources" className="bg-white/50 backdrop-blur-md px-6 py-3 text-sm rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10 self-center">
-              Is My Property Underinsured?
-            </Link>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/rca-for-my-property-london-rebuild.png"
+          alt="RICS-regulated Reinstatement Cost Assessment for UK property"
+          fill
+          priority
+          className="object-cover object-right-bottom"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              <span className="text-shine-red">80%</span> of UK<br />buildings are<br /><span className="text-shine-red">underinsured.</span>
+            </h1>
+            <p className="text-xl font-semibold text-secondary mb-4 leading-snug">
+              Is yours one of them?
+            </p>
+            <p className="text-sm text-secondary leading-relaxed mb-8">
+              Certified Reinstatement Cost Assessments by <span className="whitespace-nowrap">RICS-regulated surveyors.</span>
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                Get your RICS-Certified RCA
+              </Link>
+              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
+                Is My Property Underinsured?
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -181,7 +192,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-8" id="pricing">
+      <section className="py-16 px-8 bg-zinc-50" id="pricing">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
@@ -234,7 +245,7 @@ export default function HomePage() {
                   <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
                 </div>
                 <div className="mb-8">
-                  <span className="text-5xl font-bold text-primary">£298.15</span>
+                  <span className="text-5xl font-bold text-primary">£498.15</span>
                   <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
@@ -346,10 +357,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
-              <img
+              <Image
                 className="rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWItcC8v66o-s9bC9mNHI66TaDd3NFgyOp2ibu_8afpGEuK9j9erHt0Amq7E8BKl3IhxLVcHFN8fE7GaEf_iFn8tth3VSRSmsOrH81GqWMT7ow9RgHZOoAwZ_QSVox8E2GiZxblnD_FmK2Z5AMVuC-tcfKvRXFcLa-DSjLtruJ1xLV6XmgES9Arz03vSBpr1p2S_Xrw3HI3JP8AvkH3euKbvezG9g9-l8euF2k8PuL7vyHH8rzfKhT4erkdbWvEK8emFBYU8aPOek"
+                src="/rca-rics-surveyor.png"
                 alt="RICS-regulated surveyor conducting a reinstatement cost assessment inspection"
+                width={800}
+                height={1000}
               />
               <div className="absolute -bottom-6 -right-6 liquid-glass p-6 rounded-lg z-20 hidden md:block">
                 <div className="flex items-center gap-4">
@@ -369,19 +382,19 @@ export default function HomePage() {
                 <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
                 <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
-              <div className="space-y-8">
+              <div className="flex flex-col gap-4">
                 {[
                   { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
                   { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
                   { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={icon} className="flex gap-6">
-                    <div className="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem' }}>{icon}</span>
+                  <div key={icon} className="liquid-glass flex items-center gap-4 px-5 py-4 rounded-full border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_16px_2px_rgba(26,107,74,0.12)] transition-all duration-300">
+                    <div className="btn-shine shrink-0 w-9 h-9 rounded-full flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1rem' }}>{icon}</span>
                     </div>
                     <div>
-                      <h4 className="font-bold text-xl mb-2 text-[#1A6B4A]">{title}</h4>
-                      <p className="text-secondary">{desc}</p>
+                      <p className="font-bold text-sm text-primary">{title}</p>
+                      <p className="text-xs text-secondary leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}

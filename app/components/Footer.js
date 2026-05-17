@@ -5,10 +5,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#0A0A0F] text-zinc-500 pt-20 pb-10 px-6 md:px-12 rounded-t-[24px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="space-y-6">
+        <div className="space-y-4">
           <div className="text-lg font-bold text-white uppercase tracking-widest">Reinstatement Cost Assessment</div>
           <p className="text-sm leading-relaxed">
             Providing the standard for building reinstatement valuations across the UK insurance market.
+          </p>
+          <p className="text-xs leading-relaxed">
+            Reinstatement Cost Assessment Limited<br />Company Number 17101918
           </p>
         </div>
         <div>

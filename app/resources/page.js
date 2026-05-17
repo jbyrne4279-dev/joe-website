@@ -107,7 +107,7 @@ export default function ResourcesPage() {
         {/* Hero */}
         <section className="py-24 lg:py-32 flex flex-col items-center text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 block">Expert Insight Guide</span>
-          <h1 className="text-5xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
             <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
           </h1>
           <p className="text-lg text-secondary max-w-2xl leading-relaxed mb-12">
@@ -279,39 +279,24 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Best Practice</span>
             <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Reinstatement Cost Assessment Lifecycle.</span></h2>
           </div>
-          <div className="liquid-glass p-12 rounded-2xl sovereign-shadow border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] max-w-2xl mx-auto">
-            <div className="flex flex-col">
+          <div className="max-w-2xl mx-auto">
+            <div className="relative flex flex-col gap-0">
+              <div className="absolute left-5 top-5 bottom-5 w-0.5 bg-[#1A6B4A]/15" aria-hidden="true" />
               {[
-                { side: 'right', icon: 'flag', title: 'Baseline RCA', desc: 'Full site or desktop professional valuation.', bold: true },
-                { side: 'left', icon: 'update', title: 'Annual Indexation', desc: 'Adjusted by policy indexation rates.', bold: false },
-                { side: 'right', icon: 'trending_up', title: 'Annual Indexation', desc: 'Continued monitoring of inflation.', bold: false },
-                { side: 'left', icon: 'restart_alt', title: 'Major Re-evaluation', desc: 'RICS recommends a full review every 3 years.', bold: true },
-              ].map(({ side, icon, title, desc, bold }, i) => (
-                <div key={i}>
-                  <div className="grid grid-cols-[1fr_40px_1fr] items-center gap-6">
-                    {side === 'left' ? (
-                      <div className="text-right">
-                        <p className={`${bold ? 'font-bold' : 'font-semibold'} text-primary text-sm`}>{title}</p>
-                        <p className="text-xs text-secondary mt-1 leading-relaxed">{desc}</p>
-                      </div>
-                    ) : <div />}
-                    <div className="w-10 h-10 rounded-full bg-[#1A6B4A]/10 border-2 border-[#1A6B4A]/40 flex items-center justify-center">
-                      <span className="material-symbols-outlined" style={{ fontSize: '1rem', background: 'linear-gradient(105deg,#1A6B4A 40%,#4ade80 50%,#1A6B4A 60%)', backgroundSize: '200% auto', animation: 'shine 3s linear infinite', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>{icon}</span>
-                    </div>
-                    {side === 'right' ? (
-                      <div>
-                        <p className={`${bold ? 'font-bold' : 'font-semibold'} text-primary text-sm`}>{title}</p>
-                        <p className="text-xs text-secondary mt-1 leading-relaxed">{desc}</p>
-                      </div>
-                    ) : <div />}
+                { icon: 'flag', label: 'Step 1', title: 'Baseline RCA', desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.', bold: true },
+                { icon: 'update', label: 'Year 1', title: 'Annual Index Update', desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.', bold: false },
+                { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.', bold: false },
+                { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation', desc: 'RICS recommends a full reassessment every 3 years to maintain full compliance.', bold: true },
+              ].map(({ icon, label, title, desc, bold }, i) => (
+                <div key={i} className="relative flex items-start gap-6 pb-10 last:pb-0">
+                  <div className="relative z-10 shrink-0 w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#1A6B4A]/40 bg-white shadow-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1rem' }}>{icon}</span>
                   </div>
-                  {i < 3 && (
-                    <div className="grid grid-cols-[1fr_40px_1fr]">
-                      <div />
-                      <div className="flex justify-center"><div className="w-0.5 h-8 bg-outline-variant/30"></div></div>
-                      <div />
-                    </div>
-                  )}
+                  <div className="liquid-glass rounded-2xl px-6 py-5 flex-1 border border-[#1A6B4A]/20 shadow-[0_2px_12px_rgba(26,107,74,0.07)] hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_20px_rgba(26,107,74,0.12)] transition-all duration-300">
+                    <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">{label}</span>
+                    <p className={`${bold ? 'font-bold text-base' : 'font-semibold text-sm'} text-primary mb-1`}>{title}</p>
+                    <p className="text-xs text-secondary leading-relaxed">{desc}</p>
+                  </div>
                 </div>
               ))}
             </div>

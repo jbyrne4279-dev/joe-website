@@ -21,7 +21,7 @@ export default function Navbar() {
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
           <span className="logo-shine">
             <Image
-              src="/rca_logo.png"
+              src="/rca-logo-reinstatement-cost-assessment.png"
               alt="RCA Ltd – Reinstatement Cost Assessment specialists"
               width={80}
               height={64}
@@ -53,7 +53,7 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center gap-4">
+        <div className="hidden md:flex flex-1 justify-end items-center">
           <Image
             src="/rics-logo.png"
             alt="Regulated by RICS"
@@ -61,13 +61,6 @@ export default function Navbar() {
             height={600}
             className="h-11 lg:h-12 w-auto object-contain"
           />
-          <span className="h-7 w-px bg-zinc-300" aria-hidden="true" />
-          <Link
-            href="/contact#contact-form"
-            className="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"
-          >
-            Get your RICS-Certified RCA
-          </Link>
         </div>
 
         <div className="md:hidden flex flex-1 justify-end items-center gap-3">

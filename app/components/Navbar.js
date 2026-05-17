@@ -66,7 +66,7 @@ export default function Navbar() {
             href="/contact#contact-form"
             className="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform"
           >
-            Get a Quote
+            Get your RICS-Certified RCA
           </Link>
         </div>
 
@@ -112,13 +112,6 @@ export default function Navbar() {
                 </Link>
               )
             })}
-            <Link
-              href="/contact#contact-form"
-              onClick={() => setOpen(false)}
-              className="mt-3 btn-shine text-white text-center px-8 py-3 rounded-full font-semibold active:scale-[0.97] transition-transform"
-            >
-              Get a Quote
-            </Link>
           </div>
         </div>
       )}

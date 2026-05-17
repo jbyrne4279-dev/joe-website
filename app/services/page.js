@@ -116,9 +116,9 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span className="text-shine-red">Insurers profit</span> from your<br /><span className="text-shine-red">underinsurance.</span><br />
-              <span style={{ fontSize: '0.75em' }}>We don&rsquo;t let them.</span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight text-primary mb-6">
+              <span className="text-shine-red">Insurers profit</span> from your <span className="text-shine-red">underinsurance.</span><br />
+              <span style={{ fontSize: '0.85em' }}>We don&rsquo;t let them.</span>
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
               Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS-regulated RCA gives you the one figure that keeps your insurer honest.

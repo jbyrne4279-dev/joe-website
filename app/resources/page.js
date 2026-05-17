@@ -3,15 +3,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Guide | UK Underinsurance',
+    absolute: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
   },
   description:
-    'What is a Reinstatement Cost Assessment? Learn how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured in the UK.',
+    'What is a Reinstatement Cost Assessment? London RICS surveyors explain how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured across the UK.',
   alternates: { canonical: '/resources' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment Guide | UK Underinsurance',
+    title: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
     description:
-      'Understand Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and why RICS regulation matters.',
+      'Understand Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and why RICS regulation matters for London and UK property owners.',
     url: '/resources',
   },
 }
@@ -322,7 +322,7 @@ export default function ResourcesPage() {
       <ContactSection
         heading={
           <>
-            Get in <span className="text-shine">Contact.</span>
+            Get an Accurate <span className="text-shine">Reinstatement Cost Assessment</span> for Your UK Property.
           </>
         }
       />

@@ -104,7 +104,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Get in <span className="text-shine">Contact.</span>
+            Request Your UK <span className="text-shine">Rebuild Cost Assessment</span> — RICS from £210.
           </>
         }
       />

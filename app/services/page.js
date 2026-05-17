@@ -4,15 +4,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Services & Pricing | RCA Ltd',
+    absolute: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
   },
   description:
-    'Desktop Reinstatement Cost Assessment from £210. On-Site Rebuild Cost Survey from £675. 3-Year Protection from £298. All RICS-regulated, BCIS-certified, broker-ready.',
+    'London-based RICS surveyor. Desktop Reinstatement Cost Assessment from £210. On-Site Rebuild Cost Survey from £675. 3-Year Protection from £298. BCIS-certified, broker-ready across the UK.',
   alternates: { canonical: '/services' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment Services & Pricing | RCA Ltd',
+    title: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
     description:
-      'Compare Reinstatement Cost Assessment services: Desktop, On-Site Survey, and 3-Year Protection. All RICS-regulated and broker-ready in 48 hours.',
+      'Compare Reinstatement Cost Assessment services from a London RICS surveyor: Desktop, On-Site Survey, and 3-Year Protection. Broker-ready in 48 hours.',
     url: '/services',
   },
 }
@@ -287,7 +287,7 @@ export default function ServicesPage() {
       <ContactSection
         heading={
           <>
-            Get in <span className="text-shine">Contact.</span>
+            Start Your RICS-Certified <span className="text-shine">Rebuild Cost Assessment</span> Today.
           </>
         }
       />

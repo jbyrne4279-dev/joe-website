@@ -5,15 +5,15 @@ import FaqSection from './components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement & Rebuild Cost Assessment UK | RICS from £210',
+    absolute: 'Reinstatement Cost Assessment London & UK | RICS from £210',
   },
   description:
-    'Get a RICS-regulated Reinstatement Cost Assessment (Rebuild Cost Assessment) from £210. Delivered in 48 hours across the UK. Protect your buildings insurance today.',
+    'London-based RICS-regulated Reinstatement Cost Assessment (Rebuild Cost Assessment) from £210. Delivered in 48 hours across London and the UK. Protect your buildings insurance today.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement & Rebuild Cost Assessment UK | RICS from £210',
+    title: 'Reinstatement Cost Assessment London & UK | RICS from £210',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. London-based RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
     url: '/',
   },
 }
@@ -54,7 +54,12 @@ const organizationJsonLd = {
     postalCode: 'W1S 1BN',
     addressCountry: 'GB',
   },
-  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  areaServed: [
+    { '@type': 'Country', name: 'United Kingdom' },
+    { '@type': 'City', name: 'London' },
+    { '@type': 'AdministrativeArea', name: 'Greater London' },
+    { '@type': 'AdministrativeArea', name: 'South East England' },
+  ],
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 51.5120,
@@ -124,7 +129,7 @@ export default function HomePage() {
               Get your RICS-Certified RCA
             </Link>
             <Link href="/resources" className="bg-white/50 backdrop-blur-md px-6 py-3 text-sm rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10 self-center">
-              Do I need a RCA?
+              Is My Property Underinsured?
             </Link>
           </div>
         </div>
@@ -171,6 +176,115 @@ export default function HomePage() {
                 <p className="text-secondary">{desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16 px-8" id="pricing">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 space-y-4">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
+            <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+          </div>
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
+
+              {/* Desktop Assessment */}
+              <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+                <div className="mb-8">
+                  <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
+                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary">Desktop Assessment</h3>
+                  <p className="text-secondary text-sm">Efficient, data-driven remote valuation.</p>
+                </div>
+                <div className="mb-8">
+                  <span className="text-4xl font-bold text-primary">£210.00</span>
+                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT per assessment</span>
+                </div>
+                <ul className="space-y-4 mb-10 flex-grow">
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="text-secondary">Rapid 5-day turnaround</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="text-secondary">Remote data modelling</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-outline-variant text-lg">cancel</span>
+                    <span className="text-secondary">Site visit not included</span>
+                  </li>
+                </ul>
+                <Link href="/contact#contact-form" className="w-full py-4 bg-[#1A6B4A] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+              </div>
+
+              {/* 3-Year Protection */}
+              <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+                <div className="absolute top-6 right-6">
+                  <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                </div>
+                <div className="mb-8">
+                  <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
+                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
+                  <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
+                </div>
+                <div className="mb-8">
+                  <span className="text-5xl font-bold text-primary">£298.15</span>
+                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
+                </div>
+                <ul className="space-y-4 mb-10 flex-grow">
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">update</span>
+                    <span className="text-secondary">Automated annual updates</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">security</span>
+                    <span className="text-secondary">3-year valuation compliance</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">analytics</span>
+                    <span className="text-secondary">Advanced market index tracking</span>
+                  </li>
+                </ul>
+                <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Protect Now</Link>
+              </div>
+
+              {/* On-Site Survey */}
+              <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+                <div className="mb-8">
+                  <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
+                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary">On-Site Survey</h3>
+                  <p className="text-secondary text-sm">Precision for complex structures.</p>
+                </div>
+                <div className="mb-8">
+                  <span className="text-sm font-bold uppercase tracking-widest text-secondary block mb-1">Starts from</span>
+                  <span className="text-4xl font-bold text-primary">£675.00</span>
+                </div>
+                <ul className="space-y-4 mb-10 flex-grow">
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="text-secondary">Full physical property inspection</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="text-secondary">Complex architectural modelling</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-sm">
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="text-secondary">Expert surveyor consultancy</span>
+                  </li>
+                </ul>
+                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#1A6B4A] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -312,7 +426,7 @@ export default function HomePage() {
       <ContactSection
         heading={
           <>
-            Get in <span className="text-shine">Contact.</span>
+            Get Your RICS-Regulated <span className="text-shine">Reinstatement Cost Assessment</span> Today.
           </>
         }
       />

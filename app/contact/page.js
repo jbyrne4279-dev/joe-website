@@ -4,15 +4,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Get a Reinstatement Cost Assessment | RCA Ltd London',
+    absolute: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd London & UK',
   },
   description:
-    'Instruct a RICS-regulated Reinstatement Cost Assessment online. Rebuild cost reports from £210, delivered in 48 hours. London-based. 24-hour response guaranteed.',
+    'Instruct a RICS Reinstatement Cost Assessment from £210. RICS-regulated surveyors covering London and the UK. 24-hour response, broker-ready rebuild cost reports delivered in 48 hours.',
   alternates: { canonical: '/contact' },
   openGraph: {
-    title: 'Get a Reinstatement Cost Assessment | RCA Ltd London',
+    title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd London & UK',
     description:
-      'Book a RICS-regulated Reinstatement Cost Assessment. Desktop rebuild cost reports from £210, on-site surveys from £675. 24-hour response guarantee.',
+      'Book a RICS Reinstatement Cost Assessment from £210. Desktop rebuild cost reports and on-site surveys from a RICS-regulated surveyor. 24-hour response guaranteed.',
     url: '/contact',
   },
 }

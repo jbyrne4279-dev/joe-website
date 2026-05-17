@@ -5,15 +5,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
+    absolute: 'RICS Reinstatement Cost Assessment Guide | UK Underinsurance Explained',
   },
   description:
-    'What is a Reinstatement Cost Assessment? London RICS surveyors explain how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured across the UK.',
+    'What is a RICS Reinstatement Cost Assessment? Expert guide to rebuild cost valuations, the Averaging Clause, and why a RICS-regulated RCA protects UK property owners from underinsurance.',
   alternates: { canonical: '/resources' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
+    title: 'RICS Reinstatement Cost Assessment Guide | UK Underinsurance Explained',
     description:
-      'Understand Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and why RICS regulation matters for London and UK property owners.',
+      'Understand RICS Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and how to protect your UK property from underinsurance.',
     url: '/resources',
   },
 }

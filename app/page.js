@@ -5,15 +5,15 @@ import FaqSection from './components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment London & UK | RICS from £210',
+    absolute: 'RICS Reinstatement Cost Assessment London & UK | From £210',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessment (Rebuild Cost Assessment) from £210. Delivered in 48 hours across London and the UK. Protect your buildings insurance today.',
+    'RICS Reinstatement Cost Assessment from £210, delivered in 48 hours. RICS-regulated surveyors provide accurate rebuild cost valuations for residential, commercial and listed buildings across the UK.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment London & UK | RICS from £210',
+    title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
     description:
-      '80% of UK buildings are underinsured. London-based RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. Get a RICS Reinstatement Cost Assessment from £210 — accurate rebuild cost valuations delivered in 48 hours.',
     url: '/',
   },
 }

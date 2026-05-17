@@ -5,15 +5,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
+    absolute: 'RICS Reinstatement Cost Assessment Services London & UK | RCA Ltd',
   },
   description:
-    'London-based RICS surveyor. Desktop Reinstatement Cost Assessment from £210. On-Site Rebuild Cost Survey from £675. 3-Year Protection from £298. BCIS-certified, broker-ready across the UK.',
+    'RICS Reinstatement Cost Assessment services from £210. Desktop RCA, On-Site Rebuild Cost Survey, and 3-Year Protection Plan. BCIS-indexed, broker-ready reports by RICS-regulated surveyors across the UK.',
   alternates: { canonical: '/services' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
+    title: 'RICS Reinstatement Cost Assessment Services London & UK | RCA Ltd',
     description:
-      'Compare Reinstatement Cost Assessment services from a London RICS surveyor: Desktop, On-Site Survey, and 3-Year Protection. Broker-ready in 48 hours.',
+      'Compare RICS Reinstatement Cost Assessment services: Desktop RCA from £210, On-Site Survey from £675, and 3-Year Protection. Broker-ready in 48 hours.',
     url: '/services',
   },
 }

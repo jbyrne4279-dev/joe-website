@@ -8,12 +8,12 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment London & UK | From £210',
   },
   description:
-    'RICS Reinstatement Cost Assessment from £210, delivered in 48 hours. RICS-regulated surveyors provide accurate rebuild cost valuations for residential, commercial and listed buildings across the UK.',
+    'RICS-certified surveyors specialising in Reinstatement Cost Assessments across the UK. Get an accurate rebuild cost valuation from £210, delivered in 48 hours. Trusted by UK insurers and brokers.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
     description:
-      '80% of UK buildings are underinsured. Get a RICS Reinstatement Cost Assessment from £210 — accurate rebuild cost valuations delivered in 48 hours.',
+      'RICS-certified surveyors specialising in UK Reinstatement Cost Assessments. Accurate rebuild cost valuations from £210, delivered in 48 hours.',
     url: '/',
   },
 }

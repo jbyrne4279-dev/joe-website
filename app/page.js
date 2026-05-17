@@ -298,56 +298,61 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* The Problem Section */}
-      <section className="py-24 px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="liquid-glass rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16 border border-[#1A6B4A]/30 shadow-[0_0_40px_6px_rgba(26,107,74,0.10)] sovereign-shadow">
-            <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.08)' }}></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.06)' }}></div>
-
-            <div className="md:w-1/2 space-y-6 relative z-10">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
-                The Risk of <span className="text-[#991b1b]">Underinsurance.</span>
-              </h2>
-              <p className="text-lg text-secondary leading-relaxed">
-                Recent data suggests that over <span className="font-semibold text-primary">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
-              </p>
-              <div className="grid grid-cols-2 gap-8 pt-4">
-                <div className="space-y-2">
-                  <span className="text-4xl font-bold text-shine-red">£425bn</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Estimated Gap</p>
-                </div>
-                <div className="space-y-2">
-                  <span className="text-4xl font-bold text-shine-red">80%+</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Underinsured</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="md:w-1/2 space-y-5 relative z-10">
-              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-red-400 text-xl">report</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-primary mb-1">Financial Consequences</h4>
-                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
-                </div>
-              </div>
-              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
-                </div>
-              </div>
+        {/* Comparison Table */}
+        <div className="max-w-5xl mx-auto px-2 sm:px-6 mt-16">
+          <div className="text-center mb-8 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
+            <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
+          </div>
+          <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm" style={{ minWidth: '560px' }}>
+                <thead>
+                  <tr className="bg-[#1A6B4A]">
+                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
+                      <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
+                      3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
+                    </th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-zinc-100">
+                  {[
+                    { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
+                    { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
+                    { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
+                    { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
+                    { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
+                    { feature: 'Professional indemnity backed', desktop: true, protect: true, onsite: true },
+                    { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
+                    { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
+                    { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
+                    { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
+                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
+                  ].map(({ feature, desktop, protect, onsite }, i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
+                      <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
+                      {[desktop, protect, onsite].map((val, j) => (
+                        <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
+                          {val === true ? (
+                            <span className="material-symbols-outlined text-[#1A6B4A] text-lg leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                          ) : val === false ? (
+                            <span className="material-symbols-outlined text-zinc-300 text-lg leading-none">cancel</span>
+                          ) : (
+                            <span className="text-secondary text-xs font-medium leading-snug block">{val}</span>
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
+          <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
         </div>
       </section>
 
@@ -398,6 +403,57 @@ export default function HomePage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Problem Section */}
+      <section className="py-24 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="liquid-glass rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16 border border-[#1A6B4A]/30 shadow-[0_0_40px_6px_rgba(26,107,74,0.10)] sovereign-shadow">
+            <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.08)' }}></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.06)' }}></div>
+
+            <div className="md:w-1/2 space-y-6 relative z-10">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
+                The Risk of <span className="text-[#991b1b]">Underinsurance.</span>
+              </h2>
+              <p className="text-lg text-secondary leading-relaxed">
+                Recent data suggests that over <span className="font-semibold text-primary">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
+              </p>
+              <div className="grid grid-cols-2 gap-8 pt-4">
+                <div className="space-y-2">
+                  <span className="text-4xl font-bold text-shine-red">£425bn</span>
+                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Estimated Gap</p>
+                </div>
+                <div className="space-y-2">
+                  <span className="text-4xl font-bold text-shine-red">80%+</span>
+                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Underinsured</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:w-1/2 space-y-5 relative z-10">
+              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-red-400 text-xl">report</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-primary mb-1">Financial Consequences</h4>
+                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
+                </div>
+              </div>
+              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
+                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
+                </div>
               </div>
             </div>
           </div>

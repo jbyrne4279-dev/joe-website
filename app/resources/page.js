@@ -141,7 +141,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Overinsured in rural areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth <strong className="font-bold text-primary">£800k</strong> may cost only <strong className="font-bold text-primary">£320k</strong> to rebuild. You could be paying premiums on a <strong className="font-bold text-primary">£480k</strong> fiction.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild. You could be paying premiums on a £480k fiction.</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth <strong className="font-bold text-primary">£350k</strong> could cost <strong className="font-bold text-primary">£510k</strong> to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
@@ -160,7 +160,7 @@ export default function ResourcesPage() {
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">A RICS-regulated RCA eliminates the guesswork</p>
+                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] hover:underline">RICS-regulated RCA</a> eliminates the guesswork</p>
                   <p className="text-secondary text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function ResourcesPage() {
         <section className="py-20 bg-surface-container-low -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-lg">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">The <span className="text-shine-yellow">&ldquo;Averaging Clause&rdquo;</span> Trap.</h2>
-            <p className="text-secondary text-lg">If you are underinsured by <strong className="font-bold text-primary">40%</strong>, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by <strong className="font-bold text-primary">40%</strong>.</p>
+            <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="liquid-glass p-10 rounded-lg sovereign-shadow flex flex-col justify-between">
@@ -197,7 +197,7 @@ export default function ResourcesPage() {
             <div className="bg-primary text-on-primary p-10 rounded-lg sovereign-shadow flex flex-col justify-center">
               <span className="material-symbols-outlined text-4xl mb-6">account_balance_wallet</span>
               <h3 className="text-2xl font-bold mb-4">The Payout Result</h3>
-              <p className="text-on-primary-container mb-8">Even if you have a claim for <strong className="font-bold">£100,000</strong>, the insurer applies the <strong className="font-bold">40%</strong> reduction based on your total underinsurance.</p>
+              <p className="text-on-primary-container mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
               <div className="bg-white/10 p-6 rounded-lg">
                 <span className="text-sm uppercase tracking-widest opacity-60">You receive only</span>
                 <div className="text-4xl font-black mt-1">£60,000</div>
@@ -216,7 +216,7 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Rising Costs</span>
             <h2 className="text-4xl font-bold text-primary leading-tight"><span className="text-shine-red">The Surge</span> in Construction Materials.</h2>
             <p className="text-secondary leading-relaxed">
-              Global supply chain volatility and labour shortages have pushed rebuild costs up by <strong className="font-bold text-primary">over 25%</strong> since <span className="font-semibold text-primary">2019</span>. If your valuation hasn&rsquo;t been updated since <span className="font-semibold text-primary">2021</span>, you are almost certainly underinsured today.
+              Global supply chain volatility and labour shortages have pushed rebuild costs up by over 25% since 2019. If your valuation hasn&rsquo;t been updated since 2021, you are almost certainly underinsured today.
             </p>
           </div>
 
@@ -253,7 +253,9 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
             <p className="text-secondary leading-relaxed">
-              Reinstatement Cost Assessment Ltd is a RICS Regulated firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
+              Reinstatement Cost Assessment Ltd is a{' '}
+              <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] hover:underline font-medium">RICS Regulated</a>{' '}
+              firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -286,7 +288,7 @@ export default function ResourcesPage() {
                 { icon: 'flag', label: 'Step 1', title: 'Baseline RCA', desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.', bold: true },
                 { icon: 'update', label: 'Year 1', title: 'Annual Index Update', desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.', bold: false },
                 { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.', bold: false },
-                { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation', desc: 'RICS recommends a full reassessment every 3 years to maintain full compliance.', bold: true },
+                { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation', desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.', bold: true },
               ].map(({ icon, label, title, desc, bold }, i) => (
                 <div key={i} className="relative flex items-start gap-6 pb-10 last:pb-0">
                   <div className="relative z-10 shrink-0 w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#1A6B4A]/40 bg-white shadow-sm">

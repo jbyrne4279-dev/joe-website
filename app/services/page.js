@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -102,21 +103,31 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }}
       />
     <main>
-      <div className="max-w-7xl mx-auto px-8">
-
       {/* Hero */}
-      <section className="py-16 md:py-24 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block" style={{ letterSpacing: '0.3em' }}>Our Services</span>
-        <h1 className="text-3xl sm:text-4xl md:text-[5rem] font-bold tracking-tight text-primary" style={{ lineHeight: '1.08' }}>
-          <span className="text-shine-red">Insurers profit</span> from<br /><span className="text-shine-red">your underinsurance.</span>
-          <br />
-          <span className="text-shine-slow" style={{ fontSize: '0.85em' }}>We don&rsquo;t let them.</span>
-        </h1>
-        <div className="w-12 h-0.5" aria-hidden="true"></div>
-        <p className="text-lg text-secondary max-w-md leading-relaxed">
-          Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS-regulated RCA gives you the one figure that keeps your insurer honest.
-        </p>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/reinstatement-cost-assessment-uk.png"
+          alt="RICS-regulated Reinstatement Cost Assessment services across the UK"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              <span className="text-shine-red">Insurers profit</span> from your<br /><span className="text-shine-red">underinsurance.</span><br />
+              <span style={{ fontSize: '0.75em' }}>We don&rsquo;t let them.</span>
+            </h1>
+            <p className="text-sm text-secondary leading-relaxed mb-8">
+              Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS-regulated RCA gives you the one figure that keeps your insurer honest.
+            </p>
+          </div>
+        </div>
       </section>
+
+      <div className="max-w-7xl mx-auto px-8">
 
       {/* Which service */}
       <section className="py-16" id="which">
@@ -148,17 +159,17 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Grid */}
-      <section className="py-16" id="pricing">
+      <section className="py-16 bg-[#1A6B4A] rounded-3xl mx-4 md:mx-8" id="pricing">
         <div className="text-center mb-10 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
-          <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
-          <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+          <span className="text-xs font-bold uppercase tracking-widest text-white/70 block">Pricing</span>
+          <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
+          <p className="text-white/70 max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
         </div>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
 
             {/* Desktop Assessment */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div className="bg-white rounded-2xl p-10 flex flex-col shadow-lg hover:shadow-xl transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -168,19 +179,19 @@ export default function ServicesPage() {
               </div>
               <div className="mb-8">
                 <span className="text-4xl font-bold text-primary">£210.00</span>
-                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT per assessment</span>
+                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">VAT Included</span>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">bolt</span>
                   <span className="text-secondary">Rapid 5-day turnaround</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">dataset</span>
                   <span className="text-secondary">Remote data modelling</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-outline-variant text-lg">cancel</span>
+                  <span className="material-symbols-outlined text-zinc-400 text-lg">location_off</span>
                   <span className="text-secondary">Site visit not included</span>
                 </li>
               </ul>
@@ -188,7 +199,7 @@ export default function ServicesPage() {
             </div>
 
             {/* 3-Year Protection */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+            <div className="bg-white rounded-2xl p-10 flex flex-col relative shadow-2xl scale-105">
               <div className="absolute top-6 right-6">
                 <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
               </div>
@@ -197,11 +208,11 @@ export default function ServicesPage() {
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
-                <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
+                <p className="text-secondary text-sm">Desktop RCA included — plus 3 years of annual compliance updates.</p>
               </div>
               <div className="mb-8">
                 <span className="text-5xl font-bold text-primary">£498.15</span>
-                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
+                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">VAT Included</span>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
@@ -221,7 +232,7 @@ export default function ServicesPage() {
             </div>
 
             {/* On-Site Survey */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div className="bg-white rounded-2xl p-10 flex flex-col shadow-lg hover:shadow-xl transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -230,20 +241,20 @@ export default function ServicesPage() {
                 <p className="text-secondary text-sm">Precision for complex structures.</p>
               </div>
               <div className="mb-8">
-                <span className="text-sm font-bold uppercase tracking-widest text-secondary block mb-1">Starts from</span>
                 <span className="text-4xl font-bold text-primary">£675.00</span>
+                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">Starts from · VAT Included</span>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">fact_check</span>
                   <span className="text-secondary">Full physical property inspection</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">architecture</span>
                   <span className="text-secondary">Complex architectural modelling</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">support_agent</span>
                   <span className="text-secondary">Expert surveyor consultancy</span>
                 </li>
               </ul>

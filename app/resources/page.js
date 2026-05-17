@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -102,26 +104,31 @@ export default function ResourcesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesFaqJsonLd) }}
       />
     <main>
-      <div className="max-w-5xl mx-auto px-8">
-
-        {/* Hero */}
-        <section className="py-24 lg:py-32 flex flex-col items-center text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 block">Expert Insight Guide</span>
-          <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
-            <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
-          </h1>
-          <p className="text-lg text-secondary max-w-2xl leading-relaxed mb-12">
-            In a rapidly shifting economy, the gap between what a building is worth and what it costs to rebuild is widening at an alarming rate. Discover why your current valuation might be leaving you dangerously exposed.
-          </p>
-          <div className="w-full h-[400px] rounded-2xl overflow-hidden relative sovereign-shadow">
-            <img
-              className="w-full h-full object-cover opacity-90"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuALOMaU4yAO0fABDemBrPwIW0_JHcg5OCUfDCMgrVnZfZMHPdmT_UxkLb4VH-nCQaLW11YFCFg9voqLjC25o9B2GI89LFrZExDjKVvoCm5QrpahvM2W_qQdNDaJnxc-B-d6CSLkebPqSlNLFOwgIsozfCOc0LxX2-ogBKGB57cebbKp3u4T-W8NGtEdynuZhsleRozYnKGxhyPvQaBbot6EX5zIE0p1c2JH1GQsMOcTsxgBc1PINPZoKGlpyPIU3PtwWB3Fg4n1IL8"
-              alt="UK buildings underinsured — reinstatement cost versus market value gap explained"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+      {/* Hero */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/commercial-reinstatement-cost-assessment-london.png"
+          alt="Commercial reinstatement cost assessment UK — the quiet crisis in buildings insurance"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-4">Expert Insight Guide</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              <span className="text-shine-red">The quiet crisis</span><br />in buildings<br /><span className="text-shine">insurance.</span>
+            </h1>
+            <p className="text-sm text-secondary leading-relaxed">
+              In a rapidly shifting economy, the gap between what a building is worth and what it costs to rebuild is widening at an alarming rate. Discover why your current valuation might be leaving you dangerously exposed.
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
+
+      <div className="max-w-5xl mx-auto px-8" id="guide">
 
         {/* Market Value vs Rebuild Cost */}
         <section className="py-20 flex flex-col items-center text-center max-w-2xl mx-auto">
@@ -282,19 +289,18 @@ export default function ResourcesPage() {
             <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Reinstatement Cost Assessment Lifecycle.</span></h2>
           </div>
           <div className="max-w-2xl mx-auto">
-            <div className="relative flex flex-col gap-0">
-              <div className="absolute left-5 top-5 bottom-5 w-0.5 bg-[#1A6B4A]/15" aria-hidden="true" />
+            <div className="relative flex flex-col gap-4">
               {[
                 { icon: 'flag', label: 'Step 1', title: 'Baseline RCA', desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.', bold: true },
                 { icon: 'update', label: 'Year 1', title: 'Annual Index Update', desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.', bold: false },
                 { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.', bold: false },
                 { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation', desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.', bold: true },
               ].map(({ icon, label, title, desc, bold }, i) => (
-                <div key={i} className="relative flex items-start gap-6 pb-10 last:pb-0">
-                  <div className="relative z-10 shrink-0 w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#1A6B4A]/40 bg-white shadow-sm">
+                <div key={i} className="liquid-glass rounded-2xl px-6 py-5 border border-[#1A6B4A]/20 shadow-[0_2px_12px_rgba(26,107,74,0.07)] hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_20px_rgba(26,107,74,0.12)] transition-all duration-300 flex items-start gap-4">
+                  <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#1A6B4A]/40 bg-white shadow-sm mt-1">
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1rem' }}>{icon}</span>
                   </div>
-                  <div className="liquid-glass rounded-2xl px-6 py-5 flex-1 border border-[#1A6B4A]/20 shadow-[0_2px_12px_rgba(26,107,74,0.07)] hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_20px_rgba(26,107,74,0.12)] transition-all duration-300">
+                  <div>
                     <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">{label}</span>
                     <p className={`${bold ? 'font-bold text-base' : 'font-semibold text-sm'} text-primary mb-1`}>{title}</p>
                     <p className="text-xs text-secondary leading-relaxed">{desc}</p>

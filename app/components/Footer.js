@@ -11,7 +11,7 @@ export default function Footer() {
             Providing the standard for building reinstatement valuations across the UK insurance market.
           </p>
           <p className="text-xs leading-relaxed">
-            Reinstatement Cost Assessment Limited<br />Company Number 17101918
+            Reinstatement Cost Assessment Limited<br /><span className="font-bold text-emerald-400">Company Number: 17101918</span>
           </p>
         </div>
         <div>

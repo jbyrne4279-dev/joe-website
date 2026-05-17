@@ -150,7 +150,7 @@ export default function HomePage() {
       <section className="bg-surface pt-12 pb-32 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
           <div className="space-y-12">
-            <div className="space-y-6">
+            <div className="space-y-6 text-center md:text-left">
               <span className="text-sm font-bold text-[#1A6B4A] uppercase tracking-[0.2em]">The Framework</span>
               <div aria-hidden="true" className="h-6" />
               <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
@@ -174,7 +174,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 mt-16 lg:mt-24">
             {[
               { step: '1', title: 'Instruct', desc: 'Provide basic property details through our secure digital portal or request an on-site survey.' },
               { step: '2', title: 'Assess', desc: <>Our experts use <strong className="font-bold text-primary">RICS-certified</strong> data to analyze structural elements, materials, and external site features.</> },
@@ -192,18 +192,18 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-8 bg-zinc-50" id="pricing">
+      <section className="py-16 px-8 bg-[#1A6B4A] rounded-3xl mx-4 md:mx-8 my-8" id="pricing">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
-            <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
-            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 block">Pricing</span>
+            <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
+            <p className="text-white/70 max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
           </div>
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
 
               {/* Desktop Assessment */}
-              <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+              <div className="bg-white rounded-2xl p-10 flex flex-col shadow-lg hover:shadow-xl transition-all duration-500">
                 <div className="mb-8">
                   <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -213,19 +213,19 @@ export default function HomePage() {
                 </div>
                 <div className="mb-8">
                   <span className="text-4xl font-bold text-primary">£210.00</span>
-                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT per assessment</span>
+                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">VAT Included</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">bolt</span>
                     <span className="text-secondary">Rapid 5-day turnaround</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">dataset</span>
                     <span className="text-secondary">Remote data modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-outline-variant text-lg">cancel</span>
+                    <span className="material-symbols-outlined text-zinc-400 text-lg">location_off</span>
                     <span className="text-secondary">Site visit not included</span>
                   </li>
                 </ul>
@@ -233,7 +233,7 @@ export default function HomePage() {
               </div>
 
               {/* 3-Year Protection */}
-              <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+              <div className="bg-white rounded-2xl p-10 flex flex-col relative shadow-2xl scale-105">
                 <div className="absolute top-6 right-6">
                   <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>
@@ -242,11 +242,11 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
-                  <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
+                  <p className="text-secondary text-sm">Desktop RCA included — plus 3 years of annual compliance updates.</p>
                 </div>
                 <div className="mb-8">
                   <span className="text-5xl font-bold text-primary">£498.15</span>
-                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
+                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">VAT Included</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
@@ -266,7 +266,7 @@ export default function HomePage() {
               </div>
 
               {/* On-Site Survey */}
-              <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+              <div className="bg-white rounded-2xl p-10 flex flex-col shadow-lg hover:shadow-xl transition-all duration-500">
                 <div className="mb-8">
                   <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -275,20 +275,20 @@ export default function HomePage() {
                   <p className="text-secondary text-sm">Precision for complex structures.</p>
                 </div>
                 <div className="mb-8">
-                  <span className="text-sm font-bold uppercase tracking-widest text-secondary block mb-1">Starts from</span>
                   <span className="text-4xl font-bold text-primary">£675.00</span>
+                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">Starts from · VAT Included</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">fact_check</span>
                     <span className="text-secondary">Full physical property inspection</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">architecture</span>
                     <span className="text-secondary">Complex architectural modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">support_agent</span>
                     <span className="text-secondary">Expert surveyor consultancy</span>
                   </li>
                 </ul>
@@ -298,59 +298,73 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Comparison Table */}
-        <div className="max-w-5xl mx-auto px-2 sm:px-6 mt-16">
+      {/* Comparison Table */}
+      <section className="py-16 px-8 bg-white">
+        <div className="max-w-5xl mx-auto px-2 sm:px-6">
           <div className="text-center mb-8 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
             <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
           </div>
-          <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm" style={{ minWidth: '560px' }}>
+          <div className="liquid-glass rounded-2xl border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] overflow-hidden">
+              <table className="w-full table-fixed text-sm">
+                <colgroup>
+                  <col style={{ width: '36%' }} />
+                  <col style={{ width: '21%' }} />
+                  <col style={{ width: '22%' }} />
+                  <col style={{ width: '21%' }} />
+                </colgroup>
                 <thead>
-                  <tr className="bg-[#1A6B4A]">
-                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
-                      <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
-                      3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
+                  <tr className="border-b border-[#1A6B4A]/20">
+                    <th className="text-left pl-4 sm:pl-6 pr-2 py-4 text-secondary font-semibold text-[0.6rem] uppercase tracking-widest align-middle">Feature</th>
+                    <th className="px-2 sm:px-4 py-4 text-center align-middle">
+                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">Desktop RCA</p>
+                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">£210</p>
                     </th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
+                    <th className="px-2 sm:px-4 py-4 text-center align-middle bg-[#1A6B4A]/5 border-x border-[#1A6B4A]/10">
+                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">3-Year Plan</p>
+                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">£498</p>
+                    </th>
+                    <th className="px-2 sm:px-4 py-4 text-center align-middle">
+                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">On-Site Survey</p>
+                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">From £675</p>
+                    </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-zinc-100">
+                <tbody className="divide-y divide-[#1A6B4A]/10">
                   {[
                     { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
                     { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
                     { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
                     { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
                     { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
-                    { feature: 'Professional indemnity backed', desktop: true, protect: true, onsite: true },
+                    { feature: 'Prof. indemnity backed', desktop: true, protect: true, onsite: true },
                     { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
                     { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
                     { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
                     { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
-                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
-                  ].map(({ feature, desktop, protect, onsite }, i) => (
-                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
-                      <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
+                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolios', onsite: 'Listed, high-value & complex' },
+                  ].map(({ feature, desktop, protect, onsite }, i) => {
+                    const isBestFor = feature === 'Best for'
+                    return (
+                    <tr key={i} className={isBestFor ? 'border-t-2 border-[#1A6B4A]/20 bg-[#1A6B4A]/5' : ''}>
+                      <td className={`pl-4 sm:pl-6 pr-2 py-3.5 leading-snug text-[0.6rem] sm:text-xs ${isBestFor ? 'font-bold text-[#1A6B4A] pt-4 pb-4' : 'font-semibold text-primary'}`}>{feature}</td>
                       {[desktop, protect, onsite].map((val, j) => (
-                        <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
+                        <td key={j} className={`px-1 sm:px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5 border-x border-[#1A6B4A]/10' : ''} ${isBestFor ? 'pt-4 pb-4' : ''}`}>
                           {val === true ? (
-                            <span className="material-symbols-outlined text-[#1A6B4A] text-lg leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                            <span className="material-symbols-outlined text-[#1A6B4A] text-base leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                           ) : val === false ? (
-                            <span className="material-symbols-outlined text-zinc-300 text-lg leading-none">cancel</span>
+                            <span className="material-symbols-outlined text-zinc-300 text-base leading-none">cancel</span>
                           ) : (
-                            <span className="text-secondary text-xs font-medium leading-snug block">{val}</span>
+                            <span className={`text-[0.6rem] sm:text-xs leading-snug block ${isBestFor ? 'font-bold text-[#1A6B4A]' : 'font-medium text-secondary'}`}>{val}</span>
                           )}
                         </td>
                       ))}
                     </tr>
-                  ))}
+                  )})}
                 </tbody>
               </table>
-            </div>
           </div>
           <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
         </div>
@@ -364,7 +378,7 @@ export default function HomePage() {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
               <Image
                 className="rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
-                src="/rca-rics-surveyor.png"
+                src="/surveyor-reinstatement-cost-assessment-rics.png"
                 alt="RICS-regulated surveyor conducting a reinstatement cost assessment inspection"
                 width={800}
                 height={1000}
@@ -384,8 +398,8 @@ export default function HomePage() {
 
             <div className="space-y-12">
               <div>
-                <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
-                <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
+                <h2 className="text-4xl font-bold tracking-tight mb-6 text-center lg:text-left">Why <span className="text-shine">RCA Ltd?</span></h2>
+                <p className="text-secondary text-lg leading-relaxed text-center lg:text-left">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
               <div className="flex flex-col gap-4">
                 {[
@@ -393,13 +407,13 @@ export default function HomePage() {
                   { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
                   { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={icon} className="liquid-glass flex items-center gap-4 px-5 py-4 rounded-full border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_16px_2px_rgba(26,107,74,0.12)] transition-all duration-300">
-                    <div className="btn-shine shrink-0 w-9 h-9 rounded-full flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1rem' }}>{icon}</span>
+                  <div key={icon} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.18)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                    <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
                     </div>
-                    <div>
-                      <p className="font-bold text-sm text-primary">{title}</p>
-                      <p className="text-xs text-secondary leading-relaxed">{desc}</p>
+                    <div className="flex-1">
+                      <p className="font-bold text-primary mb-1">{title}</p>
+                      <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -416,7 +430,7 @@ export default function HomePage() {
             <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.08)' }}></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.06)' }}></div>
 
-            <div className="md:w-1/2 space-y-6 relative z-10">
+            <div className="md:w-1/2 space-y-6 relative z-10 text-center md:text-left">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
                 The Risk of <span className="text-[#991b1b]">Underinsurance.</span>
@@ -442,8 +456,8 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-red-400 text-xl">report</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary mb-1">Financial Consequences</h4>
-                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
+                  <h4 className="font-bold text-primary mb-1">The Averaging Clause Risk</h4>
+                  <p className="text-sm text-secondary leading-relaxed">Underinsure by 20% and your insurer pays out 20% less — on every claim, every time.</p>
                 </div>
               </div>
               <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
@@ -451,8 +465,8 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-[#1A6B4A] text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
+                  <h4 className="font-bold text-primary mb-1">RICS-Regulated Protection</h4>
+                  <p className="text-sm text-secondary leading-relaxed">A RICS-regulated RCA gives you the correct rebuild figure — accepted by all UK insurers.</p>
                 </div>
               </div>
             </div>
@@ -463,11 +477,9 @@ export default function HomePage() {
       {/* Who We Serve */}
       <section className="py-24 px-8 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-            <div className="max-w-2xl">
+          <div className="text-center mb-16">
               <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who <span className="text-shine">We Serve.</span></h2>
-              <p className="text-on-surface-variant leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
-            </div>
+              <p className="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[

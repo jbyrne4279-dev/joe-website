@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -86,25 +87,36 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqJsonLd) }}
       />
     <main>
-      <div className="max-w-7xl mx-auto px-8">
-
       {/* Hero */}
-      <section className="pt-16 pb-8 md:pt-20 md:pb-10 flex flex-col items-center text-center max-w-4xl mx-auto gap-6">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block" style={{ letterSpacing: '0.3em' }}>Professional Consultation</span>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-primary leading-[1.08]">
-          Don&rsquo;t find out you&rsquo;re<br className="hidden md:block" /> <span className="text-shine-red">underinsured the hard way.</span>
-        </h1>
-        <div className="w-12 h-0.5" aria-hidden="true"></div>
-        <p className="text-xl text-secondary font-light max-w-xl leading-relaxed">
-          Over <strong className="font-bold text-primary">80%</strong> of UK properties are insured for the wrong amount. A RICS-regulated RCA takes less than <strong className="font-bold text-primary">48 hours</strong>, and could save you hundreds of thousands in an uncapped claim.
-        </p>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/rca-for-landlords-property-owners.png"
+          alt="RCA for landlords and property owners — RICS-regulated rebuild cost assessment"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-4">Professional Consultation</span>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              Don&rsquo;t find out you&rsquo;re <span className="text-shine-red">underinsured</span> the hard way.
+            </h1>
+            <p className="text-sm text-secondary leading-relaxed">
+              Over <strong className="font-bold text-primary">80%</strong> of UK properties are insured for the wrong amount. A RICS-regulated RCA takes less than <strong className="font-bold text-primary">48 hours</strong>, and could save you hundreds of thousands in an uncapped claim.
+            </p>
+          </div>
+        </div>
       </section>
 
+      <div className="max-w-7xl mx-auto px-8">
       </div>
       <ContactSection
         heading={
           <>
-            Request Your UK <span className="text-shine">Rebuild Cost Assessment</span> — RICS from £210.
+            Get Your Accurate <span className="text-shine">Rebuild Cost Assessment.</span> RICS Regulated &amp; UK Service.
           </>
         }
       />

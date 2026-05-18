@@ -208,7 +208,7 @@ export default function ServicesPage() {
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
-                <p className="text-secondary text-sm">Desktop RCA included — plus 3 years of annual compliance updates.</p>
+                <p className="text-secondary text-sm">Desktop RCA included, plus 3 years of annual compliance updates.</p>
               </div>
               <div className="mb-8">
                 <span className="text-5xl font-bold text-primary">£498.15</span>

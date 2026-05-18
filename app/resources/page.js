@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment Guide | UK Underinsurance Explained',
     description:
-      'RICS-certified surveyors explain Reinstatement Cost Assessments — rebuild cost vs market value, the Averaging Clause, and how to stay fully insured across the UK.',
+      'RICS-certified surveyors explain Reinstatement Cost Assessments: rebuild cost vs market value, the Averaging Clause, and how to stay fully insured across the UK.',
     url: '/resources',
   },
 }
@@ -108,7 +108,7 @@ export default function ResourcesPage() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/commercial-reinstatement-cost-assessment-london.png"
-          alt="Commercial reinstatement cost assessment UK — the quiet crisis in buildings insurance"
+          alt="Commercial reinstatement cost assessment UK, the quiet crisis in buildings insurance"
           fill
           priority
           className="object-cover object-center"

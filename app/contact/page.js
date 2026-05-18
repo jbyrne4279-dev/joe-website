@@ -91,7 +91,7 @@ export default function ContactPage() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/rca-for-landlords-property-owners.png"
-          alt="RCA for landlords and property owners — RICS-regulated rebuild cost assessment"
+          alt="RCA for landlords and property owners, RICS-regulated rebuild cost assessment"
           fill
           priority
           className="object-cover object-center"
@@ -116,7 +116,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Get Your Accurate <span className="text-shine">Rebuild Cost Assessment.</span> RICS Regulated &amp; UK Service.
+            Get Your Accurate <span className="text-shine">Rebuild Cost Assessment.</span> RICS Regulated.
           </>
         }
       />

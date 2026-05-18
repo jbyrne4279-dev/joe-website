@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
@@ -242,7 +242,7 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
-                  <p className="text-secondary text-sm">Desktop RCA included — plus 3 years of annual compliance updates.</p>
+                  <p className="text-secondary text-sm">Desktop RCA included, plus 3 years of annual compliance updates.</p>
                 </div>
                 <div className="mb-8">
                   <span className="text-5xl font-bold text-primary">£498.15</span>
@@ -298,8 +298,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
-
       </section>
 
       {/* Every Assessment Includes */}
@@ -418,7 +416,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">The Averaging Clause Risk</h4>
-                  <p className="text-sm text-secondary leading-relaxed">Underinsure by 20% and your insurer pays out 20% less — on every claim, every time.</p>
+                  <p className="text-sm text-secondary leading-relaxed">Underinsure by 20% and your insurer pays out 20% less, on every claim, every time.</p>
                 </div>
               </div>
               <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
@@ -427,7 +425,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">RICS-Regulated Protection</h4>
-                  <p className="text-sm text-secondary leading-relaxed">A RICS-regulated RCA gives you the correct rebuild figure — accepted by all UK insurers.</p>
+                  <p className="text-sm text-secondary leading-relaxed">A RICS-regulated RCA gives you the correct rebuild figure, accepted by all UK insurers.</p>
                 </div>
               </div>
             </div>

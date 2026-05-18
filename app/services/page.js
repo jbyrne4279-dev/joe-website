@@ -265,6 +265,62 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Comparison Table */}
+      <div className="max-w-5xl mx-auto px-2 sm:px-6 mt-16">
+        <div className="text-center mb-8 space-y-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
+          <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
+        </div>
+        <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm" style={{ minWidth: '560px' }}>
+              <thead>
+                <tr className="bg-[#1A6B4A]">
+                  <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
+                  <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
+                  <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
+                    <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
+                    3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
+                  </th>
+                  <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-zinc-100">
+                {[
+                  { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
+                  { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
+                  { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
+                  { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
+                  { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
+                  { feature: 'Professional indemnity backed', desktop: true, protect: true, onsite: true },
+                  { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
+                  { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
+                  { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
+                  { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
+                  { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
+                ].map(({ feature, desktop, protect, onsite }, i) => (
+                  <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
+                    <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
+                    {[desktop, protect, onsite].map((val, j) => (
+                      <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
+                        {val === true ? (
+                          <span className="material-symbols-outlined text-[#1A6B4A] text-lg leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                        ) : val === false ? (
+                          <span className="material-symbols-outlined text-zinc-300 text-lg leading-none">cancel</span>
+                        ) : (
+                          <span className="text-secondary text-xs font-medium leading-snug block">{val}</span>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
+      </div>
+
       {/* What's included */}
       <section className="py-16 bg-surface-container-low rounded-2xl px-8 md:px-12 mt-8">
         <div className="text-center mb-10 space-y-4">

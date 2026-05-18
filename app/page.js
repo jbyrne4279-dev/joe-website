@@ -300,73 +300,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Comparison Table */}
-      <section className="py-16 px-8 bg-white">
-        <div className="max-w-5xl mx-auto px-2 sm:px-6">
-          <div className="text-center mb-8 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
-            <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
-          </div>
-          <div className="liquid-glass rounded-2xl border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] overflow-hidden">
-              <table className="w-full table-fixed text-sm">
-                <colgroup>
-                  <col style={{ width: '36%' }} />
-                  <col style={{ width: '21%' }} />
-                  <col style={{ width: '22%' }} />
-                  <col style={{ width: '21%' }} />
-                </colgroup>
-                <thead>
-                  <tr className="border-b border-[#1A6B4A]/20">
-                    <th className="text-left pl-4 sm:pl-6 pr-2 py-4 text-secondary font-semibold text-[0.6rem] uppercase tracking-widest align-middle">Feature</th>
-                    <th className="px-2 sm:px-4 py-4 text-center align-middle">
-                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">Desktop RCA</p>
-                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">£210</p>
-                    </th>
-                    <th className="px-2 sm:px-4 py-4 text-center align-middle bg-[#1A6B4A]/5 border-x border-[#1A6B4A]/10">
-                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">3-Year Plan</p>
-                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">£498</p>
-                    </th>
-                    <th className="px-2 sm:px-4 py-4 text-center align-middle">
-                      <p className="text-primary font-bold text-[0.6rem] sm:text-xs leading-snug">On-Site Survey</p>
-                      <p className="text-[#1A6B4A] font-bold text-[0.6rem] sm:text-xs">From £675</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#1A6B4A]/10">
-                  {[
-                    { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
-                    { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
-                    { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
-                    { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
-                    { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
-                    { feature: 'Prof. indemnity backed', desktop: true, protect: true, onsite: true },
-                    { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
-                    { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
-                    { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
-                    { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
-                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolios', onsite: 'Listed, high-value & complex' },
-                  ].map(({ feature, desktop, protect, onsite }, i) => {
-                    const isBestFor = feature === 'Best for'
-                    return (
-                    <tr key={i} className={isBestFor ? 'border-t-2 border-[#1A6B4A]/20 bg-[#1A6B4A]/5' : ''}>
-                      <td className={`pl-4 sm:pl-6 pr-2 py-3.5 leading-snug text-[0.6rem] sm:text-xs ${isBestFor ? 'font-bold text-[#1A6B4A] pt-4 pb-4' : 'font-semibold text-primary'}`}>{feature}</td>
-                      {[desktop, protect, onsite].map((val, j) => (
-                        <td key={j} className={`px-1 sm:px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5 border-x border-[#1A6B4A]/10' : ''} ${isBestFor ? 'pt-4 pb-4' : ''}`}>
-                          {val === true ? (
-                            <span className="material-symbols-outlined text-[#1A6B4A] text-base leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                          ) : val === false ? (
-                            <span className="material-symbols-outlined text-zinc-300 text-base leading-none">cancel</span>
-                          ) : (
-                            <span className={`text-[0.6rem] sm:text-xs leading-snug block ${isBestFor ? 'font-bold text-[#1A6B4A]' : 'font-medium text-secondary'}`}>{val}</span>
-                          )}
-                        </td>
-                      ))}
-                    </tr>
-                  )})}
-                </tbody>
-              </table>
-          </div>
-          <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
+      </section>
+
+      {/* Every Assessment Includes */}
+      <section className="py-16 bg-surface-container-low rounded-2xl px-8 md:px-12 mx-4 md:mx-8 mt-8">
+        <div className="text-center mb-10 space-y-4">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Every Assessment Includes</span>
+          <h2 className="text-4xl font-bold text-primary">What you always get</h2>
+          <p className="text-secondary max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {[
+            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
+            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
+            { icon: 'description', title: 'Broker-Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
+            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
+            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
+          ].map(({ icon, title, desc }) => (
+            <div key={title} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.18)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex items-start gap-4">
+              <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>{icon}</span>
+              </div>
+              <div>
+                <p className="font-bold text-primary text-sm mb-1">{title}</p>
+                <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Script from 'next/script'
 
 export const metadata = {
   title: 'Thank You',
@@ -9,6 +10,10 @@ export const metadata = {
 
 export default function ThankYouPage() {
   return (
+    <>
+      <Script id="google-ads-conversion" strategy="afterInteractive">{`
+        gtag('event', 'ads_conversion_Submit_lead_form_Page_l_1', {});
+      `}</Script>
     <main className="flex-1">
 
       {/* Hero */}
@@ -101,5 +106,6 @@ export default function ThankYouPage() {
       </section>
 
     </main>
+    </>
   )
 }

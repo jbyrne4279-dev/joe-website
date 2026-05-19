@@ -382,6 +382,72 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Reviews Marquee ──────────────────────────────────── */}
+      <section className="py-20 bg-[#1A6B4A] overflow-hidden">
+        <div className="text-center mb-10 px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">What Our Clients Say.</h2>
+          <div className="flex flex-col items-center gap-1 mt-3">
+            <span className="text-shine-yellow text-2xl tracking-wide">{'★★★★★'}</span>
+            <span className="text-white/60 text-sm font-medium">Trusted by property owners across the UK</span>
+          </div>
+        </div>
+        <div className="marquee-viewport" style={{ '--marquee-duration': '40s' }}>
+          <div className="marquee-track gap-5 px-3">
+            {(reviews => [...reviews, ...reviews.map((r, i) => ({ ...r, key: `${i}-clone` }))])([
+              { name: 'Mark T.',     photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, Surrey',               rating: 5,   text: "My broker flagged that my sums insured hadn't been updated since 2018. RCA came back showing I was short by over £90k. Sorted now — wish I'd done it sooner." },
+              { name: 'Rachel D.',   photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Landlord, Bristol',                rating: 5,   text: "Quick and straightforward. Desktop report was ready in three days and my insurer accepted it without any pushback. Really easy process." },
+              { name: 'Greg P.',     initials: 'GP', color: '#2d6a4f',                                                                                    role: 'Commercial Property Owner',      rating: 4,   text: "Needed a reinstatement figure for a warehouse we were acquiring. Report was detailed, RICS-certified, and arrived two days before our deadline." },
+              { name: 'Louise H.',   photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Buy-to-Let Investor, Leeds',      rating: 5,   text: "Had three properties revalued. All three were underinsured. A bit of a shock, but far better to know now than when making a claim." },
+              { name: 'Andy F.',     initials: 'AF', color: '#1a6b4a',                                                                                    role: 'Property Developer',             rating: 4,   text: "Used the desktop service on a conversion project. Competitive price, solid report, and it held up under scrutiny from our insurance broker." },
+              { name: 'Caroline W.', photo: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, Kent',                  rating: 5,   text: "Our last valuation was from 2017. The new assessment came in 38% higher. The whole process took less than a week. Can't recommend enough." },
+              { name: 'Steve O.',    initials: 'SO', color: '#0f4a33',                                                                                    role: 'Portfolio Landlord',             rating: 4.5, text: "Covered all six properties efficiently. The consolidated reporting made updating each policy simple. Will be using them for our annual reviews going forward." },
+              { name: 'Helen M.',    photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, London',               rating: 5,   text: "Our property is listed and the surveyor knew exactly what that meant for the reinstatement figure. Our insurer's generic calculator had massively underestimated it." },
+            ]).map(({ name, photo, initials, color, role, rating, text, key }, i) => {
+              const full = Math.floor(rating)
+              const half = rating % 1 !== 0
+              return (
+                <div
+                  key={key ?? name + i}
+                  className="shrink-0 w-80 bg-white rounded-2xl p-6 border border-[#1A6B4A]/10 sovereign-shadow flex flex-col gap-4"
+                >
+                  <span className="flex items-center leading-none tracking-wide text-lg">
+                    {Array.from({ length: full }).map((_, j) => (
+                      <span key={`f${j}`} className="text-shine-yellow">★</span>
+                    ))}
+                    {half && (
+                      <span className="relative inline-block" style={{ width: '0.72em' }}>
+                        <span style={{ color: '#e5e7eb' }}>★</span>
+                        <span className="absolute inset-0 overflow-hidden" style={{ width: '52%' }}>
+                          <span className="text-shine-yellow">★</span>
+                        </span>
+                      </span>
+                    )}
+                  </span>
+                  <p className="text-secondary text-sm leading-relaxed flex-1">&ldquo;{text}&rdquo;</p>
+                  <div className="flex items-center gap-3">
+                    {photo ? (
+                      <img src={photo} alt={name} className="shrink-0 w-9 h-9 rounded-full object-cover" loading="lazy" />
+                    ) : (
+                      <div
+                        className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold select-none"
+                        style={{ backgroundColor: color }}
+                        aria-hidden="true"
+                      >
+                        {initials}
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-bold text-primary text-sm leading-tight">{name}</p>
+                      <p className="text-xs text-secondary">{role}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* The Problem Section */}
       <section className="py-24 px-8">
         <div className="max-w-7xl mx-auto">
@@ -459,72 +525,6 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Reviews Marquee ──────────────────────────────────── */}
-      <section className="py-20 bg-[#1A6B4A] overflow-hidden">
-        <div className="text-center mb-10 px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">What Our Clients Say.</h2>
-          <div className="flex flex-col items-center gap-1 mt-3">
-            <span className="text-shine-yellow text-2xl tracking-wide">{'★★★★★'}</span>
-            <span className="text-white/60 text-sm font-medium">Trusted by property owners across the UK</span>
-          </div>
-        </div>
-        <div className="marquee-viewport" style={{ '--marquee-duration': '40s' }}>
-          <div className="marquee-track gap-5 px-3">
-            {(reviews => [...reviews, ...reviews.map((r, i) => ({ ...r, key: `${i}-clone` }))])([
-              { name: 'Mark T.',     photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, Surrey',               rating: 5,   text: "My broker flagged that my sums insured hadn't been updated since 2018. RCA came back showing I was short by over £90k. Sorted now — wish I'd done it sooner." },
-              { name: 'Rachel D.',   photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Landlord, Bristol',                rating: 5,   text: "Quick and straightforward. Desktop report was ready in three days and my insurer accepted it without any pushback. Really easy process." },
-              { name: 'Greg P.',     initials: 'GP', color: '#2d6a4f',                                                                                    role: 'Commercial Property Owner',      rating: 4,   text: "Needed a reinstatement figure for a warehouse we were acquiring. Report was detailed, RICS-certified, and arrived two days before our deadline." },
-              { name: 'Louise H.',   photo: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Buy-to-Let Investor, Leeds',      rating: 5,   text: "Had three properties revalued. All three were underinsured. A bit of a shock, but far better to know now than when making a claim." },
-              { name: 'Andy F.',     initials: 'AF', color: '#1a6b4a',                                                                                    role: 'Property Developer',             rating: 4,   text: "Used the desktop service on a conversion project. Competitive price, solid report, and it held up under scrutiny from our insurance broker." },
-              { name: 'Caroline W.', photo: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, Kent',                  rating: 5,   text: "Our last valuation was from 2017. The new assessment came in 38% higher. The whole process took less than a week. Can't recommend enough." },
-              { name: 'Steve O.',    initials: 'SO', color: '#0f4a33',                                                                                    role: 'Portfolio Landlord',             rating: 4.5, text: "Covered all six properties efficiently. The consolidated reporting made updating each policy simple. Will be using them for our annual reviews going forward." },
-              { name: 'Helen M.',    photo: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, London',               rating: 5,   text: "Our property is listed and the surveyor knew exactly what that meant for the reinstatement figure. Our insurer's generic calculator had massively underestimated it." },
-            ]).map(({ name, photo, initials, color, role, rating, text, key }, i) => {
-              const full = Math.floor(rating)
-              const half = rating % 1 !== 0
-              return (
-                <div
-                  key={key ?? name + i}
-                  className="shrink-0 w-80 bg-white rounded-2xl p-6 border border-[#1A6B4A]/10 sovereign-shadow flex flex-col gap-4"
-                >
-                  <span className="flex items-center leading-none tracking-wide text-lg">
-                    {Array.from({ length: full }).map((_, j) => (
-                      <span key={`f${j}`} className="text-shine-yellow">★</span>
-                    ))}
-                    {half && (
-                      <span className="relative inline-block" style={{ width: '0.72em' }}>
-                        <span style={{ color: '#e5e7eb' }}>★</span>
-                        <span className="absolute inset-0 overflow-hidden" style={{ width: '52%' }}>
-                          <span className="text-shine-yellow">★</span>
-                        </span>
-                      </span>
-                    )}
-                  </span>
-                  <p className="text-secondary text-sm leading-relaxed flex-1">&ldquo;{text}&rdquo;</p>
-                  <div className="flex items-center gap-3">
-                    {photo ? (
-                      <img src={photo} alt={name} className="shrink-0 w-9 h-9 rounded-full object-cover" loading="lazy" />
-                    ) : (
-                      <div
-                        className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold select-none"
-                        style={{ backgroundColor: color }}
-                        aria-hidden="true"
-                      >
-                        {initials}
-                      </div>
-                    )}
-                    <div>
-                      <p className="font-bold text-primary text-sm leading-tight">{name}</p>
-                      <p className="text-xs text-secondary">{role}</p>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
           </div>
         </div>
       </section>

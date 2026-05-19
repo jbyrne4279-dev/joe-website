@@ -139,7 +139,7 @@
 }
 
 .text-shine-yellow {
-  background: linear-gradient(105deg, #a16207 40%, #facc15 50%, #a16207 60%);
+  background: linear-gradient(105deg, #eab308 40%, #fef08a 50%, #eab308 60%);
   background-size: 200% auto;
   animation: shine 20s linear infinite;
   -webkit-background-clip: text;

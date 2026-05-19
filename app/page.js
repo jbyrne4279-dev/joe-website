@@ -463,6 +463,72 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Reviews Marquee ──────────────────────────────────── */}
+      <section className="py-20 bg-[#1A6B4A] overflow-hidden">
+        <div className="text-center mb-10 px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">What Our Clients Say.</h2>
+          <div className="flex flex-col items-center gap-1 mt-3">
+            <span className="text-shine-yellow text-2xl tracking-wide">{'★★★★★'}</span>
+            <span className="text-white/60 text-sm font-medium">Trusted by property owners across the UK</span>
+          </div>
+        </div>
+        <div className="marquee-viewport" style={{ '--marquee-duration': '40s' }}>
+          <div className="marquee-track gap-5 px-3">
+            {(reviews => [...reviews, ...reviews.map((r, i) => ({ ...r, key: `${i}-clone` }))])([
+              { name: 'James H.',  photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Homeowner, London',               rating: 5,   text: 'The report came back in 48 hours and flagged we were underinsured by nearly £120,000. Invaluable service.' },
+              { name: 'Sarah M.',  photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Portfolio Landlord',              rating: 5,   text: 'Used RCA Ltd across four of my properties now. Always thorough, always reliable. A genuine trusted partner.' },
+              { name: 'David C.',  initials: 'DC', color: '#1A6B4A',                                                                                    role: 'Commercial Property Owner',      rating: 4,   text: 'Our insurer had us wildly undervalued. The rebuild cost assessment corrected it immediately. Highly recommend.' },
+              { name: 'Emma T.',   photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Buy-to-Let Investor, Manchester', rating: 5,   text: 'Clear, jargon-free report. They explained exactly what the reinstatement figure meant for my policy.' },
+              { name: 'Robert O.', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Property Developer',               rating: 4.5, text: 'Fast turnaround on the desktop assessment. Saved me weeks waiting for an on-site visit. Really impressed.' },
+              { name: 'Claire S.', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Residential Owner, Surrey',      rating: 5,   text: 'Found we were underinsured by 40%. Updating the policy felt like the most important thing I did all year.' },
+              { name: 'Tom B.',    initials: 'TB', color: '#0f4a33',                                                                                    role: 'Asset Manager',                  rating: 4,   text: 'RICS-regulated, audit-ready reports across our whole portfolio. Commercially sharp and technically rigorous.' },
+              { name: 'Priya S.', photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&auto=format&q=80', role: 'Landlord, Birmingham',           rating: 5,   text: 'Reinstatement cost assessment delivered ahead of schedule. My broker was impressed with the detail.' },
+            ]).map(({ name, photo, initials, color, role, rating, text, key }, i) => {
+              const full = Math.floor(rating)
+              const half = rating % 1 !== 0
+              return (
+                <div
+                  key={key ?? name + i}
+                  className="shrink-0 w-80 bg-white rounded-2xl p-6 border border-[#1A6B4A]/10 sovereign-shadow flex flex-col gap-4"
+                >
+                  <span className="flex items-center leading-none tracking-wide text-lg">
+                    {Array.from({ length: full }).map((_, j) => (
+                      <span key={`f${j}`} className="text-shine-yellow">★</span>
+                    ))}
+                    {half && (
+                      <span className="relative inline-block" style={{ width: '0.72em' }}>
+                        <span style={{ color: '#e5e7eb' }}>★</span>
+                        <span className="absolute inset-0 overflow-hidden" style={{ width: '52%' }}>
+                          <span className="text-shine-yellow">★</span>
+                        </span>
+                      </span>
+                    )}
+                  </span>
+                  <p className="text-secondary text-sm leading-relaxed flex-1">&ldquo;{text}&rdquo;</p>
+                  <div className="flex items-center gap-3">
+                    {photo ? (
+                      <img src={photo} alt={name} className="shrink-0 w-9 h-9 rounded-full object-cover" loading="lazy" />
+                    ) : (
+                      <div
+                        className="shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold select-none"
+                        style={{ backgroundColor: color }}
+                        aria-hidden="true"
+                      >
+                        {initials}
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-bold text-primary text-sm leading-tight">{name}</p>
+                      <p className="text-xs text-secondary">{role}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       <ContactSection
         heading={
           <>

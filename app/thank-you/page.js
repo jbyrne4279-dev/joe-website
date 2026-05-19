@@ -14,7 +14,7 @@ export default function ThankYouPage() {
       <Script id="google-ads-conversion" strategy="afterInteractive">{`
         gtag('event', 'ads_conversion_Submit_lead_form_Page_l_1', {});
       `}</Script>
-    <main className="flex-1">
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
@@ -105,7 +105,7 @@ export default function ThankYouPage() {
         </div>
       </section>
 
-    </main>
+      </main>
     </>
   )
 }

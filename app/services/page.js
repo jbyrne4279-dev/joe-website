@@ -7,12 +7,12 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
   },
   description:
-    'London-based RICS surveyor. Desktop Reinstatement Cost Assessment from £210. On-Site Rebuild Cost Survey from £675. 3-Year Protection from £298. BCIS-certified, broker-ready across the UK.',
+    'RICS-regulated Reinstatement Cost Assessment services for UK property owners. Desktop RCA from £210 with 5-day delivery, On-Site Survey from £675 for listed and complex buildings, and 3-Year Protection with annual BCIS index updates. Every report is broker-ready and insurer-accepted.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
     description:
-      'Compare Reinstatement Cost Assessment services from a London RICS surveyor: Desktop, On-Site Survey, and 3-Year Protection. Broker-ready in 48 hours.',
+      'Choose the right Reinstatement Cost Assessment for your UK property. Desktop from £210, On-Site Survey from £675 for listed or complex buildings, and 3-Year Protection for ongoing RICS compliance. BCIS-indexed, broker-ready.',
     url: '/services',
   },
 }
@@ -158,7 +158,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
 
             {/* Desktop Assessment */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div id="desktop-rca" className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -188,7 +188,7 @@ export default function ServicesPage() {
             </div>
 
             {/* 3-Year Protection */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+            <div id="three-year-protection" className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
               <div className="absolute top-6 right-6">
                 <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
               </div>
@@ -221,7 +221,7 @@ export default function ServicesPage() {
             </div>
 
             {/* On-Site Survey */}
-            <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div id="on-site-survey" className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>

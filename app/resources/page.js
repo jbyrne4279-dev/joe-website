@@ -6,12 +6,12 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
   },
   description:
-    'What is a Reinstatement Cost Assessment? London RICS surveyors explain how rebuild cost differs from market value, how the Averaging Clause works, and how to stay fully insured across the UK.',
+    'Learn why 80% of UK buildings are underinsured for rebuild cost. RICS surveyors explain how reinstatement cost differs from market value, how the Averaging Clause can slash your claim payout, and why construction cost inflation means your current valuation may already leave you dangerously exposed.',
   alternates: { canonical: '/resources' },
   openGraph: {
     title: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
     description:
-      'Understand Reinstatement Cost Assessments — how rebuild cost differs from market value, the Averaging Clause trap, and why RICS regulation matters for London and UK property owners.',
+      'UK property owners: understand how rebuild cost differs from market value, why the Averaging Clause reduces claim payouts when you\'re underinsured, and how a RICS-regulated RCA protects you.',
     url: '/resources',
   },
 }

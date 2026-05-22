@@ -8,12 +8,12 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment London & UK | RICS from £210',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessment (Rebuild Cost Assessment) from £210. Delivered in 48 hours across London and the UK. Protect your buildings insurance today.',
+    'Is your UK property insured for the correct rebuild cost? 80% aren\'t. RICS-regulated Reinstatement Cost Assessments for homes, flats, commercial, and listed buildings across London and the UK. From £210 — broker-ready reports delivered in 48 hours.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Reinstatement Cost Assessment London & UK | RICS from £210',
     description:
-      '80% of UK buildings are underinsured. London-based RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured for rebuild cost. RICS-regulated Reinstatement Cost Assessment from £210 — residential, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
     url: '/',
   },
 }
@@ -96,6 +96,36 @@ const homeFaqJsonLd = {
   })),
 }
 
+const serviceLinksJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Reinstatement Cost Assessment Services',
+  description: 'RICS-regulated Reinstatement Cost Assessment services for UK property owners — residential, commercial, and listed buildings.',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Desktop RCA — From £210',
+      description: 'Fast, data-driven Reinstatement Cost Assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 5 days.',
+      url: `${SITE_URL}/services#desktop-rca`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: '3-Year Protection — From £498',
+      description: 'Full Reinstatement Cost Assessment with automated annual BCIS index updates for three years. Designed for UK landlords and portfolio managers who need ongoing RICS compliance without repeat instruction costs.',
+      url: `${SITE_URL}/services#three-year-protection`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'On-Site Survey — From £675',
+      description: 'Full physical inspection by a RICS-regulated surveyor for listed buildings, complex architecture, non-standard construction, and high-value UK property. The highest accuracy RCA available.',
+      url: `${SITE_URL}/services#on-site-survey`,
+    },
+  ],
+}
+
 export default function HomePage() {
   return (
     <>
@@ -110,6 +140,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLinksJsonLd) }}
       />
     <main>
       {/* Hero */}

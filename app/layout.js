@@ -82,6 +82,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11028386067"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-11028386067');
+        `}} />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"

@@ -86,7 +86,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden bg-white border-t border-zinc-200">
+        <div className="md:hidden border-t border-[#1A6B4A]" style={{ backgroundColor: '#1A6B4A' }}>
           <div className="flex flex-col px-6 py-4 gap-1">
             {links.map(({ href, label }) => {
               const isActive = pathname === href
@@ -97,8 +97,8 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={
                     isActive
-                      ? 'text-emerald-700 font-semibold tracking-tight py-3 px-2 border-l-4 border-emerald-700 bg-emerald-50'
-                      : 'text-zinc-700 hover:text-zinc-900 font-semibold tracking-tight py-3 px-2 border-l-4 border-transparent'
+                      ? 'text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-white bg-white/10'
+                      : 'text-white/80 hover:text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-transparent hover:border-white/40'
                   }
                 >
                   {label}

@@ -139,7 +139,7 @@
 }
 
 .text-shine-yellow {
-  background: linear-gradient(105deg, #a16207 40%, #facc15 50%, #a16207 60%);
+  background: linear-gradient(105deg, #eab308 40%, #fef08a 50%, #eab308 60%);
   background-size: 200% auto;
   animation: shine 20s linear infinite;
   -webkit-background-clip: text;
@@ -244,4 +244,31 @@
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Infinite horizontal marquee */
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-x var(--marquee-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
 }

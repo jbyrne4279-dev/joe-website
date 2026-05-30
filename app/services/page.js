@@ -7,7 +7,7 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',
   },
   description:
-    'RICS-regulated Reinstatement Cost Assessment services for UK property owners. Desktop RCA from £210 with 5-day delivery, On-Site Survey from £675 for listed and complex buildings, and 3-Year Protection with annual BCIS index updates. Every report is broker-ready and insurer-accepted.',
+    'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop RCA, on-site survey, and 3-Year Protection with annual BCIS updates. Broker-ready reports.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'Reinstatement Cost Assessment Services London & UK | RCA Ltd',

@@ -4,8 +4,8 @@ import Script from 'next/script'
 
 export const metadata = {
   title: 'Thank You',
-  description: 'Thank you for contacting RCA Ltd. We will respond within 24 working hours.',
-  robots: { index: false, follow: false },
+  description: 'Thank you for instructing RCA Ltd. Your Reinstatement Cost Assessment request has been received — we\'ll be in touch within 24 working hours.',
+  robots: { index: true, follow: true },
 }
 
 export default function ThankYouPage() {

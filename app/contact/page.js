@@ -6,7 +6,7 @@ export const metadata = {
     absolute: 'Get a Reinstatement Cost Assessment | RCA Ltd London',
   },
   description:
-    'Request a RICS-regulated Reinstatement Cost Assessment for your UK property. Rebuild cost reports from £210 for standard homes and commercial buildings, on-site surveys from £675 for listed and complex structures. 24-hour response, 48-hour delivery, accepted by all UK insurers and brokers.',
+    'Instruct a RICS-regulated Reinstatement Cost Assessment for your UK property. Desktop and on-site options available. 24-hour response, broker-ready delivery.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a Reinstatement Cost Assessment | RCA Ltd London',

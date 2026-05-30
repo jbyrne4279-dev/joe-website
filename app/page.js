@@ -8,7 +8,7 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment London & UK | RICS from £210',
   },
   description:
-    'Is your UK property insured for the correct rebuild cost? 80% aren\'t. RICS-regulated Reinstatement Cost Assessments for homes, flats, commercial, and listed buildings across London and the UK. From £210 — broker-ready reports delivered in 48 hours.',
+    'RICS-regulated Reinstatement Cost Assessment for UK homes, flats, commercial and listed buildings. 80% are underinsured — get an accurate rebuild cost report today.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Reinstatement Cost Assessment London & UK | RICS from £210',

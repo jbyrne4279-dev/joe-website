@@ -6,7 +6,7 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',
   },
   description:
-    'Learn why 80% of UK buildings are underinsured for rebuild cost. RICS surveyors explain how reinstatement cost differs from market value, how the Averaging Clause can slash your claim payout, and why construction cost inflation means your current valuation may already leave you dangerously exposed.',
+    'Why are 80% of UK buildings underinsured? RICS surveyors explain rebuild cost vs market value, how the Averaging Clause cuts your payout, and how to protect your claim.',
   alternates: { canonical: '/resources' },
   openGraph: {
     title: 'Reinstatement Cost Assessment Guide | London & UK Underinsurance',

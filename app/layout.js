@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
-    default: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
+    default: 'RICS Reinstatement Cost Assessment UK | RCA Ltd',
     template: '%s | RCA Ltd',
   },
   description:

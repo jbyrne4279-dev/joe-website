@@ -2,10 +2,10 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
   return (
     <section className="bg-surface-container-low py-20 my-16 mx-4 md:mx-8 rounded-3xl">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
 
           {/* Left: Contact Form */}
-          <div>
+          <div className="liquid-glass rounded-3xl p-8 md:p-10 border border-[#1A6B4A]/20 shadow-[0_0_40px_4px_rgba(26,107,74,0.07)]">
             <div id="contact-form" className="mb-12 space-y-5 scroll-mt-28">
               <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>mail</span>Get In Touch</span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.1] text-primary">{heading}</h2>
@@ -144,7 +144,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
 
               <div>
-                <button className="btn-shine w-full text-white py-4 rounded-full font-bold text-base active:scale-[0.97] transition-transform sovereign-shadow">
+                <button className="btn-shine w-full text-white py-4 rounded-full font-bold text-base active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer">
                   Request Consultation
                 </button>
               </div>

@@ -181,11 +181,11 @@ export default function HomePage() {
       </section>
 
       {/* What is an RCA */}
-      <section className="bg-surface py-20 px-8">
+      <section className="bg-surface pt-6 pb-20 px-8">
         <div className="max-w-7xl mx-auto">
 
           {/* Header */}
-          <div className="text-center mb-16 space-y-4 max-w-3xl mx-auto">
+          <div className="text-center mb-12 space-y-3 max-w-3xl mx-auto">
             <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>schema</span>The Framework</span>
             <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
               What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
@@ -210,7 +210,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-white font-semibold text-sm">RICS-regulated surveyors serving the whole of the UK</p>
+                <p className="text-white font-semibold text-sm">RICS-regulated surveyors</p>
               </div>
             </div>
             </div>
@@ -226,8 +226,9 @@ export default function HomePage() {
                   { step: '3', title: 'Report', desc: 'Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.' },
                   { step: '4', title: 'Correct', desc: 'Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.' },
                 ].map(({ step, title, desc }) => (
-                  <div key={step} className="flex items-start gap-5">
+                  <div key={step} className="flex items-center gap-0">
                     <div className="btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10">{step}</div>
+                    <div className="w-5 h-px bg-[#1A6B4A]/30 shrink-0" aria-hidden="true" />
                     <div className="liquid-glass flex-1 p-6 rounded-2xl border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300">
                       <h4 className="text-base font-bold text-primary mb-1">{title}</h4>
                       <p className="text-secondary text-sm leading-relaxed">{desc}</p>
@@ -242,9 +243,9 @@ export default function HomePage() {
       </section>
 
       {/* Which service */}
-      <section className="py-20 px-8 bg-[#0f3d28]" id="which">
+      <section className="pt-10 pb-20 px-8 bg-[#0f3d28]" id="which">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 space-y-4">
+          <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Right for you?</span>
             <h2 className="text-4xl font-bold text-white">Which service do I need?</h2>
             <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
@@ -255,8 +256,8 @@ export default function HomePage() {
               { icon: 'verified', fill: true, name: '3-Year Protection', price: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
               { icon: 'location_on', fill: false, name: 'On-Site Survey', price: 'From £675', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
             ].map(({ icon, fill, name, price, desc }) => (
-              <div key={name} className="flex flex-col gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center gap-3">
+              <div key={name} className="flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300">
+                <div className="flex flex-col items-center gap-3">
                   <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', ...(fill ? { fontVariationSettings: "'FILL' 1" } : {}) }}>{icon}</span>
                   </div>
@@ -273,15 +274,15 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-8 bg-zinc-50" id="pricing">
+      <section className="pt-10 pb-16 px-8 bg-zinc-50" id="pricing">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10 space-y-4">
+          <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
             <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
             <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
           </div>
           <div className="max-w-5xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
               {/* Desktop Assessment */}
               <div className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
@@ -298,15 +299,15 @@ export default function HomePage() {
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>speed</span>
                     <span className="text-secondary">Rapid 5-day turnaround</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
                     <span className="text-secondary">Remote data modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-outline-variant text-lg">cancel</span>
+                    <span className="material-symbols-outlined text-zinc-400 text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>location_off</span>
                     <span className="text-secondary">Site visit not included</span>
                   </li>
                 </ul>
@@ -314,7 +315,7 @@ export default function HomePage() {
               </div>
 
               {/* 3-Year Protection */}
-              <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+              <div className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] md:scale-105">
                 <div className="absolute top-6 right-6">
                   <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>
@@ -331,15 +332,15 @@ export default function HomePage() {
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">update</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>update</span>
                     <span className="text-secondary">Automated annual updates</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">security</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>security</span>
                     <span className="text-secondary">3-year valuation compliance</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">analytics</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>analytics</span>
                     <span className="text-secondary">Advanced market index tracking</span>
                   </li>
                 </ul>
@@ -361,15 +362,15 @@ export default function HomePage() {
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>search</span>
                     <span className="text-secondary">Full physical property inspection</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>architecture</span>
                     <span className="text-secondary">Complex architectural modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                    <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>engineering</span>
                     <span className="text-secondary">Expert surveyor consultancy</span>
                   </li>
                 </ul>
@@ -383,8 +384,8 @@ export default function HomePage() {
       </section>
 
       {/* What's included */}
-      <section className="py-20 px-8 md:px-12 bg-[#0f3d28]">
-        <div className="text-center mb-12 space-y-4">
+      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
+        <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
@@ -399,8 +400,8 @@ export default function HomePage() {
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
           ].map(({ icon, title, desc }) => (
             <div key={icon} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
-              <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>{icon}</span>
+              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
               </div>
               <div>
                 <p className="font-bold text-primary text-sm mb-1">{title}</p>
@@ -414,7 +415,7 @@ export default function HomePage() {
       {/* Why RCA Ltd */}
       <section className="py-24 bg-surface-container-lowest">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
               <Image
@@ -438,7 +439,7 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-12">
-              <div>
+              <div className="text-center lg:text-left">
                 <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
                 <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
@@ -448,13 +449,13 @@ export default function HomePage() {
                   { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
                   { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={icon} className="liquid-glass flex items-center gap-4 px-5 py-4 rounded-full border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_16px_2px_rgba(26,107,74,0.12)] transition-all duration-300">
-                    <div className="btn-shine shrink-0 w-9 h-9 rounded-full flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1rem' }}>{icon}</span>
+                  <div key={icon} className="flex items-start gap-5 p-6 rounded-2xl border border-[#1A6B4A]/15 bg-surface-container-low hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_24px_rgba(26,107,74,0.10)] transition-all duration-300">
+                    <div className="btn-shine shrink-0 w-11 h-11 rounded-xl flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem' }}>{icon}</span>
                     </div>
-                    <div>
-                      <p className="font-bold text-sm text-primary">{title}</p>
-                      <p className="text-xs text-secondary leading-relaxed">{desc}</p>
+                    <div className="space-y-1">
+                      <p className="font-bold text-base text-primary">{title}</p>
+                      <p className="text-sm text-secondary leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -467,25 +468,25 @@ export default function HomePage() {
       {/* The Problem Section */}
       <section className="py-24 px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[#7f1d1d] rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16">
+          <div className="bg-[#7f1d1d] rounded-2xl p-6 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(255,255,255,0.04)' }}></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(0,0,0,0.15)' }}></div>
 
-            <div className="md:w-1/2 space-y-6 relative z-10">
-              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>warning</span>The Problem</span>
+            <div className="md:w-1/2 space-y-6 relative z-10 text-center md:text-left">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center md:justify-start gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>warning</span>The Problem</span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
                 The Risk of Underinsurance.
               </h2>
               <p className="text-lg text-white/70 leading-relaxed">
                 Recent data suggests that over <span className="font-semibold text-white">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
               </p>
-              <div className="grid grid-cols-2 gap-8 pt-4">
-                <div className="space-y-2">
-                  <span className="text-4xl font-bold text-white">£425bn</span>
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">
+                  <span className="text-3xl font-bold text-white block">£425bn</span>
                   <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Estimated Gap</p>
                 </div>
-                <div className="space-y-2">
-                  <span className="text-4xl font-bold text-white">80%+</span>
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">
+                  <span className="text-3xl font-bold text-white block">80%+</span>
                   <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Underinsured</p>
                 </div>
               </div>
@@ -517,11 +518,11 @@ export default function HomePage() {
 
       {/* Who We Serve */}
 
-      <section className="py-24 px-8 bg-[#0f3d28] overflow-hidden">
+      <section className="pt-10 pb-24 px-8 bg-[#0f3d28] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-            <div className="max-w-2xl">
-              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Our Clients</span>
+            <div className="max-w-2xl text-center md:text-left">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center md:justify-start gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Our Clients</span>
               <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Who We Serve.</h2>
               <p className="text-white/60 leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
             </div>
@@ -534,8 +535,7 @@ export default function HomePage() {
             ].map(({ src, alt, title, desc }, i) => (
               <div
                 key={title}
-                className="group relative overflow-hidden rounded-xl h-96 float-card"
-                style={{ animationDelay: `${i * 2.3}s` }}
+                className="group relative overflow-hidden rounded-xl h-96"
               >
                 <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={src} alt={alt} />
                 <div className="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
@@ -552,7 +552,7 @@ export default function HomePage() {
       <ContactSection
         heading={
           <>
-            Get Your RICS-Regulated <span className="text-shine">Reinstatement Cost Assessment</span> Today.
+            Get Your RICS-Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
           </>
         }
       />

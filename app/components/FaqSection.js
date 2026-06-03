@@ -1,11 +1,11 @@
 ﻿export default function FaqSection({ description, items }) {
   return (
-    <section className="py-20 bg-[#0f3d28]">
+    <section className="pt-10 pb-20 bg-[#0f3d28]">
       <div className="max-w-6xl mx-auto px-8">
-        <div className="text-center mb-20">
-          <span className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Got Questions?</span>
+        <div className="text-center mb-12 space-y-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Got Questions?</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">Frequently Asked Questions</h2>
-          <p className="text-white/60 mt-4 max-w-xl mx-auto leading-relaxed">{description}</p>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">{description}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

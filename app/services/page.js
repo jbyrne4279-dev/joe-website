@@ -118,14 +118,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Grid */}
-      <section className="py-16 px-8 bg-[#0f3d28]" id="pricing">
-        <div className="text-center mb-10 space-y-4">
+      <section className="pt-10 pb-16 px-8 bg-[#0f3d28]" id="pricing">
+        <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
           <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
         </div>
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
             {/* Desktop Assessment */}
             <div id="desktop-rca" className="bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
@@ -142,15 +142,15 @@ export default function ServicesPage() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>speed</span>
                   <span className="text-secondary">Rapid 5-day turnaround</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
                   <span className="text-secondary">Remote data modelling</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-outline-variant text-lg">cancel</span>
+                  <span className="material-symbols-outlined text-zinc-400 text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>location_off</span>
                   <span className="text-secondary">Site visit not included</span>
                 </li>
               </ul>
@@ -158,7 +158,7 @@ export default function ServicesPage() {
             </div>
 
             {/* 3-Year Protection */}
-            <div id="three-year-protection" className="bg-white rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+            <div id="three-year-protection" className="bg-white rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] md:scale-105">
               <div className="absolute top-6 right-6">
                 <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
               </div>
@@ -175,15 +175,15 @@ export default function ServicesPage() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">update</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>update</span>
                   <span className="text-secondary">Automated annual updates</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">security</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>security</span>
                   <span className="text-secondary">3-year valuation compliance</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">analytics</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>analytics</span>
                   <span className="text-secondary">Advanced market index tracking</span>
                 </li>
               </ul>
@@ -205,15 +205,15 @@ export default function ServicesPage() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>search</span>
                   <span className="text-secondary">Full physical property inspection</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>architecture</span>
                   <span className="text-secondary">Complex architectural modelling</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>engineering</span>
                   <span className="text-secondary">Expert surveyor consultancy</span>
                 </li>
               </ul>
@@ -225,9 +225,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 px-8 md:px-12 mt-8">
+      <section className="pt-10 pb-16 px-8 md:px-12 mt-8">
         <div className="max-w-5xl mx-auto px-2 sm:px-6">
-          <div className="text-center mb-8 space-y-3">
+          <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>compare_arrows</span>Which is right for me?</span>
             <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
           </div>
@@ -283,8 +283,8 @@ export default function ServicesPage() {
       </section>
 
       {/* What's included */}
-      <section className="py-20 px-8 md:px-12 bg-[#0f3d28]">
-        <div className="text-center mb-12 space-y-4">
+      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
+        <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>

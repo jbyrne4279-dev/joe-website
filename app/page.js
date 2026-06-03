@@ -8,12 +8,12 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment London & UK | From £210',
   },
   description:
-    'Get a RICS Reinstatement Cost Assessment for any UK building — homes, flats, commercial and listed properties. 80% of buildings carry the wrong reinstatement cost. Accurate rebuild valuations from £210, delivered in 48 hours.',
+    'Get a RICS Reinstatement Cost Assessment for any UK building: homes, flats, commercial and listed properties. 80% of buildings carry the wrong reinstatement cost. Accurate rebuild valuations from £210, delivered in 48 hours.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
     description:
-      '80% of UK buildings carry the wrong reinstatement cost on their policy. RICS Reinstatement Cost Assessment from £210 — homes, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
+      '80% of UK buildings carry the wrong reinstatement cost on their policy. RICS Reinstatement Cost Assessment from £210 for homes, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
     url: '/',
   },
 }
@@ -100,26 +100,26 @@ const serviceLinksJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Reinstatement Cost Assessment Services',
-  description: 'RICS-regulated Reinstatement Cost Assessment services for UK property owners — residential, commercial, and listed buildings.',
+  description: 'RICS-regulated Reinstatement Cost Assessment services for UK property owners: residential, commercial, and listed buildings.',
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
-      name: 'Desktop RCA — From £210',
+      name: 'Desktop RCA from £210',
       description: 'Fast, data-driven Reinstatement Cost Assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 5 days.',
       url: `${SITE_URL}/services#desktop-rca`,
     },
     {
       '@type': 'ListItem',
       position: 2,
-      name: '3-Year Protection — From £498',
+      name: '3-Year Protection from £498',
       description: 'Full Reinstatement Cost Assessment with automated annual BCIS index updates for three years. Designed for UK landlords and portfolio managers who need ongoing RICS compliance without repeat instruction costs.',
       url: `${SITE_URL}/services#three-year-protection`,
     },
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'On-Site Survey — From £675',
+      name: 'On-Site Survey from £675',
       description: 'Full physical inspection by a RICS-regulated surveyor for listed buildings, complex architecture, non-standard construction, and high-value UK property. The highest accuracy RCA available.',
       url: `${SITE_URL}/services#on-site-survey`,
     },
@@ -149,7 +149,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/rca-for-my-property-london-rebuild.png"
+          src="/reinstatement-cost-assessments-uk.png"
           alt="RICS-regulated Reinstatement Cost Assessment for UK property"
           fill
           priority
@@ -181,44 +181,91 @@ export default function HomePage() {
       </section>
 
       {/* What is an RCA */}
-      <section className="bg-surface pt-12 pb-32 px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
-          <div className="space-y-12">
-            <div className="space-y-6">
-              <span className="text-sm font-bold text-[#1A6B4A] uppercase tracking-[0.2em]">The Framework</span>
-              <div aria-hidden="true" className="h-6" />
-              <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
-                What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
-              </h2>
-              <p className="text-lg text-secondary leading-relaxed">
-                A Reinstatement Cost Assessment (RCA), also known as a Rebuild Cost Assessment, is a detailed professional calculation of the exact cost to rebuild a property from scratch after total destruction.
-              </p>
-              <p className="text-lg text-secondary leading-relaxed">
-                Unlike generic valuations, our RICS-regulated process accounts for regional labour costs, current material inflation, and professional fees, ensuring your insurance policy is built on facts, not estimates.
-              </p>
-            </div>
-            <div className="relative w-full h-80">
+      <section className="bg-surface py-20 px-8">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Header */}
+          <div className="text-center mb-16 space-y-4 max-w-3xl mx-auto">
+            <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest">The Framework</span>
+            <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
+              What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
+            </h2>
+            <p className="text-lg text-secondary leading-relaxed">
+              A detailed, RICS-regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
+            </p>
+          </div>
+
+          {/* Image + Steps */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+            {/* Image */}
+            <div className="flex flex-col">
+            <div className="relative flex-1 min-h-[420px] rounded-2xl overflow-hidden sovereign-shadow">
               <Image
                 src="/rebuild-cost-assessment-london.jpeg"
                 alt="RICS-regulated reinstatement cost assessment of a London commercial property"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover rounded-xl sovereign-shadow"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-white font-semibold text-sm">RICS-regulated surveyors serving the whole of the UK</p>
+              </div>
             </div>
-          </div>
+            </div>
 
-          <div className="space-y-6">
+            {/* Steps */}
+            <div className="relative">
+              {/* Vertical connector line */}
+              <div className="absolute left-5 top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-[#1A6B4A]/25 to-transparent hidden sm:block" aria-hidden="true" />
+              <div className="space-y-5">
+                {[
+                  { step: '1', title: 'Instruct', desc: 'Provide basic property details through our secure digital portal or request an on-site survey.' },
+                  { step: '2', title: 'Assess', desc: <>Our experts use <strong className="font-bold text-primary">RICS-certified</strong> data to analyze structural elements, materials, and external site features.</> },
+                  { step: '3', title: 'Report', desc: 'Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.' },
+                  { step: '4', title: 'Correct', desc: 'Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.' },
+                ].map(({ step, title, desc }) => (
+                  <div key={step} className="flex items-start gap-5">
+                    <div className="btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10">{step}</div>
+                    <div className="liquid-glass flex-1 p-6 rounded-2xl border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300">
+                      <h4 className="text-base font-bold text-primary mb-1">{title}</h4>
+                      <p className="text-secondary text-sm leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Which service */}
+      <section className="py-20 px-8 bg-[#0f3d28]" id="which">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12 space-y-4">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 block">Right for you?</span>
+            <h2 className="text-4xl font-bold text-white">Which service do I need?</h2>
+            <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { step: '1', title: 'Instruct', desc: 'Provide basic property details through our secure digital portal or request an on-site survey.' },
-              { step: '2', title: 'Assess', desc: <>Our experts use <strong className="font-bold text-primary">RICS-certified</strong> data to analyze structural elements, materials, and external site features.</> },
-              { step: '3', title: 'Report', desc: 'Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.' },
-              { step: '4', title: 'Correct', desc: 'Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.' },
-            ].map(({ step, title, desc }) => (
-              <div key={step} className="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
-                <span className="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">{step}</span>
-                <h4 className="text-xl font-bold mb-2">{title}</h4>
-                <p className="text-secondary">{desc}</p>
+              { icon: 'monitor', name: 'Desktop Assessment', price: 'From £210', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
+              { icon: 'verified', fill: true, name: '3-Year Protection', price: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
+              { icon: 'location_on', fill: false, name: 'On-Site Survey', price: 'From £675', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
+            ].map(({ icon, fill, name, price, desc }) => (
+              <div key={name} className="flex flex-col gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', ...(fill ? { fontVariationSettings: "'FILL' 1" } : {}) }}>{icon}</span>
+                  </div>
+                  <span className="text-xs font-bold text-[#1A6B4A] bg-[#1A6B4A]/10 px-2.5 py-0.5 rounded-full">{price}</span>
+                </div>
+                <div>
+                  <p className="font-bold text-primary text-base mb-2">{name}</p>
+                  <p className="text-secondary text-sm leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -333,60 +380,34 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Comparison Table */}
-        <div className="max-w-5xl mx-auto px-2 sm:px-6 mt-16">
-          <div className="text-center mb-8 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
-            <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
-          </div>
-          <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm" style={{ minWidth: '560px' }}>
-                <thead>
-                  <tr className="bg-[#1A6B4A]">
-                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
-                      <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
-                      3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
-                    </th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-zinc-100">
-                  {[
-                    { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
-                    { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
-                    { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
-                    { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
-                    { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
-                    { feature: 'Professional indemnity backed', desktop: true, protect: true, onsite: true },
-                    { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
-                    { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
-                    { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
-                    { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
-                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
-                  ].map(({ feature, desktop, protect, onsite }, i) => (
-                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
-                      <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
-                      {[desktop, protect, onsite].map((val, j) => (
-                        <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
-                          {val === true ? (
-                            <span className="material-symbols-outlined text-[#1A6B4A] text-lg leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                          ) : val === false ? (
-                            <span className="material-symbols-outlined text-zinc-300 text-lg leading-none">cancel</span>
-                          ) : (
-                            <span className="text-secondary text-xs font-medium leading-snug block">{val}</span>
-                          )}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+      </section>
+
+      {/* What's included */}
+      <section className="py-20 px-8 md:px-12 bg-[#0f3d28]">
+        <div className="text-center mb-12 space-y-4">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 block">Every Assessment Includes</span>
+          <h2 className="text-4xl font-bold text-white">What you always get.</h2>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {[
+            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
+            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
+            { icon: 'description', title: 'Broker-Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
+            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
+            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
+          ].map(({ icon, title, desc }) => (
+            <div key={icon} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+              <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>{icon}</span>
+              </div>
+              <div>
+                <p className="font-bold text-primary text-sm mb-1">{title}</p>
+                <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+              </div>
             </div>
-          </div>
-          <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
+          ))}
         </div>
       </section>
 
@@ -495,12 +516,12 @@ export default function HomePage() {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-24 px-8 bg-white overflow-hidden">
+      <section className="py-24 px-8 bg-[#0f3d28] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold tracking-tight mb-4">Who <span className="text-shine">We Serve.</span></h2>
-              <p className="text-on-surface-variant leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
+              <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Who We Serve.</h2>
+              <p className="text-white/60 leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

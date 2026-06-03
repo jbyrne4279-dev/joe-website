@@ -118,35 +118,6 @@ export default function ServicesPage() {
         </p>
       </section>
 
-      {/* Which service */}
-      <section className="py-16" id="which">
-        <div className="text-center mb-10 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Right for you?</span>
-          <h2 className="text-4xl font-bold text-primary">Which <span className="text-shine">service</span> do I need?</h2>
-          <p className="text-secondary max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
-        </div>
-        <div className="max-w-3xl mx-auto space-y-4">
-          {[
-            { icon: 'monitor', name: 'Desktop Assessment', price: 'From £210', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
-            { icon: 'verified', fill: true, name: '3-Year Protection', price: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
-            { icon: 'location_on', name: 'On-Site Survey', price: 'From £675', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
-          ].map(({ icon, fill, name, price, desc }) => (
-            <div key={name} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.18)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
-              <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
-                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', ...(fill ? { fontVariationSettings: "'FILL' 1" } : {}) }}>{icon}</span>
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col-reverse sm:flex-row items-center justify-center sm:justify-start gap-2 mb-2">
-                  <p className="font-bold text-primary">{name}</p>
-                  <span className="text-xs font-bold text-[#1A6B4A] bg-[#1A6B4A]/10 px-2.5 py-0.5 rounded-full">{price}</span>
-                </div>
-                <p className="text-secondary text-sm leading-relaxed">{desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Pricing Grid */}
       <section className="py-16" id="pricing">
         <div className="text-center mb-10 space-y-4">
@@ -251,6 +222,64 @@ export default function ServicesPage() {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="py-16 px-8 md:px-12 mt-8">
+        <div className="max-w-5xl mx-auto px-2 sm:px-6">
+          <div className="text-center mb-8 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
+            <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
+          </div>
+          <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm" style={{ minWidth: '560px' }}>
+                <thead>
+                  <tr className="bg-[#1A6B4A]">
+                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
+                      <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
+                      3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
+                    </th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-zinc-100">
+                  {[
+                    { feature: 'RICS-regulated report', desktop: true, protect: true, onsite: true },
+                    { feature: 'BCIS live cost data', desktop: true, protect: true, onsite: true },
+                    { feature: 'Broker & insurer accepted', desktop: true, protect: true, onsite: true },
+                    { feature: 'Demolition costs included', desktop: true, protect: true, onsite: true },
+                    { feature: 'Professional fees included', desktop: true, protect: true, onsite: true },
+                    { feature: 'Professional indemnity backed', desktop: true, protect: true, onsite: true },
+                    { feature: 'Physical site inspection', desktop: false, protect: false, onsite: true },
+                    { feature: 'Annual BCIS index update', desktop: false, protect: true, onsite: false },
+                    { feature: '3-year RICS compliance', desktop: false, protect: true, onsite: false },
+                    { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
+                    { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
+                  ].map(({ feature, desktop, protect, onsite }, i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
+                      <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
+                      {[desktop, protect, onsite].map((val, j) => (
+                        <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
+                          {val === true ? (
+                            <span className="material-symbols-outlined text-[#1A6B4A] text-lg leading-none" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                          ) : val === false ? (
+                            <span className="material-symbols-outlined text-zinc-300 text-lg leading-none">cancel</span>
+                          ) : (
+                            <span className="text-secondary text-xs font-medium leading-snug block">{val}</span>
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p className="text-center text-xs text-secondary mt-5">Not sure? <Link href="/contact#contact-form" className="text-[#1A6B4A] font-semibold hover:underline">Contact us</Link> and we&rsquo;ll recommend the right assessment for your property.</p>
         </div>
       </section>
 

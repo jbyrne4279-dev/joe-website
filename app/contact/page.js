@@ -6,7 +6,7 @@ export const metadata = {
     absolute: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
   },
   description:
-    'Instruct a RICS Reinstatement Cost Assessment for your UK building. Building reinstatement cost reports from £210 — desktop and on-site options. 24-hour response, 48-hour delivery, accepted by all UK insurers.',
+    'Instruct a RICS Reinstatement Cost Assessment for your UK building. Building reinstatement cost reports from £210, desktop and on-site options. 24-hour response, 48-hour delivery, accepted by all UK insurers.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
@@ -104,7 +104,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Request Your UK <span className="text-shine">Rebuild Cost Assessment</span> — RICS from £210.
+            Request Your UK <span className="text-shine">Rebuild Cost Assessment</span>, RICS from £210.
           </>
         }
       />

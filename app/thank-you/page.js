@@ -4,7 +4,7 @@ import Script from 'next/script'
 
 export const metadata = {
   title: 'Thank You',
-  description: 'Thank you for instructing RCA Ltd. Your Reinstatement Cost Assessment request has been received — we\'ll be in touch within 24 working hours.',
+  description: 'Thank you for instructing RCA Ltd. Your Reinstatement Cost Assessment request has been received. We\'ll be in touch within 24 working hours.',
   robots: { index: true, follow: true },
 }
 
@@ -67,7 +67,7 @@ export default function ThankYouPage() {
               },
               {
                 title: 'Your RCA report is delivered',
-                body: 'Receive a comprehensive RICS-compliant report with the exact reinstatement figure — ready to hand straight to your broker or insurer.',
+                body: 'Receive a comprehensive RICS-compliant report with the exact reinstatement figure, ready to hand straight to your broker or insurer.',
               },
             ].map((step, i) => (
               <li key={i} className="flex gap-5 items-start">

@@ -159,7 +159,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
               <span className="text-shine-red">80%</span> of UK<br />buildings are<br /><span className="text-shine-red">underinsured.</span>
             </h1>
             <p className="text-xl font-semibold text-secondary mb-4 leading-snug">
@@ -482,7 +482,7 @@ export default function HomePage() {
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">
-                  <span className="text-3xl font-bold text-white block">£425bn</span>
+                  <span className="text-2xl font-bold text-white block">£425bn</span>
                   <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Estimated Gap</p>
                 </div>
                 <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">

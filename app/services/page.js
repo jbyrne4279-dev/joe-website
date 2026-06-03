@@ -259,8 +259,8 @@ export default function ServicesPage() {
                     { feature: 'Listed / complex buildings', desktop: false, protect: false, onsite: true },
                     { feature: 'Best for', desktop: 'Standard residential & commercial', protect: 'Landlords & portfolio managers', onsite: 'Listed, high-value & complex' },
                   ].map(({ feature, desktop, protect, onsite }, i) => (
-                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/60'}>
-                      <td className="pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 bg-inherit z-10 leading-snug">{feature}</td>
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}>
+                      <td className={`pl-5 pr-3 py-3.5 font-semibold text-primary text-xs sticky left-0 z-10 leading-snug ${i % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}`}>{feature}</td>
                       {[desktop, protect, onsite].map((val, j) => (
                         <td key={j} className={`px-3 py-3.5 text-center align-middle ${j === 1 ? 'bg-[#1A6B4A]/5' : ''}`}>
                           {val === true ? (

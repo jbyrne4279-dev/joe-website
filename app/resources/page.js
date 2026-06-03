@@ -1,4 +1,4 @@
-import ContactSection from '../components/ContactSection'
+﻿import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
@@ -102,11 +102,10 @@ export default function ResourcesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesFaqJsonLd) }}
       />
     <main>
-      <div className="max-w-5xl mx-auto px-8">
 
         {/* Hero */}
-        <section className="py-24 lg:py-32 flex flex-col items-center text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 block">Expert Insight Guide</span>
+        <section className="py-24 lg:py-32 px-8 max-w-5xl mx-auto flex flex-col items-center text-center">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>menu_book</span>Expert Insight Guide</span>
           <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
             <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
           </h1>
@@ -124,44 +123,44 @@ export default function ResourcesPage() {
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="py-20 flex flex-col items-center text-center max-w-2xl mx-auto">
-          <div className="space-y-10 w-full">
+        <section className="py-20 px-8 bg-[#7f1d1d] flex flex-col items-center text-center">
+          <div className="space-y-10 w-full max-w-2xl mx-auto">
             <div className="space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Common Misconception</span>
-              <h2 className="text-4xl font-bold text-primary leading-tight">Your building is probably <span className="text-shine-red">insured for the wrong amount.</span></h2>
-              <p className="text-secondary leading-relaxed max-w-lg mx-auto">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
+              <h2 className="text-4xl font-bold text-white leading-tight">Your building is probably insured for the wrong amount.</h2>
+              <p className="text-white/70 leading-relaxed max-w-lg mx-auto">
                 Market value and rebuild cost are not the same figure yet most property owners confuse the two. The consequences of getting this wrong can be financially devastating.
               </p>
             </div>
 
             <div className="space-y-4 w-full">
-              <div className="liquid-glass rounded-2xl p-7 border border-amber-400/30 shadow-[0_0_18px_2px_rgba(251,191,36,0.08)] hover:shadow-[0_0_28px_4px_rgba(251,191,36,0.16)] hover:border-amber-400/50 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-amber-600" style={{ fontSize: '1.1rem' }}>warning</span>
+              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>warning</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">Overinsured in rural areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild. You could be paying premiums on a £480k fiction.</p>
+                  <p className="font-bold text-white mb-1">Overinsured in rural areas</p>
+                  <p className="text-white/70 text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild. You could be paying premiums on a £480k fiction.</p>
                 </div>
               </div>
 
-              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.16)] hover:border-red-400/40 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-red-400" style={{ fontSize: '1.1rem' }}>trending_down</span>
+              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>trending_down</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="font-bold text-white mb-1">Underinsured in urban areas</p>
+                  <p className="text-white/70 text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
-              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
+              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] hover:underline">RICS-regulated RCA</a> eliminates the guesswork</p>
-                  <p className="text-secondary text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
+                  <p className="font-bold text-white mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">RICS-regulated RCA</a> eliminates the guesswork</p>
+                  <p className="text-white/70 text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
                 </div>
               </div>
             </div>
@@ -169,7 +168,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Averaging Clause */}
-        <section className="py-20 bg-surface-container-low -mx-6 lg:-mx-12 px-6 lg:px-12 rounded-lg">
+        <section className="py-20 bg-surface-container-low px-6 lg:px-12 rounded-lg">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">The <span className="text-shine-yellow">&ldquo;Averaging Clause&rdquo;</span> Trap.</h2>
             <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
@@ -211,16 +210,16 @@ export default function ResourcesPage() {
         </section>
 
         {/* Rising Costs */}
-        <section className="py-24 max-w-2xl mx-auto flex flex-col items-center text-center gap-10">
-          <div className="space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Rising Costs</span>
-            <h2 className="text-4xl font-bold text-primary leading-tight"><span className="text-shine-red">The Surge</span> in Construction Materials.</h2>
-            <p className="text-secondary leading-relaxed">
+        <section className="py-24 px-8 bg-[#7f1d1d] flex flex-col items-center text-center gap-10">
+          <div className="space-y-4 max-w-2xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
+            <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
+            <p className="text-white/70 leading-relaxed">
               Global supply chain volatility and labour shortages have pushed rebuild costs up by over 25% since 2019. If your valuation hasn&rsquo;t been updated since 2021, you are almost certainly underinsured today.
             </p>
           </div>
 
-          <div className="w-full liquid-glass p-10 rounded-2xl sovereign-shadow border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
+          <div className="w-full max-w-2xl bg-white p-10 rounded-2xl">
             <div className="flex items-start justify-between mb-8">
               <div className="text-left">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">BCIS Construction Index</span>
@@ -237,7 +236,7 @@ export default function ResourcesPage() {
             <div className="flex justify-between text-xs text-secondary font-bold uppercase tracking-wider">
               <span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2024</span>
             </div>
-            <div className="mt-6 pt-5 border-t border-outline-variant/20 flex items-center justify-center gap-4 flex-wrap">
+            <div className="mt-6 pt-5 border-t border-zinc-100 flex items-center justify-center gap-4 flex-wrap">
               <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#1A6B4A]"></span><span className="text-xs text-secondary">Stable</span></div>
               <span className="text-secondary/30 text-xs">→</span>
               <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span className="text-xs text-secondary">Rising</span></div>
@@ -250,7 +249,7 @@ export default function ResourcesPage() {
         {/* Why RICS & BCIS */}
         <section className="py-20 text-center">
           <div className="max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Our Standard</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified</span>Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
             <p className="text-secondary leading-relaxed">
               Reinstatement Cost Assessment Ltd is a{' '}
@@ -276,36 +275,44 @@ export default function ResourcesPage() {
         </section>
 
         {/* RCA Lifecycle */}
-        <section className="py-24">
-          <div className="text-center mb-16 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Best Practice</span>
-            <h2 className="text-4xl font-bold text-primary">The <span className="text-shine">Reinstatement Cost Assessment Lifecycle.</span></h2>
-          </div>
-          <div className="max-w-2xl mx-auto">
-            <div className="relative flex flex-col gap-0">
-              <div className="absolute left-5 top-5 bottom-5 w-0.5 bg-[#1A6B4A]/15" aria-hidden="true" />
-              {[
-                { icon: 'flag', label: 'Step 1', title: 'Baseline RCA', desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.', bold: true },
-                { icon: 'update', label: 'Year 1', title: 'Annual Index Update', desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.', bold: false },
-                { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.', bold: false },
-                { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation', desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.', bold: true },
-              ].map(({ icon, label, title, desc, bold }, i) => (
-                <div key={i} className="relative flex items-start gap-6 pb-10 last:pb-0">
-                  <div className="relative z-10 shrink-0 w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#1A6B4A]/40 bg-white shadow-sm">
-                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1rem' }}>{icon}</span>
-                  </div>
-                  <div className="liquid-glass rounded-2xl px-6 py-5 flex-1 border border-[#1A6B4A]/20 shadow-[0_2px_12px_rgba(26,107,74,0.07)] hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_20px_rgba(26,107,74,0.12)] transition-all duration-300">
-                    <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">{label}</span>
-                    <p className={`${bold ? 'font-bold text-base' : 'font-semibold text-sm'} text-primary mb-1`}>{title}</p>
-                    <p className="text-xs text-secondary leading-relaxed">{desc}</p>
-                  </div>
-                </div>
-              ))}
+        <section className="py-24 px-8 bg-[#0f3d28]">
+          <div className="max-w-5xl mx-auto">
+
+            {/* Header */}
+            <div className="text-center mb-16 space-y-4">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Best Practice</span>
+              <h2 className="text-4xl font-bold text-white">The Reinstatement Cost Assessment Lifecycle.</h2>
             </div>
+
+            {/* Steps */}
+            <div className="relative">
+              <div className="hidden lg:block absolute top-[2.25rem] left-[calc(12.5%+1.25rem)] right-[calc(12.5%+1.25rem)] h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" aria-hidden="true" />
+              <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                {[
+                  { icon: 'flag',        label: 'Step 1', title: 'Baseline RCA',        desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.' },
+                  { icon: 'update',      label: 'Year 1', title: 'Annual Index Update',  desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.' },
+                  { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.' },
+                  { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation',  desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.' },
+                ].map(({ icon, label, title, desc }, i) => (
+                  <div key={i} className="flex flex-col items-center text-center gap-5">
+                    <div className="relative shrink-0 z-10">
+                      <div className="w-[4.5rem] h-[4.5rem] rounded-full bg-white flex items-center justify-center shadow-xl ring-4 ring-white/20">
+                        <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.6rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-2xl px-6 py-6 w-full shadow-md hover:shadow-lg transition-all duration-300 flex-1">
+                      <span className="text-[0.6rem] font-bold uppercase tracking-widest text-[#1A6B4A] block mb-2">{label}</span>
+                      <p className="font-bold text-primary text-sm mb-2">{title}</p>
+                      <p className="text-xs text-secondary leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </section>
 
-      </div>
       <ContactSection
         heading={
           <>

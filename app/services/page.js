@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -102,11 +102,10 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }}
       />
     <main>
-      <div className="max-w-7xl mx-auto px-8">
 
       {/* Hero */}
-      <section className="py-16 md:py-24 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block" style={{ letterSpacing: '0.3em' }}>Our Services</span>
+      <section className="py-16 md:py-24 px-8 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2" style={{ letterSpacing: '0.3em' }}><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>home_repair_service</span>Our Services</span>
         <h1 className="text-3xl sm:text-4xl md:text-[5rem] font-bold tracking-tight text-primary" style={{ lineHeight: '1.08' }}>
           <span className="text-shine-red">Insurers profit</span> from<br /><span className="text-shine-red">your underinsurance.</span>
           <br />
@@ -119,17 +118,17 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Grid */}
-      <section className="py-16" id="pricing">
+      <section className="py-16 px-8 bg-[#0f3d28]" id="pricing">
         <div className="text-center mb-10 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
-          <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
-          <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
+          <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
         </div>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-stretch">
 
             {/* Desktop Assessment */}
-            <div id="desktop-rca" className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div id="desktop-rca" className="bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -159,7 +158,7 @@ export default function ServicesPage() {
             </div>
 
             {/* 3-Year Protection */}
-            <div id="three-year-protection" className="liquid-glass rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
+            <div id="three-year-protection" className="bg-white rounded-2xl p-10 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)] scale-105">
               <div className="absolute top-6 right-6">
                 <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
               </div>
@@ -192,7 +191,7 @@ export default function ServicesPage() {
             </div>
 
             {/* On-Site Survey */}
-            <div id="on-site-survey" className="liquid-glass rounded-2xl p-10 flex flex-col sovereign-shadow border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.15)] transition-all duration-500">
+            <div id="on-site-survey" className="bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
               <div className="mb-8">
                 <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -229,7 +228,7 @@ export default function ServicesPage() {
       <section className="py-16 px-8 md:px-12 mt-8">
         <div className="max-w-5xl mx-auto px-2 sm:px-6">
           <div className="text-center mb-8 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Which is right for me?</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>compare_arrows</span>Which is right for me?</span>
             <h2 className="text-3xl font-bold text-primary">Find your <span className="text-shine">perfect assessment.</span></h2>
           </div>
           <div className="rounded-2xl border border-[#1A6B4A]/20 shadow-[0_0_24px_2px_rgba(26,107,74,0.07)] overflow-hidden">
@@ -284,11 +283,11 @@ export default function ServicesPage() {
       </section>
 
       {/* What's included */}
-      <section className="py-16 bg-surface-container-low rounded-2xl px-8 md:px-12 mt-8">
-        <div className="text-center mb-10 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Every Assessment Includes</span>
-          <h2 className="text-4xl font-bold text-primary">What <span className="text-shine">you always get.</span></h2>
-          <p className="text-secondary max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
+      <section className="py-20 px-8 md:px-12 bg-[#0f3d28]">
+        <div className="text-center mb-12 space-y-4">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
+          <h2 className="text-4xl font-bold text-white">What you always get.</h2>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {[
@@ -299,9 +298,9 @@ export default function ServicesPage() {
             { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
           ].map(({ icon, title, desc }) => (
-            <div key={icon} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.08)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.18)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex items-start gap-4">
-              <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                <span className="material-symbols-outlined text-shine" style={{ fontSize: '1.1rem' }}>{icon}</span>
+            <div key={icon} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
               </div>
               <div>
                 <p className="font-bold text-primary text-sm mb-1">{title}</p>
@@ -312,7 +311,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      </div>
       <ContactSection
         heading={
           <>

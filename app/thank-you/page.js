@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
 
@@ -32,7 +32,7 @@ export default function ThankYouPage() {
             <div className="btn-shine w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
               <span className="material-symbols-outlined text-white" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-3">Enquiry Received</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>task_alt</span>Enquiry Received</span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-5">Thank you.</h1>
             <p className="text-lg text-secondary leading-relaxed">
               We&rsquo;ve received your enquiry and will respond within{' '}
@@ -47,7 +47,7 @@ export default function ThankYouPage() {
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-3">Your next steps</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>format_list_numbered</span>Your next steps</span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">What happens next</h2>
           </div>
 

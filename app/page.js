@@ -186,7 +186,7 @@ export default function HomePage() {
 
           {/* Header */}
           <div className="text-center mb-16 space-y-4 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest">The Framework</span>
+            <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>schema</span>The Framework</span>
             <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
               What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
             </h2>
@@ -245,7 +245,7 @@ export default function HomePage() {
       <section className="py-20 px-8 bg-[#0f3d28]" id="which">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/50 block">Right for you?</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Right for you?</span>
             <h2 className="text-4xl font-bold text-white">Which service do I need?</h2>
             <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
           </div>
@@ -276,7 +276,7 @@ export default function HomePage() {
       <section className="py-16 px-8 bg-zinc-50" id="pricing">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Pricing</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
             <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
             <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
           </div>
@@ -385,7 +385,7 @@ export default function HomePage() {
       {/* What's included */}
       <section className="py-20 px-8 md:px-12 bg-[#0f3d28]">
         <div className="text-center mb-12 space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-white/50 block">Every Assessment Includes</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
         </div>
@@ -467,47 +467,47 @@ export default function HomePage() {
       {/* The Problem Section */}
       <section className="py-24 px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="liquid-glass rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16 border border-[#1A6B4A]/30 shadow-[0_0_40px_6px_rgba(26,107,74,0.10)] sovereign-shadow">
-            <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.08)' }}></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(26,107,74,0.06)' }}></div>
+          <div className="bg-[#7f1d1d] rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16">
+            <div className="absolute top-0 right-0 w-96 h-96 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none" style={{ background: 'rgba(255,255,255,0.04)' }}></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full -ml-32 -mb-32 blur-3xl pointer-events-none" style={{ background: 'rgba(0,0,0,0.15)' }}></div>
 
             <div className="md:w-1/2 space-y-6 relative z-10">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
-                The Risk of <span className="text-[#991b1b]">Underinsurance.</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>warning</span>The Problem</span>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+                The Risk of Underinsurance.
               </h2>
-              <p className="text-lg text-secondary leading-relaxed">
-                Recent data suggests that over <span className="font-semibold text-primary">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
+              <p className="text-lg text-white/70 leading-relaxed">
+                Recent data suggests that over <span className="font-semibold text-white">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
               </p>
               <div className="grid grid-cols-2 gap-8 pt-4">
                 <div className="space-y-2">
-                  <span className="text-4xl font-bold text-shine-red">£425bn</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Estimated Gap</p>
+                  <span className="text-4xl font-bold text-white">£425bn</span>
+                  <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Estimated Gap</p>
                 </div>
                 <div className="space-y-2">
-                  <span className="text-4xl font-bold text-shine-red">80%+</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Underinsured</p>
+                  <span className="text-4xl font-bold text-white">80%+</span>
+                  <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Underinsured</p>
                 </div>
               </div>
             </div>
 
             <div className="md:w-1/2 space-y-5 relative z-10">
-              <div className="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-red-400 text-xl">report</span>
+              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white text-xl">report</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary mb-1">Financial Consequences</h4>
-                  <p className="text-sm text-secondary leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
+                  <h4 className="font-bold text-white mb-1">Financial Consequences</h4>
+                  <p className="text-sm text-white/70 leading-relaxed">The &lsquo;Condition of Average&rsquo; clause means if you are <span className="font-semibold text-white">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
                 </div>
               </div>
-              <div className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[#1A6B4A] text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
+              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary mb-1">Our Resolution</h4>
-                  <p className="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
+                  <h4 className="font-bold text-white mb-1">Our Resolution</h4>
+                  <p className="text-sm text-white/70 leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends. This gives you a figure you can rely on.</p>
                 </div>
               </div>
             </div>
@@ -516,10 +516,12 @@ export default function HomePage() {
       </section>
 
       {/* Who We Serve */}
+
       <section className="py-24 px-8 bg-[#0f3d28] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Our Clients</span>
               <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Who We Serve.</h2>
               <p className="text-white/60 leading-relaxed">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
             </div>

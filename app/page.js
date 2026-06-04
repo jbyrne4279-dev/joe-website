@@ -427,11 +427,7 @@ export default function HomePage() {
           </div>
 
           <div className="relative">
-            {/* Fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-            <div className="reviews-track flex gap-6 w-max animate-scroll-reviews">
+<div className="reviews-track flex gap-6 w-max animate-scroll-reviews">
               {[
                 { stars: 5, text: "Found serious damp the estate agent had glossed over completely. Saved us from a very costly mistake.", name: "James H.", role: "Homebuyer, London", photo: "https://randomuser.me/api/portraits/men/32.jpg", google: true },
                 { stars: 5, text: "Used them across three acquisitions now. Always reliable, always thorough. A real trusted partner.", name: "Sarah M.", role: "Portfolio Landlord", photo: "https://randomuser.me/api/portraits/women/44.jpg" },

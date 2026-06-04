@@ -169,6 +169,19 @@
   /* animation removed */
 }
 
+@keyframes scroll-reviews {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-reviews {
+  animation: scroll-reviews 40s linear infinite;
+}
+
+.animate-scroll-reviews:hover {
+  animation-play-state: paused;
+}
+
 @keyframes logo-sheen {
   0% { transform: translateX(-140%) skewX(-18deg); }
   60%, 100% { transform: translateX(260%) skewX(-18deg); }

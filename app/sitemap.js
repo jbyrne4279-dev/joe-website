@@ -15,24 +15,6 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/services#desktop-rca`,
-      lastModified: new Date('2026-05-22'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/services#three-year-protection`,
-      lastModified: new Date('2026-05-22'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/services#on-site-survey`,
-      lastModified: new Date('2026-05-22'),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
       url: `${SITE_URL}/resources`,
       lastModified: new Date('2026-05-22'),
       changeFrequency: 'monthly',

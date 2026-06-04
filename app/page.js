@@ -474,7 +474,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto">
             <div className="space-y-12">
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
                 <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
@@ -484,7 +484,7 @@ export default function HomePage() {
                   { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
                   { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={icon} className="flex items-start gap-5 p-6 rounded-2xl border border-[#1A6B4A]/15 bg-surface-container-low hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_24px_rgba(26,107,74,0.10)] transition-all duration-300">
+                  <div key={icon} className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl border border-[#1A6B4A]/15 bg-surface-container-low hover:border-[#1A6B4A]/40 hover:shadow-[0_4px_24px_rgba(26,107,74,0.10)] transition-all duration-300">
                     <div className="btn-shine shrink-0 w-11 h-11 rounded-xl flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem' }}>{icon}</span>
                     </div>

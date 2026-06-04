@@ -122,7 +122,7 @@ export default function ServicesPage() {
         <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
           <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
-          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Every assessment is carried out by a RICS-regulated surveyor. Contact us for a tailored quote.</p>
         </div>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
@@ -135,10 +135,6 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-primary">Desktop Assessment</h3>
                 <p className="text-secondary text-sm">Efficient, data-driven remote valuation.</p>
-              </div>
-              <div className="mb-8">
-                <span className="text-4xl font-bold text-primary">£210.00</span>
-                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT per assessment</span>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
@@ -169,10 +165,6 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
                 <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
               </div>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-primary">£498.15</span>
-                <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
-              </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
                   <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>update</span>
@@ -198,10 +190,6 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-primary">On-Site Survey</h3>
                 <p className="text-secondary text-sm">Precision for complex structures.</p>
-              </div>
-              <div className="mb-8">
-                <span className="text-sm font-bold uppercase tracking-widest text-secondary block mb-1">Starts from</span>
-                <span className="text-4xl font-bold text-primary">£675.00</span>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-start gap-3 text-sm">
@@ -237,12 +225,12 @@ export default function ServicesPage() {
                 <thead>
                   <tr className="bg-[#1A6B4A]">
                     <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA<br /><span className="text-white/60 font-normal">£210 + VAT</span></th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA</th>
                     <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
                       <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />
-                      3-Year Protection<br /><span className="text-white/60 font-normal">£498.15 + VAT</span>
+                      3-Year Protection
                     </th>
-                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey<br /><span className="text-white/60 font-normal">From £675 + VAT</span></th>
+                    <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>On-Site Survey</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-zinc-100">

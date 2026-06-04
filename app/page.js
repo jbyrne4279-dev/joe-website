@@ -252,16 +252,16 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: 'monitor', name: 'Desktop Assessment', price: 'From £210', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
-              { icon: 'verified', fill: true, name: '3-Year Protection', price: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
-              { icon: 'location_on', fill: false, name: 'On-Site Survey', price: 'From £675', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
-            ].map(({ icon, fill, name, price, desc }) => (
+              { icon: 'monitor', name: 'Desktop Assessment', tag: 'Fast & Efficient', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
+              { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
+              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Highest Accuracy', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
+            ].map(({ icon, fill, name, tag, desc }) => (
               <div key={name} className="flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="flex flex-col items-center gap-3">
                   <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', ...(fill ? { fontVariationSettings: "'FILL' 1" } : {}) }}>{icon}</span>
                   </div>
-                  <span className="text-xs font-bold text-[#1A6B4A] bg-[#1A6B4A]/10 px-2.5 py-0.5 rounded-full">{price}</span>
+                  <span className="text-xs font-bold text-[#1A6B4A] bg-[#1A6B4A]/10 px-2.5 py-0.5 rounded-full">{tag}</span>
                 </div>
                 <div>
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
@@ -340,9 +340,9 @@ export default function HomePage() {
       <section className="pt-10 pb-16 px-8 bg-zinc-50" id="pricing">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified</span>Our Services</span>
             <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
-            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Transparent, fixed pricing with no hidden fees. Every assessment is carried out by a RICS-regulated surveyor.</p>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Every assessment is carried out by a RICS-regulated surveyor. Contact us for a tailored quote.</p>
           </div>
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
@@ -355,10 +355,6 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-semibold mb-2 text-primary">Desktop Assessment</h3>
                   <p className="text-secondary text-sm">Efficient, data-driven remote valuation.</p>
-                </div>
-                <div className="mb-8">
-                  <span className="text-4xl font-bold text-primary">£210.00</span>
-                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT per assessment</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
@@ -389,10 +385,6 @@ export default function HomePage() {
                   <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
                   <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
                 </div>
-                <div className="mb-8">
-                  <span className="text-5xl font-bold text-primary">£498.15</span>
-                  <span className="text-secondary block text-xs font-bold uppercase tracking-wider mt-1">+ VAT (Includes updates)</span>
-                </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>update</span>
@@ -418,10 +410,6 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-semibold mb-2 text-primary">On-Site Survey</h3>
                   <p className="text-secondary text-sm">Precision for complex structures.</p>
-                </div>
-                <div className="mb-8">
-                  <span className="text-sm font-bold uppercase tracking-widest text-secondary block mb-1">Starts from</span>
-                  <span className="text-4xl font-bold text-primary">£675.00</span>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">

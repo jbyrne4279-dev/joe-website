@@ -153,7 +153,7 @@ export default function HomePage() {
           alt="RICS-regulated Reinstatement Cost Assessment for UK property"
           fill
           priority
-          className="object-cover object-right-bottom"
+          className="object-cover object-center md:object-right-bottom"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/30" aria-hidden="true" />

@@ -472,29 +472,7 @@ export default function HomePage() {
       {/* Why RCA Ltd */}
       <section className="py-24 bg-surface-container-lowest">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
-            <div className="relative">
-              <div className="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
-              <Image
-                className="rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
-                src="/rca-rics-surveyor.png"
-                alt="RICS-regulated surveyor conducting a reinstatement cost assessment inspection"
-                width={800}
-                height={1000}
-              />
-              <div className="absolute -bottom-6 -right-6 liquid-glass p-6 rounded-lg z-20 hidden md:block">
-                <div className="flex items-center gap-4">
-                  <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem' }}>verified_user</span>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-secondary font-bold">Regulation</p>
-                    <p className="font-bold text-primary">RICS Authenticated</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div className="max-w-3xl mx-auto">
             <div className="space-y-12">
               <div className="text-center lg:text-left">
                 <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>

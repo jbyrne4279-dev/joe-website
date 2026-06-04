@@ -3,10 +3,10 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Guide | RICS Building Insurance UK',
+    absolute: 'Reinstatement Cost Assessment Guide | Building Insurance UK',
   },
   description:
-    'Why are 80% of UK buildings underinsured for reinstatement cost? A RICS Reinstatement Cost Assessment reveals your building\'s true rebuild figure. Learn how the Averaging Clause cuts claim payouts and how to stay fully protected.',
+    '80% of UK buildings are underinsured for reinstatement cost. Learn how a RICS RCA reveals your true rebuild figure and how the Averaging Clause cuts claim payouts.',
   alternates: { canonical: '/resources' },
   openGraph: {
     title: 'Reinstatement Cost Assessment Guide | RICS Building Insurance UK',

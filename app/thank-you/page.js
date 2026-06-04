@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Thank You',
-  description: 'Thank you for instructing RCA Ltd. Your Reinstatement Cost Assessment request has been received. We\'ll be in touch within 24 working hours.',
-  robots: { index: true, follow: true },
+  title: 'Thank You | RCA Ltd',
+  description: 'Your Reinstatement Cost Assessment request has been received. A RICS-regulated surveyor will be in touch within 24 working hours.',
+  robots: { index: false, follow: false },
 }
 
 export default function ThankYouPage() {

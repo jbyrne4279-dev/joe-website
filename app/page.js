@@ -8,7 +8,7 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment London & UK | From £210',
   },
   description:
-    'Get a RICS Reinstatement Cost Assessment for any UK building: homes, flats, commercial and listed properties. 80% of buildings carry the wrong reinstatement cost. Accurate rebuild valuations from £210, delivered in 48 hours.',
+    'RICS Reinstatement Cost Assessment for UK homes, flats, commercial and listed buildings. 80% of buildings are underinsured. Accurate rebuild valuations from £210, delivered in 48 hours.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',

@@ -4,15 +4,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Building Reinstatement Cost Assessment Services | RICS-Regulated UK',
+    absolute: 'RICS Reinstatement Cost Assessment Services UK | RCA Ltd',
   },
   description:
-    'RICS-regulated building Reinstatement Cost Assessment across the UK. Desktop RCA from £210, on-site survey from £675 for listed or complex buildings, and 3-Year Protection with annual BCIS index updates. Broker-ready reports accepted by all UK insurers.',
+    'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop RCA from £210, On-Site Survey from £675, and 3-Year Protection with annual BCIS updates. Broker-ready reports accepted by all UK insurers.',
   alternates: { canonical: '/services' },
   openGraph: {
-    title: 'Building Reinstatement Cost Assessment Services | RICS-Regulated UK',
+    title: 'RICS Reinstatement Cost Assessment Services UK | RCA Ltd',
     description:
-      'Choose the right building Reinstatement Cost Assessment for your UK property. Desktop from £210, On-Site Survey from £675 for listed or complex buildings, and 3-Year Protection for ongoing RICS compliance. BCIS-indexed, broker-ready.',
+      'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop RCA from £210, On-Site Survey from £675, and 3-Year Protection with annual BCIS updates. Broker-ready reports accepted by all UK insurers.',
     url: '/services',
   },
 }

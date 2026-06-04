@@ -36,7 +36,7 @@ const SITE_URL = 'https://reinstatementcostassessment.org'
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  '@id': `${SITE_URL}/#organization`,
+  '@id': `${SITE_URL}/`,
   name: 'Reinstatement Cost Assessment Ltd',
   alternateName: ['RCA Ltd', 'Rebuild Cost Assessment Ltd'],
   url: SITE_URL,
@@ -79,10 +79,10 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  '@id': `${SITE_URL}/#website`,
+  '@id': `${SITE_URL}/`,
   url: SITE_URL,
   name: 'Reinstatement Cost Assessment Ltd',
-  publisher: { '@id': `${SITE_URL}/#organization` },
+  publisher: { '@id': `${SITE_URL}/` },
   inLanguage: 'en-GB',
 }
 
@@ -107,21 +107,21 @@ const serviceLinksJsonLd = {
       position: 1,
       name: 'Desktop RCA from £210',
       description: 'Fast, data-driven Reinstatement Cost Assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 5 days.',
-      url: `${SITE_URL}/services#desktop-rca`,
+      url: `${SITE_URL}/services`,
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: '3-Year Protection from £498',
       description: 'Full Reinstatement Cost Assessment with automated annual BCIS index updates for three years. Designed for UK landlords and portfolio managers who need ongoing RICS compliance without repeat instruction costs.',
-      url: `${SITE_URL}/services#three-year-protection`,
+      url: `${SITE_URL}/services`,
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'On-Site Survey from £675',
       description: 'Full physical inspection by a RICS-regulated surveyor for listed buildings, complex architecture, non-standard construction, and high-value UK property. The highest accuracy RCA available.',
-      url: `${SITE_URL}/services#on-site-survey`,
+      url: `${SITE_URL}/services`,
     },
   ],
 }

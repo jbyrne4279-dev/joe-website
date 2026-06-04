@@ -5,10 +5,10 @@ import FaqSection from './components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'RICS Reinstatement Cost Assessment UK | From £210 | 48hrs',
+    absolute: 'RICS Reinstatement Cost Assessment UK | 48-Hour Delivery',
   },
   description:
-    'Is your building insured for the right amount? 80% of UK properties are underinsured. Get a RICS Reinstatement Cost Assessment from £210 — broker-ready, delivered in 48 hours.',
+    'Is your building insured for the right amount? 80% of UK properties are underinsured. Get a RICS Reinstatement Cost Assessment — broker-ready, delivered in 48 hours.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',

@@ -6,7 +6,7 @@ export const metadata = {
     absolute: 'Get a Reinstatement Cost Assessment | Instruct Online Today',
   },
   description:
-    'Instruct a RICS Reinstatement Cost Assessment online in minutes. Desktop from £210, On-Site Survey from £675. We respond within 24 hours — accepted by all UK insurers.',
+    'Instruct a RICS Reinstatement Cost Assessment online in minutes. Desktop and On-Site Survey options available. We respond within 24 hours — accepted by all UK insurers.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',

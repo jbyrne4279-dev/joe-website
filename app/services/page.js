@@ -7,7 +7,7 @@ export const metadata = {
     absolute: 'Reinstatement Cost Assessment Services | Desktop, On-Site & 3-Year',
   },
   description:
-    'Choose your RICS Reinstatement Cost Assessment: Desktop from £210, On-Site Survey from £675 for listed or complex buildings, or 3-Year Protection with annual BCIS updates. All reports broker-ready.',
+    'Choose your RICS Reinstatement Cost Assessment: Desktop, On-Site Survey for listed or complex buildings, or 3-Year Protection with annual BCIS updates. All reports broker-ready.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment Services UK | RCA Ltd',

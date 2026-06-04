@@ -3,10 +3,10 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
+    absolute: 'Get a Reinstatement Cost Assessment | Instruct Online Today',
   },
   description:
-    'Instruct a RICS Reinstatement Cost Assessment for your UK property. Desktop from £210, On-Site from £675. 24-hour response, 48-hour delivery, accepted by all UK insurers.',
+    'Instruct a RICS Reinstatement Cost Assessment online in minutes. Desktop from £210, On-Site Survey from £675. We respond within 24 hours — accepted by all UK insurers.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',

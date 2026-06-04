@@ -26,11 +26,8 @@ export default function Navbar() {
               width={80}
               height={64}
               priority
-              className="h-8 w-auto object-contain logo-levitate"
+              className="h-12 w-auto object-contain logo-levitate"
             />
-          </span>
-          <span className="text-xl font-bold text-zinc-900 tracking-tighter">
-            RCA-LTD
           </span>
         </Link>
 

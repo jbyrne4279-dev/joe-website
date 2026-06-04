@@ -197,10 +197,10 @@ export default function ResourcesPage() {
               <span className="material-symbols-outlined text-white text-4xl mb-6">account_balance_wallet</span>
               <h3 className="text-2xl font-bold text-white mb-4">The Payout Result</h3>
               <p className="text-white/70 mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
-              <div className="bg-white p-6 rounded-xl">
+              <div className="bg-white p-6 rounded-xl text-center">
                 <span className="text-sm uppercase tracking-widest text-secondary">You receive only</span>
                 <div className="text-4xl font-black text-primary mt-1">£60,000</div>
-                <div className="mt-4 text-red-600 font-bold flex items-center gap-2">
+                <div className="mt-4 text-red-600 font-bold flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-sm">trending_down</span>
                   £40,000 Shortfall
                 </div>
@@ -257,7 +257,7 @@ export default function ResourcesPage() {
               firm. We use Building Cost Information Service (BCIS) data, the industry standard for surveyors, combined with local site knowledge to provide a figure you can stand behind.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-xs md:max-w-4xl mx-auto">
             {[
               { icon: 'gavel', title: 'Regulated', desc: 'Strict adherence to Royal Institution of Chartered Surveyors standards.' },
               { icon: 'analytics', title: 'Data-Driven', desc: 'Access to live BCIS construction indices for accurate, up-to-date figures.' },

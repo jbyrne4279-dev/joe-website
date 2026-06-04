@@ -480,13 +480,13 @@ export default function HomePage() {
               <p className="text-lg text-white/70 leading-relaxed">
                 Recent data suggests that over <span className="font-semibold text-white">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
               </p>
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">
-                  <span className="text-2xl font-bold text-white block">£425bn</span>
+              <div className="grid grid-cols-2 gap-3 pt-4">
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1 min-w-0">
+                  <span className="text-2xl font-bold text-white block truncate">£425bn</span>
                   <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Estimated Gap</p>
                 </div>
-                <div className="bg-white/10 border border-white/15 rounded-2xl p-5 space-y-1">
-                  <span className="text-3xl font-bold text-white block">80%+</span>
+                <div className="bg-white/10 border border-white/15 rounded-2xl p-4 space-y-1 min-w-0">
+                  <span className="text-2xl font-bold text-white block">80%+</span>
                   <p className="text-xs font-bold text-white/50 uppercase tracking-widest">Underinsured</p>
                 </div>
               </div>

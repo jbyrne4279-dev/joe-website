@@ -180,68 +180,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What is an RCA */}
-      <section className="bg-surface pt-6 pb-20 px-8">
-        <div className="max-w-7xl mx-auto">
-
-          {/* Header */}
-          <div className="text-center mb-12 space-y-3 max-w-3xl mx-auto">
-            <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>schema</span>The Framework</span>
-            <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
-              What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
-            </h2>
-            <p className="text-lg text-secondary leading-relaxed">
-              A detailed, RICS-regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
-            </p>
-          </div>
-
-          {/* Image + Steps */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-
-            {/* Image */}
-            <div className="flex flex-col">
-            <div className="relative flex-1 min-h-[420px] rounded-2xl overflow-hidden sovereign-shadow">
-              <Image
-                src="/rebuild-cost-assessment-london.jpeg"
-                alt="RICS-regulated reinstatement cost assessment of a London commercial property"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-white font-semibold text-sm">RICS-regulated surveyors</p>
-              </div>
-            </div>
-            </div>
-
-            {/* Steps */}
-            <div className="relative">
-              {/* Vertical connector line */}
-              <div className="absolute left-5 top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-[#1A6B4A]/25 to-transparent hidden sm:block" aria-hidden="true" />
-              <div className="space-y-5">
-                {[
-                  { step: '1', title: 'Fully comprehensive', desc: <>Our RCAs calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete reinstatement figure you can rely on.</> },
-                  { step: '2', title: 'RICS-certified accuracy', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
-                  { step: '3', title: 'Accepted by all UK insurers', desc: 'Our broker-ready reports are submitted directly to insurers and accepted without challenge. No back-and-forth, no delays - just a compliant, insurer-approved valuation.' },
-                  { step: '4', title: 'Backed by professional indemnity', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
-                ].map(({ step, title, desc }) => (
-                  <div key={step} className="flex items-center gap-0">
-                    <div className="btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10">{step}</div>
-                    <div className="w-5 h-px bg-[#1A6B4A]/30 shrink-0" aria-hidden="true" />
-                    <div className="liquid-glass flex-1 p-6 rounded-2xl border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300">
-                      <h4 className="text-base font-bold text-primary mb-1">{title}</h4>
-                      <p className="text-secondary text-sm leading-relaxed">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* Which service */}
       <section className="pt-10 pb-20 px-8 bg-[#0f3d28]" id="which">
         <div className="max-w-7xl mx-auto">
@@ -525,6 +463,67 @@ export default function HomePage() {
               <p className="text-secondary text-sm">Download a redacted sample report to see our format, methodology, and RICS sign-off.</p>
             </div>
             <a href="/sample-report.pdf" className="shrink-0 btn-shine text-white px-7 py-3 rounded-full font-bold text-sm whitespace-nowrap">Download Sample Report</a>
+          </div>
+        </div>
+      </section>
+
+      {/* What is an RCA */}
+      <section className="bg-white pt-6 pb-20 px-8">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Header */}
+          <div className="text-center mb-12 space-y-3 max-w-3xl mx-auto">
+            <span className="text-xs font-bold text-[#1A6B4A] uppercase tracking-widest flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>schema</span>The Framework</span>
+            <h2 className="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">
+              What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
+            </h2>
+            <p className="text-lg text-secondary leading-relaxed">
+              A detailed, RICS-regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
+            </p>
+          </div>
+
+          {/* Image + Steps */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+            {/* Image */}
+            <div className="flex flex-col">
+            <div className="relative flex-1 min-h-[420px] rounded-2xl overflow-hidden sovereign-shadow">
+              <Image
+                src="/rebuild-cost-assessment-london.jpeg"
+                alt="RICS-regulated reinstatement cost assessment of a London commercial property"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-white font-semibold text-sm">RICS-regulated surveyors</p>
+              </div>
+            </div>
+            </div>
+
+            {/* Steps */}
+            <div className="relative">
+              <div className="absolute left-5 top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-[#1A6B4A]/25 to-transparent hidden sm:block" aria-hidden="true" />
+              <div className="space-y-5">
+                {[
+                  { step: '1', title: 'Fully comprehensive', desc: <>Our RCAs calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete reinstatement figure you can rely on.</> },
+                  { step: '2', title: 'RICS-certified accuracy', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
+                  { step: '3', title: 'Accepted by all UK insurers', desc: 'Our broker-ready reports are submitted directly to insurers and accepted without challenge. No back-and-forth, no delays - just a compliant, insurer-approved valuation.' },
+                  { step: '4', title: 'Backed by professional indemnity', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
+                ].map(({ step, title, desc }) => (
+                  <div key={step} className="flex items-center gap-0">
+                    <div className="btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10">{step}</div>
+                    <div className="w-5 h-px bg-[#1A6B4A]/30 shrink-0" aria-hidden="true" />
+                    <div className="liquid-glass flex-1 p-6 rounded-2xl border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300">
+                      <h4 className="text-base font-bold text-primary mb-1">{title}</h4>
+                      <p className="text-secondary text-sm leading-relaxed">{desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

@@ -161,7 +161,7 @@ export default function ResourcesPage() {
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">RICS-regulated RCA</a> eliminates the guesswork</p>
+                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">RICS-regulated RCA</a> eliminates the guesswork.</p>
                   <p className="text-secondary text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-10 rounded-2xl shadow-md flex flex-col justify-between">
               <div>
-                <h3 className="text-lg font-semibold text-[#1A6B4A] mb-8">Scenario: The Reality Gap</h3>
+                <h3 className="text-lg font-semibold text-[#1A6B4A] mb-8">Scenario: The Reality Gap.</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-end border-b border-zinc-100 pb-4">
                     <span className="text-secondary">True Rebuild Cost</span>

@@ -8,7 +8,7 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment UK | 48-Hour Delivery',
   },
   description:
-    'Is your building insured for the right amount? 80% of UK properties are underinsured. Get a RICS Reinstatement Cost Assessment — broker-ready, delivered in 48 hours.',
+    'Is your building insured for the right amount? 80% of UK properties are underinsured. Get a RICS Reinstatement Cost Assessment   broker-ready, delivered in 48 hours.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
@@ -388,18 +388,18 @@ export default function HomePage() {
           <div className="relative">
             <div className="reviews-track flex gap-6 w-max animate-scroll-reviews">
               {[
-                { stars: 5, text: "Our insurer flagged we were underinsured at renewal. RCA Ltd came back within the week with a full reinstatement assessment — turned out we were short by nearly £200k. Sorted now.", name: "James H.", role: "Landlord, Manchester", photo: "https://randomuser.me/api/portraits/men/32.jpg", google: true },
+                { stars: 5, text: "Our insurer flagged we were underinsured at renewal. RCA Ltd came back within the week with a full reinstatement assessment   turned out we were short by nearly £200k. Sorted now.", name: "James H.", role: "Landlord, Manchester", photo: "https://randomuser.me/api/portraits/men/32.jpg", google: true },
                 { stars: 5, text: "Used them for three properties now. Each report is thorough, clearly laid out, and my broker accepts them without question. Makes renewal so much easier.", name: "Sarah M.", role: "Portfolio Landlord, Leeds", photo: "https://randomuser.me/api/portraits/women/44.jpg" },
-                { stars: 4, text: "Needed a reinstatement figure for a listed building — most surveyors wouldn't touch it. These guys knew exactly what they were doing. Very happy with the result.", name: "David C.", role: "Owner, Grade II Listed Property", initials: "DC", color: "bg-emerald-600", google: true },
+                { stars: 4, text: "Needed a reinstatement figure for a listed building   most surveyors wouldn't touch it. These guys knew exactly what they were doing. Very happy with the result.", name: "David C.", role: "Owner, Grade II Listed Property", initials: "DC", color: "bg-emerald-600", google: true },
                 { stars: 5, text: "My mortgage lender required an up-to-date RCA before completion. Got it back fast, no fuss, and the report was accepted first time. Would definitely use again.", name: "Emma T.", role: "Homebuyer, Bristol", photo: "https://randomuser.me/api/portraits/women/68.jpg" },
                 { stars: 5, text: "We manage a mixed-use block and had been using the same insured figure for years. The assessment flagged a significant gap. Really glad we got it done before any claim arose.", name: "Robert O.", role: "Property Manager, Birmingham", photo: "https://randomuser.me/api/portraits/men/75.jpg", google: true },
                 { stars: 5, text: "The desktop assessment was great value. Clear methodology, BCIS-indexed, and the surveyor walked me through the figures on a call afterwards. Exactly what I needed.", name: "Claire S.", role: "Buy-to-Let Investor, London", photo: "https://randomuser.me/api/portraits/women/21.jpg" },
                 { stars: 4, text: "Had a dilapidations dispute on a commercial lease and needed a solid reinstatement figure to back our position. The report held up without issue.", name: "Tom B.", role: "Commercial Tenant, Edinburgh", initials: "TB", color: "bg-indigo-600" },
                 { stars: 5, text: "Straightforward process from start to finish. Submitted the details online, had the report in a few days, and my insurer was satisfied. No complaints at all.", name: "Priya S.", role: "Residential Landlord, Leicester", photo: "https://randomuser.me/api/portraits/women/55.jpg", google: true },
                 // Duplicates for seamless loop
-                { stars: 5, text: "Our insurer flagged we were underinsured at renewal. RCA Ltd came back within the week with a full reinstatement assessment — turned out we were short by nearly £200k. Sorted now.", name: "James H.", role: "Landlord, Manchester", photo: "https://randomuser.me/api/portraits/men/32.jpg", google: true },
+                { stars: 5, text: "Our insurer flagged we were underinsured at renewal. RCA Ltd came back within the week with a full reinstatement assessment   turned out we were short by nearly £200k. Sorted now.", name: "James H.", role: "Landlord, Manchester", photo: "https://randomuser.me/api/portraits/men/32.jpg", google: true },
                 { stars: 5, text: "Used them for three properties now. Each report is thorough, clearly laid out, and my broker accepts them without question. Makes renewal so much easier.", name: "Sarah M.", role: "Portfolio Landlord, Leeds", photo: "https://randomuser.me/api/portraits/women/44.jpg" },
-                { stars: 4, text: "Needed a reinstatement figure for a listed building — most surveyors wouldn't touch it. These guys knew exactly what they were doing. Very happy with the result.", name: "David C.", role: "Owner, Grade II Listed Property", initials: "DC", color: "bg-emerald-600", google: true },
+                { stars: 4, text: "Needed a reinstatement figure for a listed building   most surveyors wouldn't touch it. These guys knew exactly what they were doing. Very happy with the result.", name: "David C.", role: "Owner, Grade II Listed Property", initials: "DC", color: "bg-emerald-600", google: true },
                 { stars: 5, text: "My mortgage lender required an up-to-date RCA before completion. Got it back fast, no fuss, and the report was accepted first time. Would definitely use again.", name: "Emma T.", role: "Homebuyer, Bristol", photo: "https://randomuser.me/api/portraits/women/68.jpg" },
               ].map((review, i) => (
                 <div key={i} className="flex-shrink-0 w-80 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
@@ -440,14 +440,14 @@ export default function HomePage() {
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
             <h2 className="text-4xl font-bold text-primary">Why Managing Agents Choose Us</h2>
-            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on — not guesswork.</p>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on   not guesswork.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
               { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS-registered member. Full regulatory compliance, every time.' },
               { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
               { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed-use portfolios, commercial assets, and high-value listed buildings.' },
-              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker — accepted without question.' },
+              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker   accepted without question.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/15 sovereign-shadow flex gap-5 items-start">
                 <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
@@ -467,7 +467,7 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-0 md:gap-0 items-stretch">
               {[
                 { n: '1', label: 'Instruction & Data Gathering', desc: 'We collect property details, floor areas, construction type, and any specialist features.' },
-                { n: '2', label: 'BCIS-Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices — the same data used by major insurers.' },
+                { n: '2', label: 'BCIS-Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices   the same data used by major insurers.' },
                 { n: '3', label: 'RICS-Reviewed Report', desc: 'A RICS-registered surveyor signs off every report before it is delivered to you.' },
               ].map(({ n, label, desc }, i, arr) => (
                 <div key={n} className="flex flex-col md:flex-row items-stretch flex-1">
@@ -501,8 +501,8 @@ export default function HomePage() {
       <section className="py-20 px-8 bg-[#0f3d28]">
         <div className="max-w-4xl mx-auto text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>event_repeat</span>Recurring Compliance</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">We Don&rsquo;t Just Deliver Reports —<br className="hidden md:block" /> We Manage Your Reassessment Cycle</h2>
-          <p className="text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">We maintain reassessment schedules for all clients and notify you when updates are due — turning a one-off instruction into long-term compliance.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">We Don&rsquo;t Just Deliver Reports  <br className="hidden md:block" /> We Manage Your Reassessment Cycle</h2>
+          <p className="text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">We maintain reassessment schedules for all clients and notify you when updates are due   turning a one-off instruction into long-term compliance.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
             {[
               { icon: 'event_repeat', text: '3-year reassessment cycles aligned to RICS guidance' },
@@ -525,7 +525,7 @@ export default function HomePage() {
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Free Offer</span>
             <h2 className="text-2xl md:text-3xl font-bold text-primary mt-1 mb-2">Free Portfolio Review</h2>
-            <p className="text-secondary leading-relaxed max-w-lg">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for reassessment — at no cost to you.</p>
+            <p className="text-secondary leading-relaxed max-w-lg">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for reassessment   at no cost to you.</p>
           </div>
           <Link href="/free-portfolio-review" className="shrink-0 btn-shine text-white px-8 py-4 rounded-full font-bold whitespace-nowrap sovereign-shadow">Get Your Free Review</Link>
         </div>

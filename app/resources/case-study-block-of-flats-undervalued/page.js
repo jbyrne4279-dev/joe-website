@@ -36,17 +36,17 @@ export default function ArticlePage() {
       </div>
 
       <h2 className="text-2xl font-bold text-primary mb-3">Background</h2>
-      <p className="text-secondary leading-relaxed mb-6">The block — a purpose-built residential development comprising 24 flats across four storeys — had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index-linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from £4.2 million in 2018 to £4.9 million by 2024, an increase of approximately 17%.</p>
+      <p className="text-secondary leading-relaxed mb-6">The block   a purpose-built residential development comprising 24 flats across four storeys   had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index-linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from £4.2 million in 2018 to £4.9 million by 2024, an increase of approximately 17%.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">What the Assessment Found</h2>
-      <p className="text-secondary leading-relaxed mb-6">When we carried out a full RICS-regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value — taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification — came to £7.0 million.</p>
+      <p className="text-secondary leading-relaxed mb-6">When we carried out a full RICS-regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value   taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification   came to £7.0 million.</p>
       <p className="text-secondary leading-relaxed mb-6">The shortfall was £2.1 million, representing underinsurance of approximately 41%. The index-linking applied by the insurer had tracked general construction cost movements but had significantly underestimated the true cost inflation for this type of construction in this region between 2020 and 2024, a period marked by exceptional material price increases and a severe shortage of skilled trades.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">Why the Gap Was So Large</h2>
       <ul className="list-disc list-inside text-secondary space-y-2 mb-8 leading-relaxed">
-        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment — meaning index-linking had been applied to an already understated starting point</li>
+        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment   meaning index-linking had been applied to an already understated starting point</li>
         <li>Post-2020 construction inflation ran significantly above the general index used by the insurer</li>
-        <li>The block included a basement car park and communal plant rooms — specialist elements that generic indices do not adequately capture</li>
+        <li>The block included a basement car park and communal plant rooms   specialist elements that generic indices do not adequately capture</li>
         <li>External works, boundary walls, and landscaping had not been included in the original figure</li>
       </ul>
 
@@ -55,7 +55,7 @@ export default function ArticlePage() {
 
       <div className="bg-[#0f3d28] rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold text-white mb-2">Is your block in the same position?</h3>
-        <p className="text-white/60 mb-5 text-sm">Send us your portfolio schedule and we&rsquo;ll identify which properties are overdue — for free.</p>
+        <p className="text-white/60 mb-5 text-sm">Send us your portfolio schedule and we&rsquo;ll identify which properties are overdue   for free.</p>
         <Link href="/free-portfolio-review" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Request a Free Portfolio Review</Link>
       </div>
     </main>

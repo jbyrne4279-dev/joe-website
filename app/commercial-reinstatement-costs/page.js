@@ -4,12 +4,12 @@ import ContactSection from '../components/ContactSection'
 export const metadata = {
   title: 'Commercial Reinstatement Cost Assessments | RICS Regulated UK',
   description:
-    'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept — delivered in 5 days.',
+    'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept   delivered in 5 days.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
     title: 'Commercial Reinstatement Cost Assessments | RICS Regulated UK',
     description:
-      'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept — delivered in 5 days.',
+      'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept   delivered in 5 days.',
     url: '/commercial-reinstatement-costs',
   },
 }
@@ -29,7 +29,7 @@ export default function CommercialReinstatementPage() {
               Commercial Reinstatement Cost Assessments
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10">
-              Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated assessments your broker will accept — delivered fast.
+              Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated assessments your broker will accept   delivered fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -65,17 +65,17 @@ export default function CommercialReinstatementPage() {
               {
                 icon: 'construction',
                 title: 'Commercial rebuild costs rising faster than index linking keeps up',
-                desc: 'Material costs, labour shortages, and supply chain pressures have driven commercial rebuild costs well above what standard index linking captures — widening the underinsurance gap year on year.',
+                desc: 'Material costs, labour shortages, and supply chain pressures have driven commercial rebuild costs well above what standard index linking captures   widening the underinsurance gap year on year.',
               },
               {
                 icon: 'calculate',
                 title: 'Generic online calculators miss specialist fitout and M&E costs',
-                desc: 'Commercial buildings contain significant mechanical, electrical, and specialist fitout costs that generic calculators ignore entirely — leading to materially understated reinstatement figures.',
+                desc: 'Commercial buildings contain significant mechanical, electrical, and specialist fitout costs that generic calculators ignore entirely   leading to materially understated reinstatement figures.',
               },
               {
                 icon: 'verified_user',
                 title: 'Insurers and lenders requiring up-to-date RICS assessments',
-                desc: 'Increasingly, commercial insurers and lenders require a verifiable RICS-regulated reinstatement figure before agreeing terms — a generic estimate or calculator output is no longer sufficient.',
+                desc: 'Increasingly, commercial insurers and lenders require a verifiable RICS-regulated reinstatement figure before agreeing terms   a generic estimate or calculator output is no longer sufficient.',
               },
             ].map(({ icon, title, desc }) => (
               <div
@@ -108,7 +108,7 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="space-y-4 max-w-2xl mx-auto">
             {[
-              'Specialist commercial surveyors — all asset classes',
+              'Specialist commercial surveyors   all asset classes',
               'Fitout, M&E, and external works included',
               'RICS-regulated report ready in 5 days',
             ].map((point, i) => (
@@ -135,7 +135,7 @@ export default function CommercialReinstatementPage() {
             Get an accurate commercial reinstatement figure today.
           </h2>
           <p className="text-white/75 max-w-xl mx-auto">
-            RICS-regulated assessments for offices, warehouses, retail, and mixed-use — covering fitout, M&E, and external works. Broker-ready in 5 days.
+            RICS-regulated assessments for offices, warehouses, retail, and mixed-use   covering fitout, M&E, and external works. Broker-ready in 5 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

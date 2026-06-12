@@ -3,10 +3,10 @@ import ContactSection from '../components/ContactSection'
 
 export const metadata = {
   title: 'Free Portfolio Review | Identify Underinsured Buildings | RCA Ltd',
-  description: 'Upload your property schedule and we\'ll identify which buildings are overdue for reassessment. Free review for managing agents and portfolio owners — no obligation.',
+  description: 'Upload your property schedule and we\'ll identify which buildings are overdue for reassessment. Free review for managing agents and portfolio owners   no obligation.',
   alternates: { canonical: '/free-portfolio-review' },
   openGraph: {
-    title: 'Free Portfolio Review — Identify Underinsured Buildings',
+    title: 'Free Portfolio Review   Identify Underinsured Buildings',
     description: 'Upload your property schedule and we\'ll identify which buildings are overdue for reassessment. Free review for managing agents and portfolio owners.',
     url: '/free-portfolio-review',
   },
@@ -18,9 +18,9 @@ export default function FreePortfolioReviewPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0f3d28] to-[#1A6B4A] py-24 px-8 text-center">
         <div className="max-w-3xl mx-auto">
-          <span className="inline-block text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Free Offer — No Obligation</span>
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Free Offer   No Obligation</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">Free Portfolio Review<br className="hidden md:block" /> for Managing Agents</h1>
-          <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for a reinstatement cost assessment — at no cost to you.</p>
+          <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for a reinstatement cost assessment   at no cost to you.</p>
           <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-bold text-base inline-block sovereign-shadow">Request Your Free Review</Link>
         </div>
       </section>
@@ -58,9 +58,9 @@ export default function FreePortfolioReviewPage() {
           </div>
           <div className="space-y-6 mb-12">
             {[
-              { n: '1', label: 'Send us your property schedule', desc: 'Email a spreadsheet or PDF listing your properties — address, approximate floor area, last assessment date if known.' },
+              { n: '1', label: 'Send us your property schedule', desc: 'Email a spreadsheet or PDF listing your properties   address, approximate floor area, last assessment date if known.' },
               { n: '2', label: 'We review against RICS guidance', desc: 'Our surveyors compare each asset against current RICS reassessment intervals and BCIS cost inflation since the last valuation.' },
-              { n: '3', label: 'You receive a clear summary', desc: 'Within 2 working days, we\'ll return a simple report flagging which properties are overdue and why — with no obligation to proceed.' },
+              { n: '3', label: 'You receive a clear summary', desc: 'Within 2 working days, we\'ll return a simple report flagging which properties are overdue and why   with no obligation to proceed.' },
             ].map(({ n, label, desc }) => (
               <div key={n} className="flex gap-5 items-start">
                 <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold">{n}</div>

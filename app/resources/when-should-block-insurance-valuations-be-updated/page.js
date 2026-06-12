@@ -22,8 +22,8 @@ export default function ArticlePage() {
       <p className="text-secondary text-lg leading-relaxed mb-8">For managing agents and freeholders, keeping reinstatement cost figures current is both a compliance requirement and a critical financial protection. Yet the majority of UK blocks are operating with valuations that are years out of date.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">The RICS Recommendation: Every Three Years</h2>
-      <p className="text-secondary leading-relaxed mb-6">The Royal Institution of Chartered Surveyors (RICS) recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index-linked adjustments are acceptable as a bridging measure — but they are not a substitute for a professional assessment.</p>
-      <p className="text-secondary leading-relaxed mb-8">Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index — it does not account for site-specific factors, changes to the building, or localised cost inflation.</p>
+      <p className="text-secondary leading-relaxed mb-6">The Royal Institution of Chartered Surveyors (RICS) recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index-linked adjustments are acceptable as a bridging measure   but they are not a substitute for a professional assessment.</p>
+      <p className="text-secondary leading-relaxed mb-8">Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index   it does not account for site-specific factors, changes to the building, or localised cost inflation.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">Why Annual Index Linking Isn't Enough</h2>
       <p className="text-secondary leading-relaxed mb-4">General construction indices like the BCIS All-in Tender Price Index track broad market movements. They cannot account for:</p>
@@ -33,7 +33,7 @@ export default function ArticlePage() {
         <li>Specialist construction requirements (curtilage structures, listed features, complex M&amp;E)</li>
         <li>The compounding effect of index-linking an already inaccurate base figure</li>
       </ul>
-      <p className="text-secondary leading-relaxed mb-8">If the original sum insured was wrong — and in our experience, a significant proportion are — index linking simply perpetuates and compounds that error year on year.</p>
+      <p className="text-secondary leading-relaxed mb-8">If the original sum insured was wrong   and in our experience, a significant proportion are   index linking simply perpetuates and compounds that error year on year.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">Triggers for Earlier Reassessment</h2>
       <p className="text-secondary leading-relaxed mb-4">Even within a three-year cycle, certain events should prompt an immediate reassessment:</p>
@@ -46,12 +46,12 @@ export default function ArticlePage() {
       </ul>
 
       <h2 className="text-2xl font-bold text-primary mb-3">The Consequences of an Outdated Valuation</h2>
-      <p className="text-secondary leading-relaxed mb-6">If a block is underinsured at the point of a claim, most policies apply what is known as the average clause — meaning the insurer will only pay out in proportion to the degree of underinsurance. On a £5 million block insured for £3.5 million, a £500,000 claim could result in a settlement of just £350,000. The leaseholders bear the shortfall.</p>
+      <p className="text-secondary leading-relaxed mb-6">If a block is underinsured at the point of a claim, most policies apply what is known as the average clause   meaning the insurer will only pay out in proportion to the degree of underinsurance. On a £5 million block insured for £3.5 million, a £500,000 claim could result in a settlement of just £350,000. The leaseholders bear the shortfall.</p>
       <p className="text-secondary leading-relaxed mb-10">For managing agents, allowing a known outdated valuation to persist can also create personal liability exposure under ARMA guidance and general professional duty of care obligations.</p>
 
       <div className="bg-[#0f3d28] rounded-2xl p-8 text-center">
         <h3 className="text-xl font-bold text-white mb-2">Is your block overdue for reassessment?</h3>
-        <p className="text-white/60 mb-5 text-sm">We offer a free portfolio review — upload your schedule and we&rsquo;ll flag which buildings need attention.</p>
+        <p className="text-white/60 mb-5 text-sm">We offer a free portfolio review   upload your schedule and we&rsquo;ll flag which buildings need attention.</p>
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
       </div>
     </main>

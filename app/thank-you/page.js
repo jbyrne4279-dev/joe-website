@@ -54,19 +54,19 @@ export default function ThankYouPage() {
           <ol className="space-y-6">
             {[
               {
-                title: 'Confirmation email sent',
+                title: 'Confirmation email sent.',
                 body: "You'll receive an email within minutes confirming your enquiry details and reference number. Check your spam folder if it doesn't arrive.",
               },
               {
-                title: 'Surveyor assigned',
+                title: 'Surveyor assigned.',
                 body: 'A RICS-regulated surveyor reviews your property details and is allocated to your case based on location and property type.',
               },
               {
-                title: 'We contact you within 24 hours',
+                title: 'We contact you within 24 hours.',
                 body: 'Your surveyor calls or emails to confirm requirements, agree on timelines, and answer any questions before work begins.',
               },
               {
-                title: 'Your RCA report is delivered',
+                title: 'Your RCA report is delivered.',
                 body: 'Receive a comprehensive RICS-compliant report with the exact reinstatement figure, ready to hand straight to your broker or insurer.',
               },
             ].map((step, i) => (

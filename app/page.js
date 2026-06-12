@@ -186,6 +186,7 @@ export default function HomePage() {
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Right for you?</span>
             <h2 className="text-4xl font-bold text-white">Which service does your property need?</h2>
+
             <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Not sure where to start? Here&rsquo;s a quick guide to help you choose the right assessment.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

@@ -50,13 +50,13 @@ export default function ArticlePage() {
       <h2 className="text-2xl font-bold text-primary mb-3">The RICS Position.</h2>
       <p className="text-secondary leading-relaxed mb-8">RICS is unambiguous: index linking is a maintenance tool, not an assessment. Their guidance recommends a full professional reinstatement cost assessment every three years as a minimum, with index linking used only as an interim adjustment between assessments. This position is shared by the ABI and most major brokers.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">The Practical Recommendation for Managing Agents</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">The Practical Recommendation for Managing Agents.</h2>
       <ul className="text-secondary space-y-2 mb-10 leading-relaxed list-disc pl-6">
-        <li>Commission a RICS-regulated reinstatement cost assessment at least every three years per block</li>
-        <li>Use index linking only as a bridge between assessments, never as a permanent substitute</li>
-        <li>Document the date and source of the last professional assessment in your management records</li>
-        <li>Treat any insurer query about the sum insured as an immediate trigger for professional reassessment</li>
-        <li>Where the last assessment used a generic online calculator rather than a RICS surveyor, treat the figure as unverified and arrange a proper assessment at the next opportunity</li>
+        <li>Commission a RICS-regulated reinstatement cost assessment at least every three years per block.</li>
+        <li>Use index linking only as a bridge between assessments, never as a permanent substitute.</li>
+        <li>Document the date and source of the last professional assessment in your management records.</li>
+        <li>Treat any insurer query about the sum insured as an immediate trigger for professional reassessment.</li>
+        <li>Where the last assessment used a generic online calculator rather than a RICS surveyor, treat the figure as unverified and arrange a proper assessment at the next opportunity.</li>
       </ul>
 
       <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">

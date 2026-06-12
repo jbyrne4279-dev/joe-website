@@ -548,18 +548,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Free Portfolio Review CTA Banner */}
-      <section className="py-16 px-8 bg-white border-y border-[#1A6B4A]/10">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Free Offer</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mt-1 mb-2">Free Portfolio Review</h2>
-            <p className="text-secondary leading-relaxed max-w-lg">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for reassessment   at no cost to you.</p>
-          </div>
-          <Link href="/free-portfolio-review" className="shrink-0 btn-shine text-white px-8 py-4 rounded-full font-bold whitespace-nowrap sovereign-shadow">Get Your Free Review</Link>
-        </div>
-      </section>
-
       {/* Why RCA Ltd */}
       <section className="py-24 bg-surface-container-lowest">
         <div className="max-w-7xl mx-auto px-8">

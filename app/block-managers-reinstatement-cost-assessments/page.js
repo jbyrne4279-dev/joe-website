@@ -65,7 +65,7 @@ export default function BlockManagersPage() {
               Common Challenges
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
-              Problems we solve for block managers
+              Problems we solve for block managers.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -111,7 +111,7 @@ export default function BlockManagersPage() {
               How We Help
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
-              Our solution for block managers
+              Our solution for block managers.
             </h2>
           </div>
           <div className="space-y-4 max-w-2xl mx-auto">

@@ -197,7 +197,7 @@ export default function ResourcesPage() {
             </div>
             <div className="bg-white border border-zinc-100 p-10 rounded-2xl shadow-md flex flex-col justify-center">
               <span className="material-symbols-outlined text-[#1A6B4A] text-4xl mb-6">account_balance_wallet</span>
-              <h3 className="text-2xl font-bold text-primary mb-4">The Payout Result</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">The Payout Result.</h3>
               <p className="text-secondary mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
               <div className="bg-white p-6 rounded-xl text-center">
                 <span className="text-sm uppercase tracking-widest text-secondary">You receive only</span>
@@ -319,7 +319,7 @@ export default function ResourcesPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>article</span>Guides &amp; Case Studies</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Further Reading</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Further Reading.</h2>
             <p className="text-secondary max-w-xl mx-auto leading-relaxed">Expert guidance for managing agents, freeholders and portfolio owners on reinstatement cost compliance.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -333,21 +333,21 @@ export default function ResourcesPage() {
               },
               {
                 tag: 'Risk & Compliance',
-                title: 'Top Risks of Underinsurance for Managing Agents',
+                title: 'Top Risks of Underinsurance for Managing Agents.',
                 desc: 'From proportional claim settlements to personal liability exposure — the risks managing agents face when valuations are out of date.',
                 href: '/resources/top-risks-of-underinsurance-for-managing-agents',
                 img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&auto=format&q=80',
               },
               {
                 tag: 'Case Study',
-                title: 'Block of Flats Undervalued by £2 Million',
+                title: 'Block of Flats Undervalued by £2 Million.',
                 desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional RCA uncovered the gap.',
                 href: '/resources/case-study-block-of-flats-undervalued',
                 img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },
               {
                 tag: 'Guidance',
-                title: 'Index Linking vs Professional Valuation',
+                title: 'Index Linking vs Professional Valuation.',
                 desc: 'What managing agents need to know about why index linking cannot replace a RICS-regulated reinstatement cost assessment.',
                 href: '/resources/index-linking-vs-professional-valuation',
                 img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&auto=format&q=80',

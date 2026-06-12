@@ -31,11 +31,11 @@ export default function ArticlePage() {
         />
       </div>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">The RICS Recommendation: Every Three Years</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">The RICS Recommendation: Every Three Years.</h2>
       <p className="text-secondary leading-relaxed mb-6">The Royal Institution of Chartered Surveyors (RICS) recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index-linked adjustments are acceptable as a bridging measure, but they are not a substitute for a professional assessment.</p>
       <p className="text-secondary leading-relaxed mb-8">Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index. It does not account for site-specific factors, changes to the building, or localised cost inflation.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">Why Annual Index Linking Isn&apos;t Enough</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">Why Annual Index Linking Isn&apos;t Enough.</h2>
       <p className="text-secondary leading-relaxed mb-4">General construction indices like the BCIS All-in Tender Price Index track broad market movements. They cannot account for:</p>
       <ul className="text-secondary space-y-2 mb-8 leading-relaxed list-disc pl-6">
         <li>Changes to the building since the last assessment (extensions, refurbishments, cladding replacement)</li>

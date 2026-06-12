@@ -48,7 +48,7 @@ export default function ThankYouPage() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>format_list_numbered</span>Your next steps</span>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">What happens next</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">What happens next.</h2>
           </div>
 
           <ol className="space-y-6">
@@ -89,7 +89,7 @@ export default function ThankYouPage() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-surface-container-low rounded-3xl p-10 text-center border border-[#1A6B4A]/15 sovereign-shadow">
             <span className="material-symbols-outlined text-[#1A6B4A] mb-4 block" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>info</span>
-            <h3 className="font-bold text-primary text-xl mb-3">While you wait</h3>
+            <h3 className="font-bold text-primary text-xl mb-3">While you wait.</h3>
             <p className="text-secondary leading-relaxed mb-8 max-w-md mx-auto">
               Explore our guide to understand why accurate rebuild costs matter and how underinsurance happens.
             </p>

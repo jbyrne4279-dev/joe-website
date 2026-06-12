@@ -56,7 +56,7 @@ export default function ManagingAgentsPage() {
               Common Challenges
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
-              Problems we solve for managing agents
+              Problems we solve for managing agents.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -102,7 +102,7 @@ export default function ManagingAgentsPage() {
               How We Help
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
-              Our solution for managing agents
+              Our solution for managing agents.
             </h2>
           </div>
           <img

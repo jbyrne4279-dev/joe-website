@@ -343,7 +343,7 @@ export default function ResourcesPage() {
                 title: 'Block of Flats Undervalued by £2 Million',
                 desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional RCA uncovered the gap.',
                 href: '/resources/case-study-block-of-flats-undervalued',
-                img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=300&fit=crop&auto=format&q=80',
+                img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },
               {
                 tag: 'Guidance',

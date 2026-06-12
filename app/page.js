@@ -180,11 +180,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Positioning banner */}
-      <div className="bg-[#1A6B4A] text-white py-4 px-8 text-center">
-        <p className="text-sm md:text-base italic font-medium">&ldquo;We act for managing agents, freeholders and asset managers &mdash; not volume residential clients.&rdquo;</p>
-      </div>
-
       {/* What is an RCA */}
       <section className="bg-surface pt-6 pb-20 px-8">
         <div className="max-w-7xl mx-auto">

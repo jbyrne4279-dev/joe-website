@@ -180,6 +180,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Positioning banner */}
+      <div className="bg-[#1A6B4A] text-white py-4 px-8 text-center">
+        <p className="text-sm md:text-base italic font-medium">&ldquo;We act for managing agents, freeholders and asset managers &mdash; not volume residential clients.&rdquo;</p>
+      </div>
+
       {/* What is an RCA */}
       <section className="bg-surface pt-6 pb-20 px-8">
         <div className="max-w-7xl mx-auto">
@@ -431,6 +436,103 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Trust & Compliance */}
+      <section className="py-20 px-8 bg-zinc-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
+            <h2 className="text-4xl font-bold text-primary">Why Managing Agents Choose Us</h2>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on — not guesswork.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {[
+              { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS-registered member. Full regulatory compliance, every time.' },
+              { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
+              { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed-use portfolios, commercial assets, and high-value listed buildings.' },
+              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker — accepted without question.' },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/15 sovereign-shadow flex gap-5 items-start">
+                <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+                </div>
+                <div>
+                  <p className="font-bold text-primary mb-1">{title}</p>
+                  <p className="text-secondary text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Methodology */}
+          <div className="bg-white rounded-2xl border border-[#1A6B4A]/15 p-8 sovereign-shadow mb-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4">Our Assessment Methodology</p>
+            <div className="flex flex-col md:flex-row gap-0 md:gap-0 items-stretch">
+              {[
+                { n: '1', label: 'Instruction & Data Gathering', desc: 'We collect property details, floor areas, construction type, and any specialist features.' },
+                { n: '2', label: 'BCIS-Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices — the same data used by major insurers.' },
+                { n: '3', label: 'RICS-Reviewed Report', desc: 'A RICS-registered surveyor signs off every report before it is delivered to you.' },
+              ].map(({ n, label, desc }, i, arr) => (
+                <div key={n} className="flex flex-col md:flex-row items-stretch flex-1">
+                  <div className="flex-1 p-5 text-center">
+                    <div className="btn-shine w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm mx-auto mb-3">{n}</div>
+                    <p className="font-semibold text-primary text-sm mb-1">{label}</p>
+                    <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+                  </div>
+                  {i < arr.length - 1 && (
+                    <div className="hidden md:flex items-center px-1 text-[#1A6B4A]/30">
+                      <span className="material-symbols-outlined">arrow_forward</span>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Sample Report CTA */}
+          <div className="bg-white rounded-2xl border border-[#1A6B4A]/20 p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p className="font-bold text-primary mb-1">Want to see what you&rsquo;re getting?</p>
+              <p className="text-secondary text-sm">Download a redacted sample report to see our format, methodology, and RICS sign-off.</p>
+            </div>
+            <a href="/sample-report.pdf" className="shrink-0 btn-shine text-white px-7 py-3 rounded-full font-bold text-sm whitespace-nowrap">Download Sample Report</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Reassessment Schedule */}
+      <section className="py-20 px-8 bg-[#0f3d28]">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>event_repeat</span>Recurring Compliance</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">We Don&rsquo;t Just Deliver Reports —<br className="hidden md:block" /> We Manage Your Reassessment Cycle</h2>
+          <p className="text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">We maintain reassessment schedules for all clients and notify you when updates are due — turning a one-off instruction into long-term compliance.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
+            {[
+              { icon: 'event_repeat', text: '3-year reassessment cycles aligned to RICS guidance' },
+              { icon: 'notifications_active', text: 'Automated reminders before your policy renewal' },
+              { icon: 'analytics', text: 'Portfolio-wide scheduling with per-asset tracking' },
+            ].map(({ icon, text }) => (
+              <div key={text} className="flex items-start gap-4 bg-white/10 rounded-2xl p-5">
+                <span className="material-symbols-outlined text-white mt-0.5" style={{ fontSize: '1.3rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+                <p className="text-white/80 text-sm leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
+          <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold inline-block">Talk to Us About Your Portfolio</Link>
+        </div>
+      </section>
+
+      {/* Free Portfolio Review CTA Banner */}
+      <section className="py-16 px-8 bg-white border-y border-[#1A6B4A]/10">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Free Offer</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mt-1 mb-2">Free Portfolio Review</h2>
+            <p className="text-secondary leading-relaxed max-w-lg">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for reassessment — at no cost to you.</p>
+          </div>
+          <Link href="/free-portfolio-review" className="shrink-0 btn-shine text-white px-8 py-4 rounded-full font-bold whitespace-nowrap sovereign-shadow">Get Your Free Review</Link>
         </div>
       </section>
 

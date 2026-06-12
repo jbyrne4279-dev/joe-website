@@ -229,7 +229,6 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-1 text-primary">Desktop RCA</h3>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
                   <p className="text-secondary text-sm">Efficient, data-driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
@@ -259,7 +258,6 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-1 text-primary">3-Year RCA Plan</h3>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
                   <p className="text-secondary text-sm">Full RCA plus 3 years of RICS-compliant annual updates.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
@@ -286,7 +284,6 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-1 text-primary">On-Site RCA</h3>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
                   <p className="text-secondary text-sm">Full physical survey RCA for listed, complex or high-value buildings.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">

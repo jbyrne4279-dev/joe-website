@@ -549,13 +549,13 @@ export default function HomePage() {
       </section>
 
       {/* Why RCA Ltd */}
-      <section className="py-24 bg-surface-container-lowest">
+      <section className="py-24 bg-[#0f3d28]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto">
             <div className="space-y-12">
               <div className="text-center">
-                <h2 className="text-4xl font-bold tracking-tight mb-6">Why <span className="text-shine">RCA Ltd?</span></h2>
-                <p className="text-secondary text-lg leading-relaxed">With over <strong className="font-bold text-primary">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
+                <h2 className="text-4xl font-bold tracking-tight mb-6 text-white">Why <span className="text-shine">RCA Ltd?</span></h2>
+                <p className="text-white/70 text-lg leading-relaxed">With over <strong className="font-bold text-white">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
               <div className="flex flex-col gap-4">
                 {[

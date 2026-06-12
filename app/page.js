@@ -371,6 +371,35 @@ export default function HomePage() {
 
       </section>
 
+      {/* What's included */}
+      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
+        <div className="text-center mb-12 space-y-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
+          <h2 className="text-4xl font-bold text-white">What you always get.</h2>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {[
+            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
+            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
+            { icon: 'description', title: 'Broker-Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
+            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
+            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
+          ].map(({ icon, title, desc }) => (
+            <div key={icon} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
+              </div>
+              <div>
+                <p className="font-bold text-primary text-sm mb-1">{title}</p>
+                <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Reviews Carousel */}
       <section className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-8">
@@ -528,35 +557,6 @@ export default function HomePage() {
             <p className="text-secondary leading-relaxed max-w-lg">Upload your property schedule and we&rsquo;ll identify which buildings are overdue for reassessment   at no cost to you.</p>
           </div>
           <Link href="/free-portfolio-review" className="shrink-0 btn-shine text-white px-8 py-4 rounded-full font-bold whitespace-nowrap sovereign-shadow">Get Your Free Review</Link>
-        </div>
-      </section>
-
-      {/* What's included */}
-      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
-        <div className="text-center mb-12 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
-          <h2 className="text-4xl font-bold text-white">What you always get.</h2>
-          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every RCA is delivered to the same RICS-regulated standard.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-          {[
-            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
-            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
-            { icon: 'description', title: 'Broker-Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
-            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
-            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
-            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
-          ].map(({ icon, title, desc }) => (
-            <div key={icon} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
-              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
-                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
-              </div>
-              <div>
-                <p className="font-bold text-primary text-sm mb-1">{title}</p>
-                <p className="text-secondary text-xs leading-relaxed">{desc}</p>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 

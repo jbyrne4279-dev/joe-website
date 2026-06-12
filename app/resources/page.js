@@ -312,6 +312,63 @@ export default function ResourcesPage() {
           </div>
         </section>
 
+      {/* Article links */}
+      <section className="py-20 px-8 bg-zinc-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>article</span>Guides &amp; Case Studies</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">Further Reading</h2>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Expert guidance for managing agents, freeholders and portfolio owners on reinstatement cost compliance.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+                tag: 'RICS Guidance',
+                title: 'When Should Block Insurance Valuations Be Updated?',
+                desc: 'RICS recommends every 3 years. Find out why annual index linking alone is not enough and what triggers an earlier reassessment.',
+                href: '/resources/when-should-block-insurance-valuations-be-updated',
+                img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=300&fit=crop&auto=format&q=80',
+              },
+              {
+                tag: 'Risk & Compliance',
+                title: 'Top Risks of Underinsurance for Managing Agents',
+                desc: 'From proportional claim settlements to personal liability exposure — the risks managing agents face when valuations are out of date.',
+                href: '/resources/top-risks-of-underinsurance-for-managing-agents',
+                img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&auto=format&q=80',
+              },
+              {
+                tag: 'Case Study',
+                title: 'Block of Flats Undervalued by £2 Million',
+                desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional RCA uncovered the gap.',
+                href: '/resources/case-study-block-of-flats-undervalued',
+                img: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=300&fit=crop&auto=format&q=80',
+              },
+              {
+                tag: 'Guidance',
+                title: 'Index Linking vs Professional Valuation',
+                desc: 'What managing agents need to know about why index linking cannot replace a RICS-regulated reinstatement cost assessment.',
+                href: '/resources/index-linking-vs-professional-valuation',
+                img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&auto=format&q=80',
+              },
+            ].map(({ tag, title, desc, href, img }) => (
+              <a key={href} href={href} className="group bg-white rounded-2xl overflow-hidden border border-[#1A6B4A]/10 sovereign-shadow hover:border-[#1A6B4A]/30 hover:shadow-lg transition-all duration-300 flex flex-col">
+                <div className="h-44 overflow-hidden">
+                  <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">{tag}</span>
+                  <h3 className="font-bold text-primary text-lg mb-2 leading-snug">{title}</h3>
+                  <p className="text-secondary text-sm leading-relaxed flex-1">{desc}</p>
+                  <div className="flex items-center gap-1 text-[#1A6B4A] text-sm font-semibold mt-4">
+                    Read article <span className="material-symbols-outlined" style={{fontSize:'1rem'}}>arrow_forward</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactSection
         heading={
           <>

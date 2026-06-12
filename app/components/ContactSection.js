@@ -33,22 +33,6 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="contact-email" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">
-                    Email Address <span className="text-red-400">*</span>
-                  </label>
-                  <input
-                    id="contact-email"
-                    name="email"
-                    required
-                    className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
-                    placeholder="john@example.com"
-                    type="email"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div className="flex flex-col gap-2">
                   <label htmlFor="contact-phone" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Phone Number <span className="text-red-400">*</span></label>
                   <input
                     id="contact-phone"
@@ -59,6 +43,9 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
                     type="tel"
                   />
                 </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="contact-company" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Company <span className="text-red-400">*</span></label>
                   <input

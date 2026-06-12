@@ -45,7 +45,7 @@ export default function ArticlePage() {
       </ul>
       <p className="text-secondary leading-relaxed mb-8">If the original sum insured was wrong, and in our experience a significant proportion are, index linking simply perpetuates and compounds that error year on year.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">Triggers for Earlier Reassessment</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">Triggers for Earlier Reassessment.</h2>
       <p className="text-secondary leading-relaxed mb-4">Even within a three-year cycle, certain events should prompt an immediate reassessment:</p>
       <ul className="text-secondary space-y-2 mb-8 leading-relaxed list-disc pl-6">
         <li>Major works or refurbishment to the block</li>
@@ -55,7 +55,7 @@ export default function ArticlePage() {
         <li>Any insurer query or challenge at renewal</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">The Consequences of an Outdated Valuation</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">The Consequences of an Outdated Valuation.</h2>
       <p className="text-secondary leading-relaxed mb-6">If a block is underinsured at the point of a claim, most policies apply what is known as the average clause, meaning the insurer will only pay out in proportion to the degree of underinsurance. On a &pound;5 million block insured for &pound;3.5 million, a &pound;500,000 claim could result in a settlement of just &pound;350,000. The leaseholders bear the shortfall.</p>
       <p className="text-secondary leading-relaxed mb-10">For managing agents, allowing a known outdated valuation to persist can also create personal liability exposure under ARMA guidance and general professional duty of care obligations.</p>
 

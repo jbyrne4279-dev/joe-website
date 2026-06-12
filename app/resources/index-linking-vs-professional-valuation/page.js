@@ -35,7 +35,7 @@ export default function ArticlePage() {
       <p className="text-secondary leading-relaxed mb-6">Index linking is a mechanism used by insurers to automatically adjust the sum insured each year in line with a construction cost index, typically a variant of the BCIS All-in Tender Price Index or a proprietary equivalent. The intention is to prevent a building from drifting into underinsurance due to general cost inflation.</p>
       <p className="text-secondary leading-relaxed mb-8">In practice, the insurer applies a percentage uplift, say 5%, to the existing declared value. No surveyor visits the property. No detailed assessment is carried out. The insured figure simply grows by a fixed multiplier based on a broad market index.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">Why Index Linking Alone Isn&rsquo;t Sufficient</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">Why Index Linking Alone Isn&rsquo;t Sufficient.</h2>
       <p className="text-secondary leading-relaxed mb-4">Index linking has one fundamental limitation: it adjusts an existing figure. If that figure was wrong to begin with, index linking makes it slightly less wrong each year, but never correct.</p>
       <ul className="text-secondary space-y-2 mb-8 leading-relaxed list-disc pl-6">
         <li><strong className="text-primary">It doesn&rsquo;t account for building changes.</strong> Extensions, refurbishments, cladding replacement, new plant. None of these are captured by an index.</li>
@@ -44,10 +44,10 @@ export default function ArticlePage() {
         <li><strong className="text-primary">It compounds errors.</strong> A figure that was 15% too low in 2018 is still roughly 15% too low in 2024, regardless of how many times it has been uplifted.</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">BCIS vs Generic CPI</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">BCIS vs Generic CPI.</h2>
       <p className="text-secondary leading-relaxed mb-8">It is worth noting that not all indices are equal. Some insurers use general CPI as their index-linking basis, which tracks consumer price inflation, not construction cost inflation. These two measures can diverge significantly. Between 2020 and 2023, construction cost inflation substantially outpaced CPI in the UK, meaning that any policy index-linked to CPI over this period is likely to have fallen materially behind actual rebuild cost increases.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3">The RICS Position</h2>
+      <h2 className="text-2xl font-bold text-primary mb-3">The RICS Position.</h2>
       <p className="text-secondary leading-relaxed mb-8">RICS is unambiguous: index linking is a maintenance tool, not an assessment. Their guidance recommends a full professional reinstatement cost assessment every three years as a minimum, with index linking used only as an interim adjustment between assessments. This position is shared by the ABI and most major brokers.</p>
 
       <h2 className="text-2xl font-bold text-primary mb-3">The Practical Recommendation for Managing Agents</h2>

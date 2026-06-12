@@ -54,10 +54,10 @@ export default function ArticlePage() {
 
       <h2 className="text-2xl font-bold text-primary mb-3">Why the Gap Was So Large.</h2>
       <ul className="text-secondary space-y-2 mb-8 leading-relaxed list-disc pl-6">
-        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment, meaning index-linking had been applied to an already understated starting point</li>
-        <li>Post-2020 construction inflation ran significantly above the general index used by the insurer</li>
-        <li>The block included a basement car park and communal plant rooms, specialist elements that generic indices do not adequately capture</li>
-        <li>External works, boundary walls, and landscaping had not been included in the original figure</li>
+        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment, meaning index-linking had been applied to an already understated starting point.</li>
+        <li>Post-2020 construction inflation ran significantly above the general index used by the insurer.</li>
+        <li>The block included a basement car park and communal plant rooms, specialist elements that generic indices do not adequately capture.</li>
+        <li>External works, boundary walls, and landscaping had not been included in the original figure.</li>
       </ul>
 
       <h2 className="text-2xl font-bold text-primary mb-3">The Outcome.</h2>

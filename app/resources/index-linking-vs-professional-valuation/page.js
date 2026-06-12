@@ -19,7 +19,7 @@ export default function ArticlePage() {
       </div>
       <div className="text-center mb-10">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Guidance</span>
-        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Index Linking vs Professional Valuation: What Managing Agents Need to Know</h1>
+        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Index Linking vs Professional Valuation: What Managing Agents Need to Know.</h1>
         <p className="text-secondary text-lg leading-relaxed">Many managing agents assume that because their insurer applies annual index linking, their buildings are adequately insured. This assumption is one of the most common and most expensive misunderstandings in UK property management.</p>
       </div>
 

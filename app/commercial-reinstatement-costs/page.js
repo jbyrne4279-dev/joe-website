@@ -26,7 +26,7 @@ export default function CommercialReinstatementPage() {
               RICS Regulated &middot; Commercial Property
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
-              Commercial Reinstatement Cost Assessments
+              Commercial Reinstatement Cost Assessments.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
               Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated assessments your broker will accept   delivered fast.

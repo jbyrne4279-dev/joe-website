@@ -25,7 +25,7 @@ export default function ManagingAgentsPage() {
               RICS Regulated &middot; Managing Agents
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
-              Insurance Valuations for Managing Agents
+              Insurance Valuations for Managing Agents.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
               Stay compliant and protect managed properties. RICS reinstatement valuations your insurers will accept   fast, accurate, and fully documented.

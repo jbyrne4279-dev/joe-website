@@ -25,7 +25,7 @@ export default function BlockManagersPage() {
               RICS Regulated &middot; Block Management
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
-              Reinstatement Cost Assessments for Block Managers
+              Reinstatement Cost Assessments for Block Managers.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
               Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers   delivered in 5 days.

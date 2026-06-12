@@ -19,7 +19,7 @@ export default function ArticlePage() {
       </div>
       <div className="text-center mb-10">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Case Study</span>
-        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Case Study: Block of Flats Undervalued by &pound;2 Million</h1>
+        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Case Study: Block of Flats Undervalued by &pound;2 Million.</h1>
         <p className="text-secondary text-lg leading-relaxed">A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.</p>
       </div>
 

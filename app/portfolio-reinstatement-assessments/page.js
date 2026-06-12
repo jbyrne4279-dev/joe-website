@@ -26,7 +26,7 @@ export default function PortfolioReinstatementPage() {
               RICS Regulated &middot; Portfolio Assessments
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
-              Reinstatement Cost Assessments for Property Portfolios
+              Reinstatement Cost Assessments for Property Portfolios.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
               One instruction. Every asset covered. RICS-regulated portfolio RCAs with consolidated reporting   desktop or on-site across the UK.

@@ -19,7 +19,7 @@ export default function ArticlePage() {
       </div>
       <div className="text-center mb-10">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Risk &amp; Compliance</span>
-        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Top Risks of Underinsurance for Managing Agents</h1>
+        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Top Risks of Underinsurance for Managing Agents.</h1>
         <p className="text-secondary text-lg leading-relaxed">Research consistently shows that the majority of UK commercial and residential blocks carry insufficient reinstatement values on their insurance policies. For managing agents, this is not just a problem for property owners. It creates direct professional and financial risk.</p>
       </div>
 

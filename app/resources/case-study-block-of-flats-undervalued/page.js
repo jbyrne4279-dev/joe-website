@@ -17,10 +17,10 @@ export default function ArticlePage() {
       <div className="mb-8 text-center">
         <Link href="/resources" className="text-xs font-semibold text-[#1A6B4A] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
       </div>
-      <div className="text-center">
+      <div className="text-center mb-10">
         <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Case Study</span>
-        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight text-center">Case Study: Block of Flats Undervalued by &pound;2 Million</h1>
-        <p className="text-secondary text-lg leading-relaxed mb-8 text-center">A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.</p>
+        <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Case Study: Block of Flats Undervalued by &pound;2 Million</h1>
+        <p className="text-secondary text-lg leading-relaxed">A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.</p>
       </div>
 
       <div className="bg-zinc-50 border border-[#1A6B4A]/15 rounded-2xl p-7 mb-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -31,34 +31,34 @@ export default function ArticlePage() {
           { label: 'True Reinstatement Value', value: '£7.0m' },
         ].map(({ label, value }) => (
           <div key={label} className="flex flex-col items-center">
-            <p className="text-2xl font-bold text-primary text-center">{value}</p>
-            <p className="text-xs text-secondary mt-1 text-center">{label}</p>
+            <p className="text-2xl font-bold text-primary">{value}</p>
+            <p className="text-xs text-secondary mt-1">{label}</p>
           </div>
         ))}
       </div>
 
-      <h2 className="text-2xl font-bold text-primary mb-3 text-center">Background</h2>
-      <p className="text-secondary leading-relaxed mb-6 text-center">The block   a purpose-built residential development comprising 24 flats across four storeys   had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index-linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from &pound;4.2 million in 2018 to &pound;4.9 million by 2024, an increase of approximately 17%.</p>
+      <h2 className="text-2xl font-bold text-primary mb-3">Background</h2>
+      <p className="text-secondary leading-relaxed mb-6">The block, a purpose-built residential development comprising 24 flats across four storeys, had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index-linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from &pound;4.2 million in 2018 to &pound;4.9 million by 2024, an increase of approximately 17%.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3 text-center">What the Assessment Found</h2>
-      <p className="text-secondary leading-relaxed mb-6 text-center">When we carried out a full RICS-regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value   taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification   came to &pound;7.0 million.</p>
-      <p className="text-secondary leading-relaxed mb-6 text-center">The shortfall was &pound;2.1 million, representing underinsurance of approximately 41%. The index-linking applied by the insurer had tracked general construction cost movements but had significantly underestimated the true cost inflation for this type of construction in this region between 2020 and 2024, a period marked by exceptional material price increases and a severe shortage of skilled trades.</p>
+      <h2 className="text-2xl font-bold text-primary mb-3">What the Assessment Found</h2>
+      <p className="text-secondary leading-relaxed mb-6">When we carried out a full RICS-regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value, taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification, came to &pound;7.0 million.</p>
+      <p className="text-secondary leading-relaxed mb-6">The shortfall was &pound;2.1 million, representing underinsurance of approximately 41%. The index-linking applied by the insurer had tracked general construction cost movements but had significantly underestimated the true cost inflation for this type of construction in this region between 2020 and 2024, a period marked by exceptional material price increases and a severe shortage of skilled trades.</p>
 
-      <h2 className="text-2xl font-bold text-primary mb-3 text-center">Why the Gap Was So Large</h2>
-      <ul className="text-secondary space-y-2 mb-8 leading-relaxed text-center list-none p-0">
-        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment   meaning index-linking had been applied to an already understated starting point</li>
+      <h2 className="text-2xl font-bold text-primary mb-3">Why the Gap Was So Large</h2>
+      <ul className="text-secondary space-y-2 mb-8 leading-relaxed list-disc pl-6">
+        <li>The 2018 base figure had been produced using a generic online calculator, not a professional assessment, meaning index-linking had been applied to an already understated starting point</li>
         <li>Post-2020 construction inflation ran significantly above the general index used by the insurer</li>
-        <li>The block included a basement car park and communal plant rooms   specialist elements that generic indices do not adequately capture</li>
+        <li>The block included a basement car park and communal plant rooms, specialist elements that generic indices do not adequately capture</li>
         <li>External works, boundary walls, and landscaping had not been included in the original figure</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-primary mb-3 text-center">The Outcome</h2>
-      <p className="text-secondary leading-relaxed mb-10 text-center">The managing agent presented our RICS-regulated report to their broker the same day it was received. The broker submitted it directly to the insurer, who accepted the new figure without challenge and updated the policy at renewal. The freeholder and leaseholders were now adequately protected. Had a major claim occurred before this assessment, the shortfall would have fallen entirely on the building&rsquo;s residents.</p>
+      <h2 className="text-2xl font-bold text-primary mb-3">The Outcome</h2>
+      <p className="text-secondary leading-relaxed mb-10">The managing agent presented our RICS-regulated report to their broker the same day it was received. The broker submitted it directly to the insurer, who accepted the new figure without challenge and updated the policy at renewal. The freeholder and leaseholders were now adequately protected. Had a major claim occurred before this assessment, the shortfall would have fallen entirely on the building&rsquo;s residents.</p>
 
       <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
-        <h3 className="text-xl font-bold text-white mb-2 text-center">Is your block in the same position?</h3>
-        <p className="text-white/60 mb-5 text-sm text-center">Send us your portfolio schedule and we&rsquo;ll identify which properties are overdue   for free.</p>
-        <Link href="/free-portfolio-review" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block text-center">Request a Free Portfolio Review</Link>
+        <h3 className="text-xl font-bold text-white mb-2">Is your block in the same position?</h3>
+        <p className="text-white/60 mb-5 text-sm">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 5 days.</p>
+        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
       </div>
     </main>
   )

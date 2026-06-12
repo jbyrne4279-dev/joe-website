@@ -464,21 +464,21 @@ export default function HomePage() {
       </section>
 
       {/* Trust & Compliance */}
-      <section className="py-20 px-8 bg-zinc-50">
+      <section className="py-20 px-8 bg-[#1A6B4A]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
-            <h2 className="text-4xl font-bold text-primary">Why Managing Agents Choose Us</h2>
-            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on   not guesswork.</p>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
+            <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us</h2>
+            <p className="text-white/70 max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on, not guesswork.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
               { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS-registered member. Full regulatory compliance, every time.' },
               { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
               { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed-use portfolios, commercial assets, and high-value listed buildings.' },
-              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker   accepted without question.' },
+              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
             ].map(({ icon, title, desc }) => (
-              <div key={title} className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/15 sovereign-shadow flex gap-5 items-start">
+              <div key={title} className="bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
                 <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                 </div>

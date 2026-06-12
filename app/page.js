@@ -534,7 +534,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto">
             <div className="space-y-12">
               <div className="text-center">
-                <h2 className="text-4xl font-bold tracking-tight mb-6 text-white">Why <span className="text-shine">RCA Ltd?</span></h2>
+                <h2 className="text-4xl font-bold tracking-tight mb-6 text-white">Why Us?</h2>
                 <p className="text-white/70 text-lg leading-relaxed">With over <strong className="font-bold text-white">50 years</strong> of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
               </div>
               <div className="flex flex-col gap-4">

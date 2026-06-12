@@ -44,7 +44,7 @@ export default function ArticlePage() {
         <li>Use a firm that provides BCIS-indexed assessments accepted by all major insurers</li>
       </ul>
 
-      <div className="bg-[#1A6B4A] rounded-2xl p-8 text-center flex flex-col items-center">
+      <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Concerned about your managed portfolio?</h3>
         <p className="text-white/60 mb-5 text-sm">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 5 days.</p>
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>

@@ -51,7 +51,7 @@ export default function ArticlePage() {
       <p className="text-secondary leading-relaxed mb-6">If a block is underinsured at the point of a claim, most policies apply what is known as the average clause, meaning the insurer will only pay out in proportion to the degree of underinsurance. On a &pound;5 million block insured for &pound;3.5 million, a &pound;500,000 claim could result in a settlement of just &pound;350,000. The leaseholders bear the shortfall.</p>
       <p className="text-secondary leading-relaxed mb-10">For managing agents, allowing a known outdated valuation to persist can also create personal liability exposure under ARMA guidance and general professional duty of care obligations.</p>
 
-      <div className="bg-[#1A6B4A] rounded-2xl p-8 text-center flex flex-col items-center">
+      <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Is your block overdue for reassessment?</h3>
         <p className="text-white/60 mb-5 text-sm">We carry out RICS-regulated reinstatement cost assessments, delivered in 5 days.</p>
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>

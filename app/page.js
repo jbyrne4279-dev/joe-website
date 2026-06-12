@@ -243,7 +243,7 @@ export default function HomePage() {
       </section>
 
       {/* Which service */}
-      <section className="pt-10 pb-20 px-8 bg-[#1A6B4A]" id="which">
+      <section className="pt-10 pb-20 px-8 bg-[#0f3d28]" id="which">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>quiz</span>Right for you?</span>
@@ -372,7 +372,7 @@ export default function HomePage() {
       </section>
 
       {/* What's included */}
-      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#1A6B4A]">
+      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
         <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
@@ -641,7 +641,7 @@ export default function HomePage() {
 
       {/* Who We Serve */}
 
-      <section className="pt-10 pb-24 px-8 bg-[#1A6B4A] overflow-hidden">
+      <section className="pt-10 pb-24 px-8 bg-[#0f3d28] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl text-center md:text-left">

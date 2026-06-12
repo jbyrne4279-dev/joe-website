@@ -55,7 +55,7 @@ export default function ArticlePage() {
       <h2 className="text-2xl font-bold text-primary mb-3">The Outcome</h2>
       <p className="text-secondary leading-relaxed mb-10">The managing agent presented our RICS-regulated report to their broker the same day it was received. The broker submitted it directly to the insurer, who accepted the new figure without challenge and updated the policy at renewal. The freeholder and leaseholders were now adequately protected. Had a major claim occurred before this assessment, the shortfall would have fallen entirely on the building&rsquo;s residents.</p>
 
-      <div className="bg-[#1A6B4A] rounded-2xl p-8 text-center flex flex-col items-center">
+      <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Is your block in the same position?</h3>
         <p className="text-white/60 mb-5 text-sm">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 5 days.</p>
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>

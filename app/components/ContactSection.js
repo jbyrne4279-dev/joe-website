@@ -1,6 +1,6 @@
 export default function ContactSection({ heading = 'Get In Touch' }) {
   return (
-    <section className="bg-surface-container-low py-20 mb-16 mx-4 md:mx-8 rounded-3xl">
+    <section className="bg-surface-container-low py-20 mb-0 mx-4 md:mx-8 rounded-t-3xl">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start">
 

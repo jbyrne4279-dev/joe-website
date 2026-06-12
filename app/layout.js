@@ -17,7 +17,7 @@ export const metadata = {
     template: '%s | RCA Ltd',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties from £210, delivered in 48 hours. Trusted by homeowners, landlords and asset managers across England.',
+    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by homeowners, landlords and asset managers across England.',
   keywords: [
     'reinstatement cost assessment',
     'rebuild cost assessment',
@@ -49,7 +49,7 @@ export const metadata = {
     siteName: 'RCA Ltd',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
@@ -63,7 +63,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment from £210, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
   robots: {

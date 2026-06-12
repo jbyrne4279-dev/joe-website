@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment Services UK | RCA Ltd',
     description:
-      'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop RCA from £210, On-Site Survey from £675, and 3-Year Protection with annual BCIS updates. Broker-ready reports accepted by all UK insurers.',
+      'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop RCA, On-Site Survey, and 3-Year Protection with annual BCIS updates. Broker-ready reports accepted by all UK insurers.',
     url: '/services',
   },
 }

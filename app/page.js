@@ -13,13 +13,13 @@ export const metadata = {
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
     description:
-      '80% of UK buildings carry the wrong reinstatement cost on their policy. RICS Reinstatement Cost Assessment from £210 for homes, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
+      '80% of UK buildings carry the wrong reinstatement cost on their policy. RICS Reinstatement Cost Assessment for homes, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
     url: '/',
   },
 }
 
 const homeFaqItems = [
-  { question: 'How much does a typical RCA cost?', answer: 'Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.' },
+  { question: 'How much does a typical RCA cost?', answer: 'Pricing depends on property type and size. Please get in touch for a bespoke quote.' },
   { question: 'Is RCA Ltd regulated by RICS?', answer: 'Yes. Reinstatement Cost Assessment Ltd is a RICS Regulated Firm. Every assessment is conducted by or under the supervision of a RICS-registered member, ensuring full regulatory compliance and professional accountability.' },
   { question: 'What areas of the UK do you cover?', answer: 'We provide Reinstatement Cost Assessments across the whole of the United Kingdom. Desktop assessments are available nationally. On-site surveys are available throughout England, Scotland, Wales, and Northern Ireland.' },
   { question: 'What information do you need to get started?', answer: 'We need the property address, approximate floor area, construction type, and your contact details. Once received, we confirm your instruction and get started within one business day.' },
@@ -43,10 +43,10 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/rca48.png`,
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   description:
-    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations from £210, delivered in 48 hours.',
+    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
   email: 'info@rca-ltd.com',
-  priceRange: '£210-£675',
+  priceRange: undefined,
   address: {
     '@type': 'PostalAddress',
     streetAddress: '17 Hanover Square',
@@ -105,21 +105,21 @@ const serviceLinksJsonLd = {
     {
       '@type': 'ListItem',
       position: 1,
-      name: 'Desktop RCA from £210',
+      name: 'Desktop RCA',
       description: 'Fast, data-driven Reinstatement Cost Assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 5 days.',
       url: `${SITE_URL}/services`,
     },
     {
       '@type': 'ListItem',
       position: 2,
-      name: '3-Year Protection from £498',
+      name: '3-Year Protection Plan',
       description: 'Full Reinstatement Cost Assessment with automated annual BCIS index updates for three years. Designed for UK landlords and portfolio managers who need ongoing RICS compliance without repeat instruction costs.',
       url: `${SITE_URL}/services`,
     },
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'On-Site Survey from £675',
+      name: 'On-Site Survey',
       description: 'Full physical inspection by a RICS-regulated surveyor for listed buildings, complex architecture, non-standard construction, and high-value UK property. The highest accuracy RCA available.',
       url: `${SITE_URL}/services`,
     },
@@ -608,7 +608,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1">One accurate RCA fixes this</h4>
-                  <p className="text-sm text-white/70 leading-relaxed">A <span className="font-semibold text-white">RICS-certified Reinstatement Cost Assessment</span> gives you a compliant, insurer-accepted figure. <Link href="/services" className="text-white underline underline-offset-2 hover:text-white/80 transition-colors">See our services from £210 &rarr;</Link></p>
+                  <p className="text-sm text-white/70 leading-relaxed">A <span className="font-semibold text-white">RICS-certified Reinstatement Cost Assessment</span> gives you a compliant, insurer-accepted figure. <Link href="/services" className="text-white underline underline-offset-2 hover:text-white/80 transition-colors">See our services &rarr;</Link></p>
                 </div>
               </div>
             </div>

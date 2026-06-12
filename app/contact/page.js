@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
     description:
-      'Instruct a RICS Reinstatement Cost Assessment for your UK building. Desktop from £210, on-site from £675 for listed and complex buildings. 24-hour response guaranteed.',
+      'Instruct a RICS Reinstatement Cost Assessment for your UK building. Desktop and on-site options available. 24-hour response guaranteed.',
     url: '/contact',
   },
 }
@@ -104,7 +104,7 @@ export default function ContactPage() {
       <ContactSection
         heading={
           <>
-            Request Your UK <span className="text-shine">Rebuild Cost Assessment</span>, RICS from £210.
+            Request Your UK <span className="text-shine">Rebuild Cost Assessment.</span>
           </>
         }
       />

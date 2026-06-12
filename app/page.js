@@ -192,7 +192,7 @@ export default function HomePage() {
             {[
               { icon: 'monitor', name: 'Desktop Assessment', tag: 'Fast & Efficient', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
               { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
-              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Highest Accuracy', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
+              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
             ].map(({ icon, fill, name, tag, desc }) => (
               <div key={name} className="flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="flex flex-col items-center gap-3">

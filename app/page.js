@@ -527,20 +527,20 @@ export default function HomePage() {
       </section>
 
       {/* Reassessment Schedule */}
-      <section className="py-20 px-8 bg-[#0f3d28]">
+      <section className="py-20 px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>event_repeat</span>Recurring Compliance</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">We Don&rsquo;t Just Deliver Reports  <br className="hidden md:block" /> We Manage Your Reassessment Cycle</h2>
-          <p className="text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">We maintain reassessment schedules for all clients and notify you when updates are due   turning a one-off instruction into long-term compliance.</p>
+          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>event_repeat</span>Recurring Compliance</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">We Don&rsquo;t Just Deliver Reports  <br className="hidden md:block" /> We Manage Your Reassessment Cycle</h2>
+          <p className="text-secondary max-w-2xl mx-auto leading-relaxed mb-10">We maintain reassessment schedules for all clients and notify you when updates are due, turning a one-off instruction into long-term compliance.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
             {[
               { icon: 'event_repeat', text: '3-year reassessment cycles aligned to RICS guidance' },
               { icon: 'notifications_active', text: 'Automated reminders before your policy renewal' },
               { icon: 'analytics', text: 'Portfolio-wide scheduling with per-asset tracking' },
             ].map(({ icon, text }) => (
-              <div key={text} className="flex items-start gap-4 bg-white/10 rounded-2xl p-5">
+              <div key={text} className="flex items-start gap-4 bg-[#1A6B4A] rounded-2xl p-5">
                 <span className="material-symbols-outlined text-white mt-0.5" style={{ fontSize: '1.3rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
-                <p className="text-white/80 text-sm leading-relaxed">{text}</p>
+                <p className="text-white/90 text-sm leading-relaxed">{text}</p>
               </div>
             ))}
           </div>

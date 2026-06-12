@@ -63,17 +63,17 @@ export default function ManagingAgentsPage() {
             {[
               {
                 icon: 'domain',
-                title: 'Managing multiple properties with outdated valuations',
+                title: 'Managing multiple properties with outdated valuations.',
                 desc: 'Keeping accurate, current reinstatement figures across a managed portfolio is complex. Outdated figures create compliance gaps and expose landlords and managing agents to liability.',
               },
               {
                 icon: 'trending_up',
-                title: "Index linking doesn't account for local build cost inflation",
+                title: "Index linking doesn't account for local build cost inflation.",
                 desc: 'Generic national indices miss regional variation in labour costs and material availability. A property in London or the South East can diverge sharply from a blanket index-linked figure.',
               },
               {
                 icon: 'shield_question',
-                title: 'Liability exposure if a property is underinsured at claim',
+                title: 'Liability exposure if a property is underinsured at claim.',
                 desc: 'If an underinsured property suffers a major loss, managing agents face serious questions about whether they fulfilled their duty of care in maintaining adequate insurance.',
               },
             ].map(({ icon, title, desc }) => (

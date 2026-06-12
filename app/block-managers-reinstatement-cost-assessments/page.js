@@ -72,17 +72,17 @@ export default function BlockManagersPage() {
             {[
               {
                 icon: 'warning',
-                title: 'Leaseholders exposed to underinsurance risk',
+                title: 'Leaseholders exposed to underinsurance risk.',
                 desc: 'Without a current RICS assessment, the sum insured on a block policy may fall well short of the true rebuild cost   leaving every leaseholder exposed if a major claim arises.',
               },
               {
                 icon: 'trending_up',
-                title: 'Index linking drifts from true rebuild costs',
+                title: 'Index linking drifts from true rebuild costs.',
                 desc: 'Automatic index-linking adjustments do not account for local labour shortages, material inflation, or changes in build complexity. Over time, the gap between the insured figure and reality widens.',
               },
               {
                 icon: 'gavel',
-                title: 'Insurers querying sums insured at renewal',
+                title: 'Insurers querying sums insured at renewal.',
                 desc: 'When insurers challenge the adequacy of a sum insured at renewal   without a RICS-regulated report to support it   block managers face delays, increased premiums, and reputational risk.',
               },
             ].map(({ icon, title, desc }) => (

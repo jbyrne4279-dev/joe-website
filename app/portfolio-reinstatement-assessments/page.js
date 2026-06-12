@@ -73,17 +73,17 @@ export default function PortfolioReinstatementPage() {
             {[
               {
                 icon: 'query_stats',
-                title: 'Portfolio-wide underinsurance building up undetected',
+                title: 'Portfolio-wide underinsurance building up undetected.',
                 desc: 'Across a large portfolio, small valuation shortfalls compound into significant underinsurance exposure   often unnoticed until a major claim reveals the gap.',
               },
               {
                 icon: 'event_repeat',
-                title: 'Renewing policies with stale per-property figures',
+                title: 'Renewing policies with stale per-property figures.',
                 desc: 'Without regular RICS assessments, portfolios renew on figures that may be years out of date   creating avoidable risk and potential disputes with insurers at claim.',
               },
               {
                 icon: 'category',
-                title: 'No consolidated view across mixed-use assets',
+                title: 'No consolidated view across mixed-use assets.',
                 desc: 'Portfolios combining residential, commercial, and industrial assets rarely have a unified, accurate picture of rebuild exposure. Managing risk requires that consolidated view.',
               },
             ].map(({ icon, title, desc }) => (

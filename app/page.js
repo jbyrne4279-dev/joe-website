@@ -290,24 +290,25 @@ export default function HomePage() {
                   <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>monitor</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary">Desktop Assessment</h3>
-                  <p className="text-secondary text-sm">Efficient, data-driven remote valuation.</p>
+                  <h3 className="text-2xl font-semibold mb-1 text-primary">Desktop RCA</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
+                  <p className="text-secondary text-sm">Efficient, data-driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>speed</span>
-                    <span className="text-secondary">Rapid 5-day turnaround</span>
+                    <span className="text-secondary">RICS-regulated assessment, 5-day turnaround</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>cloud</span>
-                    <span className="text-secondary">Remote data modelling</span>
+                    <span className="text-secondary">BCIS-indexed rebuild cost modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-zinc-400 text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>location_off</span>
                     <span className="text-secondary">Site visit not included</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+                <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Get a Desktop RCA</Link>
               </div>
 
               {/* 3-Year Protection */}
@@ -319,24 +320,25 @@ export default function HomePage() {
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary">3-Year Protection</h3>
-                  <p className="text-secondary text-sm">Comprehensive multi-year coverage.</p>
+                  <h3 className="text-2xl font-semibold mb-1 text-primary">3-Year RCA Plan</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
+                  <p className="text-secondary text-sm">Full RCA plus 3 years of RICS-compliant annual updates.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>update</span>
-                    <span className="text-secondary">Automated annual updates</span>
+                    <span className="text-secondary">Annual BCIS-indexed reinstatement updates</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>security</span>
-                    <span className="text-secondary">3-year valuation compliance</span>
+                    <span className="text-secondary">3-year RICS reinstatement compliance</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>analytics</span>
-                    <span className="text-secondary">Advanced market index tracking</span>
+                    <span className="text-secondary">Broker-ready report every renewal</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Protect Now</Link>
+                <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Get a 3-Year RCA</Link>
               </div>
 
               {/* On-Site Survey */}
@@ -345,24 +347,25 @@ export default function HomePage() {
                   <div className="w-14 h-14 bg-[#1A6B4A]/10 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.4rem' }}>location_on</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary">On-Site Survey</h3>
-                  <p className="text-secondary text-sm">Precision for complex structures.</p>
+                  <h3 className="text-2xl font-semibold mb-1 text-primary">On-Site RCA</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">Reinstatement Cost Assessment</p>
+                  <p className="text-secondary text-sm">Full physical survey RCA for listed, complex or high-value buildings.</p>
                 </div>
                 <ul className="space-y-4 mb-10 flex-grow">
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>search</span>
-                    <span className="text-secondary">Full physical property inspection</span>
+                    <span className="text-secondary">RICS surveyor physical inspection</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>architecture</span>
-                    <span className="text-secondary">Complex architectural modelling</span>
+                    <span className="text-secondary">Specialist reinstatement cost modelling</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm">
                     <span className="material-symbols-outlined text-[#1A6B4A] text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>engineering</span>
-                    <span className="text-secondary">Expert surveyor consultancy</span>
+                    <span className="text-secondary">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Get an On-Site RCA</Link>
               </div>
 
             </div>

@@ -104,7 +104,8 @@ export default function ResourcesPage() {
     <main>
 
         {/* Hero */}
-        <section className="py-24 lg:py-32 px-8 max-w-5xl mx-auto flex flex-col items-center text-center bg-white">
+        <section className="py-24 lg:py-32 px-8 bg-white">
+          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>menu_book</span>Expert Insight Guide</span>
           <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
             <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
@@ -119,6 +120,7 @@ export default function ResourcesPage() {
               alt="UK buildings underinsured: reinstatement cost versus market value gap explained"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          </div>
           </div>
         </section>
 

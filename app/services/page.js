@@ -118,7 +118,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Grid */}
-      <section className="pt-10 pb-16 px-8 bg-[#0f3d28]" id="pricing">
+      <section className="pt-10 pb-16 px-8 bg-[#1A6B4A]" id="pricing">
         <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>sell</span>Pricing</span>
           <h2 className="text-4xl font-bold text-white">Choose your Assessment.</h2>
@@ -271,7 +271,7 @@ export default function ServicesPage() {
       </section>
 
       {/* What's included */}
-      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
+      <section className="pt-10 pb-20 px-8 md:px-12 bg-[#1A6B4A]">
         <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>

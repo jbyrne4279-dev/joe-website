@@ -19,7 +19,7 @@ export default function PortfolioReinstatementPage() {
     <main>
 
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0f3d28] to-[#1A6B4A]">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#1A6B4A] to-[#1A6B4A]">
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-3xl text-center">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-white/60 mb-6">
@@ -65,7 +65,7 @@ export default function PortfolioReinstatementPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
               Common Challenges
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A6B4A] leading-tight text-center">
               Problems we solve for portfolio owners
             </h2>
           </div>
@@ -96,7 +96,7 @@ export default function PortfolioReinstatementPage() {
                     {icon}
                   </span>
                 </div>
-                <h3 className="font-bold text-[#0f3d28] text-base mb-2 text-center">{title}</h3>
+                <h3 className="font-bold text-[#1A6B4A] text-base mb-2 text-center">{title}</h3>
                 <p className="text-sm text-zinc-600 leading-relaxed text-center">{desc}</p>
               </div>
             ))}
@@ -111,7 +111,7 @@ export default function PortfolioReinstatementPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
               How We Help
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1A6B4A] leading-tight text-center">
               Our solution for property portfolios
             </h2>
           </div>
@@ -130,7 +130,7 @@ export default function PortfolioReinstatementPage() {
                     check
                   </span>
                 </div>
-                <p className="text-[#0f3d28] font-semibold leading-snug text-center">{point}</p>
+                <p className="text-[#1A6B4A] font-semibold leading-snug text-center">{point}</p>
               </div>
             ))}
           </div>

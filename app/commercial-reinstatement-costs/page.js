@@ -64,17 +64,17 @@ export default function CommercialReinstatementPage() {
             {[
               {
                 icon: 'construction',
-                title: 'Commercial rebuild costs rising faster than index linking keeps up',
+                title: 'Commercial rebuild costs rising faster than index linking keeps up.',
                 desc: 'Material costs, labour shortages, and supply chain pressures have driven commercial rebuild costs well above what standard index linking captures   widening the underinsurance gap year on year.',
               },
               {
                 icon: 'calculate',
-                title: 'Generic online calculators miss specialist fitout and M&E costs',
+                title: 'Generic online calculators miss specialist fitout and M&E costs.',
                 desc: 'Commercial buildings contain significant mechanical, electrical, and specialist fitout costs that generic calculators ignore entirely   leading to materially understated reinstatement figures.',
               },
               {
                 icon: 'verified_user',
-                title: 'Insurers and lenders requiring up-to-date RICS assessments',
+                title: 'Insurers and lenders requiring up-to-date RICS assessments.',
                 desc: 'Increasingly, commercial insurers and lenders require a verifiable RICS-regulated reinstatement figure before agreeing terms   a generic estimate or calculator output is no longer sufficient.',
               },
             ].map(({ icon, title, desc }) => (

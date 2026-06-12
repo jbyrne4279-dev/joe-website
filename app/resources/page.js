@@ -104,7 +104,7 @@ export default function ResourcesPage() {
     <main>
 
         {/* Hero */}
-        <section className="py-24 lg:py-32 px-8 max-w-5xl mx-auto flex flex-col items-center text-center">
+        <section className="py-24 lg:py-32 px-8 max-w-5xl mx-auto flex flex-col items-center text-center bg-white">
           <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>menu_book</span>Expert Insight Guide</span>
           <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
             <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
@@ -123,12 +123,12 @@ export default function ResourcesPage() {
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="pt-10 pb-20 px-8 bg-zinc-900 flex flex-col items-center text-center">
+        <section className="pt-10 pb-20 px-8 bg-[#1A6B4A] flex flex-col items-center text-center">
           <div className="space-y-10 w-full max-w-2xl mx-auto">
             <div className="space-y-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
               <h2 className="text-4xl font-bold text-white leading-tight">Your building is probably insured for the wrong amount.</h2>
-              <p className="text-white/70 leading-relaxed max-w-lg mx-auto">
+              <p className="text-white/80 leading-relaxed max-w-lg mx-auto">
                 Market value and rebuild cost are not the same figure yet most property owners confuse the two. The consequences of getting this wrong can be financially devastating.
               </p>
             </div>
@@ -168,10 +168,10 @@ export default function ResourcesPage() {
         </section>
 
         {/* Averaging Clause */}
-        <section className="pt-10 pb-20 bg-[#0f3d28] px-8">
+        <section className="pt-10 pb-20 bg-white px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">The &ldquo;Averaging Clause&rdquo; Trap.</h2>
-            <p className="text-white/70 text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
+            <h2 className="text-4xl font-bold text-primary mb-6">The &ldquo;Averaging Clause&rdquo; Trap.</h2>
+            <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-10 rounded-2xl shadow-md flex flex-col justify-between">
@@ -193,10 +193,10 @@ export default function ResourcesPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-white/15 border border-white/20 p-10 rounded-2xl flex flex-col justify-center">
+            <div className="bg-[#1A6B4A] border border-[#1A6B4A] p-10 rounded-2xl flex flex-col justify-center">
               <span className="material-symbols-outlined text-white text-4xl mb-6">account_balance_wallet</span>
               <h3 className="text-2xl font-bold text-white mb-4">The Payout Result</h3>
-              <p className="text-white/70 mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
+              <p className="text-white/80 mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
               <div className="bg-white p-6 rounded-xl text-center">
                 <span className="text-sm uppercase tracking-widest text-secondary">You receive only</span>
                 <div className="text-4xl font-black text-primary mt-1">£60,000</div>
@@ -210,9 +210,9 @@ export default function ResourcesPage() {
         </section>
 
         {/* Rising Costs */}
-        <section className="pt-10 pb-24 px-8 bg-zinc-900 flex flex-col items-center text-center gap-10">
+        <section className="pt-10 pb-24 px-8 bg-[#1A6B4A] flex flex-col items-center text-center gap-10">
           <div className="space-y-3 max-w-2xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
             <p className="text-white/70 leading-relaxed">
               Global supply chain volatility and labour shortages have pushed rebuild costs up by over 25% since 2019. If your valuation hasn&rsquo;t been updated since 2021, you are almost certainly underinsured today.
@@ -247,7 +247,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Why RICS & BCIS */}
-        <section className="pt-10 pb-20 text-center">
+        <section className="pt-10 pb-20 text-center bg-white">
           <div className="max-w-2xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified</span>Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
@@ -275,12 +275,12 @@ export default function ResourcesPage() {
         </section>
 
         {/* RCA Lifecycle */}
-        <section className="pt-10 pb-24 px-8 bg-[#0f3d28]">
+        <section className="pt-10 pb-24 px-8 bg-[#1A6B4A]">
           <div className="max-w-5xl mx-auto">
 
             {/* Header */}
             <div className="text-center mb-12 space-y-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Best Practice</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Best Practice</span>
               <h2 className="text-4xl font-bold text-white">The Reinstatement Cost Assessment Lifecycle.</h2>
             </div>
 
@@ -313,7 +313,7 @@ export default function ResourcesPage() {
         </section>
 
       {/* Article links */}
-      <section className="py-20 px-8 bg-zinc-50">
+      <section className="py-20 px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>article</span>Guides &amp; Case Studies</span>

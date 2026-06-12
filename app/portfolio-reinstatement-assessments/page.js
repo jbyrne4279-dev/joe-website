@@ -138,7 +138,7 @@ export default function PortfolioReinstatementPage() {
       </section>
 
       {/* CTA Strip */}
-      <section className="bg-[#1A6B4A] py-16 px-6">
+      <section className="bg-[#0f3d28] py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight text-center">
             One instruction. Every asset accurately valued.

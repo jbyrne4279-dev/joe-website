@@ -125,7 +125,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="pt-10 pb-20 px-8 bg-[#1A6B4A] flex flex-col items-center text-center">
+        <section className="pt-10 pb-20 px-8 bg-[#0f3d28] flex flex-col items-center text-center">
           <div className="space-y-10 w-full max-w-2xl mx-auto">
             <div className="space-y-3">
               <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
@@ -212,7 +212,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Rising Costs */}
-        <section className="pt-10 pb-24 px-8 bg-[#1A6B4A] flex flex-col items-center text-center gap-10">
+        <section className="pt-10 pb-24 px-8 bg-[#0f3d28] flex flex-col items-center text-center gap-10">
           <div className="space-y-3 max-w-2xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
@@ -229,7 +229,7 @@ export default function ResourcesPage() {
               </div>
             </div>
             <div className="relative h-48 w-full flex items-end gap-3 mb-3">
-              <div className="flex-1 rounded-t-lg bg-[#1A6B4A] hover:opacity-80 transition-all duration-500" style={{ height: '40%' }}></div>
+              <div className="flex-1 rounded-t-lg bg-[#0f3d28] hover:opacity-80 transition-all duration-500" style={{ height: '40%' }}></div>
               <div className="flex-1 rounded-t-lg bg-teal-500 hover:opacity-80 transition-all duration-500" style={{ height: '50%' }}></div>
               <div className="flex-1 rounded-t-lg bg-yellow-400 hover:opacity-80 transition-all duration-500" style={{ height: '62%' }}></div>
               <div className="flex-1 rounded-t-lg bg-orange-400 hover:opacity-80 transition-all duration-500" style={{ height: '76%' }}></div>
@@ -239,7 +239,7 @@ export default function ResourcesPage() {
               <span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2024</span>
             </div>
             <div className="mt-6 pt-5 border-t border-zinc-100 flex items-center justify-center gap-4 flex-wrap">
-              <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#1A6B4A]"></span><span className="text-xs text-secondary">Stable</span></div>
+              <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#0f3d28]"></span><span className="text-xs text-secondary">Stable</span></div>
               <span className="text-secondary/30 text-xs">→</span>
               <div className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span><span className="text-xs text-secondary">Rising</span></div>
               <span className="text-secondary/30 text-xs">→</span>
@@ -277,7 +277,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* RCA Lifecycle */}
-        <section className="pt-10 pb-24 px-8 bg-[#1A6B4A]">
+        <section className="pt-10 pb-24 px-8 bg-[#0f3d28]">
           <div className="max-w-5xl mx-auto">
 
             {/* Header */}

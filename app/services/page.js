@@ -150,7 +150,7 @@ export default function ServicesPage() {
                   <span className="text-secondary">Site visit not included</span>
                 </li>
               </ul>
-              <Link href="/contact#contact-form" className="w-full py-4 bg-[#1A6B4A] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+              <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
             </div>
 
             {/* 3-Year Protection */}
@@ -205,7 +205,7 @@ export default function ServicesPage() {
                   <span className="text-secondary">Expert surveyor consultancy</span>
                 </li>
               </ul>
-              <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#1A6B4A] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+              <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
             </div>
 
           </div>
@@ -223,8 +223,8 @@ export default function ServicesPage() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm" style={{ minWidth: '560px' }}>
                 <thead>
-                  <tr className="bg-[#1A6B4A]">
-                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#1A6B4A] z-10" style={{ minWidth: '140px' }}>Feature</th>
+                  <tr className="bg-[#0f3d28]">
+                    <th className="text-left pl-5 pr-3 py-5 text-white/70 font-semibold text-xs uppercase tracking-widest sticky left-0 bg-[#0f3d28] z-10" style={{ minWidth: '140px' }}>Feature</th>
                     <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug" style={{ minWidth: '120px' }}>Desktop RCA</th>
                     <th className="px-3 py-5 text-white font-bold text-center text-xs leading-snug relative" style={{ minWidth: '130px' }}>
                       <span className="inline-block bg-white text-[#1A6B4A] text-[0.55rem] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1">Best Value</span><br />

@@ -149,7 +149,7 @@ export default function ContactSection({ heading = 'Get In Touch' }) {
               allowFullScreen
             />
 
-            <address className="bg-[#1A6B4A] rounded-2xl p-8 not-italic sovereign-shadow">
+            <address className="bg-[#0f3d28] rounded-2xl p-8 not-italic sovereign-shadow">
               <div className="space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-9 h-9 rounded-full bg-white/15 flex items-center justify-center">

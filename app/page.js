@@ -307,7 +307,7 @@ export default function HomePage() {
                     <span className="text-secondary">Site visit not included</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 bg-[#1A6B4A] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+                <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* 3-Year Protection */}
@@ -362,7 +362,7 @@ export default function HomePage() {
                     <span className="text-secondary">Expert surveyor consultancy</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#1A6B4A] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
               </div>
 
             </div>
@@ -464,7 +464,7 @@ export default function HomePage() {
       </section>
 
       {/* Trust & Compliance */}
-      <section className="py-20 px-8 bg-[#1A6B4A]">
+      <section className="py-20 px-8 bg-[#0f3d28]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
@@ -538,7 +538,7 @@ export default function HomePage() {
               { icon: 'notifications_active', text: 'Automated reminders before your policy renewal' },
               { icon: 'analytics', text: 'Portfolio-wide scheduling with per-asset tracking' },
             ].map(({ icon, text }) => (
-              <div key={text} className="flex items-start gap-4 bg-[#1A6B4A] rounded-2xl p-5">
+              <div key={text} className="flex items-start gap-4 bg-[#0f3d28] rounded-2xl p-5">
                 <span className="material-symbols-outlined text-white mt-0.5" style={{ fontSize: '1.3rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                 <p className="text-white/90 text-sm leading-relaxed">{text}</p>
               </div>

@@ -417,8 +417,8 @@ export default function HomePage() {
               { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
-                <div className="shrink-0 w-11 h-11 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+                <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">{title}</p>

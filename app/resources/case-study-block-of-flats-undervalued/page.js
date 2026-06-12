@@ -23,6 +23,14 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.</p>
       </div>
 
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&h=500&fit=crop&auto=format&q=80"
+          alt="UK block of flats apartment building"
+          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+        />
+      </div>
+
       <div className="bg-zinc-50 border border-[#1A6B4A]/15 rounded-2xl p-7 mb-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
         {[
           { label: 'Units', value: '24' },

@@ -23,6 +23,14 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">Many managing agents assume that because their insurer applies annual index linking, their buildings are adequately insured. This assumption is one of the most common and most expensive misunderstandings in UK property management.</p>
       </div>
 
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=500&fit=crop&auto=format&q=80"
+          alt="Insurance documents and financial charts on a desk"
+          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+        />
+      </div>
+
       <h2 className="text-2xl font-bold text-primary mb-3">What Is Index Linking?</h2>
       <p className="text-secondary leading-relaxed mb-6">Index linking is a mechanism used by insurers to automatically adjust the sum insured each year in line with a construction cost index, typically a variant of the BCIS All-in Tender Price Index or a proprietary equivalent. The intention is to prevent a building from drifting into underinsurance due to general cost inflation.</p>
       <p className="text-secondary leading-relaxed mb-8">In practice, the insurer applies a percentage uplift, say 5%, to the existing declared value. No surveyor visits the property. No detailed assessment is carried out. The insured figure simply grows by a fixed multiplier based on a broad market index.</p>

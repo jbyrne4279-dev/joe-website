@@ -23,6 +23,14 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">Research consistently shows that the majority of UK commercial and residential blocks carry insufficient reinstatement values on their insurance policies. For managing agents, this is not just a problem for property owners. It creates direct professional and financial risk.</p>
       </div>
 
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=500&fit=crop&auto=format&q=80"
+          alt="Risk and compliance office documents"
+          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+        />
+      </div>
+
       <h2 className="text-2xl font-bold text-primary mb-3">1. Proportional Settlement Under the Average Clause</h2>
       <p className="text-secondary leading-relaxed mb-8">Most commercial building insurance policies include an average clause, which means that if a property is underinsured, the insurer will reduce any claim payout in proportion to the shortfall. If a block has a true reinstatement value of &pound;4 million but is insured for &pound;2.8 million, it is 30% underinsured. A &pound;600,000 claim would be settled at just &pound;420,000. The remaining &pound;180,000 falls on the freeholder and, ultimately, the leaseholders.</p>
 

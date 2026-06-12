@@ -23,6 +23,14 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">For managing agents and freeholders, keeping reinstatement cost figures current is both a compliance requirement and a critical financial protection. Yet the majority of UK blocks are operating with valuations that are years out of date.</p>
       </div>
 
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=500&fit=crop&auto=format&q=80"
+          alt="UK residential buildings and property"
+          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+        />
+      </div>
+
       <h2 className="text-2xl font-bold text-primary mb-3">The RICS Recommendation: Every Three Years</h2>
       <p className="text-secondary leading-relaxed mb-6">The Royal Institution of Chartered Surveyors (RICS) recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index-linked adjustments are acceptable as a bridging measure, but they are not a substitute for a professional assessment.</p>
       <p className="text-secondary leading-relaxed mb-8">Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index. It does not account for site-specific factors, changes to the building, or localised cost inflation.</p>

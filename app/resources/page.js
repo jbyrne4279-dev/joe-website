@@ -123,7 +123,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="pt-10 pb-20 px-8 bg-[#7f1d1d] flex flex-col items-center text-center">
+        <section className="pt-10 pb-20 px-8 bg-zinc-900 flex flex-col items-center text-center">
           <div className="space-y-10 w-full max-w-2xl mx-auto">
             <div className="space-y-3">
               <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Averaging Clause */}
-        <section className="pt-10 pb-20 bg-[#b45309] px-8">
+        <section className="pt-10 pb-20 bg-[#0f3d28] px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-6">The &ldquo;Averaging Clause&rdquo; Trap.</h2>
             <p className="text-white/70 text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
@@ -176,7 +176,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-10 rounded-2xl shadow-md flex flex-col justify-between">
               <div>
-                <h3 className="text-lg font-semibold text-[#b45309] mb-8">Scenario: The Reality Gap</h3>
+                <h3 className="text-lg font-semibold text-[#1A6B4A] mb-8">Scenario: The Reality Gap</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-end border-b border-zinc-100 pb-4">
                     <span className="text-secondary">True Rebuild Cost</span>
@@ -210,7 +210,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Rising Costs */}
-        <section className="pt-10 pb-24 px-8 bg-[#7f1d1d] flex flex-col items-center text-center gap-10">
+        <section className="pt-10 pb-24 px-8 bg-zinc-900 flex flex-col items-center text-center gap-10">
           <div className="space-y-3 max-w-2xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>

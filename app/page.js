@@ -643,12 +643,10 @@ export default function HomePage() {
 
       <section className="pt-10 pb-24 px-8 bg-[#0f3d28] overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-            <div className="max-w-2xl text-center md:text-left">
-              <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center md:justify-start gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Who We Serve</span>
-              <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Reinstatement Cost Assessments for every property type.</h2>
-              <p className="text-white/60 leading-relaxed">From London homes to national commercial portfolios - RICS-regulated reinstatement cost assessments delivered across the UK.</p>
-            </div>
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Who We Serve</span>
+            <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Reinstatement Cost Assessments for every property type.</h2>
+            <p className="text-white/60 leading-relaxed max-w-2xl mx-auto">From London homes to national commercial portfolios - RICS-regulated reinstatement cost assessments delivered across the UK.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[

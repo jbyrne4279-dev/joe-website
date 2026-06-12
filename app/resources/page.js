@@ -134,33 +134,33 @@ export default function ResourcesPage() {
             </div>
 
             <div className="space-y-4 w-full">
-              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>warning</span>
+              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>warning</span>
                 </div>
                 <div>
-                  <p className="font-bold text-white mb-1">Overinsured in rural areas</p>
-                  <p className="text-white/70 text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild. You could be paying premiums on a £480k fiction.</p>
+                  <p className="font-bold text-primary mb-1">Overinsured in rural areas</p>
+                  <p className="text-secondary text-sm leading-relaxed">A countryside property worth £800k may cost only £320k to rebuild. You could be paying premiums on a £480k fiction.</p>
                 </div>
               </div>
 
-              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>trending_down</span>
+              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>trending_down</span>
                 </div>
                 <div>
-                  <p className="font-bold text-white mb-1">Underinsured in urban areas</p>
-                  <p className="text-white/70 text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
+                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
-              <div className="bg-white/10 rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-all duration-300 flex items-start gap-5 text-left">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
+              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+                <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <p className="font-bold text-white mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">RICS-regulated RCA</a> eliminates the guesswork</p>
-                  <p className="text-white/70 text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
+                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">RICS-regulated RCA</a> eliminates the guesswork</p>
+                  <p className="text-secondary text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
                 </div>
               </div>
             </div>
@@ -193,10 +193,10 @@ export default function ResourcesPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#1A6B4A] border border-[#1A6B4A] p-10 rounded-2xl flex flex-col justify-center">
-              <span className="material-symbols-outlined text-white text-4xl mb-6">account_balance_wallet</span>
-              <h3 className="text-2xl font-bold text-white mb-4">The Payout Result</h3>
-              <p className="text-white/80 mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
+            <div className="bg-white border border-zinc-100 p-10 rounded-2xl shadow-md flex flex-col justify-center">
+              <span className="material-symbols-outlined text-[#1A6B4A] text-4xl mb-6">account_balance_wallet</span>
+              <h3 className="text-2xl font-bold text-primary mb-4">The Payout Result</h3>
+              <p className="text-secondary mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
               <div className="bg-white p-6 rounded-xl text-center">
                 <span className="text-sm uppercase tracking-widest text-secondary">You receive only</span>
                 <div className="text-4xl font-black text-primary mt-1">£60,000</div>
@@ -263,7 +263,7 @@ export default function ResourcesPage() {
               { icon: 'analytics', title: 'Data-Driven', desc: 'Access to live BCIS construction indices for accurate, up-to-date figures.' },
               { icon: 'verified', title: 'Defensible', desc: 'A certified RCA report provides leverage during claim disputes.' },
             ].map(({ icon, title, desc }) => (
-              <div key={icon} className="liquid-glass rounded-2xl p-8 flex flex-col items-center gap-4 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+              <div key={icon} className="bg-white rounded-2xl p-8 flex flex-col items-center gap-4 border border-[#1A6B4A]/20 shadow-sm hover:shadow-md hover:border-[#1A6B4A]/40 transition-all duration-300">
                 <div className="w-12 h-12 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
@@ -299,10 +299,10 @@ export default function ResourcesPage() {
                       <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                     </div>
                     <div className="w-5 h-px bg-white/20 shrink-0" aria-hidden="true" />
-                    <div className="bg-white/10 border border-white/15 flex-1 px-6 py-5 rounded-2xl hover:bg-white/15 transition-all duration-300">
-                      <span className="text-[0.6rem] font-bold uppercase tracking-widest text-white/50 block mb-1">{label}</span>
-                      <p className="font-bold text-white text-sm mb-1">{title}</p>
-                      <p className="text-xs text-white/60 leading-relaxed">{desc}</p>
+                    <div className="bg-white flex-1 px-6 py-5 rounded-2xl shadow-sm">
+                      <span className="text-[0.6rem] font-bold uppercase tracking-widest text-[#1A6B4A]/60 block mb-1">{label}</span>
+                      <p className="font-bold text-primary text-sm mb-1">{title}</p>
+                      <p className="text-xs text-secondary leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}

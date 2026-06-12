@@ -343,13 +343,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-14">
             <p className="text-xs font-semibold tracking-widest text-secondary uppercase mb-3">Client Testimonials</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Clients Say.</h2>
             <div className="flex items-center justify-center gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
               ))}
             </div>
-            <p className="text-secondary text-sm">Trusted by property buyers across the UK</p>
+            <p className="text-secondary text-sm">Trusted by property buyers across the UK.</p>
           </div>
 
           <div className="relative">
@@ -406,7 +406,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
-            <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us</h2>
+            <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us.</h2>
             <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on, not guesswork.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -504,10 +504,10 @@ export default function HomePage() {
               <div className="absolute left-5 top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-[#1A6B4A]/25 to-transparent hidden sm:block" aria-hidden="true" />
               <div className="space-y-5">
                 {[
-                  { step: '1', title: 'Fully comprehensive', desc: <>Our RCAs calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete reinstatement figure you can rely on.</> },
-                  { step: '2', title: 'RICS-certified accuracy', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
-                  { step: '3', title: 'Accepted by all UK insurers', desc: 'Our broker-ready reports are submitted directly to insurers and accepted without challenge. No back-and-forth, no delays - just a compliant, insurer-approved valuation.' },
-                  { step: '4', title: 'Backed by professional indemnity', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
+                  { step: '1', title: 'Fully comprehensive.', desc: <>Our RCAs calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete reinstatement figure you can rely on.</> },
+                  { step: '2', title: 'RICS-certified accuracy.', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
+                  { step: '3', title: 'Accepted by all UK insurers.', desc: 'Our broker-ready reports are submitted directly to insurers and accepted without challenge. No back-and-forth, no delays - just a compliant, insurer-approved valuation.' },
+                  { step: '4', title: 'Backed by professional indemnity.', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
                 ].map(({ step, title, desc }) => (
                   <div key={step} className="flex items-center gap-0">
                     <div className="btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10">{step}</div>
@@ -589,7 +589,7 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-white text-xl">report</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-1">The Condition of Average</h4>
+                  <h4 className="font-bold text-white mb-1">The Condition of Average.</h4>
                   <p className="text-sm text-white/70 leading-relaxed">If you are <span className="font-semibold text-white">20% underinsured</span>, your insurer can reduce your payout by 20% - even on a partial claim. The clause is standard across UK policies and routinely enforced.</p>
                 </div>
               </div>
@@ -598,7 +598,7 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-white text-xl">trending_up</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-1">Construction costs are rising fast</h4>
+                  <h4 className="font-bold text-white mb-1">Construction costs are rising fast.</h4>
                   <p className="text-sm text-white/70 leading-relaxed">BCIS data shows UK build costs have risen <span className="font-semibold text-white">over 30% since 2020</span>. A valuation from three years ago is almost certainly out of date - and your insurer knows it.</p>
                 </div>
               </div>
@@ -607,7 +607,7 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-white text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-1">One accurate RCA fixes this</h4>
+                  <h4 className="font-bold text-white mb-1">One accurate RCA fixes this.</h4>
                   <p className="text-sm text-white/70 leading-relaxed">A <span className="font-semibold text-white">RICS-certified Reinstatement Cost Assessment</span> gives you a compliant, insurer-accepted figure. <Link href="/services" className="text-white underline underline-offset-2 hover:text-white/80 transition-colors">See our services &rarr;</Link></p>
                 </div>
               </div>

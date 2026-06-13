@@ -1,4 +1,4 @@
-﻿import ContactSection from '../components/ContactSection'
+import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
@@ -85,22 +85,33 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqJsonLd) }}
       />
-    <main>
-      <div className="max-w-7xl mx-auto px-8">
+    <main className="bg-white">
 
       {/* Hero */}
-      <section className="pt-16 pb-8 md:pt-20 md:pb-10 flex flex-col items-center text-center max-w-4xl mx-auto gap-6">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2" style={{ letterSpacing: '0.3em' }}><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>support_agent</span>Professional Consultation</span>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-primary leading-[1.08]">
-          Don&rsquo;t find out you&rsquo;re<br className="hidden md:block" /> <span className="text-shine-red">underinsured the hard way.</span>
-        </h1>
-        <div className="w-12 h-0.5" aria-hidden="true"></div>
-        <p className="text-xl text-secondary font-light max-w-xl leading-relaxed">
-          Over <strong className="font-bold text-primary">80%</strong> of UK properties are insured for the wrong amount. A RICS-regulated RCA takes less than <strong className="font-bold text-primary">48 hours</strong>, and could save you hundreds of thousands in an uncapped claim.
-        </p>
+      <section className="relative bg-white pt-24 pb-16 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" style={{background:'radial-gradient(ellipse at 50% 0%, rgba(26,107,74,0.08) 0%, transparent 60%)'}} />
+        <div className="relative max-w-4xl mx-auto px-6 flex flex-col items-center text-center gap-5">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 leading-[1.06]">
+            Don&rsquo;t find out you&rsquo;re<br className="hidden md:block" /> <span className="text-shine-red">underinsured the hard way.</span>
+          </h1>
+          <p className="text-lg text-gray-500 font-light max-w-xl leading-relaxed">
+            Over <strong className="font-bold text-gray-700">80%</strong> of UK properties are insured for the wrong amount. A RICS-regulated RCA takes less than <strong className="font-bold text-gray-700">48 hours</strong>, and could save you hundreds of thousands in an uncapped claim.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#contact-form" className="btn-shine text-white px-7 py-3.5 rounded-full font-semibold text-sm active:scale-[0.97] transition-all">
+              Get your RICS-Certified RCA
+            </a>
+            <a href="/services" className="bg-gray-900/[0.04] border border-gray-900/[0.08] text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-7 py-3.5 rounded-full font-semibold text-sm transition-all">
+              Is My Property Underinsured?
+            </a>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-[#1A6B4A]/[0.06] border border-[#1A6B4A]/15 rounded-full px-4 py-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E] shrink-0" />
+            <span className="text-xs text-[#1A6B4A] tracking-wide font-medium">RICS Regulated · London & UK</span>
+          </div>
+        </div>
       </section>
 
-      </div>
       <ContactSection
         heading={
           <>

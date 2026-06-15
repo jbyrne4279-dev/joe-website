@@ -16,65 +16,79 @@ export const metadata = {
 
 export default function CommercialReinstatementPage() {
   return (
-    <main className="bg-white">
+    <main>
 
       {/* Hero */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{background:'radial-gradient(ellipse at 50% 0%, rgba(26,107,74,0.08) 0%, transparent 60%)'}} />
-        <div className="relative max-w-4xl mx-auto px-6 flex flex-col items-center text-center gap-5">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-gray-900">
-            Commercial Reinstatement Cost Assessments.
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
-            Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated assessments your broker will accept — delivered fast.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
-            <Link href="/contact#contact-form" className="btn-shine text-white px-7 py-3.5 rounded-full font-semibold text-sm active:scale-[0.97] transition-all">
-              Request a Quote
-            </Link>
-            <Link href="/services" className="bg-gray-900/[0.04] border border-gray-900/[0.08] text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-7 py-3.5 rounded-full font-semibold text-sm transition-all">
-              View Services
-            </Link>
-          </div>
-          <div className="inline-flex items-center gap-2 bg-[#1A6B4A]/[0.06] border border-[#1A6B4A]/15 rounded-full px-4 py-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E] shrink-0" />
-            <span className="text-xs text-[#1A6B4A] tracking-wide font-medium">RICS Regulated · London & UK</span>
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0f3d28] to-[#1A6B4A]">
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-3xl text-center">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-white/60 mb-6">
+              RICS Regulated &middot; Commercial Property
+            </span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
+              Commercial Reinstatement Cost Assessments.
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
+              Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated assessments your broker will accept   delivered fast.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                href="/contact#contact-form"
+                className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center"
+              >
+                Request a Quote
+              </Link>
+              <Link
+                href="/services"
+                className="bg-white/10 border border-white/25 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 active:scale-[0.97] transition-all text-center"
+              >
+                View Services
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Problems We Solve */}
-      <section className="py-20 px-6 border-t border-gray-100 mt-10">
+      <section className="py-20 px-6 bg-zinc-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+              Common Challenges
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
               Problems we solve for commercial property owners.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                icon: 'construction', bg: 'linear-gradient(135deg,#f97316,#ea580c)', shadow: 'rgba(249,115,22,0.35)',
+                icon: 'construction',
                 title: 'Commercial rebuild costs rising faster than index linking keeps up.',
-                desc: 'Material costs, labour shortages, and supply chain pressures have driven commercial rebuild costs well above what standard index linking captures — widening the underinsurance gap year on year.',
+                desc: 'Material costs, labour shortages, and supply chain pressures have driven commercial rebuild costs well above what standard index linking captures   widening the underinsurance gap year on year.',
               },
               {
-                icon: 'calculate', bg: 'linear-gradient(135deg,#3b82f6,#2563eb)', shadow: 'rgba(59,130,246,0.35)',
+                icon: 'calculate',
                 title: 'Generic online calculators miss specialist fitout and M&E costs.',
-                desc: 'Commercial buildings contain significant mechanical, electrical, and specialist fitout costs that generic calculators ignore entirely — leading to materially understated reinstatement figures.',
+                desc: 'Commercial buildings contain significant mechanical, electrical, and specialist fitout costs that generic calculators ignore entirely   leading to materially understated reinstatement figures.',
               },
               {
-                icon: 'verified_user', bg: 'linear-gradient(135deg,#1A6B4A,#145c3e)', shadow: 'rgba(26,107,74,0.35)',
+                icon: 'verified_user',
                 title: 'Insurers and lenders requiring up-to-date RICS assessments.',
-                desc: 'Increasingly, commercial insurers and lenders require a verifiable RICS-regulated reinstatement figure before agreeing terms — a generic estimate or calculator output is no longer sufficient.',
+                desc: 'Increasingly, commercial insurers and lenders require a verifiable RICS-regulated reinstatement figure before agreeing terms   a generic estimate or calculator output is no longer sufficient.',
               },
-            ].map(({ icon, title, desc, bg, shadow }) => (
-              <div key={title} className="bg-white border border-gray-200 shadow-sm rounded-xl p-7 flex flex-col gap-4 hover:shadow-md transition-all">
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0" style={{ background: bg, boxShadow: `0 2px 10px ${shadow}` }}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+            ].map(({ icon, title, desc }) => (
+              <div
+                key={title}
+                className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300 text-center flex flex-col items-center"
+              >
+                <div className="w-10 h-10 btn-shine rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>
+                    {icon}
+                  </span>
                 </div>
-                <h3 className="font-semibold text-gray-900 text-sm leading-snug">{title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+                <h3 className="font-bold text-[#0f3d28] text-base mb-2 text-center">{title}</h3>
+                <p className="text-sm text-zinc-600 leading-relaxed text-center">{desc}</p>
               </div>
             ))}
           </div>
@@ -82,29 +96,37 @@ export default function CommercialReinstatementPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="py-20 px-6 bg-gray-50 border-t border-gray-100">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+              How We Help
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
               Our solution for commercial properties.
             </h2>
           </div>
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop&auto=format&q=80"
             alt="Commercial office building exterior"
-            className="w-full h-64 md:h-72 object-cover rounded-2xl mb-10 border border-gray-200"
+            className="w-full h-64 md:h-80 object-cover rounded-2xl mb-10 sovereign-shadow"
           />
-          <div className="space-y-3 max-w-2xl mx-auto">
+          <div className="space-y-4 max-w-2xl mx-auto">
             {[
-              'Specialist commercial surveyors — all asset classes',
+              'Specialist commercial surveyors   all asset classes',
               'Fitout, M&E, and external works included',
               'RICS-regulated report ready in 5 days',
             ].map((point, i) => (
-              <div key={i} className="flex items-center gap-4 bg-white border border-gray-200 shadow-sm rounded-xl p-5 hover:shadow-md transition-all">
-                <div className="shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg,#1A6B4A,#145c3e)', boxShadow: '0 2px 10px rgba(26,107,74,0.35)' }}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1rem', fontVariationSettings: "'FILL' 1" }}>check</span>
+              <div
+                key={i}
+                className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-[#1A6B4A]/20 bg-zinc-50 hover:border-[#1A6B4A]/40 transition-all duration-300"
+              >
+                <div className="w-8 h-8 btn-shine rounded-full flex items-center justify-center mx-auto">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '0.95rem', fontVariationSettings: "'FILL' 1" }}>
+                    check
+                  </span>
                 </div>
-                <p className="text-gray-700 font-medium text-sm leading-snug">{point}</p>
+                <p className="text-[#0f3d28] font-semibold leading-snug text-center">{point}</p>
               </div>
             ))}
           </div>
@@ -112,23 +134,27 @@ export default function CommercialReinstatementPage() {
       </section>
 
       {/* CTA Strip */}
-      <section className="py-20 px-6 border-t border-gray-100">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white border border-gray-200 shadow-sm rounded-2xl p-10 md:p-14 text-center space-y-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-              Get an accurate commercial reinstatement figure today.
-            </h2>
-            <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
-              RICS-regulated assessments for offices, warehouses, retail, and mixed-use — covering fitout, M&E, and external works. Broker-ready in 5 days.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold text-sm active:scale-[0.97] transition-all">
-                Request a Quote
-              </Link>
-              <Link href="/services" className="bg-gray-900/[0.04] border border-gray-900/[0.08] text-gray-600 hover:text-gray-900 hover:bg-gray-100 px-8 py-3.5 rounded-full font-semibold text-sm transition-all">
-                View Services
-              </Link>
-            </div>
+      <section className="bg-[#0f3d28] py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight text-center">
+            Get an accurate commercial reinstatement figure today.
+          </h2>
+          <p className="text-white/75 max-w-xl mx-auto text-center">
+            RICS-regulated assessments for offices, warehouses, retail, and mixed-use   covering fitout, M&E, and external works. Broker-ready in 5 days.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/contact#contact-form"
+              className="bg-white text-[#1A6B4A] px-8 py-4 rounded-full font-bold hover:bg-zinc-100 active:scale-[0.97] transition-all text-center sovereign-shadow"
+            >
+              Request a Quote
+            </Link>
+            <Link
+              href="/services"
+              className="bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 active:scale-[0.97] transition-all text-center"
+            >
+              View Services
+            </Link>
           </div>
         </div>
       </section>

@@ -16,8 +16,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
-      <nav aria-label="Main navigation" className="flex items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
+    <header className="sticky top-0 w-full bg-white z-50 border-b border-zinc-200">
+      <nav aria-label="Main navigation" className="flex items-center px-6 md:px-8 py-4 max-w-full mx-auto">
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
           <span className="logo-shine">
             <Image
@@ -26,7 +26,7 @@ export default function Navbar() {
               width={80}
               height={64}
               priority
-              className="h-10 w-auto object-contain logo-levitate"
+              className="h-12 w-auto object-contain logo-levitate"
             />
           </span>
         </Link>
@@ -40,8 +40,8 @@ export default function Navbar() {
                 href={href}
                 className={
                   isActive
-                    ? 'text-gray-900 font-medium text-sm tracking-wide'
-                    : 'text-gray-500 hover:text-gray-900 transition-colors font-medium text-sm tracking-wide'
+                    ? 'text-emerald-700 border-b-2 border-emerald-700 pb-1 font-semibold tracking-tight'
+                    : 'text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight'
                 }
               >
                 {label}
@@ -56,7 +56,7 @@ export default function Navbar() {
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="h-10 w-auto object-contain opacity-60"
+            className="h-11 lg:h-12 w-auto object-contain"
           />
         </div>
 
@@ -66,16 +66,16 @@ export default function Navbar() {
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="h-8 w-auto object-contain opacity-50"
+            className="h-9 w-auto object-contain"
           />
           <button
             type="button"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="inline-flex items-center justify-center w-9 h-9 rounded-lg text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors"
           >
-            <span className="material-symbols-outlined" style={{ fontSize: '1.4rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1.6rem' }}>
               {open ? 'close' : 'menu'}
             </span>
           </button>
@@ -83,7 +83,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-gray-100 bg-gray-50">
+        <div className="md:hidden border-t border-[#1A6B4A]" style={{ backgroundColor: '#1A6B4A' }}>
           <div className="flex flex-col px-6 py-4 gap-1">
             {links.map(({ href, label }) => {
               const isActive = pathname === href
@@ -94,8 +94,8 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={
                     isActive
-                      ? 'text-gray-900 font-medium text-sm py-3 px-3 border-l-2 border-[#1A6B4A] bg-gray-50'
-                      : 'text-gray-500 hover:text-gray-900 font-medium text-sm py-3 px-3 border-l-2 border-transparent hover:border-gray-200 transition-colors'
+                      ? 'text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-white bg-white/10'
+                      : 'text-white/80 hover:text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-transparent hover:border-white/40'
                   }
                 >
                   {label}

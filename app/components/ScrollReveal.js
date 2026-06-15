@@ -17,6 +17,9 @@ export default function ScrollReveal() {
       el.classList.remove('is-visible')
     })
 
+    const cards = document.querySelectorAll('.grow-card')
+    cards.forEach(el => el.classList.remove('is-visible'))
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
@@ -29,9 +32,22 @@ export default function ScrollReveal() {
       { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     )
 
-    targets.forEach(el => observer.observe(el))
+    const cardObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            cardObserver.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -20px 0px' }
+    )
 
-    return () => observer.disconnect()
+    targets.forEach(el => observer.observe(el))
+    cards.forEach(el => cardObserver.observe(el))
+
+    return () => { observer.disconnect(); cardObserver.disconnect() }
   }, [pathname])
 
   return null

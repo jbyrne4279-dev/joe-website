@@ -1,4 +1,5 @@
-﻿import ContactSection from '../components/ContactSection'
+﻿import Link from 'next/link'
+import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
@@ -17,16 +18,16 @@ export const metadata = {
 }
 
 const resourcesFaqItems = [
-  { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment (RCA) calculates the total cost to rebuild your property from scratch after a total loss. This includes demolition, professional fees, materials, and compliance with current regulations.' },
-  { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need RCAs to ensure their buildings are insured for the correct rebuild value.' },
-  { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate RCA, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
+  { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment calculates the total cost to rebuild your property from scratch after a total loss. This includes demolition, professional fees, materials, and compliance with current regulations.' },
+  { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need a reinstatement cost assessment to ensure their buildings are insured for the correct rebuild value.' },
+  { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate reinstatement cost assessment, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
   { question: 'How is reinstatement cost different from market value?', answer: 'Market value reflects what a property sells for. Reinstatement cost reflects the cost to rebuild it, often significantly higher due to construction costs, fees, and compliance requirements.' },
-  { question: 'Do I need an RCA for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without an RCA, you are estimating, which increases the risk of being under or over insured.' },
+  { question: 'Do I need a reinstatement cost assessment for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without a reinstatement cost assessment, you are estimating, which increases the risk of being under or over insured.' },
   { question: 'How is a reinstatement cost calculated?', answer: 'It is calculated based on building size, materials, specification, location, demolition costs, professional fees, and current construction rates, not purchase price.' },
   { question: 'How long does a rebuild cost assessment take?', answer: 'Most assessments are completed within 48 hours after inspection. Larger or more complex properties may take slightly longer to ensure full accuracy.' },
   { question: 'What happens if my property is underinsured?', answer: 'If underinsured, insurers can reduce your claim payout proportionally. This means you may not receive enough to fully rebuild your property after damage or loss.' },
-  { question: 'Do I need an RCA for a commercial property?', answer: 'Yes. Commercial properties often have higher rebuild complexity and cost. An RCA ensures your insurance fully reflects the risk and scale of the asset.' },
-  { question: 'Can I estimate rebuild cost myself?', answer: 'Online calculators can give rough estimates, but they often miss key costs. A professional RCA provides an accurate, defensible figure aligned with insurer expectations.' },
+  { question: 'Do I need a reinstatement cost assessment for a commercial property?', answer: 'Yes. Commercial properties often have higher rebuild complexity and cost. A reinstatement cost assessment ensures your insurance fully reflects the risk and scale of the asset.' },
+  { question: 'Can I estimate rebuild cost myself?', answer: 'Online calculators can give rough estimates, but they often miss key costs. A professional rebuild cost assessment provides an accurate, defensible figure aligned with insurer expectations.' },
 ]
 
 const SITE_URL = 'https://reinstatementcostassessment.org'
@@ -104,28 +105,41 @@ export default function ResourcesPage() {
     <main>
 
         {/* Hero */}
-        <section className="py-24 lg:py-32 px-8 bg-white">
-          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-6 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>menu_book</span>Expert Insight Guide</span>
-          <h1 className="text-3xl sm:text-4xl md:text-[4rem] font-bold tracking-tight text-primary leading-[1.05] mb-8 max-w-4xl">
-            <span className="text-shine-red">The quiet crisis</span> inside most buildings <span className="text-shine">insurance policies.</span>
-          </h1>
-          <p className="text-lg text-secondary max-w-2xl leading-relaxed mb-12">
-            In a rapidly shifting economy, the gap between what a building is worth and what it costs to rebuild is widening at an alarming rate. Discover why your current valuation might be leaving you dangerously exposed.
-          </p>
-          <div className="w-full h-[400px] rounded-2xl overflow-hidden relative sovereign-shadow">
-            <img
-              className="w-full h-full object-cover opacity-90"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuALOMaU4yAO0fABDemBrPwIW0_JHcg5OCUfDCMgrVnZfZMHPdmT_UxkLb4VH-nCQaLW11YFCFg9voqLjC25o9B2GI89LFrZExDjKVvoCm5QrpahvM2W_qQdNDaJnxc-B-d6CSLkebPqSlNLFOwgIsozfCOc0LxX2-ogBKGB57cebbKp3u4T-W8NGtEdynuZhsleRozYnKGxhyPvQaBbot6EX5zIE0p1c2JH1GQsMOcTsxgBc1PINPZoKGlpyPIU3PtwWB3Fg4n1IL8"
-              alt="UK buildings underinsured: reinstatement cost versus market value gap explained"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          </div>
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=1600&auto=format&fit=crop&q=80"
+            alt="UK residential buildings with hidden underinsurance risk"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
+          <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+            <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+                The <span className="text-shine-red">quiet crisis</span><br />inside most<br /><span className="whitespace-nowrap">buildings <span className="text-shine">insurance.</span></span>
+              </h1>
+              <p className="text-sm text-secondary leading-relaxed mb-8">
+                The gap between what a building is worth and what it costs to rebuild is widening fast. Discover why your current valuation might be leaving you dangerously exposed.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
+                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                  Contact Surveyor
+                </Link>
+                <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
+                  Our Services
+                </Link>
+              </div>
+              <div className="flex justify-center">
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
+                  <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
+                  RICS Regulated &middot; London &amp; UK
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Market Value vs Rebuild Cost */}
-        <section className="pt-10 pb-20 px-8 bg-[#0f3d28] flex flex-col items-center text-center">
+        <section className="scroll-reveal pt-10 pb-20 px-8 bg-[#7f1d1d] flex flex-col items-center text-center">
           <div className="space-y-10 w-full max-w-2xl mx-auto">
             <div className="space-y-3">
               <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>report_problem</span>Common Misconception</span>
@@ -136,7 +150,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="space-y-4 w-full">
-              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+              <div className="grow-card bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>warning</span>
                 </div>
@@ -146,7 +160,7 @@ export default function ResourcesPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+              <div className="grow-card bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem' }}>trending_down</span>
                 </div>
@@ -156,12 +170,12 @@ export default function ResourcesPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
+              <div className="grow-card bg-white rounded-2xl p-7 border border-white/20 shadow-sm flex items-start gap-5 text-left">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
                   <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>verified</span>
                 </div>
                 <div>
-                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">RICS-regulated RCA</a> eliminates the guesswork.</p>
+                  <p className="font-bold text-primary mb-1">A <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">RICS reinstatement cost assessment</a> eliminates the guesswork.</p>
                   <p className="text-secondary text-sm leading-relaxed">Our assessments use live BCIS data and local site knowledge to give you the one figure that actually protects you.</p>
                 </div>
               </div>
@@ -170,7 +184,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Averaging Clause */}
-        <section className="pt-10 pb-20 bg-white px-8">
+        <section className="scroll-reveal pt-10 pb-20 bg-white px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold text-primary mb-6">The &ldquo;Averaging Clause&rdquo; Trap.</h2>
             <p className="text-secondary text-lg">If you are underinsured by 40%, the insurer doesn&rsquo;t just pay up to your limit. They reduce your entire claim by 40%.</p>
@@ -199,20 +213,21 @@ export default function ResourcesPage() {
               <span className="material-symbols-outlined text-[#1A6B4A] text-4xl mb-6">account_balance_wallet</span>
               <h3 className="text-2xl font-bold text-primary mb-4">The Payout Result.</h3>
               <p className="text-secondary mb-8">Even if you have a claim for £100,000, the insurer applies the 40% reduction based on your total underinsurance.</p>
-              <div className="bg-white p-6 rounded-xl text-center">
-                <span className="text-sm uppercase tracking-widest text-secondary">You receive only</span>
-                <div className="text-4xl font-black text-primary mt-1">£60,000</div>
-                <div className="mt-4 text-red-600 font-bold flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-sm">trending_down</span>
+              <div className="bg-red-50 border-2 border-red-200 p-6 rounded-xl text-center shadow-[0_0_20px_4px_rgba(220,38,38,0.10)]">
+                <span className="text-xs font-bold uppercase tracking-widest text-red-400">You receive only</span>
+                <div className="text-5xl font-black text-red-600 mt-2">£60,000</div>
+                <div className="mt-4 text-red-600 font-bold flex items-center justify-center gap-2 text-base">
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>trending_down</span>
                   £40,000 Shortfall
                 </div>
+                <p className="text-xs text-red-400/80 mt-2 font-medium">on a £100,000 claim</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Rising Costs */}
-        <section className="pt-10 pb-24 px-8 bg-[#0f3d28] flex flex-col items-center text-center gap-10">
+        <section className="scroll-reveal pt-10 pb-24 px-8 bg-[#0f3d28] flex flex-col items-center text-center gap-10">
           <div className="space-y-3 max-w-2xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
@@ -249,7 +264,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* Why RICS & BCIS */}
-        <section className="pt-10 pb-20 text-center bg-white">
+        <section className="scroll-reveal pt-10 pb-20 text-center bg-white">
           <div className="max-w-2xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified</span>Our Standard</span>
             <h2 className="text-4xl font-bold text-primary">Why <span className="text-shine">RICS &amp; BCIS Matter.</span></h2>
@@ -263,11 +278,12 @@ export default function ResourcesPage() {
             {[
               { icon: 'gavel', title: 'Regulated', desc: 'Strict adherence to Royal Institution of Chartered Surveyors standards.' },
               { icon: 'analytics', title: 'Data-Driven', desc: 'Access to live BCIS construction indices for accurate, up-to-date figures.' },
-              { icon: 'verified', title: 'Defensible', desc: 'A certified RCA report provides leverage during claim disputes.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={icon} className="bg-white rounded-2xl p-8 flex flex-col items-center gap-4 border border-[#1A6B4A]/20 shadow-sm hover:shadow-md hover:border-[#1A6B4A]/40 transition-all duration-300">
-                <div className="w-12 h-12 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+              { icon: 'verified', title: 'Defensible', desc: 'A certified reinstatement cost assessment report provides leverage during claim disputes.' },
+            ].map(({ icon, title, desc }, i) => (
+              <div key={icon} className="grow-card service-pulse-card bg-white rounded-2xl p-8 flex flex-col items-center gap-4 shadow-sm transition-all duration-300"
+                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
+                <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <h4 className="font-bold text-primary">{title}</h4>
                 <p className="text-sm text-secondary leading-relaxed">{desc}</p>
@@ -276,8 +292,8 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-        {/* RCA Lifecycle */}
-        <section className="pt-10 pb-24 px-8 bg-[#0f3d28]">
+        {/* Reinstatement Cost Assessment Lifecycle */}
+        <section className="scroll-reveal pt-10 pb-24 px-8 bg-[#0f3d28]">
           <div className="max-w-5xl mx-auto">
 
             {/* Header */}
@@ -291,17 +307,17 @@ export default function ResourcesPage() {
               <div className="relative flex flex-col gap-0">
                 <div className="absolute left-5 top-5 bottom-5 w-px bg-gradient-to-b from-transparent via-white/25 to-transparent" aria-hidden="true" />
                 {[
-                  { icon: 'flag',        label: 'Step 1', title: 'Baseline RCA',        desc: 'A full site or desktop professional valuation establishes your accurate reinstatement figure.' },
+                  { icon: 'flag',        label: 'Step 1', title: 'Baseline Assessment',  desc: 'A full site or desktop reinstatement cost assessment establishes your accurate rebuild figure.' },
                   { icon: 'update',      label: 'Year 1', title: 'Annual Index Update',  desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.' },
                   { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.' },
                   { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation',  desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.' },
                 ].map(({ icon, label, title, desc }, i) => (
                   <div key={i} className="flex items-center gap-0 pb-5 last:pb-0">
-                    <div className="w-10 h-10 rounded-full bg-white shrink-0 flex items-center justify-center shadow-lg z-10">
-                      <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
+                    <div className={`lifecycle-icon-${i+1} w-10 h-10 rounded-full bg-white shrink-0 flex items-center justify-center shadow-lg z-10`}>
+                      <span className={`lifecycle-icon-sym-${i+1} material-symbols-outlined text-[#1A6B4A]`} style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                     </div>
                     <div className="w-5 h-px bg-white/20 shrink-0" aria-hidden="true" />
-                    <div className="bg-white flex-1 px-6 py-5 rounded-2xl shadow-sm">
+                    <div className={`lifecycle-card-${i+1} bg-white flex-1 px-6 py-5 rounded-2xl shadow-sm`}>
                       <span className="text-[0.6rem] font-bold uppercase tracking-widest text-[#1A6B4A]/60 block mb-1">{label}</span>
                       <p className="font-bold text-primary text-sm mb-1">{title}</p>
                       <p className="text-xs text-secondary leading-relaxed">{desc}</p>
@@ -315,7 +331,7 @@ export default function ResourcesPage() {
         </section>
 
       {/* Article links */}
-      <section className="py-20 px-8 bg-white">
+      <section className="scroll-reveal py-20 px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>article</span>Guides &amp; Case Studies</span>
@@ -334,14 +350,14 @@ export default function ResourcesPage() {
               {
                 tag: 'Risk & Compliance',
                 title: 'Top Risks of Underinsurance for Managing Agents.',
-                desc: 'From proportional claim settlements to personal liability exposure — the risks managing agents face when valuations are out of date.',
+                desc: 'From proportional claim settlements to personal liability exposure: the risks managing agents face when valuations are out of date.',
                 href: '/resources/top-risks-of-underinsurance-for-managing-agents',
                 img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&auto=format&q=80',
               },
               {
                 tag: 'Case Study',
                 title: 'Block of Flats Undervalued by £2 Million.',
-                desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional RCA uncovered the gap.',
+                desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional reinstatement cost assessment uncovered the gap.',
                 href: '/resources/case-study-block-of-flats-undervalued',
                 img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },
@@ -353,15 +369,15 @@ export default function ResourcesPage() {
                 img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&auto=format&q=80',
               },
             ].map(({ tag, title, desc, href, img }) => (
-              <a key={href} href={href} className="group bg-white rounded-2xl overflow-hidden border border-[#1A6B4A]/10 sovereign-shadow hover:border-[#1A6B4A]/30 hover:shadow-lg transition-all duration-300 flex flex-col">
+              <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>
                 <div className="h-44 overflow-hidden">
-                  <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-2">{tag}</span>
-                  <h3 className="font-bold text-primary text-lg mb-2 leading-snug">{title}</h3>
-                  <p className="text-secondary text-sm leading-relaxed flex-1">{desc}</p>
-                  <div className="flex items-center gap-1 text-[#1A6B4A] text-sm font-semibold mt-4">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#4ade80] mb-2">{tag}</span>
+                  <h3 className="font-bold text-white text-lg mb-2 leading-snug">{title}</h3>
+                  <p className="text-white/65 text-sm leading-relaxed flex-1">{desc}</p>
+                  <div className="flex items-center gap-1 text-[#4ade80] text-sm font-semibold mt-4">
                     Read article <span className="material-symbols-outlined" style={{fontSize:'1rem'}}>arrow_forward</span>
                   </div>
                 </div>

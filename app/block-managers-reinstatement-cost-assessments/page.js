@@ -2,14 +2,14 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Block Managers | RICS Regulated',
+  title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
   description:
-    'RICS-regulated Reinstatement Cost Assessments for block managers. Protect leaseholders from underinsurance with BCIS-indexed figures accepted by all major insurers   delivered in 5 days.',
+    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments — BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
-    title: 'Reinstatement Cost Assessments for Block Managers | RICS Regulated',
+    title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
     description:
-      'RICS-regulated Reinstatement Cost Assessments for block managers. Protect leaseholders from underinsurance with BCIS-indexed figures accepted by all major insurers   delivered in 5 days.',
+      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments — BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
     url: '/block-managers-reinstatement-cost-assessments',
   },
 }

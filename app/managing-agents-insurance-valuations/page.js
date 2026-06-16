@@ -2,14 +2,14 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
-  title: 'Insurance Valuations for Managing Agents | RICS Reinstatement Assessments',
+  title: 'RICS Reinstatement Cost Assessment for Managing Agents | Rebuild Cost',
   description:
-    'Stay compliant and protect managed properties. RICS reinstatement valuations for managing agents   fast, accurate, and fully documented. BCIS-indexed and insurer accepted.',
+    'RICS reinstatement cost assessment for managing agents. Rebuild cost assessments — BCIS-indexed and insurer-accepted. Stay compliant and fully insured across your portfolio.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
   openGraph: {
-    title: 'Insurance Valuations for Managing Agents | RICS Reinstatement Assessments',
+    title: 'RICS Reinstatement Cost Assessment for Managing Agents | Rebuild Cost',
     description:
-      'Stay compliant and protect managed properties. RICS reinstatement valuations for managing agents   fast, accurate, and fully documented. BCIS-indexed and insurer accepted.',
+      'RICS reinstatement cost assessment for managing agents. Rebuild cost assessments — BCIS-indexed and insurer-accepted. Stay compliant and fully insured across your portfolio.',
     url: '/managing-agents-insurance-valuations',
   },
 }

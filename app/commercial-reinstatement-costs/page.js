@@ -2,14 +2,14 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
-  title: 'Commercial Reinstatement Cost Assessments | RICS Regulated UK',
+  title: 'Commercial Rebuild Cost Assessment | RICS Reinstatement Cost Assessment',
   description:
-    'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept   delivered in 5 days.',
+    'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment — BCIS-indexed, broker-ready, delivered in 5 days.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
-    title: 'Commercial Reinstatement Cost Assessments | RICS Regulated UK',
+    title: 'Commercial Rebuild Cost Assessment | RICS Reinstatement Cost Assessment',
     description:
-      'Accurate rebuild costs for offices, warehouses, retail, and mixed-use. RICS-regulated commercial Reinstatement Cost Assessments your broker will accept   delivered in 5 days.',
+      'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment — BCIS-indexed, broker-ready, delivered in 5 days.',
     url: '/commercial-reinstatement-costs',
   },
 }

@@ -4,15 +4,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'What is a Reinstatement Cost Assessment? UK Guide | RCA Ltd',
+    absolute: 'What is a Reinstatement Cost Assessment? | Rebuild Cost UK Guide',
   },
   description:
-    'Most UK buildings are insured for the wrong amount. Learn what a Reinstatement Cost Assessment is, how the Averaging Clause works, and why an accurate rebuild figure protects you.',
+    'Learn what a reinstatement cost assessment is, how a rebuild cost assessment differs from market value, and why the Averaging Clause puts UK property owners at risk.',
   alternates: { canonical: '/resources' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment Guide | RICS Building Insurance UK',
+    title: 'Reinstatement Cost Assessment Guide | Rebuild Cost & RICS UK',
     description:
-      'UK property owners: understand how building reinstatement cost differs from market value, why the Averaging Clause reduces claim payouts when you\'re underinsured, and how a RICS Reinstatement Cost Assessment protects you.',
+      'UK property owners: understand how a rebuild cost assessment differs from market value, why the Averaging Clause reduces payouts when underinsured, and how a RICS reinstatement cost assessment protects you.',
     url: '/resources',
   },
 }

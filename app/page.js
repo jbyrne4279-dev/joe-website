@@ -6,15 +6,15 @@ import GrowObserver from './components/GrowObserver'
 
 export const metadata = {
   title: {
-    absolute: 'RICS Reinstatement Cost Assessment UK | 48-Hour Delivery',
+    absolute: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost Experts',
   },
   description:
-    'Is your building insured for the right amount? 80% of UK properties are underinsured. Get a RICS Reinstatement Cost Assessment   broker-ready, delivered in 48 hours.',
+    'Get a RICS reinstatement cost assessment or rebuild cost assessment for any UK property. RICS-regulated, BCIS-indexed, broker-ready reports delivered in 48 hours from £210.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'RICS Reinstatement Cost Assessment London & UK | From £210',
+    title: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost from £210',
     description:
-      '80% of UK buildings carry the wrong reinstatement cost on their policy. RICS Reinstatement Cost Assessment for homes, commercial, and listed buildings. Delivered in 48 hours across London and the UK.',
+      '80% of UK buildings carry the wrong rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings — delivered in 48 hours across the UK.',
     url: '/',
   },
 }
@@ -259,7 +259,7 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+                <Link href="/contact?service=desktop#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* On-Site Survey */}
@@ -291,7 +291,7 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+                <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
               </div>
 
               {/* 3-Year Protection */}
@@ -326,7 +326,7 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Broker-ready report every renewal</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
+                <Link href="/contact?service=3year#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 
             </div>
@@ -532,7 +532,7 @@ export default function HomePage() {
               { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed-use portfolios, commercial assets, and high-value listed buildings.' },
               { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
             ].map(({ icon, title, desc }) => (
-              <div key={title} className="grow-card bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
+              <div key={title} className="hover-grow bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
                 <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                 </div>

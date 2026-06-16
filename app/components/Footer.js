@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-4 space-y-5">
             <div>
-              <p className="text-white font-bold text-sm uppercase tracking-[0.18em] mb-1">Reinstatement Cost Assessment</p>
+              <p className="text-white font-bold text-sm uppercase tracking-[0.18em] mb-1">Reinstatement Cost Assessment LTD</p>
               <p className="text-emerald-500 text-xs font-semibold tracking-wide">RICS Regulated Firm · Est. UK</p>
             </div>
             <p className="text-sm leading-relaxed text-zinc-400 max-w-xs">

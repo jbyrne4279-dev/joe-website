@@ -5,15 +5,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Reinstatement Cost Assessment Services | Desktop, On-Site & 3-Year',
+    absolute: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost UK',
   },
   description:
-    'Choose your RICS Reinstatement Cost Assessment: Desktop, On-Site Survey for listed or complex buildings, or 3-Year Protection with annual BCIS updates. All reports broker-ready.',
+    'Desktop, on-site and 3-year RICS reinstatement cost assessment services. Rebuild cost assessments for all UK property types from £210. Broker-ready reports accepted by all insurers.',
   alternates: { canonical: '/services' },
   openGraph: {
-    title: 'RICS Reinstatement Cost Assessment Services UK | RCA Ltd',
+    title: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost UK',
     description:
-      'RICS-regulated Reinstatement Cost Assessment services across the UK. Desktop Assessment, On-Site Survey, and 3-Year Protection with annual BCIS updates. Broker-ready reports accepted by all UK insurers.',
+      'RICS reinstatement cost assessment services across the UK. Desktop rebuild cost assessment from £210, On-Site Survey, and 3-Year Protection with annual BCIS updates. All reports broker-ready.',
     url: '/services',
   },
 }
@@ -178,7 +178,7 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+                <Link href="/contact?service=desktop#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* On-Site Survey */}
@@ -210,7 +210,7 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+                <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
               </div>
 
               {/* 3-Year Protection */}
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Broker-ready report every renewal</span>
                   </li>
                 </ul>
-                <Link href="/contact#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
+                <Link href="/contact?service=3year#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 
             </div>
@@ -269,7 +269,7 @@ export default function ServicesPage() {
             { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
           ].map(({ icon, title, desc }) => (
-            <div key={icon} className="grow-card bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+            <div key={icon} className="hover-grow bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
               <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
                 <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
               </div>
@@ -296,7 +296,7 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-primary mb-3">Desktop Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A fast, accurate rebuild cost assessment produced entirely remotely. No site visit required, ideal for standard residential and commercial properties.</p>
               </div>
-              <Link href="/contact#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
+              <Link href="/contact?service=desktop#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
                 Contact RICS Surveyor
               </Link>
             </div>
@@ -330,7 +330,7 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-primary mb-3">On-Site RICS Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A full physical rebuild cost assessment carried out by a RICS-regulated surveyor. The most accurate reinstatement cost assessment available, essential for listed, complex, or high-value buildings.</p>
               </div>
-              <Link href="/contact#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
+              <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
                 Contact RICS Surveyor
               </Link>
             </div>
@@ -367,7 +367,7 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-white mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
                 <p className="text-white/80 text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>
               </div>
-              <Link href="/contact#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
+              <Link href="/contact?service=3year#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
                 Enquire Now
               </Link>
             </div>

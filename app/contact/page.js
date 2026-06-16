@@ -4,15 +4,15 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'Get a Reinstatement Cost Assessment | Instruct Online Today',
+    absolute: 'Get a RICS Reinstatement Cost Assessment | Instruct Online',
   },
   description:
-    'Instruct a RICS Reinstatement Cost Assessment online in minutes. Desktop and On-Site Survey options available. We respond within 24 hours, and reports are accepted by all UK insurers.',
+    'Instruct a RICS reinstatement cost assessment online. Rebuild cost assessments for all UK property types — Desktop and On-Site Survey options. 24-hour response, insurer-accepted reports.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
     description:
-      'Instruct a RICS Reinstatement Cost Assessment for your UK building. Desktop and on-site options available. 24-hour response guaranteed.',
+      'Instruct a RICS reinstatement cost assessment or rebuild cost assessment for your UK building. Desktop and on-site options available. 24-hour response guaranteed.',
     url: '/contact',
   },
 }

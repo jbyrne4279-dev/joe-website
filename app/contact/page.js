@@ -91,7 +91,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1612714169680-74c3ab147e97?w=1600&auto=format&fit=crop&q=80"
+          src="/contact-hero.jpeg"
           alt="Fire-damaged building — the hard way to find out you were underinsured"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

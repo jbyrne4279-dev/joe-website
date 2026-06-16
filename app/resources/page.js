@@ -107,7 +107,7 @@ export default function ResourcesPage() {
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=1600&auto=format&fit=crop&q=80"
+            src="/resources-hero.jpeg"
             alt="UK residential buildings with hidden underinsurance risk"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
@@ -280,7 +280,7 @@ export default function ResourcesPage() {
               { icon: 'analytics', title: 'Data-Driven', desc: 'Access to live BCIS construction indices for accurate, up-to-date figures.' },
               { icon: 'verified', title: 'Defensible', desc: 'A certified reinstatement cost assessment report provides leverage during claim disputes.' },
             ].map(({ icon, title, desc }, i) => (
-              <div key={icon} className="grow-card service-pulse-card bg-white rounded-2xl p-8 flex flex-col items-center gap-4 shadow-sm transition-all duration-300"
+              <div key={icon} className="service-pulse-card bg-white rounded-2xl p-8 flex flex-col items-center gap-4 shadow-sm transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>

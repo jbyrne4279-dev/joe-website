@@ -200,7 +200,7 @@ export default function HomePage() {
             ].map(({ icon, fill, name, tag, desc }, i) => (
               <div
                 key={name}
-                className="grow-card service-pulse-card flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md"
+                className="service-pulse-card flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
                 <div className="flex flex-col items-center gap-3">
@@ -231,7 +231,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
               {/* Desktop Assessment */}
-              <div className="grow-card bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -263,7 +263,7 @@ export default function HomePage() {
               </div>
 
               {/* On-Site Survey */}
-              <div className="grow-card bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -441,7 +441,7 @@ export default function HomePage() {
               { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
               { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
             ].map(({ icon, title, desc }, i) => (
-              <div key={icon} className="grow-card service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 <div className="btn-shine w-14 h-14 rounded-full flex items-center justify-center">
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>

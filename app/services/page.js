@@ -107,7 +107,7 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&auto=format&fit=crop&q=80"
+          src="/services-hero.jpeg"
           alt="Property insurance underinsurance risk — RICS reinstatement cost assessment services UK"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -150,7 +150,7 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
               {/* Desktop Assessment */}
-              <div id="desktop-rca" className="grow-card bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
+              <div id="desktop-rca" className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
               </div>
 
               {/* On-Site Survey */}
-              <div id="on-site-survey" className="grow-card bg-white rounded-2xl p-10 flex flex-col shadow-md hover:shadow-lg transition-all duration-300">
+              <div id="on-site-survey" className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -287,7 +287,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto space-y-8">
 
           {/* Desktop Assessment — lightest green */}
-          <div className="service-card-reveal service-card-shine rounded-3xl overflow-hidden border border-[#b0d4c0] shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #d4ede0 0%, #b8dfc8 100%)' }}>
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#b0d4c0] shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #d4ede0 0%, #b8dfc8 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
@@ -321,7 +321,7 @@ export default function ServicesPage() {
           </div>
 
           {/* On-Site Survey — mid emerald */}
-          <div className="service-card-reveal service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/25 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #7ec8a4 0%, #52b386 100%)' }}>
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/25 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #7ec8a4 0%, #52b386 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
@@ -355,7 +355,7 @@ export default function ServicesPage() {
           </div>
 
           {/* 3-Year Protection — deep emerald */}
-          <div className="service-card-reveal service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/30 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #2d9e6b 0%, #1A6B4A 100%)' }}>
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/30 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #2d9e6b 0%, #1A6B4A 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">

@@ -99,7 +99,7 @@ export default function ContactPage() {
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <h1 className="text-4xl sm:text-5xl font-bold leading-[1.15] tracking-tight text-primary mb-6">
-              Don&rsquo;t find out<br /><span className="whitespace-nowrap">you&rsquo;re <span className="text-shine-red">underinsured</span></span><br />the hard way.
+              Don&rsquo;t find out<br />you&rsquo;re <span className="text-shine-red">underinsured</span><br />the hard way.
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
               Over <strong className="font-bold text-primary">80%</strong> of UK properties are insured for the wrong amount. A RICS reinstatement cost assessment takes less than <strong className="font-bold text-primary">48 hours</strong> and could save you hundreds of thousands in an uncapped claim.

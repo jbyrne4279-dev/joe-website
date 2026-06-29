@@ -1,19 +1,20 @@
-﻿import Link from 'next/link'
+'use client'
+import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
-
-export const metadata = {
-  title: 'Thank You | RCA Ltd',
-  description: 'Your Reinstatement Cost Assessment request has been received. A RICS-regulated surveyor will be in touch within 24 working hours.',
-  robots: { index: false, follow: false },
-}
+import { useSearchParams } from 'next/navigation'
 
 export default function ThankYouPage() {
+  const params = useSearchParams()
+  const fromForm = params.get('submitted') === '1'
+
   return (
     <>
-      <Script id="google-ads-conversion" strategy="afterInteractive">{`
-        gtag('event', 'conversion', {'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op'});
-      `}</Script>
+      {fromForm && (
+        <Script id="google-ads-conversion" strategy="afterInteractive">{`
+          gtag('event', 'conversion', {'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op'});
+        `}</Script>
+      )}
       <main className="flex-1">
 
       {/* Hero */}

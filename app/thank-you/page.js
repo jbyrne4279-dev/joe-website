@@ -12,7 +12,17 @@ export default function ThankYouPage() {
     <>
       {fromForm && (
         <Script id="google-ads-conversion" strategy="afterInteractive">{`
-          gtag('event', 'conversion', {'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op'});
+          (function() {
+            var key = 'gads_conversion_fired';
+            if (!sessionStorage.getItem(key)) {
+              sessionStorage.setItem(key, '1');
+              var txId = Date.now().toString(36) + Math.random().toString(36).slice(2);
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op',
+                'transaction_id': txId
+              });
+            }
+          })();
         `}</Script>
       )}
       <main className="flex-1">

@@ -13,9 +13,17 @@
 </script>
 <!-- Event snippet for Submit lead form conversion page — only fires when redirected from Formspree -->
 <script>
-  if (new URLSearchParams(window.location.search).get('submitted') === '1') {
-    gtag('event', 'conversion', {'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op'});
-  }
+  (function() {
+    var key = 'gads_conversion_fired';
+    if (new URLSearchParams(window.location.search).get('submitted') === '1' && !sessionStorage.getItem(key)) {
+      sessionStorage.setItem(key, '1');
+      var txId = Date.now().toString(36) + Math.random().toString(36).slice(2);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op',
+        'transaction_id': txId
+      });
+    }
+  })();
 </script>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>

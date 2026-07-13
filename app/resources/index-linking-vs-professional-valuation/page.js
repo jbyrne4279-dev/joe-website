@@ -11,8 +11,52 @@ export const metadata = {
   },
 }
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const articleBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: `${SITE_URL}/resources` },
+    { '@type': 'ListItem', position: 3, name: 'Index Linking vs Professional Valuation: What Managing Agents Need to Know', item: `${SITE_URL}/resources/index-linking-vs-professional-valuation` },
+  ],
+}
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Index Linking vs Professional Valuation: What Managing Agents Need to Know',
+  description: "Index linking adjusts your sum insured annually but cannot replace a professional RICS reinstatement cost assessment. Here's what managing agents need to understand.",
+  image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=500&fit=crop&auto=format&q=80',
+  url: `${SITE_URL}/resources/index-linking-vs-professional-valuation`,
+  inLanguage: 'en-GB',
+  author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Reinstatement Cost Assessment Ltd',
+    url: SITE_URL,
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/resources/index-linking-vs-professional-valuation` },
+  about: [
+    { '@type': 'Thing', name: 'Index Linking Insurance' },
+    { '@type': 'Thing', name: 'Reinstatement Cost Assessment' },
+    { '@type': 'Thing', name: 'RICS Regulated Surveying' },
+  ],
+}
+
 export default function ArticlePage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
     <main className="max-w-3xl mx-auto px-6 py-16">
       <div className="mb-8 text-center">
         <Link href="/resources" className="text-xs font-semibold text-[#1A6B4A] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
@@ -65,5 +109,6 @@ export default function ArticlePage() {
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
       </div>
     </main>
+    </>
   )
 }

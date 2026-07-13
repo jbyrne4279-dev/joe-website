@@ -4,18 +4,34 @@ import ContactSection from '../components/ContactSection'
 export const metadata = {
   title: 'Portfolio Reinstatement Cost Assessments | Multi-Property RCA UK',
   description:
-    'RICS-regulated portfolio Reinstatement Cost Assessments across the UK. One instruction, every asset covered. Consolidated reporting for mixed-use and multi-property portfolios   desktop or on-site.',
+    'RICS-regulated portfolio Reinstatement Cost Assessments across the UK. One instruction, every asset covered. Consolidated reporting for mixed-use and multi-property portfolios — desktop or on-site.',
   alternates: { canonical: '/portfolio-reinstatement-assessments' },
   openGraph: {
     title: 'Portfolio Reinstatement Cost Assessments | Multi-Property RCA UK',
     description:
-      'RICS-regulated portfolio Reinstatement Cost Assessments across the UK. One instruction, every asset covered. Consolidated reporting for mixed-use and multi-property portfolios   desktop or on-site.',
+      'RICS-regulated portfolio Reinstatement Cost Assessments across the UK. One instruction, every asset covered. Consolidated reporting for mixed-use and multi-property portfolios — desktop or on-site.',
     url: '/portfolio-reinstatement-assessments',
   },
 }
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Reinstatement Cost Assessments for Property Portfolios', item: `${SITE_URL}/portfolio-reinstatement-assessments` },
+  ],
+}
+
 export default function PortfolioReinstatementPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     <main>
 
       {/* Hero */}
@@ -29,7 +45,7 @@ export default function PortfolioReinstatementPage() {
               Reinstatement Cost Assessments for Property Portfolios.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
-              One instruction. Every asset covered. RICS-regulated portfolio RCAs with consolidated reporting   desktop or on-site across the UK.
+              One instruction. Every asset covered. RICS-regulated portfolio RCAs with consolidated reporting — desktop or on-site across the UK.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
@@ -74,12 +90,12 @@ export default function PortfolioReinstatementPage() {
               {
                 icon: 'query_stats',
                 title: 'Portfolio-wide underinsurance building up undetected.',
-                desc: 'Across a large portfolio, small valuation shortfalls compound into significant underinsurance exposure   often unnoticed until a major claim reveals the gap.',
+                desc: 'Across a large portfolio, small valuation shortfalls compound into significant underinsurance exposure — often unnoticed until a major claim reveals the gap.',
               },
               {
                 icon: 'event_repeat',
                 title: 'Renewing policies with stale per-property figures.',
-                desc: 'Without regular RICS assessments, portfolios renew on figures that may be years out of date   creating avoidable risk and potential disputes with insurers at claim.',
+                desc: 'Without regular RICS assessments, portfolios renew on figures that may be years out of date — creating avoidable risk and potential disputes with insurers at claim.',
               },
               {
                 icon: 'category',
@@ -117,9 +133,9 @@ export default function PortfolioReinstatementPage() {
           </div>
           <div className="space-y-4 max-w-2xl mx-auto">
             {[
-              'National coverage   desktop and on-site across the UK',
+              'National coverage — desktop and on-site across the UK',
               'Consolidated report with individual asset schedules',
-              'Competitive portfolio pricing   contact us for a quote',
+              'Competitive portfolio pricing — contact us for a quote',
             ].map((point, i) => (
               <div
                 key={i}
@@ -144,7 +160,7 @@ export default function PortfolioReinstatementPage() {
             One instruction. Every asset accurately valued.
           </h2>
           <p className="text-white/75 max-w-xl mx-auto text-center">
-            Get a consolidated, RICS-regulated portfolio reinstatement cost assessment   nationwide coverage, competitive pricing.
+            Get a consolidated, RICS-regulated portfolio reinstatement cost assessment — nationwide coverage, competitive pricing.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
@@ -165,5 +181,6 @@ export default function PortfolioReinstatementPage() {
 
       <ContactSection />
     </main>
+    </>
   )
 }

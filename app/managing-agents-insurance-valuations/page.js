@@ -14,8 +14,24 @@ export const metadata = {
   },
 }
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Insurance Valuations for Managing Agents', item: `${SITE_URL}/managing-agents-insurance-valuations` },
+  ],
+}
+
 export default function ManagingAgentsPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     <main>
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0f3d28] to-[#1A6B4A]">
@@ -28,7 +44,7 @@ export default function ManagingAgentsPage() {
               Insurance Valuations for Managing Agents.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
-              Stay compliant and protect managed properties. RICS reinstatement valuations your insurers will accept   fast, accurate, and fully documented.
+              Stay compliant and protect managed properties. RICS reinstatement valuations your insurers will accept — fast, accurate, and fully documented.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
@@ -113,7 +129,7 @@ export default function ManagingAgentsPage() {
           <div className="space-y-4 max-w-2xl mx-auto">
             {[
               'Consolidated portfolio reports with per-property breakdowns',
-              'RICS-regulated and BCIS-indexed   insurer accepted',
+              'RICS-regulated and BCIS-indexed — insurer accepted',
               'Named surveyor from instruction to delivery',
             ].map((point, i) => (
               <div
@@ -139,7 +155,7 @@ export default function ManagingAgentsPage() {
             Protect every property you manage.
           </h2>
           <p className="text-white/75 max-w-xl mx-auto text-center">
-            RICS-regulated insurance valuations tailored for managing agents   consolidated reporting, insurer accepted, delivered fast.
+            RICS-regulated insurance valuations tailored for managing agents — consolidated reporting, insurer accepted, delivered fast.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
@@ -160,5 +176,6 @@ export default function ManagingAgentsPage() {
 
       <ContactSection />
     </main>
+    </>
   )
 }

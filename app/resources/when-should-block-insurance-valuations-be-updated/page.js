@@ -11,8 +11,52 @@ export const metadata = {
   },
 }
 
+const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const articleBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: `${SITE_URL}/resources` },
+    { '@type': 'ListItem', position: 3, name: 'When Should Block Insurance Valuations Be Updated?', item: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated` },
+  ],
+}
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
+  description: "RICS recommends block insurance valuations are updated every 3 years. Find out why annual index linking alone isn't enough and when earlier reassessment is needed.",
+  image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=500&fit=crop&auto=format&q=80',
+  url: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated`,
+  inLanguage: 'en-GB',
+  author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Reinstatement Cost Assessment Ltd',
+    url: SITE_URL,
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated` },
+  about: [
+    { '@type': 'Thing', name: 'Block Insurance Valuation' },
+    { '@type': 'Thing', name: 'RICS Regulated Surveying' },
+    { '@type': 'Thing', name: 'Reinstatement Cost Assessment' },
+  ],
+}
+
 export default function ArticlePage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleBreadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
     <main className="max-w-3xl mx-auto px-6 py-16">
       <div className="mb-8 text-center">
         <Link href="/resources" className="text-xs font-semibold text-[#1A6B4A] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
@@ -65,5 +109,6 @@ export default function ArticlePage() {
         <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
       </div>
     </main>
+    </>
   )
 }

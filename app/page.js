@@ -231,7 +231,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
               {/* Desktop Assessment */}
-              <div className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
+              <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -263,7 +263,7 @@ export default function HomePage() {
               </div>
 
               {/* On-Site Survey */}
-              <div className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
+              <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -295,7 +295,7 @@ export default function HomePage() {
               </div>
 
               {/* 3-Year Protection */}
-              <div className="grow-card bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)]">
+              <div className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)]">
                 <div className="absolute top-6 right-6">
                   <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>

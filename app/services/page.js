@@ -150,7 +150,7 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
 
               {/* Desktop Assessment */}
-              <div id="desktop-rca" className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
+              <div id="desktop-rca" className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
               </div>
 
               {/* On-Site Survey */}
-              <div id="on-site-survey" className="grow-card pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
+              <div id="on-site-survey" className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
@@ -214,7 +214,7 @@ export default function ServicesPage() {
               </div>
 
               {/* 3-Year Protection */}
-              <div id="three-year-protection" className="grow-card bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)]">
+              <div id="three-year-protection" className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)]">
                 <div className="absolute top-6 right-6">
                   <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>
@@ -359,10 +359,10 @@ export default function ServicesPage() {
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center">
+                  <div className="bg-white/15 border border-white/25 backdrop-blur-sm w-12 h-12 rounded-xl flex items-center justify-center">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
                   </div>
-                  <span className="btn-shine px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                  <span className="bg-amber-400 px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-[#0f3d28]">Best Value</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
                 <p className="text-white/80 text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>

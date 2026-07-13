@@ -151,7 +151,7 @@ export default function ContactFormInner({ heading }) {
         <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
 
         <div>
-          <button className="btn-shine w-full text-white py-4 rounded-full font-bold text-base active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer">
+          <button className="btn-shine w-full text-white px-6 py-4 rounded-full font-bold text-sm sm:text-base leading-snug active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer">
             Request Your Reinstatement Cost Assessment
           </button>
         </div>

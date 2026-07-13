@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Index Linking vs Professional Valuation   What Managing Agents Need to Know',
+  title: 'Index Linking vs Professional Valuation: What Managing Agents Need to Know',
   description: "Index linking adjusts your sum insured annually but cannot replace a professional RICS reinstatement cost assessment. Here's what managing agents need to understand.",
   alternates: { canonical: '/resources/index-linking-vs-professional-valuation' },
   openGraph: {
-    title: 'Index Linking vs Professional Valuation   What Managing Agents Need to Know',
+    title: 'Index Linking vs Professional Valuation: What Managing Agents Need to Know',
     description: "Index linking is not a substitute for a professional RICS reinstatement cost assessment. Here's why and what managing agents should do about it.",
     url: '/resources/index-linking-vs-professional-valuation',
   },

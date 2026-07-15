@@ -46,7 +46,7 @@ const organizationJsonLd = {
   description:
     'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
-  email: 'info@rca-ltd.com',
+  email: 'michael@reinstatementcostassessment.com',
   priceRange: undefined,
   address: {
     '@type': 'PostalAddress',

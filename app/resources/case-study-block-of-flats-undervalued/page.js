@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Case Study: Block of Flats Undervalued by £2 Million | RCA Ltd',
@@ -67,11 +68,13 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.</p>
       </div>
 
-      <div>
-        <img
+      <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+        <Image
           src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&h=500&fit=crop&auto=format&q=80"
           alt="UK block of flats apartment building"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
         />
       </div>
 

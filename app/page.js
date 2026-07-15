@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
-import GrowObserver from './components/GrowObserver'
 
 export const metadata = {
   title: {
@@ -47,7 +46,6 @@ const organizationJsonLd = {
     'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
   email: 'info@rca-ltd.com',
-  priceRange: undefined,
   address: {
     '@type': 'PostalAddress',
     streetAddress: '17 Hanover Square',
@@ -581,21 +579,21 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE',
+                src: '/rca-for-my-property.png',
                 alt: 'Homeowner reinstatement cost assessment London - RICS-regulated buildings insurance valuation',
                 title: 'Homeowners',
                 label: 'Residential Assessment',
                 desc: 'Accurate reinstatement cost assessments for London and UK homeowners - covering standard homes, period properties, and listed buildings. Ensure your buildings insurance reflects the true cost to rebuild, not an outdated estimate.',
               },
               {
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c',
+                src: '/commercial-reinstatement-cost-assessment.png',
                 alt: 'Commercial landlord reinstatement cost assessment - office and retail property UK rebuild valuation',
                 title: 'Commercial Landlords',
                 label: 'Commercial Assessment',
                 desc: 'RICS-certified reinstatement cost assessments for offices, retail units, and mixed-use properties across London and the UK. Protect against underinsurance and satisfy lender and insurer compliance requirements.',
               },
               {
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU',
+                src: '/surveyor-reinstatement-cost-assessment-rics.png',
                 alt: 'Asset manager portfolio reinstatement cost assessment - multi-site UK property rebuild valuation',
                 title: 'Asset Managers',
                 label: 'Portfolio Assessment',
@@ -606,7 +604,13 @@ export default function HomePage() {
                 key={title}
                 className="group relative overflow-hidden rounded-xl h-[28rem] flex flex-col justify-end"
               >
-                <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={src} alt={alt} />
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10"></div>
                 <div className="relative z-10 p-7 space-y-2.5">
                   <span className="inline-block text-[0.65rem] font-bold uppercase tracking-widest text-emerald-400 bg-emerald-400/15 border border-emerald-400/30 px-2.5 py-1 rounded-full">{label}</span>
@@ -631,7 +635,6 @@ export default function HomePage() {
         description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}
       />
-      <GrowObserver />
     </main>
     </>
   )

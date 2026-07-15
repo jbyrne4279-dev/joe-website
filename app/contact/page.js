@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -90,10 +91,13 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="/contact-hero.jpeg"
           alt="Fire-damaged building — the hard way to find out you were underinsured"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">

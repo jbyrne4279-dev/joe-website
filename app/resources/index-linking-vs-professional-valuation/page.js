@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Index Linking vs Professional Valuation: What Managing Agents Need to Know',
@@ -67,11 +68,13 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">Many managing agents assume that because their insurer applies annual index linking, their buildings are adequately insured. This assumption is one of the most common and most expensive misunderstandings in UK property management.</p>
       </div>
 
-      <div>
-        <img
+      <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+        <Image
           src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=500&fit=crop&auto=format&q=80"
           alt="Insurance documents and financial charts on a desk"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
         />
       </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
@@ -122,11 +123,15 @@ export default function CommercialReinstatementPage() {
               Our solution for commercial properties.
             </h2>
           </div>
-          <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop&auto=format&q=80"
-            alt="Commercial office building exterior"
-            className="w-full h-64 md:h-80 object-cover rounded-2xl mb-10 sovereign-shadow"
-          />
+          <div className="relative w-full h-64 md:h-80 rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop&auto=format&q=80"
+              alt="Commercial office building exterior"
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
           <div className="space-y-4 max-w-2xl mx-auto">
             {[
               'Specialist commercial surveyors — all asset classes',

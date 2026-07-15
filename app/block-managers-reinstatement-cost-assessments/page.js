@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
@@ -66,11 +67,15 @@ export default function BlockManagersPage() {
 
       {/* Banner Image */}
       <div className="px-6 max-w-5xl mx-auto mt-10">
-        <img
-          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=400&fit=crop&auto=format&q=80"
-          alt="Modern UK apartment block exterior"
-          className="w-full h-64 md:h-80 object-cover rounded-2xl mb-10 sovereign-shadow"
-        />
+        <div className="relative w-full h-64 md:h-80 rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=400&fit=crop&auto=format&q=80"
+            alt="Modern UK apartment block exterior"
+            fill
+            sizes="(max-width: 768px) 100vw, 1024px"
+            className="object-cover"
+          />
+        </div>
       </div>
 
       {/* Problems We Solve */}

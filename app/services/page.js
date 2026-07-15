@@ -106,10 +106,13 @@ export default function ServicesPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="/services-hero.jpeg"
           alt="Property insurance underinsurance risk — RICS reinstatement cost assessment services UK"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">

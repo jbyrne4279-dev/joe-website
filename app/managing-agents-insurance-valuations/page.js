@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 
 export const metadata = {
@@ -121,11 +122,15 @@ export default function ManagingAgentsPage() {
               Our solution for managing agents.
             </h2>
           </div>
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=400&fit=crop&auto=format&q=80"
-            alt="Professional reviewing documents at a desk"
-            className="w-full h-64 md:h-80 object-cover rounded-2xl mb-10 sovereign-shadow"
-          />
+          <div className="relative w-full h-64 md:h-80 rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=400&fit=crop&auto=format&q=80"
+              alt="Professional reviewing documents at a desk"
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
           <div className="space-y-4 max-w-2xl mx-auto">
             {[
               'Consolidated portfolio reports with per-property breakdowns',

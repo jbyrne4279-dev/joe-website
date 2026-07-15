@@ -1,8 +1,12 @@
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollReveal from './components/ScrollReveal'
+
+const GA_MEASUREMENT_ID = 'G-SEWVTV6EKC'
+const GOOGLE_ADS_ID = 'AW-11028386067'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,7 +25,7 @@ export const metadata = {
   icons: {
     icon: '/rca48.png',
     shortcut: '/rca48.png',
-    apple: '/rca48.png',
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     type: 'website',
@@ -63,24 +67,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEWVTV6EKC"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-SEWVTV6EKC');
-          gtag('config', 'AW-11028386067');
-        `}} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
-          rel="stylesheet"
-        />
       </head>
       <body className="bg-surface font-body text-on-surface">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+            gtag('config', '${GOOGLE_ADS_ID}');
+          `}
+        </Script>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:font-bold focus:rounded-lg focus:shadow-lg"

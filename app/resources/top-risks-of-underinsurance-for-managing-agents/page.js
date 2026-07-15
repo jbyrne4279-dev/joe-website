@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Top Risks of Underinsurance for Managing Agents | RCA Ltd',
@@ -67,11 +68,13 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">Research consistently shows that the majority of UK commercial and residential blocks carry insufficient reinstatement values on their insurance policies. For managing agents, this is not just a problem for property owners. It creates direct professional and financial risk.</p>
       </div>
 
-      <div>
-        <img
+      <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+        <Image
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=500&fit=crop&auto=format&q=80"
           alt="Risk and compliance office documents"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
         />
       </div>
 

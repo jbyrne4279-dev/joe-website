@@ -351,16 +351,6 @@
   100% { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
 }
 
-.service-grow-card-left   { animation: card-pulse-left   9s ease-in-out infinite; }
-.service-grow-card-middle { animation: card-pulse-middle 9s ease-in-out infinite; }
-.service-grow-card-right  { animation: card-pulse-right  9s ease-in-out infinite; }
-
-@media (prefers-reduced-motion: reduce) {
-  .service-grow-card-left,
-  .service-grow-card-middle,
-  .service-grow-card-right { animation: none !important; }
-}
-
 .service-pulse-card:hover {
   animation-play-state: paused;
 }

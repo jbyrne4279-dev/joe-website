@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -106,10 +107,13 @@ export default function ResourcesPage() {
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-          <img
+          <Image
             src="/resources-hero.jpeg"
             alt="UK residential buildings with hidden underinsurance risk"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
           <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -370,8 +374,14 @@ export default function ResourcesPage() {
               },
             ].map(({ tag, title, desc, href, img }) => (
               <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>
-                <div className="h-44 overflow-hidden">
-                  <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" />
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={img}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-70"
+                  />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <span className="text-xs font-bold uppercase tracking-widest text-[#4ade80] mb-2">{tag}</span>

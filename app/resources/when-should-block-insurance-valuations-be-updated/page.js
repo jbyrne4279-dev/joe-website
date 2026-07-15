@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
@@ -67,11 +68,13 @@ export default function ArticlePage() {
         <p className="text-secondary text-lg leading-relaxed">For managing agents and freeholders, keeping reinstatement cost figures current is both a compliance requirement and a critical financial protection. Yet the majority of UK blocks are operating with valuations that are years out of date.</p>
       </div>
 
-      <div>
-        <img
+      <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl mb-10 sovereign-shadow overflow-hidden">
+        <Image
           src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=500&fit=crop&auto=format&q=80"
           alt="UK residential buildings and property"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
         />
       </div>
 

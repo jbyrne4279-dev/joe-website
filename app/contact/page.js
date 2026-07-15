@@ -7,7 +7,7 @@ export const metadata = {
     absolute: 'Get a RICS Reinstatement Cost Assessment | Instruct Online',
   },
   description:
-    'Instruct a RICS reinstatement cost assessment online. Rebuild cost assessments for all UK property types — Desktop and On-Site Survey options. 24-hour response, insurer-accepted reports.',
+    'Instruct a RICS reinstatement cost assessment online. Rebuild cost assessments for all UK property types - Desktop and On-Site Survey options. 24-hour response, insurer-accepted reports.',
   alternates: { canonical: '/contact' },
   openGraph: {
     title: 'Get a RICS Reinstatement Cost Assessment | RCA Ltd UK',
@@ -92,7 +92,7 @@ export default function ContactPage() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
           src="/contact-hero.jpeg"
-          alt="Fire-damaged building — the hard way to find out you were underinsured"
+          alt="Fire-damaged building - the hard way to find out you were underinsured"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />

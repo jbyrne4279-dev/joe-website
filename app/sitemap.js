@@ -45,12 +45,6 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}/portfolio-reinstatement-assessments`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
       url: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'yearly',
@@ -64,12 +58,6 @@ export default function sitemap() {
     },
     {
       url: `${SITE_URL}/resources/case-study-block-of-flats-undervalued`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/resources/index-linking-vs-professional-valuation`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'yearly',
       priority: 0.6,

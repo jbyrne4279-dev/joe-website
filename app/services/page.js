@@ -108,7 +108,7 @@ export default function ServicesPage() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
           src="/services-hero.jpeg"
-          alt="Property insurance underinsurance risk — RICS reinstatement cost assessment services UK"
+          alt="Property insurance underinsurance risk - RICS reinstatement cost assessment services UK"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
@@ -286,7 +286,7 @@ export default function ServicesPage() {
       <section className="scroll-reveal py-16 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto space-y-8">
 
-          {/* Desktop Assessment — lightest green */}
+          {/* Desktop Assessment - lightest green */}
           <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#b0d4c0] shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #d4ede0 0%, #b8dfc8 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
@@ -320,7 +320,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* On-Site Survey — mid emerald */}
+          {/* On-Site Survey - mid emerald */}
           <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/25 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #7ec8a4 0%, #52b386 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
@@ -354,7 +354,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* 3-Year Protection — deep emerald */}
+          {/* 3-Year Protection - deep emerald */}
           <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/30 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #2d9e6b 0%, #1A6B4A 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>

@@ -4,12 +4,12 @@ import ContactSection from '../components/ContactSection'
 export const metadata = {
   title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
   description:
-    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments — BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
+    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
     title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
     description:
-      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments — BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
+      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
     url: '/block-managers-reinstatement-cost-assessments',
   },
 }
@@ -44,7 +44,7 @@ export default function BlockManagersPage() {
               Reinstatement Cost Assessments for Block Managers.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
-              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers — delivered in 5 days.
+              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers - delivered in 5 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
@@ -89,7 +89,7 @@ export default function BlockManagersPage() {
               {
                 icon: 'warning',
                 title: 'Leaseholders exposed to underinsurance risk.',
-                desc: 'Without a current RICS assessment, the sum insured on a block policy may fall well short of the true rebuild cost — leaving every leaseholder exposed if a major claim arises.',
+                desc: 'Without a current RICS assessment, the sum insured on a block policy may fall well short of the true rebuild cost - leaving every leaseholder exposed if a major claim arises.',
               },
               {
                 icon: 'trending_up',
@@ -99,7 +99,7 @@ export default function BlockManagersPage() {
               {
                 icon: 'gavel',
                 title: 'Insurers querying sums insured at renewal.',
-                desc: 'When insurers challenge the adequacy of a sum insured at renewal — without a RICS-regulated report to support it — block managers face delays, increased premiums, and reputational risk.',
+                desc: 'When insurers challenge the adequacy of a sum insured at renewal - without a RICS-regulated report to support it - block managers face delays, increased premiums, and reputational risk.',
               },
             ].map(({ icon, title, desc }) => (
               <div
@@ -134,7 +134,7 @@ export default function BlockManagersPage() {
             {[
               'Full RICS-regulated reinstatement assessment per block',
               'BCIS-indexed figures accepted by all major insurers',
-              'Delivered in 5 days — desktop or on-site',
+              'Delivered in 5 days - desktop or on-site',
             ].map((point, i) => (
               <div
                 key={i}
@@ -159,7 +159,7 @@ export default function BlockManagersPage() {
             Ready to protect your leaseholders?
           </h2>
           <p className="text-white/75 max-w-xl mx-auto text-center">
-            Get a RICS-regulated reinstatement cost assessment for your block — fast, accurate, and insurer-ready.
+            Get a RICS-regulated reinstatement cost assessment for your block - fast, accurate, and insurer-ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link

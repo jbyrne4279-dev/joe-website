@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost from £210',
     description:
-      '80% of UK buildings carry the wrong rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings — delivered in 48 hours across the UK.',
+      '80% of UK buildings carry the wrong rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings - delivered in 48 hours across the UK.',
     url: '/',
   },
 }

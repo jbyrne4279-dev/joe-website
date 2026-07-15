@@ -361,13 +361,6 @@ export default function ResourcesPage() {
                 href: '/resources/case-study-block-of-flats-undervalued',
                 img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },
-              {
-                tag: 'Guidance',
-                title: 'Index Linking vs Professional Valuation.',
-                desc: 'What managing agents need to know about why index linking cannot replace a RICS-regulated reinstatement cost assessment.',
-                href: '/resources/index-linking-vs-professional-valuation',
-                img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&auto=format&q=80',
-              },
             ].map(({ tag, title, desc, href, img }) => (
               <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>
                 <div className="h-44 overflow-hidden">

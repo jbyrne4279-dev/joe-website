@@ -78,7 +78,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>mail</span>
-                <a href="mailto:info@rca-ltd.com" className="hover:text-emerald-400 transition-colors">info@rca-ltd.com</a>
+                <a href="mailto:michael@reinstatementcostassessment.com" className="hover:text-emerald-400 transition-colors">michael@reinstatementcostassessment.com</a>
               </li>
             </ul>
           </div>

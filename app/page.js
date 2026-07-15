@@ -365,8 +365,16 @@ export default function HomePage() {
       </section>
 
       {/* Our Expertise */}
-      <section className="scroll-reveal py-24 bg-[#0f3d28]">
-        <div className="max-w-5xl mx-auto px-8">
+      <section className="scroll-reveal relative py-24 overflow-hidden">
+        <Image
+          src="/services-hero.jpeg"
+          alt="Elegant period townhouses in London"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0f3d28]/70" aria-hidden="true" />
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
           <div className="text-center mb-16 space-y-4">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Our Expertise</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">50+ years of collective experience.</h2>

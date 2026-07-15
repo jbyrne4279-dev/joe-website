@@ -64,7 +64,10 @@ const organizationJsonLd = {
     latitude: 51.5120,
     longitude: -0.1444,
   },
-  hasMap: 'https://maps.google.com/?q=17+Hanover+Square,+London+W1S+1BN',
+  hasMap: 'https://www.google.com/maps?cid=13996210644681263020',
+  sameAs: [
+    'https://www.google.com/maps?cid=13996210644681263020',
+  ],
   serviceType: 'Rebuild Cost Assessment',
   knowsAbout: [
     'Rebuild Cost Assessment',

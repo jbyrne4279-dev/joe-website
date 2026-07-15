@@ -32,7 +32,7 @@ export default function Footer() {
               <p className="text-xs font-semibold text-emerald-500">Company No. 17101918</p>
             </div>
             <div className="pt-2">
-              <p className="text-xs text-zinc-600 mb-3 uppercase tracking-widest font-medium">Regulated by</p>
+              <p className="text-xs text-white mb-3 uppercase tracking-widest font-medium">Regulated by</p>
               <Image
                 src="/rics-logo.png"
                 alt="Regulated by RICS"

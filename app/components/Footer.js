@@ -76,10 +76,6 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>location_on</span>
                 <span className="leading-snug">17 Hanover Square,<br />London W1S 1BN</span>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>mail</span>
-                <a href="mailto:michael@reinstatementcostassessment.com" className="hover:text-emerald-400 transition-colors">michael@reinstatementcostassessment.com</a>
-              </li>
             </ul>
           </div>
 

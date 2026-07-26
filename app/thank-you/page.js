@@ -12,7 +12,7 @@ export default function ThankYouPage() {
   return (
     <>
       <Script id="google-ads-conversion" strategy="afterInteractive">{`
-        gtag('event', 'conversion', {'send_to': 'AW-11028386067/lCGPCIPwlrYcEJOi34op'});
+        gtag('event', 'conversion', {'send_to': 'AW-11028386067/5VWICM21htccEJOi34op'});
       `}</Script>
       <main className="flex-1">
 

@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -63,14 +64,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEWVTV6EKC"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-SEWVTV6EKC');
-          gtag('config', 'AW-11028386067');
-        `}} />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
@@ -81,6 +74,21 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-surface font-body text-on-surface">
+        {/* Google tag (gtag.js). Loaded via next/script so it reliably renders in
+            the App Router (raw <script> tags in <head> do not). GT-PJSWDCLB is the
+            site's Google tag; AW-11028386067 is the linked Google Ads account. */}
+        <Script
+          id="gtag-js"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-PJSWDCLB"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GT-PJSWDCLB');
+          gtag('config', 'AW-11028386067');
+        `}</Script>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:font-bold focus:rounded-lg focus:shadow-lg"

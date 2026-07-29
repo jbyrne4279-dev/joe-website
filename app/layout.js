@@ -74,18 +74,19 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-surface font-body text-on-surface">
-        {/* Google tag (gtag.js) — GA4 + Google Ads. Loaded via next/script so it
-            reliably renders in the App Router (raw <script> tags in <head> do not). */}
+        {/* Google tag (gtag.js). Loaded via next/script so it reliably renders in
+            the App Router (raw <script> tags in <head> do not). GT-PJSWDCLB is the
+            site's Google tag; AW-11028386067 is the linked Google Ads account. */}
         <Script
           id="gtag-js"
-          src="https://www.googletagmanager.com/gtag/js?id=G-SEWVTV6EKC"
+          src="https://www.googletagmanager.com/gtag/js?id=GT-PJSWDCLB"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-SEWVTV6EKC');
+          gtag('config', 'GT-PJSWDCLB');
           gtag('config', 'AW-11028386067');
         `}</Script>
         <a

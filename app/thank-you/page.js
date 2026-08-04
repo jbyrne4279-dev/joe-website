@@ -14,7 +14,11 @@ export default function ThankYouPage() {
       <Script id="google-ads-conversion" strategy="afterInteractive">{`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('event', 'conversion', {'send_to': 'AW-11028386067/NUITCOSbrtgcEJOi34op'});
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11028386067/UjK2CPS66tscEJOi34op',
+          'value': 1.0,
+          'currency': 'GBP'
+        });
       `}</Script>
       <main className="flex-1">
 

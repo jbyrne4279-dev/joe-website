@@ -171,8 +171,8 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/reinstatement-cost-assessments-uk.webp"
-              alt="Commercial property in the UK requiring a reinstatement cost assessment"
+              src="/commercial-reinstatement-cost-assessment.webp"
+              alt="Commercial office block requiring a reinstatement cost assessment"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"
               className="object-cover"

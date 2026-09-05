@@ -384,7 +384,7 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">An independent, RICS-regulated practice with a single specialism &mdash; telling property owners exactly what it costs to rebuild. Accurate, defensible, broker-ready figures, delivered with the responsiveness of a specialist firm.</p>
             <div className="flex flex-wrap justify-center gap-2.5 pt-2">
-              {['RICS-Regulated', 'Independent Practice', 'UK-Wide Coverage'].map((chip) => (
+              {['RICS-Regulated', 'Focused Practice', 'UK-Wide Coverage'].map((chip) => (
                 <span key={chip} className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/90">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37] inline-block"></span>{chip}
                 </span>
@@ -393,13 +393,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
-            ].map(({ icon, title, desc }, i) => (
+              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', gradient: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' },
+              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', gradient: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' },
+              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)' },
+            ].map(({ icon, title, desc, gradient }, i) => (
               <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className="btn-shine w-14 h-14 rounded-full flex items-center justify-center">
+                <div className="logo-shine w-14 h-14 rounded-full flex items-center justify-center" style={{ background: gradient }}>
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
                 </div>
                 <div className="space-y-2">

@@ -126,7 +126,7 @@ export default function ThreeYearAssessmentLondonPage() {
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <div className="flex items-center justify-center mb-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207]">3-Year Protection</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207]">Ongoing RICS Compliance</p>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
               <span style={{ color: '#a16207' }}>3-year</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
@@ -172,8 +172,10 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Timeline */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
-        <div className="max-w-5xl mx-auto">
+      <section className="scroll-reveal relative py-24 px-6 overflow-hidden">
+        <img src="/rc.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ background: 'rgba(251,243,217,0.82)' }} aria-hidden="true" />
+        <div className="relative z-10 max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">The three-year cycle</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Accurate at inception, maintained every year.</h2>
@@ -221,7 +223,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index-linking alone isn&rsquo;t enough.</h2>
@@ -267,7 +269,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>

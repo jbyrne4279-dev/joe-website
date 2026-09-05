@@ -158,7 +158,7 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
             className={`${buttonStyle ? '' : 'btn-shine '}w-full text-white px-6 py-4 rounded-full font-bold text-sm sm:text-base leading-snug active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer`}
             style={buttonStyle}
           >
-            Request Your Reinstatement Cost Assessment
+            Contact RICS-Regulated Surveyor
           </button>
         </div>
       </form>

@@ -159,6 +159,12 @@ export default function OnSiteAssessmentLondonPage() {
               townhouse, a period conversion, a mixed-use block, or an industrial unit with significant plant. The
               result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny.
             </p>
+            <p>
+              The surveyor at your door is a RICS-regulated chartered professional, drawing on a practice with
+              more than half a century of collective experience devoted entirely to reinstatement cost assessment.
+              On the capital&rsquo;s harder buildings, it is that concentrated, specialist judgement &mdash; not
+              general practice &mdash; that turns a careful inspection into a figure you can defend.
+            </p>
           </div>
           </div>
         </div>

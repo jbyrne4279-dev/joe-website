@@ -160,6 +160,12 @@ export default function DesktopAssessmentUKPage() {
               cost-effective route to a RICS-regulated sum insured. Every figure is prepared to the same
               professional standard as a full survey and is accepted by UK insurers without challenge.
             </p>
+            <p>
+              Behind every desktop figure is a team of RICS-regulated chartered surveyors with more than 50 years
+              of combined experience, focused solely on reinstatement cost assessments. That single specialism
+              &mdash; rather than valuation as a sideline to general surveying &mdash; is why our remote figures
+              stand up to an insurer&rsquo;s scrutiny just as well as a site visit would.
+            </p>
           </div>
           </div>
         </div>

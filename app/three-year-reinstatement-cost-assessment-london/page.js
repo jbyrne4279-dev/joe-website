@@ -161,6 +161,12 @@ export default function ThreeYearAssessmentLondonPage() {
               at all &mdash; your London sum insured is professionally maintained throughout. You walk into every
               renewal with a current, defensible, broker-ready figure.
             </p>
+            <p>
+              The plan is looked after by a RICS-regulated practice with over 50 years of experience between its
+              surveyors, working exclusively on reinstatement cost assessments. Because rebuild valuation is the
+              only thing we do, each yearly update is handled with the same specialist care as the first
+              assessment &mdash; and always by people who know your building.
+            </p>
           </div>
           </div>
         </div>

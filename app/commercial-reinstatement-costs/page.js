@@ -66,17 +66,17 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    img: '/commercial-reinstatement-cost-assessment.webp',
+    img: '/rca-index-linking-drift.webp',
     title: 'Costs outrun index-linking',
     desc: 'Material and labour inflation has pushed rebuild costs beyond what index-linking captures.',
   },
   {
-    img: '/services-hero.webp',
+    img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss the detail',
     desc: 'Generic tools ignore mechanical, electrical, and specialist fit-out costs.',
   },
   {
-    img: '/surveyor-reinstatement-cost-assessment-rics.webp',
+    img: '/rca-verified-rics-figure.webp',
     title: 'Insurers expect RICS figures',
     desc: 'More insurers now want a verifiable RICS figure before agreeing terms.',
   },

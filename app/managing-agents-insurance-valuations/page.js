@@ -66,17 +66,17 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    img: '/reinstatement-cost-assessments-uk.webp',
+    img: '/rca-outdated-portfolio.webp',
     title: 'Outdated portfolio figures',
     desc: 'Keeping every valuation current is hard, and gaps create liability.',
   },
   {
-    img: '/reinstatement-cost-assessment-uk.webp',
+    img: '/rca-index-linking-drift.webp',
     title: 'Index-linking misses local costs',
     desc: 'National indices miss regional labour and material variation.',
   },
   {
-    img: '/surveyor-reinstatement-cost-assessment-rics.webp',
+    img: '/rca-liability-claim.webp',
     title: 'Liability at claim',
     desc: 'An underinsured loss raises questions about duty of care.',
   },

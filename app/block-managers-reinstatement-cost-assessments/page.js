@@ -66,17 +66,17 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    img: '/rca-for-landlords-property-owners.webp',
+    img: '/rca-leaseholders-exposed.webp',
     title: 'Leaseholders left exposed',
     desc: 'An outdated sum insured can fall well short of the true rebuild cost.',
   },
   {
-    img: '/reinstatement-cost-assessment-uk.webp',
+    img: '/rca-index-linking-drift.webp',
     title: 'Index-linking drifts',
     desc: 'Broad inflation figures can’t track real local build costs.',
   },
   {
-    img: '/surveyor-reinstatement-cost-assessment-rics.webp',
+    img: '/rca-verified-rics-figure.webp',
     title: 'Insurers query the figure',
     desc: 'Without a RICS report, renewals face delays and higher premiums.',
   },

@@ -98,9 +98,9 @@ const included = [
 ]
 
 const reasons = [
-  'Captures fit-out, services, and specialist construction accurately.',
-  'The right fit for high-value, complex, or non-standard premises.',
-  'Produces the most defensible figure if a claim is ever questioned.',
+  { icon: 'architecture', text: 'Captures fit-out, services, and specialist construction accurately.' },
+  { icon: 'domain', text: 'The right fit for high-value, complex, or non-standard premises.' },
+  { icon: 'gavel', text: 'Produces the most defensible figure if a claim is ever questioned.' },
 ]
 
 export default function CommercialReinstatementPage() {
@@ -291,9 +291,9 @@ export default function CommercialReinstatementPage() {
               </p>
               <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (
-                  <li key={reason} className="py-4 flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  <li key={reason.text} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>{reason.icon}</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason.text}</span>
                   </li>
                 ))}
               </ul>

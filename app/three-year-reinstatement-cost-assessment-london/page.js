@@ -171,15 +171,17 @@ export default function ThreeYearAssessmentLondonPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">The three-year cycle</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Accurate at inception, maintained every year.</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="max-w-3xl space-y-5">
             {timeline.map(({ icon, label, title, desc }) => (
-              <div key={label} className="rounded-2xl bg-white p-7 border border-zinc-200/80">
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(201,162,39,0.16)' }}>
-                  <StepIcon name={icon} size={24} style={{ color: '#8a6d1a' }} />
+              <div key={label} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'rgba(201,162,39,0.16)' }}>
+                  <StepIcon name={icon} size={44} style={{ color: '#8a6d1a' }} />
                 </div>
-                <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#8a6d1a]/70 mb-1">{label}</p>
-                <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
-                <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                <div>
+                  <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#8a6d1a]/70 mb-1">{label}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                </div>
               </div>
             ))}
           </div>

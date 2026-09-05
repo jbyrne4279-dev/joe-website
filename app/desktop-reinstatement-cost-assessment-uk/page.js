@@ -169,15 +169,17 @@ export default function DesktopAssessmentUKPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">How it works</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Four steps, forty-eight hours.</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="max-w-3xl space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="rounded-2xl bg-white p-7 border border-zinc-200/80">
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(37,99,235,0.12)' }}>
-                  <StepIcon name={icon} size={24} style={{ color: '#1e40af' }} />
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'rgba(37,99,235,0.12)' }}>
+                  <StepIcon name={icon} size={44} style={{ color: '#1e40af' }} />
                 </div>
-                <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#1e40af]/60 mb-1">Step {i + 1}</p>
-                <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
-                <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                <div>
+                  <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#1e40af]/60 mb-1">Step {i + 1}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                </div>
               </div>
             ))}
           </div>

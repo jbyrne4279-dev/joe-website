@@ -93,9 +93,9 @@ const help = [
 ]
 
 const reasons = [
-  'Keeps every property compliant without re-instructing each year.',
-  'Automatic BCIS-indexed annual updates track rising costs.',
-  'One defensible figure per building, ready for every renewal.',
+  { icon: 'event_repeat', text: 'Keeps every property compliant without re-instructing each year.' },
+  { icon: 'trending_up', text: 'Automatic BCIS-indexed annual updates track rising costs.' },
+  { icon: 'summarize', text: 'One defensible figure per building, ready for every renewal.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -269,9 +269,9 @@ export default function ManagingAgentsPage() {
               </p>
               <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (
-                  <li key={reason} className="py-4 flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  <li key={reason.text} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>{reason.icon}</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason.text}</span>
                   </li>
                 ))}
               </ul>

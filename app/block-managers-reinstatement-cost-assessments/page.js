@@ -77,61 +77,59 @@ export default function BlockManagersPage() {
       />
     <main>
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-[#0f3d28] to-[#1A6B4A]">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/rca-for-landlords-property-owners.webp"
+          alt="UK residential apartment block reinstatement cost assessment"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-3xl text-center">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-white/60 mb-6">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-4">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>apartment</span>
               RICS Regulated &middot; Block Management
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight text-white mb-6 text-center">
-              Reinstatement Cost Assessments for Block Managers.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              Reinstatement Cost Assessments for <span className="text-shine">Block Managers.</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
-              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers - delivered in 48 hours.
+            <p className="text-sm text-secondary leading-relaxed mb-8">
+              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers &mdash; BCIS-indexed and delivered in 48 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                href="/contact#contact-form"
-                className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center"
-              >
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
                 Request a Quote
               </Link>
-              <Link
-                href="/services"
-                className="bg-white/10 border border-white/25 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 active:scale-[0.97] transition-all text-center"
-              >
-                View Services
+              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
+                Our Services
               </Link>
+            </div>
+            <div className="flex justify-center">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
+                <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
+                RICS Regulated &middot; London &amp; UK
+              </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Banner Image */}
-      <div className="px-6 max-w-5xl mx-auto mt-10">
-        <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10 sovereign-shadow">
-          <Image
-            src="/rca-for-landlords-property-owners.webp"
-            alt="UK residential apartment block reinstatement cost assessment"
-            fill
-            sizes="(max-width: 768px) 100vw, 1024px"
-            className="object-cover"
-          />
-        </div>
-      </div>
-
       {/* Understanding / prose explainer */}
-      <section className="py-20 px-6 bg-white">
+      <section className="scroll-reveal py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>menu_book</span>
               The Basics
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight">
-              Why block managers need an accurate reinstatement figure.
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+              Why block managers need an <span className="text-shine">accurate reinstatement figure.</span>
             </h2>
           </div>
-          <div className="space-y-5 text-zinc-700 leading-relaxed text-[1.05rem]">
+          <div className="space-y-5 text-secondary leading-relaxed text-[1.05rem]">
             <p>
               A reinstatement cost assessment (RCA) for a block of flats is a professional calculation of
               what it would cost to rebuild the entire building from the ground up if it were destroyed.
@@ -163,45 +161,46 @@ export default function BlockManagersPage() {
       </section>
 
       {/* Problems We Solve */}
-      <section className="py-20 px-6 bg-zinc-50">
-        <div className="max-w-4xl mx-auto">
+      <section className="scroll-reveal py-20 px-6 bg-[#0f3d28]">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>warning</span>
               Common Challenges
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
               Problems we solve for block managers.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
                 icon: 'warning',
-                title: 'Leaseholders exposed to underinsurance risk.',
+                title: 'Leaseholders exposed to underinsurance.',
                 desc: 'Without a current RICS assessment, the sum insured on a block policy may fall well short of the true rebuild cost - leaving every leaseholder exposed if a major claim arises.',
               },
               {
                 icon: 'trending_up',
-                title: 'Index linking drifts from true rebuild costs.',
+                title: 'Index linking drifts from true costs.',
                 desc: 'Automatic index-linking adjustments do not account for local labour shortages, material inflation, or changes in build complexity. Over time, the gap between the insured figure and reality widens.',
               },
               {
                 icon: 'gavel',
-                title: 'Insurers querying sums insured at renewal.',
+                title: 'Insurers querying sums insured.',
                 desc: 'When insurers challenge the adequacy of a sum insured at renewal - without a RICS-regulated report to support it - block managers face delays, increased premiums, and reputational risk.',
               },
             ].map(({ icon, title, desc }) => (
               <div
                 key={title}
-                className="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/20 hover:border-[#1A6B4A]/50 hover:shadow-[0_0_20px_2px_rgba(26,107,74,0.10)] transition-all duration-300 text-center flex flex-col items-center"
+                className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 text-center flex flex-col items-center"
               >
-                <div className="w-10 h-10 btn-shine rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div className="w-11 h-11 btn-shine rounded-full flex items-center justify-center mb-4 mx-auto">
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>
                     {icon}
                   </span>
                 </div>
-                <h3 className="font-bold text-[#0f3d28] text-base mb-2 text-center">{title}</h3>
-                <p className="text-sm text-zinc-600 leading-relaxed text-center">{desc}</p>
+                <h3 className="font-bold text-primary text-base mb-2">{title}</h3>
+                <p className="text-sm text-secondary leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -209,32 +208,29 @@ export default function BlockManagersPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="py-20 px-6 bg-white">
+      <section className="scroll-reveal py-20 px-6 bg-zinc-50">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>check_circle</span>
               How We Help
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight text-center">
-              Our solution for block managers.
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+              Our solution for <span className="text-shine">block managers.</span>
             </h2>
           </div>
-          <div className="space-y-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              'Full RICS-regulated reinstatement assessment per block',
-              'BCIS-indexed figures accepted by all major insurers',
-              'Delivered in 48 hours - desktop or on-site',
-            ].map((point, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center text-center gap-3 p-6 rounded-2xl border border-[#1A6B4A]/20 bg-zinc-50 hover:border-[#1A6B4A]/40 transition-all duration-300"
-              >
-                <div className="w-8 h-8 btn-shine rounded-full flex items-center justify-center mx-auto">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '0.95rem', fontVariationSettings: "'FILL' 1" }}>
-                    check
-                  </span>
+              { icon: 'shield', title: 'RICS assessment per block', desc: 'A full RICS-regulated reinstatement assessment for each building, protecting every leaseholder with an accurate sum insured.' },
+              { icon: 'account_balance', title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures produced to be accepted at renewal without challenge, avoiding queries and disputes.' },
+              { icon: 'bolt', title: 'Delivered in 48 hours', desc: 'Desktop or on-site, turned around fast - so overdue blocks can be brought up to date quickly.' },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 text-center flex flex-col items-center">
+                <div className="w-11 h-11 btn-shine rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
                 </div>
-                <p className="text-[#0f3d28] font-semibold leading-snug text-center">{point}</p>
+                <h3 className="font-bold text-primary text-base mb-2">{title}</h3>
+                <p className="text-sm text-secondary leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>

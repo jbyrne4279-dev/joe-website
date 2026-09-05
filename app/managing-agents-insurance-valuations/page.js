@@ -119,9 +119,10 @@ export default function ManagingAgentsPage() {
 
       {/* Understanding / prose explainer */}
       <section className="scroll-reveal py-20 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+          <div>
+          <div className="text-center lg:text-left mb-8 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center lg:justify-start gap-2">
               <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>menu_book</span>
               The Basics
             </span>
@@ -131,35 +132,47 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="space-y-5 text-secondary leading-relaxed text-[1.05rem]">
             <p>
-              A reinstatement cost assessment (RCA) is a professional calculation of what it would cost to
-              rebuild a property from the ground up if it were destroyed &mdash; including demolition,
-              debris removal, professional fees, and compliance with current building regulations. It is
-              the figure a building&rsquo;s insurance sum insured should be based on, and it is distinct
-              from market value. For a managing agent responsible for placing cover across a portfolio,
-              keeping that figure accurate on every property is central to protecting clients.
+              When you manage buildings on someone else&rsquo;s behalf, the insurance simply has to be
+              right &mdash; and a reinstatement cost assessment is how you show that it is. In plain terms,
+              it&rsquo;s a professional estimate of what it would genuinely cost to rebuild a property from
+              scratch if the worst happened: clearing the site, the rebuild itself, the professional fees,
+              and bringing everything up to today&rsquo;s building regulations. It&rsquo;s not what the
+              building would sell for &mdash; it&rsquo;s the figure the buildings insurance should be built
+              around.
             </p>
             <p>
-              The risk sits in the detail of the policy. Most buildings insurance contains a{' '}
-              <strong className="text-[#0f3d28]">condition of average</strong>: if a property is insured
-              for less than its true rebuild cost, the insurer can scale down any claim in proportion to
-              the shortfall &mdash; even for a partial loss. Across a portfolio, a handful of underinsured
-              buildings can translate into significant unexpected costs for leaseholders and difficult
-              questions about whether sums insured were kept adequate.
+              Here&rsquo;s why it matters so much across a portfolio. Most policies include something called
+              a <strong className="text-primary">condition of average</strong>. Put simply: if a building
+              is insured for less than it would really cost to rebuild, the insurer can cut the payout by
+              the same proportion &mdash; even on a smaller claim. Get that wrong on just a few properties
+              and the shortfall lands on leaseholders, usually along with some very awkward questions about
+              who was keeping an eye on the numbers.
             </p>
             <p>
-              Index-linking alone rarely keeps pace. It applies a general inflation figure that cannot
-              reflect local labour shortages, material price movements, or regulatory change, so insured
-              values drift over time. RICS recommends a full reassessment at least every three years, with
-              index-linking used in between. A structured programme of{' '}
+              The tricky part is that costs never stand still, and index-linking only goes so far &mdash; it
+              can&rsquo;t see local labour shortages, sudden jumps in material prices, or new regulations,
+              so figures quietly drift out of date. That&rsquo;s why RICS suggests a proper reassessment at
+              least every three years, with index-linking to bridge the years in between. Putting every
+              property on a simple, regular programme of{' '}
               <Link href="/services" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">
                 RICS-regulated, BCIS-indexed assessments
               </Link>{' '}
-              keeps an entire portfolio current, defensible at renewal, and aligned with good management
-              practice. You can read more in our guide to the{' '}
+              takes that worry off your plate: your portfolio stays accurate and easy to defend at renewal.
+              It&rsquo;s also worth a look at our guide to the{' '}
               <Link href="/resources/top-risks-of-underinsurance-for-managing-agents" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">
                 top risks of underinsurance for managing agents
               </Link>.
             </p>
+          </div>
+          </div>
+          <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[360px]">
+            <Image
+              src="/reinstatement-cost-assessments-uk.webp"
+              alt="UK property portfolio managed for insurance reinstatement valuations"
+              fill
+              sizes="(max-width: 1024px) 0px, 45vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -212,7 +225,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="scroll-reveal py-20 px-6 bg-zinc-50">
+      <section className="scroll-reveal py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
@@ -246,25 +259,74 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
+      {/* Recommended service */}
+      <section className="scroll-reveal py-20 px-6 bg-[#0f3d28]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>recommend</span>
+              Recommended For You
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+              The right assessment for managing agents.
+            </h2>
+          </div>
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 btn-shine rounded-xl flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
+              </div>
+              <div>
+                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#1A6B4A]">Best fit</span>
+                <h3 className="text-xl font-bold text-primary leading-tight">3-Year RICS Protection Plan</h3>
+              </div>
+            </div>
+            <p className="text-secondary leading-relaxed mb-6">
+              Managing a portfolio means keeping many figures accurate at once. The 3-Year Protection plan does the heavy lifting &mdash; a full RICS assessment now, then indexed updates each year, so nothing slips out of date between renewals.
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                'Keeps every property compliant without re-instructing an assessment each year.',
+                'Automatic BCIS-indexed annual updates track rising build costs for you.',
+                'One defensible, up-to-date figure per building, ready for every renewal.',
+              ].map((reason) => (
+                <li key={reason} className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                  <span className="text-sm text-secondary leading-relaxed">{reason}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-bold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                Request a Quote
+              </Link>
+              <Link href="/services#three-year-protection" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
+                Learn about 3-Year Protection
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Strip */}
-      <section className="bg-[#0f3d28] py-16 px-6">
+      <section className="scroll-reveal bg-zinc-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
             Protect every property you manage.
           </h2>
-          <p className="text-white/75 max-w-xl mx-auto text-center">
+          <p className="text-secondary max-w-xl mx-auto">
             RICS-regulated insurance valuations tailored for managing agents - consolidated reporting, insurer accepted, delivered fast.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/contact#contact-form"
-              className="bg-white text-[#1A6B4A] px-8 py-4 rounded-full font-bold hover:bg-zinc-100 active:scale-[0.97] transition-all text-center sovereign-shadow"
+              className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform text-center sovereign-shadow"
             >
               Request a Quote
             </Link>
             <Link
               href="/services"
-              className="bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 active:scale-[0.97] transition-all text-center"
+              className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-8 py-4 rounded-full font-semibold hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center"
             >
               View Services
             </Link>

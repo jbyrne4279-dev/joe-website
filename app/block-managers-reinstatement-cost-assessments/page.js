@@ -119,9 +119,10 @@ export default function BlockManagersPage() {
 
       {/* Understanding / prose explainer */}
       <section className="scroll-reveal py-20 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+          <div>
+          <div className="text-center lg:text-left mb-8 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center lg:justify-start gap-2">
               <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>menu_book</span>
               The Basics
             </span>
@@ -156,6 +157,16 @@ export default function BlockManagersPage() {
               , with index-linking used only in between &mdash; and why insurers increasingly expect a
               current RICS-regulated report to support the sum insured at renewal.
             </p>
+          </div>
+          </div>
+          <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[360px]">
+            <Image
+              src="/reinstatement-cost-assessment-uk.webp"
+              alt="UK residential apartment block requiring a reinstatement cost assessment"
+              fill
+              sizes="(max-width: 1024px) 0px, 45vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -208,7 +219,7 @@ export default function BlockManagersPage() {
       </section>
 
       {/* Our Solution */}
-      <section className="scroll-reveal py-20 px-6 bg-zinc-50">
+      <section className="scroll-reveal py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2">
@@ -237,25 +248,74 @@ export default function BlockManagersPage() {
         </div>
       </section>
 
+      {/* Recommended service */}
+      <section className="scroll-reveal py-20 px-6 bg-[#0f3d28]">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2">
+              <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>recommend</span>
+              Recommended For You
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+              The right assessment for block managers.
+            </h2>
+          </div>
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 btn-shine rounded-xl flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
+              </div>
+              <div>
+                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-[#1A6B4A]">Best fit</span>
+                <h3 className="text-xl font-bold text-primary leading-tight">3-Year RICS Protection Plan</h3>
+              </div>
+            </div>
+            <p className="text-secondary leading-relaxed mb-6">
+              Blocks need to stay accurately insured year after year, not just once. The 3-Year Protection plan pairs a full RICS assessment with annual indexed updates &mdash; keeping leaseholders covered with no repeat admin.
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                'A full RICS reinstatement assessment now, with indexed updates for three years.',
+                'Keeps leaseholders protected as rebuild costs rise between assessments.',
+                'Removes the cost and hassle of re-instructing a new valuation each year.',
+              ].map((reason) => (
+                <li key={reason} className="flex items-start gap-3">
+                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                  <span className="text-sm text-secondary leading-relaxed">{reason}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-bold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                Request a Quote
+              </Link>
+              <Link href="/services#three-year-protection" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
+                Learn about 3-Year Protection
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Strip */}
-      <section className="bg-[#0f3d28] py-16 px-6">
+      <section className="scroll-reveal bg-zinc-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
             Ready to protect your leaseholders?
           </h2>
-          <p className="text-white/75 max-w-xl mx-auto text-center">
+          <p className="text-secondary max-w-xl mx-auto">
             Get a RICS-regulated reinstatement cost assessment for your block - fast, accurate, and insurer-ready.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/contact#contact-form"
-              className="bg-white text-[#1A6B4A] px-8 py-4 rounded-full font-bold hover:bg-zinc-100 active:scale-[0.97] transition-all text-center sovereign-shadow"
+              className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform text-center sovereign-shadow"
             >
               Request a Quote
             </Link>
             <Link
               href="/services"
-              className="bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 active:scale-[0.97] transition-all text-center"
+              className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-8 py-4 rounded-full font-semibold hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center"
             >
               View Services
             </Link>

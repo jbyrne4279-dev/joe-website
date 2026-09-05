@@ -421,15 +421,11 @@
   [class^="lifecycle-border-"] { animation: none !important; }
 }
 
-/* Service sub-card number badge circuit — 1→2→3→4 sequence, 12s cycle */
-@keyframes subnum-circuit {
-  0%, 10%  { background: #1A6B4A; color: white; box-shadow: 0 0 10px 3px rgba(26,107,74,0.4); }
-  20%, 100% { background: rgba(26,107,74,0.1); color: #1A6B4A; box-shadow: none; }
-}
-.sub-num-1 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 0s; }
-.sub-num-2 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 3s; }
-.sub-num-3 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 6s; }
-.sub-num-4 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 9s; }
+/* Service sub-card number badges — highlight animation removed */
+.sub-num-1,
+.sub-num-2,
+.sub-num-3,
+.sub-num-4 { animation: none; }
 
 /* Methodology step circles — 3-step circuit, 12s cycle */
 .method-ring-1 { animation: circuit-ring-glow 12s ease-in-out infinite; animation-delay: 0s; }

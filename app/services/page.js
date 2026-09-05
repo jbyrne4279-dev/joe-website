@@ -357,7 +357,7 @@ export default function ServicesPage() {
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
                     <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
-                      <span className="font-bold text-xs">{num}</span>
+                      <span className="font-bold text-xs text-[#1A6B4A]">{num}</span>
                     </div>
                     <p className="font-bold text-primary text-sm">{title}</p>
                   </div>

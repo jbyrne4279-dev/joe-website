@@ -237,21 +237,21 @@ export default function HomePage() {
               {/* Desktop Assessment */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
+                  <div className="btn-shine-blue w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm">Efficient, data-driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
-                    <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
+                    <div className="btn-shine-blue shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>bolt</span>
                     </div>
                     <span className="text-secondary text-sm font-medium">RICS-regulated assessment, <span className="whitespace-nowrap">48-hour turnaround</span></span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
-                    <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
+                    <div className="btn-shine-blue shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>cloud</span>
                     </div>
                     <span className="text-secondary text-sm font-medium">BCIS-indexed rebuild cost modelling</span>
@@ -263,7 +263,7 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
-                <Link href="/contact?service=desktop#contact-form" className="w-full py-4 bg-[#0f3d28] text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
+                <Link href="/contact?service=desktop#contact-form" className="w-full py-4 btn-shine-blue text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* On-Site Survey */}
@@ -299,38 +299,38 @@ export default function HomePage() {
               </div>
 
               {/* 3-Year Protection */}
-              <div className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#1A6B4A] shadow-[0_0_32px_6px_rgba(26,107,74,0.20)]">
+              <div className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#a16207] shadow-[0_0_32px_6px_rgba(161,98,7,0.20)]">
                 <div className="absolute top-6 right-6">
-                  <span className="btn-shine px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>
                 <div className="mb-8">
-                  <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
+                  <div className="btn-shine-gold w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">3-Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3-Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS-compliant annual updates.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
-                    <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
+                    <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>update</span>
                     </div>
                     <span className="text-secondary text-sm font-medium">Annual BCIS-indexed reinstatement updates</span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
-                    <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
+                    <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>security</span>
                     </div>
                     <span className="text-secondary text-sm font-medium">3-year RICS reinstatement compliance</span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
-                    <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
+                    <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>analytics</span>
                     </div>
                     <span className="text-secondary text-sm font-medium">Broker-ready report every renewal</span>
                   </li>
                 </ul>
-                <Link href="/contact?service=3year#contact-form" className="btn-shine w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
+                <Link href="/contact?service=3year#contact-form" className="btn-shine-gold w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 
             </div>

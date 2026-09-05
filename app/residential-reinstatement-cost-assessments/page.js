@@ -98,9 +98,9 @@ const included = [
 ]
 
 const reasons = [
-  'Most standard houses and flats can be assessed without a site visit.',
-  'Fast and cost-effective, using property records and live BCIS data.',
-  'A fully RICS-regulated, broker-ready figure your insurer will accept.',
+  { icon: 'home', text: 'Most standard houses and flats can be assessed without a site visit.' },
+  { icon: 'payments', text: 'Fast and cost-effective, using property records and live BCIS data.' },
+  { icon: 'shield', text: 'A fully RICS-regulated, broker-ready figure your insurer will accept.' },
 ]
 
 export default function ResidentialReinstatementPage() {
@@ -290,9 +290,9 @@ export default function ResidentialReinstatementPage() {
               </p>
               <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (
-                  <li key={reason} className="py-4 flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  <li key={reason.text} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>{reason.icon}</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason.text}</span>
                   </li>
                 ))}
               </ul>

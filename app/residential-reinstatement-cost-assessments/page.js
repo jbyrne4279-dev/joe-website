@@ -66,17 +66,17 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    img: '/reinstatement-cost-assessment-uk.webp',
+    img: '/rca-value-vs-rebuild.webp',
     title: 'Value, not rebuild cost',
     desc: 'A purchase price or mortgage valuation includes the land — the rebuild cost is a different figure.',
   },
   {
-    img: '/reinstatement-cost-assessments-uk.webp',
+    img: '/rca-index-linking-drift.webp',
     title: 'Index-linking drifts',
     desc: 'Broad inflation figures can’t track local costs, so cover falls behind over time.',
   },
   {
-    img: '/services-hero.webp',
+    img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss detail',
     desc: 'Generic tools struggle with period features, extensions, and non-standard builds.',
   },

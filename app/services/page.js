@@ -263,7 +263,7 @@ export default function ServicesPage() {
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS-regulated standard.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {[
             { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
             { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
@@ -272,7 +272,7 @@ export default function ServicesPage() {
             { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
           ].map(({ icon, title, desc }) => (
-            <div key={icon} className="hover-grow bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+            <div key={icon} className="hover-grow snap-center shrink-0 basis-[82%] sm:basis-[46%] md:basis-auto bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
               <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
                 <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
               </div>

@@ -4,14 +4,14 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'RICS Reinstatement Cost Assessment for Managing Agents | Rebuild Cost',
+  title: 'Building Reinstatement Valuation for Managing Agents | RICS',
   description:
-    'RICS reinstatement cost assessment for managing agents. Rebuild cost assessments - BCIS-indexed and insurer-accepted. Stay compliant and fully insured across your portfolio.',
+    'RICS building reinstatement valuation for managing agents. BCIS-indexed, insurer-accepted rebuild cost assessments that keep every property in your portfolio compliant and fully insured.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
   openGraph: {
-    title: 'RICS Reinstatement Cost Assessment for Managing Agents | Rebuild Cost',
+    title: 'Building Reinstatement Valuation for Managing Agents | RICS',
     description:
-      'RICS reinstatement cost assessment for managing agents. Rebuild cost assessments - BCIS-indexed and insurer-accepted. Stay compliant and fully insured across your portfolio.',
+      'RICS building reinstatement valuation for managing agents. BCIS-indexed, insurer-accepted rebuild cost assessments that keep every property in your portfolio compliant and fully insured.',
     url: '/managing-agents-insurance-valuations',
   },
 }
@@ -28,6 +28,10 @@ const breadcrumbJsonLd = {
 }
 
 const faqItems = [
+  {
+    question: 'What is a building reinstatement valuation?',
+    answer: 'A building reinstatement valuation is a professional, RICS-regulated calculation of the full cost of rebuilding a property from scratch — the figure the buildings insurance sum insured should be based on. A building reinstatement valuation covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
+  },
   {
     question: 'What is an insurance reinstatement valuation for managing agents?',
     answer: 'It is a professional, RICS-regulated calculation of the full rebuild cost of each property in a managed portfolio — the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
@@ -124,7 +128,7 @@ export default function ManagingAgentsPage() {
               Insurance valuations for <span className="text-[#1A6B4A]">managing agents</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Stay compliant and protect the properties you manage. RICS reinstatement valuations your insurers will accept, BCIS-indexed, fully documented, and delivered within 48 hours.
+              Stay compliant and protect the properties you manage. A RICS building reinstatement valuation your insurers will accept, BCIS-indexed, fully documented, and delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -143,12 +147,12 @@ export default function ManagingAgentsPage() {
               The basics
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8 text-center lg:text-left">
-              Why managing agents rely on RICS reinstatement valuations.
+              Why managing agents rely on an accurate building reinstatement valuation.
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
                 When you manage buildings for other people, the insurance has to be right &mdash; and a
-                reinstatement cost assessment is how you show it is. It&rsquo;s the cost of rebuilding a
+                building reinstatement valuation is how you show it is. It&rsquo;s the cost of rebuilding a
                 property from scratch, and it&rsquo;s not what the building would sell for.
               </p>
               <p>
@@ -282,7 +286,7 @@ export default function ManagingAgentsPage() {
       <ContactSection />
 
       <FaqSection
-        description="Common questions about reinstatement cost assessments and insurance valuations across managed portfolios."
+        description="Common questions about building reinstatement valuations and reinstatement cost assessments across managed portfolios."
         items={faqItems}
       />
     </main>

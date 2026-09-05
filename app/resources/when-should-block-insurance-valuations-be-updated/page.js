@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Breadcrumbs from '../../components/Breadcrumbs'
 
 export const metadata = {
   title: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
@@ -58,6 +59,7 @@ export default function ArticlePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Resources', href: '/resources' }, { name: 'When Should Block Insurance Valuations Be Updated?' }]} accent="#1A6B4A" />
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

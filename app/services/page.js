@@ -1,5 +1,6 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
+import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -103,6 +104,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqJsonLd) }}
       />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Services' }]} accent="#1A6B4A" />
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">

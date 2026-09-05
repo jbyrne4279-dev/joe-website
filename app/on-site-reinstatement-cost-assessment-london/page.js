@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
@@ -114,6 +115,7 @@ export default function OnSiteAssessmentLondonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Services', href: '/services' }, { name: 'On-Site Reinstatement Cost Assessment London' }]} accent="#1A6B4A" />
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

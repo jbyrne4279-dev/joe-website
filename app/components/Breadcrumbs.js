@@ -5,12 +5,14 @@ const SITE_URL = 'https://reinstatementcostassessment.org'
 /**
  * Reusable breadcrumb trail with matching BreadcrumbList JSON-LD.
  *
- * @param {{ items: { name: string, href?: string }[], accent?: string }} props
+ * @param {{ items: { name: string, href?: string }[], accent?: string, showSchema?: boolean }} props
  *   items — ordered trail from Home to the current page. The final item is the
  *   current page and should omit `href`. Home is added automatically, so pass
  *   only the levels below it.
+ *   showSchema — emit BreadcrumbList JSON-LD. Set false on pages that already
+ *   render their own BreadcrumbList inline, to avoid duplicate markup.
  */
-export default function Breadcrumbs({ items = [], accent = '#1A6B4A' }) {
+export default function Breadcrumbs({ items = [], accent = '#1A6B4A', showSchema = true }) {
   const trail = [{ name: 'Home', href: '/' }, ...items]
 
   const jsonLd = {
@@ -26,7 +28,9 @@ export default function Breadcrumbs({ items = [], accent = '#1A6B4A' }) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {showSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
       <nav aria-label="Breadcrumb" className="max-w-5xl mx-auto px-6 py-4">
         <ol className="flex flex-wrap items-center gap-1.5 text-sm text-secondary">
           {trail.map((item, i) => {

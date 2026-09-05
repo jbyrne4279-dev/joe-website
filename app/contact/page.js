@@ -1,5 +1,6 @@
 ﻿import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
+import Breadcrumbs from '../components/Breadcrumbs'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
@@ -87,6 +88,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqJsonLd) }}
       />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Contact' }]} accent="#1A6B4A" />
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">

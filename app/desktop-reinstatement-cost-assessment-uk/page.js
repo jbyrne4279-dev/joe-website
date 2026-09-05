@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
@@ -114,6 +115,7 @@ export default function DesktopAssessmentUKPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Services', href: '/services' }, { name: 'Desktop Reinstatement Cost Assessment UK' }]} accent="#1e40af" />
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

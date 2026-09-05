@@ -9,6 +9,12 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
+      url: `${SITE_URL}/building-reinstatement-cost`,
+      lastModified: new Date('2026-09-05'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${SITE_URL}/services`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'monthly',

@@ -68,17 +68,17 @@ const challenges = [
   {
     img: '/rca-outdated-portfolio.webp',
     title: 'Outdated portfolio figures',
-    desc: 'Keeping a rebuild cost assessment current on every building in a portfolio is difficult, and any gaps become the managing agent’s exposure. A rolling programme of reinstatement cost assessments keeps each sum insured accurate and defensible.',
+    desc: 'Keeping an accurate figure on every building in a portfolio is difficult, and any gaps become the managing agent’s exposure. A rolling review programme keeps each sum insured current and defensible.',
   },
   {
     img: '/rca-index-linking-drift.webp',
     title: 'Index-linking misses local costs',
-    desc: 'National index-linking misses regional variation in labour and material costs, so a blanket adjustment can leave individual buildings under-insured. Periodic reinstatement cost assessments correct that drift across the portfolio.',
+    desc: 'National index-linking misses regional variation in labour and material costs, so a blanket adjustment can leave individual buildings under-insured. Periodic reassessment corrects that drift across the portfolio.',
   },
   {
     img: '/rca-liability-claim.webp',
     title: 'Liability at claim',
-    desc: 'If an underinsured property suffers a major loss, questions follow about whether the sum insured was kept adequate. A documented reinstatement cost assessment programme evidences a managing agent’s duty of care.',
+    desc: 'If an underinsured property suffers a major loss, questions follow about whether the sum insured was kept adequate. A documented review programme evidences a managing agent’s duty of care.',
   },
 ]
 

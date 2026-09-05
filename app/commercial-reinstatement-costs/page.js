@@ -68,17 +68,17 @@ const challenges = [
   {
     img: '/rca-index-linking-drift.webp',
     title: 'Costs outrun index-linking',
-    desc: 'Material and labour inflation has pushed commercial rebuild costs well beyond what standard index-linking captures. A regular reinstatement cost assessment recalculates the true figure so your sum insured keeps pace year on year.',
+    desc: 'Material and labour inflation has pushed commercial rebuild costs well beyond what standard index-linking captures, widening the gap each year. A periodic reassessment brings the sum insured back in line.',
   },
   {
     img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss the detail',
-    desc: 'Generic calculators overlook mechanical and electrical services, specialist fit-out, and external works. A commercial rebuild cost assessment captures these directly, so the reinstatement figure reflects the whole building.',
+    desc: 'Generic calculators overlook mechanical and electrical services, specialist fit-out, and external works. A professional valuation captures these directly, so the figure reflects the whole building.',
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'Insurers expect RICS figures',
-    desc: 'More insurers and lenders now expect a verifiable, RICS-regulated reinstatement cost assessment before agreeing terms. A dated estimate or calculator output rarely satisfies underwriting on commercial property.',
+    desc: 'More insurers and lenders now expect a verifiable, RICS-regulated figure before agreeing terms. A dated estimate or calculator output rarely satisfies commercial underwriting.',
   },
 ]
 

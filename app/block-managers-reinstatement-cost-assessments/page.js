@@ -68,17 +68,17 @@ const challenges = [
   {
     img: '/rca-leaseholders-exposed.webp',
     title: 'Leaseholders left exposed',
-    desc: 'Without a current reinstatement cost assessment, a block’s sum insured can fall well short of the true rebuild cost, and any shortfall passes to leaseholders through the service charge. An accurate rebuild figure protects every resident.',
+    desc: 'Without a recent valuation, a block’s sum insured can fall well short of the true rebuild cost, and any shortfall passes to leaseholders through the service charge. An accurate figure protects every resident.',
   },
   {
     img: '/rca-index-linking-drift.webp',
     title: 'Index-linking drifts',
-    desc: 'Annual index-linking uses a broad inflation figure that can’t track the real local build costs of a block. A full reinstatement cost assessment every three years keeps the sum insured aligned with reality.',
+    desc: 'Annual index-linking uses a broad inflation rate that can’t track a block’s real local build costs. A full review every three years keeps the sum insured aligned with reality.',
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'Insurers query the figure',
-    desc: 'Without a RICS-regulated reinstatement cost assessment to support the sum insured, insurers can query cover at renewal, leading to delays and higher premiums. A current rebuild cost assessment keeps renewals straightforward.',
+    desc: 'Without a RICS-regulated report to support the sum insured, insurers can query cover at renewal, causing delays and higher premiums. A current figure keeps renewals straightforward.',
   },
 ]
 

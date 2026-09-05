@@ -68,17 +68,17 @@ const challenges = [
   {
     img: '/rca-value-vs-rebuild.webp',
     title: 'Value, not rebuild cost',
-    desc: 'A purchase price or mortgage valuation includes the land and location, but a residential reinstatement cost assessment measures only the cost of rebuilding the property itself. Insuring on market value rather than the true rebuild cost is one of the most common causes of underinsurance on UK homes.',
+    desc: 'A purchase price or mortgage valuation includes the land and location, yet rebuilding covers only the work of putting the property back up. Insuring on market value instead of the true rebuild figure is a common cause of underinsurance on UK homes.',
   },
   {
     img: '/rca-index-linking-drift.webp',
     title: 'Index-linking drifts',
-    desc: 'Annual index-linking applies a broad national inflation figure that can’t reflect local labour rates or material prices. Without a fresh rebuild cost assessment every few years, your home’s sum insured quietly drifts below what it would actually cost to rebuild.',
+    desc: 'Annual index-linking applies a broad national inflation rate that can’t reflect local labour or material prices. Left for a few years, a home’s sum insured quietly falls below what a rebuild would really cost.',
   },
   {
     img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss detail',
-    desc: 'Free online calculators give rough averages and struggle with period features, extensions, and non-standard construction. A RICS reinstatement cost assessment reflects the real detail of your home and produces a rebuild figure insurers will accept.',
+    desc: 'Free online calculators give rough averages and struggle with period features, extensions, and non-standard construction. A professional RICS assessment reflects the real detail of your home and stands up with insurers.',
   },
 ]
 

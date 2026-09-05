@@ -198,9 +198,10 @@ export default function HomePage() {
               { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', gradient: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)', href: '/three-year-reinstatement-cost-assessment-london' },
               { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)', href: '/on-site-reinstatement-cost-assessment-london' },
             ].map(({ icon, fill, name, tag, desc, accent, tintRgb, gradient, href }, i) => (
-              <div
+              <Link
                 key={name}
-                className="service-pulse-card flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md"
+                href={href}
+                className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
                 <div className="flex flex-col items-center gap-3">
@@ -213,10 +214,10 @@ export default function HomePage() {
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
-                <Link href={href} className="mt-auto inline-flex items-center gap-1 text-sm font-semibold" style={{ color: accent }}>
+                <span className="mt-auto inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
                   Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
-                </Link>
-              </div>
+                </span>
+              </Link>
             ))}
           </div>
         </div>

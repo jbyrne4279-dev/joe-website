@@ -2,35 +2,29 @@
 import { useState } from 'react'
 
 const PROPERTY_TYPES = [
-  'Residential house',
-  'Flat / apartment',
-  'Block of flats',
-  'Commercial / office',
-  'Industrial / warehouse',
-  'Listed or period building',
+  'House',
+  'Flat',
+  'Block',
+  'Commercial',
+  'Industrial',
+  'Listed',
   'Mixed-use',
-  'Portfolio (multiple properties)',
-  'Other / not sure',
+  'Portfolio',
+  'Other',
 ]
 
 const LAST_RCA = [
-  'Never had one',
-  'Within the last 12 months',
-  '1–3 years ago',
-  'More than 3 years ago',
+  'Never',
+  'Under 1 year',
+  '1–3 years',
+  '3+ years',
   'Not sure',
 ]
 
-const COMPLEX = [
-  'Block of flats',
-  'Commercial / office',
-  'Industrial / warehouse',
-  'Listed or period building',
-  'Mixed-use',
-]
+const COMPLEX = ['Block', 'Commercial', 'Industrial', 'Listed', 'Mixed-use']
 
 function recommend(propertyType, lastRca) {
-  if (propertyType === 'Portfolio (multiple properties)') return '3-Year Protection Plan'
+  if (propertyType === 'Portfolio') return '3-Year Protection Plan'
   if (COMPLEX.includes(propertyType)) return 'On-Site Survey'
   return 'Desktop Assessment'
 }
@@ -72,19 +66,19 @@ export default function NotSureQuiz() {
         >
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={close} aria-hidden="true" />
           <div className="relative z-10 w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-zinc-200 max-h-[90vh] overflow-y-auto">
-            <div className="sticky top-0 bg-white/95 backdrop-blur-sm px-6 sm:px-8 pt-6 pb-4 border-b border-zinc-100 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                {[0, 1, 2].map((s) => (
-                  <span
-                    key={s}
-                    className="h-1.5 rounded-full transition-all duration-300"
-                    style={{ width: s === step ? '1.75rem' : '0.5rem', background: s <= step ? '#1A6B4A' : '#e4e4e7' }}
-                  />
-                ))}
+            <div className="sticky top-0 bg-white/95 backdrop-blur-sm px-6 sm:px-8 pt-5 pb-4 border-b border-zinc-100">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs font-semibold text-secondary">Step {step + 1} of 3</span>
+                <button type="button" onClick={close} aria-label="Close" className="inline-flex items-center justify-center w-9 h-9 -mr-2 rounded-full text-zinc-500 hover:bg-zinc-100 transition-colors cursor-pointer">
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem' }}>close</span>
+                </button>
               </div>
-              <button type="button" onClick={close} aria-label="Close" className="inline-flex items-center justify-center w-9 h-9 rounded-full text-zinc-500 hover:bg-zinc-100 transition-colors cursor-pointer">
-                <span className="material-symbols-outlined" style={{ fontSize: '1.3rem' }}>close</span>
-              </button>
+              <div className="h-2.5 w-full rounded-full bg-zinc-200 overflow-hidden">
+                <div
+                  className="btn-shine h-full rounded-full transition-[width] duration-500 ease-out"
+                  style={{ width: `${((step + 1) / 3) * 100}%` }}
+                />
+              </div>
             </div>
 
             <form action="https://formspree.io/f/xkokvlpr" method="POST" className="px-6 sm:px-8 py-6">
@@ -97,7 +91,6 @@ export default function NotSureQuiz() {
 
               {/* Step 1 — property type */}
               <div hidden={step !== 0}>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-2">Step 1 of 3</p>
                 <h3 className="text-xl font-bold text-primary mb-5">What type of property is it?</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {PROPERTY_TYPES.map((opt) => (
@@ -115,9 +108,8 @@ export default function NotSureQuiz() {
 
               {/* Step 2 — last RCA */}
               <div hidden={step !== 1}>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-2">Step 2 of 3</p>
-                <h3 className="text-xl font-bold text-primary mb-5">When was your last reinstatement cost assessment?</h3>
-                <div className="grid grid-cols-1 gap-2.5">
+                <h3 className="text-xl font-bold text-primary mb-5">When was your last assessment?</h3>
+                <div className="grid grid-cols-2 gap-2.5">
                   {LAST_RCA.map((opt) => (
                     <button
                       key={opt}
@@ -136,7 +128,6 @@ export default function NotSureQuiz() {
 
               {/* Step 3 — contact */}
               <div hidden={step !== 2}>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-2">Step 3 of 3</p>
                 {rec && (
                   <div className="mb-5 rounded-2xl bg-[#1A6B4A]/8 border border-[#1A6B4A]/20 p-4">
                     <p className="text-xs font-semibold uppercase tracking-widest text-[#1A6B4A] mb-1">Our suggestion</p>

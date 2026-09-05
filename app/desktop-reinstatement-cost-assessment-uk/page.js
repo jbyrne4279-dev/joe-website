@@ -163,7 +163,7 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* How it works */}
-      <section className="scroll-reveal py-24 px-6 bg-zinc-50">
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">How it works</p>
@@ -187,21 +187,21 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* Who needs it */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
+      <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300/80 mb-4">Who needs it</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">Ideal for standard UK property.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Who needs it</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary leading-tight">Ideal for standard UK property.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
-              <div key={title} className="flex gap-5 items-start bg-white/[0.04] rounded-2xl p-6 border border-white/10">
-                <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-blue-300" style={{ fontSize: '1.3rem' }}>{icon}</span>
+              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-zinc-200/80" style={{ background: '#eaf0fb' }}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1e40af' }}>{icon}</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
-                  <p className="text-white/70 leading-relaxed text-[0.95rem]">{desc}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
                 </div>
               </div>
             ))}
@@ -210,7 +210,7 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6 bg-white">
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
@@ -232,7 +232,7 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* What's included */}
-      <section className="scroll-reveal py-24 px-6 bg-zinc-50">
+      <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="max-w-2xl mb-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What&rsquo;s included</p>
@@ -250,7 +250,7 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6 bg-white">
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
         <div className="max-w-4xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK-wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
@@ -271,7 +271,7 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* Other services */}
-      <section className="scroll-reveal py-24 px-6 bg-zinc-50">
+      <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Not quite right?</p>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
+import MediaPlaceholder from '../components/MediaPlaceholder'
 
 export const metadata = {
   title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
@@ -127,7 +128,7 @@ export default function DesktopAssessmentUKPage() {
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Desktop Assessment &middot; UK-wide</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              Desktop reinstatement cost assessment, UK-wide.
+              <span style={{ color: '#1e40af' }}>Desktop</span> reinstatement cost assessment, UK-wide.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               An accurate, RICS-regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.
@@ -143,7 +144,9 @@ export default function DesktopAssessmentUKPage() {
 
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1e40af" tint="rgba(37,99,235,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A full rebuild cost, without the site visit.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -158,6 +161,7 @@ export default function DesktopAssessmentUKPage() {
               cost-effective route to a RICS-regulated sum insured. Every figure is prepared to the same
               professional standard as a full survey and is accepted by UK insurers without challenge.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -211,7 +215,9 @@ export default function DesktopAssessmentUKPage() {
 
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1e40af" tint="rgba(37,99,235,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -227,6 +233,7 @@ export default function DesktopAssessmentUKPage() {
               proportion &mdash; even on a small loss. A desktop RICS assessment closes that gap quickly and gives
               you a figure you can stand behind at renewal.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -251,7 +258,9 @@ export default function DesktopAssessmentUKPage() {
 
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1e40af" tint="rgba(37,99,235,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK-wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
@@ -266,6 +275,7 @@ export default function DesktopAssessmentUKPage() {
                 {area}
               </span>
             ))}
+          </div>
           </div>
         </div>
       </section>

@@ -194,25 +194,28 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: 'monitor', name: 'Desktop Assessment', tag: 'Fast & Efficient', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.' },
-              { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.' },
-              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.' },
-            ].map(({ icon, fill, name, tag, desc }, i) => (
+              { icon: 'monitor', name: 'Desktop Assessment', tag: 'Fast & Efficient', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', gradient: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)', href: '/desktop-reinstatement-cost-assessment-uk' },
+              { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', gradient: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)', href: '/three-year-reinstatement-cost-assessment-london' },
+              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)', href: '/on-site-reinstatement-cost-assessment-london' },
+            ].map(({ icon, fill, name, tag, desc, accent, tintRgb, gradient, href }, i) => (
               <div
                 key={name}
                 className="service-pulse-card flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
                 <div className="flex flex-col items-center gap-3">
-                  <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+                  <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ background: gradient }}>
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem', ...(fill ? { fontVariationSettings: "'FILL' 1" } : {}) }}>{icon}</span>
                   </div>
-                  <span className="text-xs font-bold text-[#1A6B4A] bg-[#1A6B4A]/10 px-2.5 py-0.5 rounded-full">{tag}</span>
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full" style={{ color: accent, background: `rgba(${tintRgb},0.1)` }}>{tag}</span>
                 </div>
                 <div>
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
+                <Link href={href} className="mt-auto inline-flex items-center gap-1 text-sm font-semibold" style={{ color: accent }}>
+                  Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                </Link>
               </div>
             ))}
           </div>
@@ -367,17 +370,19 @@ export default function HomePage() {
       {/* Our Expertise */}
       <section className="scroll-reveal relative py-24 overflow-hidden">
         <Image
-          src="/on-site-reinstatement-cost-assessment-survey.jpg"
-          alt="RICS surveyor reviewing building plans on site"
+          src="/desktop-reinstatement-cost-assessment.jpg"
+          alt="RICS-regulated surveying practice at work on reinstatement cost assessments"
           fill
           sizes="100vw"
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 max-w-5xl mx-auto px-8">
           <div className="liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl border border-white/15 p-10 md:p-14 sovereign-shadow">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Our Expertise</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/70 text-lg leading-relaxed max-w-xl mx-auto">With over 50 years of collective experience, we have refined a methodology that balances technical precision with high-end client care.</p>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">Reinstatement Cost Assessment Ltd is an independent, RICS-regulated practice built around a single specialism &mdash; telling property owners exactly what it costs to rebuild.</p>
+            <p className="text-white/65 text-base leading-relaxed max-w-xl mx-auto">Our chartered surveyors bring over 50 years of combined experience across residential, commercial and complex portfolios, pairing live BCIS cost data with real site knowledge. We work with homeowners, landlords, managing agents and brokers across the UK, delivering figures that are accurate, defensible and broker-ready &mdash; with the responsiveness of a boutique firm.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
+import MediaPlaceholder from '../components/MediaPlaceholder'
 
 export const metadata = {
   title: 'On-Site Reinstatement Cost Assessment London | RICS Surveyor',
@@ -127,7 +128,7 @@ export default function OnSiteAssessmentLondonPage() {
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">On-Site Survey &middot; London</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              On-site reinstatement cost assessment in London.
+              <span style={{ color: '#1A6B4A' }}>On-site</span> reinstatement cost assessment in London.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               The most accurate rebuild cost available &mdash; a full physical survey by a RICS-regulated surveyor. Essential for London&rsquo;s listed, period, complex and high-value buildings, delivered with full site evidence.
@@ -143,7 +144,9 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1A6B4A" tint="rgba(26,107,74,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A surveyor on site, measuring every detail.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -157,6 +160,7 @@ export default function OnSiteAssessmentLondonPage() {
               townhouse, a period conversion, a mixed-use block, or an industrial unit with significant plant. The
               result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -210,7 +214,9 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1A6B4A" tint="rgba(26,107,74,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Detail is where the value hides.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -225,6 +231,7 @@ export default function OnSiteAssessmentLondonPage() {
               average, a shortfall reduces every claim proportionally. An on-site survey removes the guesswork and
               gives owners, freeholders and managing agents a figure they can defend with total confidence.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -249,7 +256,9 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#1A6B4A" tint="rgba(26,107,74,0.10)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Surveyors across the capital.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
@@ -263,6 +272,7 @@ export default function OnSiteAssessmentLondonPage() {
                 {area}
               </span>
             ))}
+          </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
+import MediaPlaceholder from '../components/MediaPlaceholder'
 
 export const metadata = {
   title: '3-Year Reinstatement Cost Assessment London | RICS Protection Plan',
@@ -130,7 +131,7 @@ export default function ThreeYearAssessmentLondonPage() {
               <span className="px-3 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>Best Value</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              3-year reinstatement cost assessment in London.
+              <span style={{ color: '#a16207' }}>3-year</span> reinstatement cost assessment in London.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
@@ -146,7 +147,9 @@ export default function ThreeYearAssessmentLondonPage() {
 
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">One instruction, three years of cover.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -160,6 +163,7 @@ export default function ThreeYearAssessmentLondonPage() {
               at all &mdash; your London sum insured is professionally maintained throughout. You walk into every
               renewal with a current, defensible, broker-ready figure.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -213,7 +217,9 @@ export default function ThreeYearAssessmentLondonPage() {
 
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index-linking alone isn&rsquo;t enough.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
@@ -228,6 +234,7 @@ export default function ThreeYearAssessmentLondonPage() {
               is re-indexed against the latest BCIS data &mdash; keeping you continuously compliant and protecting
               you from the slow drift into underinsurance that catches so many blocks and portfolios at claim time.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -252,7 +259,9 @@ export default function ThreeYearAssessmentLondonPage() {
 
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
+          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+          <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
@@ -266,6 +275,7 @@ export default function ThreeYearAssessmentLondonPage() {
                 {area}
               </span>
             ))}
+          </div>
           </div>
         </div>
       </section>

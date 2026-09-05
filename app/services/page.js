@@ -293,13 +293,13 @@ export default function ServicesPage() {
           <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
-                <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-3">Desktop Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A fast, accurate rebuild cost assessment produced entirely remotely. No site visit required, ideal for standard residential and commercial properties.</p>
               </div>
-              <Link href="/contact?service=desktop#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
+              <Link href="/contact?service=desktop#contact-form" className="text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
                 Contact RICS Surveyor
               </Link>
             </div>
@@ -312,8 +312,8 @@ export default function ServicesPage() {
               ].map(({ cls, num, title, text }) => (
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
-                    <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
-                      <span className="font-bold text-xs">{num}</span>
+                    <div className={`sub-num-${num} w-6 h-6 rounded-md flex items-center justify-center shrink-0`} style={{ background: 'rgba(37,99,235,0.12)' }}>
+                      <span className="font-bold text-xs" style={{ color: '#1e40af' }}>{num}</span>
                     </div>
                     <p className="font-bold text-primary text-sm">{title}</p>
                   </div>
@@ -358,19 +358,19 @@ export default function ServicesPage() {
           </div>
 
           {/* 3-Year Protection - featured */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#0f3d28] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #0f3d28 0%, #1A6B4A 100%)' }}>
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#8a6d1a] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #8a6d1a 0%, #c9a227 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="bg-white/15 border border-white/25 backdrop-blur-sm w-12 h-12 rounded-xl flex items-center justify-center">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
                   </div>
-                  <span className="bg-amber-400 px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-[#0f3d28]">Best Value</span>
+                  <span className="bg-white px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-[#8a6d1a]">Best Value</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
                 <p className="text-white/80 text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>
               </div>
-              <Link href="/contact?service=3year#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
+              <Link href="/contact?service=3year#contact-form" className="bg-white text-[#8a6d1a] px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
                 Enquire Now
               </Link>
             </div>
@@ -383,8 +383,8 @@ export default function ServicesPage() {
               ].map(({ cls, num, title, text }) => (
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
-                    <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
-                      <span className="font-bold text-xs">{num}</span>
+                    <div className={`sub-num-${num} w-6 h-6 rounded-md flex items-center justify-center shrink-0`} style={{ background: 'rgba(201,162,39,0.16)' }}>
+                      <span className="font-bold text-xs" style={{ color: '#8a6d1a' }}>{num}</span>
                     </div>
                     <p className="font-bold text-primary text-sm">{title}</p>
                   </div>

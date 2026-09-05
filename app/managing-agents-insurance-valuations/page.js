@@ -119,7 +119,7 @@ export default function ManagingAgentsPage() {
 
       {/* Understanding / prose explainer */}
       <section className="scroll-reveal py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-16 items-stretch">
           <div>
           <div className="text-center lg:text-left mb-8 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center lg:justify-start gap-2">
@@ -130,7 +130,7 @@ export default function ManagingAgentsPage() {
               Why managing agents rely on <span className="text-shine">RICS reinstatement valuations.</span>
             </h2>
           </div>
-          <div className="space-y-5 text-secondary leading-relaxed text-[1.05rem]">
+          <div className="space-y-6 text-secondary leading-relaxed text-[1.05rem]">
             <p>
               When you manage buildings on someone else&rsquo;s behalf, the insurance simply has to be
               right &mdash; and a reinstatement cost assessment is how you show that it is. In plain terms,

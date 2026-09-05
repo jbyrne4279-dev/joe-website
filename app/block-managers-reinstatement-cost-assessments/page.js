@@ -119,7 +119,7 @@ export default function BlockManagersPage() {
 
       {/* Understanding / prose explainer */}
       <section className="scroll-reveal py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-16 items-stretch">
           <div>
           <div className="text-center lg:text-left mb-8 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center lg:justify-start gap-2">
@@ -130,7 +130,7 @@ export default function BlockManagersPage() {
               Why block managers need an <span className="text-shine">accurate reinstatement figure.</span>
             </h2>
           </div>
-          <div className="space-y-5 text-secondary leading-relaxed text-[1.05rem]">
+          <div className="space-y-6 text-secondary leading-relaxed text-[1.05rem]">
             <p>
               A reinstatement cost assessment (RCA) for a block of flats is a professional calculation of
               what it would cost to rebuild the entire building from the ground up if it were destroyed.

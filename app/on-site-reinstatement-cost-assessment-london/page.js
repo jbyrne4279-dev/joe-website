@@ -144,8 +144,7 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <MediaPlaceholder accent="#1A6B4A" tint="rgba(26,107,74,0.10)" className="mt-1" />
+        <div className="max-w-3xl mx-auto">
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A surveyor on site, measuring every detail.</h2>

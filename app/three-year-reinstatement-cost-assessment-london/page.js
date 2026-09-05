@@ -147,8 +147,7 @@ export default function ThreeYearAssessmentLondonPage() {
 
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+        <div className="max-w-3xl mx-auto">
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">One instruction, three years of cover.</h2>

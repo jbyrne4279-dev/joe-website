@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const sectorLinks = [
+  { href: '/residential-reinstatement-cost-assessments', label: 'Residential Properties' },
   { href: '/commercial-reinstatement-costs', label: 'Commercial Properties' },
   { href: '/managing-agents-insurance-valuations', label: 'Managing Agents' },
   { href: '/block-managers-reinstatement-cost-assessments', label: 'Block Managers' },

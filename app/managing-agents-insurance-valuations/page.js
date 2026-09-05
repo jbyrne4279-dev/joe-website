@@ -334,12 +334,12 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
+      <ContactSection />
+
       <FaqSection
         description="Common questions about reinstatement cost assessments and insurance valuations across managed portfolios."
         items={faqItems}
       />
-
-      <ContactSection />
     </main>
     </>
   )

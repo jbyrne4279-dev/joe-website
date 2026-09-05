@@ -384,12 +384,12 @@ export default function CommercialReinstatementPage() {
         </div>
       </section>
 
+      <ContactSection />
+
       <FaqSection
         description="Common questions about commercial reinstatement cost assessments, rebuild cost, and underinsurance."
         items={faqItems}
       />
-
-      <ContactSection />
     </main>
     </>
   )

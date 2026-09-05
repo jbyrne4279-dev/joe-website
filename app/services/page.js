@@ -106,10 +106,13 @@ export default function ServicesPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="/services-hero.webp"
           alt="Property insurance underinsurance risk - RICS reinstatement cost assessment services UK"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -286,8 +289,8 @@ export default function ServicesPage() {
       <section className="scroll-reveal py-16 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto space-y-8">
 
-          {/* Desktop Assessment - lightest green */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#b0d4c0] shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #d4ede0 0%, #b8dfc8 100%)' }}>
+          {/* Desktop Assessment */}
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
@@ -300,14 +303,14 @@ export default function ServicesPage() {
                 Contact RICS Surveyor
               </Link>
             </div>
-            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-[#1A6B4A]/10" style={{ background: 'rgba(255,255,255,0.6)' }}>
+            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-50">
               {[
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'Our surveyors use property records, floor area data, and live BCIS construction cost indices to produce your RICS reinstatement cost assessment without a site visit.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Standard homes, buy-to-let properties, HMOs, retail units, and warehouses with straightforward construction and no listed status.' },
                 { cls: 'service-subcard-reveal-3', num: 3, title: 'Turnaround', text: 'Delivered within 48 hours of instruction. Expedited turnaround available on request. Contact us to discuss your deadline.' },
                 { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A fully RICS-regulated reinstatement cost assessment report stating your current rebuild cost, accepted by all UK insurers and brokers without challenge.' },
               ].map(({ cls, num, title, text }) => (
-                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-[#1A6B4A]/15 shadow-sm`}>
+                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
                     <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
                       <span className="font-bold text-xs">{num}</span>
@@ -320,8 +323,8 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* On-Site Survey - mid emerald */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/25 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #7ec8a4 0%, #52b386 100%)' }}>
+          {/* On-Site Survey */}
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
@@ -334,14 +337,14 @@ export default function ServicesPage() {
                 Contact RICS Surveyor
               </Link>
             </div>
-            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-[#1A6B4A]/10" style={{ background: 'rgba(255,255,255,0.55)' }}>
+            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-50">
               {[
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'A RICS-regulated surveyor attends your property, measures every element in person, assesses specification and construction, and delivers a full reinstatement cost assessment on-site.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Listed buildings, non-standard construction, complex commercial or industrial premises, and high-value assets where a desktop rebuild cost assessment cannot capture full detail.' },
                 { cls: 'service-subcard-reveal-3', num: 3, title: 'Specialist coverage', text: 'Our surveyors are experienced in listed building requirements, specialist materials, M&E installations, curtilage structures, and large commercial floor plates.' },
                 { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A comprehensive RICS reinstatement cost assessment with full site notes, photographic evidence, and a rebuild cost figure that will withstand insurer or legal scrutiny.' },
               ].map(({ cls, num, title, text }) => (
-                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-[#1A6B4A]/15 shadow-sm`}>
+                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
                     <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
                       <span className="font-bold text-xs">{num}</span>
@@ -354,8 +357,8 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* 3-Year Protection - deep emerald */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#1A6B4A]/30 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #2d9e6b 0%, #1A6B4A 100%)' }}>
+          {/* 3-Year Protection - featured */}
+          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#0f3d28] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #0f3d28 0%, #1A6B4A 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
@@ -371,14 +374,14 @@ export default function ServicesPage() {
                 Enquire Now
               </Link>
             </div>
-            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-[#1A6B4A]/10" style={{ background: 'rgba(255,255,255,0.5)' }}>
+            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-white/10" style={{ background: 'rgba(255,255,255,0.08)' }}>
               {[
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'We carry out a full RICS reinstatement cost assessment, then deliver BCIS-indexed annual rebuild cost updates automatically each year for three years.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Landlords, portfolio managers, managing agents, and property owners who need continuous RICS reinstatement compliance without commissioning a new assessment each year.' },
                 { cls: 'service-subcard-reveal-3', num: 3, title: 'Annual BCIS updates', text: 'Each annual update applies the latest BCIS construction cost indices to your rebuild cost figure, keeping your reinstatement cost assessment accurate as material and labour costs change.' },
                 { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A broker-ready RICS reinstatement cost assessment report at inception, followed by three annual rebuild cost update certificates accepted by all UK insurers.' },
               ].map(({ cls, num, title, text }) => (
-                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-[#1A6B4A]/15 shadow-sm`}>
+                <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
                     <div className={`sub-num-${num} w-6 h-6 rounded-md bg-[#1A6B4A]/10 flex items-center justify-center shrink-0`}>
                       <span className="font-bold text-xs">{num}</span>

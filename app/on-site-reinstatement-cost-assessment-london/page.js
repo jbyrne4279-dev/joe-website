@@ -93,12 +93,12 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  'Full physical site inspection',
-  'Measured survey of every element',
-  'Specification and construction assessment',
-  'Detailed site notes and photographs',
-  'Specialist materials and M&E',
-  'Curtilage structures and boundaries',
+  { label: 'Full physical site inspection', detail: 'A RICS surveyor visits and examines the building in person, inside and out — nothing is assumed from records alone.' },
+  { label: 'Measured survey of every element', detail: 'Each part of the building is physically measured on site, giving a far more precise figure than a desktop estimate.' },
+  { label: 'Specification and construction assessment', detail: 'We record exactly how the building is put together and finished — the materials, methods and quality of construction.' },
+  { label: 'Detailed site notes and photographs', detail: 'A full written and photographic record that evidences and supports every figure in the report.' },
+  { label: 'Specialist materials and M&E', detail: 'Stone, timber and heritage detail, plus mechanical and electrical services such as lifts, heating and ventilation.' },
+  { label: 'Curtilage structures and boundaries', detail: 'Outbuildings, walls, railings and other structures that sit within the property’s boundary and also need rebuilding.' },
 ]
 
 const londonAreas = [
@@ -247,11 +247,15 @@ export default function OnSiteAssessmentLondonPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">A complete, evidenced survey.</h2>
           </div>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map((item) => (
-              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>check</span>
-                <span className="text-primary font-medium">{item}</span>
+            {included.map(({ label, detail }) => (
+              <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                <span>
+                  <span className="text-primary font-medium">{label}</span>
+                  <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>
+                </span>
               </li>
             ))}
           </ul>

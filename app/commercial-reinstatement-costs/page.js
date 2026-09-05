@@ -90,12 +90,12 @@ const help = [
 ]
 
 const included = [
-  'Full structural rebuild',
-  'Mechanical and electrical services',
-  'Specialist fit-out',
-  'External works and site costs',
-  'Debris removal and professional fees',
-  'Inflation over the rebuild period',
+  { label: 'Full structural rebuild', detail: 'Reconstructing the entire building shell and structure from the ground up to current standards.' },
+  { label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing — often a large share of a commercial building’s cost.' },
+  { label: 'Specialist fit-out', detail: 'Trade-specific interiors and fixed equipment that form part of the building itself.' },
+  { label: 'External works and site costs', detail: 'Car parks, hard-standing, drainage, boundary walls and landscaping around the building.' },
+  { label: 'Debris removal and professional fees', detail: 'Clearing the site after a loss, plus the architects, engineers and surveyors to design the rebuild.' },
+  { label: 'Inflation over the rebuild period', detail: 'An allowance for construction costs rising while the claim is settled and the work is completed.' },
 ]
 
 const reasons = [
@@ -248,11 +248,15 @@ export default function CommercialReinstatementPage() {
               More than walls and a roof.
             </h2>
           </div>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map((item) => (
-              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>check</span>
-                <span className="text-primary font-medium">{item}</span>
+            {included.map(({ label, detail }) => (
+              <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                <span>
+                  <span className="text-primary font-medium">{label}</span>
+                  <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>
+                </span>
               </li>
             ))}
           </ul>

@@ -93,12 +93,12 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  'Full RICS assessment at inception',
-  'Three annual BCIS-indexed updates',
-  'Broker-ready report and certificates',
-  'Continuous RICS-recommended compliance',
-  'No repeat instruction each year',
-  'Accepted by all UK insurers',
+  { label: 'Full RICS assessment at inception', detail: 'A complete, professional rebuild-cost assessment at the start, setting your accurate baseline figure.' },
+  { label: 'Three annual BCIS-indexed updates', detail: 'Each year we re-index your figure to current construction costs, so your cover never quietly drifts out of date.' },
+  { label: 'Broker-ready report and certificates', detail: 'Documents formatted so your broker or insurer can accept them straight away, with no back-and-forth.' },
+  { label: 'Continuous RICS-recommended compliance', detail: 'Keeps you on the three-year review cycle RICS recommends, without you having to keep track of it.' },
+  { label: 'No repeat instruction each year', detail: 'One instruction covers three years, so there’s no need to commission and pay for a new assessment annually.' },
+  { label: 'Accepted by all UK insurers', detail: 'Every report and yearly update is recognised right across the UK insurance market.' },
 ]
 
 const londonAreas = [
@@ -249,11 +249,15 @@ export default function ThreeYearAssessmentLondonPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Everything, for three years.</h2>
           </div>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map((item) => (
-              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem', color: '#a16207' }}>check</span>
-                <span className="text-primary font-medium">{item}</span>
+            {included.map(({ label, detail }) => (
+              <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
+                <span className="material-symbols-outlined shrink-0 mt-0.5" style={{ fontSize: '1.15rem', color: '#a16207' }}>check</span>
+                <span>
+                  <span className="text-primary font-medium">{label}</span>
+                  <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>
+                </span>
               </li>
             ))}
           </ul>

@@ -93,12 +93,12 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  'The full rebuild of the property',
-  'Demolition and debris removal',
-  'Professional and design fees',
-  'Building-regulation compliance',
-  'Outbuildings and boundaries',
-  'Inflation over the rebuild period',
+  { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up — foundations, walls, roof and floors — to today’s standards, not just patching up damage.' },
+  { label: 'Demolition and debris removal', detail: 'Safely clearing and disposing of what’s left after a total loss, which has to happen before any rebuilding can begin.' },
+  { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild — often 10–15% of the total cost.' },
+  { label: 'Building-regulation compliance', detail: 'Meeting current building regulations, which are usually stricter than when the property was first built.' },
+  { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also have to be rebuilt or replaced.' },
+  { label: 'Inflation over the rebuild period', detail: 'An allowance for building costs rising while the claim is settled and the work is carried out.' },
 ]
 
 const coverageAreas = [
@@ -249,11 +249,15 @@ export default function DesktopAssessmentUKPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">More than walls and a roof.</h2>
           </div>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map((item) => (
-              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem', color: '#1e40af' }}>check</span>
-                <span className="text-primary font-medium">{item}</span>
+            {included.map(({ label, detail }) => (
+              <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
+                <span className="material-symbols-outlined shrink-0 mt-0.5" style={{ fontSize: '1.15rem', color: '#1e40af' }}>check</span>
+                <span>
+                  <span className="text-primary font-medium">{label}</span>
+                  <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>
+                </span>
               </li>
             ))}
           </ul>

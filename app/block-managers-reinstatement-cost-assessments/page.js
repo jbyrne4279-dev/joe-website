@@ -165,8 +165,8 @@ export default function BlockManagersPage() {
           </div>
           <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/block-managers-london-flats.jpg"
-              alt="Period London mansion block of flats"
+              src="/managing-agents-office-block.jpg"
+              alt="Large modern apartment and commercial block"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"
               className="object-cover"

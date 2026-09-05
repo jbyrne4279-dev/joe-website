@@ -266,7 +266,7 @@ export default function CommercialReinstatementPage() {
               The right assessment for commercial property.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto">
+          <Link href="/on-site-reinstatement-cost-assessment-london" className="group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/commercial-reinstatement-cost-assessment.webp"
@@ -297,11 +297,11 @@ export default function CommercialReinstatementPage() {
                   </li>
                 ))}
               </ul>
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow block sm:inline-block">
-                Request a quote
-              </Link>
+              <span className="btn-shine text-white px-8 py-4 rounded-full font-semibold text-center sovereign-shadow block sm:inline-block group-hover:brightness-95 transition">
+                Learn more
+              </span>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 

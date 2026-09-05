@@ -74,7 +74,7 @@ export default function ArticlePage() {
               Block of flats undervalued by &pound;2 million.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              A managing agent instructed us to carry out a reinstatement cost assessment on a 24-unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.
+              A managing agent instructed us to carry out a reinstatement cost assessment on a 24‑unit residential block in the South East ahead of the annual renewal. What they found was significantly more serious than expected.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -114,14 +114,14 @@ export default function ArticlePage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Background</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Six years of index linking.</h2>
-            <p className="text-secondary leading-[1.75] text-[1.05rem]">The block, a purpose-built residential development comprising 24 flats across four storeys, had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index-linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from &pound;4.2 million in 2018 to &pound;4.9 million by 2024, an increase of approximately 17%.</p>
+            <p className="text-secondary leading-[1.75] text-[1.05rem]">The block, a purpose‑built residential development comprising 24 flats across four storeys, had last been professionally assessed in 2018. Since then, the managing agent had relied on the insurer&rsquo;s annual index‑linking adjustment to maintain the sum insured. On the face of it, this appeared prudent: the declared figure had risen from &pound;4.2 million in 2018 to &pound;4.9 million by 2024, an increase of approximately 17%.</p>
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What we found</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A &pound;2.1 million shortfall.</h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
-              <p>When we carried out a full RICS-regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value, taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification, came to &pound;7.0 million.</p>
-              <p>The shortfall was &pound;2.1 million, representing underinsurance of approximately 41%. The index-linking applied by the insurer had tracked general construction cost movements but had significantly underestimated the true cost inflation for this type of construction in this region between 2020 and 2024, a period marked by exceptional material price increases and a severe shortage of skilled trades.</p>
+              <p>When we carried out a full RICS‑regulated reinstatement cost assessment in early 2024, the picture was very different. The true reinstatement value, taking into account current BCIS labour and material indices, demolition and site clearance costs, professional fees, and the block&rsquo;s specific construction specification, came to &pound;7.0 million.</p>
+              <p>The shortfall was &pound;2.1 million, representing underinsurance of approximately 41%. The index‑linking applied by the insurer had tracked general construction cost movements but had significantly underestimated the true cost inflation for this type of construction in this region between 2020 and 2024, a period marked by exceptional material price increases and a severe shortage of skilled trades.</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function ArticlePage() {
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">The outcome</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Accepted by the insurer, same day.</h2>
-          <p className="text-secondary leading-[1.75] text-[1.05rem]">The managing agent presented our RICS-regulated report to their broker the same day it was received. The broker submitted it directly to the insurer, who accepted the new figure without challenge and updated the policy at renewal. The freeholder and leaseholders were now adequately protected. Had a major claim occurred before this assessment, the shortfall would have fallen entirely on the building&rsquo;s residents.</p>
+          <p className="text-secondary leading-[1.75] text-[1.05rem]">The managing agent presented our RICS‑regulated report to their broker the same day it was received. The broker submitted it directly to the insurer, who accepted the new figure without challenge and updated the policy at renewal. The freeholder and leaseholders were now adequately protected. Had a major claim occurred before this assessment, the shortfall would have fallen entirely on the building&rsquo;s residents.</p>
         </div>
       </section>
 
@@ -163,7 +163,7 @@ export default function ArticlePage() {
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">Is your block in the same position?</h2>
-          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 48 hours.</p>
+          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">RICS‑regulated, BCIS‑indexed, broker‑ready. Delivered in 48 hours.</p>
           <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block">Get your assessment</Link>
         </div>
       </section>

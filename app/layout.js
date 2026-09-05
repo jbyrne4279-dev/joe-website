@@ -29,7 +29,7 @@ export const metadata = {
     locale: 'en_GB',
     url: 'https://reinstatementcostassessment.org',
     siteName: 'RCA Ltd',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
+    title: 'Reinstatement Cost Assessment UK | RICS‑Regulated | RCA Ltd',
     description:
       '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
     images: [
@@ -43,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
+    title: 'Reinstatement Cost Assessment UK | RICS‑Regulated | RCA Ltd',
     description:
       '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],

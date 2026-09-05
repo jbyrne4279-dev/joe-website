@@ -94,8 +94,8 @@ export default function ArticlePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">The recommendation</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Every three years, as a minimum.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
-            <p>The <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">Royal Institution of Chartered Surveyors (RICS)</a> recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index-linked adjustments are acceptable as a bridging measure, but they are not a substitute for a professional assessment.</p>
-            <p>Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index. It does not account for site-specific factors, changes to the building, or localised cost inflation.</p>
+            <p>The <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/reinstatement-cost-assessment-of-buildings" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">Royal Institution of Chartered Surveyors (RICS)</a> recommends that a full professional reinstatement cost assessment is carried out at least once every three years. In between, annual index‑linked adjustments are acceptable as a bridging measure, but they are not a substitute for a professional assessment.</p>
+            <p>Many block managers assume that because their insurer applies annual indexation, they are covered. This is a dangerous misconception. Index linking adjusts the existing sum insured by a general construction cost index. It does not account for site‑specific factors, changes to the building, or localised cost inflation.</p>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function ArticlePage() {
           <div className="max-w-2xl mb-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">Why index linking isn&apos;t enough</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight mb-5">A general index can&apos;t see your building.</h2>
-            <p className="text-white/70 leading-relaxed">General construction indices like the BCIS All-in Tender Price Index track broad market movements. They cannot account for:</p>
+            <p className="text-white/70 leading-relaxed">General construction indices like the BCIS All‑in Tender Price Index track broad market movements. They cannot account for:</p>
           </div>
           <div className="space-y-4">
             {[
@@ -129,8 +129,8 @@ export default function ArticlePage() {
       <section className="scroll-reveal py-24 px-6 bg-zinc-50">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Early triggers</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Don&apos;t always wait for the three-year mark.</h2>
-          <p className="text-secondary leading-relaxed mb-8 text-[1.05rem]">Even within a three-year cycle, certain events should prompt an immediate reassessment:</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Don&apos;t always wait for the three‑year mark.</h2>
+          <p className="text-secondary leading-relaxed mb-8 text-[1.05rem]">Even within a three‑year cycle, certain events should prompt an immediate reassessment:</p>
           <ul className="border-y border-zinc-200 divide-y divide-zinc-200">
             {[
               'Major works or refurbishment to the block.',
@@ -164,7 +164,7 @@ export default function ArticlePage() {
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">Is your block overdue for reassessment?</h2>
-          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">We carry out RICS-regulated reinstatement cost assessments, delivered in 48 hours.</p>
+          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">We carry out RICS‑regulated reinstatement cost assessments, delivered in 48 hours.</p>
           <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block">Get your assessment</Link>
         </div>
       </section>

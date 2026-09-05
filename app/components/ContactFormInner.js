@@ -98,7 +98,7 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
                 <option>Residential</option>
                 <option>Industrial</option>
                 <option>Listed Building</option>
-                <option>Mixed-Use</option>
+                <option>Mixed‑Use</option>
                 <option>Other</option>
               </select>
               <span className="material-symbols-outlined text-[color:var(--accent)] absolute right-0 top-1.5 pointer-events-none" style={{ fontSize: '1rem' }}>expand_more</span>
@@ -130,8 +130,8 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
             >
               <option value="" disabled>Select a service</option>
               <option>Desktop Reinstatement Cost Assessment</option>
-              <option>3-Year Reinstatement Cost Assessment</option>
-              <option>On-Site Survey</option>
+              <option>3‑Year Reinstatement Cost Assessment</option>
+              <option>On‑Site Survey</option>
               <option>Portfolio Assessment</option>
               <option>Not Sure</option>
             </select>
@@ -158,7 +158,7 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
             className={`${buttonStyle ? '' : 'btn-shine '}w-full text-white px-6 py-4 rounded-full font-bold text-sm sm:text-base leading-snug active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer`}
             style={buttonStyle}
           >
-            Contact RICS-Regulated Surveyor
+            Contact RICS‑Regulated Surveyor
           </button>
         </div>
       </form>

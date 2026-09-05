@@ -4,12 +4,12 @@ import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: '3-Year Reinstatement Cost Assessment London | RICS Protection Plan',
+  title: '3‑Year Reinstatement Cost Assessment London | RICS Protection Plan',
   description:
     '3-Year RICS reinstatement cost assessment for London property: a full rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous RICS compliance with no repeat instruction.',
   alternates: { canonical: '/three-year-reinstatement-cost-assessment-london' },
   openGraph: {
-    title: '3-Year Reinstatement Cost Assessment London | RICS Protection Plan',
+    title: '3‑Year Reinstatement Cost Assessment London | RICS Protection Plan',
     description:
       'A full RICS reinstatement cost assessment for London property plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance, broker-ready.',
     url: '/three-year-reinstatement-cost-assessment-london',
@@ -31,24 +31,24 @@ const breadcrumbJsonLd = {
 
 const faqItems = [
   {
-    question: 'What is the 3-Year Reinstatement Cost Assessment plan?',
-    answer: 'The 3-Year plan combines a full RICS reinstatement cost assessment at inception with three years of BCIS-indexed annual rebuild cost updates. You get an accurate starting figure and automatic yearly updates that keep your sum insured aligned with construction cost inflation, without commissioning a new assessment each year.',
+    question: 'What is the 3‑Year Reinstatement Cost Assessment plan?',
+    answer: 'The 3‑Year plan combines a full RICS reinstatement cost assessment at inception with three years of BCIS‑indexed annual rebuild cost updates. You get an accurate starting figure and automatic yearly updates that keep your sum insured aligned with construction cost inflation, without commissioning a new assessment each year.',
   },
   {
-    question: 'Why choose a 3-Year plan over a single assessment?',
-    answer: 'RICS recommends a full assessment at least every three years, with index-linking in between. The 3-Year plan builds that entire cycle into one instruction: you stay continuously compliant, your figure is professionally maintained rather than left to a generic insurer index, and you avoid the risk of drifting into underinsurance between assessments.',
+    question: 'Why choose a 3‑Year plan over a single assessment?',
+    answer: 'RICS recommends a full assessment at least every three years, with index‑linking in between. The 3‑Year plan builds that entire cycle into one instruction: you stay continuously compliant, your figure is professionally maintained rather than left to a generic insurer index, and you avoid the risk of drifting into underinsurance between assessments.',
   },
   {
-    question: 'Who is the 3-Year plan best suited to?',
+    question: 'Who is the 3‑Year plan best suited to?',
     answer: 'It is ideal for London landlords, portfolio managers, managing agents, freeholders and property owners who need ongoing RICS reinstatement compliance across one or many buildings without repeat instructions each year.',
   },
   {
     question: 'What do the annual updates include?',
-    answer: 'Each annual update applies the latest BCIS construction cost indices to your rebuild figure, keeping the reinstatement cost assessment accurate as material and labour costs change. You receive a fresh update certificate each year that is broker-ready and accepted by UK insurers.',
+    answer: 'Each annual update applies the latest BCIS construction cost indices to your rebuild figure, keeping the reinstatement cost assessment accurate as material and labour costs change. You receive a fresh update certificate each year that is broker‑ready and accepted by UK insurers.',
   },
   {
     question: 'Is the plan accepted by insurers and brokers?',
-    answer: 'Yes. Both the inception report and each annual update are RICS-regulated, BCIS-indexed and broker-ready, accepted by all UK insurers as evidence of an accurate, maintained sum insured.',
+    answer: 'Yes. Both the inception report and each annual update are RICS‑regulated, BCIS‑indexed and broker‑ready, accepted by all UK insurers as evidence of an accurate, maintained sum insured.',
   },
 ]
 
@@ -79,24 +79,24 @@ const faqJsonLd = {
 }
 
 const timeline = [
-  { icon: 'inception', label: 'Inception', title: 'Full RICS assessment', desc: 'We establish an accurate, BCIS-indexed rebuild figure for your London property at the start of the plan.' },
+  { icon: 'inception', label: 'Inception', title: 'Full RICS assessment', desc: 'We establish an accurate, BCIS‑indexed rebuild figure for your London property at the start of the plan.' },
   { icon: 'annual-update', label: 'Year 1', title: 'Annual BCIS update', desc: 'Your figure is refreshed against the latest construction cost indices and reissued as a certificate.' },
-  { icon: 'continued-index', label: 'Year 2', title: 'Continued indexation', desc: 'Ongoing monitoring keeps your sum insured aligned with real-world London cost inflation.' },
-  { icon: 'maintained', label: 'Year 3', title: 'Maintained compliance', desc: 'A third indexed update completes the RICS-recommended cycle, ready for a fresh assessment.' },
+  { icon: 'continued-index', label: 'Year 2', title: 'Continued indexation', desc: 'Ongoing monitoring keeps your sum insured aligned with real‑world London cost inflation.' },
+  { icon: 'maintained', label: 'Year 3', title: 'Maintained compliance', desc: 'A third indexed update completes the RICS‑recommended cycle, ready for a fresh assessment.' },
 ]
 
 const whoNeedsIt = [
   { icon: 'real_estate_agent', title: 'Landlords & property owners', desc: 'Owners who want their rebuild figure professionally maintained, not left to a generic insurer index.' },
-  { icon: 'domain', title: 'Portfolio & managing agents', desc: 'Professionals managing many London buildings who need continuous compliance without annual re-instructions.' },
+  { icon: 'domain', title: 'Portfolio & managing agents', desc: 'Professionals managing many London buildings who need continuous compliance without annual re‑instructions.' },
   { icon: 'apartment', title: 'Freeholders & blocks', desc: 'Block freeholders protecting leaseholders from the drift into underinsurance between assessments.' },
-  { icon: 'event_repeat', title: 'Anyone on a renewal cycle', desc: 'Those who want to walk into every renewal with a current, defensible, RICS-regulated figure.' },
+  { icon: 'event_repeat', title: 'Anyone on a renewal cycle', desc: 'Those who want to walk into every renewal with a current, defensible, RICS‑regulated figure.' },
 ]
 
 const included = [
-  { label: 'Full RICS assessment at inception', detail: 'A complete, professional rebuild-cost assessment at the start, setting your accurate baseline figure.' },
-  { label: 'Three annual BCIS-indexed updates', detail: 'Each year we re-index your figure to current construction costs, so your cover never quietly drifts out of date.' },
-  { label: 'Broker-ready report and certificates', detail: 'Documents formatted so your broker or insurer can accept them straight away, with no back-and-forth.' },
-  { label: 'Continuous RICS-recommended compliance', detail: 'Keeps you on the three-year review cycle RICS recommends, without you having to keep track of it.' },
+  { label: 'Full RICS assessment at inception', detail: 'A complete, professional rebuild‑cost assessment at the start, setting your accurate baseline figure.' },
+  { label: 'Three annual BCIS‑indexed updates', detail: 'Each year we re‑index your figure to current construction costs, so your cover never quietly drifts out of date.' },
+  { label: 'Broker‑ready report and certificates', detail: 'Documents formatted so your broker or insurer can accept them straight away, with no back‑and‑forth.' },
+  { label: 'Continuous RICS‑recommended compliance', detail: 'Keeps you on the three‑year review cycle RICS recommends, without you having to keep track of it.' },
   { label: 'No repeat instruction each year', detail: 'One instruction covers three years, so there’s no need to commission and pay for a new assessment annually.' },
   { label: 'Accepted by all UK insurers', detail: 'Every report and yearly update is recognised right across the UK insurance market.' },
 ]
@@ -129,10 +129,10 @@ export default function ThreeYearAssessmentLondonPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207]">Ongoing RICS Compliance</p>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span style={{ color: '#a16207' }}>3-year</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
+              <span style={{ color: '#a16207' }}>3‑year</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
+              A full RICS rebuild cost assessment plus three years of BCIS‑indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=3year#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
@@ -151,17 +151,17 @@ export default function ThreeYearAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">One instruction, three years of cover.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
-              The 3-Year Protection Plan wraps the entire RICS-recommended assessment cycle into a single service.
-              We carry out a full reinstatement cost assessment at the outset, then deliver BCIS-indexed annual
+              The 3‑Year Protection Plan wraps the entire RICS‑recommended assessment cycle into a single service.
+              We carry out a full reinstatement cost assessment at the outset, then deliver BCIS‑indexed annual
               rebuild cost updates automatically for each of the next three years.
             </p>
             <p>
               Instead of relying on your insurer&rsquo;s generic index &mdash; or forgetting to review the figure
               at all &mdash; your London sum insured is professionally maintained throughout. You walk into every
-              renewal with a current, defensible, broker-ready figure.
+              renewal with a current, defensible, broker‑ready figure.
             </p>
             <p>
-              The plan is looked after by a RICS-regulated practice with over 50 years of experience between its
+              The plan is looked after by a RICS‑regulated practice with over 50 years of experience between its
               surveyors, working exclusively on reinstatement cost assessments. Because rebuild valuation is the
               only thing we do, each yearly update is handled with the same specialist care as the first
               assessment &mdash; and always by people who know your building.
@@ -177,7 +177,7 @@ export default function ThreeYearAssessmentLondonPage() {
         <div className="absolute inset-0" style={{ background: 'rgba(251,243,217,0.82)' }} aria-hidden="true" />
         <div className="relative z-10 max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">The three-year cycle</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">The three‑year cycle</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Accurate at inception, maintained every year.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
@@ -226,17 +226,17 @@ export default function ThreeYearAssessmentLondonPage() {
           <img src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index-linking alone isn&rsquo;t enough.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index‑linking alone isn&rsquo;t enough.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
               Many London owners assume that because their insurer applies an annual index, their cover keeps pace.
-              But a general index cannot see your building, and post-2020 construction inflation has run well ahead
-              of it. Applied to an already inaccurate base figure, index-linking simply compounds the error year
+              But a general index cannot see your building, and post‑2020 construction inflation has run well ahead
+              of it. Applied to an already inaccurate base figure, index‑linking simply compounds the error year
               after year.
             </p>
             <p>
-              The 3-Year plan fixes this. You start from a professionally assessed figure, and each year that figure
-              is re-indexed against the latest BCIS data &mdash; keeping you continuously compliant and protecting
+              The 3‑Year plan fixes this. You start from a professionally assessed figure, and each year that figure
+              is re‑indexed against the latest BCIS data &mdash; keeping you continuously compliant and protecting
               you from the slow drift into underinsurance that catches so many blocks and portfolios at claim time.
             </p>
           </div>
@@ -251,7 +251,7 @@ export default function ThreeYearAssessmentLondonPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Everything, for three years.</h2>
           </div>
-          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map(({ label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
@@ -293,7 +293,7 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Prefer a one-off?</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Prefer a one‑off?</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -305,8 +305,8 @@ export default function ThreeYearAssessmentLondonPage() {
             </Link>
             <Link href="/on-site-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>
               <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>location_on</span>
-              <h3 className="text-lg font-semibold text-white mb-2">On-Site RICS Survey</h3>
-              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high-value London buildings where full detail matters.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">On‑Site RICS Survey</h3>
+              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high‑value London buildings where full detail matters.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>

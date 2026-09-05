@@ -32,11 +32,11 @@ const breadcrumbJsonLd = {
 const faqItems = [
   {
     question: 'What is a desktop reinstatement cost assessment?',
-    answer: 'A desktop reinstatement cost assessment is a RICS-regulated calculation of what it would cost to rebuild your property, produced remotely without a site visit. Our surveyors use property records, floor area data and live BCIS construction cost indices to establish an accurate rebuild figure for your buildings insurance sum insured.',
+    answer: 'A desktop reinstatement cost assessment is a RICS‑regulated calculation of what it would cost to rebuild your property, produced remotely without a site visit. Our surveyors use property records, floor area data and live BCIS construction cost indices to establish an accurate rebuild figure for your buildings insurance sum insured.',
   },
   {
     question: 'Is a desktop assessment accurate enough for my property?',
-    answer: 'For standard-construction houses, flats, buy-to-let units, HMOs, retail units and warehouses anywhere in the UK, a desktop assessment is accurate, cost-effective and accepted by insurers. Listed buildings, non-standard construction and complex or high-value properties are better suited to an on-site survey where full detail can be captured.',
+    answer: 'For standard‑construction houses, flats, buy‑to‑let units, HMOs, retail units and warehouses anywhere in the UK, a desktop assessment is accurate, cost‑effective and accepted by insurers. Listed buildings, non‑standard construction and complex or high‑value properties are better suited to an on‑site survey where full detail can be captured.',
   },
   {
     question: 'How quickly can you deliver a desktop assessment?',
@@ -44,7 +44,7 @@ const faqItems = [
   },
   {
     question: 'Will my insurer accept a desktop RICS assessment?',
-    answer: 'Yes. Every desktop assessment is RICS-regulated and BCIS-indexed, and prepared to be broker-ready and accepted by all UK insurers as evidence of an accurate sum insured.',
+    answer: 'Yes. Every desktop assessment is RICS‑regulated and BCIS‑indexed, and prepared to be broker‑ready and accepted by all UK insurers as evidence of an accurate sum insured.',
   },
   {
     question: 'Where in the UK do you cover?',
@@ -82,12 +82,12 @@ const steps = [
   { icon: 'instruct', title: 'You instruct us', desc: 'Send the property address and a few basic details. No appointment or access to the building is needed.' },
   { icon: 'gather-data', title: 'We gather the data', desc: 'We pull property records, floor areas and construction details, then apply live BCIS cost indices for the property’s location.' },
   { icon: 'calculate', title: 'We calculate the rebuild', desc: 'A RICS surveyor produces a full rebuild figure covering demolition, professional fees and regulations.' },
-  { icon: 'report', title: 'You receive the report', desc: 'A broker-ready, RICS-regulated report lands in your inbox within 48 hours, ready for your insurer.' },
+  { icon: 'report', title: 'You receive the report', desc: 'A broker‑ready, RICS‑regulated report lands in your inbox within 48 hours, ready for your insurer.' },
 ]
 
 const whoNeedsIt = [
   { icon: 'home', title: 'Homeowners & landlords', desc: 'Standard houses and flats where a fast, accurate rebuild figure protects against underinsurance.' },
-  { icon: 'apartment', title: 'Buy-to-let & HMOs', desc: 'Portfolio landlords who need compliant sums insured across multiple standard units nationwide.' },
+  { icon: 'apartment', title: 'Buy‑to‑let & HMOs', desc: 'Portfolio landlords who need compliant sums insured across multiple standard units nationwide.' },
   { icon: 'storefront', title: 'Retail & warehouse units', desc: 'Straightforward commercial premises of standard construction with no listed status.' },
   { icon: 'gavel', title: 'Brokers & managing agents', desc: 'Professionals needing a quick, defensible figure to place or renew cover with confidence.' },
 ]
@@ -96,7 +96,7 @@ const included = [
   { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up — foundations, walls, roof and floors — to today’s standards, not just patching up damage.' },
   { label: 'Demolition and debris removal', detail: 'Safely clearing and disposing of what’s left after a total loss, which has to happen before any rebuilding can begin.' },
   { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild — often 10–15% of the total cost.' },
-  { label: 'Building-regulation compliance', detail: 'Meeting current building regulations, which are usually stricter than when the property was first built.' },
+  { label: 'Building‑regulation compliance', detail: 'Meeting current building regulations, which are usually stricter than when the property was first built.' },
   { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also have to be rebuilt or replaced.' },
   { label: 'Inflation over the rebuild period', detail: 'An allowance for building costs rising while the claim is settled and the work is carried out.' },
 ]
@@ -130,7 +130,7 @@ export default function DesktopAssessmentUKPage() {
               <span style={{ color: '#1e40af' }}>Desktop</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              An accurate, RICS-regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.
+              An accurate, RICS‑regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS‑indexed and delivered within 48 hours. No site visit required.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=desktop#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
@@ -155,12 +155,12 @@ export default function DesktopAssessmentUKPage() {
               defensible figure for the property&rsquo;s location.
             </p>
             <p>
-              For the majority of standard-construction homes and commercial units, this is the fastest and most
-              cost-effective route to a RICS-regulated sum insured. Every figure is prepared to the same
+              For the majority of standard‑construction homes and commercial units, this is the fastest and most
+              cost‑effective route to a RICS‑regulated sum insured. Every figure is prepared to the same
               professional standard as a full survey and is accepted by UK insurers without challenge.
             </p>
             <p>
-              Behind every desktop figure is a team of RICS-regulated chartered surveyors with more than 50 years
+              Behind every desktop figure is a team of RICS‑regulated chartered surveyors with more than 50 years
               of combined experience, focused solely on reinstatement cost assessments. That single specialism
               &mdash; rather than valuation as a sideline to general surveying &mdash; is why our remote figures
               stand up to an insurer&rsquo;s scrutiny just as well as a site visit would.
@@ -175,7 +175,7 @@ export default function DesktopAssessmentUKPage() {
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">How it works</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Four steps, forty-eight hours.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Four steps, forty‑eight hours.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
@@ -249,7 +249,7 @@ export default function DesktopAssessmentUKPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">More than walls and a roof.</h2>
           </div>
-          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map(({ label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
@@ -269,7 +269,7 @@ export default function DesktopAssessmentUKPage() {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
           <img src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK-wide coverage</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             Because a desktop assessment needs no physical visit, we cover the whole of the UK with the same
@@ -298,14 +298,14 @@ export default function DesktopAssessmentUKPage() {
           <div className="grid sm:grid-cols-2 gap-6">
             <Link href="/on-site-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>
               <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>location_on</span>
-              <h3 className="text-lg font-semibold text-white mb-2">On-Site RICS Survey</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high-value London buildings where full detail matters.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">On‑Site RICS Survey</h3>
+              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high‑value London buildings where full detail matters.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
             <Link href="/three-year-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
               <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-              <h3 className="text-lg font-semibold text-white mb-2">3-Year Protection Plan</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS-indexed annual updates.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
+              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>

@@ -43,15 +43,15 @@ const faqItems = [
   },
   {
     question: 'How often should a commercial reinstatement cost assessment be reviewed?',
-    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years, with index-linking applied in the years in between. Commercial rebuild costs have moved sharply with material and labour inflation, so relying on index-linking alone for longer can leave a significant underinsurance gap.',
+    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years, with index‑linking applied in the years in between. Commercial rebuild costs have moved sharply with material and labour inflation, so relying on index‑linking alone for longer can leave a significant underinsurance gap.',
   },
   {
     question: 'What types of commercial property do you assess?',
-    answer: 'We assess offices, warehouses and industrial units, retail premises, and mixed-use buildings across the UK. Each assessment accounts for the specialist fit-out, mechanical and electrical installations, and external works relevant to that type of building.',
+    answer: 'We assess offices, warehouses and industrial units, retail premises, and mixed‑use buildings across the UK. Each assessment accounts for the specialist fit‑out, mechanical and electrical installations, and external works relevant to that type of building.',
   },
   {
     question: 'Will my insurer and broker accept the report?',
-    answer: 'Yes. Every assessment is RICS-regulated and BCIS-indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured.',
+    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be broker‑ready and accepted by UK insurers as evidence of an accurate sum insured.',
   },
 ]
 
@@ -68,39 +68,39 @@ const faqJsonLd = {
 const challenges = [
   {
     img: '/rca-index-linking-drift.webp',
-    title: 'Costs outrun index-linking',
-    desc: 'Material and labour inflation has pushed commercial rebuild costs well beyond what standard index-linking captures, widening the gap each year. A periodic reassessment brings the sum insured back in line.',
+    title: 'Costs outrun index‑linking',
+    desc: 'Material and labour inflation has pushed commercial rebuild costs well beyond what standard index‑linking captures, widening the gap each year. A periodic reassessment brings the sum insured back in line.',
   },
   {
     img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss the detail',
-    desc: 'Generic calculators overlook mechanical and electrical services, specialist fit-out, and external works. A professional valuation captures these directly, so the figure reflects the whole building.',
+    desc: 'Generic calculators overlook mechanical and electrical services, specialist fit‑out, and external works. A professional valuation captures these directly, so the figure reflects the whole building.',
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'Insurers expect RICS figures',
-    desc: 'More insurers and lenders now expect a verifiable, RICS-regulated figure before agreeing terms. A dated estimate or calculator output rarely satisfies commercial underwriting.',
+    desc: 'More insurers and lenders now expect a verifiable, RICS‑regulated figure before agreeing terms. A dated estimate or calculator output rarely satisfies commercial underwriting.',
   },
 ]
 
 const help = [
-  { icon: 'engineering', title: 'Specialist commercial surveyors', desc: 'Experienced across offices, industrial, retail, and mixed-use.' },
-  { icon: 'architecture', title: 'Every cost captured', desc: 'Fit-out, services, and external works, not just the shell.' },
-  { icon: 'bolt', title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
+  { icon: 'engineering', title: 'Specialist commercial surveyors', desc: 'Experienced across offices, industrial, retail, and mixed‑use.' },
+  { icon: 'architecture', title: 'Every cost captured', desc: 'Fit‑out, services, and external works, not just the shell.' },
+  { icon: 'bolt', title: 'Broker‑ready in 48 hours', desc: 'RICS‑regulated and BCIS‑indexed, accepted by UK insurers.' },
 ]
 
 const included = [
   { label: 'Full structural rebuild', detail: 'Reconstructing the entire building shell and structure from the ground up to current standards.' },
   { label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing — often a large share of a commercial building’s cost.' },
-  { label: 'Specialist fit-out', detail: 'Trade-specific interiors and fixed equipment that form part of the building itself.' },
-  { label: 'External works and site costs', detail: 'Car parks, hard-standing, drainage, boundary walls and landscaping around the building.' },
+  { label: 'Specialist fit‑out', detail: 'Trade‑specific interiors and fixed equipment that form part of the building itself.' },
+  { label: 'External works and site costs', detail: 'Car parks, hard‑standing, drainage, boundary walls and landscaping around the building.' },
   { label: 'Debris removal and professional fees', detail: 'Clearing the site after a loss, plus the architects, engineers and surveyors to design the rebuild.' },
   { label: 'Inflation over the rebuild period', detail: 'An allowance for construction costs rising while the claim is settled and the work is completed.' },
 ]
 
 const reasons = [
-  { icon: 'architecture', text: 'Captures fit-out, services, and specialist construction accurately.' },
-  { icon: 'domain', text: 'The right fit for high-value, complex, or non-standard premises.' },
+  { icon: 'architecture', text: 'Captures fit‑out, services, and specialist construction accurately.' },
+  { icon: 'domain', text: 'The right fit for high‑value, complex, or non‑standard premises.' },
   { icon: 'gavel', text: 'Produces the most defensible figure if a claim is ever questioned.' },
 ]
 
@@ -134,7 +134,7 @@ export default function CommercialReinstatementPage() {
               <span className="text-[#1A6B4A]">Commercial</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessments.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Accurate rebuild costs for offices, warehouses, retail, and mixed-use buildings. RICS-regulated assessments your broker will accept, BCIS-indexed and delivered within 48 hours.
+              Accurate rebuild costs for offices, warehouses, retail, and mixed‑use buildings. RICS‑regulated assessments your broker will accept, BCIS‑indexed and delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -248,7 +248,7 @@ export default function CommercialReinstatementPage() {
               More than walls and a roof.
             </h2>
           </div>
-          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map(({ label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
@@ -286,14 +286,14 @@ export default function CommercialReinstatementPage() {
             </div>
             <div className="p-8 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-                Best fit &middot; On-site survey
+                Best fit &middot; On‑site survey
               </p>
               <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-                On-site RICS reinstatement cost assessment
+                On‑site RICS reinstatement cost assessment
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
-                For commercial buildings, an on-site survey is the most reliable choice. A RICS-regulated
-                surveyor inspects the property in person and captures the fit-out, services, and specialist
+                For commercial buildings, an on‑site survey is the most reliable choice. A RICS‑regulated
+                surveyor inspects the property in person and captures the fit‑out, services, and specialist
                 construction a desktop assessment can miss, so the rebuild figure holds up under insurer or
                 legal scrutiny.
               </p>

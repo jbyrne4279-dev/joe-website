@@ -22,13 +22,13 @@ export const metadata = {
 
 const homeFaqItems = [
   { question: 'How much does a typical reinstatement cost assessment cost?', answer: 'Pricing depends on property type and size. Please get in touch for a bespoke quote.' },
-  { question: 'Is RCA Ltd regulated by RICS?', answer: 'Yes. Reinstatement Cost Assessment Ltd is a RICS Regulated Firm. Every assessment is conducted by or under the supervision of a RICS-registered member, ensuring full regulatory compliance and professional accountability.' },
-  { question: 'What areas of the UK do you cover?', answer: 'We provide Reinstatement Cost Assessments across the whole of the United Kingdom. Desktop assessments are available nationally. On-site surveys are available throughout England, Scotland, Wales, and Northern Ireland.' },
+  { question: 'Is RCA Ltd regulated by RICS?', answer: 'Yes. Reinstatement Cost Assessment Ltd is a RICS Regulated Firm. Every assessment is conducted by or under the supervision of a RICS‑registered member, ensuring full regulatory compliance and professional accountability.' },
+  { question: 'What areas of the UK do you cover?', answer: 'We provide Reinstatement Cost Assessments across the whole of the United Kingdom. Desktop assessments are available nationally. On‑site surveys are available throughout England, Scotland, Wales, and Northern Ireland.' },
   { question: 'What information do you need to get started?', answer: 'We need the property address, approximate floor area, construction type, and your contact details. Once received, we confirm your instruction and get started within one business day.' },
   { question: 'Are VAT costs included in the assessment?', answer: "Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type." },
   { question: 'Do you assess listed buildings?', answer: 'Absolutely. Listed buildings require specialist reinstatement cost assessment knowledge. Authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.' },
-  { question: 'How long does a site visit take?', answer: 'A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.' },
-  { question: 'Can you provide reinstatement cost assessments for a multi-asset portfolio?', answer: 'Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.' },
+  { question: 'How long does a site visit take?', answer: 'A typical 10,000 sq ft office takes 90 minutes to 2 hours on‑site to ensure every structural detail is accurately captured.' },
+  { question: 'Can you provide reinstatement cost assessments for a multi‑asset portfolio?', answer: 'Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.' },
   { question: 'Do reinstatement cost assessments cover outbuildings and fences?', answer: 'Yes. Our assessments include curtilage assets such as external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.' },
   { question: 'Can I instruct you directly or do I go through a broker?', answer: 'You can instruct us directly. Many clients come to us independently before placing or renewing their insurance. We also work alongside brokers and insurers where required.' },
 ]
@@ -165,7 +165,7 @@ export default function HomePage() {
               <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
-              Is yours one of them? Certified Reinstatement Cost Assessments by RICS-regulated surveyors, broker-ready and delivered in 48 hours.
+              Is yours one of them? Certified Reinstatement Cost Assessments by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -197,7 +197,7 @@ export default function HomePage() {
             {[
               { icon: 'monitor', name: 'Desktop Assessment', tag: 'Fast & Efficient', fill: false, desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', gradient: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)', href: '/desktop-reinstatement-cost-assessment-uk' },
               { icon: 'verified', fill: true, name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', gradient: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)', href: '/three-year-reinstatement-cost-assessment-london' },
-              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high-value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)', href: '/on-site-reinstatement-cost-assessment-london' },
+              { icon: 'location_on', fill: false, name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)', href: '/on-site-reinstatement-cost-assessment-london' },
             ].map(({ icon, fill, name, tag, desc, accent, tintRgb, gradient, href }, i) => (
               <Link
                 key={name}
@@ -231,7 +231,7 @@ export default function HomePage() {
           <div className="text-center mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified</span>Our Services</span>
             <h2 className="text-4xl font-bold text-primary">Choose your <span className="text-shine">Assessment.</span></h2>
-            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Every assessment is carried out by a RICS-regulated surveyor. Contact us for a tailored quote.</p>
+            <p className="text-secondary max-w-xl mx-auto leading-relaxed">Every assessment is carried out by a RICS‑regulated surveyor. Contact us for a tailored quote.</p>
           </div>
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
@@ -243,20 +243,20 @@ export default function HomePage() {
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Efficient, data-driven remote valuation for standard properties.</p>
+                  <p className="text-secondary text-sm">Efficient, data‑driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-blue shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>bolt</span>
                     </div>
-                    <span className="text-secondary text-sm font-medium">RICS-regulated assessment, <span className="whitespace-nowrap">48-hour turnaround</span></span>
+                    <span className="text-secondary text-sm font-medium">RICS‑regulated assessment, <span className="whitespace-nowrap">48‑hour turnaround</span></span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-blue shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>cloud</span>
                     </div>
-                    <span className="text-secondary text-sm font-medium">BCIS-indexed rebuild cost modelling</span>
+                    <span className="text-secondary text-sm font-medium">BCIS‑indexed rebuild cost modelling</span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center bg-zinc-300">
@@ -274,8 +274,8 @@ export default function HomePage() {
                   <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On-Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full physical survey for listed, complex or high-value buildings.</p>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
+                  <p className="text-secondary text-sm">Full physical survey for listed, complex or high‑value buildings.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -297,7 +297,7 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
-                <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On-Site</Link>
+                <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On‑Site</Link>
               </div>
 
               {/* 3-Year Protection */}
@@ -309,27 +309,27 @@ export default function HomePage() {
                   <div className="btn-shine-gold w-14 h-14 flex items-center justify-center rounded-full mb-6">
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3-Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS-compliant annual updates.</p>
+                  <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
+                  <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>update</span>
                     </div>
-                    <span className="text-secondary text-sm font-medium">Annual BCIS-indexed reinstatement updates</span>
+                    <span className="text-secondary text-sm font-medium">Annual BCIS‑indexed reinstatement updates</span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>security</span>
                     </div>
-                    <span className="text-secondary text-sm font-medium">3-year RICS reinstatement compliance</span>
+                    <span className="text-secondary text-sm font-medium">3‑year RICS reinstatement compliance</span>
                   </li>
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>analytics</span>
                     </div>
-                    <span className="text-secondary text-sm font-medium">Broker-ready report every renewal</span>
+                    <span className="text-secondary text-sm font-medium">Broker‑ready report every renewal</span>
                   </li>
                 </ul>
                 <Link href="/contact?service=3year#contact-form" className="btn-shine-gold w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
@@ -346,13 +346,13 @@ export default function HomePage() {
         <div className="text-center mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
-          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS-regulated standard.</p>
+          <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS‑regulated standard.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {[
             { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
             { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
-            { icon: 'description', title: 'Broker-Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { icon: 'description', title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
             { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
             { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
@@ -384,7 +384,7 @@ export default function HomePage() {
           <div className="liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl border border-white/15 p-10 md:p-14 sovereign-shadow">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">An independent, RICS-regulated practice with a single specialism &mdash; telling property owners exactly what it costs to rebuild. Accurate, defensible, broker-ready figures, delivered with the responsiveness of a specialist firm.</p>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">An independent, RICS‑regulated practice with a single specialism &mdash; telling property owners exactly what it costs to rebuild. Accurate, defensible, broker‑ready figures, delivered with the responsiveness of a specialist firm.</p>
             <div className="flex flex-wrap justify-center gap-2.5 pt-2">
               {['RICS-Regulated', 'Focused Practice', 'UK-Wide Coverage'].map((chip) => (
                 <span key={chip} className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/90">
@@ -425,7 +425,7 @@ export default function HomePage() {
               What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
             </h2>
             <p className="text-lg text-secondary leading-relaxed">
-              A detailed, RICS-regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
+              A detailed, RICS‑regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
             </p>
           </div>
 
@@ -444,7 +444,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
-                <p className="text-white font-semibold text-sm">RICS-regulated surveyors</p>
+                <p className="text-white font-semibold text-sm">RICS‑regulated surveyors</p>
               </div>
             </div>
             </div>
@@ -455,8 +455,8 @@ export default function HomePage() {
               <div className="space-y-5">
                 {[
                   { step: '1', title: 'Fully comprehensive.', desc: <>Our reinstatement cost assessments calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete rebuild cost figure you can rely on.</> },
-                  { step: '2', title: 'RICS-certified accuracy.', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
-                  { step: '3', title: 'Accepted by all UK insurers.', desc: 'Our broker-ready reports are submitted directly to insurers and accepted without challenge. No back-and-forth, no delays - just a compliant, insurer-approved valuation.' },
+                  { step: '2', title: 'RICS‑certified accuracy.', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
+                  { step: '3', title: 'Accepted by all UK insurers.', desc: 'Our broker‑ready reports are submitted directly to insurers and accepted without challenge. No back‑and‑forth, no delays - just a compliant, insurer‑approved valuation.' },
                   { step: '4', title: 'Backed by professional indemnity.', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
                 ].map(({ step, title, desc }, i) => (
                   <div key={step} className="flex items-center gap-0">
@@ -485,10 +485,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
-              { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS-registered member. Full regulatory compliance, every time.' },
+              { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS‑registered member. Full regulatory compliance, every time.' },
               { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
-              { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed-use portfolios, commercial assets, and high-value listed buildings.' },
-              { icon: 'description', title: 'Broker-Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
+              { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed‑use portfolios, commercial assets, and high‑value listed buildings.' },
+              { icon: 'description', title: 'Broker‑Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="hover-grow bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
                 <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
@@ -508,8 +508,8 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row gap-0 md:gap-0 items-stretch">
               {[
                 { n: '1', label: 'Instruction & Data Gathering', desc: 'We collect property details, floor areas, construction type, and any specialist features.' },
-                { n: '2', label: 'BCIS-Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices the same data used by major insurers.' },
-                { n: '3', label: 'RICS-Reviewed Report', desc: 'A RICS-registered surveyor signs off every report before it is delivered to you.' },
+                { n: '2', label: 'BCIS‑Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices the same data used by major insurers.' },
+                { n: '3', label: 'RICS‑Reviewed Report', desc: 'A RICS‑registered surveyor signs off every report before it is delivered to you.' },
               ].map(({ n, label, desc }, i, arr) => (
                 <div key={n} className="flex flex-col md:flex-row items-stretch flex-1">
                   <div className="flex-1 p-5 text-center">
@@ -582,7 +582,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">One accurate reinstatement cost assessment fixes this.</h4>
-                  <p className="text-sm text-secondary leading-relaxed">A <span className="font-semibold text-primary">RICS-certified Reinstatement Cost Assessment</span> gives you a compliant, insurer-accepted figure. <Link href="/services" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28] transition-colors">See our services &rarr;</Link></p>
+                  <p className="text-sm text-secondary leading-relaxed">A <span className="font-semibold text-primary">RICS‑certified Reinstatement Cost Assessment</span> gives you a compliant, insurer‑accepted figure. <Link href="/services" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28] transition-colors">See our services &rarr;</Link></p>
                 </div>
               </div>
             </div>
@@ -597,7 +597,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2 mb-4"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>groups</span>Who We Serve</span>
             <h2 className="text-4xl font-extrabold tracking-tight mb-4 text-white">Reinstatement Cost Assessments for every property type.</h2>
-            <p className="text-white/60 leading-relaxed max-w-2xl mx-auto">From London homes to national commercial portfolios - RICS-regulated reinstatement cost assessments delivered across the UK.</p>
+            <p className="text-white/60 leading-relaxed max-w-2xl mx-auto">From London homes to national commercial portfolios - RICS‑regulated reinstatement cost assessments delivered across the UK.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -613,14 +613,14 @@ export default function HomePage() {
                 alt: 'Commercial landlord reinstatement cost assessment - office and retail property UK rebuild valuation',
                 title: 'Commercial Landlords',
                 label: 'Commercial Assessment',
-                desc: 'RICS-certified reinstatement cost assessments for offices, retail units, and mixed-use properties across London and the UK. Protect against underinsurance and satisfy lender and insurer compliance requirements.',
+                desc: 'RICS‑certified reinstatement cost assessments for offices, retail units, and mixed‑use properties across London and the UK. Protect against underinsurance and satisfy lender and insurer compliance requirements.',
               },
               {
                 src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU',
                 alt: 'Asset manager portfolio reinstatement cost assessment - multi-site UK property rebuild valuation',
                 title: 'Asset Managers',
                 label: 'Portfolio Assessment',
-                desc: 'Consolidated reinstatement cost assessments for multi-site portfolios. Broker-ready reports with individual asset schedules, annual BCIS indexation, and full audit trail - built for institutional compliance.',
+                desc: 'Consolidated reinstatement cost assessments for multi‑site portfolios. Broker‑ready reports with individual asset schedules, annual BCIS indexation, and full audit trail - built for institutional compliance.',
               },
             ].map(({ src, alt, title, label, desc }) => (
               <div
@@ -644,7 +644,7 @@ export default function HomePage() {
       <ContactSection
         heading={
           <>
-            Get Your RICS-Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
+            Get Your RICS‑Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
           </>
         }
       />

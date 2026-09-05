@@ -25,7 +25,7 @@ export default function Footer() {
               <p className="text-emerald-500 text-xs font-semibold tracking-wide">RICS Regulated Firm · Est. UK</p>
             </div>
             <p className="text-sm leading-relaxed text-zinc-400 max-w-xs">
-              The benchmark for building reinstatement valuations across the UK insurance market. Every assessment RICS-regulated, every report broker-ready.
+              The benchmark for building reinstatement valuations across the UK insurance market. Every assessment RICS‑regulated, every report broker‑ready.
             </p>
             <div className="pt-1 space-y-1">
               <p className="text-xs text-zinc-500">Reinstatement Cost Assessment Limited</p>
@@ -49,8 +49,8 @@ export default function Footer() {
             <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Services</h5>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/desktop-reinstatement-cost-assessment-uk">Desktop Assessment</Link></li>
-              <li><Link className="hover:text-emerald-400 transition-colors" href="/on-site-reinstatement-cost-assessment-london">On-Site Survey</Link></li>
-              <li><Link className="hover:text-emerald-400 transition-colors" href="/three-year-reinstatement-cost-assessment-london">3-Year Protection Plan</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/on-site-reinstatement-cost-assessment-london">On‑Site Survey</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/three-year-reinstatement-cost-assessment-london">3‑Year Protection Plan</Link></li>
             </ul>
           </div>
 

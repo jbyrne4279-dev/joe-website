@@ -20,7 +20,7 @@ export const metadata = {
 const resourcesFaqItems = [
   { question: 'What is a rebuild cost assessment?', answer: 'A rebuild cost assessment calculates the total cost to rebuild your property from scratch after a total loss. This includes demolition, professional fees, materials, and compliance with current regulations.' },
   { question: 'Who needs a rebuild cost assessment in the UK?', answer: 'Property owners, landlords, commercial asset managers, and leaseholders responsible for insurance all need a reinstatement cost assessment to ensure their buildings are insured for the correct rebuild value.' },
-  { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate reinstatement cost assessment, you risk under-insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
+  { question: 'Why is a rebuild cost assessment important?', answer: 'Without an accurate reinstatement cost assessment, you risk under‑insurance. This can lead to reduced claim payouts under the Average Clause, leaving you to cover significant rebuild costs yourself.' },
   { question: 'How is reinstatement cost different from market value?', answer: 'Market value reflects what a property sells for. Reinstatement cost reflects the cost to rebuild it, often significantly higher due to construction costs, fees, and compliance requirements.' },
   { question: 'Do I need a reinstatement cost assessment for insurance purposes?', answer: 'Yes. Insurers rely on accurate rebuild values. Without a reinstatement cost assessment, you are estimating, which increases the risk of being under or over insured.' },
   { question: 'How is a reinstatement cost calculated?', answer: 'It is calculated based on building size, materials, specification, location, demolition costs, professional fees, and current construction rates, not purchase price.' },
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary mb-1">Underinsured in urban areas</p>
-                  <p className="text-secondary text-sm leading-relaxed">A city-centre flat worth £350k could cost £510k to rebuild, leaving a six-figure shortfall precisely when you need it most.</p>
+                  <p className="text-secondary text-sm leading-relaxed">A city‑centre flat worth £350k could cost £510k to rebuild, leaving a six‑figure shortfall precisely when you need it most.</p>
                 </div>
               </div>
 
@@ -277,7 +277,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-xs md:max-w-4xl mx-auto">
             {[
               { icon: 'gavel', title: 'Regulated', desc: 'Strict adherence to Royal Institution of Chartered Surveyors standards.' },
-              { icon: 'analytics', title: 'Data-Driven', desc: 'Access to live BCIS construction indices for accurate, up-to-date figures.' },
+              { icon: 'analytics', title: 'Data‑Driven', desc: 'Access to live BCIS construction indices for accurate, up‑to‑date figures.' },
               { icon: 'verified', title: 'Defensible', desc: 'A certified reinstatement cost assessment report provides leverage during claim disputes.' },
             ].map(({ icon, title, desc }, i) => (
               <div key={icon} className="service-pulse-card bg-white rounded-2xl p-8 flex flex-col items-center gap-4 shadow-sm transition-all duration-300"
@@ -315,8 +315,8 @@ export default function ResourcesPage() {
                 {[
                   { icon: 'flag',        label: 'Step 1', title: 'Baseline Assessment',  desc: 'A full site or desktop reinstatement cost assessment establishes your accurate rebuild figure.' },
                   { icon: 'update',      label: 'Year 1', title: 'Annual Index Update',  desc: 'Your valuation is adjusted in line with current BCIS construction cost indices.' },
-                  { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real-world inflation.' },
-                  { icon: 'restart_alt', label: 'Year 3', title: 'Major Re-evaluation',  desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.' },
+                  { icon: 'trending_up', label: 'Year 2', title: 'Continued Indexation', desc: 'Ongoing monitoring ensures your sum insured reflects real‑world inflation.' },
+                  { icon: 'restart_alt', label: 'Year 3', title: 'Major Re‑evaluation',  desc: 'A full reassessment every 3 years is recommended to maintain full RICS compliance.' },
                 ].map(({ icon, label, title, desc }, i) => (
                   <div key={i} className="flex items-center gap-0 pb-5 last:pb-0">
                     <div className={`lifecycle-icon-${i+1} w-10 h-10 rounded-full bg-white shrink-0 flex items-center justify-center shadow-lg z-10`}>
@@ -363,7 +363,7 @@ export default function ResourcesPage() {
               {
                 tag: 'Case Study',
                 title: 'Block of Flats Undervalued by £2 Million.',
-                desc: 'A 24-unit block index-linked annually was found to be underinsured by £2.1 million. See how a professional reinstatement cost assessment uncovered the gap.',
+                desc: 'A 24‑unit block index‑linked annually was found to be underinsured by £2.1 million. See how a professional reinstatement cost assessment uncovered the gap.',
                 href: '/resources/case-study-block-of-flats-undervalued',
                 img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },

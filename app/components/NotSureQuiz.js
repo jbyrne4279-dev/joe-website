@@ -55,10 +55,11 @@ export default function NotSureQuiz() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-flex items-center gap-2 cursor-pointer"
+          className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-bold text-base ring-2 ring-[#d4af37] hover:ring-4 hover:-translate-y-0.5 active:scale-[0.97] transition-all shadow-[0_10px_30px_rgba(0,0,0,0.25)] inline-flex items-center gap-2 cursor-pointer"
         >
-          <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>quiz</span>
-          Take the 30-second quiz
+          <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.3rem' }}>quiz</span>
+          Take the 30‑second quiz
+          <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.2rem' }}>arrow_forward</span>
         </button>
       </div>
 
@@ -140,7 +141,7 @@ export default function NotSureQuiz() {
                   <div className="mb-5 rounded-2xl bg-[#1A6B4A]/8 border border-[#1A6B4A]/20 p-4">
                     <p className="text-xs font-semibold uppercase tracking-widest text-[#1A6B4A] mb-1">Our suggestion</p>
                     <p className="text-primary font-bold">{rec}</p>
-                    <p className="text-secondary text-xs mt-1">Leave your details and a RICS-regulated surveyor will confirm the right fit and quote.</p>
+                    <p className="text-secondary text-xs mt-1">Leave your details and a RICS‑regulated surveyor will confirm the right fit and quote.</p>
                   </div>
                 )}
                 <div className="space-y-4">

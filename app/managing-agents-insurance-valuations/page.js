@@ -31,31 +31,31 @@ const breadcrumbJsonLd = {
 const faqItems = [
   {
     question: 'What is a building reinstatement valuation?',
-    answer: 'A building reinstatement valuation is a professional, RICS-regulated calculation of the full cost of rebuilding a property from scratch — the figure the buildings insurance sum insured should be based on. A building reinstatement valuation covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
+    answer: 'A building reinstatement valuation is a professional, RICS‑regulated calculation of the full cost of rebuilding a property from scratch — the figure the buildings insurance sum insured should be based on. A building reinstatement valuation covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
   },
   {
     question: 'What is an insurance reinstatement valuation for managing agents?',
-    answer: 'It is a professional, RICS-regulated calculation of the full rebuild cost of each property in a managed portfolio — the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
+    answer: 'It is a professional, RICS‑regulated calculation of the full rebuild cost of each property in a managed portfolio — the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
   },
   {
     question: 'Why should managing agents commission assessments across a portfolio?',
-    answer: 'Managing agents place buildings insurance on behalf of freeholders and leaseholders, so an inaccurate sum insured is a direct exposure. Most policies contain a condition of average, which means an underinsured building can have any claim reduced in proportion to the shortfall. Keeping accurate, current RICS-regulated valuations across the portfolio protects clients, reduces disputes, and supports good management practice.',
+    answer: 'Managing agents place buildings insurance on behalf of freeholders and leaseholders, so an inaccurate sum insured is a direct exposure. Most policies contain a condition of average, which means an underinsured building can have any claim reduced in proportion to the shortfall. Keeping accurate, current RICS‑regulated valuations across the portfolio protects clients, reduces disputes, and supports good management practice.',
   },
   {
     question: 'How does underinsurance create liability for managing agents?',
-    answer: 'If a building is underinsured and a major claim is settled short under a condition of average, leaseholders can face significant unexpected costs, and questions naturally follow about whether the sum insured was kept adequate. A programme of regular RICS-regulated reinstatement cost assessments demonstrates that reasonable steps were taken to keep valuations accurate.',
+    answer: 'If a building is underinsured and a major claim is settled short under a condition of average, leaseholders can face significant unexpected costs, and questions naturally follow about whether the sum insured was kept adequate. A programme of regular RICS‑regulated reinstatement cost assessments demonstrates that reasonable steps were taken to keep valuations accurate.',
   },
   {
     question: 'How often should portfolio valuations be reviewed?',
-    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years for each property, with index-linking applied in the years in between. Given recent construction-cost inflation, relying on index-linking alone for longer can leave a material underinsurance gap.',
+    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years for each property, with index‑linking applied in the years in between. Given recent construction‑cost inflation, relying on index‑linking alone for longer can leave a material underinsurance gap.',
   },
   {
     question: 'Can you handle assessments across a large portfolio?',
-    answer: 'Yes. We carry out RICS-regulated, BCIS-indexed assessments across multiple properties, using desktop assessments for standard buildings and on-site surveys where complexity or value requires it, so an entire portfolio can be brought up to date efficiently.',
+    answer: 'Yes. We carry out RICS‑regulated, BCIS‑indexed assessments across multiple properties, using desktop assessments for standard buildings and on‑site surveys where complexity or value requires it, so an entire portfolio can be brought up to date efficiently.',
   },
   {
     question: 'Are the reports accepted by insurers?',
-    answer: 'Yes. Every report is RICS-regulated and BCIS-indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
+    answer: 'Yes. Every report is RICS‑regulated and BCIS‑indexed, and is prepared to be broker‑ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
   },
 ]
 
@@ -77,8 +77,8 @@ const challenges = [
   },
   {
     img: '/rca-index-linking-drift.webp',
-    title: 'Index-linking misses local costs',
-    desc: 'National index-linking misses regional variation in labour and material costs, so a blanket adjustment can leave individual buildings under-insured. Periodic reassessment corrects that drift across the portfolio.',
+    title: 'Index‑linking misses local costs',
+    desc: 'National index‑linking misses regional variation in labour and material costs, so a blanket adjustment can leave individual buildings under‑insured. Periodic reassessment corrects that drift across the portfolio.',
   },
   {
     img: '/rca-liability-claim.webp',
@@ -89,13 +89,13 @@ const challenges = [
 
 const help = [
   { icon: 'summarize', title: 'Consolidated portfolio reports', desc: 'One report, with a rebuild figure per property.' },
-  { icon: 'verified', title: 'RICS-regulated and insurer accepted', desc: 'BCIS-indexed figures accepted without challenge.' },
+  { icon: 'verified', title: 'RICS‑regulated and insurer accepted', desc: 'BCIS‑indexed figures accepted without challenge.' },
   { icon: 'support_agent', title: 'A named surveyor throughout', desc: 'One point of contact from instruction to delivery.' },
 ]
 
 const reasons = [
-  { icon: 'event_repeat', text: 'Keeps every property compliant without re-instructing each year.' },
-  { icon: 'trending_up', text: 'Automatic BCIS-indexed annual updates track rising costs.' },
+  { icon: 'event_repeat', text: 'Keeps every property compliant without re‑instructing each year.' },
+  { icon: 'trending_up', text: 'Automatic BCIS‑indexed annual updates track rising costs.' },
   { icon: 'summarize', text: 'One defensible figure per building, ready for every renewal.' },
 ]
 
@@ -129,7 +129,7 @@ export default function ManagingAgentsPage() {
               Insurance valuations for <span className="text-[#1A6B4A]">managing agents</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Stay compliant and protect the properties you manage. A RICS building reinstatement valuation your insurers will accept, BCIS-indexed, fully documented, and delivered within 48 hours.
+              Stay compliant and protect the properties you manage. A RICS building reinstatement valuation your insurers will accept, BCIS‑indexed, fully documented, and delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -162,7 +162,7 @@ export default function ManagingAgentsPage() {
                 underinsured building can see its claim cut and the shortfall land on leaseholders. A regular
                 programme of{' '}
                 <Link href="/services" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
-                  RICS-regulated, BCIS-indexed assessments
+                  RICS‑regulated, BCIS‑indexed assessments
                 </Link>{' '}
                 keeps a portfolio accurate and defensible &mdash; see our guide to the{' '}
                 <Link href="/resources/top-risks-of-underinsurance-for-managing-agents" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
@@ -261,13 +261,13 @@ export default function ManagingAgentsPage() {
             </div>
             <div className="p-8 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-                Best fit &middot; 3-year protection
+                Best fit &middot; 3‑year protection
               </p>
               <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-                3-year RICS protection plan
+                3‑year RICS protection plan
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
-                Managing a portfolio means keeping many figures accurate at once. The 3-year protection plan
+                Managing a portfolio means keeping many figures accurate at once. The 3‑year protection plan
                 does the heavy lifting: a full RICS assessment now, then automatic indexed updates each year,
                 so nothing across the portfolio slips out of date between renewals.
               </p>

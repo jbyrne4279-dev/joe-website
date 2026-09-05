@@ -44,7 +44,7 @@ const paths = {
       <path d="m9 15 2 2 4-4" />
     </>
   ),
-  // On-site — we measure on site: a tape/ruler over a building outline
+  // On‑site — we measure on site: a tape/ruler over a building outline
   measure: (
     <>
       <path d="M4 20V9l6-4 6 4" />
@@ -53,14 +53,14 @@ const paths = {
       <path d="M17 12v2M19 12v3M21 12v2" />
     </>
   ),
-  // On-site — we evidence everything: camera
+  // On‑site — we evidence everything: camera
   evidence: (
     <>
       <path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L19 6h0a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
       <circle cx="12" cy="12.5" r="3.3" />
     </>
   ),
-  // On-site — we deliver the report: shield with a check
+  // On‑site — we deliver the report: shield with a check
   deliver: (
     <>
       <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" />
@@ -68,7 +68,7 @@ const paths = {
     </>
   ),
 
-  // 3-year — inception: a flag planted on a base
+  // 3‑year — inception: a flag planted on a base
   inception: (
     <>
       <path d="M6 21V4" />
@@ -92,7 +92,7 @@ const paths = {
       <path d="M20 8v3.5M20 8h-3.5" />
     </>
   ),
-  // 3-year — maintained compliance: award rosette
+  // 3‑year — maintained compliance: award rosette
   maintained: (
     <>
       <circle cx="12" cy="9" r="5" />
@@ -101,7 +101,7 @@ const paths = {
     </>
   ),
 
-  // How-we-help concepts
+  // How‑we‑help concepts
   home_work: (
     <>
       <path d="M3 11l9-7 9 7" />

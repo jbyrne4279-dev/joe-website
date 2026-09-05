@@ -38,20 +38,20 @@ const faqItems = [
     answer: 'Most block policies contain a condition of average. If the sum insured is lower than the true rebuild cost, the insurer can reduce a claim payout in proportion to the shortfall, even for a partial loss such as a fire in a single flat. That shortfall usually falls back on leaseholders through the service charge, so an inaccurate figure exposes every resident in the building.',
   },
   {
-    question: 'Isn’t annual index-linking enough to keep the figure accurate?',
-    answer: 'Index-linking helps, but it applies a general inflation adjustment and cannot account for local labour shortages, material price spikes, or changes to building regulations. Over several years the insured figure can drift well below the true rebuild cost. This is why RICS recommends a full reinstatement cost assessment at least every three years, with index-linking used only in the intervening years.',
+    question: 'Isn’t annual index‑linking enough to keep the figure accurate?',
+    answer: 'Index‑linking helps, but it applies a general inflation adjustment and cannot account for local labour shortages, material price spikes, or changes to building regulations. Over several years the insured figure can drift well below the true rebuild cost. This is why RICS recommends a full reinstatement cost assessment at least every three years, with index‑linking used only in the intervening years.',
   },
   {
     question: 'How often should a block reinstatement cost assessment be updated?',
-    answer: 'RICS guidance recommends a full reassessment at least every three years. Earlier reassessment is sensible after significant works, an extension, a change in construction, or a period of unusually high construction-cost inflation.',
+    answer: 'RICS guidance recommends a full reassessment at least every three years. Earlier reassessment is sensible after significant works, an extension, a change in construction, or a period of unusually high construction‑cost inflation.',
   },
   {
     question: 'Will insurers accept the report at renewal?',
-    answer: 'Yes. Every assessment is RICS-regulated and BCIS-indexed, and is prepared to be accepted by all major insurers as evidence of an adequate sum insured, which helps avoid queries, delays, and disputes at renewal.',
+    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be accepted by all major insurers as evidence of an adequate sum insured, which helps avoid queries, delays, and disputes at renewal.',
   },
   {
-    question: 'Do you offer desktop or on-site assessments for blocks?',
-    answer: 'Both. Standard blocks can often be assessed accurately by desktop using property records and BCIS cost data, while larger, complex, or non-standard blocks benefit from an on-site survey. We advise on the right approach for each building.',
+    question: 'Do you offer desktop or on‑site assessments for blocks?',
+    answer: 'Both. Standard blocks can often be assessed accurately by desktop using property records and BCIS cost data, while larger, complex, or non‑standard blocks benefit from an on‑site survey. We advise on the right approach for each building.',
   },
 ]
 
@@ -73,26 +73,26 @@ const challenges = [
   },
   {
     img: '/rca-index-linking-drift.webp',
-    title: 'Index-linking drifts',
-    desc: 'Annual index-linking uses a broad inflation rate that can’t track a block’s real local build costs. A full review every three years keeps the sum insured aligned with reality.',
+    title: 'Index‑linking drifts',
+    desc: 'Annual index‑linking uses a broad inflation rate that can’t track a block’s real local build costs. A full review every three years keeps the sum insured aligned with reality.',
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'Insurers query the figure',
-    desc: 'Without a RICS-regulated report to support the sum insured, insurers can query cover at renewal, causing delays and higher premiums. A current figure keeps renewals straightforward.',
+    desc: 'Without a RICS‑regulated report to support the sum insured, insurers can query cover at renewal, causing delays and higher premiums. A current figure keeps renewals straightforward.',
   },
 ]
 
 const help = [
   { icon: 'apartment', title: 'A RICS assessment per block', desc: 'An accurate sum insured that protects every leaseholder.' },
-  { icon: 'verified', title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures ready for renewal, without challenge.' },
-  { icon: 'bolt', title: 'Delivered in 48 hours', desc: 'Desktop or on-site, so overdue blocks are quickly up to date.' },
+  { icon: 'verified', title: 'Accepted by all major insurers', desc: 'BCIS‑indexed figures ready for renewal, without challenge.' },
+  { icon: 'bolt', title: 'Delivered in 48 hours', desc: 'Desktop or on‑site, so overdue blocks are quickly up to date.' },
 ]
 
 const reasons = [
   { icon: 'shield', text: 'A full RICS assessment now, plus indexed updates for three years.' },
   { icon: 'groups', text: 'Leaseholders stay protected as rebuild costs rise.' },
-  { icon: 'event_repeat', text: 'No need to re-instruct a new valuation each year.' },
+  { icon: 'event_repeat', text: 'No need to re‑instruct a new valuation each year.' },
 ]
 
 export default function BlockManagersPage() {
@@ -125,7 +125,7 @@ export default function BlockManagersPage() {
               <span className="sm:whitespace-nowrap">Reinstatement cost</span> assessments for <span className="text-[#1A6B4A]">block managers</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers, BCIS-indexed and delivered within 48 hours.
+              Protect leaseholders from underinsurance. RICS‑regulated assessments accepted by all major insurers, BCIS‑indexed and delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -253,13 +253,13 @@ export default function BlockManagersPage() {
             </div>
             <div className="p-8 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-                Best fit &middot; 3-year protection
+                Best fit &middot; 3‑year protection
               </p>
               <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-                3-year RICS protection plan
+                3‑year RICS protection plan
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
-                Blocks need to stay accurately insured year after year, not just once. The 3-year protection
+                Blocks need to stay accurately insured year after year, not just once. The 3‑year protection
                 plan pairs a full RICS assessment now with automatic indexed updates each year, so
                 leaseholders stay properly covered as costs rise, with no repeat admin for you.
               </p>

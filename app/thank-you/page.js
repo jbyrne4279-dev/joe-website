@@ -43,7 +43,7 @@ export default function ThankYouPage() {
             <p className="text-lg text-secondary leading-relaxed">
               We&rsquo;ve received your enquiry and will respond within{' '}
               <strong className="text-primary font-semibold whitespace-nowrap">24 working hours</strong>.
-              One of our RICS-regulated surveyors will be in touch shortly.
+              One of our RICS‑regulated surveyors will be in touch shortly.
             </p>
           </div>
         </div>

@@ -4,12 +4,12 @@ import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: 'On-Site Reinstatement Cost Assessment London | RICS Surveyor',
+  title: 'On‑Site Reinstatement Cost Assessment London | RICS Surveyor',
   description:
     'On-site RICS reinstatement cost assessment in London by a chartered surveyor. Full physical inspection for listed, non-standard, complex and high-value buildings. BCIS-indexed and broker-ready.',
   alternates: { canonical: '/on-site-reinstatement-cost-assessment-london' },
   openGraph: {
-    title: 'On-Site Reinstatement Cost Assessment London | RICS Surveyor',
+    title: 'On‑Site Reinstatement Cost Assessment London | RICS Surveyor',
     description:
       'On-site RICS reinstatement cost assessment in London. A full physical survey for listed, complex and high-value buildings, BCIS-indexed and accepted by all UK insurers.',
     url: '/on-site-reinstatement-cost-assessment-london',
@@ -31,20 +31,20 @@ const breadcrumbJsonLd = {
 
 const faqItems = [
   {
-    question: 'What is an on-site reinstatement cost assessment?',
-    answer: 'An on-site reinstatement cost assessment is a full physical survey carried out by a RICS-regulated surveyor who attends your property, measures every element in person, and assesses specification and construction. It is the most accurate way to establish a rebuild cost, and is essential for listed, complex or high-value buildings.',
+    question: 'What is an on‑site reinstatement cost assessment?',
+    answer: 'An on‑site reinstatement cost assessment is a full physical survey carried out by a RICS‑regulated surveyor who attends your property, measures every element in person, and assesses specification and construction. It is the most accurate way to establish a rebuild cost, and is essential for listed, complex or high‑value buildings.',
   },
   {
-    question: 'When do I need an on-site survey rather than a desktop assessment?',
-    answer: 'An on-site survey is recommended for listed buildings, non-standard or period construction, complex commercial and industrial premises, and high-value assets where a desktop assessment cannot capture the full detail. If your London property has specialist materials, curtilage structures, M&E installations or a large floor plate, an on-site survey is the right choice.',
+    question: 'When do I need an on‑site survey rather than a desktop assessment?',
+    answer: 'An on‑site survey is recommended for listed buildings, non‑standard or period construction, complex commercial and industrial premises, and high‑value assets where a desktop assessment cannot capture the full detail. If your London property has specialist materials, curtilage structures, M&E installations or a large floor plate, an on‑site survey is the right choice.',
   },
   {
-    question: 'How long does an on-site assessment take in London?',
+    question: 'How long does an on‑site assessment take in London?',
     answer: 'The inspection itself typically takes a few hours depending on the size and complexity of the building. The full written report, including site notes and photographic evidence, is usually delivered shortly after the visit. We arrange appointments across London to suit access and management schedules.',
   },
   {
     question: 'Will the report stand up to insurer or legal scrutiny?',
-    answer: 'Yes. An on-site RICS assessment provides a comprehensive, evidenced rebuild figure with full site notes and photographs. It is BCIS-indexed, broker-ready, and prepared to withstand insurer challenge or legal scrutiny.',
+    answer: 'Yes. An on‑site RICS assessment provides a comprehensive, evidenced rebuild figure with full site notes and photographs. It is BCIS‑indexed, broker‑ready, and prepared to withstand insurer challenge or legal scrutiny.',
   },
   {
     question: 'Do you survey listed and period buildings in London?',
@@ -82,14 +82,14 @@ const steps = [
   { icon: 'arrange-access', title: 'We arrange access', desc: 'We book a convenient appointment and coordinate access with owners, tenants or managing agents.' },
   { icon: 'measure', title: 'We measure on site', desc: 'A RICS surveyor attends, measures every element in person and records the construction and specification.' },
   { icon: 'evidence', title: 'We evidence everything', desc: 'Detailed site notes and photographic evidence capture specialist materials, M&E and curtilage structures.' },
-  { icon: 'deliver', title: 'We deliver the report', desc: 'A comprehensive, BCIS-indexed rebuild figure that will withstand insurer or legal scrutiny.' },
+  { icon: 'deliver', title: 'We deliver the report', desc: 'A comprehensive, BCIS‑indexed rebuild figure that will withstand insurer or legal scrutiny.' },
 ]
 
 const whoNeedsIt = [
   { icon: 'account_balance', title: 'Listed & period buildings', desc: 'Heritage detailing and traditional materials that generic indices cannot value accurately.' },
-  { icon: 'foundation', title: 'Non-standard construction', desc: 'Timber frame, steel frame, concrete and other builds that need expert on-site judgement.' },
-  { icon: 'factory', title: 'Complex commercial & industrial', desc: 'Large floor plates, plant rooms, M&E installations and mixed-use premises across London.' },
-  { icon: 'diamond', title: 'High-value assets', desc: 'Prime central London property where an accurate, evidenced figure protects a significant sum.' },
+  { icon: 'foundation', title: 'Non‑standard construction', desc: 'Timber frame, steel frame, concrete and other builds that need expert on‑site judgement.' },
+  { icon: 'factory', title: 'Complex commercial & industrial', desc: 'Large floor plates, plant rooms, M&E installations and mixed‑use premises across London.' },
+  { icon: 'diamond', title: 'High‑value assets', desc: 'Prime central London property where an accurate, evidenced figure protects a significant sum.' },
 ]
 
 const included = [
@@ -125,12 +125,12 @@ export default function OnSiteAssessmentLondonPage() {
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">On-Site Survey</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">On‑Site Survey</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span style={{ color: '#1A6B4A' }}>On-site</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
+              <span style={{ color: '#1A6B4A' }}>On‑site</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              The most accurate rebuild cost available &mdash; a full physical survey by a RICS-regulated surveyor. Essential for London&rsquo;s listed, period, complex and high-value buildings, delivered with full site evidence.
+              The most accurate rebuild cost available &mdash; a full physical survey by a RICS‑regulated surveyor. Essential for London&rsquo;s listed, period, complex and high‑value buildings, delivered with full site evidence.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -149,17 +149,17 @@ export default function OnSiteAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A surveyor on site, measuring every detail.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
-              An on-site reinstatement cost assessment is the gold standard. A RICS-regulated surveyor attends your
+              An on‑site reinstatement cost assessment is the gold standard. A RICS‑regulated surveyor attends your
               London property in person, measures every element, and assesses the specification and construction
-              first-hand. Nothing is estimated from records alone.
+              first‑hand. Nothing is estimated from records alone.
             </p>
             <p>
               This level of detail matters most where a building is out of the ordinary &mdash; a listed
-              townhouse, a period conversion, a mixed-use block, or an industrial unit with significant plant. The
+              townhouse, a period conversion, a mixed‑use block, or an industrial unit with significant plant. The
               result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny.
             </p>
             <p>
-              The surveyor at your door is a RICS-regulated chartered professional, drawing on a practice with
+              The surveyor at your door is a RICS‑regulated chartered professional, drawing on a practice with
               more than half a century of collective experience devoted entirely to reinstatement cost assessment.
               On the capital&rsquo;s harder buildings, it is that concentrated, specialist judgement &mdash; not
               general practice &mdash; that turns a careful inspection into a figure you can defend.
@@ -227,12 +227,12 @@ export default function OnSiteAssessmentLondonPage() {
             <p>
               London holds some of the most complex building stock in the country &mdash; Georgian and Victorian
               terraces, mansion blocks, converted warehouses and prime commercial premises. On these buildings,
-              generic calculators and desktop indices routinely miss six-figure sums in specialist materials,
+              generic calculators and desktop indices routinely miss six‑figure sums in specialist materials,
               heritage detailing and services.
             </p>
             <p>
-              Underinsurance on a high-value asset is a serious exposure. Under a policy&rsquo;s condition of
-              average, a shortfall reduces every claim proportionally. An on-site survey removes the guesswork and
+              Underinsurance on a high‑value asset is a serious exposure. Under a policy&rsquo;s condition of
+              average, a shortfall reduces every claim proportionally. An on‑site survey removes the guesswork and
               gives owners, freeholders and managing agents a figure they can defend with total confidence.
             </p>
           </div>
@@ -247,7 +247,7 @@ export default function OnSiteAssessmentLondonPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">A complete, evidenced survey.</h2>
           </div>
-          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map(({ label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
@@ -271,7 +271,7 @@ export default function OnSiteAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Surveyors across the capital.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             We attend properties throughout Greater London, with particular experience in the listed and
-            high-value stock of the central and inner boroughs.
+            high‑value stock of the central and inner boroughs.
           </p>
           <div className="flex flex-wrap gap-2.5">
             {londonAreas.map((area) => (
@@ -301,8 +301,8 @@ export default function OnSiteAssessmentLondonPage() {
             </Link>
             <Link href="/three-year-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
               <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-              <h3 className="text-lg font-semibold text-white mb-2">3-Year Protection Plan</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS-indexed annual updates.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
+              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>

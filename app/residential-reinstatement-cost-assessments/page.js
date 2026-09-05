@@ -43,15 +43,15 @@ const faqItems = [
   },
   {
     question: 'How often should the figure be reviewed?',
-    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years, with index-linking applied in the years in between. Building costs have risen sharply, so relying on index-linking alone for longer can leave you underinsured without realising it.',
+    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years, with index‑linking applied in the years in between. Building costs have risen sharply, so relying on index‑linking alone for longer can leave you underinsured without realising it.',
   },
   {
     question: 'Do you assess flats, period homes, and listed buildings?',
-    answer: 'Yes. We assess houses, flats, period properties, and listed or non-standard construction across the UK. Standard homes are usually suited to a desktop assessment, while period, listed, or complex homes benefit from an on-site survey for full accuracy.',
+    answer: 'Yes. We assess houses, flats, period properties, and listed or non‑standard construction across the UK. Standard homes are usually suited to a desktop assessment, while period, listed, or complex homes benefit from an on‑site survey for full accuracy.',
   },
   {
     question: 'Will my insurer accept the report?',
-    answer: 'Yes. Every assessment is RICS-regulated and BCIS-indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured.',
+    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be broker‑ready and accepted by UK insurers as evidence of an accurate sum insured.',
   },
 ]
 
@@ -73,35 +73,35 @@ const challenges = [
   },
   {
     img: '/rca-index-linking-drift.webp',
-    title: 'Index-linking drifts',
-    desc: 'Annual index-linking applies a broad national inflation rate that can’t reflect local labour or material prices. Left for a few years, a home’s sum insured quietly falls below what a rebuild would really cost.',
+    title: 'Index‑linking drifts',
+    desc: 'Annual index‑linking applies a broad national inflation rate that can’t reflect local labour or material prices. Left for a few years, a home’s sum insured quietly falls below what a rebuild would really cost.',
   },
   {
     img: '/rca-calculators-miss-detail.webp',
     title: 'Calculators miss detail',
-    desc: 'Free online calculators give rough averages and struggle with period features, extensions, and non-standard construction. A professional RICS assessment reflects the real detail of your home and stands up with insurers.',
+    desc: 'Free online calculators give rough averages and struggle with period features, extensions, and non‑standard construction. A professional RICS assessment reflects the real detail of your home and stands up with insurers.',
   },
 ]
 
 const help = [
-  { icon: 'home_work', title: 'Every type of home', desc: 'Houses, flats, period, and non-standard construction.' },
+  { icon: 'home_work', title: 'Every type of home', desc: 'Houses, flats, period, and non‑standard construction.' },
   { icon: 'architecture', title: 'A complete rebuild figure', desc: 'Fees, debris removal, and regulations, not just the walls.' },
-  { icon: 'bolt', title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
+  { icon: 'bolt', title: 'Broker‑ready in 48 hours', desc: 'RICS‑regulated and BCIS‑indexed, accepted by UK insurers.' },
 ]
 
 const included = [
   { label: 'The full rebuild of the home', detail: 'Rebuilding the whole house from scratch to current standards, not just repairing the damage that occurred.' },
   { label: 'Demolition and debris removal', detail: 'Safely clearing the site after a total loss, which has to happen before rebuilding can start.' },
   { label: 'Professional and design fees', detail: 'The architect, engineer and surveyor costs needed to design and sign off the rebuild.' },
-  { label: 'Building-regulation compliance', detail: 'Meeting today’s building regulations, which are often stricter than when the home was first built.' },
+  { label: 'Building‑regulation compliance', detail: 'Meeting today’s building regulations, which are often stricter than when the home was first built.' },
   { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also need to be rebuilt or replaced.' },
   { label: 'Inflation over the rebuild period', detail: 'An allowance for prices rising during the time it takes to settle the claim and rebuild.' },
 ]
 
 const reasons = [
   { icon: 'home', text: 'Most standard houses and flats can be assessed without a site visit.' },
-  { icon: 'payments', text: 'Fast and cost-effective, using property records and live BCIS data.' },
-  { icon: 'shield', text: 'A fully RICS-regulated, broker-ready figure your insurer will accept.' },
+  { icon: 'payments', text: 'Fast and cost‑effective, using property records and live BCIS data.' },
+  { icon: 'shield', text: 'A fully RICS‑regulated, broker‑ready figure your insurer will accept.' },
 ]
 
 export default function ResidentialReinstatementPage() {
@@ -134,7 +134,7 @@ export default function ResidentialReinstatementPage() {
               <span className="text-[#1A6B4A]">Residential</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessments.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Accurate rebuild costs for houses and flats across the UK. RICS-regulated assessments your insurer will accept, BCIS-indexed and delivered within 48 hours.
+              Accurate rebuild costs for houses and flats across the UK. RICS‑regulated assessments your insurer will accept, BCIS‑indexed and delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -247,7 +247,7 @@ export default function ResidentialReinstatementPage() {
               More than walls and a roof.
             </h2>
           </div>
-          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain-English explanation.</p>
+          <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map(({ label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
@@ -292,9 +292,9 @@ export default function ResidentialReinstatementPage() {
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
                 For most standard homes, a desktop assessment is the ideal choice. Using property records
-                and live BCIS cost data, we produce an accurate, RICS-regulated rebuild figure quickly and
-                cost-effectively, with no site visit needed. Period, listed, or non-standard homes are
-                better suited to an on-site survey.
+                and live BCIS cost data, we produce an accurate, RICS‑regulated rebuild figure quickly and
+                cost‑effectively, with no site visit needed. Period, listed, or non‑standard homes are
+                better suited to an on‑site survey.
               </p>
               <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (

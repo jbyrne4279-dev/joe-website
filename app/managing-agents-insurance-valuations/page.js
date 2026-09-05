@@ -173,8 +173,8 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/reinstatement-cost-assessments-uk.webp"
-              alt="UK property portfolio managed for insurance reinstatement valuations"
+              src="/managing-agents-office-block.jpg"
+              alt="Modern commercial building in a managed property portfolio"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"
               className="object-cover"
@@ -231,6 +231,9 @@ export default function ManagingAgentsPage() {
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
             ))}
+          </div>
+          <div className="flex justify-end mt-10">
+            <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
           </div>
         </div>
       </section>

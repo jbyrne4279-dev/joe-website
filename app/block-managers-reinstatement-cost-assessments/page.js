@@ -165,8 +165,8 @@ export default function BlockManagersPage() {
           </div>
           <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/reinstatement-cost-assessment-uk.webp"
-              alt="UK residential apartment block requiring a reinstatement cost assessment"
+              src="/block-managers-london-flats.jpg"
+              alt="Period London mansion block of flats"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"
               className="object-cover"
@@ -223,6 +223,9 @@ export default function BlockManagersPage() {
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
             ))}
+          </div>
+          <div className="flex justify-end mt-10">
+            <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
           </div>
         </div>
       </section>

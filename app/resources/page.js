@@ -282,9 +282,15 @@ export default function ResourcesPage() {
             ].map(({ icon, title, desc }, i) => (
               <div key={icon} className="service-pulse-card bg-white rounded-2xl p-8 flex flex-col items-center gap-4 shadow-sm transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
-                </div>
+                {icon === 'gavel' ? (
+                  <div className="h-12 flex items-center justify-center">
+                    <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-11 w-auto object-contain" />
+                  </div>
+                ) : (
+                  <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                  </div>
+                )}
                 <h4 className="font-bold text-primary">{title}</h4>
                 <p className="text-sm text-secondary leading-relaxed">{desc}</p>
               </div>

@@ -2,7 +2,6 @@ import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
-import MediaPlaceholder from '../components/MediaPlaceholder'
 
 export const metadata = {
   title: '3-Year Reinstatement Cost Assessment London | RICS Protection Plan',
@@ -222,7 +221,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+          <img src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index-linking alone isn&rsquo;t enough.</h2>
@@ -264,7 +263,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <MediaPlaceholder accent="#a16207" tint="rgba(212,160,23,0.12)" className="mt-1" />
+          <img src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>

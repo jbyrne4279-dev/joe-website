@@ -118,8 +118,8 @@ export default function DesktopAssessmentUKPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/rebuild-cost-assessment-london.jpeg"
-          alt="UK property assessed remotely for its rebuild cost"
+          src="/desktop-reinstatement-cost-assessment.jpg"
+          alt="Surveyor producing a desktop reinstatement cost assessment from property records and a 3D building model"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />

@@ -118,8 +118,8 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/services-hero.webp"
-          alt="London property protected by a 3-year reinstatement cost assessment plan"
+          src="/three-year-reinstatement-cost-assessment.jpg"
+          alt="Architectural model, plans and calculator for a 3-year reinstatement cost assessment plan in London"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />

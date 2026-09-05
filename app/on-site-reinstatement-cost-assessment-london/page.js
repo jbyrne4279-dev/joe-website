@@ -118,8 +118,8 @@ export default function OnSiteAssessmentLondonPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/surveyor-reinstatement-cost-assessment-rics.webp"
-          alt="RICS surveyor carrying out an on-site reinstatement cost assessment in London"
+          src="/on-site-reinstatement-cost-assessment-survey.jpg"
+          alt="RICS surveyor carrying out an on-site reinstatement cost assessment survey in London"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />

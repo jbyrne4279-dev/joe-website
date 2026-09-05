@@ -66,23 +66,23 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    title: 'Leaseholders exposed to underinsurance',
-    desc: 'Without a current RICS assessment, the sum insured on a block policy can fall well short of the true rebuild cost, leaving every leaseholder exposed if a major claim arises.',
+    title: 'Leaseholders left exposed',
+    desc: 'An outdated sum insured can fall well short of the true rebuild cost.',
   },
   {
-    title: 'Index-linking drifting from real costs',
-    desc: 'Automatic index-linking cannot account for local labour shortages, material inflation, or changes in build complexity, so the gap between the insured figure and reality widens over time.',
+    title: 'Index-linking drifts',
+    desc: 'Broad inflation figures can’t track real local build costs.',
   },
   {
-    title: 'Insurers querying sums insured',
-    desc: 'When an insurer challenges the adequacy of a sum insured at renewal, and there is no RICS-regulated report to support it, block managers face delays, higher premiums, and reputational risk.',
+    title: 'Insurers query the figure',
+    desc: 'Without a RICS report, renewals face delays and higher premiums.',
   },
 ]
 
 const reasons = [
-  'A full RICS reinstatement assessment now, with indexed updates for the next three years.',
-  'Leaseholders stay protected as rebuild costs rise between assessments.',
-  'It removes the cost and hassle of re-instructing a new valuation each year.',
+  'A full RICS assessment now, plus indexed updates for three years.',
+  'Leaseholders stay protected as rebuild costs rise.',
+  'No need to re-instruct a new valuation each year.',
 ]
 
 export default function BlockManagersPage() {
@@ -147,30 +147,18 @@ export default function BlockManagersPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                A reinstatement cost assessment for a block of flats is a professional calculation of what
-                it would cost to rebuild the entire building from the ground up if it were destroyed. It
-                covers far more than bricks and mortar: demolition and debris removal, professional fees,
-                and the cost of meeting current building regulations all form part of the figure. It is not
-                the same as the block&rsquo;s market value; it is the number the buildings insurance sum
-                insured should be based on.
+                It&rsquo;s the cost of rebuilding the whole block from scratch &mdash; structure, fees,
+                debris removal, and current building regulations. That&rsquo;s the figure the buildings
+                insurance should be based on, not the block&rsquo;s market value.
               </p>
               <p>
-                For a block manager, getting that figure right is a duty owed to every leaseholder. Most
-                block policies contain a <strong className="font-semibold text-primary">condition of
-                average</strong>: if the sum insured is lower than the true rebuild cost, the insurer can
-                reduce a claim in proportion to the shortfall, even for a partial loss such as a fire
-                confined to one flat. That shortfall usually flows back to leaseholders through the service
-                charge, so an inaccurate sum insured puts the whole building at financial risk.
-              </p>
-              <p>
-                Annual index-linking helps, but it applies a broad inflation adjustment that cannot capture
-                local labour shortages, material price spikes, or regulatory changes, so the insured figure
-                can drift well below reality over a few years. That is why{' '}
+                Most block policies apply a{' '}
+                <strong className="font-semibold text-primary">condition of average</strong>, so if the sum
+                insured is too low, a claim is cut by the same proportion &mdash; and that shortfall lands on
+                leaseholders through the service charge. That&rsquo;s why{' '}
                 <Link href="/resources/when-should-block-insurance-valuations-be-updated" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
-                  RICS recommends a full reassessment at least every three years
-                </Link>
-                , with index-linking used only in between, and why insurers increasingly expect a current
-                RICS-regulated report to support the sum insured at renewal.
+                  RICS recommends a full reassessment every three years
+                </Link>.
               </p>
             </div>
           </div>
@@ -221,9 +209,9 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'A RICS assessment per block', desc: 'A full RICS-regulated reinstatement assessment for each building, protecting every leaseholder with an accurate sum insured.' },
-              { title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures prepared to be accepted at renewal without challenge, avoiding queries and disputes.' },
-              { title: 'Delivered within 48 hours', desc: 'Desktop or on-site, turned around quickly so overdue blocks can be brought up to date without delay.' },
+              { title: 'A RICS assessment per block', desc: 'An accurate sum insured that protects every leaseholder.' },
+              { title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures ready for renewal, without challenge.' },
+              { title: 'Delivered in 48 hours', desc: 'Desktop or on-site, so overdue blocks are quickly up to date.' },
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
@@ -246,33 +234,43 @@ export default function BlockManagersPage() {
               The right assessment for block managers.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl p-8 md:p-11 shadow-lg">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-              Best fit &middot; 3-year protection
-            </p>
-            <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-              3-year RICS protection plan
-            </h3>
-            <p className="text-secondary leading-relaxed mb-8 max-w-2xl">
-              Blocks need to stay accurately insured year after year, not just once. The 3-year protection
-              plan pairs a full RICS assessment with annual indexed updates, keeping leaseholders covered
-              with no repeat admin.
-            </p>
-            <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
-              {reasons.map((reason) => (
-                <li key={reason} className="py-4 flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                  <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                Request a quote
-              </Link>
-              <Link href="/services#three-year-protection" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                About 3-year protection
-              </Link>
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
+            <div className="relative min-h-[240px] lg:min-h-full">
+              <Image
+                src="/rca-for-landlords-property-owners.webp"
+                alt="UK residential apartment block covered by a 3-year protection plan"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8 md:p-11">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
+                Best fit &middot; 3-year protection
+              </p>
+              <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
+                3-year RICS protection plan
+              </h3>
+              <p className="text-secondary leading-relaxed mb-8">
+                A full RICS assessment now, plus annual indexed updates &mdash; so leaseholders stay covered
+                with no repeat admin.
+              </p>
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+                {reasons.map((reason) => (
+                  <li key={reason} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                  Request a quote
+                </Link>
+                <Link href="/services#three-year-protection" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
+                  About 3-year protection
+                </Link>
+              </div>
             </div>
           </div>
         </div>

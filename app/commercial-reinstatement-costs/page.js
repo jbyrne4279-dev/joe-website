@@ -66,32 +66,32 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    title: 'Rebuild costs are outrunning index-linking',
-    desc: 'Material prices, labour shortages, and supply-chain pressure have pushed commercial rebuild costs well beyond what standard index-linking captures, widening the gap year after year.',
+    title: 'Costs outrun index-linking',
+    desc: 'Material and labour inflation has pushed rebuild costs beyond what index-linking captures.',
   },
   {
-    title: 'Calculators miss fit-out and services',
-    desc: 'Commercial buildings carry significant mechanical, electrical, and specialist fit-out costs that generic online calculators ignore, which leaves reinstatement figures materially understated.',
+    title: 'Calculators miss the detail',
+    desc: 'Generic tools ignore mechanical, electrical, and specialist fit-out costs.',
   },
   {
-    title: 'Insurers now expect current RICS figures',
-    desc: 'More insurers and lenders want a verifiable, RICS-regulated reinstatement figure before agreeing terms. A rough estimate or calculator output is no longer enough.',
+    title: 'Insurers expect RICS figures',
+    desc: 'More insurers now want a verifiable RICS figure before agreeing terms.',
   },
 ]
 
 const included = [
-  { title: 'Full structural rebuild', desc: 'The complete cost of clearing the site and reconstructing the building to its current specification and floor area.' },
-  { title: 'Mechanical and electrical services', desc: 'Heating, ventilation, lifts, power, lighting, and fire and security systems — often a large share of a commercial rebuild.' },
-  { title: 'Specialist fit-out', desc: 'Trade- and tenant-specific fit-out, from retail shopfronts to office partitioning, needed to make the building usable again.' },
-  { title: 'External works and site costs', desc: 'Car parking, hardstanding, boundary walls, drainage, and landscaping that form part of the insured property.' },
-  { title: 'Debris removal and professional fees', desc: 'Site clearance after a loss, plus the architect, surveyor, and engineering fees a genuine rebuild requires under current regulations.' },
-  { title: 'Inflation over the rebuild period', desc: 'An allowance for cost movement across the design and construction period, so the figure still holds when a claim is made.' },
+  'Full structural rebuild',
+  'Mechanical and electrical services',
+  'Specialist fit-out',
+  'External works and site costs',
+  'Debris removal and professional fees',
+  'Inflation over the rebuild period',
 ]
 
 const reasons = [
-  'A physical inspection captures fit-out, mechanical and electrical services, and specialist construction accurately.',
-  'It is the right approach for high-value, complex, or non-standard commercial premises.',
-  'It produces the most defensible figure if a large claim is ever questioned.',
+  'Captures fit-out, services, and specialist construction accurately.',
+  'The right fit for high-value, complex, or non-standard premises.',
+  'Produces the most defensible figure if a claim is ever questioned.',
 ]
 
 export default function CommercialReinstatementPage() {
@@ -156,28 +156,16 @@ export default function CommercialReinstatementPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                A commercial reinstatement cost assessment is a professional calculation of what it would
-                cost to rebuild your property from the ground up if it were completely destroyed. It is the
-                figure your buildings insurance sum insured should be based on, and it is deliberately
-                different from the property&rsquo;s market value. Market value reflects the land, the
-                location, and the income a building can generate; rebuild cost reflects only the physical
-                work of reconstruction. For commercial buildings, the two are frequently a long way apart.
+                It&rsquo;s the cost of rebuilding your property from scratch &mdash; the structure, the
+                services, professional fees, and today&rsquo;s building regulations. That&rsquo;s the figure
+                your insurance should be based on, and it&rsquo;s not the same as market value.
               </p>
               <p>
-                Getting that figure right matters because most commercial policies contain a{' '}
-                <strong className="font-semibold text-primary">condition of average</strong>. If your sum
-                insured is lower than the true rebuild cost, the insurer can reduce any claim in proportion
-                to the shortfall, even for a partial loss. A building insured for 70% of its real rebuild
-                cost may see a claim settled at roughly 70% of its value, leaving the owner to fund the
-                difference at the worst possible moment.
-              </p>
-              <p>
-                Commercial properties are especially prone to underinsurance because they carry costs that
-                generic calculators simply miss: specialist fit-out, mechanical and electrical services,
-                external works, and the professional fees and debris-removal costs a real rebuild involves.
-                Rebuild costs have also risen faster than routine index-linking has kept pace with. For that
-                reason, RICS recommends a full reassessment at least every three years, with index-linking
-                used in between.
+                The gap matters. Most policies apply a{' '}
+                <strong className="font-semibold text-primary">condition of average</strong>, so if
+                you&rsquo;re insured for less than the true rebuild cost, the insurer can cut your claim by
+                the same proportion. RICS recommends a fresh assessment every three years to keep that
+                figure honest.
               </p>
             </div>
           </div>
@@ -228,9 +216,9 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'Specialist commercial surveyors', desc: 'RICS-regulated surveyors experienced across every commercial asset class, from offices and industrial units to retail and mixed-use.' },
-              { title: 'Fit-out, services, and site works', desc: 'Every cost element is captured, from specialist services to external works, for a figure that holds up when it is needed.' },
-              { title: 'Broker-ready within 48 hours', desc: 'A fully RICS-regulated, BCIS-indexed report, accepted by UK insurers and delivered quickly.' },
+              { title: 'Specialist commercial surveyors', desc: 'Experienced across offices, industrial, retail, and mixed-use.' },
+              { title: 'Every cost captured', desc: 'Fit-out, services, and external works, not just the shell.' },
+              { title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
@@ -245,26 +233,22 @@ export default function CommercialReinstatementPage() {
       {/* What's included */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="max-w-2xl mb-6">
+          <div className="max-w-2xl mb-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">
               What&rsquo;s included
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-4">
-              Everything a genuine rebuild would cost.
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+              More than walls and a roof.
             </h2>
-            <p className="text-secondary leading-relaxed">
-              A reliable reinstatement figure is far more than the cost of walls and a roof. Each assessment
-              accounts for every element a real rebuild would incur.
-            </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-x-12">
-            {included.map(({ title, desc }) => (
-              <div key={title} className="py-6 border-t border-zinc-200">
-                <h3 className="text-base font-semibold text-primary mb-1.5">{title}</h3>
-                <p className="text-secondary text-[0.95rem] leading-relaxed">{desc}</p>
-              </div>
+          <ul className="grid sm:grid-cols-2 gap-x-12">
+            {included.map((item) => (
+              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1A6B4A] shrink-0" />
+                <span className="text-primary font-medium">{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -279,33 +263,43 @@ export default function CommercialReinstatementPage() {
               The right assessment for commercial property.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl p-8 md:p-11 shadow-lg">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-              Best fit &middot; On-site survey
-            </p>
-            <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-              On-site RICS reinstatement cost assessment
-            </h3>
-            <p className="text-secondary leading-relaxed mb-8 max-w-2xl">
-              Commercial buildings rarely fit a standard template. A full on-site survey captures the detail
-              a desktop assessment cannot, giving you a rebuild figure that stands up to insurer and legal
-              scrutiny.
-            </p>
-            <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
-              {reasons.map((reason) => (
-                <li key={reason} className="py-4 flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                  <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                Request a quote
-              </Link>
-              <Link href="/services#on-site-survey" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                About on-site surveys
-              </Link>
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
+            <div className="relative min-h-[240px] lg:min-h-full">
+              <Image
+                src="/commercial-reinstatement-cost-assessment.webp"
+                alt="Commercial building assessed on site by a RICS surveyor"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8 md:p-11">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
+                Best fit &middot; On-site survey
+              </p>
+              <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
+                On-site RICS reinstatement cost assessment
+              </h3>
+              <p className="text-secondary leading-relaxed mb-8">
+                The most accurate option for commercial buildings, capturing the detail a desktop assessment
+                cannot.
+              </p>
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+                {reasons.map((reason) => (
+                  <li key={reason} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                  Request a quote
+                </Link>
+                <Link href="/services#on-site-survey" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
+                  About on-site surveys
+                </Link>
+              </div>
             </div>
           </div>
         </div>

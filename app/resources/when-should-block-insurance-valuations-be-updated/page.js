@@ -106,7 +106,7 @@ export default function ArticlePage() {
       <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Is your block overdue for reassessment?</h3>
         <p className="text-white/60 mb-5 text-sm">We carry out RICS-regulated reinstatement cost assessments, delivered in 48 hours.</p>
-        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
+        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get your assessment</Link>
       </div>
     </main>
     </>

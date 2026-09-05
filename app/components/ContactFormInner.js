@@ -14,7 +14,7 @@ export default function ContactFormInner({ heading }) {
   return (
     <div className="liquid-glass rounded-3xl p-8 md:p-12 border border-[#1A6B4A]/20 shadow-[0_0_40px_4px_rgba(26,107,74,0.07)]">
       <div id="contact-form" className="mb-12 space-y-5 scroll-mt-28 text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>mail</span>Get In Touch</span>
+        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>mail</span>Get started</span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] text-primary">{heading}</h2>
         <div className="inline-flex items-center gap-2 bg-[#1A6B4A]/10 px-3 py-1.5 rounded-full border border-[#1A6B4A]/20">
           <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '0.8rem' }}>bolt</span>

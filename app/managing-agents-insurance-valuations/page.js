@@ -66,23 +66,23 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    title: 'Portfolios with outdated valuations',
-    desc: 'Keeping accurate, current reinstatement figures across a managed portfolio is complex. Outdated figures create compliance gaps and expose landlords and agents to liability.',
+    title: 'Outdated portfolio figures',
+    desc: 'Keeping every valuation current is hard, and gaps create liability.',
   },
   {
-    title: 'Index-linking misses local inflation',
-    desc: 'Generic national indices miss regional variation in labour costs and material availability. A property in London or the South East can diverge sharply from a blanket index-linked figure.',
+    title: 'Index-linking misses local costs',
+    desc: 'National indices miss regional labour and material variation.',
   },
   {
-    title: 'Liability exposure at claim',
-    desc: 'If an underinsured property suffers a major loss, managing agents face serious questions about whether they met their duty of care in maintaining adequate insurance.',
+    title: 'Liability at claim',
+    desc: 'An underinsured loss raises questions about duty of care.',
   },
 ]
 
 const reasons = [
-  'It keeps every property compliant without re-instructing an assessment each year.',
-  'Automatic BCIS-indexed annual updates track rising build costs for you.',
-  'You hold one defensible, up-to-date figure per building, ready for every renewal.',
+  'Keeps every property compliant without re-instructing each year.',
+  'Automatic BCIS-indexed annual updates track rising costs.',
+  'One defensible figure per building, ready for every renewal.',
 ]
 
 export default function ManagingAgentsPage() {
@@ -147,31 +147,19 @@ export default function ManagingAgentsPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                When you manage buildings on someone else&rsquo;s behalf, the insurance simply has to be
-                right, and a reinstatement cost assessment is how you show that it is. In plain terms, it is
-                a professional estimate of what it would genuinely cost to rebuild a property from scratch if
-                the worst happened: clearing the site, the rebuild itself, the professional fees, and
-                bringing everything up to today&rsquo;s building regulations. It is not what the building
-                would sell for; it is the figure the buildings insurance should be built around.
+                When you manage buildings for other people, the insurance has to be right &mdash; and a
+                reinstatement cost assessment is how you show it is. It&rsquo;s the cost of rebuilding a
+                property from scratch, and it&rsquo;s not what the building would sell for.
               </p>
               <p>
-                Here is why it matters so much across a portfolio. Most policies include something called a{' '}
-                <strong className="font-semibold text-primary">condition of average</strong>. Put simply, if
-                a building is insured for less than it would really cost to rebuild, the insurer can reduce
-                the payout by the same proportion, even on a smaller claim. Get that wrong on just a few
-                properties and the shortfall lands on leaseholders, usually along with some awkward questions
-                about who was keeping an eye on the numbers.
-              </p>
-              <p>
-                The tricky part is that costs never stand still, and index-linking only goes so far: it
-                cannot see local labour shortages, sudden jumps in material prices, or new regulations, so
-                figures quietly drift out of date. That is why RICS suggests a proper reassessment at least
-                every three years, with index-linking to bridge the years in between. Putting every property
-                on a regular programme of{' '}
+                Most policies apply a{' '}
+                <strong className="font-semibold text-primary">condition of average</strong>, so one
+                underinsured building can see its claim cut and the shortfall land on leaseholders. A regular
+                programme of{' '}
                 <Link href="/services" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
                   RICS-regulated, BCIS-indexed assessments
                 </Link>{' '}
-                takes that worry off your plate, and it is worth reading our guide to the{' '}
+                keeps a portfolio accurate and defensible &mdash; see our guide to the{' '}
                 <Link href="/resources/top-risks-of-underinsurance-for-managing-agents" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
                   top risks of underinsurance for managing agents
                 </Link>.
@@ -225,9 +213,9 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'Consolidated portfolio reports', desc: 'One clear report across your portfolio, with a rebuild cost breakdown per property, ready to evidence at renewal.' },
-              { title: 'RICS-regulated and insurer accepted', desc: 'Every figure is BCIS-indexed and prepared to be accepted by UK insurers without challenge.' },
-              { title: 'A named surveyor throughout', desc: 'One RICS-regulated point of contact from instruction to delivery, so the whole programme runs smoothly.' },
+              { title: 'Consolidated portfolio reports', desc: 'One report, with a rebuild figure per property.' },
+              { title: 'RICS-regulated and insurer accepted', desc: 'BCIS-indexed figures accepted without challenge.' },
+              { title: 'A named surveyor throughout', desc: 'One point of contact from instruction to delivery.' },
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
@@ -250,33 +238,43 @@ export default function ManagingAgentsPage() {
               The right assessment for managing agents.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl p-8 md:p-11 shadow-lg">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-              Best fit &middot; 3-year protection
-            </p>
-            <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-              3-year RICS protection plan
-            </h3>
-            <p className="text-secondary leading-relaxed mb-8 max-w-2xl">
-              Managing a portfolio means keeping many figures accurate at once. The 3-year protection plan
-              does the heavy lifting: a full RICS assessment now, then indexed updates each year, so nothing
-              slips out of date between renewals.
-            </p>
-            <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
-              {reasons.map((reason) => (
-                <li key={reason} className="py-4 flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                  <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                Request a quote
-              </Link>
-              <Link href="/services#three-year-protection" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                About 3-year protection
-              </Link>
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
+            <div className="relative min-h-[240px] lg:min-h-full">
+              <Image
+                src="/surveyor-reinstatement-cost-assessment-rics.webp"
+                alt="RICS surveyor managing reinstatement valuations across a portfolio"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8 md:p-11">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
+                Best fit &middot; 3-year protection
+              </p>
+              <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
+                3-year RICS protection plan
+              </h3>
+              <p className="text-secondary leading-relaxed mb-8">
+                A full RICS assessment now, then indexed updates each year &mdash; so nothing across the
+                portfolio slips out of date between renewals.
+              </p>
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+                {reasons.map((reason) => (
+                  <li key={reason} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                  Request a quote
+                </Link>
+                <Link href="/services#three-year-protection" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
+                  About 3-year protection
+                </Link>
+              </div>
             </div>
           </div>
         </div>

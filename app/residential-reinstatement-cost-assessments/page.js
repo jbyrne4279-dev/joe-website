@@ -66,32 +66,32 @@ const faqJsonLd = {
 
 const challenges = [
   {
-    title: 'Insuring for value, not rebuild cost',
-    desc: 'Many homeowners insure for the purchase price or a mortgage valuation. Both include the land and location, whereas the rebuild cost is a separate figure — and using the wrong one leads to underinsurance.',
+    title: 'Value, not rebuild cost',
+    desc: 'A purchase price or mortgage valuation includes the land — the rebuild cost is a different figure.',
   },
   {
-    title: 'Index-linking drifting from real costs',
-    desc: 'Automatic index-linking applies a broad inflation figure that cannot track local labour shortages or sudden material price rises, so a sum insured slowly falls behind the true cost to rebuild.',
+    title: 'Index-linking drifts',
+    desc: 'Broad inflation figures can’t track local costs, so cover falls behind over time.',
   },
   {
-    title: 'Calculators that miss the detail',
-    desc: 'Generic rebuild calculators struggle with period features, extensions, and non-standard construction, producing rough figures that can leave a home significantly under-insured.',
+    title: 'Calculators miss detail',
+    desc: 'Generic tools struggle with period features, extensions, and non-standard builds.',
   },
 ]
 
 const included = [
-  { title: 'The full rebuild of the home', desc: 'Reconstructing the building to its current size and specification after the site has been cleared.' },
-  { title: 'Demolition and debris removal', desc: 'Safely clearing the site after a loss so that rebuilding can begin.' },
-  { title: 'Professional and design fees', desc: 'The architect, surveyor, and engineering fees a genuine rebuild requires.' },
-  { title: 'Building-regulation compliance', desc: 'The cost of meeting current regulations, which can differ from the original build.' },
-  { title: 'Outbuildings and boundaries', desc: 'Garages, outbuildings, walls, and other structures that form part of the property.' },
-  { title: 'Inflation over the rebuild period', desc: 'An allowance for cost movement across the design and construction period.' },
+  'The full rebuild of the home',
+  'Demolition and debris removal',
+  'Professional and design fees',
+  'Building-regulation compliance',
+  'Outbuildings and boundaries',
+  'Inflation over the rebuild period',
 ]
 
 const reasons = [
-  'Most standard houses and flats can be assessed accurately without a site visit.',
-  'It is fast and cost-effective, using property records and live BCIS cost data.',
-  'You receive a fully RICS-regulated, broker-ready figure your insurer will accept.',
+  'Most standard houses and flats can be assessed without a site visit.',
+  'Fast and cost-effective, using property records and live BCIS data.',
+  'A fully RICS-regulated, broker-ready figure your insurer will accept.',
 ]
 
 export default function ResidentialReinstatementPage() {
@@ -156,25 +156,15 @@ export default function ResidentialReinstatementPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                A residential reinstatement cost assessment is a professional estimate of what it would
-                genuinely cost to rebuild your home if the worst happened: clearing the site, the rebuild
-                itself, the professional fees, and bringing everything up to today&rsquo;s building
-                regulations. It is the number your buildings insurance should be based on, and it is not the
-                same as what your home is worth on the open market.
+                It&rsquo;s the cost of rebuilding your home from scratch &mdash; not what it would sell for.
+                Market value includes the land and location; the rebuild cost is only the work of putting the
+                building back, so the two are often very different.
               </p>
               <p>
-                That difference catches a lot of homeowners out. A market value or mortgage valuation
-                includes the land and the location; the rebuild cost is only the bricks-and-mortar work of
-                putting the building back. Base your cover on the wrong number and you can end up badly
-                underinsured without ever realising it.
-              </p>
-              <p>
-                It matters because most home policies contain a{' '}
-                <strong className="font-semibold text-primary">condition of average</strong>. If your sum
-                insured is lower than the true rebuild cost, the insurer can reduce any claim by the same
-                proportion, even a smaller one. Costs do not stand still either, and index-linking only goes
-                so far, which is why RICS recommends a full reassessment at least every three years, with
-                index-linking used in between.
+                It matters because most home policies apply a{' '}
+                <strong className="font-semibold text-primary">condition of average</strong>: insure for less
+                than the true rebuild cost and the insurer can cut your claim by the same proportion. RICS
+                recommends a fresh assessment every three years to keep the figure accurate.
               </p>
             </div>
           </div>
@@ -225,9 +215,9 @@ export default function ResidentialReinstatementPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: 'Every type of home', desc: 'RICS-regulated surveyors experienced with houses, flats, period properties, and listed or non-standard construction.' },
-              { title: 'A complete rebuild figure', desc: 'Debris removal, professional fees, and building-regulation compliance are all included, not just the cost of the walls.' },
-              { title: 'Broker-ready within 48 hours', desc: 'A fully RICS-regulated, BCIS-indexed report accepted by UK insurers, whether desktop or on-site.' },
+              { title: 'Every type of home', desc: 'Houses, flats, period, and non-standard construction.' },
+              { title: 'A complete rebuild figure', desc: 'Fees, debris removal, and regulations, not just the walls.' },
+              { title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
@@ -242,26 +232,22 @@ export default function ResidentialReinstatementPage() {
       {/* What's included */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="max-w-2xl mb-6">
+          <div className="max-w-2xl mb-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">
               What&rsquo;s included
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-4">
-              Everything a genuine rebuild would cost.
+            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+              More than walls and a roof.
             </h2>
-            <p className="text-secondary leading-relaxed">
-              A reliable reinstatement figure is far more than the cost of walls and a roof. Each assessment
-              accounts for every element a real rebuild would involve.
-            </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-x-12">
-            {included.map(({ title, desc }) => (
-              <div key={title} className="py-6 border-t border-zinc-200">
-                <h3 className="text-base font-semibold text-primary mb-1.5">{title}</h3>
-                <p className="text-secondary text-[0.95rem] leading-relaxed">{desc}</p>
-              </div>
+          <ul className="grid sm:grid-cols-2 gap-x-12">
+            {included.map((item) => (
+              <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1A6B4A] shrink-0" />
+                <span className="text-primary font-medium">{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -276,33 +262,43 @@ export default function ResidentialReinstatementPage() {
               The right assessment for your home.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl p-8 md:p-11 shadow-lg">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
-              Best fit &middot; Desktop assessment
-            </p>
-            <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
-              Desktop reinstatement cost assessment
-            </h3>
-            <p className="text-secondary leading-relaxed mb-8 max-w-2xl">
-              For most standard homes, a desktop assessment gives you an accurate, RICS-regulated rebuild
-              figure quickly and cost-effectively, with no site visit needed. Period, listed, or
-              non-standard homes are better suited to an on-site survey.
-            </p>
-            <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
-              {reasons.map((reason) => (
-                <li key={reason} className="py-4 flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
-                  <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                Request a quote
-              </Link>
-              <Link href="/services#desktop-rca" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                About desktop assessments
-              </Link>
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
+            <div className="relative min-h-[240px] lg:min-h-full">
+              <Image
+                src="/reinstatement-cost-assessment-uk.webp"
+                alt="Residential home assessed for its rebuild cost"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8 md:p-11">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
+                Best fit &middot; Desktop assessment
+              </p>
+              <h3 className="text-2xl font-bold text-primary leading-tight mb-4">
+                Desktop reinstatement cost assessment
+              </h3>
+              <p className="text-secondary leading-relaxed mb-8">
+                Ideal for standard homes &mdash; accurate and cost-effective, with no site visit. Period or
+                listed homes are better suited to an on-site survey.
+              </p>
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+                {reasons.map((reason) => (
+                  <li key={reason} className="py-4 flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                    <span className="text-secondary leading-relaxed text-[0.98rem]">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
+                  Request a quote
+                </Link>
+                <Link href="/services#desktop-rca" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
+                  About desktop assessments
+                </Link>
+              </div>
             </div>
           </div>
         </div>

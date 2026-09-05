@@ -349,6 +349,13 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
+                tag: 'Explained',
+                title: 'What Is a Building Reinstatement Cost?',
+                desc: 'A plain-English guide to what a building reinstatement cost is, how it differs from market value and how a RICS surveyor calculates it.',
+                href: '/resources/what-is-a-building-reinstatement-cost',
+                img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=300&fit=crop&auto=format&q=80',
+              },
+              {
                 tag: 'RICS Guidance',
                 title: 'When Should Block Insurance Valuations Be Updated?',
                 desc: 'RICS recommends every 3 years. Find out why annual index linking alone is not enough and what triggers an earlier reassessment.',

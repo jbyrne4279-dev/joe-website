@@ -40,6 +40,12 @@ const organizationJsonLd = {
   '@type': 'ProfessionalService',
   '@id': `${SITE_URL}/`,
   name: 'Reinstatement Cost Assessment Ltd',
+  legalName: 'Reinstatement Cost Assessment Limited',
+  identifier: {
+    '@type': 'PropertyValue',
+    propertyID: 'Companies House registration number',
+    value: '17101918',
+  },
   alternateName: ['RCA Ltd', 'Rebuild Cost Assessment Ltd'],
   url: SITE_URL,
   logo: `${SITE_URL}/rca48.png`,
@@ -68,6 +74,22 @@ const organizationJsonLd = {
     longitude: -0.1444,
   },
   hasMap: 'https://maps.google.com/?q=17+Hanover+Square,+London+W1S+1BN',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '17:30',
+    },
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    telephone: '+44-20-3178-8099',
+    email: 'michael@reinstatementcostassessment.com',
+    areaServed: 'GB',
+    availableLanguage: 'English',
+  },
   serviceType: 'Rebuild Cost Assessment',
   knowsAbout: [
     'Rebuild Cost Assessment',

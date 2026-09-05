@@ -70,6 +70,8 @@ export default function Footer() {
             <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Company</h5>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/">Home</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/about">About</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/building-reinstatement-cost">Building Reinstatement Cost</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/services">Services</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/resources">Resources</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/contact">Contact</Link></li>

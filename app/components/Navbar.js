@@ -21,6 +21,7 @@ const links = [
   { href: '/', label: 'Home', children: sectorLinks },
   { href: '/services', label: 'Services', children: serviceLinks },
   { href: '/resources', label: 'Resources' },
+  { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ]
 

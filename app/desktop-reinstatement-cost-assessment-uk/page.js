@@ -128,7 +128,7 @@ export default function DesktopAssessmentUKPage() {
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Desktop Assessment</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span style={{ color: '#1e40af' }}>Desktop</span> reinstatement cost assessment.
+              <span style={{ color: '#1e40af' }}>Desktop</span> <span className="whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               An accurate, RICS-regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.

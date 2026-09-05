@@ -393,13 +393,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', gradient: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', gradient: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', gradient: 'linear-gradient(135deg, #0f3d28 0%, #1A6B4A 100%)' },
-            ].map(({ icon, title, desc, gradient }, i) => (
+              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
+              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
+              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
+            ].map(({ icon, title, desc, shine }, i) => (
               <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className="logo-shine w-14 h-14 rounded-full flex items-center justify-center" style={{ background: gradient }}>
+                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
                   <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
                 </div>
                 <div className="space-y-2">

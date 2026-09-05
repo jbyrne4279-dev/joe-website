@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="pt-2">
               <p className="text-xs text-white mb-3 uppercase tracking-widest font-medium">Regulated by</p>
               <Image
-                src="/rics-logo.png"
+                src="/rics-logo.webp"
                 alt="Regulated by RICS"
                 width={900}
                 height={600}

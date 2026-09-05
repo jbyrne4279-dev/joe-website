@@ -107,7 +107,7 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <img
-          src="/services-hero.jpeg"
+          src="/services-hero.webp"
           alt="Property insurance underinsurance risk - RICS reinstatement cost assessment services UK"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

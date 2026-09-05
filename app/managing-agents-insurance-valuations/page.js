@@ -212,7 +212,7 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10 sovereign-shadow">
             <Image
-              src="/surveyor-reinstatement-cost-assessment-rics.png"
+              src="/surveyor-reinstatement-cost-assessment-rics.webp"
               alt="RICS surveyor preparing reinstatement cost assessments for a managed portfolio"
               fill
               sizes="(max-width: 768px) 100vw, 1024px"

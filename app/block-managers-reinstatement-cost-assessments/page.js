@@ -111,7 +111,7 @@ export default function BlockManagersPage() {
       <div className="px-6 max-w-5xl mx-auto mt-10">
         <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10 sovereign-shadow">
           <Image
-            src="/rca-for-landlords-property-owners.png"
+            src="/rca-for-landlords-property-owners.webp"
             alt="UK residential apartment block reinstatement cost assessment"
             fill
             sizes="(max-width: 768px) 100vw, 1024px"

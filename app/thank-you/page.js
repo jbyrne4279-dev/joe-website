@@ -25,7 +25,7 @@ export default function ThankYouPage() {
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/reinstatement-cost-assessment-uk.png"
+          src="/reinstatement-cost-assessment-uk.webp"
           alt="Reinstatement cost assessment UK property"
           fill
           className="object-cover object-center"

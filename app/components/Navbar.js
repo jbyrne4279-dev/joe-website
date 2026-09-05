@@ -27,7 +27,7 @@ export default function Navbar() {
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
           <span className="logo-shine">
             <Image
-              src="/rca-logo-reinstatement-cost-assessment.png"
+              src="/rca-logo-reinstatement-cost-assessment.webp"
               alt="RCA Ltd – Reinstatement Cost Assessment specialists"
               width={80}
               height={64}
@@ -84,7 +84,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex flex-1 justify-end items-center">
           <Image
-            src="/rics-logo.png"
+            src="/rics-logo.webp"
             alt="Regulated by RICS"
             width={900}
             height={600}
@@ -94,7 +94,7 @@ export default function Navbar() {
 
         <div className="md:hidden flex flex-1 justify-end items-center gap-3">
           <Image
-            src="/rics-logo.png"
+            src="/rics-logo.webp"
             alt="Regulated by RICS"
             width={900}
             height={600}

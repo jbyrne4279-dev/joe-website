@@ -107,7 +107,7 @@ export default function ResourcesPage() {
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <img
-            src="/resources-hero.jpeg"
+            src="/resources-hero.webp"
             alt="UK residential buildings with hidden underinsurance risk"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />

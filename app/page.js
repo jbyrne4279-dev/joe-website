@@ -150,7 +150,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/reinstatement-cost-assessments-uk.png"
+          src="/reinstatement-cost-assessments-uk.webp"
           alt="RICS-regulated Reinstatement Cost Assessment for UK property"
           fill
           priority
@@ -367,7 +367,7 @@ export default function HomePage() {
       {/* Our Expertise */}
       <section className="scroll-reveal relative py-24 overflow-hidden">
         <Image
-          src="/services-hero.jpeg"
+          src="/services-hero.webp"
           alt="Elegant period townhouses in London"
           fill
           sizes="100vw"

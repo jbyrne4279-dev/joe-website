@@ -207,7 +207,7 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden mb-10 sovereign-shadow">
             <Image
-              src="/commercial-reinstatement-cost-assessment.png"
+              src="/commercial-reinstatement-cost-assessment.webp"
               alt="Commercial property reinstatement cost assessment"
               fill
               sizes="(max-width: 768px) 100vw, 1024px"

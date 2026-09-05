@@ -189,7 +189,7 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Who needs it */}
-      <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#3f340f' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300/80 mb-4">Who needs it</p>
@@ -294,9 +294,14 @@ export default function ThreeYearAssessmentLondonPage() {
         </div>
       </section>
 
-      <ContactSection />
+      <ContactSection
+        accent="#8a6d1a"
+        tintRgb="201,162,39"
+        buttonStyle={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}
+      />
 
       <FaqSection
+        bg="#3f340f"
         description="Common questions about the 3-year reinstatement cost assessment plan for London property."
         items={faqItems}
       />

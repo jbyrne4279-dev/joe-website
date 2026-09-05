@@ -133,7 +133,7 @@ export default function DesktopAssessmentUKPage() {
               An accurate, RICS-regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.
             </p>
             <div className="flex justify-center">
-              <Link href="/contact?service=desktop#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+              <Link href="/contact?service=desktop#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
                 Request a quote
               </Link>
             </div>
@@ -144,7 +144,7 @@ export default function DesktopAssessmentUKPage() {
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What it is</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A full rebuild cost, without the site visit.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
@@ -166,7 +166,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6 bg-zinc-50">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">How it works</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">How it works</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Four steps, forty-eight hours.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
@@ -187,17 +187,17 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* Who needs it */}
-      <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">Who needs it</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300/80 mb-4">Who needs it</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">Ideal for standard UK property.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-5 items-start bg-white/[0.04] rounded-2xl p-6 border border-white/10">
                 <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-emerald-300" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                  <span className="material-symbols-outlined text-blue-300" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
@@ -212,7 +212,7 @@ export default function DesktopAssessmentUKPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
@@ -235,7 +235,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6 bg-zinc-50">
         <div className="max-w-4xl mx-auto">
           <div className="max-w-2xl mb-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What&rsquo;s included</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">More than walls and a roof.</h2>
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-12">
@@ -252,7 +252,7 @@ export default function DesktopAssessmentUKPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK-wide coverage</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK-wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             Because a desktop assessment needs no physical visit, we cover the whole of the UK with the same
@@ -274,7 +274,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6 bg-zinc-50">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Not quite right?</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Not quite right?</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -294,9 +294,14 @@ export default function DesktopAssessmentUKPage() {
         </div>
       </section>
 
-      <ContactSection />
+      <ContactSection
+        accent="#1e40af"
+        tintRgb="37,99,235"
+        buttonStyle={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}
+      />
 
       <FaqSection
+        bg="#10265c"
         description="Common questions about desktop reinstatement cost assessments for UK property."
         items={faqItems}
       />

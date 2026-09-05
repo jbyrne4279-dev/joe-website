@@ -367,8 +367,8 @@ export default function HomePage() {
       {/* Our Expertise */}
       <section className="scroll-reveal relative py-24 overflow-hidden">
         <Image
-          src="/services-hero.webp"
-          alt="Elegant period townhouses in London"
+          src="/on-site-reinstatement-cost-assessment-survey.jpg"
+          alt="RICS surveyor reviewing building plans on site"
           fill
           sizes="100vw"
           className="object-cover"

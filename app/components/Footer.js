@@ -48,9 +48,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Services</h5>
             <ul className="space-y-3.5 text-sm">
-              <li><Link className="hover:text-emerald-400 transition-colors" href="/services#desktop-rca">Desktop Assessment</Link></li>
-              <li><Link className="hover:text-emerald-400 transition-colors" href="/services#on-site-survey">On-Site Survey</Link></li>
-              <li><Link className="hover:text-emerald-400 transition-colors" href="/services#three-year-protection">3-Year Protection Plan</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/desktop-reinstatement-cost-assessment-uk">Desktop Assessment</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/on-site-reinstatement-cost-assessment-london">On-Site Survey</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/three-year-reinstatement-cost-assessment-london">3-Year Protection Plan</Link></li>
             </ul>
           </div>
 

@@ -50,7 +50,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <img
+          <img fetchPriority="high" decoding="async"
             src="/rebuild-cost-assessment-london.jpeg"
             alt="UK building being assessed for its reinstatement cost"
             className="absolute inset-0 w-full h-full object-cover object-center"

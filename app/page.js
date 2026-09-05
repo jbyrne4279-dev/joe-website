@@ -187,7 +187,9 @@ export default function HomePage() {
               <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
-              Is yours one of them? Certified Reinstatement Cost Assessments by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
+              Is yours one of them? We establish your accurate{' '}
+              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>{' '}
+              &mdash; certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -649,7 +651,7 @@ export default function HomePage() {
                 key={title}
                 className="group relative overflow-hidden rounded-xl h-[28rem] flex flex-col justify-end"
               >
-                <img className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={src} alt={alt} />
+                <img loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={src} alt={alt} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10"></div>
                 <div className="relative z-10 p-7 space-y-2.5">
                   <span className="inline-block text-[0.65rem] font-bold uppercase tracking-widest text-emerald-400 bg-emerald-400/15 border border-emerald-400/30 px-2.5 py-1 rounded-full">{label}</span>

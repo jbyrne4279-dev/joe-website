@@ -119,7 +119,7 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img
+        <img fetchPriority="high" decoding="async"
           src="/on-site-reinstatement-cost-assessment-survey.jpg"
           alt="RICS surveyor carrying out an on-site reinstatement cost assessment survey in London"
           className="absolute inset-0 w-full h-full object-cover object-center"
@@ -221,7 +221,7 @@ export default function OnSiteAssessmentLondonPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Detail is where the value hides.</h2>
@@ -267,7 +267,7 @@ export default function OnSiteAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Surveyors across the capital.</h2>

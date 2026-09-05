@@ -170,6 +170,12 @@ export default function CommercialReinstatementPage() {
                 the same proportion. RICS recommends a fresh assessment every three years to keep that
                 figure honest.
               </p>
+              <p>
+                It follows exactly the same principles as any{' '}
+                <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>{' '}
+                &mdash; the difference for commercial property is scale, construction type and the specialist
+                systems that a full rebuild has to replace.
+              </p>
             </div>
           </div>
           <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
@@ -234,7 +240,7 @@ export default function CommercialReinstatementPage() {
             ))}
           </div>
           <div className="flex justify-end mt-10">
-            <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
+            <img loading="lazy" decoding="async" src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
           </div>
         </div>
       </section>

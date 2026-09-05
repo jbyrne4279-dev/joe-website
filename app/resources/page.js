@@ -108,7 +108,7 @@ export default function ResourcesPage() {
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-          <img
+          <img fetchPriority="high" decoding="async"
             src="/resources-hero.webp"
             alt="UK residential buildings with hidden underinsurance risk"
             className="absolute inset-0 w-full h-full object-cover object-center"
@@ -286,7 +286,7 @@ export default function ResourcesPage() {
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 {icon === 'gavel' ? (
                   <div className="h-12 flex items-center justify-center">
-                    <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-11 w-auto object-contain" />
+                    <img loading="lazy" decoding="async" src="/rics-logo.webp" alt="Regulated by RICS" className="h-11 w-auto object-contain" />
                   </div>
                 ) : (
                   <div className="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
@@ -379,7 +379,7 @@ export default function ResourcesPage() {
             ].map(({ tag, title, desc, href, img }) => (
               <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>
                 <div className="h-44 overflow-hidden">
-                  <img src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" />
+                  <img loading="lazy" decoding="async" src={img} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-70" />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <span className="text-xs font-bold uppercase tracking-widest text-[#4ade80] mb-2">{tag}</span>

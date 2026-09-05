@@ -63,7 +63,7 @@ export default function ArticlePage() {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <img
+        <img fetchPriority="high" decoding="async"
           src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&h=900&fit=crop&auto=format&q=80"
           alt="UK residential buildings and property"
           className="absolute inset-0 w-full h-full object-cover object-center"

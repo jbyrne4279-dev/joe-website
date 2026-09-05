@@ -92,7 +92,7 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
+        <img fetchPriority="high" decoding="async"
           src="/contact-hero.webp"
           alt="Fire-damaged building - the hard way to find out you were underinsured"
           className="absolute inset-0 w-full h-full object-cover object-center"

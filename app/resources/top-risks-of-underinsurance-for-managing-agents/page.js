@@ -63,7 +63,7 @@ export default function ArticlePage() {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <img
+        <img fetchPriority="high" decoding="async"
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&h=900&fit=crop&auto=format&q=80"
           alt="Risk and compliance office documents"
           className="absolute inset-0 w-full h-full object-cover object-center"

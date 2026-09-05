@@ -227,7 +227,7 @@ export default function BlockManagersPage() {
             ))}
           </div>
           <div className="flex justify-end mt-10">
-            <img src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
+            <img loading="lazy" decoding="async" src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
           </div>
         </div>
       </section>

@@ -119,7 +119,7 @@ export default function DesktopAssessmentUKPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img
+        <img fetchPriority="high" decoding="async"
           src="/desktop-reinstatement-cost-assessment.jpg"
           alt="Surveyor producing a desktop reinstatement cost assessment from property records and a 3D building model"
           className="absolute inset-0 w-full h-full object-cover object-center"
@@ -222,7 +222,7 @@ export default function DesktopAssessmentUKPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
@@ -269,7 +269,7 @@ export default function DesktopAssessmentUKPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import GrowObserver from './components/GrowObserver'
+import NotSureQuiz from './components/NotSureQuiz'
 
 export const metadata = {
   title: {
@@ -220,6 +221,7 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          <NotSureQuiz />
         </div>
       </section>
 

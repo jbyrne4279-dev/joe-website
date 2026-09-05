@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import StepIcon from '../components/StepIcon'
 
 export const metadata = {
   title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
@@ -216,7 +217,7 @@ export default function BlockManagersPage() {
             {help.map(({ icon, title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                  <StepIcon name={icon} size={24} className="text-[#1A6B4A]" />
                 </div>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>

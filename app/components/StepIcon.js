@@ -100,6 +100,61 @@ const paths = {
       <path d="m10 9 1.4 1.4 2.6-2.8" />
     </>
   ),
+
+  // How-we-help concepts
+  home_work: (
+    <>
+      <path d="M3 11l9-7 9 7" />
+      <path d="M5 10v10h14V10" />
+      <path d="M10 20v-5h4v5" />
+    </>
+  ),
+  architecture: (
+    <>
+      <circle cx="12" cy="5" r="1.6" />
+      <path d="M12 6.6v1.4" />
+      <path d="M12 8 7 20M12 8l5 12" />
+      <path d="M9.2 15h5.6" />
+    </>
+  ),
+  bolt: (
+    <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+  ),
+  engineering: (
+    <>
+      <circle cx="12" cy="12" r="3.2" />
+      <path d="M12 3v2.6M12 18.4V21M3 12h2.6M18.4 12H21M5.6 5.6l1.9 1.9M16.5 16.5l1.9 1.9M18.4 5.6l-1.9 1.9M7.5 16.5l-1.9 1.9" />
+    </>
+  ),
+  summarize: (
+    <>
+      <path d="M7 3h8l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+      <path d="M14 3v4h4" />
+      <path d="M9 12h6M9 16h4" />
+    </>
+  ),
+  verified: (
+    <>
+      <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" />
+      <path d="m9 12 2 2 4-4" />
+    </>
+  ),
+  support_agent: (
+    <>
+      <path d="M5 12a7 7 0 0 1 14 0" />
+      <path d="M4 13a2 2 0 0 1 2-2h1v6H6a2 2 0 0 1-2-2z" />
+      <path d="M20 13a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z" />
+      <path d="M18 17v1a3 3 0 0 1-3 3h-3" />
+    </>
+  ),
+  apartment: (
+    <>
+      <path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16" />
+      <path d="M15 21V9h4a1 1 0 0 1 1 1v11" />
+      <path d="M7 8h2M11 8h1M7 12h2M11 12h1M7 16h2M11 16h1" />
+      <path d="M3 21h18" />
+    </>
+  ),
 }
 
 export default function StepIcon({ name, size = 26, className, style }) {

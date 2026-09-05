@@ -290,7 +290,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto space-y-8">
 
           {/* Desktop Assessment */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
+          <div id="desktop-rca" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
@@ -299,9 +299,14 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-primary mb-3">Desktop Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A fast, accurate rebuild cost assessment produced entirely remotely. No site visit required, ideal for standard residential and commercial properties.</p>
               </div>
-              <Link href="/contact?service=desktop#contact-form" className="text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-                Contact RICS Surveyor
-              </Link>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link href="/contact?service=desktop#contact-form" className="text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
+                  Contact RICS Surveyor
+                </Link>
+                <Link href="/desktop-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: '#1e40af' }}>
+                  Full details <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                </Link>
+              </div>
             </div>
             <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-50">
               {[
@@ -324,7 +329,7 @@ export default function ServicesPage() {
           </div>
 
           {/* On-Site Survey */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
+          <div id="on-site-survey" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
@@ -333,9 +338,14 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-primary mb-3">On-Site RICS Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A full physical rebuild cost assessment carried out by a RICS-regulated surveyor. The most accurate reinstatement cost assessment available, essential for listed, complex, or high-value buildings.</p>
               </div>
-              <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
-                Contact RICS Surveyor
-              </Link>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center">
+                  Contact RICS Surveyor
+                </Link>
+                <Link href="/on-site-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold text-[#1A6B4A]">
+                  Full details <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                </Link>
+              </div>
             </div>
             <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-50">
               {[
@@ -358,7 +368,7 @@ export default function ServicesPage() {
           </div>
 
           {/* 3-Year Protection - featured */}
-          <div className="grow-card service-card-shine rounded-3xl overflow-hidden border border-[#8a6d1a] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #8a6d1a 0%, #c9a227 100%)' }}>
+          <div id="three-year-protection" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-[#8a6d1a] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #8a6d1a 0%, #c9a227 100%)' }}>
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
@@ -370,9 +380,14 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-white mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
                 <p className="text-white/80 text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>
               </div>
-              <Link href="/contact?service=3year#contact-form" className="bg-white text-[#8a6d1a] px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform self-start text-center">
-                Enquire Now
-              </Link>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link href="/contact?service=3year#contact-form" className="bg-white text-[#8a6d1a] px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center">
+                  Enquire Now
+                </Link>
+                <Link href="/three-year-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold text-white">
+                  Full details <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                </Link>
+              </div>
             </div>
             <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-white/10" style={{ background: 'rgba(255,255,255,0.08)' }}>
               {[

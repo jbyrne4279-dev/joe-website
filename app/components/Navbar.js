@@ -11,9 +11,15 @@ const sectorLinks = [
   { href: '/block-managers-reinstatement-cost-assessments', label: 'Block Managers' },
 ]
 
+const serviceLinks = [
+  { href: '/desktop-reinstatement-cost-assessment-london', label: 'Desktop Assessment' },
+  { href: '/on-site-reinstatement-cost-assessment-london', label: 'On-Site Survey' },
+  { href: '/three-year-reinstatement-cost-assessment-london', label: '3-Year Protection Plan' },
+]
+
 const links = [
   { href: '/', label: 'Home', children: sectorLinks },
-  { href: '/services', label: 'Services' },
+  { href: '/services', label: 'Services', children: serviceLinks },
   { href: '/resources', label: 'Resources' },
   { href: '/contact', label: 'Contact' },
 ]

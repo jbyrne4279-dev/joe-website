@@ -21,6 +21,24 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/desktop-reinstatement-cost-assessment-london`,
+      lastModified: new Date('2026-09-05'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/on-site-reinstatement-cost-assessment-london`,
+      lastModified: new Date('2026-09-05'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/three-year-reinstatement-cost-assessment-london`,
+      lastModified: new Date('2026-09-05'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/contact`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'monthly',

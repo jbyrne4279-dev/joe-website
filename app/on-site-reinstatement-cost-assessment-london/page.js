@@ -128,7 +128,7 @@ export default function OnSiteAssessmentLondonPage() {
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">On-Site Survey &middot; London</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span style={{ color: '#1A6B4A' }}>On-site</span> reinstatement cost assessment in London.
+              <span style={{ color: '#1A6B4A' }}>On-site</span> reinstatement cost assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               The most accurate rebuild cost available &mdash; a full physical survey by a RICS-regulated surveyor. Essential for London&rsquo;s listed, period, complex and high-value buildings, delivered with full site evidence.

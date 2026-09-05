@@ -131,7 +131,7 @@ export default function ThreeYearAssessmentLondonPage() {
               <span className="px-3 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>Best Value</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span style={{ color: '#a16207' }}>3-year</span> reinstatement cost assessment in London.
+              <span style={{ color: '#a16207' }}>3-year</span> reinstatement cost assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.

@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
+import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
   description:
-    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
+    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
     title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
     description:
-      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 5 days. Protect leaseholders from underinsurance.',
+      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
     url: '/block-managers-reinstatement-cost-assessments',
   },
 }
@@ -25,12 +26,53 @@ const breadcrumbJsonLd = {
   ],
 }
 
+const faqItems = [
+  {
+    question: 'What is a reinstatement cost assessment for a block of flats?',
+    answer: 'It is a professional calculation of the full cost of rebuilding a residential block from the ground up if it were destroyed - including demolition, debris removal, professional fees, and compliance with current building regulations. It is the figure the block’s buildings insurance sum insured should be based on, and it protects every leaseholder if a major claim arises.',
+  },
+  {
+    question: 'Why is an accurate sum insured so important for leaseholders?',
+    answer: 'Most block policies contain a "condition of average". If the sum insured is lower than the true rebuild cost, the insurer can reduce a claim payout in proportion to the shortfall - even for a partial loss such as a fire in a single flat. That shortfall typically falls back on leaseholders through the service charge, so an inaccurate figure exposes every resident in the building.',
+  },
+  {
+    question: 'Isn’t annual index-linking enough to keep the figure accurate?',
+    answer: 'Index-linking helps, but it applies a general inflation adjustment and cannot account for local labour shortages, material price spikes, or changes to building regulations. Over several years the insured figure can drift well below the true rebuild cost. This is why RICS recommends a full reinstatement cost assessment at least every three years, with index-linking used only in the intervening years.',
+  },
+  {
+    question: 'How often should a block reinstatement cost assessment be updated?',
+    answer: 'RICS guidance recommends a full reassessment at least every three years. Earlier reassessment is sensible after significant works, an extension, a change in construction, or a period of unusually high construction-cost inflation.',
+  },
+  {
+    question: 'Will insurers accept the report at renewal?',
+    answer: 'Yes. Our assessments are RICS-regulated and BCIS-indexed, produced to be accepted by all major insurers as evidence of an adequate sum insured - which helps avoid queries, delays, and disputes at renewal.',
+  },
+  {
+    question: 'Do you offer desktop or on-site assessments for blocks?',
+    answer: 'Both. Standard blocks can often be assessed accurately by desktop using property records and BCIS cost data, while larger, complex, or non-standard blocks benefit from an on-site survey. We advise on the right approach for each building.',
+  },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function BlockManagersPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
     <main>
       {/* Hero */}
@@ -44,7 +86,7 @@ export default function BlockManagersPage() {
               Reinstatement Cost Assessments for Block Managers.
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 text-center">
-              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers - delivered in 5 days.
+              Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers - delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
@@ -72,6 +114,48 @@ export default function BlockManagersPage() {
           className="w-full h-64 md:h-80 object-cover rounded-2xl mb-10 sovereign-shadow"
         />
       </div>
+
+      {/* Understanding / prose explainer */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+              The Basics
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight">
+              Why block managers need an accurate reinstatement figure.
+            </h2>
+          </div>
+          <div className="space-y-5 text-zinc-700 leading-relaxed text-[1.05rem]">
+            <p>
+              A reinstatement cost assessment (RCA) for a block of flats is a professional calculation of
+              what it would cost to rebuild the entire building from the ground up if it were destroyed.
+              It covers far more than bricks and mortar &mdash; demolition and debris removal, professional
+              fees, and the cost of meeting current building regulations all form part of the figure. It
+              is not the same as the block&rsquo;s market value; it is the number the buildings insurance
+              sum insured should be based on.
+            </p>
+            <p>
+              For a block manager, getting that figure right is a duty owed to every leaseholder. Most
+              block policies contain a <strong className="text-[#0f3d28]">condition of average</strong>: if
+              the sum insured is lower than the true rebuild cost, the insurer can reduce a claim payout in
+              proportion to the shortfall &mdash; even for a partial loss such as a fire confined to one
+              flat. That shortfall usually flows back to leaseholders through the service charge, so an
+              inaccurate sum insured puts the whole building at financial risk.
+            </p>
+            <p>
+              Annual index-linking helps, but it applies a broad inflation adjustment that cannot capture
+              local labour shortages, material price spikes, or regulatory changes. Over a few years the
+              insured figure can drift well below reality. That is why{' '}
+              <Link href="/resources/when-should-block-insurance-valuations-be-updated" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">
+                RICS recommends a full reassessment at least every three years
+              </Link>
+              , with index-linking used only in between &mdash; and why insurers increasingly expect a
+              current RICS-regulated report to support the sum insured at renewal.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Problems We Solve */}
       <section className="py-20 px-6 bg-zinc-50">
@@ -134,7 +218,7 @@ export default function BlockManagersPage() {
             {[
               'Full RICS-regulated reinstatement assessment per block',
               'BCIS-indexed figures accepted by all major insurers',
-              'Delivered in 5 days - desktop or on-site',
+              'Delivered in 48 hours - desktop or on-site',
             ].map((point, i) => (
               <div
                 key={i}
@@ -177,6 +261,11 @@ export default function BlockManagersPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        description="Common questions about reinstatement cost assessments for blocks of flats, sums insured, and leaseholder protection."
+        items={faqItems}
+      />
 
       <ContactSection />
     </main>

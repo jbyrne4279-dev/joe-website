@@ -25,7 +25,7 @@ const servicesFaqItems = [
   { question: 'What is included in the 3-year protection plan?', answer: 'Our 3-Year Protection plan includes a full reinstatement cost assessment plus automated annual updates, ensuring your rebuild value stays accurate and compliant as construction costs change.' },
   { question: 'Do I really need annual updates to my reinstatement cost assessment?', answer: 'Yes. Construction costs change rapidly. Without updates, your policy can quickly become inaccurate. Our automated updates keep your valuation aligned with current market rates.' },
   { question: 'Is a desktop reinstatement cost assessment accurate enough for insurance?', answer: 'For standard properties, yes. Desktop assessments provide reliable valuations using advanced modelling. However, complex properties benefit from on-site inspection for maximum accuracy.' },
-  { question: 'How fast can I get my reinstatement cost assessment completed?', answer: 'Desktop assessments are typically completed within 5 days. On-site surveys and complex properties may take slightly longer depending on scope and access.' },
+  { question: 'How fast can I get my reinstatement cost assessment completed?', answer: 'Desktop assessments are typically completed within 48 hours. On-site surveys and complex properties may take slightly longer depending on scope and access.' },
   { question: 'Why does an on-site survey cost more?', answer: 'On-site surveys involve a full physical inspection, detailed measurement, and expert analysis of materials and structure. This delivers the highest level of accuracy for complex buildings.' },
   { question: 'What happens if I choose the wrong reinstatement cost assessment service?', answer: 'We review every instruction before proceeding. If your property requires a higher level of assessment, we will advise you to ensure your valuation is accurate and compliant.' },
   { question: 'Is the 3-year plan better value than single assessments?', answer: 'Yes. The 3-Year Protection plan spreads cost while ensuring ongoing compliance and accuracy, removing the risk of outdated valuations between assessments.' },
@@ -304,7 +304,7 @@ export default function ServicesPage() {
               {[
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'Our surveyors use property records, floor area data, and live BCIS construction cost indices to produce your RICS reinstatement cost assessment without a site visit.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Standard homes, buy-to-let properties, HMOs, retail units, and warehouses with straightforward construction and no listed status.' },
-                { cls: 'service-subcard-reveal-3', num: 3, title: 'Turnaround', text: 'Delivered within 5 working days of instruction. Faster turnaround available on request. Contact us to discuss your deadline.' },
+                { cls: 'service-subcard-reveal-3', num: 3, title: 'Turnaround', text: 'Delivered within 48 hours of instruction. Expedited turnaround available on request. Contact us to discuss your deadline.' },
                 { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A fully RICS-regulated reinstatement cost assessment report stating your current rebuild cost, accepted by all UK insurers and brokers without challenge.' },
               ].map(({ cls, num, title, text }) => (
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-[#1A6B4A]/15 shadow-sm`}>

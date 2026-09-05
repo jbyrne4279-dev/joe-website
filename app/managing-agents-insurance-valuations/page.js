@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
+import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment for Managing Agents | Rebuild Cost',
@@ -25,12 +26,53 @@ const breadcrumbJsonLd = {
   ],
 }
 
+const faqItems = [
+  {
+    question: 'What is an insurance reinstatement valuation for managing agents?',
+    answer: 'It is a professional, RICS-regulated calculation of the full rebuild cost of each property in a managed portfolio - the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and is deliberately different from a property’s market value.',
+  },
+  {
+    question: 'Why should managing agents commission RCAs across their portfolio?',
+    answer: 'Managing agents place buildings insurance on behalf of freeholders and leaseholders, so an inaccurate sum insured is a direct exposure. Most policies contain a "condition of average", meaning an underinsured building can have any claim reduced in proportion to the shortfall. Keeping accurate, current RICS-regulated valuations across the portfolio protects clients, reduces disputes, and supports good management practice.',
+  },
+  {
+    question: 'How does underinsurance create liability for managing agents?',
+    answer: 'If a building is underinsured and a major claim is settled short under a condition of average, leaseholders can face significant unexpected costs - and questions naturally follow about whether the sum insured was kept adequate. A programme of regular RICS-regulated reinstatement cost assessments demonstrates that reasonable steps were taken to keep valuations accurate.',
+  },
+  {
+    question: 'How often should portfolio valuations be reviewed?',
+    answer: 'RICS guidance recommends a full reinstatement cost assessment at least every three years for each property, with index-linking applied in the intervening years. Given recent construction-cost inflation, relying on index-linking alone for longer periods can leave a material underinsurance gap.',
+  },
+  {
+    question: 'Can you handle assessments across a large portfolio?',
+    answer: 'Yes. We carry out RICS-regulated, BCIS-indexed assessments across multiple properties, using desktop assessments for standard buildings and on-site surveys where complexity or value requires it, so an entire portfolio can be brought up to date efficiently.',
+  },
+  {
+    question: 'Are the reports accepted by insurers?',
+    answer: 'Yes. Every report is RICS-regulated and BCIS-indexed, produced to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
+  },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+}
+
 export default function ManagingAgentsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
     <main>
       {/* Hero */}
@@ -60,6 +102,52 @@ export default function ManagingAgentsPage() {
                 View Services
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Understanding / prose explainer */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">
+              The Basics
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0f3d28] leading-tight">
+              Why managing agents rely on RICS reinstatement valuations.
+            </h2>
+          </div>
+          <div className="space-y-5 text-zinc-700 leading-relaxed text-[1.05rem]">
+            <p>
+              A reinstatement cost assessment (RCA) is a professional calculation of what it would cost to
+              rebuild a property from the ground up if it were destroyed &mdash; including demolition,
+              debris removal, professional fees, and compliance with current building regulations. It is
+              the figure a building&rsquo;s insurance sum insured should be based on, and it is distinct
+              from market value. For a managing agent responsible for placing cover across a portfolio,
+              keeping that figure accurate on every property is central to protecting clients.
+            </p>
+            <p>
+              The risk sits in the detail of the policy. Most buildings insurance contains a{' '}
+              <strong className="text-[#0f3d28]">condition of average</strong>: if a property is insured
+              for less than its true rebuild cost, the insurer can scale down any claim in proportion to
+              the shortfall &mdash; even for a partial loss. Across a portfolio, a handful of underinsured
+              buildings can translate into significant unexpected costs for leaseholders and difficult
+              questions about whether sums insured were kept adequate.
+            </p>
+            <p>
+              Index-linking alone rarely keeps pace. It applies a general inflation figure that cannot
+              reflect local labour shortages, material price movements, or regulatory change, so insured
+              values drift over time. RICS recommends a full reassessment at least every three years, with
+              index-linking used in between. A structured programme of{' '}
+              <Link href="/services" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">
+                RICS-regulated, BCIS-indexed assessments
+              </Link>{' '}
+              keeps an entire portfolio current, defensible at renewal, and aligned with good management
+              practice. You can read more in our guide to the{' '}
+              <Link href="/resources/top-risks-of-underinsurance-for-managing-agents" className="text-[#1A6B4A] underline hover:text-[#1A6B4A]/80">
+                top risks of underinsurance for managing agents
+              </Link>.
+            </p>
           </div>
         </div>
       </section>
@@ -173,6 +261,11 @@ export default function ManagingAgentsPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        description="Common questions about reinstatement cost assessments and insurance valuations across managed portfolios."
+        items={faqItems}
+      />
 
       <ContactSection />
     </main>

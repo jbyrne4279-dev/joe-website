@@ -107,7 +107,7 @@ const serviceLinksJsonLd = {
       '@type': 'ListItem',
       position: 1,
       name: 'Desktop Reinstatement Cost Assessment',
-      description: 'Fast, data-driven reinstatement cost assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 5 days.',
+      description: 'Fast, data-driven reinstatement cost assessment for standard UK residential and commercial properties. RICS-regulated, BCIS-indexed, and broker-ready within 48 hours.',
       url: `${SITE_URL}/services`,
     },
     {

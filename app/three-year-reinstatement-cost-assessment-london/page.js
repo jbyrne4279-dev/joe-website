@@ -132,7 +132,7 @@ export default function ThreeYearAssessmentLondonPage() {
               <span style={{ color: '#a16207' }}>3-year</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
+              A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=3year#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
@@ -156,15 +156,15 @@ export default function ThreeYearAssessmentLondonPage() {
               rebuild cost updates automatically for each of the next three years.
             </p>
             <p>
-              Instead of relying on your insurer&rsquo;s generic index &mdash; or forgetting to review the figure
-              at all &mdash; your London sum insured is professionally maintained throughout. You walk into every
+              Instead of relying on your insurer&rsquo;s generic index &mdash; or forgetting to review the figure
+              at all &mdash; your London sum insured is professionally maintained throughout. You walk into every
               renewal with a current, defensible, broker-ready figure.
             </p>
             <p>
               The plan is looked after by a RICS-regulated practice with over 50 years of experience between its
               surveyors, working exclusively on reinstatement cost assessments. Because rebuild valuation is the
               only thing we do, each yearly update is handled with the same specialist care as the first
-              assessment &mdash; and always by people who know your building.
+              assessment &mdash; and always by people who know your building.
             </p>
           </div>
           </div>
@@ -236,7 +236,7 @@ export default function ThreeYearAssessmentLondonPage() {
             </p>
             <p>
               The 3-Year plan fixes this. You start from a professionally assessed figure, and each year that figure
-              is re-indexed against the latest BCIS data &mdash; keeping you continuously compliant and protecting
+              is re-indexed against the latest BCIS data &mdash; keeping you continuously compliant and protecting
               you from the slow drift into underinsurance that catches so many blocks and portfolios at claim time.
             </p>
           </div>
@@ -275,7 +275,7 @@ export default function ThreeYearAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             From single buildings to large managed portfolios, we keep London sums insured current across every
-            borough &mdash; ideal for agents and freeholders juggling multiple renewal dates.
+            borough &mdash; ideal for agents and freeholders juggling multiple renewal dates.
           </p>
           <div className="flex flex-wrap gap-2.5">
             {londonAreas.map((area) => (

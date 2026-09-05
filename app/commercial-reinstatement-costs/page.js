@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     question: 'Why is rebuild cost different from market value?',
-    answer: 'Market value reflects what a property would sell for, including the land, its location, and its income potential. Rebuild cost reflects only what it would take to physically reconstruct the building. For commercial property the two figures are often a long way apart, so insurance should always be based on rebuild cost — which is exactly what a reinstatement cost assessment establishes.',
+    answer: 'Market value reflects what a property would sell for, including the land, its location, and its income potential. Rebuild cost reflects only what it would take to physically reconstruct the building. For commercial property the two figures are often a long way apart, so insurance should always be based on rebuild cost — which is exactly what a reinstatement cost assessment establishes.',
   },
   {
     question: 'What happens if my commercial property is underinsured?',
@@ -91,7 +91,7 @@ const help = [
 
 const included = [
   { label: 'Full structural rebuild', detail: 'Reconstructing the entire building shell and structure from the ground up to current standards.' },
-  { label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing — often a large share of a commercial building’s cost.' },
+  { label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing — often a large share of a commercial building’s cost.' },
   { label: 'Specialist fit-out', detail: 'Trade-specific interiors and fixed equipment that form part of the building itself.' },
   { label: 'External works and site costs', detail: 'Car parks, hard-standing, drainage, boundary walls and landscaping around the building.' },
   { label: 'Debris removal and professional fees', detail: 'Clearing the site after a loss, plus the architects, engineers and surveyors to design the rebuild.' },
@@ -145,7 +145,7 @@ export default function CommercialReinstatementPage() {
         </div>
       </section>
 
-      {/* The basics — prose + image */}
+      {/* The basics — prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
           <div>
@@ -157,7 +157,7 @@ export default function CommercialReinstatementPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                It&rsquo;s the cost of rebuilding your property from scratch &mdash; the structure, the
+                It&rsquo;s the cost of rebuilding your property from scratch &mdash; the structure, the
                 services, professional fees, and today&rsquo;s building regulations. That&rsquo;s the figure
                 your insurance should be based on, and it&rsquo;s not the same as market value.
               </p>

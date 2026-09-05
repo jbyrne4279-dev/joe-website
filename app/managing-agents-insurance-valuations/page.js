@@ -31,11 +31,11 @@ const breadcrumbJsonLd = {
 const faqItems = [
   {
     question: 'What is a building reinstatement valuation?',
-    answer: 'A building reinstatement valuation is a professional, RICS-regulated calculation of the full cost of rebuilding a property from scratch — the figure the buildings insurance sum insured should be based on. A building reinstatement valuation covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
+    answer: 'A building reinstatement valuation is a professional, RICS-regulated calculation of the full cost of rebuilding a property from scratch — the figure the buildings insurance sum insured should be based on. A building reinstatement valuation covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
   },
   {
     question: 'What is an insurance reinstatement valuation for managing agents?',
-    answer: 'It is a professional, RICS-regulated calculation of the full rebuild cost of each property in a managed portfolio — the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
+    answer: 'It is a professional, RICS-regulated calculation of the full rebuild cost of each property in a managed portfolio — the figure the buildings insurance sum insured should be based on. It covers demolition, debris removal, professional fees, and compliance with current building regulations, and it is deliberately different from a property’s market value.',
   },
   {
     question: 'Why should managing agents commission assessments across a portfolio?',
@@ -140,7 +140,7 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      {/* The basics — prose + image */}
+      {/* The basics — prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
           <div>
@@ -152,7 +152,7 @@ export default function ManagingAgentsPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                When you manage buildings for other people, the insurance has to be right &mdash; and a
+                When you manage buildings for other people, the insurance has to be right &mdash; and a
                 building reinstatement valuation is how you show it is. It&rsquo;s the cost of rebuilding a
                 property from scratch, and it&rsquo;s not what the building would sell for.
               </p>
@@ -164,7 +164,7 @@ export default function ManagingAgentsPage() {
                 <Link href="/services" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
                   RICS-regulated, BCIS-indexed assessments
                 </Link>{' '}
-                keeps a portfolio accurate and defensible &mdash; see our guide to the{' '}
+                keeps a portfolio accurate and defensible &mdash; see our guide to the{' '}
                 <Link href="/resources/top-risks-of-underinsurance-for-managing-agents" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
                   top risks of underinsurance for managing agents
                 </Link>.

@@ -138,7 +138,7 @@ export default function ArticlePage() {
             {[
               'The 2018 base figure had been produced using a generic online calculator, not a professional assessment, meaning index-linking had been applied to an already understated starting point.',
               'Post-2020 construction inflation ran significantly above the general index used by the insurer.',
-              'The block included a basement car park and communal plant rooms — specialist elements that generic indices do not adequately capture.',
+              'The block included a basement car park and communal plant rooms — specialist elements that generic indices do not adequately capture.',
               'External works, boundary walls, and landscaping had not been included in the original figure.',
             ].map((item) => (
               <div key={item} className="flex gap-4 items-start bg-white/[0.04] rounded-2xl p-5 sm:p-6 border border-white/10">

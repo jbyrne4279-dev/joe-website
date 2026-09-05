@@ -136,7 +136,7 @@ export default function BlockManagersPage() {
         </div>
       </section>
 
-      {/* The basics — prose + image */}
+      {/* The basics — prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
           <div>
@@ -148,14 +148,14 @@ export default function BlockManagersPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                It&rsquo;s the cost of rebuilding the whole block from scratch &mdash; structure, fees,
+                It&rsquo;s the cost of rebuilding the whole block from scratch &mdash; structure, fees,
                 debris removal, and current building regulations. That&rsquo;s the figure the buildings
                 insurance should be based on, not the block&rsquo;s market value.
               </p>
               <p>
                 Most block policies apply a{' '}
                 <strong className="font-semibold text-primary">condition of average</strong>, so if the sum
-                insured is too low, a claim is cut by the same proportion &mdash; and that shortfall lands on
+                insured is too low, a claim is cut by the same proportion &mdash; and that shortfall lands on
                 leaseholders through the service charge. That&rsquo;s why{' '}
                 <Link href="/resources/when-should-block-insurance-valuations-be-updated" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#1A6B4A]/80">
                   RICS recommends a full reassessment every three years

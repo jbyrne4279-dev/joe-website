@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div className="md:col-span-3 md:col-start-6">
+          <div className="md:col-span-2">
             <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Services</h5>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/services#desktop-rca">Desktop Assessment</Link></li>
@@ -54,11 +54,22 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Sectors */}
+          <div className="md:col-span-2">
+            <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Sectors</h5>
+            <ul className="space-y-3.5 text-sm">
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/commercial-reinstatement-costs">Commercial Properties</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/managing-agents-insurance-valuations">Managing Agents</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/block-managers-reinstatement-cost-assessments">Block Managers</Link></li>
+            </ul>
+          </div>
+
           {/* Company */}
           <div className="md:col-span-2">
             <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Company</h5>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/">Home</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/services">Services</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/resources">Resources</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/contact">Contact</Link></li>
             </ul>

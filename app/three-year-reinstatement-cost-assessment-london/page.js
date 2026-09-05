@@ -286,17 +286,17 @@ export default function ThreeYearAssessmentLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
-              <span className="material-symbols-outlined mb-4" style={{ fontSize: '1.6rem', color: '#1e40af' }}>monitor</span>
-              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
-              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
-              <span className="inline-flex items-center gap-1 text-[#1e40af] text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
+              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>monitor</span>
+              <h3 className="text-lg font-semibold text-white mb-2">Desktop Assessment</h3>
+              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
+              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
-            <Link href="/on-site-reinstatement-cost-assessment-london" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
-              <span className="material-symbols-outlined text-[#1A6B4A] mb-4" style={{ fontSize: '1.6rem' }}>location_on</span>
-              <h3 className="text-lg font-semibold text-primary mb-2">On-Site RICS Survey</h3>
-              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">For listed, complex or high-value London buildings where full detail matters.</p>
-              <span className="inline-flex items-center gap-1 text-[#1A6B4A] text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/on-site-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
+              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>location_on</span>
+              <h3 className="text-lg font-semibold text-white mb-2">On-Site RICS Survey</h3>
+              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high-value London buildings where full detail matters.</p>
+              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>
         </div>

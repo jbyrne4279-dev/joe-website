@@ -66,17 +66,26 @@ const faqJsonLd = {
 
 const challenges = [
   {
+    img: '/rca-for-landlords-property-owners.webp',
     title: 'Leaseholders left exposed',
     desc: 'An outdated sum insured can fall well short of the true rebuild cost.',
   },
   {
+    img: '/reinstatement-cost-assessment-uk.webp',
     title: 'Index-linking drifts',
     desc: 'Broad inflation figures can’t track real local build costs.',
   },
   {
+    img: '/surveyor-reinstatement-cost-assessment-rics.webp',
     title: 'Insurers query the figure',
     desc: 'Without a RICS report, renewals face delays and higher premiums.',
   },
+]
+
+const help = [
+  { icon: 'apartment', title: 'A RICS assessment per block', desc: 'An accurate sum insured that protects every leaseholder.' },
+  { icon: 'verified', title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures ready for renewal, without challenge.' },
+  { icon: 'bolt', title: 'Delivered in 48 hours', desc: 'Desktop or on-site, so overdue blocks are quickly up to date.' },
 ]
 
 const reasons = [
@@ -111,26 +120,17 @@ export default function BlockManagersPage() {
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#1A6B4A] mb-5">
-              RICS Regulated &middot; Block Management
-            </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              Reinstatement cost assessments for block managers.
+              Reinstatement cost assessments for <span className="text-[#1A6B4A]">block managers</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers, BCIS-indexed and delivered within 48 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+            <div className="flex justify-center">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
                 Request a quote
               </Link>
-              <Link href="/services" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                Our services
-              </Link>
             </div>
-            <p className="text-xs font-medium text-secondary">
-              RICS Regulated &middot; London &amp; UK
-            </p>
           </div>
         </div>
       </section>
@@ -176,8 +176,8 @@ export default function BlockManagersPage() {
 
       {/* Common challenges */}
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
-        <div className="max-w-5xl mx-auto">
-          <div className="max-w-2xl mb-14">
+        <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mb-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">
               Common challenges
             </p>
@@ -185,11 +185,16 @@ export default function BlockManagersPage() {
               Where block cover slips out of step.
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
-            {challenges.map(({ title, desc }) => (
-              <div key={title} className="bg-[#0f3d28] p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 leading-snug">{title}</h3>
-                <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+          <div className="space-y-5">
+            {challenges.map(({ img, title, desc }) => (
+              <div key={title} className="flex gap-5 items-center bg-white/[0.04] rounded-2xl p-5 border border-white/10">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
+                  <Image src={img} alt="" fill sizes="96px" className="object-cover" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -208,13 +213,11 @@ export default function BlockManagersPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: 'A RICS assessment per block', desc: 'An accurate sum insured that protects every leaseholder.' },
-              { title: 'Accepted by all major insurers', desc: 'BCIS-indexed figures ready for renewal, without challenge.' },
-              { title: 'Delivered in 48 hours', desc: 'Desktop or on-site, so overdue blocks are quickly up to date.' },
-            ].map(({ title, desc }) => (
+            {help.map(({ icon, title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
-                <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
+                <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
+                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                </div>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
@@ -225,8 +228,8 @@ export default function BlockManagersPage() {
 
       {/* Recommended service */}
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
-        <div className="max-w-4xl mx-auto">
-          <div className="max-w-2xl mb-10">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">
               Recommended for you
             </p>
@@ -234,17 +237,17 @@ export default function BlockManagersPage() {
               The right assessment for block managers.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
-            <div className="relative min-h-[240px] lg:min-h-full">
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto">
+            <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/rca-for-landlords-property-owners.webp"
                 alt="UK residential apartment block covered by a 3-year protection plan"
                 fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 768px) 100vw, 672px"
                 className="object-cover"
               />
             </div>
-            <div className="p-8 md:p-11">
+            <div className="p-8 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
                 Best fit &middot; 3-year protection
               </p>
@@ -252,10 +255,11 @@ export default function BlockManagersPage() {
                 3-year RICS protection plan
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
-                A full RICS assessment now, plus annual indexed updates &mdash; so leaseholders stay covered
-                with no repeat admin.
+                Blocks need to stay accurately insured year after year, not just once. The 3-year protection
+                plan pairs a full RICS assessment now with automatic indexed updates each year, so
+                leaseholders stay properly covered as costs rise, with no repeat admin for you.
               </p>
-              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (
                   <li key={reason} className="py-4 flex gap-4 items-start">
                     <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
@@ -263,42 +267,10 @@ export default function BlockManagersPage() {
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                  Request a quote
-                </Link>
-                <Link href="/services#three-year-protection" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                  About 3-year protection
-                </Link>
-              </div>
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow block sm:inline-block">
+                Request a quote
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="scroll-reveal bg-zinc-50 py-20 px-6">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-            Ready to protect your leaseholders?
-          </h2>
-          <p className="text-secondary leading-relaxed">
-            Get a RICS-regulated reinstatement cost assessment for your block: fast, accurate, and ready for
-            your insurer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-            <Link
-              href="/contact#contact-form"
-              className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow"
-            >
-              Request a quote
-            </Link>
-            <Link
-              href="/services"
-              className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-4 rounded-full font-semibold hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center"
-            >
-              View services
-            </Link>
           </div>
         </div>
       </section>

@@ -66,17 +66,26 @@ const faqJsonLd = {
 
 const challenges = [
   {
+    img: '/commercial-reinstatement-cost-assessment.webp',
     title: 'Costs outrun index-linking',
     desc: 'Material and labour inflation has pushed rebuild costs beyond what index-linking captures.',
   },
   {
+    img: '/services-hero.webp',
     title: 'Calculators miss the detail',
     desc: 'Generic tools ignore mechanical, electrical, and specialist fit-out costs.',
   },
   {
+    img: '/surveyor-reinstatement-cost-assessment-rics.webp',
     title: 'Insurers expect RICS figures',
     desc: 'More insurers now want a verifiable RICS figure before agreeing terms.',
   },
+]
+
+const help = [
+  { icon: 'engineering', title: 'Specialist commercial surveyors', desc: 'Experienced across offices, industrial, retail, and mixed-use.' },
+  { icon: 'architecture', title: 'Every cost captured', desc: 'Fit-out, services, and external works, not just the shell.' },
+  { icon: 'bolt', title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
 ]
 
 const included = [
@@ -120,26 +129,17 @@ export default function CommercialReinstatementPage() {
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#1A6B4A] mb-5">
-              RICS Regulated &middot; Commercial Property
-            </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              Commercial reinstatement cost assessments.
+              <span className="text-[#1A6B4A]">Commercial</span> reinstatement cost assessments.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               Accurate rebuild costs for offices, warehouses, retail, and mixed-use buildings. RICS-regulated assessments your broker will accept, BCIS-indexed and delivered within 48 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+            <div className="flex justify-center">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
                 Request a quote
               </Link>
-              <Link href="/services" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                Our services
-              </Link>
             </div>
-            <p className="text-xs font-medium text-secondary">
-              RICS Regulated &middot; London &amp; UK
-            </p>
           </div>
         </div>
       </section>
@@ -183,8 +183,8 @@ export default function CommercialReinstatementPage() {
 
       {/* Common challenges */}
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
-        <div className="max-w-5xl mx-auto">
-          <div className="max-w-2xl mb-14">
+        <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mb-12">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">
               Common challenges
             </p>
@@ -192,11 +192,16 @@ export default function CommercialReinstatementPage() {
               Where commercial cover slips out of step.
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden">
-            {challenges.map(({ title, desc }) => (
-              <div key={title} className="bg-[#0f3d28] p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 leading-snug">{title}</h3>
-                <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+          <div className="space-y-5">
+            {challenges.map(({ img, title, desc }) => (
+              <div key={title} className="flex gap-5 items-center bg-white/[0.04] rounded-2xl p-5 border border-white/10">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
+                  <Image src={img} alt="" fill sizes="96px" className="object-cover" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -215,13 +220,11 @@ export default function CommercialReinstatementPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: 'Specialist commercial surveyors', desc: 'Experienced across offices, industrial, retail, and mixed-use.' },
-              { title: 'Every cost captured', desc: 'Fit-out, services, and external works, not just the shell.' },
-              { title: 'Broker-ready in 48 hours', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers.' },
-            ].map(({ title, desc }) => (
+            {help.map(({ icon, title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
-                <div className="w-10 h-px bg-[#1A6B4A]/60 mb-5" />
+                <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
+                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                </div>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
@@ -244,7 +247,7 @@ export default function CommercialReinstatementPage() {
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map((item) => (
               <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#1A6B4A] shrink-0" />
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>check</span>
                 <span className="text-primary font-medium">{item}</span>
               </li>
             ))}
@@ -254,8 +257,8 @@ export default function CommercialReinstatementPage() {
 
       {/* Recommended service */}
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
-        <div className="max-w-4xl mx-auto">
-          <div className="max-w-2xl mb-10">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">
               Recommended for you
             </p>
@@ -263,17 +266,17 @@ export default function CommercialReinstatementPage() {
               The right assessment for commercial property.
             </h2>
           </div>
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden grid lg:grid-cols-[1fr_1.35fr]">
-            <div className="relative min-h-[240px] lg:min-h-full">
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto">
+            <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/commercial-reinstatement-cost-assessment.webp"
                 alt="Commercial building assessed on site by a RICS surveyor"
                 fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                sizes="(max-width: 768px) 100vw, 672px"
                 className="object-cover"
               />
             </div>
-            <div className="p-8 md:p-11">
+            <div className="p-8 md:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#1A6B4A] mb-2">
                 Best fit &middot; On-site survey
               </p>
@@ -281,10 +284,12 @@ export default function CommercialReinstatementPage() {
                 On-site RICS reinstatement cost assessment
               </h3>
               <p className="text-secondary leading-relaxed mb-8">
-                The most accurate option for commercial buildings, capturing the detail a desktop assessment
-                cannot.
+                For commercial buildings, an on-site survey is the most reliable choice. A RICS-regulated
+                surveyor inspects the property in person and captures the fit-out, services, and specialist
+                construction a desktop assessment can miss, so the rebuild figure holds up under insurer or
+                legal scrutiny.
               </p>
-              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-9">
+              <ul className="border-y border-zinc-200 divide-y divide-zinc-200 mb-8">
                 {reasons.map((reason) => (
                   <li key={reason} className="py-4 flex gap-4 items-start">
                     <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
@@ -292,42 +297,10 @@ export default function CommercialReinstatementPage() {
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow">
-                  Request a quote
-                </Link>
-                <Link href="/services#on-site-survey" className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center">
-                  About on-site surveys
-                </Link>
-              </div>
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow block sm:inline-block">
+                Request a quote
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="scroll-reveal bg-zinc-50 py-20 px-6">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-            Get an accurate commercial reinstatement figure.
-          </h2>
-          <p className="text-secondary leading-relaxed">
-            RICS-regulated assessments for offices, warehouses, retail, and mixed-use buildings, covering
-            fit-out, services, and external works. Broker-ready within 48 hours.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-            <Link
-              href="/contact#contact-form"
-              className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform text-center sovereign-shadow"
-            >
-              Request a quote
-            </Link>
-            <Link
-              href="/services"
-              className="bg-zinc-900/[0.06] border border-zinc-900/10 text-primary px-7 py-4 rounded-full font-semibold hover:bg-zinc-900/[0.1] active:scale-[0.97] transition-all text-center"
-            >
-              View services
-            </Link>
           </div>
         </div>
       </section>

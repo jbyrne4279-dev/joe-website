@@ -12,8 +12,8 @@ const sectorLinks = [
 ]
 
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/services', label: 'Services', children: sectorLinks },
+  { href: '/', label: 'Home', children: sectorLinks },
+  { href: '/services', label: 'Services' },
   { href: '/resources', label: 'Resources' },
   { href: '/contact', label: 'Contact' },
 ]

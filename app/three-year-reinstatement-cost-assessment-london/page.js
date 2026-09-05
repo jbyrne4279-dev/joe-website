@@ -126,8 +126,8 @@ export default function ThreeYearAssessmentLondonPage() {
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a]">3-Year Protection &middot; London</p>
-              <span className="px-3 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>Best Value</span>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207]">3-Year Protection &middot; London</p>
+              <span className="px-3 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>Best Value</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
               3-year reinstatement cost assessment in London.
@@ -136,7 +136,7 @@ export default function ThreeYearAssessmentLondonPage() {
               A full RICS rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous compliance for London property owners &mdash; with no repeat instruction required.
             </p>
             <div className="flex justify-center">
-              <Link href="/contact?service=3year#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>
+              <Link href="/contact?service=3year#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
                 Enquire now
               </Link>
             </div>
@@ -147,7 +147,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* What it is */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">What it is</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What it is</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">One instruction, three years of cover.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
@@ -165,20 +165,20 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Timeline */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#f6f0e0' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">The three-year cycle</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">The three-year cycle</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Accurate at inception, maintained every year.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {timeline.map(({ icon, label, title, desc }) => (
               <div key={label} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
-                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'rgba(201,162,39,0.16)' }}>
-                  <StepIcon name={icon} size={44} style={{ color: '#8a6d1a' }} />
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'rgba(212,160,23,0.16)' }}>
+                  <StepIcon name={icon} size={44} style={{ color: '#a16207' }} />
                 </div>
                 <div>
-                  <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#8a6d1a]/70 mb-1">{label}</p>
+                  <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#a16207]/70 mb-1">{label}</p>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
                   <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
                 </div>
@@ -192,14 +192,14 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">Who needs it</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Who needs it</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary leading-tight">For owners who never want to fall behind.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
-              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-zinc-200/80" style={{ background: '#f6f0e0' }}>
+              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#e6d59a]" style={{ background: '#f5e6bf' }}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#8a6d1a' }}>{icon}</span>
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#a16207' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
@@ -212,9 +212,9 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#f6f0e0' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">Why it matters</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index-linking alone isn&rsquo;t enough.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
@@ -236,13 +236,13 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="max-w-2xl mb-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">What&rsquo;s included</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">What&rsquo;s included</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Everything, for three years.</h2>
           </div>
           <ul className="grid sm:grid-cols-2 gap-x-12">
             {included.map((item) => (
               <li key={item} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
-                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem', color: '#8a6d1a' }}>check</span>
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem', color: '#a16207' }}>check</span>
                 <span className="text-primary font-medium">{item}</span>
               </li>
             ))}
@@ -251,9 +251,9 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#f6f0e0' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">London coverage</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             From single buildings to large managed portfolios, we keep London sums insured current across every
@@ -262,7 +262,7 @@ export default function ThreeYearAssessmentLondonPage() {
           <div className="flex flex-wrap gap-2.5">
             {londonAreas.map((area) => (
               <span key={area} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 bg-zinc-50 text-sm font-medium text-secondary">
-                <span className="material-symbols-outlined" style={{ fontSize: '1rem', color: '#8a6d1a' }}>location_on</span>
+                <span className="material-symbols-outlined" style={{ fontSize: '1rem', color: '#a16207' }}>location_on</span>
                 {area}
               </span>
             ))}
@@ -274,7 +274,7 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6d1a] mb-4">Prefer a one-off?</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Prefer a one-off?</p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -295,13 +295,13 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       <ContactSection
-        accent="#8a6d1a"
-        tintRgb="201,162,39"
-        buttonStyle={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}
+        accent="#a16207"
+        tintRgb="212,160,23"
+        buttonStyle={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}
       />
 
       <FaqSection
-        bg="#3f340f"
+        bg="#3b2c08"
         description="Common questions about the 3-year reinstatement cost assessment plan for London property."
         items={faqItems}
       />

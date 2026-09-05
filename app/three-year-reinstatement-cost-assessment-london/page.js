@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import StepIcon from '../components/StepIcon'
 
 export const metadata = {
   title: '3-Year Reinstatement Cost Assessment London | RICS Protection Plan',
@@ -78,10 +79,10 @@ const faqJsonLd = {
 }
 
 const timeline = [
-  { icon: 'flag', label: 'Inception', title: 'Full RICS assessment', desc: 'We establish an accurate, BCIS-indexed rebuild figure for your London property at the start of the plan.' },
-  { icon: 'update', label: 'Year 1', title: 'Annual BCIS update', desc: 'Your figure is refreshed against the latest construction cost indices and reissued as a certificate.' },
-  { icon: 'trending_up', label: 'Year 2', title: 'Continued indexation', desc: 'Ongoing monitoring keeps your sum insured aligned with real-world London cost inflation.' },
-  { icon: 'workspace_premium', label: 'Year 3', title: 'Maintained compliance', desc: 'A third indexed update completes the RICS-recommended cycle, ready for a fresh assessment.' },
+  { icon: 'inception', label: 'Inception', title: 'Full RICS assessment', desc: 'We establish an accurate, BCIS-indexed rebuild figure for your London property at the start of the plan.' },
+  { icon: 'annual-update', label: 'Year 1', title: 'Annual BCIS update', desc: 'Your figure is refreshed against the latest construction cost indices and reissued as a certificate.' },
+  { icon: 'continued-index', label: 'Year 2', title: 'Continued indexation', desc: 'Ongoing monitoring keeps your sum insured aligned with real-world London cost inflation.' },
+  { icon: 'maintained', label: 'Year 3', title: 'Maintained compliance', desc: 'A third indexed update completes the RICS-recommended cycle, ready for a fresh assessment.' },
 ]
 
 const whoNeedsIt = [
@@ -174,7 +175,7 @@ export default function ThreeYearAssessmentLondonPage() {
             {timeline.map(({ icon, label, title, desc }) => (
               <div key={label} className="rounded-2xl bg-white p-7 border border-zinc-200/80">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(201,162,39,0.16)' }}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#8a6d1a' }}>{icon}</span>
+                  <StepIcon name={icon} size={24} style={{ color: '#8a6d1a' }} />
                 </div>
                 <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#8a6d1a]/70 mb-1">{label}</p>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
@@ -275,7 +276,7 @@ export default function ThreeYearAssessmentLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-london" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
               <span className="material-symbols-outlined mb-4" style={{ fontSize: '1.6rem', color: '#1e40af' }}>monitor</span>
               <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
               <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>

@@ -21,7 +21,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/desktop-reinstatement-cost-assessment-london`,
+      url: `${SITE_URL}/desktop-reinstatement-cost-assessment-uk`,
       lastModified: new Date('2026-09-05'),
       changeFrequency: 'monthly',
       priority: 0.8,

@@ -1,22 +1,23 @@
 import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: 'Desktop Reinstatement Cost Assessment London | RICS Rebuild Cost',
+  title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
   description:
-    'RICS desktop reinstatement cost assessment for London properties. No site visit, BCIS-indexed and broker-ready, delivered in 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
-  alternates: { canonical: '/desktop-reinstatement-cost-assessment-london' },
+    'RICS desktop reinstatement cost assessment across the whole UK. No site visit, BCIS-indexed and broker-ready, delivered in 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
+  alternates: { canonical: '/desktop-reinstatement-cost-assessment-uk' },
   openGraph: {
-    title: 'Desktop Reinstatement Cost Assessment London | RICS Rebuild Cost',
+    title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
     description:
-      'RICS-regulated desktop reinstatement cost assessment for London properties. No site visit required, BCIS-indexed, broker-ready, delivered in 48 hours.',
-    url: '/desktop-reinstatement-cost-assessment-london',
+      'RICS-regulated desktop reinstatement cost assessment across the whole UK. No site visit required, BCIS-indexed, broker-ready, delivered in 48 hours.',
+    url: '/desktop-reinstatement-cost-assessment-uk',
   },
 }
 
 const SITE_URL = 'https://reinstatementcostassessment.org'
-const PAGE_URL = `${SITE_URL}/desktop-reinstatement-cost-assessment-london`
+const PAGE_URL = `${SITE_URL}/desktop-reinstatement-cost-assessment-uk`
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -24,7 +25,7 @@ const breadcrumbJsonLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
     { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
-    { '@type': 'ListItem', position: 3, name: 'Desktop Reinstatement Cost Assessment London', item: PAGE_URL },
+    { '@type': 'ListItem', position: 3, name: 'Desktop Reinstatement Cost Assessment UK', item: PAGE_URL },
   ],
 }
 
@@ -34,20 +35,20 @@ const faqItems = [
     answer: 'A desktop reinstatement cost assessment is a RICS-regulated calculation of what it would cost to rebuild your property, produced remotely without a site visit. Our surveyors use property records, floor area data and live BCIS construction cost indices to establish an accurate rebuild figure for your buildings insurance sum insured.',
   },
   {
-    question: 'Is a desktop assessment accurate enough for my London property?',
-    answer: 'For standard-construction houses, flats, buy-to-let units, HMOs, retail units and warehouses across London, a desktop assessment is accurate, cost-effective and accepted by insurers. Listed buildings, non-standard construction and complex or high-value properties are better suited to an on-site survey where full detail can be captured.',
+    question: 'Is a desktop assessment accurate enough for my property?',
+    answer: 'For standard-construction houses, flats, buy-to-let units, HMOs, retail units and warehouses anywhere in the UK, a desktop assessment is accurate, cost-effective and accepted by insurers. Listed buildings, non-standard construction and complex or high-value properties are better suited to an on-site survey where full detail can be captured.',
   },
   {
-    question: 'How quickly can you deliver a desktop assessment in London?',
-    answer: 'Most London desktop reinstatement cost assessments are delivered within 48 hours of instruction. Expedited turnaround is available on request if you are working to a renewal deadline.',
+    question: 'How quickly can you deliver a desktop assessment?',
+    answer: 'Most desktop reinstatement cost assessments are delivered within 48 hours of instruction. Expedited turnaround is available on request if you are working to a renewal deadline.',
   },
   {
     question: 'Will my insurer accept a desktop RICS assessment?',
     answer: 'Yes. Every desktop assessment is RICS-regulated and BCIS-indexed, and prepared to be broker-ready and accepted by all UK insurers as evidence of an accurate sum insured.',
   },
   {
-    question: 'Do you cover all London boroughs?',
-    answer: 'Yes. We assess properties across Greater London, including the City of London, Westminster, Camden, Islington, Hackney, Tower Hamlets, Southwark, Lambeth, Wandsworth, Kensington and Chelsea, and every outer London borough.',
+    question: 'Where in the UK do you cover?',
+    answer: 'The whole of the UK. Because a desktop assessment needs no physical site visit, we assess properties in England, Scotland, Wales and Northern Ireland with the same speed and accuracy — from London and the South East to the Midlands, the North and beyond.',
   },
 ]
 
@@ -55,10 +56,10 @@ const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Desktop Reinstatement Cost Assessment',
-  name: 'Desktop Reinstatement Cost Assessment London',
-  description: 'RICS-regulated desktop reinstatement cost assessment for London properties, produced remotely using property records and live BCIS data. Broker-ready and delivered in 48 hours.',
+  name: 'Desktop Reinstatement Cost Assessment UK',
+  description: 'RICS-regulated desktop reinstatement cost assessment for properties across the whole UK, produced remotely using property records and live BCIS data. Broker-ready and delivered in 48 hours.',
   url: PAGE_URL,
-  areaServed: { '@type': 'City', name: 'London' },
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
   provider: {
     '@type': 'Organization',
     name: 'Reinstatement Cost Assessment Ltd',
@@ -78,15 +79,15 @@ const faqJsonLd = {
 }
 
 const steps = [
-  { icon: 'description', title: 'You instruct us', desc: 'Send the property address and a few basic details. No appointment or access to the building is needed.' },
-  { icon: 'query_stats', title: 'We gather the data', desc: 'We pull property records, floor areas and construction details, then apply live BCIS cost indices for London.' },
+  { icon: 'instruct', title: 'You instruct us', desc: 'Send the property address and a few basic details. No appointment or access to the building is needed.' },
+  { icon: 'gather-data', title: 'We gather the data', desc: 'We pull property records, floor areas and construction details, then apply live BCIS cost indices for the property’s location.' },
   { icon: 'calculate', title: 'We calculate the rebuild', desc: 'A RICS surveyor produces a full rebuild figure covering demolition, professional fees and regulations.' },
-  { icon: 'mark_email_read', title: 'You receive the report', desc: 'A broker-ready, RICS-regulated report lands in your inbox within 48 hours, ready for your insurer.' },
+  { icon: 'report', title: 'You receive the report', desc: 'A broker-ready, RICS-regulated report lands in your inbox within 48 hours, ready for your insurer.' },
 ]
 
 const whoNeedsIt = [
   { icon: 'home', title: 'Homeowners & landlords', desc: 'Standard houses and flats where a fast, accurate rebuild figure protects against underinsurance.' },
-  { icon: 'apartment', title: 'Buy-to-let & HMOs', desc: 'Portfolio landlords who need compliant sums insured across multiple standard London units.' },
+  { icon: 'apartment', title: 'Buy-to-let & HMOs', desc: 'Portfolio landlords who need compliant sums insured across multiple standard units nationwide.' },
   { icon: 'storefront', title: 'Retail & warehouse units', desc: 'Straightforward commercial premises of standard construction with no listed status.' },
   { icon: 'gavel', title: 'Brokers & managing agents', desc: 'Professionals needing a quick, defensible figure to place or renew cover with confidence.' },
 ]
@@ -100,13 +101,13 @@ const included = [
   'Inflation over the rebuild period',
 ]
 
-const londonAreas = [
-  'City of London', 'Westminster', 'Camden', 'Islington', 'Hackney',
-  'Tower Hamlets', 'Southwark', 'Lambeth', 'Wandsworth', 'Kensington & Chelsea',
-  'Hammersmith & Fulham', 'Greenwich', 'Croydon', 'Ealing', 'Barnet', 'Bromley',
+const coverageAreas = [
+  'London', 'Manchester', 'Birmingham', 'Leeds', 'Liverpool', 'Bristol',
+  'Sheffield', 'Newcastle', 'Nottingham', 'Leicester', 'Southampton',
+  'Brighton', 'Cardiff', 'Edinburgh', 'Glasgow', 'Belfast',
 ]
 
-export default function DesktopAssessmentLondonPage() {
+export default function DesktopAssessmentUKPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
@@ -118,18 +119,18 @@ export default function DesktopAssessmentLondonPage() {
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img
           src="/rebuild-cost-assessment-london.jpeg"
-          alt="London property assessed remotely for its rebuild cost"
+          alt="UK property assessed remotely for its rebuild cost"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Desktop Assessment &middot; London</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Desktop Assessment &middot; UK-wide</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              Desktop reinstatement cost assessment in London.
+              Desktop reinstatement cost assessment, UK-wide.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              An accurate, RICS-regulated rebuild cost for London houses, flats and standard commercial units &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.
+              An accurate, RICS-regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS-indexed and delivered within 48 hours. No site visit required.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=desktop#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -150,7 +151,7 @@ export default function DesktopAssessmentLondonPage() {
               A desktop reinstatement cost assessment establishes the true cost of rebuilding your property from
               scratch &mdash; not its market value. Rather than sending a surveyor to site, we draw on detailed
               property records, floor area data and live BCIS construction cost indices to reach an accurate,
-              defensible figure for London.
+              defensible figure for the property&rsquo;s location.
             </p>
             <p>
               For the majority of standard-construction homes and commercial units, this is the fastest and most
@@ -172,7 +173,7 @@ export default function DesktopAssessmentLondonPage() {
             {steps.map(({ icon, title, desc }, i) => (
               <div key={title} className="rounded-2xl bg-white p-7 border border-zinc-200/80">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(37,99,235,0.12)' }}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1e40af' }}>{icon}</span>
+                  <StepIcon name={icon} size={24} style={{ color: '#1e40af' }} />
                 </div>
                 <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#1e40af]/60 mb-1">Step {i + 1}</p>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
@@ -188,7 +189,7 @@ export default function DesktopAssessmentLondonPage() {
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">Who needs it</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">Ideal for standard London property.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">Ideal for standard UK property.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
@@ -210,13 +211,13 @@ export default function DesktopAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a London problem.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
-              London rebuild costs are consistently higher than the national average &mdash; labour, access,
-              parking, and the density of the capital all push construction prices up. A sum insured based on a
-              purchase price, a mortgage valuation, or an old online calculator almost always understates the real
-              cost of rebuilding.
+              Rebuild costs have risen sharply right across the UK &mdash; labour, materials and regulatory
+              requirements all push construction prices up, and they vary widely by region. A sum insured based on
+              a purchase price, a mortgage valuation, or an old online calculator almost always understates the
+              real cost of rebuilding.
             </p>
             <p>
               Most policies apply a <strong className="font-semibold text-primary">condition of average</strong>:
@@ -249,14 +250,15 @@ export default function DesktopAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">London coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Every borough, remotely assessed.</h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK-wide coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
-            Because a desktop assessment needs no physical visit, we cover the whole of Greater London with the
-            same speed and accuracy &mdash; from central boroughs to the outer edges of the M25.
+            Because a desktop assessment needs no physical visit, we cover the whole of the UK with the same
+            speed and accuracy &mdash; from London and the South East to the Midlands, the North, Scotland,
+            Wales and Northern Ireland.
           </p>
           <div className="flex flex-wrap gap-2.5">
-            {londonAreas.map((area) => (
+            {coverageAreas.map((area) => (
               <span key={area} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 bg-zinc-50 text-sm font-medium text-secondary">
                 <span className="material-symbols-outlined" style={{ fontSize: '1rem', color: '#1e40af' }}>location_on</span>
                 {area}
@@ -293,7 +295,7 @@ export default function DesktopAssessmentLondonPage() {
       <ContactSection />
 
       <FaqSection
-        description="Common questions about desktop reinstatement cost assessments for London property."
+        description="Common questions about desktop reinstatement cost assessments for UK property."
         items={faqItems}
       />
     </main>

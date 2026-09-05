@@ -12,7 +12,7 @@ const sectorLinks = [
 ]
 
 const serviceLinks = [
-  { href: '/desktop-reinstatement-cost-assessment-london', label: 'Desktop Assessment' },
+  { href: '/desktop-reinstatement-cost-assessment-uk', label: 'Desktop Assessment' },
   { href: '/on-site-reinstatement-cost-assessment-london', label: 'On-Site Survey' },
   { href: '/three-year-reinstatement-cost-assessment-london', label: '3-Year Protection Plan' },
 ]

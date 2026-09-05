@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import StepIcon from '../components/StepIcon'
 
 export const metadata = {
   title: 'On-Site Reinstatement Cost Assessment London | RICS Surveyor',
@@ -78,10 +79,10 @@ const faqJsonLd = {
 }
 
 const steps = [
-  { icon: 'event_available', title: 'We arrange access', desc: 'We book a convenient appointment and coordinate access with owners, tenants or managing agents.' },
-  { icon: 'straighten', title: 'We measure on site', desc: 'A RICS surveyor attends, measures every element in person and records the construction and specification.' },
-  { icon: 'photo_camera', title: 'We evidence everything', desc: 'Detailed site notes and photographic evidence capture specialist materials, M&E and curtilage structures.' },
-  { icon: 'verified', title: 'We deliver the report', desc: 'A comprehensive, BCIS-indexed rebuild figure that will withstand insurer or legal scrutiny.' },
+  { icon: 'arrange-access', title: 'We arrange access', desc: 'We book a convenient appointment and coordinate access with owners, tenants or managing agents.' },
+  { icon: 'measure', title: 'We measure on site', desc: 'A RICS surveyor attends, measures every element in person and records the construction and specification.' },
+  { icon: 'evidence', title: 'We evidence everything', desc: 'Detailed site notes and photographic evidence capture specialist materials, M&E and curtilage structures.' },
+  { icon: 'deliver', title: 'We deliver the report', desc: 'A comprehensive, BCIS-indexed rebuild figure that will withstand insurer or legal scrutiny.' },
 ]
 
 const whoNeedsIt = [
@@ -170,8 +171,8 @@ export default function OnSiteAssessmentLondonPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map(({ icon, title, desc }, i) => (
               <div key={title} className="rounded-2xl bg-white p-7 border border-zinc-200/80">
-                <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5 text-[#1A6B4A]">
+                  <StepIcon name={icon} size={24} />
                 </div>
                 <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#1A6B4A]/60 mb-1">Step {i + 1}</p>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
@@ -272,7 +273,7 @@ export default function OnSiteAssessmentLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-london" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl bg-white p-8 border border-zinc-200/80 flex flex-col hover:shadow-lg transition-all duration-300">
               <span className="material-symbols-outlined mb-4" style={{ fontSize: '1.6rem', color: '#1e40af' }}>monitor</span>
               <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
               <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>

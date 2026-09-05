@@ -303,7 +303,7 @@ export default function ServicesPage() {
                 <Link href="/contact?service=desktop#contact-form" className="text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
                   Contact RICS Surveyor
                 </Link>
-                <Link href="/desktop-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: '#1e40af' }}>
+                <Link href="/desktop-reinstatement-cost-assessment-uk" className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: '#1e40af' }}>
                   Full details <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
                 </Link>
               </div>
@@ -368,28 +368,28 @@ export default function ServicesPage() {
           </div>
 
           {/* 3-Year Protection - featured */}
-          <div id="three-year-protection" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-[#8a6d1a] shadow-lg grid grid-cols-1 lg:grid-cols-[1fr_1.6fr]" style={{ background: 'linear-gradient(145deg, #8a6d1a 0%, #c9a227 100%)' }}>
+          <div id="three-year-protection" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border-2 border-[#c9a227] shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-white/15 border border-white/25 backdrop-blur-sm w-12 h-12 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
                   </div>
-                  <span className="bg-white px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-[#8a6d1a]">Best Value</span>
+                  <span className="px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>Best Value</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
-                <p className="text-white/80 text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>
+                <h3 className="text-2xl font-bold text-primary mb-3">3-Year RICS Reinstatement Cost Assessment</h3>
+                <p className="text-secondary text-sm leading-relaxed">Full RICS reinstatement cost assessment plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance with no repeat instruction required.</p>
               </div>
               <div className="flex flex-wrap items-center gap-4">
-                <Link href="/contact?service=3year#contact-form" className="bg-white text-[#8a6d1a] px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center">
+                <Link href="/contact?service=3year#contact-form" className="text-white px-6 py-3 rounded-full font-semibold text-sm active:scale-[0.97] transition-transform text-center" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>
                   Enquire Now
                 </Link>
-                <Link href="/three-year-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold text-white">
+                <Link href="/three-year-reinstatement-cost-assessment-london" className="inline-flex items-center gap-1 text-sm font-semibold text-[#8a6d1a]">
                   Full details <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
                 </Link>
               </div>
             </div>
-            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-white/10" style={{ background: 'rgba(255,255,255,0.08)' }}>
+            <div className="p-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-50">
               {[
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'We carry out a full RICS reinstatement cost assessment, then deliver BCIS-indexed annual rebuild cost updates automatically each year for three years.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Landlords, portfolio managers, managing agents, and property owners who need continuous RICS reinstatement compliance without commissioning a new assessment each year.' },

@@ -68,10 +68,6 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
-          rel="stylesheet"
-        />
       </head>
       <body className="bg-surface font-body text-on-surface">
         {/* Google tag (gtag.js). Loaded via next/script so it reliably renders in

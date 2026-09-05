@@ -42,11 +42,20 @@ export default function MapboxMap() {
   }
 
   useEffect(() => {
+    // Load the Mapbox stylesheet only on pages that actually render the map,
+    // rather than render-blocking every page from the global <head>.
+    const MAPBOX_CSS = 'https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css'
+    if (!document.querySelector(`link[href="${MAPBOX_CSS}"]`)) {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = MAPBOX_CSS
+      document.head.appendChild(link)
+    }
+
     // If the script was already loaded on a previous page visit
     if (window.mapboxgl) {
       initMap()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (!MAPBOX_TOKEN) return (

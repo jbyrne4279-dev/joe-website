@@ -122,7 +122,7 @@ export default function BlockManagersPage() {
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span className="whitespace-nowrap">Reinstatement cost</span> assessments for <span className="text-[#1A6B4A]">block managers</span>.
+              <span className="sm:whitespace-nowrap">Reinstatement cost</span> assessments for <span className="text-[#1A6B4A]">block managers</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
               Protect leaseholders from underinsurance. RICS-regulated assessments accepted by all major insurers, BCIS-indexed and delivered within 48 hours.

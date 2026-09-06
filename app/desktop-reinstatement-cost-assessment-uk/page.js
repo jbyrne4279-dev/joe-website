@@ -229,10 +229,26 @@ export default function DesktopAssessmentUKPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
           <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
-              Rebuild costs have risen sharply right across the UK &mdash; labour, materials and regulatory
-              requirements all push construction prices up, and they vary widely by region. A sum insured based on
-              a purchase price, a mortgage valuation, or an old online calculator almost always understates the
-              real cost of rebuilding.
+              Rebuild costs have risen sharply right across the UK, and it is not a blip. UK inflation hit a
+              41‑year high of <strong className="font-semibold text-white">11.1%</strong> in October 2022
+              (<a href="https://www.itv.com/news/2022-11-16/a-headline-rate-of-111-is-brutal-but-has-inflation-now-peaked" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">ITV News</a>),
+              driven largely by the surge in energy prices that followed Russia’s invasion of Ukraine. That
+              energy shock fed straight into construction: UK steel prices jumped by around{' '}
+              <strong className="font-semibold text-white">50%</strong>, and the cost of energy‑intensive materials
+              such as brick, cement and glass climbed with it
+              (<a href="https://www.building.co.uk/news/conflict-in-ukraine-set-to-see-spike-in-materials-costs-products-group-warns/5116251.article" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">Building</a>).
+            </p>
+            <p>
+              The BCIS Materials Cost Index shows construction material prices up more than{' '}
+              <strong className="font-semibold text-white">20% since 2020</strong>, with reinforcing steel bar rising
+              38% and pre‑cast concrete around 26% year on year
+              (<a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">BCIS</a>).
+              More recently, Houthi attacks on Red Sea shipping have forced vessels the long way around the Cape of
+              Good Hope — adding up to 20 days to journeys and pushing up the cost of imported building materials
+              again
+              (<a href="https://www.building.co.uk/news/attacks-on-red-sea-shipping-becoming-significant-issue-for-construction-products-cpa-warns/5127252.article" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">Building</a>).
+              A sum insured based on a purchase price, a mortgage valuation, or an old online calculator almost always
+              understates today’s real cost of rebuilding.
             </p>
             <p>
               Most policies apply a <strong className="font-semibold text-white">condition of average</strong>:

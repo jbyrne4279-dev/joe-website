@@ -13,7 +13,7 @@ export default function ContactSection({ heading = 'Get Your Reinstatement Cost 
         className="object-cover object-center"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-[#0f3d28]/75" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
       <div className="relative z-10 max-w-4xl mx-auto px-8">
         <Suspense fallback={null}>
           <ContactFormInner heading={heading} accent={accent} tintRgb={tintRgb} buttonStyle={buttonStyle} />

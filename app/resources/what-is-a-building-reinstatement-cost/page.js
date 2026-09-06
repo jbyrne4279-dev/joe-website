@@ -179,7 +179,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Get it wrong and your claim shrinks.</h2>

@@ -226,7 +226,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Index‑linking alone isn&rsquo;t enough.</h2>
@@ -272,7 +272,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Portfolios protected across London.</h2>

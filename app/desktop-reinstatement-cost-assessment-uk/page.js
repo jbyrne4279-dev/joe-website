@@ -154,13 +154,19 @@ export default function DesktopAssessmentUKPage() {
             <p>
               A desktop reinstatement cost assessment establishes the true cost of rebuilding your property from
               scratch &mdash; not its market value. Rather than sending a surveyor to site, we draw on detailed
-              property records, floor area data and live BCIS construction cost indices to reach an accurate,
+              property records, floor area data and live cost data from the <a href="https://en.wikipedia.org/wiki/Building_Cost_Information_Service" target="_blank" rel="noopener noreferrer" className="text-[#1e40af] underline underline-offset-2 hover:text-[#1e3a8a]">Building Cost Information Service (BCIS)</a>, the construction industry’s benchmark for build costs originally established by RICS, to reach an accurate,
               defensible figure for the property&rsquo;s location.
             </p>
             <p>
               For the majority of standard‑construction homes and commercial units, this is the fastest and most
               cost‑effective route to a RICS‑regulated sum insured. Every figure is prepared to the same
               professional standard as a full survey and is accepted by UK insurers without challenge.
+            </p>
+            <p>
+              In line with the RICS professional standard for reinstatement cost assessment, we recommend the
+              figure is refreshed at least every three years, with annual index‑linking in between, so your sum
+              insured keeps pace with construction costs
+              (<a href="https://ww3.rics.org/uk/en/journals/built-environment-journal/building-reinstatement-cost-assessments.html" target="_blank" rel="noopener noreferrer" className="text-[#1e40af] underline underline-offset-2 hover:text-[#1e3a8a]">RICS</a>).
             </p>
             <p>
               Behind every desktop reinstatement cost assessment is a dedicated RICS‑regulated surveyor, focused entirely on your property’s rebuild cost. With more than 50 years of combined experience in reinstatement cost assessments, our remote figures stand up to an insurer’s scrutiny just as well as a site visit would.

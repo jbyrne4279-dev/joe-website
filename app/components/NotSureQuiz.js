@@ -62,13 +62,12 @@ export default function NotSureQuiz() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          aria-label="Take the 30-second quiz"
+          aria-label="Need a RCA?"
           className="quiz-fab fixed bottom-5 right-5 z-[90] inline-flex items-center gap-2 text-[#0f3d28] pl-4 pr-5 py-3.5 rounded-full font-bold text-sm ring-2 ring-white/70 hover:-translate-y-0.5 active:scale-[0.97] transition-transform cursor-pointer"
           style={{ background: '#f5b301' }}
         >
           <span className="material-symbols-outlined text-[#0f3d28]" style={{ fontSize: '1.3rem' }}>quiz</span>
-          <span className="hidden sm:inline">Take the 30‑second quiz</span>
-          <span className="sm:hidden">Quick quiz</span>
+          <span>Need a RCA?</span>
         </button>
       )}
 

@@ -159,7 +159,7 @@ export default function OnSiteAssessmentLondonPage() {
             <p>
               This level of detail matters most where a building is out of the ordinary &mdash; a listed
               townhouse, a period conversion, a mixed‑use block, or an industrial unit with significant plant. The
-              result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny.
+              result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny in case, protecting you in the circumstances of a denied claim.
             </p>
             <p>
               The surveyor at your door is a RICS‑regulated chartered professional, drawing on a practice with

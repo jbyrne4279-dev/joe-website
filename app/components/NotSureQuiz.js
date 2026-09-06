@@ -52,8 +52,8 @@ export default function NotSureQuiz() {
           className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-bold text-base ring-2 ring-[#d4af37] hover:ring-4 hover:-translate-y-0.5 active:scale-[0.97] transition-all shadow-[0_10px_30px_rgba(0,0,0,0.25)] inline-flex items-center gap-2 cursor-pointer"
         >
           <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.3rem' }}>quiz</span>
-          Check if you need a RCA 👆
-          <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.2rem' }}>arrow_forward</span>
+          Check if you need a RCA
+          <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.3rem' }}>ads_click</span>
         </button>
       </div>
 
@@ -67,7 +67,8 @@ export default function NotSureQuiz() {
           style={{ background: '#f5b301' }}
         >
           <span className="material-symbols-outlined text-[#0f3d28]" style={{ fontSize: '1.3rem' }}>quiz</span>
-          <span>Check if you need a RCA 👆</span>
+          <span>Check if you need a RCA</span>
+          <span className="material-symbols-outlined text-[#0f3d28]" style={{ fontSize: '1.3rem' }}>ads_click</span>
         </button>
       )}
 

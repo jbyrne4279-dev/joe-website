@@ -473,7 +473,7 @@ export default function HomePage() {
               What is a <span className="text-shine-slow">Reinstatement Cost Assessment?</span>
             </h2>
             <p className="text-lg text-secondary leading-relaxed">
-              A detailed, RICS‑regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates.
+              A detailed, RICS‑regulated calculation of the exact cost to rebuild your property from scratch, accounting for regional labour, material inflation, and professional fees. Built on facts, not estimates. UK rebuild costs are up around <strong className="font-semibold text-primary">40% since 2020</strong> (<a href="https://www.bcis.co.uk/insight/index-bcis-house-rebuilding-cost-index/" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28]">BCIS</a>), so a valuation that is not current is almost always wrong.
             </p>
           </div>
 
@@ -503,9 +503,9 @@ export default function HomePage() {
               <div className="space-y-5">
                 {[
                   { step: '1', title: 'Fully comprehensive.', desc: <>Our reinstatement cost assessments calculate <strong className="font-bold text-primary">every cost</strong> - demolition, materials, labour, professional fees, and VAT. Nothing estimated. Nothing missed. A complete rebuild cost figure you can rely on.</> },
-                  { step: '2', title: 'RICS‑certified accuracy.', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live BCIS construction data - giving you a figure your insurer cannot dispute.</> },
+                  { step: '2', title: 'RICS‑certified accuracy.', desc: <>Every report is issued under <strong className="font-bold text-primary">RICS regulations</strong> and benchmarked against live <a href="https://www.bcis.co.uk/insight/index-bcis-house-rebuilding-cost-index/" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28]">BCIS</a> construction data - giving you a figure your insurer cannot dispute.</> },
                   { step: '3', title: 'Accepted by all UK insurers.', desc: 'Our broker‑ready reports are submitted directly to insurers and accepted without challenge. No back‑and‑forth, no delays - just a compliant, insurer‑approved valuation.' },
-                  { step: '4', title: 'Backed by professional indemnity.', desc: 'Every assessment carries full PI insurance, meaning your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.' },
+                  { step: '4', title: 'Backed by professional indemnity.', desc: <>Every assessment carries full professional indemnity insurance, which the <a href="https://www.rics.org/regulation/regulatory-compliance/professional-indemnity/pii-in-the-uk" target="_blank" rel="noopener noreferrer" className="text-[#1A6B4A] underline underline-offset-2 hover:text-[#0f3d28]">RICS Rules of Conduct</a> require every regulated firm to hold, so your reinstatement figure has real legal weight. If we got it wrong, you are covered. We never do.</> },
                 ].map(({ step, title, desc }, i) => (
                   <div key={step} className="flex items-center gap-0">
                     <div className={`lifecycle-ring-${i+1} btn-shine shrink-0 w-10 h-10 rounded-full text-white flex items-center justify-center font-bold text-sm z-10`}>{step}</div>

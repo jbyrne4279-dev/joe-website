@@ -536,3 +536,17 @@
   .location-track { animation: none; }
   .location-marquee { -webkit-mask-image: none; mask-image: none; }
 }
+
+/* ── Sticky "take the quiz" floating button ── */
+@keyframes quiz-fab-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 0 rgba(212,175,55,0.55); }
+  50%      { opacity: 0.7; box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 10px rgba(212,175,55,0); }
+}
+.quiz-fab {
+  animation: quiz-fab-pulse 2.6s ease-in-out infinite;
+  will-change: opacity, box-shadow;
+}
+.quiz-fab:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .quiz-fab { animation: none; }
+}

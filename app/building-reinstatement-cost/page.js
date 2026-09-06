@@ -179,9 +179,9 @@ export default function BuildingReinstatementCostPage() {
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-white/10">
-                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#dcebe3' }}>
-                  <StepIcon name={icon} size={44} style={{ color: '#1A6B4A' }} />
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#1A6B4A' }}>
+                  <StepIcon name={icon} size={44} style={{ color: '#ffffff' }} />
                 </div>
                 <div>
                   <p className="text-[0.7rem] font-bold uppercase tracking-widest text-[#1A6B4A]/60 mb-1">Step {i + 1}</p>
@@ -204,8 +204,8 @@ export default function BuildingReinstatementCostPage() {
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c5ddd0]" style={{ background: '#e3efe9' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1A6B4A' }}>{icon}</span>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#1A6B4A' }}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>

@@ -63,6 +63,12 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/reinstatement-cost-assessment-london`,
+      lastModified: new Date('2026-09-06'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/residential-reinstatement-cost-assessments`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'monthly',

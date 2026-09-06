@@ -57,6 +57,21 @@ export default function NotSureQuiz() {
         </button>
       </div>
 
+      {/* Sticky floating quiz button */}
+      {!open && (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label="Take the 30-second quiz"
+          className="quiz-fab fixed bottom-5 right-5 z-[90] inline-flex items-center gap-2 text-[#0f3d28] pl-4 pr-5 py-3.5 rounded-full font-bold text-sm ring-2 ring-white/70 hover:-translate-y-0.5 active:scale-[0.97] transition-transform cursor-pointer"
+          style={{ background: '#f5b301' }}
+        >
+          <span className="material-symbols-outlined text-[#0f3d28]" style={{ fontSize: '1.3rem' }}>quiz</span>
+          <span className="hidden sm:inline">Take the 30‑second quiz</span>
+          <span className="sm:hidden">Quick quiz</span>
+        </button>
+      )}
+
       {open && (
         <div
           className="fixed inset-0 z-[100] flex items-center justify-center p-4"

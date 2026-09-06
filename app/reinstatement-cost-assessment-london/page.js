@@ -1,18 +1,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
+import StepIcon from '../components/StepIcon'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessment London | RICS Rebuild Cost Surveyors',
   description:
-    'London-based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS-indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+    'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
   alternates: { canonical: '/reinstatement-cost-assessment-london' },
   openGraph: {
     title: 'Reinstatement Cost Assessment London | RICS Rebuild Cost Surveyors',
     description:
-      'London-based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS-indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+      'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
     url: '/reinstatement-cost-assessment-london',
   },
 }
@@ -49,23 +50,23 @@ const businessJsonLd = {
 const faqItems = [
   {
     question: 'Do you carry out reinstatement cost assessments across London?',
-    answer: 'Yes. We are a London-based, RICS-regulated firm working across Central London and every London borough, from the City and Westminster to the outer boroughs and the wider Greater London area. We cover houses, flats, blocks of flats, and commercial property.',
+    answer: 'Yes. We are a London‑based, RICS‑regulated firm working across Central London and every London borough, from the City and Westminster to the outer boroughs and the wider Greater London area. We cover houses, flats, blocks of flats, and commercial property.',
   },
   {
     question: 'How quickly can you assess a London property?',
-    answer: 'Standard assessments are delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on-site visits quickly for period, listed, or complex buildings that need a physical inspection.',
+    answer: 'Standard assessments are delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on‑site visits quickly for period, listed, or complex buildings that need a physical inspection.',
   },
   {
     question: 'Do you cover listed and period buildings in London?',
-    answer: 'Yes. London has a large stock of period, converted, and listed buildings with non-standard construction. Our surveyors are experienced with these, and an on-site survey captures the specialist detail that a desktop assessment or online calculator would miss.',
+    answer: 'Yes. London has a large stock of period, converted, and listed buildings with non‑standard construction. Our surveyors are experienced with these, and an on‑site survey captures the specialist detail that a desktop assessment or online calculator would miss.',
   },
   {
     question: 'Are your London reports accepted by insurers?',
-    answer: 'Yes. Every assessment is RICS-regulated and BCIS-indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
+    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
   },
   {
     question: 'How much does a reinstatement cost assessment cost in London?',
-    answer: 'The fee depends on the type and size of the property and whether a desktop assessment or an on-site survey is required. Contact us with a few details about your London property and we will provide a tailored quote.',
+    answer: 'The fee depends on the type and size of the property and whether a desktop assessment or an on‑site survey is required. Contact us with a few details about your London property and we will provide a tailored quote.',
   },
   {
     question: 'Where are you based?',
@@ -91,20 +92,20 @@ const challenges = [
   },
   {
     img: '/rca-calculators-miss-detail.webp',
-    title: 'Period and non-standard buildings',
-    desc: 'The capital is full of Victorian terraces, mansion-block flats, and listed conversions. Their materials and construction rarely fit a standard template, and generic calculators consistently under-count them.',
+    title: 'Period and non‑standard buildings',
+    desc: 'The capital is full of Victorian terraces, mansion-block flats, and listed conversions. Their materials and construction rarely fit a standard template, and generic calculators consistently under‑count them.',
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'High-value cover, close scrutiny',
-    desc: 'With high property values, London insurers look closely at the sum insured. A verifiable, RICS-regulated figure keeps renewals smooth and protects owners and leaseholders from underinsurance.',
+    desc: 'With high property values, London insurers look closely at the sum insured. A verifiable, RICS‑regulated figure keeps renewals smooth and protects owners and leaseholders from underinsurance.',
   },
 ]
 
 const help = [
-  { icon: 'location_on', title: 'London-based RICS surveyors', desc: 'Based at 17 Hanover Square in the West End, working across every London borough.' },
-  { icon: 'bolt', title: '48-hour turnaround', desc: 'Fast delivery, with quick on-site visits arranged when a property needs one.' },
-  { icon: 'verified', title: 'Insurer-accepted reports', desc: 'RICS-regulated and BCIS-indexed, accepted by UK insurers without challenge.' },
+  { icon: 'place', title: 'London‑based RICS surveyors', desc: 'Based at 17 Hanover Square in the West End, working across every London borough.' },
+  { icon: 'bolt', title: '48‑hour turnaround', desc: 'Fast delivery, with quick on‑site visits arranged when a property needs one.' },
+  { icon: 'verified', title: 'Insurer‑accepted reports', desc: 'RICS‑regulated and BCIS‑indexed, accepted by UK insurers without challenge.' },
 ]
 
 const areas = [
@@ -148,7 +149,7 @@ export default function LondonReinstatementPage() {
               Reinstatement cost assessments in <span className="text-[#1A6B4A]">London</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              London-based, RICS-regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS-indexed, insurer-accepted figures delivered within 48 hours.
+              London‑based, RICS‑regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS‑indexed, insurer-accepted figures delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -178,7 +179,7 @@ export default function LondonReinstatementPage() {
               </p>
               <p>
                 We are a London firm, based at 17 Hanover Square in the West End and part of the RiskSTOP
-                Group. Our RICS-regulated surveyors work across the capital every day, so they understand how
+                Group. Our RICS‑regulated surveyors work across the capital every day, so they understand how
                 local build costs, access, and the city&rsquo;s mix of period and modern buildings feed into
                 an accurate rebuild figure &mdash; one your broker and insurer will accept.
               </p>
@@ -231,19 +232,22 @@ export default function LondonReinstatementPage() {
               Why choose us
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-              A trusted, London-based partner.
+              A trusted, London‑based partner.
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {help.map(({ icon, title, desc }) => (
               <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
                 <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                  <StepIcon name={icon} size={24} className="text-[#1A6B4A]" />
                 </div>
                 <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
                 <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
             ))}
+          </div>
+          <div className="flex justify-end mt-10">
+            <img loading="lazy" decoding="async" src="/rics-logo.webp" alt="Regulated by RICS" className="h-16 w-auto object-contain" />
           </div>
         </div>
       </section>

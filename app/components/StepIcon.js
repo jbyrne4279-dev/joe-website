@@ -155,6 +155,13 @@ const paths = {
       <path d="M3 21h18" />
     </>
   ),
+  // Location pin — used for area/location cards
+  place: (
+    <>
+      <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" />
+      <circle cx="12" cy="10" r="2.6" />
+    </>
+  ),
 }
 
 export default function StepIcon({ name, size = 26, className, style }) {

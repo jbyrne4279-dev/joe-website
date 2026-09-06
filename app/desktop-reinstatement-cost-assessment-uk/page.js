@@ -174,11 +174,11 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* How it works */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">How it works</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Four steps, forty‑eight hours.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">How it works</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Four steps, forty‑eight hours.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
@@ -221,13 +221,13 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
-          <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">Why it matters</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
+          <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               Rebuild costs have risen sharply right across the UK &mdash; labour, materials and regulatory
               requirements all push construction prices up, and they vary widely by region. A sum insured based on
@@ -235,7 +235,7 @@ export default function DesktopAssessmentUKPage() {
               real cost of rebuilding.
             </p>
             <p>
-              Most policies apply a <strong className="font-semibold text-primary">condition of average</strong>:
+              Most policies apply a <strong className="font-semibold text-white">condition of average</strong>:
               if you are insured for less than the true rebuild cost, the insurer can cut your claim by the same
               proportion &mdash; even on a small loss. A desktop RICS assessment closes that gap quickly and gives
               you a figure you can stand behind at renewal.

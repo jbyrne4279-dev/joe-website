@@ -224,13 +224,13 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Index‑linking alone isn&rsquo;t enough.</h2>
-          <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">Why it matters</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Index‑linking alone isn&rsquo;t enough.</h2>
+          <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               Many London owners assume that because their insurer applies an annual index, their cover keeps pace.
               But a general index cannot see your building, and post‑2020 construction inflation has run well ahead
@@ -270,20 +270,20 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#fbf3d9' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">London coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Portfolios protected across London.</h2>
-          <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">London coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Portfolios protected across London.</h2>
+          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             From single buildings to large managed portfolios, we keep London sums insured current across every
             borough &mdash; ideal for agents and freeholders juggling multiple renewal dates.
           </p>
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={londonAreas} accent="#a16207" />
+          <LocationCarousel locations={londonAreas} accent="#a16207" dark />
         </div>
       </section>
 

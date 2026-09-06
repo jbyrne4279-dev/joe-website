@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -128,6 +129,7 @@ export default function LondonReinstatementPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <main>
+      <Breadcrumbs showSchema={false} items={[{ name: 'Reinstatement Cost Assessment London' }]} accent="#1A6B4A" />
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">

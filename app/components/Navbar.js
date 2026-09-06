@@ -113,9 +113,9 @@ export default function Navbar() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors"
+            className="inline-flex items-center justify-center w-12 h-12 -mr-1 rounded-full text-zinc-900 hover:bg-zinc-100 active:bg-zinc-200 transition-colors"
           >
-            <span className="material-symbols-outlined" style={{ fontSize: '1.6rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1.9rem' }}>
               {open ? 'close' : 'menu'}
             </span>
           </button>
@@ -123,39 +123,48 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-[#1A6B4A]" style={{ backgroundColor: '#1A6B4A' }}>
-          <div className="flex flex-col px-6 py-4 gap-1">
+        <div className="md:hidden border-t border-white/15 max-h-[calc(100vh-4.5rem)] overflow-y-auto" style={{ backgroundColor: '#1A6B4A' }}>
+          <div className="flex flex-col px-4 py-4 gap-2">
             {links.map(({ href, label, children }) => {
               const isActive = pathname === href
               return (
-                <div key={href}>
+                <div key={href} className="flex flex-col gap-1.5">
                   <Link
                     href={href}
                     onClick={() => setOpen(false)}
+                    aria-current={isActive ? 'page' : undefined}
                     className={
-                      isActive
-                        ? 'text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-white bg-white/10 block'
-                        : 'text-white/80 hover:text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-transparent hover:border-white/40 block'
+                      'flex items-center justify-between min-h-[56px] px-5 rounded-2xl text-lg font-semibold tracking-tight transition-colors active:scale-[0.98] ' +
+                      (isActive
+                        ? 'text-white bg-white/15'
+                        : 'text-white/90 hover:text-white hover:bg-white/10')
                     }
                   >
-                    {label}
+                    <span>{label}</span>
+                    <span className="material-symbols-outlined text-white/50" style={{ fontSize: '1.4rem' }} aria-hidden="true">chevron_right</span>
                   </Link>
                   {children && (
-                    <div className="flex flex-col pl-4">
-                      {children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          onClick={() => setOpen(false)}
-                          className={
-                            pathname === child.href
-                              ? 'text-white font-medium text-sm tracking-tight py-2.5 px-2 border-l-4 border-white bg-white/10'
-                              : 'text-white/70 hover:text-white font-medium text-sm tracking-tight py-2.5 px-2 border-l-4 border-transparent hover:border-white/40'
-                          }
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                    <div className="flex flex-col gap-1.5 pl-3">
+                      {children.map((child) => {
+                        const childActive = pathname === child.href
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setOpen(false)}
+                            aria-current={childActive ? 'page' : undefined}
+                            className={
+                              'flex items-center gap-3 min-h-[52px] px-5 rounded-2xl text-base font-medium tracking-tight transition-colors active:scale-[0.98] ' +
+                              (childActive
+                                ? 'text-white bg-white/15'
+                                : 'text-white/75 hover:text-white bg-white/[0.04] hover:bg-white/10')
+                            }
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full bg-white/40 inline-block shrink-0" aria-hidden="true" />
+                            {child.label}
+                          </Link>
+                        )
+                      })}
                     </div>
                   )}
                 </div>

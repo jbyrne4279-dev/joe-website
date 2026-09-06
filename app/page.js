@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
+import LocationCarousel from './components/LocationCarousel'
 import FaqSection from './components/FaqSection'
 import GrowObserver from './components/GrowObserver'
 import NotSureQuiz from './components/NotSureQuiz'
@@ -34,6 +35,12 @@ const homeFaqItems = [
 ]
 
 const SITE_URL = 'https://reinstatementcostassessment.org'
+
+const coverageAreas = [
+  'London', 'Manchester', 'Birmingham', 'Leeds', 'Liverpool', 'Bristol',
+  'Sheffield', 'Newcastle', 'Nottingham', 'Leicester', 'Southampton',
+  'Brighton', 'Cardiff', 'Edinburgh', 'Glasgow', 'Belfast',
+]
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -438,6 +445,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      <ContactSection
+        heading={
+          <>
+            Get Your RICS‑Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
+          </>
+        }
+      />
+
+      {/* UK-wide coverage */}
+      <section className="scroll-reveal py-20 px-6" style={{ background: '#0f3d28' }}>
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300 mb-4">UK‑wide coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">Reinstatement cost assessments across the UK.</h2>
+          <p className="text-white/75 leading-relaxed max-w-2xl mx-auto">
+            From London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland &mdash;
+            wherever your property is, we deliver an accurate, RICS‑regulated figure.
+          </p>
+        </div>
+        <div className="max-w-6xl mx-auto">
+          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" dark />
+        </div>
+      </section>
+
       {/* What is a Reinstatement Cost Assessment */}
       <section className="scroll-reveal bg-white pt-6 pb-20 px-8">
         <div className="max-w-7xl mx-auto">
@@ -665,13 +695,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ContactSection
-        heading={
-          <>
-            Get Your RICS‑Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
-          </>
-        }
-      />
       <FaqSection
         description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}

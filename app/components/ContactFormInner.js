@@ -13,8 +13,8 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
 
   return (
     <div
-      className="liquid-glass rounded-3xl p-8 md:p-12 border"
-      style={{ '--accent': accent, borderColor: `rgba(${tintRgb},0.2)`, boxShadow: `0 0 40px 4px rgba(${tintRgb},0.07)` }}
+      className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 md:p-12 border"
+      style={{ '--accent': accent, borderColor: `rgba(${tintRgb},0.2)`, boxShadow: '0 24px 60px rgba(0,0,0,0.28)' }}
     >
       <div id="contact-form" className="mb-12 space-y-5 scroll-mt-28 text-center">
         <span className="text-xs font-bold uppercase tracking-widest text-[color:var(--accent)] flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>mail</span>Get started</span>

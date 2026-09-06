@@ -279,7 +279,7 @@ export default function OnSiteAssessmentLondonPage() {
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={londonAreas} accent="#1A6B4A" />
+          <LocationCarousel locations={londonAreas} accent="#1A6B4A" dark />
         </div>
       </section>
 

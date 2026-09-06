@@ -277,7 +277,7 @@ export default function BuildingReinstatementCostPage() {
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" />
+          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" dark />
         </div>
       </section>
 

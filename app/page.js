@@ -416,13 +416,6 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
-            <div className="flex flex-wrap justify-center gap-2.5 pt-2">
-              {['RICS-Regulated', 'Focused Practice', 'UK-Wide Coverage'].map((chip) => (
-                <span key={chip} className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/90">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37] inline-block"></span>{chip}
-                </span>
-              ))}
-            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

@@ -3,6 +3,7 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
+import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: '3‑Year Reinstatement Cost Assessment London | RICS Protection Plan',
@@ -279,15 +280,10 @@ export default function ThreeYearAssessmentLondonPage() {
             From single buildings to large managed portfolios, we keep London sums insured current across every
             borough &mdash; ideal for agents and freeholders juggling multiple renewal dates.
           </p>
-          <div className="flex flex-wrap gap-2.5">
-            {londonAreas.map((area) => (
-              <span key={area} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 bg-zinc-50 text-sm font-medium text-secondary">
-                <span className="material-symbols-outlined" style={{ fontSize: '1rem', color: '#a16207' }}>location_on</span>
-                {area}
-              </span>
-            ))}
           </div>
-          </div>
+        </div>
+        <div className="max-w-6xl mx-auto mt-10">
+          <LocationCarousel locations={londonAreas} accent="#a16207" />
         </div>
       </section>
 

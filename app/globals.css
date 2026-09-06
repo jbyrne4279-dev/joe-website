@@ -515,3 +515,24 @@
   opacity: 1;
   transform: none;
 }
+
+/* ── Infinite location carousel (marquee) ── */
+@keyframes location-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.location-marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.location-track {
+  animation: location-scroll 42s linear infinite;
+  will-change: transform;
+}
+.location-marquee:hover .location-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .location-track { animation: none; }
+  .location-marquee { -webkit-mask-image: none; mask-image: none; }
+}

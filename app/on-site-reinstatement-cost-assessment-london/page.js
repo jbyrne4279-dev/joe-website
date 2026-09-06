@@ -3,6 +3,7 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
+import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: 'On‑Site Reinstatement Cost Assessment London | RICS Surveyor',
@@ -275,15 +276,10 @@ export default function OnSiteAssessmentLondonPage() {
             We attend properties throughout Greater London, with particular experience in the listed and
             high‑value stock of the central and inner boroughs.
           </p>
-          <div className="flex flex-wrap gap-2.5">
-            {londonAreas.map((area) => (
-              <span key={area} className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-200 bg-zinc-50 text-sm font-medium text-secondary">
-                <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1rem' }}>location_on</span>
-                {area}
-              </span>
-            ))}
           </div>
-          </div>
+        </div>
+        <div className="max-w-6xl mx-auto mt-10">
+          <LocationCarousel locations={londonAreas} accent="#1A6B4A" />
         </div>
       </section>
 

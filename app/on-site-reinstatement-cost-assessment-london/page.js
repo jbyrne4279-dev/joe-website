@@ -234,9 +234,18 @@ export default function OnSiteAssessmentLondonPage() {
               heritage detailing and services.
             </p>
             <p>
-              Underinsurance on a high‑value asset is a serious exposure. Under a policy&rsquo;s condition of
-              average, a shortfall reduces every claim proportionally. An on‑site survey removes the guesswork and
-              gives owners, freeholders and managing agents a figure they can defend with total confidence.
+              Underinsurance on a high‑value asset is a serious exposure &mdash; and it is the norm, not the exception.
+              An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>,
+              and among those that are, cover averages just <strong className="font-semibold text-white">63%</strong> of
+              the true rebuild cost
+              (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>).
+              For commercial property the picture is worse still, at around{' '}
+              <strong className="font-semibold text-white">79%</strong> underinsured
+              (<a href="https://www.rebuildcostassessment.com/post/buildings-underinsurance-annual-infographic-2024" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Rebuild Cost Assessment</a>).
+              Under a policy’s condition of average, that shortfall reduces every claim proportionally: a building
+              insured for 63% of its rebuild cost can have even a modest claim cut by more than a third. An on‑site
+              survey removes the guesswork and gives owners, freeholders and managing agents a figure they can defend
+              with total confidence.
             </p>
           </div>
           </div>

@@ -220,13 +220,13 @@ export default function OnSiteAssessmentLondonPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Detail is where the value hides.</h2>
-          <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Why it matters</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Detail is where the value hides.</h2>
+          <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               London holds some of the most complex building stock in the country &mdash; Georgian and Victorian
               terraces, mansion blocks, converted warehouses and prime commercial premises. On these buildings,
@@ -266,13 +266,13 @@ export default function OnSiteAssessmentLondonPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">London coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Surveyors across the capital.</h2>
-          <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">London coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Surveyors across the capital.</h2>
+          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             We attend properties throughout Greater London, with particular experience in the listed and
             high‑value stock of the central and inner boroughs.
           </p>

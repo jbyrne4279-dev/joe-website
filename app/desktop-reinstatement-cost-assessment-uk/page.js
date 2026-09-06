@@ -163,10 +163,7 @@ export default function DesktopAssessmentUKPage() {
               professional standard as a full survey and is accepted by UK insurers without challenge.
             </p>
             <p>
-              Behind every desktop figure is a team of RICS‑regulated chartered surveyors with more than 50 years
-              of combined experience, focused solely on reinstatement cost assessments. That single specialism
-              &mdash; rather than valuation as a sideline to general surveying &mdash; is why our remote figures
-              stand up to an insurer&rsquo;s scrutiny just as well as a site visit would.
+              Behind every desktop reinstatement cost assessment is a dedicated RICS‑regulated surveyor, focused entirely on your property’s rebuild cost. With more than 50 years of combined experience in reinstatement cost assessments, our remote figures stand up to an insurer’s scrutiny just as well as a site visit would.
             </p>
           </div>
           </div>

@@ -129,7 +129,7 @@ export default function BuildingReinstatementCostPage() {
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-xl md:max-w-2xl bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-white/40 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white rounded-3xl px-8 py-12 md:px-14 md:py-16 border border-zinc-200 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Building Reinstatement Cost</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
               Your <span style={{ color: '#1A6B4A' }}>building</span> <span className="sm:whitespace-nowrap">reinstatement cost</span>, explained.
@@ -180,7 +180,7 @@ export default function BuildingReinstatementCostPage() {
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
               <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
-                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: 'rgba(26,107,74,0.12)' }}>
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#dcebe3' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#1A6B4A' }} />
                 </div>
                 <div>

@@ -109,6 +109,12 @@ const londonAreas = [
   'Southwark', 'Hackney', 'Wandsworth', 'Barnet', 'Bromley',
 ]
 
+const commutableCities = [
+  'Birmingham', 'Bristol', 'Manchester', 'Liverpool', 'Leeds', 'Nottingham',
+  'Leicester', 'Sheffield', 'Cambridge', 'Oxford', 'Reading', 'Brighton',
+  'Southampton', 'Cardiff', 'Coventry', 'Milton Keynes',
+]
+
 export default function OnSiteAssessmentLondonPage() {
   return (
     <>
@@ -278,16 +284,23 @@ export default function OnSiteAssessmentLondonPage() {
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
           <img width={384} height={384} loading="lazy" decoding="async" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">London coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Surveyors across the capital.</h2>
-          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">London &amp; beyond</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Surveyors across the capital, and beyond.</h2>
+          <p className="text-white/85 leading-relaxed mb-4 max-w-2xl text-[1.05rem]">
             We attend properties throughout Greater London, with particular experience in the listed and
             high‑value stock of the central and inner boroughs.
           </p>
+          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+            We are not limited to the capital. Our surveyors also carry out on‑site assessments across the major
+            cities and towns within easy reach of London &mdash; including Birmingham, Bristol, Manchester,
+            Liverpool, Leeds, Cambridge and Oxford &mdash; wherever a building&rsquo;s complexity or value calls for
+            a full physical survey.
+          </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10">
+        <div className="max-w-6xl mx-auto mt-10 space-y-4">
           <LocationCarousel locations={londonAreas} accent="#1A6B4A" dark />
+          <LocationCarousel locations={commutableCities} accent="#1A6B4A" dark />
         </div>
       </section>
 

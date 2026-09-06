@@ -62,6 +62,7 @@ export default function Footer() {
               <li><Link className="hover:text-emerald-400 transition-colors" href="/commercial-reinstatement-costs">Commercial Properties</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/managing-agents-insurance-valuations">Managing Agents</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/block-managers-reinstatement-cost-assessments">Block Managers</Link></li>
+              <li><Link className="hover:text-emerald-400 transition-colors" href="/reinstatement-cost-assessment-london">London Assessments</Link></li>
             </ul>
           </div>
 

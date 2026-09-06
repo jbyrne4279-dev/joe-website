@@ -9,6 +9,7 @@ const sectorLinks = [
   { href: '/commercial-reinstatement-costs', label: 'Commercial Properties' },
   { href: '/managing-agents-insurance-valuations', label: 'Managing Agents' },
   { href: '/block-managers-reinstatement-cost-assessments', label: 'Block Managers' },
+  { href: '/reinstatement-cost-assessment-london', label: 'London Assessments' },
 ]
 
 const serviceLinks = [

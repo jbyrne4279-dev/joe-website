@@ -415,7 +415,7 @@ export default function HomePage() {
           <div className="liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl border border-white/15 p-10 md:p-14 sovereign-shadow">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">An independent, RICS‑regulated practice with a single specialism &mdash; telling property owners exactly what it costs to rebuild. Accurate, defensible, broker‑ready figures, delivered with the responsiveness of a specialist firm.</p>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">An independent, RICS‑regulated practice with a single specialism &mdash; telling property owners exactly what it costs to rebuild.</p>
             <div className="flex flex-wrap justify-center gap-2.5 pt-2">
               {['RICS-Regulated', 'Focused Practice', 'UK-Wide Coverage'].map((chip) => (
                 <span key={chip} className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/90">

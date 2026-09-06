@@ -133,7 +133,7 @@ export default function DesktopAssessmentUKPage() {
               <span style={{ color: '#1e40af' }}>Desktop</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              An accurate, RICS‑regulated rebuild cost for houses, flats and standard commercial units anywhere in the UK &mdash; produced entirely remotely, BCIS‑indexed and delivered within 48 hours. No site visit required.
+              An accurate, RICS‑regulated rebuild cost for houses, flats and standard commercial units across the UK.<br /><br />BCIS‑indexed and delivered within 48 hours. No site visit required.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=desktop#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>

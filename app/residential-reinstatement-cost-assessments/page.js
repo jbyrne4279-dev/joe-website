@@ -194,7 +194,7 @@ export default function ResidentialReinstatementPage() {
               Where home cover quietly slips.
             </h2>
             <p className="text-white/70 leading-relaxed mt-5">
-              An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>, and residential properties are covered for just <strong className="font-semibold text-white">52%</strong> of their true rebuild cost on average (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>) — most owners have no idea until they claim.
+              Rebuild costs have surged: the BCIS House Rebuilding Cost Index was around <strong className="font-semibold text-white">40% higher at the start of 2024 than in 2020</strong> (<a href="https://www.bcis.co.uk/insight/index-bcis-house-rebuilding-cost-index/" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">BCIS</a>). A sum insured set a few years ago and simply rolled forward is very likely to fall short today.
             </p>
           </div>
           <div className="space-y-5">

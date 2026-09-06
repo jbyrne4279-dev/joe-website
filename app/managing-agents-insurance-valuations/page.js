@@ -196,7 +196,7 @@ export default function ManagingAgentsPage() {
               Where portfolio cover slips out of step.
             </h2>
             <p className="text-white/70 leading-relaxed mt-5">
-              Around <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>, rising to roughly <strong className="font-semibold text-white">79%</strong> for commercial property (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>) — leaving the agents who manage them exposed to proportional claim cuts and duty-of-care questions.
+              An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong> (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>), and a portfolio index‑linked on autopilot drifts further from its true rebuild cost each year, exposing the agents who manage it to proportional claim cuts and duty‑of‑care questions.
             </p>
           </div>
           <div className="space-y-5">

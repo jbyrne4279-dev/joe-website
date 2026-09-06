@@ -268,13 +268,13 @@ export default function DesktopAssessmentUKPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf0fb' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e40af] mb-4">UK‑wide coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
-          <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">UK‑wide coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
+          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             Because a desktop assessment needs no physical visit, we cover the whole of the UK with the same
             speed and accuracy &mdash; from London and the South East to the Midlands, the North, Scotland,
             Wales and Northern Ireland.
@@ -282,7 +282,7 @@ export default function DesktopAssessmentUKPage() {
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={coverageAreas} accent="#1e40af" />
+          <LocationCarousel locations={coverageAreas} accent="#1e40af" dark />
         </div>
       </section>
 

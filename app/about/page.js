@@ -117,16 +117,16 @@ export default function AboutPage() {
       </section>
 
       {/* What we stand for */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What we stand for</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary leading-tight">Four things we don&rsquo;t compromise on.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">What we stand for</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">Four things we don&rsquo;t compromise on.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {values.map(({ icon, title, desc }) => (
-              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c5ddd0]" style={{ background: '#e3efe9' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
+              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-white/10 bg-white">
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#dcebe3' }}>
                   <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1A6B4A' }}>{icon}</span>
                 </div>
                 <div>
@@ -158,11 +158,11 @@ export default function AboutPage() {
       </section>
 
       {/* Learn more */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-4">New to reinstatement cost?</h2>
-          <p className="text-secondary mb-8 max-w-lg leading-relaxed">Start with our plain‑English guide to what a building reinstatement cost is and how it is calculated.</p>
-          <Link href="/building-reinstatement-cost" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>Read the guide</Link>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">New to reinstatement cost?</h2>
+          <p className="text-white/80 mb-8 max-w-lg leading-relaxed">Start with our plain‑English guide to what a building reinstatement cost is and how it is calculated.</p>
+          <Link href="/building-reinstatement-cost" className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block ring-1 ring-white/60">Read the guide</Link>
         </div>
       </section>
 

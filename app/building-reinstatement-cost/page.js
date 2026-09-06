@@ -171,15 +171,15 @@ export default function BuildingReinstatementCostPage() {
       </section>
 
       {/* How it's calculated */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">How it&rsquo;s calculated</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">From floor area to final figure.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">How it&rsquo;s calculated</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">From floor area to final figure.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-white/10">
                 <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#dcebe3' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#1A6B4A' }} />
                 </div>
@@ -218,20 +218,20 @@ export default function BuildingReinstatementCostPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Get the number wrong and your claim shrinks.</h2>
-          <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Why it matters</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Get the number wrong and your claim shrinks.</h2>
+          <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               Research across the UK insurance market consistently finds that the large majority of buildings are
               underinsured &mdash; often by 20% or more. It happens quietly: a sum insured is set once, then rolled
               forward year after year while real build costs climb.
             </p>
             <p>
-              The catch is the <strong className="font-semibold text-primary">condition of average</strong>. If you are
+              The catch is the <strong className="font-semibold text-white">condition of average</strong>. If you are
               insured for less than the true reinstatement cost, the insurer can reduce every claim by the same
               proportion &mdash; so a property insured for 80% of its rebuild cost may see even a small claim cut by a
               fifth. An accurate, regularly reviewed figure is the only reliable protection.
@@ -264,13 +264,13 @@ export default function BuildingReinstatementCostPage() {
       </section>
 
       {/* UK coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-44 h-44 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-white/10 mt-1" />
           <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK‑wide coverage</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">An accurate figure, anywhere in the UK.</h2>
-          <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">UK‑wide coverage</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">An accurate figure, anywhere in the UK.</h2>
+          <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             We establish accurate building reinstatement costs for property across the whole of the UK &mdash; from
             London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland.
           </p>

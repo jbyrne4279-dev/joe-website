@@ -153,15 +153,15 @@ export default function WhatIsBuildingReinstatementCostPage() {
       </section>
 
       {/* How it's worked out */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">How it&rsquo;s worked out</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">From floor area to final figure.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">How it&rsquo;s worked out</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">From floor area to final figure.</h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-white/10">
                 <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#dcebe3' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#1A6B4A' }} />
                 </div>
@@ -192,11 +192,11 @@ export default function WhatIsBuildingReinstatementCostPage() {
       </section>
 
       {/* Learn more / other services */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#eaf3ee' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-5xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Ready to get yours?</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Three ways to establish your figure.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Ready to get yours?</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Three ways to establish your figure.</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
             <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>

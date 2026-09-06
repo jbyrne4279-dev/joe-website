@@ -206,8 +206,8 @@ export default function OnSiteAssessmentLondonPage() {
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c4e0d1]" style={{ background: '#dcefe4' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
-                  <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#1A6B4A' }}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>

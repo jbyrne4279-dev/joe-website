@@ -210,8 +210,8 @@ export default function ThreeYearAssessmentLondonPage() {
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#e6d59a]" style={{ background: '#f5e6bf' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#a16207' }}>{icon}</span>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#a16207' }}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>

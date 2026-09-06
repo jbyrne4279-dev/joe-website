@@ -207,8 +207,8 @@ export default function DesktopAssessmentUKPage() {
           <div className="grid sm:grid-cols-2 gap-5">
             {whoNeedsIt.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c9d8f5]" style={{ background: '#dbe6fb' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1e40af' }}>{icon}</span>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#2563eb' }}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>

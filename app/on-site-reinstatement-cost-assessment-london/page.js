@@ -245,7 +245,9 @@ export default function OnSiteAssessmentLondonPage() {
               Under a policy’s condition of average, that shortfall reduces every claim proportionally: a building
               insured for 63% of its rebuild cost can have even a modest claim cut by more than a third. An on‑site
               survey removes the guesswork and gives owners, freeholders and managing agents a figure they can defend
-              with total confidence.
+              with total confidence. And if a claim is ever challenged or denied, that independent, evidenced
+              figure is what protects you: it stands as the professional basis for settling in full, so you
+              receive the right amount to rebuild your property rather than a proportionally reduced payout.
             </p>
           </div>
           </div>

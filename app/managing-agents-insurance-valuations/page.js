@@ -195,6 +195,9 @@ export default function ManagingAgentsPage() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
               Where portfolio cover slips out of step.
             </h2>
+            <p className="text-white/70 leading-relaxed mt-5">
+              Around <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>, rising to roughly <strong className="font-semibold text-white">79%</strong> for commercial property (<a href="https://www.rebuildcostassessment.com/post/buildings-underinsurance-annual-infographic-2024" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Rebuild Cost Assessment</a>) — leaving the agents who manage them exposed to proportional claim cuts and duty-of-care questions.
+            </p>
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (

@@ -187,6 +187,9 @@ export default function BlockManagersPage() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
               Where block cover slips out of step.
             </h2>
+            <p className="text-white/70 leading-relaxed mt-5">
+              An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>, and those that are carry cover for just <strong className="font-semibold text-white">63%</strong> of their true rebuild cost on average (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>) — a gap that quietly widens across a block every year it goes unassessed.
+            </p>
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (

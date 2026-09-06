@@ -200,6 +200,9 @@ export default function CommercialReinstatementPage() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
               Where commercial cover slips out of step.
             </h2>
+            <p className="text-white/70 leading-relaxed mt-5">
+              Roughly <strong className="font-semibold text-white">79% of commercial properties are underinsured</strong>, covered on average for only <strong className="font-semibold text-white">69%</strong> of their true reinstatement value (<a href="https://www.rebuildcostassessment.com/post/buildings-underinsurance-annual-infographic-2024" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Rebuild Cost Assessment</a>) — enough to see a major claim cut by nearly a third.
+            </p>
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (

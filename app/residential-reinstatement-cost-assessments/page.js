@@ -193,6 +193,9 @@ export default function ResidentialReinstatementPage() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">
               Where home cover quietly slips.
             </h2>
+            <p className="text-white/70 leading-relaxed mt-5">
+              An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>, and residential properties are covered for just <strong className="font-semibold text-white">52%</strong> of their true rebuild cost on average (<a href="https://www.rebuildcostassessment.com/post/buildings-underinsurance-annual-infographic-2024" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Rebuild Cost Assessment</a>) — most owners have no idea until they claim.
+            </p>
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (

@@ -84,6 +84,7 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'GT-PJSWDCLB');
           gtag('config', 'AW-11028386067');
+          gtag('config', 'AW-16853906784');
         `}</Script>
         <a
           href="#main-content"

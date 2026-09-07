@@ -193,13 +193,13 @@ export default function BlockManagersPage() {
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white/[0.04] rounded-2xl p-5 sm:p-6 border border-white/10">
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80 shadow-sm">
                 <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
                   <Image src={img} alt="" fill sizes="96px" className="object-cover" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
-                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}

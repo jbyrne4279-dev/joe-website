@@ -162,8 +162,7 @@ export default function BuildingReinstatementCostPage() {
             </p>
             <p>
               This figure is what your buildings insurance <strong className="font-semibold text-primary">sum insured</strong>{' '}
-              should be based on. Get it right and a total loss is fully covered. Get it wrong, usually too low
-, and you carry a shortfall you may not discover until you claim.
+              should be based on. Get it right and a total loss is fully covered. Get it wrong, usually too low, and you carry a shortfall you may not discover until you claim. Confusing rebuild cost with market value is one of the most common reasons UK buildings end up underinsured.
             </p>
           </div>
           </div>
@@ -227,14 +226,25 @@ export default function BuildingReinstatementCostPage() {
           <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               Research across the UK insurance market consistently finds that the large majority of buildings are
-              underinsured, often by 20% or more. It happens quietly: a sum insured is set once, then rolled
-              forward year after year while real build costs climb.
+              underinsured. It usually happens quietly: a sum insured is set once, then rolled forward year after
+              year while real build costs climb. UK inflation reached a 41‑year high of{' '}
+              <strong className="font-semibold text-white">11.1%</strong> in October 2022
+              (<a href="https://www.itv.com/news/2022-11-16/a-headline-rate-of-111-is-brutal-but-has-inflation-now-peaked" target="_blank" rel="noopener noreferrer" className="text-emerald-200 underline underline-offset-2 hover:text-emerald-100">ITV News</a>),
+              and construction costs climbed with it.
+            </p>
+            <p>
+              The BCIS Materials Cost Index shows construction material prices up more than{' '}
+              <strong className="font-semibold text-white">20% since 2020</strong>
+              (<a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="text-emerald-200 underline underline-offset-2 hover:text-emerald-100">BCIS</a>).
+              A figure that looked right a couple of renewals ago can now sit well below the true cost of rebuilding,
+              even when nothing about the building itself has changed.
             </p>
             <p>
               The catch is the <strong className="font-semibold text-white">condition of average</strong>. If you are
-              insured for less than the true reinstatement cost, the insurer can reduce every claim by the same
-              proportion, so a property insured for 80% of its rebuild cost may see even a small claim cut by a
-              fifth. An accurate, regularly reviewed figure is the only reliable protection.
+              insured for less than the true reinstatement cost, the insurer can reduce every claim in the same
+              proportion, so a property insured for 80% of its rebuild cost can see even a small claim cut by a
+              fifth. RICS recommends a full reassessment at least every three years, with annual index‑linking in
+              between, so an accurate, regularly reviewed figure is the only reliable protection.
             </p>
           </div>
           </div>

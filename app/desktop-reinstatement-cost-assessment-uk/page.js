@@ -46,7 +46,7 @@ const faqItems = [
   },
   {
     question: 'Will my insurer accept a desktop RICS assessment?',
-    answer: 'Yes. Every desktop assessment is RICS‑regulated and BCIS‑indexed, and prepared to be broker‑ready and accepted by all UK insurers as evidence of an accurate sum insured.',
+    answer: 'For standard‑construction property, yes. Every desktop assessment is RICS‑regulated and BCIS‑indexed, prepared to be broker‑ready and widely accepted by insurers as evidence of an accurate sum insured. For listed, non‑standard, complex or high‑value buildings, an on‑site survey is the more appropriate route and some insurers will expect one.',
   },
   {
     question: 'Where in the UK do you cover?',
@@ -159,8 +159,9 @@ export default function DesktopAssessmentUKPage() {
             </p>
             <p>
               For the majority of standard‑construction homes and commercial units, this is the fastest and most
-              cost‑effective route to a RICS‑regulated sum insured. Every figure is prepared to the same
-              professional standard as a full survey and is accepted by UK insurers without challenge.
+              cost‑effective route to a RICS‑regulated sum insured. Every figure is produced by the same
+              RICS‑regulated surveyors, using the same recognised BCIS cost data, and is widely accepted by
+              insurers for standard, common‑construction property.
             </p>
             <p>
               In line with the RICS professional standard for reinstatement cost assessment, we recommend the
@@ -169,7 +170,7 @@ export default function DesktopAssessmentUKPage() {
               (<a href="https://ww3.rics.org/uk/en/journals/built-environment-journal/building-reinstatement-cost-assessments.html" target="_blank" rel="noopener noreferrer" className="text-[#1e40af] underline underline-offset-2 hover:text-[#1e3a8a]">RICS</a>).
             </p>
             <p>
-              Behind every desktop reinstatement cost assessment is a dedicated RICS‑regulated surveyor, focused entirely on your property’s rebuild cost. With more than 50 years of combined experience in reinstatement cost assessments, our remote figures stand up to an insurer’s scrutiny just as well as a site visit would.
+              Behind every desktop reinstatement cost assessment is a dedicated RICS‑regulated surveyor, focused entirely on your property’s rebuild cost. With more than 50 years of combined experience in reinstatement cost assessments, our desktop figures give you a robust, defensible sum insured for standard property. For listed, non‑standard, complex or high‑value buildings, where a physical inspection captures detail a desktop review cannot, we always recommend an on‑site survey.
             </p>
           </div>
           </div>

@@ -254,6 +254,27 @@
   pointer-events: none;
 }
 
+/* Animated gold gradient outline that runs around a container */
+.gold-outline-shine {
+  position: relative;
+}
+
+.gold-outline-shine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(105deg, #a16207 40%, #f0d385 50%, #a16207 60%);
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 @keyframes reveal-from-below {
   from { opacity: 0; transform: translateY(28px); }
   to { opacity: 1; transform: translateY(0); }

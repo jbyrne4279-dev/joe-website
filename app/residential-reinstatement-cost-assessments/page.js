@@ -91,12 +91,12 @@ const help = [
 ]
 
 const included = [
-  { label: 'The full rebuild of the home', detail: 'Rebuilding the whole house from scratch to current standards, not just repairing the damage that occurred.' },
-  { label: 'Demolition and debris removal', detail: 'Safely clearing the site after a total loss, which has to happen before rebuilding can start.' },
-  { label: 'Professional and design fees', detail: 'The architect, engineer and surveyor costs needed to design and sign off the rebuild.' },
-  { label: 'Building‑regulation compliance', detail: 'Meeting today’s building regulations, which are often stricter than when the home was first built.' },
-  { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also need to be rebuilt or replaced.' },
-  { label: 'Inflation over the rebuild period', detail: 'An allowance for prices rising during the time it takes to settle the claim and rebuild.' },
+  { icon: 'foundation', label: 'The full rebuild of the home', detail: 'Rebuilding the whole house from scratch to current standards, not just repairing the damage that occurred.' },
+  { icon: 'delete', label: 'Demolition and debris removal', detail: 'Safely clearing the site after a total loss, which has to happen before rebuilding can start.' },
+  { icon: 'architecture', label: 'Professional and design fees', detail: 'The architect, engineer and surveyor costs needed to design and sign off the rebuild.' },
+  { icon: 'gavel', label: 'Building‑regulation compliance', detail: 'Meeting today’s building regulations, which are often stricter than when the home was first built.' },
+  { icon: 'fence', label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also need to be rebuilt or replaced.' },
+  { icon: 'trending_up', label: 'Inflation over the rebuild period', detail: 'An allowance for prices rising during the time it takes to settle the claim and rebuild.' },
 ]
 
 const reasons = [
@@ -282,9 +282,9 @@ export default function ResidentialReinstatementPage() {
           </div>
           <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map(({ label, detail }) => (
+            {included.map(({ icon, label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
-                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>{icon}</span>
                 <span>
                   <span className="text-primary font-medium">{label}</span>
                   <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>

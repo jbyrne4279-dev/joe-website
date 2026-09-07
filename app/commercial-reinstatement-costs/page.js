@@ -91,12 +91,12 @@ const help = [
 ]
 
 const included = [
-  { label: 'Full structural rebuild', detail: 'Reconstructing the entire building shell and structure from the ground up to current standards.' },
-  { label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing, often a large share of a commercial building’s cost.' },
-  { label: 'Specialist fit‑out', detail: 'Trade‑specific interiors and fixed equipment that form part of the building itself.' },
-  { label: 'External works and site costs', detail: 'Car parks, hard‑standing, drainage, boundary walls and landscaping around the building.' },
-  { label: 'Debris removal and professional fees', detail: 'Clearing the site after a loss, plus the architects, engineers and surveyors to design the rebuild.' },
-  { label: 'Inflation over the rebuild period', detail: 'An allowance for construction costs rising while the claim is settled and the work is completed.' },
+  { icon: 'foundation', label: 'Full structural rebuild', detail: 'Reconstructing the entire building shell and structure from the ground up to current standards.' },
+  { icon: 'bolt', label: 'Mechanical and electrical services', detail: 'Heating, ventilation, lifts, wiring and plumbing, often a large share of a commercial building’s cost.' },
+  { icon: 'chair', label: 'Specialist fit‑out', detail: 'Trade‑specific interiors and fixed equipment that form part of the building itself.' },
+  { icon: 'landscape', label: 'External works and site costs', detail: 'Car parks, hard‑standing, drainage, boundary walls and landscaping around the building.' },
+  { icon: 'delete', label: 'Debris removal and professional fees', detail: 'Clearing the site after a loss, plus the architects, engineers and surveyors to design the rebuild.' },
+  { icon: 'trending_up', label: 'Inflation over the rebuild period', detail: 'An allowance for construction costs rising while the claim is settled and the work is completed.' },
 ]
 
 const reasons = [
@@ -205,13 +205,13 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white/[0.04] rounded-2xl p-5 sm:p-6 border border-white/10">
+              <div key={title} className="gold-outline-shine flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6">
                 <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
                   <Image src={img} alt="" fill sizes="96px" className="object-cover" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
-                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -260,9 +260,9 @@ export default function CommercialReinstatementPage() {
           </div>
           <p className="text-secondary text-sm mb-2 sm:mb-0">Hover or tap each item for a plain‑English explanation.</p>
           <ul className="grid sm:grid-cols-2 gap-x-12">
-            {included.map(({ label, detail }) => (
+            {included.map(({ icon, label, detail }) => (
               <li key={label} tabIndex={0} className="group py-4 border-t border-zinc-200 flex gap-3 items-start cursor-default outline-none">
-                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>check</span>
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0 mt-0.5" style={{ fontSize: '1.15rem' }}>{icon}</span>
                 <span>
                   <span className="text-primary font-medium">{label}</span>
                   <span className="block overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-1.5 group-focus:max-h-40 group-focus:opacity-100 group-focus:mt-1.5 transition-all duration-300 text-secondary text-sm leading-relaxed">{detail}</span>

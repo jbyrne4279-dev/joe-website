@@ -32,6 +32,8 @@ const articleJsonLd = {
   image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=500&fit=crop&auto=format&q=80',
   url: `${SITE_URL}/resources/top-risks-of-underinsurance-for-managing-agents`,
   inLanguage: 'en-GB',
+  datePublished: '2026-09-05',
+  dateModified: '2026-09-07',
   author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',

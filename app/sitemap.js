@@ -1,114 +1,43 @@
+import { statSync } from 'node:fs'
+import { join } from 'node:path'
+
 const SITE_URL = 'https://reinstatementcostassessment.org'
 
+// path: URL path after the origin. file: source file whose mtime drives lastModified.
+const routes = [
+  { path: '/', file: 'app/page.js', changeFrequency: 'weekly', priority: 1.0 },
+  { path: '/building-reinstatement-cost', file: 'app/building-reinstatement-cost/page.js', changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/services', file: 'app/services/page.js', changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/resources', file: 'app/resources/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/desktop-reinstatement-cost-assessment-uk', file: 'app/desktop-reinstatement-cost-assessment-uk/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/on-site-reinstatement-cost-assessment-london', file: 'app/on-site-reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/three-year-reinstatement-cost-assessment-london', file: 'app/three-year-reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/about', file: 'app/about/page.js', changeFrequency: 'yearly', priority: 0.6 },
+  { path: '/resources/what-is-a-building-reinstatement-cost', file: 'app/resources/what-is-a-building-reinstatement-cost/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/contact', file: 'app/contact/page.js', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/reinstatement-cost-assessment-london', file: 'app/reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
+  { path: '/residential-reinstatement-cost-assessments', file: 'app/residential-reinstatement-cost-assessments/page.js', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/commercial-reinstatement-costs', file: 'app/commercial-reinstatement-costs/page.js', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/managing-agents-insurance-valuations', file: 'app/managing-agents-insurance-valuations/page.js', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/block-managers-reinstatement-cost-assessments', file: 'app/block-managers-reinstatement-cost-assessments/page.js', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/resources/when-should-block-insurance-valuations-be-updated', file: 'app/resources/when-should-block-insurance-valuations-be-updated/page.js', changeFrequency: 'yearly', priority: 0.6 },
+  { path: '/resources/top-risks-of-underinsurance-for-managing-agents', file: 'app/resources/top-risks-of-underinsurance-for-managing-agents/page.js', changeFrequency: 'yearly', priority: 0.6 },
+  { path: '/resources/case-study-block-of-flats-undervalued', file: 'app/resources/case-study-block-of-flats-undervalued/page.js', changeFrequency: 'yearly', priority: 0.6 },
+]
+
+function lastModified(file) {
+  try {
+    return statSync(join(process.cwd(), file)).mtime
+  } catch {
+    return new Date()
+  }
+}
+
 export default function sitemap() {
-  return [
-    {
-      url: `${SITE_URL}/`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${SITE_URL}/building-reinstatement-cost`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/services`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/resources`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/desktop-reinstatement-cost-assessment-uk`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/on-site-reinstatement-cost-assessment-london`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/three-year-reinstatement-cost-assessment-london`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/about`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/resources/what-is-a-building-reinstatement-cost`,
-      lastModified: new Date('2026-09-05'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/contact`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/reinstatement-cost-assessment-london`,
-      lastModified: new Date('2026-09-06'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/residential-reinstatement-cost-assessments`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/commercial-reinstatement-costs`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/managing-agents-insurance-valuations`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/block-managers-reinstatement-cost-assessments`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/resources/top-risks-of-underinsurance-for-managing-agents`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    {
-      url: `${SITE_URL}/resources/case-study-block-of-flats-undervalued`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-  ]
+  return routes.map(({ path, file, changeFrequency, priority }) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: lastModified(file),
+    changeFrequency,
+    priority,
+  }))
 }

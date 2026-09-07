@@ -32,6 +32,8 @@ const articleJsonLd = {
   image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=500&fit=crop&auto=format&q=80',
   url: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated`,
   inLanguage: 'en-GB',
+  datePublished: '2026-09-05',
+  dateModified: '2026-09-07',
   author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',

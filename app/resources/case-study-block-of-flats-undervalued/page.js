@@ -32,6 +32,8 @@ const articleJsonLd = {
   image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&h=500&fit=crop&auto=format&q=80',
   url: `${SITE_URL}/resources/case-study-block-of-flats-undervalued`,
   inLanguage: 'en-GB',
+  datePublished: '2026-09-05',
+  dateModified: '2026-09-07',
   author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',

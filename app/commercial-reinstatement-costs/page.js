@@ -232,7 +232,7 @@ export default function CommercialReinstatementPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {help.map(({ icon, title, desc }) => (
-              <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
+              <div key={title} className="gold-outline-shine rounded-2xl bg-white p-8">
                 <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
                   <StepIcon name={icon} size={24} className="text-[#1A6B4A]" />
                 </div>

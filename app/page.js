@@ -403,8 +403,8 @@ export default function HomePage() {
       {/* Our Expertise */}
       <section className="scroll-reveal relative py-24 overflow-hidden">
         <Image
-          src="/on-site-reinstatement-cost-assessment-survey.jpg"
-          alt="RICS-regulated chartered surveyor with rebuild drawings"
+          src="/managing-agents-office-block.jpg"
+          alt="Modern London glass skyscraper"
           fill
           sizes="100vw"
           className="object-cover object-center"

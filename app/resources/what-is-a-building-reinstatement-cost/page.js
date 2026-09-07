@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import ContactSection from '../../components/ContactSection'
 import StepIcon from '../../components/StepIcon'
@@ -180,7 +181,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
           <div className="gold-outline-shine shrink-0 w-full sm:w-96 rounded-2xl mt-1">
-            <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="w-full h-60 sm:h-96 rounded-2xl object-cover" />
+            <Image width={640} height={640} sizes="(max-width: 640px) 100vw, 384px" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="w-full h-60 sm:h-96 rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>

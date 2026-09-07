@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -229,7 +230,7 @@ export default function OnSiteAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <img width={1200} height={560} loading="lazy" decoding="async" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Why it matters</p>
@@ -285,7 +286,7 @@ export default function OnSiteAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <img width={1200} height={560} loading="lazy" decoding="async" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">London &amp; beyond</p>

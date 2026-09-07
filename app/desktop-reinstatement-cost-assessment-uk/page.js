@@ -227,7 +227,9 @@ export default function DesktopAssessmentUKPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
-          <img width={1200} height={560} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover border border-white/10" />
+          <div className="gold-outline-shine rounded-2xl">
+            <img width={1200} height={560} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+          </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Underinsurance is a nationwide problem.</h2>
@@ -290,7 +292,9 @@ export default function DesktopAssessmentUKPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
-          <img width={1200} height={560} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover border border-white/10" />
+          <div className="gold-outline-shine rounded-2xl">
+            <img width={1200} height={560} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+          </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>

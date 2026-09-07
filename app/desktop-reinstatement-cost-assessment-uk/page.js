@@ -186,7 +186,7 @@ export default function DesktopAssessmentUKPage() {
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+              <div key={title} className="gold-outline-shine flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6">
                 <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#2563eb' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#ffffff' }} />
                 </div>

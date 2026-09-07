@@ -137,7 +137,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {compare.map(({ icon, title, desc }) => (
-              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c5ddd0]" style={{ background: '#e3efe9' }}>
+              <div key={title} className="gold-outline-shine flex gap-5 items-start rounded-2xl p-6 bg-white">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 bg-white">
                   <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1A6B4A' }}>{icon}</span>
                 </div>
@@ -161,7 +161,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {steps.map(({ icon, title, desc }, i) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+              <div key={title} className="gold-outline-shine flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6">
                 <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#1A6B4A' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#ffffff' }} />
                 </div>
@@ -179,7 +179,9 @@ export default function WhatIsBuildingReinstatementCostPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-cover border border-black/5 mt-1" />
+          <div className="gold-outline-shine shrink-0 w-full sm:w-96 rounded-2xl mt-1">
+            <img width={384} height={384} loading="lazy" decoding="async" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="w-full h-60 sm:h-96 rounded-2xl object-cover" />
+          </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Get it wrong and your claim shrinks.</h2>

@@ -293,7 +293,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <img width={1200} height={560} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <img width={1200} height={560} loading="lazy" decoding="async" src="/managing-agents-office-block.jpg" alt="Modern London city skyline" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">UK‑wide coverage</p>

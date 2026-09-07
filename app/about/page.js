@@ -159,7 +159,7 @@ export default function AboutPage() {
 
       {/* Learn more */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
+        <div className="gold-outline-shine rounded-3xl p-10 sm:p-12 max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">New to reinstatement cost?</h2>
           <p className="text-white/80 mb-8 max-w-lg leading-relaxed">Start with our plain‑English guide to what a building reinstatement cost is and how it is calculated.</p>
           <Link href="/building-reinstatement-cost" className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block ring-1 ring-white/60">Read the guide</Link>

@@ -78,7 +78,7 @@ export default function Navbar() {
                         className={
                           pathname === child.href
                             ? 'block rounded-xl px-4 py-2.5 text-sm font-semibold text-emerald-700 bg-emerald-50'
-                            : 'block rounded-xl px-4 py-2.5 text-sm font-medium text-zinc-700 hover:text-zinc-900 hover:bg-zinc-50 transition-colors'
+                            : 'block rounded-xl px-4 py-2.5 text-sm font-medium text-zinc-700 hover:text-emerald-700 hover:bg-emerald-50 transition-colors'
                         }
                       >
                         {child.label}

@@ -254,7 +254,7 @@ export default function ManagingAgentsPage() {
               The right assessment for managing agents.
             </h2>
           </div>
-          <Link href="/contact?service=3year#contact-form" className="group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
+          <Link href="/contact?service=3year#contact-form" className="gold-outline-shine group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/surveyor-reinstatement-cost-assessment-rics.webp"

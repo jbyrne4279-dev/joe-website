@@ -165,7 +165,7 @@ export default function BlockManagersPage() {
               </p>
             </div>
           </div>
-          <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
+          <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
               src="/managing-agents-office-block.jpg"
               alt="Large modern apartment and commercial block"
@@ -220,7 +220,7 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {help.map(({ icon, title, desc }) => (
-              <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
+              <div key={title} className="gold-outline-shine rounded-2xl bg-white p-8">
                 <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
                   <StepIcon name={icon} size={24} className="text-[#1A6B4A]" />
                 </div>
@@ -246,7 +246,7 @@ export default function BlockManagersPage() {
               The right assessment for block managers.
             </h2>
           </div>
-          <Link href="/contact?service=3year#contact-form" className="group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
+          <Link href="/contact?service=3year#contact-form" className="gold-outline-shine group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/rca-for-landlords-property-owners.webp"

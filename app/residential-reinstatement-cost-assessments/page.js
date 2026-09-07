@@ -306,7 +306,7 @@ export default function ResidentialReinstatementPage() {
               The right assessment for your home.
             </h2>
           </div>
-          <Link href="/contact?service=desktop#contact-form" className="group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
+          <Link href="/contact?service=desktop#contact-form" className="gold-outline-shine group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/reinstatement-cost-assessment-uk.webp"

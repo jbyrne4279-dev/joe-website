@@ -284,7 +284,7 @@ export default function CommercialReinstatementPage() {
               The right assessment for commercial property.
             </h2>
           </div>
-          <Link href="/contact?service=onsite#contact-form" className="group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
+          <Link href="/contact?service=onsite#contact-form" className="gold-outline-shine group block bg-white rounded-3xl shadow-lg overflow-hidden max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-full h-52 sm:h-60">
               <Image
                 src="/commercial-reinstatement-cost-assessment.webp"

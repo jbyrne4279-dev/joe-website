@@ -142,7 +142,7 @@ export default function AboutPage() {
       {/* UK coverage */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-black/5 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.svg" alt="Map of the United Kingdom" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-4 border border-black/5 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">London‑based, working nationwide.</h2>
@@ -159,10 +159,10 @@ export default function AboutPage() {
 
       {/* Learn more */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
-        <div className="gold-outline-shine rounded-3xl p-10 sm:p-12 max-w-3xl mx-auto text-center flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">New to reinstatement cost?</h2>
-          <p className="text-white/80 mb-8 max-w-lg leading-relaxed">Start with our plain‑English guide to what a building reinstatement cost is and how it is calculated.</p>
-          <Link href="/building-reinstatement-cost" className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block ring-1 ring-white/60">Read the guide</Link>
+        <div className="gold-outline-shine bg-white rounded-3xl p-10 sm:p-12 max-w-3xl mx-auto text-center flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-4">New to reinstatement cost?</h2>
+          <p className="text-secondary mb-8 max-w-lg leading-relaxed">Start with our plain‑English guide to what a building reinstatement cost is and how it is calculated.</p>
+          <Link href="/building-reinstatement-cost" className="bg-[#1A6B4A] text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block">Read the guide</Link>
         </div>
       </section>
 

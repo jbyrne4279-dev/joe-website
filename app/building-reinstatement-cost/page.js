@@ -276,7 +276,7 @@ export default function BuildingReinstatementCostPage() {
       {/* UK coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.jpg" alt="Map of the United Kingdom" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-2 border border-white/10 mt-1" />
+          <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.svg" alt="Map of the United Kingdom" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-4 border border-white/10 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">An accurate figure, anywhere in the UK.</h2>

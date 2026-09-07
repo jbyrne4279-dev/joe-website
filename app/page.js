@@ -411,7 +411,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 max-w-5xl mx-auto px-8">
-          <div className="liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl border border-white/15 p-10 md:p-14 sovereign-shadow">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>

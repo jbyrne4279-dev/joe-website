@@ -265,7 +265,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(105deg, #7a5300 0%, #a16207 28%, #fff3cc 50%, #a16207 72%, #7a5300 100%);
+  background: linear-gradient(105deg, #8a6d1a 0%, #c9a227 28%, #f7ebbf 50%, #c9a227 72%, #8a6d1a 100%);
   background-size: 200% auto;
   animation: shine 4s linear infinite;
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);

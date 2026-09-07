@@ -125,7 +125,7 @@ export default function AboutPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             {values.map(({ icon, title, desc }) => (
-              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-white/10 bg-white">
+              <div key={title} className="gold-outline-shine flex gap-5 items-start rounded-2xl p-6 bg-white">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#dcebe3' }}>
                   <span className="material-symbols-outlined" style={{ fontSize: '1.3rem', color: '#1A6B4A' }}>{icon}</span>
                 </div>

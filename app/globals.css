@@ -254,6 +254,17 @@
   pointer-events: none;
 }
 
+/* Infinite attention pulse for recommended-assessment cards */
+@keyframes card-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 4px 14px rgba(17, 24, 39, 0.12); }
+  50% { transform: scale(1.025); box-shadow: 0 16px 40px rgba(17, 24, 39, 0.24); }
+}
+.card-pulse { animation: card-pulse 2.4s ease-in-out infinite; }
+.card-pulse:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .card-pulse { animation: none; }
+}
+
 /* Animated gold gradient outline that runs around a container */
 .gold-outline-shine {
   position: relative;

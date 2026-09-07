@@ -6,12 +6,12 @@ import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: 'Commercial Rebuild Cost Assessment | RICS Reinstatement Cost Assessment',
+  title: 'Commercial Reinstatement Cost Assessment | RICS UK',
   description:
     'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, delivered in 48 hours.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
-    title: 'Commercial Rebuild Cost Assessment | RICS Reinstatement Cost Assessment',
+    title: 'Commercial Reinstatement Cost Assessment | RICS UK',
     description:
       'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, delivered in 48 hours.',
     url: '/commercial-reinstatement-costs',

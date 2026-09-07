@@ -6,12 +6,12 @@ import StepIcon from '../components/StepIcon'
 import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
-  title: '3‑Year Reinstatement Cost Assessment London | RICS Protection Plan',
+  title: '3‑Year Reinstatement Cost Assessment London | RICS Plan',
   description:
     '3-Year RICS reinstatement cost assessment for London property: a full rebuild cost assessment plus three years of BCIS-indexed annual updates. Continuous RICS compliance with no repeat instruction.',
   alternates: { canonical: '/three-year-reinstatement-cost-assessment-london' },
   openGraph: {
-    title: '3‑Year Reinstatement Cost Assessment London | RICS Protection Plan',
+    title: '3‑Year Reinstatement Cost Assessment London | RICS Plan',
     description:
       'A full RICS reinstatement cost assessment for London property plus three years of BCIS-indexed annual rebuild cost updates. Ongoing compliance, broker-ready.',
     url: '/three-year-reinstatement-cost-assessment-london',

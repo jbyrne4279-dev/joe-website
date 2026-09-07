@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
 export const metadata = {
-  title: 'Case Study: Block of Flats Undervalued by £2 Million | RCA Ltd',
+  title: 'Case Study: Block of Flats Undervalued by £2 Million',
   description: 'A 24-unit residential block in the South East was index-linked annually but found to be underinsured by £2.1 million. A real-world case study in reinstatement cost assessment.',
   alternates: { canonical: '/resources/case-study-block-of-flats-undervalued' },
   openGraph: {

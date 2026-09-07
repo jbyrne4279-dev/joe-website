@@ -15,7 +15,7 @@ export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
     default: 'RICS Reinstatement Cost Assessment UK | RCA Ltd',
-    template: '%s | RCA Ltd',
+    template: '%s',
   },
   description:
     'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by homeowners, landlords and asset managers across England.',

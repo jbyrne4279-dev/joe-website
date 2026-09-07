@@ -6,12 +6,12 @@ import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
+  title: 'Block Rebuild Cost Assessment | RICS Reinstatement',
   description:
     'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
-    title: 'Rebuild Cost Assessment for Block Managers | RICS Reinstatement',
+    title: 'Block Rebuild Cost Assessment | RICS Reinstatement',
     description:
       'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
     url: '/block-managers-reinstatement-cost-assessments',

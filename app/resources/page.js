@@ -5,7 +5,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: {
-    absolute: 'What is a Reinstatement Cost Assessment? | Rebuild Cost UK Guide',
+    absolute: 'What is a Reinstatement Cost Assessment? | UK Guide',
   },
   description:
     'Learn what a reinstatement cost assessment is, how a rebuild cost assessment differs from market value, and why the Averaging Clause puts UK property owners at risk.',

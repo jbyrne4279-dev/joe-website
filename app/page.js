@@ -61,7 +61,10 @@ const organizationJsonLd = {
     'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
   email: 'michael@reinstatementcostassessment.com',
-  priceRange: undefined,
+  priceRange: '££',
+  sameAs: [
+    'https://find-and-update.company-information.service.gov.uk/company/17101918',
+  ],
   address: {
     '@type': 'PostalAddress',
     streetAddress: '17 Hanover Square',

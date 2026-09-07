@@ -6,12 +6,12 @@ import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
 
 export const metadata = {
-  title: 'Residential Reinstatement Cost Assessment | RICS Rebuild Cost UK',
+  title: 'Residential Reinstatement Cost Assessment UK | RICS',
   description:
     'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, delivered in 48 hours. Avoid underinsurance on your home.',
   alternates: { canonical: '/residential-reinstatement-cost-assessments' },
   openGraph: {
-    title: 'Residential Reinstatement Cost Assessment | RICS Rebuild Cost UK',
+    title: 'Residential Reinstatement Cost Assessment UK | RICS',
     description:
       'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, delivered in 48 hours. Avoid underinsurance on your home.',
     url: '/residential-reinstatement-cost-assessments',

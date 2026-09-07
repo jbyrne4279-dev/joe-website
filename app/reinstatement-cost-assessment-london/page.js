@@ -6,12 +6,12 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment London | RICS Rebuild Cost Surveyors',
+  title: 'Reinstatement Cost Assessment London | RICS Surveyors',
   description:
     'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
   alternates: { canonical: '/reinstatement-cost-assessment-london' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment London | RICS Rebuild Cost Surveyors',
+    title: 'Reinstatement Cost Assessment London | RICS Surveyors',
     description:
       'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
     url: '/reinstatement-cost-assessment-london',

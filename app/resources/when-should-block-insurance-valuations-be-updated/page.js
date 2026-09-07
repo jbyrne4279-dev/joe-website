@@ -2,11 +2,11 @@ import Link from 'next/link'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
 export const metadata = {
-  title: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
+  title: 'When Should Block Insurance Valuations Be Updated?',
   description: "RICS recommends block insurance valuations are updated every 3 years. Find out why annual index linking alone isn't enough and when earlier reassessment is needed.",
   alternates: { canonical: '/resources/when-should-block-insurance-valuations-be-updated' },
   openGraph: {
-    title: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
+    title: 'When Should Block Insurance Valuations Be Updated?',
     description: "RICS recommends block insurance valuations are updated every 3 years. Find out why annual index linking alone isn't enough.",
     url: '/resources/when-should-block-insurance-valuations-be-updated',
   },
@@ -27,7 +27,7 @@ const articleBreadcrumbJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'When Should Block Insurance Valuations Be Updated? (RICS Guidance)',
+  headline: 'When Should Block Insurance Valuations Be Updated?',
   description: "RICS recommends block insurance valuations are updated every 3 years. Find out why annual index linking alone isn't enough and when earlier reassessment is needed.",
   image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&h=500&fit=crop&auto=format&q=80',
   url: `${SITE_URL}/resources/when-should-block-insurance-valuations-be-updated`,

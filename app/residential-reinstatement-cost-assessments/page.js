@@ -149,7 +149,7 @@ export default function ResidentialReinstatementPage() {
 
       {/* The basics, prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4 text-center lg:text-left">
               The basics
@@ -159,15 +159,43 @@ export default function ResidentialReinstatementPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                It&rsquo;s the cost of rebuilding your home from scratch, not what it would sell for.
-                Market value includes the land and location; the rebuild cost is only the work of putting the
-                building back, so the two are often very different.
+                A Residential Reinstatement Cost Assessment (RCA) estimates what it would cost to completely
+                rebuild your property following a total loss, not what it would sell for.
               </p>
               <p>
-                It matters because most home policies apply a{' '}
-                <strong className="font-semibold text-primary">condition of average</strong>: insure for less
-                than the true rebuild cost and the insurer can cut your claim by the same proportion. RICS
-                recommends a fresh assessment every three years to keep the figure accurate.
+                Market value reflects the land, location and demand. A reinstatement cost focuses on the actual
+                cost of putting the building back, including demolition, debris removal, professional fees and
+                other associated costs. The two figures can therefore be very different.
+              </p>
+              <h3 className="text-2xl font-bold text-primary leading-tight pt-4">
+                Why does an accurate assessment matter?
+              </h3>
+              <p>
+                If your property is underinsured, you could be left seriously out of pocket when you need your
+                insurance most.
+              </p>
+              <p>
+                Following a major loss, the cost of rebuilding can run into hundreds of thousands or even
+                millions of pounds. If your declared reinstatement value is lower than the true cost, your
+                policy may apply a <strong className="font-semibold text-primary">condition of average</strong>,
+                potentially reducing the amount your insurer pays towards the claim.
+              </p>
+              <p>
+                A figure that has simply been carried forward year after year could therefore leave you facing a
+                significant financial shortfall at the worst possible time.
+              </p>
+              <p>
+                Construction costs, labour rates, materials and your property itself can all change. An accurate,
+                professionally prepared RCA helps ensure your buildings insurance reflects the realistic cost of
+                reinstating your property, rather than relying on an outdated or assumed figure.
+              </p>
+              <p>
+                Don&rsquo;t wait until a claim exposes the gap. Make sure your property is adequately insured
+                today.
+              </p>
+              <p>
+                RICS recommends that reinstatement cost assessments are reviewed regularly, with a full
+                reassessment generally undertaken at least every three years.
               </p>
             </div>
           </div>
@@ -199,13 +227,13 @@ export default function ResidentialReinstatementPage() {
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white/[0.04] rounded-2xl p-5 sm:p-6 border border-white/10">
+              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80 shadow-sm">
                 <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
                   <Image src={img} alt="" fill sizes="96px" className="object-cover" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-1.5 leading-snug">{title}</h3>
-                  <p className="text-sm text-white/70 leading-relaxed">{desc}</p>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -226,12 +254,12 @@ export default function ResidentialReinstatementPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {help.map(({ icon, title, desc }) => (
-              <div key={title} className="rounded-2xl bg-white p-8 border border-zinc-200/80">
-                <div className="w-11 h-11 rounded-xl bg-[#1A6B4A]/10 flex items-center justify-center mb-5">
-                  <StepIcon name={icon} size={24} className="text-[#1A6B4A]" />
+              <div key={title} className="rounded-2xl p-8 shadow-md" style={{ background: '#1A6B4A' }}>
+                <div className="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+                  <StepIcon name={icon} size={24} className="text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-primary mb-2 leading-snug">{title}</h3>
-                <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                <h3 className="text-lg font-semibold text-white mb-2 leading-snug">{title}</h3>
+                <p className="text-white/85 leading-relaxed text-[0.95rem]">{desc}</p>
               </div>
             ))}
           </div>

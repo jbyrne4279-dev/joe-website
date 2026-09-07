@@ -175,9 +175,7 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Timeline */}
-      <section className="scroll-reveal relative py-24 px-6 overflow-hidden">
-        <img loading="lazy" decoding="async" src="/rc.jpg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0" style={{ background: 'rgba(251,243,217,0.82)' }} aria-hidden="true" />
+      <section className="scroll-reveal relative py-24 px-6 overflow-hidden" style={{ background: 'rgb(251,243,217)' }}>
         <div className="relative z-10 max-w-5xl mx-auto">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a16207] mb-4">The three‑year cycle</p>

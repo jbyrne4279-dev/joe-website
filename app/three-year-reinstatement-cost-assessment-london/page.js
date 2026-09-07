@@ -222,7 +222,7 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* Why it matters */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#8a6800' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <img width={1200} height={560} loading="lazy" decoding="async" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover border border-white/10" />
           <div>
@@ -268,7 +268,7 @@ export default function ThreeYearAssessmentLondonPage() {
       </section>
 
       {/* London coverage */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#8a6800' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <img width={1200} height={560} loading="lazy" decoding="async" src="/block-managers-london-flats.jpg" alt="Period London mansion block of flats" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover border border-white/10" />
           <div>

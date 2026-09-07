@@ -177,7 +177,7 @@ export default function CommercialReinstatementPage() {
               </p>
             </div>
           </div>
-          <div className="relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
+          <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
               src="/commercial-reinstatement-cost-assessment.webp"
               alt="Commercial office block requiring a reinstatement cost assessment"

@@ -183,7 +183,7 @@ export default function ThreeYearAssessmentLondonPage() {
           </div>
           <div className="max-w-3xl mx-auto space-y-5">
             {timeline.map(({ icon, label, title, desc }) => (
-              <div key={label} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80">
+              <div key={label} className="gold-outline-shine flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6">
                 <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-2xl shrink-0 flex items-center justify-center" style={{ background: '#a16207' }}>
                   <StepIcon name={icon} size={44} style={{ color: '#ffffff' }} />
                 </div>

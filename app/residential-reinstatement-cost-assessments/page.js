@@ -227,7 +227,7 @@ export default function ResidentialReinstatementPage() {
           </div>
           <div className="space-y-5">
             {challenges.map(({ img, title, desc }) => (
-              <div key={title} className="flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 border border-zinc-200/80 shadow-sm">
+              <div key={title} className="gold-outline-shine flex flex-col sm:flex-row gap-4 sm:gap-6 sm:items-center bg-white rounded-2xl p-5 sm:p-6 shadow-sm">
                 <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-2xl overflow-hidden shrink-0">
                   <Image src={img} alt="" fill sizes="96px" className="object-cover" />
                 </div>

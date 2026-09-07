@@ -61,8 +61,8 @@ const steps = [
 ]
 
 const compare = [
-  { icon: 'sell', title: 'Market value', desc: 'What a buyer would pay for the property today — including the land, the location and demand. It rises and falls with the property market.' },
-  { icon: 'construction', title: 'Reinstatement cost', desc: 'What it would cost to physically rebuild the structure — land and location stripped out entirely. It tracks construction costs, not the housing market.' },
+  { icon: 'sell', title: 'Market value', desc: 'What a buyer would pay for the property today, including the land, the location and demand. It rises and falls with the property market.' },
+  { icon: 'construction', title: 'Reinstatement cost', desc: 'What it would cost to physically rebuild the structure, land and location stripped out entirely. It tracks construction costs, not the housing market.' },
 ]
 
 export default function WhatIsBuildingReinstatementCostPage() {
@@ -90,7 +90,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
               What is a <span style={{ color: '#1A6B4A' }}>building</span> <span className="sm:whitespace-nowrap">reinstatement cost?</span>
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              It is the single most important figure on your buildings insurance policy &mdash; and the one most often
+              It is the single most important figure on your buildings insurance policy, and the one most often
               wrong. Here is what it means, how it is worked out and why it matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -114,12 +114,12 @@ export default function WhatIsBuildingReinstatementCostPage() {
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
               A building reinstatement cost is the total amount it would cost to rebuild a property completely if it
-              were destroyed &mdash; for example by fire, flood or collapse. It covers demolition and debris removal,
+              were destroyed, for example by fire, flood or collapse. It covers demolition and debris removal,
               the full rebuild to current standards, professional and design fees, and an allowance for inflation over
               the time it takes to settle a claim and complete the work.
             </p>
             <p>
-              This figure &mdash; not the market value &mdash; is what your buildings insurance{' '}
+              This figure, not the market value, is what your buildings insurance{' '}
               <strong className="font-semibold text-primary">sum insured</strong> should be based on. It is usually
               established by a RICS‑regulated surveyor and reviewed regularly so it keeps pace with construction costs.
             </p>
@@ -184,7 +184,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Get it wrong and your claim shrinks.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
-            <p>Most buildings policies apply a <strong className="font-semibold text-primary">condition of average</strong>. If the sum insured is lower than the true reinstatement cost, the insurer can reduce every claim by the same proportion &mdash; even a small, partial one. A property insured for 80% of its rebuild cost may see a claim cut by a fifth.</p>
+            <p>Most buildings policies apply a <strong className="font-semibold text-primary">condition of average</strong>. If the sum insured is lower than the true reinstatement cost, the insurer can reduce every claim by the same proportion, even a small, partial one. A property insured for 80% of its rebuild cost may see a claim cut by a fifth.</p>
             <p>The only reliable protection is an accurate building reinstatement cost, established professionally and reviewed regularly. RICS guidance is a full assessment at least every three years, with annual index‑linking in between.</p>
           </div>
           </div>

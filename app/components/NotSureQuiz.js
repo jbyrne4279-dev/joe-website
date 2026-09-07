@@ -49,7 +49,7 @@ export default function NotSureQuiz() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="bg-white text-[#0f3d28] px-9 py-4 rounded-full font-bold text-base ring-2 ring-[#d4af37] hover:ring-4 hover:-translate-y-0.5 active:scale-[0.97] transition-all shadow-[0_10px_30px_rgba(0,0,0,0.25)] inline-flex items-center gap-2 cursor-pointer"
+          className="quiz-cta bg-white text-[#0f3d28] px-9 py-4 rounded-full font-bold text-base ring-2 ring-[#d4af37] hover:ring-4 hover:-translate-y-0.5 active:scale-[0.97] transition-all shadow-[0_10px_30px_rgba(0,0,0,0.25)] inline-flex items-center gap-2 cursor-pointer"
         >
           <span className="material-symbols-outlined text-[#a16207]" style={{ fontSize: '1.3rem' }}>quiz</span>
           Check if you need a RCA
@@ -104,7 +104,7 @@ export default function NotSureQuiz() {
               <input type="hidden" name="last_assessment" value={lastRca} />
               <input type="hidden" name="recommended_service" value={rec} />
 
-              {/* Step 1 — property type */}
+              {/* Step 1, property type */}
               <div hidden={step !== 0}>
                 <h3 className="text-xl font-bold text-primary mb-5">What type of property is it?</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -121,7 +121,7 @@ export default function NotSureQuiz() {
                 </div>
               </div>
 
-              {/* Step 2 — last RCA */}
+              {/* Step 2, last RCA */}
               <div hidden={step !== 1}>
                 <h3 className="text-xl font-bold text-primary mb-5">When was your last assessment?</h3>
                 <div className="grid grid-cols-2 gap-2.5">
@@ -141,7 +141,7 @@ export default function NotSureQuiz() {
                 </button>
               </div>
 
-              {/* Step 3 — contact */}
+              {/* Step 3, contact */}
               <div hidden={step !== 2}>
                 {rec && (
                   <div className="mb-5 rounded-2xl bg-[#1A6B4A]/8 border border-[#1A6B4A]/20 p-4">

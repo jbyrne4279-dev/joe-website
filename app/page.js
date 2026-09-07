@@ -195,8 +195,7 @@ export default function HomePage() {
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
               Is yours one of them? We establish your accurate{' '}
-              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>{' '}
-              &mdash; certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
+              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -453,8 +452,7 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300 mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">Reinstatement cost assessments across the UK.</h2>
           <p className="text-white/75 leading-relaxed max-w-2xl mx-auto">
-            From London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland &mdash;
-            wherever your property is, we deliver an accurate, RICS‑regulated rebuild figure, which you can rely on.
+            From London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland. Wherever your property is, we deliver an accurate, RICS‑regulated rebuild figure you can rely on.
           </p>
         </div>
         <div className="max-w-6xl mx-auto">

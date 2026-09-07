@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'Building Reinstatement Cost | RICS Assessment UK',
     description:
-      'A plain-English, RICS-regulated guide to building reinstatement cost — what it means, how it is calculated and how to get an accurate figure for your buildings insurance.',
+      'A plain-English, RICS-regulated guide to building reinstatement cost, what it means, how it is calculated and how to get an accurate figure for your buildings insurance.',
     url: '/building-reinstatement-cost',
   },
 }
@@ -24,7 +24,7 @@ const PAGE_URL = `${SITE_URL}/building-reinstatement-cost`
 const faqItems = [
   {
     question: 'What is a building reinstatement cost?',
-    answer: 'A building reinstatement cost is the total cost of rebuilding a property from scratch if it were destroyed — including demolition, debris removal, professional fees and compliance with current building regulations. It is not the market value or the purchase price, and it is the figure your buildings insurance sum insured should be based on.',
+    answer: 'A building reinstatement cost is the total cost of rebuilding a property from scratch if it were destroyed, including demolition, debris removal, professional fees and compliance with current building regulations. It is not the market value or the purchase price, and it is the figure your buildings insurance sum insured should be based on.',
   },
   {
     question: 'How is a building reinstatement cost calculated?',
@@ -32,7 +32,7 @@ const faqItems = [
   },
   {
     question: 'Is the reinstatement cost the same as the market value?',
-    answer: 'No. Market value reflects what someone would pay for the property, including the land and location. Reinstatement cost is purely the cost of rebuilding the structure. In many areas the two figures differ significantly — which is why insuring at market value usually leaves a property under‑ or over‑insured.',
+    answer: 'No. Market value reflects what someone would pay for the property, including the land and location. Reinstatement cost is purely the cost of rebuilding the structure. In many areas the two figures differ significantly, which is why insuring at market value usually leaves a property under‑ or over‑insured.',
   },
   {
     question: 'How often should a building reinstatement cost be reviewed?',
@@ -40,7 +40,7 @@ const faqItems = [
   },
   {
     question: 'What happens if my building reinstatement cost is wrong?',
-    answer: 'If the sum insured is lower than the true rebuild cost, most policies apply a “condition of average” and reduce any claim by the same proportion you are underinsured — even for a small, partial loss. An accurate RICS assessment removes that risk and gives you a figure you can stand behind at renewal.',
+    answer: 'If the sum insured is lower than the true rebuild cost, most policies apply a “condition of average” and reduce any claim by the same proportion you are underinsured, even for a small, partial loss. An accurate RICS assessment removes that risk and gives you a figure you can stand behind at renewal.',
   },
 ]
 
@@ -95,9 +95,9 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up — foundations, walls, roof and floors — to today’s standards, not just patching up damage.' },
+  { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up, foundations, walls, roof and floors, to today’s standards, not just patching up damage.' },
   { label: 'Demolition and debris removal', detail: 'Safely clearing and disposing of what’s left after a total loss, which has to happen before any rebuilding can begin.' },
-  { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild — often 10–15% of the total cost.' },
+  { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild, often 10–15% of the total cost.' },
   { label: 'Building‑regulation compliance', detail: 'Meeting current building regulations, which are usually stricter than when the property was first built.' },
   { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also have to be rebuilt or replaced.' },
   { label: 'Inflation over the rebuild period', detail: 'An allowance for building costs rising while the claim is settled and the work is carried out.' },
@@ -135,7 +135,7 @@ export default function BuildingReinstatementCostPage() {
               Your <span style={{ color: '#1A6B4A' }}>building</span> <span className="sm:whitespace-nowrap">reinstatement cost</span>, explained.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              The single most important figure on your buildings insurance &mdash; what it means, how a RICS‑regulated
+              The single most important figure on your buildings insurance, what it means, how a RICS‑regulated
               surveyor calculates it, and how to get an accurate one for any UK property.
             </p>
             <div className="flex justify-center">
@@ -152,18 +152,18 @@ export default function BuildingReinstatementCostPage() {
         <div className="max-w-3xl mx-auto">
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">What it is</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">The cost to rebuild &mdash; not what it&rsquo;s worth.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">The cost to rebuild, not what it&rsquo;s worth.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
               A building reinstatement cost is the amount it would take to rebuild a property from the ground up if it
               were completely destroyed. It has nothing to do with the property&rsquo;s market value or what you paid
-              for it &mdash; land and location are stripped out entirely. What remains is the true cost of construction:
+              for it, land and location are stripped out entirely. What remains is the true cost of construction:
               labour, materials, professional fees and everything the law now requires you to do when you rebuild.
             </p>
             <p>
               This figure is what your buildings insurance <strong className="font-semibold text-primary">sum insured</strong>{' '}
-              should be based on. Get it right and a total loss is fully covered. Get it wrong &mdash; usually too low
-              &mdash; and you carry a shortfall you may not discover until you claim.
+              should be based on. Get it right and a total loss is fully covered. Get it wrong, usually too low
+, and you carry a shortfall you may not discover until you claim.
             </p>
           </div>
           </div>
@@ -227,13 +227,13 @@ export default function BuildingReinstatementCostPage() {
           <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
               Research across the UK insurance market consistently finds that the large majority of buildings are
-              underinsured &mdash; often by 20% or more. It happens quietly: a sum insured is set once, then rolled
+              underinsured, often by 20% or more. It happens quietly: a sum insured is set once, then rolled
               forward year after year while real build costs climb.
             </p>
             <p>
               The catch is the <strong className="font-semibold text-white">condition of average</strong>. If you are
               insured for less than the true reinstatement cost, the insurer can reduce every claim by the same
-              proportion &mdash; so a property insured for 80% of its rebuild cost may see even a small claim cut by a
+              proportion, so a property insured for 80% of its rebuild cost may see even a small claim cut by a
               fifth. An accurate, regularly reviewed figure is the only reliable protection.
             </p>
           </div>
@@ -271,7 +271,7 @@ export default function BuildingReinstatementCostPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">An accurate figure, anywhere in the UK.</h2>
           <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
-            We establish accurate building reinstatement costs for property across the whole of the UK &mdash; from
+            We establish accurate building reinstatement costs for property across the whole of the UK, from
             London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland.
           </p>
           </div>

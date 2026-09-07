@@ -50,7 +50,7 @@ const faqItems = [
   },
   {
     question: 'Where in the UK do you cover?',
-    answer: 'The whole of the UK. Because a desktop assessment needs no physical site visit, we assess properties in England, Scotland, Wales and Northern Ireland with the same speed and accuracy — from London and the South East to the Midlands, the North and beyond.',
+    answer: 'The whole of the UK. Because a desktop assessment needs no physical site visit, we assess properties in England, Scotland, Wales and Northern Ireland with the same speed and accuracy, from London and the South East to the Midlands, the North and beyond.',
   },
 ]
 
@@ -95,9 +95,9 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up — foundations, walls, roof and floors — to today’s standards, not just patching up damage.' },
+  { label: 'The full rebuild of the property', detail: 'Rebuilding the whole structure from the ground up, foundations, walls, roof and floors, to today’s standards, not just patching up damage.' },
   { label: 'Demolition and debris removal', detail: 'Safely clearing and disposing of what’s left after a total loss, which has to happen before any rebuilding can begin.' },
-  { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild — often 10–15% of the total cost.' },
+  { label: 'Professional and design fees', detail: 'The architects, engineers and surveyors needed to design and sign off the rebuild, often 10–15% of the total cost.' },
   { label: 'Building‑regulation compliance', detail: 'Meeting current building regulations, which are usually stricter than when the property was first built.' },
   { label: 'Outbuildings and boundaries', detail: 'Garages, sheds, walls, fences and gates that also have to be rebuilt or replaced.' },
   { label: 'Inflation over the rebuild period', detail: 'An allowance for building costs rising while the claim is settled and the work is carried out.' },
@@ -153,7 +153,7 @@ export default function DesktopAssessmentUKPage() {
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
             <p>
               A desktop reinstatement cost assessment establishes the true cost of rebuilding your property from
-              scratch &mdash; not its market value. Rather than sending a surveyor to site, we draw on detailed
+              scratch, not its market value. Rather than sending a surveyor to site, we draw on detailed
               property records, floor area data and live cost data from the <a href="https://en.wikipedia.org/wiki/Building_Cost_Information_Service" target="_blank" rel="noopener noreferrer" className="text-[#1e40af] underline underline-offset-2 hover:text-[#1e3a8a]">Building Cost Information Service (BCIS)</a>, the construction industry’s benchmark for build costs originally established by RICS, to reach an accurate,
               defensible figure for the property&rsquo;s location.
             </p>
@@ -247,7 +247,7 @@ export default function DesktopAssessmentUKPage() {
               38% and pre‑cast concrete around 26% year on year
               (<a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">BCIS</a>).
               More recently, Houthi attacks on Red Sea shipping have forced vessels the long way around the Cape of
-              Good Hope — adding up to 20 days to journeys and pushing up the cost of imported building materials
+              Good Hope, adding up to 20 days to journeys and pushing up the cost of imported building materials
               again
               (<a href="https://www.building.co.uk/news/attacks-on-red-sea-shipping-becoming-significant-issue-for-construction-products-cpa-warns/5127252.article" target="_blank" rel="noopener noreferrer" className="text-blue-300 underline underline-offset-2 hover:text-blue-200">Building</a>).
               A sum insured based on a purchase price, a mortgage valuation, or an old online calculator almost always
@@ -256,7 +256,7 @@ export default function DesktopAssessmentUKPage() {
             <p>
               Most policies apply a <strong className="font-semibold text-white">condition of average</strong>:
               if you are insured for less than the true rebuild cost, the insurer can cut your claim by the same
-              proportion &mdash; even on a small loss. A desktop RICS assessment closes that gap quickly and gives
+              proportion, even on a small loss. A desktop RICS assessment closes that gap quickly and gives
               you a figure you can stand behind at renewal.
             </p>
           </div>
@@ -295,7 +295,7 @@ export default function DesktopAssessmentUKPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Anywhere in the UK, remotely assessed.</h2>
           <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             Because a desktop assessment needs no physical visit, we cover the whole of the UK with the same
-            speed and accuracy &mdash; from London and the South East to the Midlands, the North, Scotland,
+            speed and accuracy, from London and the South East to the Midlands, the North, Scotland,
             Wales and Northern Ireland.
           </p>
           </div>

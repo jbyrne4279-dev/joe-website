@@ -147,7 +147,7 @@ export default function ResidentialReinstatementPage() {
         </div>
       </section>
 
-      {/* The basics — prose + image */}
+      {/* The basics, prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
           <div>
@@ -159,7 +159,7 @@ export default function ResidentialReinstatementPage() {
             </h2>
             <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
               <p>
-                It&rsquo;s the cost of rebuilding your home from scratch &mdash; not what it would sell for.
+                It&rsquo;s the cost of rebuilding your home from scratch, not what it would sell for.
                 Market value includes the land and location; the rebuild cost is only the work of putting the
                 building back, so the two are often very different.
               </p>

@@ -6,7 +6,7 @@
  * seamless loop. Pauses on hover; respects prefers-reduced-motion.
  *
  * @param {{ locations: string[], accent?: string, dark?: boolean }} props
- *   dark — style the pills for a dark section background (translucent white
+ *   dark, style the pills for a dark section background (translucent white
  *   pills with white text) instead of the default light pills.
  */
 export default function LocationCarousel({ locations = [], accent = '#1A6B4A', dark = false }) {

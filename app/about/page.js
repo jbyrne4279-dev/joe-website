@@ -38,7 +38,7 @@ const aboutJsonLd = {
 
 const values = [
   { icon: 'verified', title: 'RICS‑regulated', desc: 'Every assessment is produced under RICS regulation, to the professional standard insurers and brokers expect.' },
-  { icon: 'target', title: 'A single specialism', desc: 'We do reinstatement cost assessments and nothing else — not valuation as a sideline to general surveying.' },
+  { icon: 'target', title: 'A single specialism', desc: 'We do reinstatement cost assessments and nothing else, not valuation as a sideline to general surveying.' },
   { icon: 'schedule', title: 'Delivered in 48 hours', desc: 'A focused practice means fast turnaround: most desktop assessments land within 48 hours of instruction.' },
   { icon: 'public', title: 'UK‑wide coverage', desc: 'London‑based, working across England, Scotland, Wales and Northern Ireland.' },
 ]
@@ -96,7 +96,7 @@ export default function AboutPage() {
             <p>
               Reinstatement Cost Assessment Ltd is a RICS‑regulated firm built around a single specialism. Our chartered
               surveyors carry more than 50 years of combined experience, focused entirely on establishing accurate
-              rebuild costs for buildings insurance &mdash; residential, commercial, listed and complex property alike.
+              rebuild costs for buildings insurance, residential, commercial, listed and complex property alike.
             </p>
             <p>
               That focus is deliberate. When reinstatement cost assessment is the whole of what a practice does, rather
@@ -105,7 +105,7 @@ export default function AboutPage() {
               renewal.
             </p>
             <p>
-              We are based at 17 Hanover Square in central London and work across the whole of the UK &mdash; remotely
+              We are based at 17 Hanover Square in central London and work across the whole of the UK, remotely
               for standard property, and on site where a building&rsquo;s complexity or value calls for it.
             </p>
             <p className="text-sm text-secondary/80">
@@ -147,7 +147,7 @@ export default function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">London‑based, working nationwide.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
-            From our central London base we assess property across the whole of the UK &mdash; from the South East to
+            From our central London base we assess property across the whole of the UK, from the South East to
             the Midlands, the North, Scotland, Wales and Northern Ireland.
           </p>
           </div>

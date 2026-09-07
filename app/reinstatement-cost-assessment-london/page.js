@@ -160,7 +160,7 @@ export default function LondonReinstatementPage() {
         </div>
       </section>
 
-      {/* The basics — prose + image */}
+      {/* The basics, prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
           <div>
@@ -181,7 +181,7 @@ export default function LondonReinstatementPage() {
                 We are a London firm, based at 17 Hanover Square in the West End and part of the RiskSTOP
                 Group. Our RICS‑regulated surveyors work across the capital every day, so they understand how
                 local build costs, access, and the city&rsquo;s mix of period and modern buildings feed into
-                an accurate rebuild figure &mdash; one your broker and insurer will accept.
+                an accurate rebuild figure, one your broker and insurer will accept.
               </p>
             </div>
           </div>

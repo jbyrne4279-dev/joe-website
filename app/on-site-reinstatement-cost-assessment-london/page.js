@@ -95,9 +95,9 @@ const whoNeedsIt = [
 ]
 
 const included = [
-  { label: 'Full physical site inspection', detail: 'A RICS surveyor visits and examines the building in person, inside and out — nothing is assumed from records alone.' },
+  { label: 'Full physical site inspection', detail: 'A RICS surveyor visits and examines the building in person, inside and out, so nothing is assumed from records alone.' },
   { label: 'Measured survey of every element', detail: 'Each part of the building is physically measured on site, giving a far more precise figure than a desktop estimate.' },
-  { label: 'Specification and construction assessment', detail: 'We record exactly how the building is put together and finished — the materials, methods and quality of construction.' },
+  { label: 'Specification and construction assessment', detail: 'We record exactly how the building is put together and finished, the materials, methods and quality of construction.' },
   { label: 'Detailed site notes and photographs', detail: 'A full written and photographic record that evidences and supports every figure in the report.' },
   { label: 'Specialist materials and M&E', detail: 'Stone, timber and heritage detail, plus mechanical and electrical services such as lifts, heating and ventilation.' },
   { label: 'Curtilage structures and boundaries', detail: 'Outbuildings, walls, railings and other structures that sit within the property’s boundary and also need rebuilding.' },
@@ -139,7 +139,7 @@ export default function OnSiteAssessmentLondonPage() {
               <span style={{ color: '#1A6B4A' }}>On‑site</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              The most accurate rebuild cost available &mdash; a full physical survey by a RICS‑regulated surveyor. Essential for London&rsquo;s listed, period, complex and high‑value buildings, delivered with full site evidence.
+              The most accurate rebuild cost available, a full physical survey by a RICS‑regulated surveyor. Essential for London&rsquo;s listed, period, complex and high‑value buildings, delivered with full site evidence.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -163,15 +163,15 @@ export default function OnSiteAssessmentLondonPage() {
               first‑hand. Nothing is estimated from records alone.
             </p>
             <p>
-              This level of detail matters most where a building is out of the ordinary &mdash; a listed
+              This level of detail matters most where a building is out of the ordinary, a listed
               townhouse, a period conversion, a mixed‑use block, or an industrial unit with significant plant. The
               result is a comprehensive, evidenced rebuild figure that stands up to insurer and legal scrutiny in case, protecting you in the circumstances of a denied claim.
             </p>
             <p>
               The surveyor at your door is a RICS‑regulated chartered professional, drawing on a practice with
               more than half a century of collective experience devoted entirely to reinstatement cost assessment.
-              On the capital&rsquo;s harder buildings, it is that concentrated, specialist judgement &mdash; not
-              general practice &mdash; that turns a careful inspection into a figure you can defend.
+              On the capital&rsquo;s harder buildings, it is that concentrated, specialist judgement, not
+              general practice, that turns a careful inspection into a figure you can defend.
             </p>
           </div>
           </div>
@@ -234,13 +234,13 @@ export default function OnSiteAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Detail is where the value hides.</h2>
           <div className="space-y-6 text-white/85 leading-[1.75] text-[1.05rem]">
             <p>
-              London holds some of the most complex building stock in the country &mdash; Georgian and Victorian
+              London holds some of the most complex building stock in the country, Georgian and Victorian
               terraces, mansion blocks, converted warehouses and prime commercial premises. On these buildings,
               generic calculators and desktop indices routinely miss six‑figure sums in specialist materials,
               heritage detailing and services.
             </p>
             <p>
-              Underinsurance on a high‑value asset is a serious exposure &mdash; and it is the norm, not the exception.
+              Underinsurance on a high‑value asset is a serious exposure, and it is the norm, not the exception.
               An estimated <strong className="font-semibold text-white">76% of UK buildings are underinsured</strong>,
               and among those that are, cover averages just <strong className="font-semibold text-white">63%</strong> of
               the true rebuild cost
@@ -292,8 +292,8 @@ export default function OnSiteAssessmentLondonPage() {
           </p>
           <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             We are not limited to the capital. Our surveyors also carry out on‑site assessments across the major
-            cities and towns within easy reach of London &mdash; including Birmingham, Bristol, Manchester,
-            Liverpool, Leeds, Cambridge and Oxford &mdash; wherever a building&rsquo;s complexity or value calls for
+            cities and towns within easy reach of London, including Birmingham, Bristol, Manchester,
+            Liverpool, Leeds, Cambridge and Oxford, wherever a building&rsquo;s complexity or value calls for
             a full physical survey.
           </p>
           </div>

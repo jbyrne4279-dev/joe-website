@@ -272,7 +272,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* London coverage */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#4a3208' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
-          <img width={1200} height={560} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover border border-white/10" />
+          <img width={600} height={800} loading="lazy" decoding="async" src="/three-year-coverage-london.jpg" alt="Prime London property with a view of Big Ben" className="w-full max-w-sm mx-auto aspect-[3/4] rounded-2xl object-cover border border-white/10" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">London coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Portfolios protected across London.</h2>

@@ -403,11 +403,11 @@ export default function HomePage() {
       {/* Our Expertise */}
       <section className="scroll-reveal relative py-24 overflow-hidden">
         <Image
-          src="/desktop-reinstatement-cost-assessment.jpg"
-          alt="RICS-regulated surveying practice at work on reinstatement cost assessments"
+          src="/on-site-reinstatement-cost-assessment-survey.jpg"
+          alt="RICS-regulated chartered surveyor with rebuild drawings"
           fill
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 max-w-5xl mx-auto px-8">

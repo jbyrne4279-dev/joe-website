@@ -20,16 +20,6 @@ export default function ThankYouPage() {
           'currency': 'GBP'
         });
       `}</Script>
-      {/* Event snippet for Submit lead form BOTLEY BYRME conversion page */}
-      <Script id="google-ads-conversion-botley-byrne" strategy="afterInteractive">{`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('event', 'conversion', {
-          'send_to': 'AW-16853906784/x1rpCOfBx-kcEODqyOQ-',
-          'value': 1.0,
-          'currency': 'GBP'
-        });
-      `}</Script>
       <main className="flex-1">
 
       {/* Hero */}

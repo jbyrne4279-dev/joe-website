@@ -160,8 +160,12 @@ export default function NotSureQuiz() {
                     <input id="quiz-email" name="email" required type="email" placeholder="john@example.com" className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" />
                   </div>
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="quiz-notes" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Notes (optional)</label>
-                    <textarea id="quiz-notes" name="notes" rows="3" placeholder="Anything else we should know about the property..." className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none" />
+                    <label htmlFor="quiz-phone" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Phone number <span className="text-red-400">*</span></label>
+                    <input id="quiz-phone" name="phone" required type="tel" autoComplete="tel" placeholder="07123 456789" className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" />
+                  </div>
+                  <div className="flex flex-col gap-1.5">
+                    <label htmlFor="quiz-notes" className="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Notes <span className="text-red-400">*</span></label>
+                    <textarea id="quiz-notes" name="notes" required rows="3" placeholder="Tell us about the property: address, approximate floor area, and anything unusual..." className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none" />
                   </div>
                 </div>
                 <div className="mt-6 flex items-center gap-4">

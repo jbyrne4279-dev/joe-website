@@ -539,30 +539,25 @@ export default function HomePage() {
       <section className="scroll-reveal py-20 px-8 bg-[#0f3d28]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
-            <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us.</h2>
-            <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on, not guesswork.</p>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>calculate</span>Online calculators</span>
+            <h2 className="text-4xl font-bold text-white">Why online rebuild calculators aren&rsquo;t enough.</h2>
+            <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Free calculators give a rough guide, not a figure that holds up when it matters. Here&rsquo;s why they leave you exposed.</p>
           </div>
-          {/* Methodology */}
+          {/* Why calculators fall short */}
           <div className="bg-white rounded-2xl border border-white/20 p-8 sovereign-shadow mb-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4">Our Assessment Methodology</p>
-            <div className="flex flex-col md:flex-row gap-0 md:gap-0 items-stretch">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#991b1b] mb-6">The limits of a free estimate</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '1', label: 'Instruction & Data Gathering', desc: 'We collect property details, floor areas, construction type, and any specialist features.' },
-                { n: '2', label: 'BCIS‑Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices the same data used by major insurers.' },
-                { n: '3', label: 'RICS‑Reviewed Report', desc: 'A RICS‑registered surveyor signs off every report before it is delivered to you.' },
-              ].map(({ n, label, desc }, i, arr) => (
-                <div key={n} className="flex flex-col md:flex-row items-stretch flex-1">
-                  <div className="flex-1 p-5 text-center">
-                    <div className={`method-ring-${n} btn-shine w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm mx-auto mb-3`}>{n}</div>
-                    <p className="font-semibold text-primary text-sm mb-1">{label}</p>
-                    <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+                { label: 'Not legally defensible', desc: 'Online calculators aren’t RICS‑regulated and carry no professional liability, so the figure won’t stand up if an insurer challenges it at claim.' },
+                { label: 'Generic averages', desc: 'They apply broad regional averages and can’t account for listed status, non‑standard construction, specialist materials or complex layouts.' },
+                { label: 'No certified sign‑off', desc: 'A calculator output isn’t a certified assessment. Only a RICS‑regulated report gives you an insurer‑ and broker‑ready rebuild figure.' },
+              ].map(({ label, desc }) => (
+                <div key={label} className="flex flex-col items-center text-center gap-3">
+                  <div className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'rgba(153,27,27,0.1)' }}>
+                    <span className="material-symbols-outlined text-[#991b1b]" style={{ fontSize: '1.3rem' }}>close</span>
                   </div>
-                  {i < arr.length - 1 && (
-                    <div className="hidden md:flex items-center px-1 text-[#1A6B4A]/30">
-                      <span className="material-symbols-outlined">arrow_forward</span>
-                    </div>
-                  )}
+                  <p className="font-bold text-primary text-sm">{label}</p>
+                  <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>

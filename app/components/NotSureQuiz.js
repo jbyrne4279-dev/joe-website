@@ -29,6 +29,43 @@ function recommend(propertyType, lastRca) {
   return 'Desktop Assessment'
 }
 
+function riskLevel(lastRca) {
+  switch (lastRca) {
+    case 'Under 1 year':
+      return {
+        label: 'Low Risk',
+        desc: 'Your rebuild figure is likely still current, but construction costs move quickly, keep it under review.',
+        color: '#1A6B4A', bg: 'rgba(26,107,74,0.08)', border: 'rgba(26,107,74,0.2)',
+      }
+    case '1–3 years':
+      return {
+        label: 'Medium Risk',
+        desc: 'At this age your reinstatement figure is very likely out of date. You are probably underinsured.',
+        color: '#a16207', bg: 'rgba(212,160,23,0.1)', border: 'rgba(212,160,23,0.25)',
+      }
+    case '3+ years':
+      return {
+        label: 'High Risk',
+        desc: 'Your reinstatement figure is significantly out of date. Your property is very likely badly underinsured.',
+        color: '#991b1b', bg: 'rgba(153,27,27,0.08)', border: 'rgba(153,27,27,0.2)',
+      }
+    case 'Never':
+      return {
+        label: 'High Risk',
+        desc: 'Without a formal assessment, your sum insured is likely a guess. Your property is very likely underinsured.',
+        color: '#991b1b', bg: 'rgba(153,27,27,0.08)', border: 'rgba(153,27,27,0.2)',
+      }
+    case 'Not sure':
+      return {
+        label: 'Unknown Risk',
+        desc: 'Without a recent assessment on record, we’d recommend checking your figure to be sure.',
+        color: '#a16207', bg: 'rgba(212,160,23,0.1)', border: 'rgba(212,160,23,0.25)',
+      }
+    default:
+      return null
+  }
+}
+
 export default function NotSureQuiz() {
   const [open, setOpen] = useState(false)
   const [step, setStep] = useState(0)
@@ -36,6 +73,7 @@ export default function NotSureQuiz() {
   const [lastRca, setLastRca] = useState('')
 
   const rec = propertyType ? recommend(propertyType, lastRca) : ''
+  const risk = lastRca ? riskLevel(lastRca) : null
 
   // Allow other components (e.g. hero CTAs) to open this quiz by dispatching
   // window.dispatchEvent(new Event('open-rca-quiz')).
@@ -138,6 +176,13 @@ export default function NotSureQuiz() {
 
               {/* Step 3, contact */}
               <div hidden={step !== 2}>
+                {risk && (
+                  <div className="mb-3 rounded-2xl p-4" style={{ background: risk.bg, border: `1px solid ${risk.border}` }}>
+                    <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: risk.color }}>Underinsurance risk</p>
+                    <p className="font-bold" style={{ color: risk.color }}>{risk.label}</p>
+                    <p className="text-secondary text-xs mt-1">{risk.desc}</p>
+                  </div>
+                )}
                 {rec && (
                   <div className="mb-5 rounded-2xl bg-[#1A6B4A]/8 border border-[#1A6B4A]/20 p-4">
                     <p className="text-xs font-semibold uppercase tracking-widest text-[#1A6B4A] mb-1">Our suggestion</p>

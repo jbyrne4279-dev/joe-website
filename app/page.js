@@ -327,7 +327,7 @@ export default function HomePage() {
               {/* Desktop Assessment */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
+                  <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm">Efficient, data‑driven remote valuation for standard properties.</p>
                 </div>
@@ -357,7 +357,7 @@ export default function HomePage() {
               {/* On-Site Survey */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
+                  <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm">Full physical survey for listed, complex or high‑value buildings.</p>
                 </div>
@@ -390,7 +390,7 @@ export default function HomePage() {
                   <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
                 </div>
                 <div className="mb-8">
-                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
+                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                 </div>

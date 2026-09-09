@@ -126,8 +126,8 @@ export default function ServicesPage() {
               Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS reinstatement cost assessment gives you the one figure that keeps your insurer honest.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
-              <Link href="/contact#contact-form" className="btn-shine-gold text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Get RCA Report
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                Get Report
               </Link>
               <Link href="#pricing" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
                 Our Services

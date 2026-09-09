@@ -196,8 +196,8 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h1>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
-              <Link href="/contact#contact-form" className="btn-shine-gold text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Get RCA Report
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                Get Report
               </Link>
               <Link href="/services" className="bg-white/10 border border-white/25 text-white px-6 py-4 rounded-full font-semibold text-sm hover:bg-white/20 active:scale-[0.97] transition-all text-center">
                 Our Services

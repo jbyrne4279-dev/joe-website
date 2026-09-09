@@ -199,20 +199,6 @@ export default function HomePage() {
               Is yours one of them? We establish your accurate{' '}
               <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Contact Surveyor
-              </Link>
-              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
-                Our Services
-              </Link>
-            </div>
-            <div className="flex justify-center">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
-                <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
-              </span>
-            </div>
           </div>
         </div>
       </section>
@@ -254,8 +240,8 @@ export default function HomePage() {
                     <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
                     Contact
                   </Link>
-                  <Link href={href} className="inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
-                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                  <Link href={href} className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
+                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '0.8rem' }}>arrow_forward</span>
                   </Link>
                 </div>
               </div>
@@ -279,6 +265,20 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                Contact Surveyor
+              </Link>
+              <Link href="/services" className="bg-white/10 border border-white/25 text-white px-6 py-4 rounded-full font-semibold text-sm hover:bg-white/20 active:scale-[0.97] transition-all text-center">
+                Our Services
+              </Link>
+            </div>
+            <div className="flex justify-center pt-1">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/80">
+                <span className="w-2 h-2 rounded-full bg-[#d4af37] inline-block"></span>
+                RICS Regulated &middot; London &amp; UK
+              </span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

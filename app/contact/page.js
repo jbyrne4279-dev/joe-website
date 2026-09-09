@@ -51,7 +51,7 @@ const contactPageJsonLd = {
     '@type': 'ProfessionalService',
     name: 'RCA Ltd',
     telephone: '+44-20-3178-8099',
-    email: 'michael@reinstatementcostassessment.com',
+    email: 'joseph@reinstatementcostassessment.org',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '17 Hanover Square',

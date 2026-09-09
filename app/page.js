@@ -59,7 +59,7 @@ const organizationJsonLd = {
   description:
     'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
   telephone: '+44-20-3178-8099',
-  email: 'michael@reinstatementcostassessment.com',
+  email: 'joseph@reinstatementcostassessment.org',
   sameAs: [
     'https://find-and-update.company-information.service.gov.uk/company/17101918',
     'https://www.linkedin.com/company/reinstatement-cost-assessment-limited/',
@@ -95,7 +95,7 @@ const organizationJsonLd = {
     '@type': 'ContactPoint',
     contactType: 'customer service',
     telephone: '+44-20-3178-8099',
-    email: 'michael@reinstatementcostassessment.com',
+    email: 'joseph@reinstatementcostassessment.org',
     areaServed: 'GB',
     availableLanguage: 'English',
   },

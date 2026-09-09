@@ -9,8 +9,8 @@ export default function UnderinsuredQuizButton({ className }) {
       onClick={() => window.dispatchEvent(new Event('open-rca-quiz'))}
       className={className}
     >
-      <span className="material-symbols-outlined" style={{ fontSize: '1.15rem' }}>fact_check</span>
       Check If You&rsquo;re Underinsured
+      <span className="material-symbols-outlined" style={{ fontSize: '1.15rem' }}>fact_check</span>
     </button>
   )
 }

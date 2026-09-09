@@ -330,10 +330,6 @@ export default function HomePage() {
                   <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm mb-4">Efficient, data‑driven remote valuation for standard properties.</p>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1e40af', background: 'rgba(37,99,235,0.1)' }}>
-                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>home</span>
-                    Recommended for UK homeowners
-                  </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -355,6 +351,12 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1e40af', background: 'rgba(37,99,235,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>home</span>
+                    Recommended for UK homeowners
+                  </span>
+                </div>
                 <Link href="/contact?service=desktop#contact-form" className="w-full py-4 btn-shine-blue text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
@@ -364,10 +366,6 @@ export default function HomePage() {
                   <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm mb-4">Full physical survey for listed, complex or high‑value buildings.</p>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1A6B4A', background: 'rgba(26,107,74,0.1)' }}>
-                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>apartment</span>
-                    Recommended for London property managers
-                  </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -389,6 +387,12 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1A6B4A', background: 'rgba(26,107,74,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>apartment</span>
+                    Recommended for London property managers
+                  </span>
+                </div>
                 <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On‑Site</Link>
               </div>
 
@@ -401,10 +405,6 @@ export default function HomePage() {
                   <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
                   <p className="text-secondary text-sm mb-4">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
-                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
-                    Recommended for London portfolio managers
-                  </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -426,6 +426,12 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Broker‑ready report every renewal</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
+                    Recommended for London portfolio managers
+                  </span>
+                </div>
                 <Link href="/contact?service=3year#contact-form" className="btn-shine-gold w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 

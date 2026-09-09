@@ -133,7 +133,7 @@ export default function ResourcesPage() {
               <div className="flex justify-center">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
                   <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                  RICS Regulated &middot; London &amp; UK
+                  London &amp; UK
                 </span>
               </div>
             </div>

@@ -117,7 +117,7 @@ export default function ContactPage() {
             <div className="flex flex-col items-center gap-4">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
                 <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
+                London &amp; UK
               </span>
               <a
                 href="https://www.linkedin.com/company/reinstatement-cost-assessment-limited/"

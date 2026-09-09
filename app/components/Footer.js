@@ -96,12 +96,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Google preferred source */}
-        <div className="border-t border-white/10 pt-8 pb-6 flex flex-col items-center gap-3 text-center">
-          <p className="text-xs text-emerald-200/60 uppercase tracking-widest font-medium">Follow us on Google</p>
-          <div google-add-preferred-source-btn data-theme="dark" data-lang="en"></div>
-        </div>
-
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-emerald-200/50">
           <p>© 2025 ReinstatementCostAssessment.org. All rights reserved.</p>

@@ -218,7 +218,13 @@ export default function HomePage() {
             ].map(({ img, title, desc }, i) => (
               <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
+                {title === '50+ Years Experience' ? (
+                  <div className="logo-shine w-24 h-24 rounded-xl">
+                    <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
+                  </div>
+                ) : (
+                  <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
+                )}
                 <div className="space-y-2">
                   <p className="font-bold text-base text-primary">{title}</p>
                   <p className="text-sm text-secondary leading-relaxed">{desc}</p>

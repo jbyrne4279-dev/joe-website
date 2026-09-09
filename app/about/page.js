@@ -91,13 +91,15 @@ export default function AboutPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
           <div className="w-full md:w-[38%] shrink-0 flex justify-center md:justify-start">
-            <Image
-              src="/rca-logo-reinstatement-cost-assessment.webp"
-              alt="Reinstatement Cost Assessment Ltd shield logo"
-              width={400}
-              height={400}
-              className="w-full max-w-[320px] h-auto object-contain"
-            />
+            <div className="bg-white rounded-2xl shadow-[0_18px_50px_rgba(0,0,0,0.15)] border border-black/5 p-8 w-full max-w-[320px]">
+              <Image
+                src="/rca-logo-reinstatement-cost-assessment.webp"
+                alt="Reinstatement Cost Assessment Ltd shield logo"
+                width={400}
+                height={400}
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Who we are</p>

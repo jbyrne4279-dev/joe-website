@@ -201,7 +201,7 @@ export default function HomePage() {
                 Get Report
                 <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
-              <UnderinsuredQuizButton className="btn-shine-gold text-white px-6 py-4 rounded-full font-semibold text-sm active:scale-[0.97] transition-all text-center inline-flex items-center justify-center gap-2 cursor-pointer" />
+              <UnderinsuredQuizButton className="bg-[#f5b301] text-[#0f3d28] ring-2 ring-white/70 px-6 py-4 rounded-full font-bold text-sm hover:-translate-y-0.5 active:scale-[0.97] transition-transform text-center inline-flex items-center justify-center gap-2 cursor-pointer" />
             </div>
             <div className="flex justify-center pt-1">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/80">

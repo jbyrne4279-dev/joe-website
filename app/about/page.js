@@ -89,9 +89,9 @@ export default function AboutPage() {
 
       {/* Who we are */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
-          <div className="w-full md:w-[38%] shrink-0 flex justify-center md:justify-start">
-            <div className="bg-white rounded-2xl shadow-[0_18px_50px_rgba(0,0,0,0.15)] border border-black/5 p-8 w-full max-w-[320px]">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
+          <div className="w-full md:w-1/2 shrink-0 flex justify-center md:justify-start">
+            <div className="bg-white rounded-2xl shadow-[0_18px_50px_rgba(0,0,0,0.15)] border border-black/5 p-8 w-full max-w-[320px] md:max-w-none">
               <Image
                 src="/rca-logo-reinstatement-cost-assessment.webp"
                 alt="Reinstatement Cost Assessment Ltd shield logo"

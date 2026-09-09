@@ -288,8 +288,16 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Detail Cards */}
-      <section className="scroll-reveal py-16 px-4 md:px-8 bg-white">
-        <div className="max-w-6xl mx-auto space-y-8">
+      <section className="scroll-reveal relative py-16 px-4 md:px-8 overflow-hidden">
+        <Image
+          src="/managing-agents-office-block.jpg"
+          alt="London skyscraper skyline"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#0f3d28]/85" aria-hidden="true" />
+        <div className="relative z-10 max-w-6xl mx-auto space-y-8">
 
           {/* Desktop Assessment */}
           <div id="desktop-rca" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">

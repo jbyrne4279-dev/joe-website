@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const PROPERTY_TYPES = [
   'House',
@@ -36,6 +36,14 @@ export default function NotSureQuiz() {
   const [lastRca, setLastRca] = useState('')
 
   const rec = propertyType ? recommend(propertyType, lastRca) : ''
+
+  // Allow other components (e.g. hero CTAs) to open this quiz by dispatching
+  // window.dispatchEvent(new Event('open-rca-quiz')).
+  useEffect(() => {
+    function handleOpen() { setOpen(true) }
+    window.addEventListener('open-rca-quiz', handleOpen)
+    return () => window.removeEventListener('open-rca-quiz', handleOpen)
+  }, [])
 
   function close() {
     setOpen(false)

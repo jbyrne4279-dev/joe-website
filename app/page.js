@@ -196,8 +196,9 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h1>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
                 Get Report
+                <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
               <Link href="/services" className="bg-white/10 border border-white/25 text-white px-6 py-4 rounded-full font-semibold text-sm hover:bg-white/20 active:scale-[0.97] transition-all text-center">
                 Our Services
@@ -297,14 +298,12 @@ export default function HomePage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
               {[
-                { icon: 'straighten', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
-                { icon: 'verified_user', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
-                { icon: 'handshake', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
-              ].map(({ icon, title, desc }) => (
+                { img: '/precise-rebuild-figure-london.webp', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
+                { img: '/check-for-underinsurance-london.webp', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
+                { img: '/rics-rebuild-cost-london.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
+              ].map(({ img, title, desc }) => (
                 <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
-                  <div className="w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'rgba(26,107,74,0.1)' }}>
-                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
-                  </div>
+                  <Image src={img} alt={title} width={64} height={64} className="w-16 h-16 object-contain" />
                   <p className="font-bold text-primary text-sm">{title}</p>
                   <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>

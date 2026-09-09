@@ -179,26 +179,54 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLinksJsonLd) }}
       />
     <main>
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Who we are */}
+      <section className="relative py-24 overflow-hidden">
         <Image
-          src="/reinstatement-cost-assessments-uk.webp"
-          alt="RICS-regulated Reinstatement Cost Assessment for UK property"
+          src="/managing-agents-office-block.jpg"
+          alt="Modern London glass skyscraper"
           fill
           priority
-          className="object-cover object-center md:object-right-bottom"
           sizes="100vw"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
-        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
-            </h1>
-            <p className="text-sm text-secondary leading-relaxed mb-8">
-              Is yours one of them? We establish your accurate{' '}
-              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
-            </p>
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h1>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
+                Contact Surveyor
+              </Link>
+              <Link href="/services" className="bg-white/10 border border-white/25 text-white px-6 py-4 rounded-full font-semibold text-sm hover:bg-white/20 active:scale-[0.97] transition-all text-center">
+                Our Services
+              </Link>
+            </div>
+            <div className="flex justify-center pt-1">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/80">
+                <span className="w-2 h-2 rounded-full bg-[#d4af37] inline-block"></span>
+                RICS Regulated &middot; London &amp; UK
+              </span>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
+              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
+              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
+            ].map(({ icon, title, desc, shine }, i) => (
+              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
+                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="font-bold text-base text-primary">{title}</p>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -250,53 +278,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Expertise */}
-      <section className="scroll-reveal relative py-24 overflow-hidden">
+      {/* Underinsured message */}
+      <section className="scroll-reveal relative flex items-center justify-center overflow-hidden">
         <Image
-          src="/managing-agents-office-block.jpg"
-          alt="Modern London glass skyscraper"
+          src="/reinstatement-cost-assessments-uk.webp"
+          alt="RICS-regulated Reinstatement Cost Assessment for UK property"
           fill
+          className="object-cover object-center md:object-right-bottom"
           sizes="100vw"
-          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="relative z-10 max-w-5xl mx-auto px-8">
-          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Contact Surveyor
-              </Link>
-              <Link href="/services" className="bg-white/10 border border-white/25 text-white px-6 py-4 rounded-full font-semibold text-sm hover:bg-white/20 active:scale-[0.97] transition-all text-center">
-                Our Services
-              </Link>
-            </div>
-            <div className="flex justify-center pt-1">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs font-semibold text-white/80">
-                <span className="w-2 h-2 rounded-full bg-[#d4af37] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
-              </span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
-            ].map(({ icon, title, desc, shine }, i) => (
-              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
-                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
-                </div>
-                <div className="space-y-2">
-                  <p className="font-bold text-base text-primary">{title}</p>
-                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
+            </h2>
+            <p className="text-sm text-secondary leading-relaxed mb-8">
+              Is yours one of them? We establish your accurate{' '}
+              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
+            </p>
           </div>
         </div>
       </section>

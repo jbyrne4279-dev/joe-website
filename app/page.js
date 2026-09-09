@@ -194,7 +194,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-5xl mx-auto px-8">
           <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of Reinstatement Cost Assessments.</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of Rebuild Cost Assessments.</h1>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments that help protect property owners from under-insurance and potential shortfalls in their insurance cover.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">

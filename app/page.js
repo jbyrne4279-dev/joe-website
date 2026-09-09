@@ -212,15 +212,13 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
-            ].map(({ icon, title, desc, shine }, i) => (
-              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              { img: '/50-years-rics-experience.png', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
+              { img: '/bcis-surveying-technology.png', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
+              { img: '/professional-indemnity-protection.png', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
+            ].map(({ img, title, desc }, i) => (
+              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
-                </div>
+                <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
                 <div className="space-y-2">
                   <p className="font-bold text-base text-primary">{title}</p>
                   <p className="text-sm text-secondary leading-relaxed">{desc}</p>

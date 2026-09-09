@@ -52,7 +52,7 @@ function riskLevel(lastRca) {
     case 'Never':
       return {
         label: 'High Risk',
-        desc: 'Without a formal assessment, your sum insured is likely a guess. Your property is very likely underinsured.',
+        desc: 'Without a RICS‑regulated assessment on record, your sum insured has never been independently verified. Your property is very likely underinsured.',
         color: '#991b1b', bg: 'rgba(153,27,27,0.08)', border: 'rgba(153,27,27,0.2)',
       }
     case 'Not sure':

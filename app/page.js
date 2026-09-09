@@ -264,6 +264,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Our Expertise */}
+      <section className="scroll-reveal relative py-24 overflow-hidden">
+        <Image
+          src="/managing-agents-office-block.jpg"
+          alt="Modern London glass skyscraper"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
+              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
+              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
+            ].map(({ icon, title, desc, shine }, i) => (
+              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
+                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
+                </div>
+                <div className="space-y-2">
+                  <p className="font-bold text-base text-primary">{title}</p>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="scroll-reveal pt-10 pb-16 px-8 bg-zinc-50" id="pricing">
         <div className="max-w-7xl mx-auto">
@@ -406,43 +443,6 @@ export default function HomePage() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Our Expertise */}
-      <section className="scroll-reveal relative py-24 overflow-hidden">
-        <Image
-          src="/managing-agents-office-block.jpg"
-          alt="Modern London glass skyscraper"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="relative z-10 max-w-5xl mx-auto px-8">
-          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
-            ].map(({ icon, title, desc, shine }, i) => (
-              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
-                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
-                </div>
-                <div className="space-y-2">
-                  <p className="font-bold text-base text-primary">{title}</p>
-                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

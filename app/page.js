@@ -297,6 +297,21 @@ export default function HomePage() {
               Is yours one of them? We establish your accurate{' '}
               <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
+              {[
+                { icon: 'straighten', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
+                { icon: 'verified_user', title: 'Reassurance', desc: 'Avoid under-insurance gaps and the average clause when you claim.' },
+                { icon: 'handshake', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
+              ].map(({ icon, title, desc }) => (
+                <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
+                  <div className="w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'rgba(26,107,74,0.1)' }}>
+                    <span className="material-symbols-outlined text-[#1A6B4A]" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                  </div>
+                  <p className="font-bold text-primary text-sm">{title}</p>
+                  <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

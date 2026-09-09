@@ -544,25 +544,6 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us.</h2>
             <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on, not guesswork.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            {[
-              { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS‑registered member. Full regulatory compliance, every time.' },
-              { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
-              { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed‑use portfolios, commercial assets, and high‑value listed buildings.' },
-              { icon: 'description', title: 'Broker‑Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="hover-grow bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
-                <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
-                </div>
-                <div>
-                  <p className="font-bold text-primary mb-1">{title}</p>
-                  <p className="text-secondary text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
           {/* Methodology */}
           <div className="bg-white rounded-2xl border border-white/20 p-8 sovereign-shadow mb-8">
             <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4">Our Assessment Methodology</p>

@@ -295,9 +295,7 @@ export default function ServicesPage() {
           <div id="desktop-rca" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
-                </div>
+                <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
                 <h3 className="text-2xl font-bold text-primary mb-3">Desktop Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A fast, accurate rebuild cost assessment produced entirely remotely. No site visit required, ideal for standard residential and commercial properties.</p>
               </div>
@@ -334,9 +332,7 @@ export default function ServicesPage() {
           <div id="on-site-survey" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
-                <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
-                </div>
+                <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
                 <h3 className="text-2xl font-bold text-primary mb-3">On‑Site RICS Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A full physical rebuild cost assessment carried out by a RICS‑regulated surveyor. The most accurate reinstatement cost assessment available, essential for listed, complex, or high‑value buildings.</p>
               </div>
@@ -374,9 +370,7 @@ export default function ServicesPage() {
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-                  </div>
+                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={56} height={56} className="w-14 h-14 object-contain" />
                   <span className="px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>Best Value</span>
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-3">3‑Year RICS Reinstatement Cost Assessment</h3>

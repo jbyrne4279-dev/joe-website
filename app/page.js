@@ -303,7 +303,7 @@ export default function HomePage() {
                 { img: '/rics-rebuild-cost-london-v2.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
               ].map(({ img, title, desc }) => (
                 <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
-                  <Image src={img} alt={title} width={64} height={64} className="w-16 h-16 object-contain" />
+                  <Image src={img} alt={title} width={128} height={128} className="w-32 h-32 object-contain" />
                   <p className="font-bold text-primary text-sm">{title}</p>
                   <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>

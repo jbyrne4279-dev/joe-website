@@ -298,9 +298,9 @@ export default function HomePage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
               {[
-                { img: '/precise-rebuild-figure-london.webp', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
-                { img: '/check-for-underinsurance-london.webp', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
-                { img: '/rics-rebuild-cost-london.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
+                { img: '/precise-rebuild-figure-london-v2.webp', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
+                { img: '/check-for-underinsurance-london-v2.webp', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
+                { img: '/rics-rebuild-cost-london-v2.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
               ].map(({ img, title, desc }) => (
                 <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
                   <Image src={img} alt={title} width={64} height={64} className="w-16 h-16 object-contain" />

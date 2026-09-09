@@ -227,13 +227,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { img: '/desktop-reinstatement-cost-assessment-london.png', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk' },
-              { img: '/ongoing-reinstatement-cost-protection-london.png', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london' },
-              { img: '/onsite-reinstatement-cost-assessment-london.png', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london' },
-            ].map(({ img, name, tag, desc, accent, tintRgb, href }, i) => (
-              <Link
+              { img: '/desktop-reinstatement-cost-assessment-london.png', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
+              { img: '/ongoing-reinstatement-cost-protection-london.png', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
+              { img: '/onsite-reinstatement-cost-assessment-london.png', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
+            ].map(({ img, name, tag, desc, accent, tintRgb, href, service }, i) => (
+              <div
                 key={name}
-                href={href}
                 className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
@@ -245,10 +244,21 @@ export default function HomePage() {
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
-                <span className="mt-auto inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
-                  Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
-                </span>
-              </Link>
+                <div className="mt-auto flex flex-col items-center gap-3 pt-2">
+                  <Link
+                    href={`/contact?service=${service}#contact-form`}
+                    aria-label={`Contact us about ${name}`}
+                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full active:scale-[0.97] transition-transform shadow-sm hover:shadow-md"
+                    style={{ background: accent }}
+                  >
+                    <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
+                    Contact
+                  </Link>
+                  <Link href={href} className="inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
+                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                  </Link>
+                </div>
+              </div>
             ))}
           </div>
         </div>

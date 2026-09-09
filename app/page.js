@@ -62,6 +62,7 @@ const organizationJsonLd = {
   email: 'michael@reinstatementcostassessment.com',
   sameAs: [
     'https://find-and-update.company-information.service.gov.uk/company/17101918',
+    'https://www.linkedin.com/company/reinstatement-cost-assessment-limited/',
   ],
   address: {
     '@type': 'PostalAddress',

@@ -547,14 +547,12 @@ export default function HomePage() {
           <div className="bg-white rounded-2xl border border-white/20 p-8 sovereign-shadow mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { label: 'Not legally defensible', desc: 'Online calculators aren’t RICS‑regulated and carry no professional liability, so the figure won’t stand up if an insurer challenges it at claim.' },
-                { label: 'Generic averages', desc: 'They apply broad regional averages and can’t account for listed status, non‑standard construction, specialist materials or complex layouts.' },
-                { label: 'No certified sign‑off', desc: 'A calculator output isn’t a certified assessment. Only a RICS‑regulated report gives you an insurer‑ and broker‑ready rebuild figure.' },
-              ].map(({ label, desc }) => (
+                { img: '/calculator-not-legally-defensible.webp', label: 'Not legally defensible', desc: 'Online calculators aren’t RICS‑regulated and carry no professional liability, so the figure won’t stand up if an insurer challenges it at claim.' },
+                { img: '/calculator-generic-averages.webp', label: 'Generic averages', desc: 'They apply broad regional averages and can’t account for listed status, non‑standard construction, specialist materials or complex layouts.' },
+                { img: '/calculator-no-certified-signoff.webp', label: 'No certified sign‑off', desc: 'A calculator output isn’t a certified assessment. Only a RICS‑regulated report gives you an insurer‑ and broker‑ready rebuild figure.' },
+              ].map(({ img, label, desc }) => (
                 <div key={label} className="flex flex-col items-center text-center gap-3">
-                  <div className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'rgba(153,27,27,0.1)' }}>
-                    <span className="material-symbols-outlined text-[#991b1b]" style={{ fontSize: '1.3rem' }}>close</span>
-                  </div>
+                  <Image src={img} alt={label} width={80} height={80} className="w-20 h-20 object-contain" />
                   <p className="font-bold text-primary text-sm">{label}</p>
                   <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>

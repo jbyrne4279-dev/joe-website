@@ -244,9 +244,11 @@ export default function HomePage() {
               { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
               { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
             ].map(({ img, name, tag, desc, accent, tintRgb, href, service }, i) => (
-              <div
+              <Link
                 key={name}
-                className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300"
+                href={`/contact?service=${service}#contact-form`}
+                aria-label={`Contact us about ${name}`}
+                className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
                 <div className="flex flex-col items-center gap-3">
@@ -258,20 +260,18 @@ export default function HomePage() {
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
                 <div className="mt-auto flex flex-col items-center gap-3 pt-2">
-                  <Link
-                    href={`/contact?service=${service}#contact-form`}
-                    aria-label={`Contact us about ${name}`}
-                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full active:scale-[0.97] transition-transform shadow-sm hover:shadow-md"
+                  <span
+                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-sm transition-all duration-200 group-hover:scale-110 group-hover:shadow-lg"
                     style={{ background: accent }}
                   >
                     <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
                     Contact
-                  </Link>
-                  <Link href={href} className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
                     Learn more <span className="material-symbols-outlined" style={{ fontSize: '0.8rem' }}>arrow_forward</span>
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

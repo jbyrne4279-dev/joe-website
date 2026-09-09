@@ -298,7 +298,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
               {[
                 { icon: 'straighten', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
-                { icon: 'verified_user', title: 'Reassurance', desc: 'Avoid under-insurance gaps and the average clause when you claim.' },
+                { icon: 'verified_user', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
                 { icon: 'handshake', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
               ].map(({ icon, title, desc }) => (
                 <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">

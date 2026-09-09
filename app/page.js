@@ -545,7 +545,6 @@ export default function HomePage() {
           </div>
           {/* Why calculators fall short */}
           <div className="bg-white rounded-2xl border border-white/20 p-8 sovereign-shadow mb-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#991b1b] mb-6">The limits of a free estimate</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { label: 'Not legally defensible', desc: 'Online calculators aren’t RICS‑regulated and carry no professional liability, so the figure won’t stand up if an insurer challenges it at claim.' },

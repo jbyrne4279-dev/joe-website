@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import LocationCarousel from '../components/LocationCarousel'
@@ -88,7 +89,16 @@ export default function AboutPage() {
 
       {/* Who we are */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
+          <div className="w-full md:w-[38%] shrink-0 flex justify-center md:justify-start">
+            <Image
+              src="/rca-logo-reinstatement-cost-assessment.webp"
+              alt="Reinstatement Cost Assessment Ltd shield logo"
+              width={400}
+              height={400}
+              className="w-full max-w-[320px] h-auto object-contain"
+            />
+          </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Who we are</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A focused practice, not a general one.</h2>

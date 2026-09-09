@@ -27,12 +27,12 @@ const paths = {
       <path d="M8.5 12h0M12 12h0M15.5 12h0M8.5 16h0M12 16h0M15.5 16h0" />
     </>
   ),
-  // Desktop, you receive the report: envelope with a check
+  // Desktop, you receive the report: a document with a check
   report: (
     <>
-      <path d="M4 6h16a1 1 0 0 1 1 1v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a1 1 0 0 1 1-1z" />
-      <path d="m4 7 8 6 8-6" />
-      <path d="m9.5 14.5 1.8 1.8 3.2-3.4" />
+      <path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+      <path d="M14 3v4h4" />
+      <path d="m8.5 14 2 2 4-4" />
     </>
   ),
 

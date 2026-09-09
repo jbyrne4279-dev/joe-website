@@ -226,9 +226,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { img: '/desktop-reinstatement-cost-assessment-london.webp', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk' },
-              { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london' },
-              { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london' },
+              { img: '/desktop-reinstatement-cost-assessment-london.png', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk' },
+              { img: '/ongoing-reinstatement-cost-protection-london.png', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london' },
+              { img: '/onsite-reinstatement-cost-assessment-london.png', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london' },
             ].map(({ img, name, tag, desc, accent, tintRgb, href }, i) => (
               <Link
                 key={name}

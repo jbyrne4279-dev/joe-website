@@ -228,8 +228,8 @@ export default function ServicesPage() {
 
               {/* 3-Year Protection */}
               <div id="three-year-protection" className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#a16207] shadow-[0_0_32px_6px_rgba(161,98,7,0.20)]">
-                <div className="absolute top-6 right-6">
-                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white shadow-md">Best Value</span>
                 </div>
                 <div className="mb-8">
                   <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />

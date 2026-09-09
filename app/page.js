@@ -332,7 +332,7 @@ export default function HomePage() {
                   <p className="text-secondary text-sm mb-4">Efficient, data‑driven remote valuation for standard properties.</p>
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1e40af', background: 'rgba(37,99,235,0.1)' }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>home</span>
-                    Recommended for London homeowners
+                    Recommended for UK homeowners
                   </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
@@ -366,7 +366,7 @@ export default function HomePage() {
                   <p className="text-secondary text-sm mb-4">Full physical survey for listed, complex or high‑value buildings.</p>
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1A6B4A', background: 'rgba(26,107,74,0.1)' }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>apartment</span>
-                    Recommended for UK property managers
+                    Recommended for London property managers
                   </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
@@ -403,7 +403,7 @@ export default function HomePage() {
                   <p className="text-secondary text-sm mb-4">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
-                    Recommended for UK portfolio managers
+                    Recommended for London portfolio managers
                   </span>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">

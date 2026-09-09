@@ -124,7 +124,7 @@ export default function BuildingReinstatementCostPage() {
         <img
           fetchPriority="high"
           decoding="async"
-          src="/rebuild-cost-assessment-london.jpeg"
+          src="/rebuild-cost-assessment-london.webp"
           alt="UK building being assessed for its reinstatement cost"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -220,7 +220,7 @@ export default function BuildingReinstatementCostPage() {
       {/* Why it matters */}
       <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
-          <Image width={768} height={768} sizes="(max-width: 640px) 100vw, 768px" src="/desktop-why-it-matters.jpg" alt="Building under construction being rebuilt" className="shrink-0 w-full h-60 sm:w-[48rem] sm:h-[48rem] rounded-2xl object-cover border border-white/10 mt-1" />
+          <Image width={768} height={768} sizes="(max-width: 640px) 100vw, 768px" src="/desktop-why-it-matters.webp" alt="Building under construction being rebuilt" className="shrink-0 w-full h-60 sm:w-[48rem] sm:h-[48rem] rounded-2xl object-cover border border-white/10 mt-1" />
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-8">Get the number wrong and your claim shrinks.</h2>

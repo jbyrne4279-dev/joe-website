@@ -175,7 +175,7 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/managing-agents-office-block.jpg"
+              src="/managing-agents-office-block.webp"
               alt="Modern commercial building in a managed property portfolio"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"

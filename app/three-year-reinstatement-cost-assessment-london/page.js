@@ -122,7 +122,7 @@ export default function ThreeYearAssessmentLondonPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img fetchPriority="high" decoding="async"
-          src="/three-year-reinstatement-cost-assessment.jpg"
+          src="/three-year-reinstatement-cost-assessment.webp"
           alt="Architectural model, plans and calculator for a 3-year reinstatement cost assessment plan in London"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -226,7 +226,7 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#8a6800' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/three-year-why-it-matters.jpg" alt="Surveyor maintaining a reinstatement cost figure" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/three-year-why-it-matters.webp" alt="Surveyor maintaining a reinstatement cost figure" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">Why it matters</p>
@@ -274,7 +274,7 @@ export default function ThreeYearAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#8a6800' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/block-managers-london-flats.jpg" alt="Period London mansion block of flats" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/block-managers-london-flats.webp" alt="Period London mansion block of flats" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200 mb-4">London coverage</p>

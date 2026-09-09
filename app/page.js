@@ -182,7 +182,7 @@ export default function HomePage() {
       {/* Who we are */}
       <section className="relative py-24 overflow-hidden">
         <Image
-          src="/managing-agents-office-block.jpg"
+          src="/managing-agents-office-block.webp"
           alt="Modern London glass skyscraper"
           fill
           priority
@@ -212,9 +212,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { img: '/50-years-rics-experience.png', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
-              { img: '/bcis-surveying-technology.png', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
-              { img: '/professional-indemnity-protection.png', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
+              { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
+              { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
+              { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
             ].map(({ img, title, desc }, i) => (
               <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
@@ -239,9 +239,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { img: '/desktop-reinstatement-cost-assessment-london.png', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
-              { img: '/ongoing-reinstatement-cost-protection-london.png', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
-              { img: '/onsite-reinstatement-cost-assessment-london.png', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
+              { img: '/desktop-reinstatement-cost-assessment-london.webp', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
+              { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
+              { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
             ].map(({ img, name, tag, desc, accent, tintRgb, href, service }, i) => (
               <div
                 key={name}
@@ -504,7 +504,7 @@ export default function HomePage() {
             <div className="flex flex-col">
             <div className="relative flex-1 min-h-[420px] rounded-2xl overflow-hidden sovereign-shadow">
               <Image
-                src="/rebuild-cost-assessment-london.jpeg"
+                src="/rebuild-cost-assessment-london.webp"
                 alt="RICS-regulated reinstatement cost assessment of a London commercial property"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

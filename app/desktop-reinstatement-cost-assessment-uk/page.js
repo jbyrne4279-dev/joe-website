@@ -122,7 +122,7 @@ export default function DesktopAssessmentUKPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img fetchPriority="high" decoding="async"
-          src="/desktop-reinstatement-cost-assessment.jpg"
+          src="/desktop-reinstatement-cost-assessment.webp"
           alt="Surveyor producing a desktop reinstatement cost assessment from property records and a 3D building model"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -229,7 +229,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/desktop-why-it-matters.webp" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">Why it matters</p>
@@ -294,7 +294,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/managing-agents-office-block.jpg" alt="Modern London city skyline" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/managing-agents-office-block.webp" alt="Modern London city skyline" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">UK‑wide coverage</p>

@@ -290,7 +290,7 @@ export default function ServicesPage() {
       {/* Service Detail Cards */}
       <section className="scroll-reveal relative py-16 px-4 md:px-8 overflow-hidden">
         <Image
-          src="/managing-agents-office-block.jpg"
+          src="/managing-agents-office-block.webp"
           alt="London skyscraper skyline"
           fill
           sizes="100vw"

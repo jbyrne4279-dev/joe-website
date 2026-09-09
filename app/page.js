@@ -552,7 +552,7 @@ export default function HomePage() {
                 { img: '/rebuild-cost-assessment-insurance.webp', label: 'No certified sign‑off', desc: 'A calculator output isn’t a certified assessment. Only a RICS‑regulated report gives you an insurer‑ and broker‑ready rebuild figure.' },
               ].map(({ img, label, desc }) => (
                 <div key={label} className="flex flex-col items-center text-center gap-3">
-                  <Image src={img} alt={label} width={80} height={80} className="w-20 h-20 object-contain" />
+                  <Image src={img} alt={label} width={240} height={240} className="w-60 h-60 object-contain" />
                   <p className="font-bold text-primary text-sm">{label}</p>
                   <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>

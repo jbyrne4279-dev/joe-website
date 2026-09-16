@@ -180,7 +180,7 @@ export default function HomePage() {
       />
     <main>
       {/* Who we are */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative pt-16 pb-8 sm:py-24 overflow-hidden">
         <Image
           src="/managing-agents-office-block.webp"
           alt="Modern London glass skyscraper"
@@ -191,7 +191,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
         <div className="relative z-10 max-w-5xl mx-auto px-8">
-          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-8 sm:mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of Rebuild Cost Assessments in the UK.</h1>
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments.</p>
@@ -202,20 +202,20 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2 sm:gap-6">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6">
             {[
               { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
               { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
               { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
             ].map(({ img, title, desc }, i) => (
-              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-1.5 sm:gap-5 p-2 sm:p-8 rounded-xl sm:rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              <div key={title} className="service-pulse-card select-none [-webkit-tap-highlight-color:transparent] cursor-default flex flex-col items-center text-center gap-2 sm:gap-5 p-3 sm:p-8 rounded-md sm:rounded-2xl bg-white shadow-sm sm:shadow-md sm:hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 {title === '50+ Years Experience' ? (
-                  <div className="logo-shine w-10 h-10 sm:w-24 sm:h-24 rounded-lg sm:rounded-xl">
-                    <Image src={img} alt={title} width={96} height={96} className="w-10 h-10 sm:w-24 sm:h-24 object-contain" />
+                  <div className="logo-shine w-10 h-10 sm:w-24 sm:h-24 rounded-md sm:rounded-xl pointer-events-none">
+                    <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
                   </div>
                 ) : (
-                  <Image src={img} alt={title} width={96} height={96} className="w-10 h-10 sm:w-24 sm:h-24 object-contain" />
+                  <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
                 )}
                 <div className="space-y-0 sm:space-y-2">
                   <p className="font-bold text-[0.65rem] leading-tight sm:text-base sm:leading-normal text-primary">{title}</p>

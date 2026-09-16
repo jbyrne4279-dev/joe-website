@@ -180,7 +180,7 @@ export default function HomePage() {
       />
     <main>
       {/* Who we are */}
-      <section className="relative py-8 sm:py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden">
         <Image
           src="/managing-agents-office-block.webp"
           alt="Modern London glass skyscraper"
@@ -190,36 +190,36 @@ export default function HomePage() {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="gold-outline-shine liquid-glass-dark text-center mb-6 sm:mb-16 space-y-2 sm:space-y-4 max-w-2xl mx-auto rounded-2xl sm:rounded-3xl p-4 md:p-14 sovereign-shadow">
-            <span className="text-[0.6rem] sm:text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-1.5 sm:gap-2"><span className="material-symbols-outlined" style={{fontSize:'0.9rem'}}>workspace_premium</span>Who we are</span>
-            <h1 className="text-lg sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-snug sm:leading-tight"><span className="text-[#d4af37]">50+ years</span> of Rebuild Cost Assessments in the UK.</h1>
-            <p className="text-white/75 text-xs sm:text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments that help protect property owners from under-insurance and potential shortfalls in their insurance cover.</p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-1 sm:pt-3">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-5 py-2.5 sm:px-8 sm:py-4 rounded-full font-bold text-xs sm:text-base active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of Rebuild Cost Assessments in the UK.</h1>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments that help protect property owners from under-insurance and potential shortfalls in their insurance cover.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
                 Get Report
-                <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>ads_click</span>
+                <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
               { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
               { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
             ].map(({ img, title, desc }, i) => (
-              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-2 sm:gap-5 p-3 sm:p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 {title === '50+ Years Experience' ? (
-                  <div className="logo-shine w-12 h-12 sm:w-24 sm:h-24 rounded-xl">
-                    <Image src={img} alt={title} width={96} height={96} className="w-12 h-12 sm:w-24 sm:h-24 object-contain" />
+                  <div className="logo-shine w-24 h-24 rounded-xl">
+                    <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
                   </div>
                 ) : (
-                  <Image src={img} alt={title} width={96} height={96} className="w-12 h-12 sm:w-24 sm:h-24 object-contain" />
+                  <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
                 )}
-                <div className="space-y-0.5 sm:space-y-2">
-                  <p className="font-bold text-xs sm:text-base text-primary">{title}</p>
-                  <p className="text-[0.7rem] sm:text-sm text-secondary leading-relaxed">{desc}</p>
+                <div className="space-y-2">
+                  <p className="font-bold text-base text-primary">{title}</p>
+                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}

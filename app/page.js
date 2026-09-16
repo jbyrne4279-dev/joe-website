@@ -4,7 +4,6 @@ import ContactSection from './components/ContactSection'
 import LocationCarousel from './components/LocationCarousel'
 import FaqSection from './components/FaqSection'
 import GrowObserver from './components/GrowObserver'
-import UnderinsuredQuizButton from './components/UnderinsuredQuizButton'
 
 export const metadata = {
   title: {
@@ -201,7 +200,6 @@ export default function HomePage() {
                 Get Report
                 <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
-              <UnderinsuredQuizButton className="bg-[#f5b301] text-[#0f3d28] ring-2 ring-white/70 px-6 py-4 rounded-full font-bold text-sm hover:-translate-y-0.5 active:scale-[0.97] transition-transform text-center inline-flex items-center justify-center gap-2 cursor-pointer" />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

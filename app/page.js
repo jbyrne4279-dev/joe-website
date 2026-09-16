@@ -202,24 +202,24 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-2 sm:gap-6">
             {[
               { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
               { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
               { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
             ].map(({ img, title, desc }, i) => (
-              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
+              <div key={title} className="service-pulse-card flex flex-col items-center text-center gap-1.5 sm:gap-5 p-2 sm:p-8 rounded-xl sm:rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
                 {title === '50+ Years Experience' ? (
-                  <div className="logo-shine w-24 h-24 rounded-xl">
-                    <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
+                  <div className="logo-shine w-10 h-10 sm:w-24 sm:h-24 rounded-lg sm:rounded-xl">
+                    <Image src={img} alt={title} width={96} height={96} className="w-10 h-10 sm:w-24 sm:h-24 object-contain" />
                   </div>
                 ) : (
-                  <Image src={img} alt={title} width={96} height={96} className="w-24 h-24 object-contain" />
+                  <Image src={img} alt={title} width={96} height={96} className="w-10 h-10 sm:w-24 sm:h-24 object-contain" />
                 )}
-                <div className="space-y-2">
-                  <p className="font-bold text-base text-primary">{title}</p>
-                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
+                <div className="space-y-0 sm:space-y-2">
+                  <p className="font-bold text-[0.65rem] leading-tight sm:text-base sm:leading-normal text-primary">{title}</p>
+                  <p className="hidden sm:block text-sm text-secondary leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}

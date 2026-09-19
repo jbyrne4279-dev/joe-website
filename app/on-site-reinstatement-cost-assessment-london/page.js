@@ -140,7 +140,7 @@ export default function OnSiteAssessmentLondonPage() {
               <span style={{ color: '#1A6B4A' }}>On‑site</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              The most accurate rebuild cost available, a full physical survey by a RICS‑regulated surveyor. Essential for London&rsquo;s listed, period, complex and high‑value buildings, delivered with full site evidence.
+              Our RICS‑regulated surveyors carry out site visits across every London borough, from Mayfair and Belgravia to Greenwich and Richmond, and travel further afield to Birmingham, Manchester, Bristol and beyond, so your rebuild figure is measured in person rather than estimated from a desk.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

@@ -123,7 +123,7 @@ export default function ServicesPage() {
               <span className="text-shine-red">Insurers profit</span> from your <span className="text-shine-red">underinsurance.</span>
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
-              Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS reinstatement cost assessment gives you the one figure that keeps your insurer honest.
+              Choose the RICS‑regulated reinstatement cost assessment that matches your property: a fast remote valuation for a standard UK home or office, a full on‑site survey for listed and complex London buildings, or a 3‑year plan for landlords managing several addresses.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">

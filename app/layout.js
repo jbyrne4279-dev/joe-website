@@ -4,7 +4,6 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollReveal from './components/ScrollReveal'
-import NotSureQuiz from './components/NotSureQuiz'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -97,7 +96,6 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
-        <NotSureQuiz />
         <ScrollReveal />
       </body>
     </html>

@@ -119,6 +119,15 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Legal links */}
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 pt-5 text-xs text-emerald-200/50">
+          <Link className="hover:text-emerald-400 transition-colors" href="/privacy-policy">Privacy Policy</Link>
+          <Link className="hover:text-emerald-400 transition-colors" href="/cookie-policy">Cookie Policy</Link>
+          <Link className="hover:text-emerald-400 transition-colors" href="/terms-and-conditions">Terms &amp; Conditions</Link>
+          <Link className="hover:text-emerald-400 transition-colors" href="/complaints">Complaints</Link>
+          <Link className="hover:text-emerald-400 transition-colors" href="/accessibility">Accessibility</Link>
+        </div>
+
       </div>
     </footer>
   )

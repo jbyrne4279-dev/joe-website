@@ -103,6 +103,10 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
         </div>
 
         <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
+        <p className="text-[10px] text-secondary/50 -mt-6">
+          By submitting this form, you agree that Reinstatement Cost Assessment Ltd may use the information provided to respond to your enquiry and provide the requested service. See our{' '}
+          <a href="/privacy-policy" className="underline hover:text-secondary">Privacy Policy</a>.
+        </p>
 
         <div>
           <button

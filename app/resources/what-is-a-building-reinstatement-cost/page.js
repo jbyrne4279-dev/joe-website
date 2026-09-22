@@ -183,7 +183,7 @@ export default function WhatIsBuildingReinstatementCostPage() {
           <div className="gold-outline-shine shrink-0 w-full sm:w-96 rounded-2xl mt-1">
             <Image width={640} height={640} sizes="(max-width: 640px) 100vw, 384px" src="/desktop-why-it-matters.webp" alt="Building under construction being rebuilt" className="w-full h-60 sm:h-96 rounded-2xl object-cover" />
           </div>
-          <div>
+          <div className="flex-1 min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Why it matters</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">Get it wrong and your claim shrinks.</h2>
           <div className="space-y-6 text-secondary leading-[1.75] text-[1.05rem]">

@@ -70,7 +70,7 @@ const faqItems = [
   },
   {
     question: 'Where are you based?',
-    answer: 'Our office is at 17 Hanover Square, London W1S 1BN, in the heart of the West End. We are part of the RiskSTOP Group.',
+    answer: 'Our office is at 17 Hanover Square, London W1S 1BN, in the heart of the West End.',
   },
 ]
 
@@ -178,8 +178,8 @@ export default function LondonReinstatementPage() {
                 the land and location.
               </p>
               <p>
-                We are a London firm, based at 17 Hanover Square in the West End and part of the RiskSTOP
-                Group. Our RICS‑regulated surveyors work across the capital every day, so they understand how
+                We are a London firm, based at 17 Hanover Square in the West End. Our RICS‑regulated surveyors
+                work across the capital every day, so they understand how
                 local build costs, access, and the city&rsquo;s mix of period and modern buildings feed into
                 an accurate rebuild figure, one your broker and insurer will accept.
               </p>

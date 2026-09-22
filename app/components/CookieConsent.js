@@ -16,12 +16,18 @@ const STORAGE_KEY = 'rca-cookie-consent'
 
 function applyConsent(granted) {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') return
-  window.gtag('consent', 'update', {
-    ad_storage: granted ? 'granted' : 'denied',
-    ad_user_data: granted ? 'granted' : 'denied',
-    ad_personalization: granted ? 'granted' : 'denied',
-    analytics_storage: granted ? 'granted' : 'denied',
-  })
+  try {
+    window.gtag('consent', 'update', {
+      ad_storage: granted ? 'granted' : 'denied',
+      ad_user_data: granted ? 'granted' : 'denied',
+      ad_personalization: granted ? 'granted' : 'denied',
+      analytics_storage: granted ? 'granted' : 'denied',
+    })
+  } catch {
+    // Some browser extensions (ad/tracker blockers) replace window.gtag with
+    // a stub that throws instead of a silent no-op. That must never stop the
+    // banner from dismissing, so we swallow it here.
+  }
 }
 
 function readStoredConsent() {

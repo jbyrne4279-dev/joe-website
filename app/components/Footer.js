@@ -115,7 +115,7 @@ export default function Footer() {
           <p>© 2025 ReinstatementCostAssessment.org. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
-            RICS Regulated · Part of RiskSTOP Group
+            RICS Regulated Firm
           </p>
         </div>
 

@@ -234,15 +234,17 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
             <p className="text-white/70 leading-relaxed">
-              Global supply chain volatility and labour shortages have pushed rebuild costs up by over 25% since 2019. If your valuation hasn&rsquo;t been updated since 2021, you are almost certainly underinsured today.
+              Global supply chain volatility and labour shortages have pushed rebuild costs up significantly since 2019 — the{' '}
+              <a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-2 hover:text-white/80">BCIS Materials Cost Index</a>{' '}
+              shows material prices up more than 20% since 2020 alone. If your valuation hasn&rsquo;t been updated recently, you may well be underinsured today.
             </p>
           </div>
 
           <div className="w-full max-w-2xl bg-white p-10 rounded-2xl">
             <div className="flex items-start justify-between mb-8">
               <div className="text-left">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">BCIS Construction Index</span>
-                <p className="text-secondary text-xs">Rebased cost index, 2019–2024</p>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">Construction Cost Trend</span>
+                <p className="text-secondary text-xs">Illustrative trend, 2019–2024</p>
               </div>
             </div>
             <div className="relative h-48 w-full flex items-end gap-3 mb-3">

@@ -58,7 +58,7 @@ const servicesOfferJsonLd = {
         name: 'Desktop Assessment',
         price: '210',
         priceCurrency: 'GBP',
-        description: 'RICS-regulated desktop Rebuild Cost Assessment delivered within 48 hours.',
+        description: 'RICS-regulated desktop Rebuild Cost Assessment typically delivered within 48 hours.',
       },
       {
         '@type': 'Offer',

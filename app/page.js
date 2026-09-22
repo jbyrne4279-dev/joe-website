@@ -10,12 +10,12 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost Experts',
   },
   description:
-    'Get a RICS reinstatement cost assessment or rebuild cost assessment for any UK property. RICS-regulated, BCIS-indexed, broker-ready reports delivered in 48 hours from £210.',
+    'Get a RICS reinstatement cost assessment or rebuild cost assessment for any UK property. RICS-regulated, BCIS-indexed, broker-ready reports typically delivered within 48 hours from £210.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost from £210',
     description:
-      '80% of UK buildings carry the wrong rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings - delivered in 48 hours across the UK.',
+      'Many UK buildings carry an inaccurate rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings - typically delivered within 48 hours across the UK.',
     url: '/',
   },
 }
@@ -57,7 +57,7 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/rca48.png`,
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   description:
-    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
+    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, typically delivered within 48 hours.',
   telephone: '+44-20-3178-8099',
   email: 'joseph@reinstatementcostassessment.org',
   sameAs: [
@@ -287,17 +287,17 @@ export default function HomePage() {
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
           <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
+              Most UK buildings are <span className="text-shine-red">underinsured.</span>
             </h2>
             <p className="text-sm text-secondary leading-relaxed mb-8">
               Is yours one of them? We establish your accurate{' '}
-              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
+              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and typically delivered within 48 hours.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
               {[
                 { img: '/precise-rebuild-figure-london-v2.webp', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
                 { img: '/check-for-underinsurance-london-v2.webp', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
-                { img: '/rics-rebuild-cost-london-v2.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by every UK insurer without challenge.' },
+                { img: '/rics-rebuild-cost-london-v2.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by UK insurers and brokers.' },
               ].map(({ img, title, desc }) => (
                 <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
                   <Image src={img} alt={title} width={128} height={128} className="w-32 h-32 object-contain" />
@@ -591,15 +591,15 @@ export default function HomePage() {
                 The hidden cost of getting it wrong.
               </h2>
               <p className="text-lg text-white/70 leading-relaxed">
-                Over <span className="font-semibold text-white">80% of UK properties</span> carry an inaccurate reinstatement figure. Most owners won&rsquo;t find out until they make a claim - by which point, the financial damage is already done.
+                Many UK properties carry an inaccurate reinstatement figure. Most owners won&rsquo;t find out until they make a claim - by which point, the financial damage is already done.
               </p>
               <div className="grid grid-cols-2 gap-3 pt-4">
                 <div className="bg-white rounded-2xl p-4 space-y-1 min-w-0 shadow-md">
-                  <span className="text-2xl font-bold text-primary block truncate">£425bn</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Estimated UK Gap</p>
+                  <span className="text-2xl font-bold text-primary block truncate">3 yrs</span>
+                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">RICS Review Cycle</p>
                 </div>
                 <div className="bg-white rounded-2xl p-4 space-y-1 min-w-0 shadow-md">
-                  <span className="text-2xl font-bold text-primary block">80%+</span>
+                  <span className="text-2xl font-bold text-primary block">UK‑wide</span>
                   <p className="text-xs font-bold text-secondary uppercase tracking-widest">Properties at Risk</p>
                 </div>
               </div>
@@ -612,7 +612,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">The Condition of Average.</h4>
-                  <p className="text-sm text-secondary leading-relaxed">If you are <span className="font-semibold text-primary">20% underinsured</span>, your insurer can reduce your payout by 20% - even on a partial claim. The clause is standard across UK policies and routinely enforced.</p>
+                  <p className="text-sm text-secondary leading-relaxed">If you are <span className="font-semibold text-primary">20% underinsured</span>, your insurer can reduce your payout by 20% - even on a partial claim. This clause is common across UK buildings policies.</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row items-start gap-4 md:gap-5 text-left">
@@ -621,7 +621,8 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Construction costs are rising fast.</h4>
-                  <p className="text-sm text-secondary leading-relaxed">BCIS data shows UK build costs have risen <span className="font-semibold text-primary">over 30% since 2020</span>. A valuation from three years ago is almost certainly out of date - and your insurer knows it.</p>
+                  <p className="text-sm text-secondary leading-relaxed">The BCIS Materials Cost Index shows construction material prices up more than{' '}
+                    <a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-2 hover:text-[#0f3d28]">20% since 2020</a>. A valuation from three years ago can quickly fall out of date.</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row items-start gap-4 md:gap-5 text-left">

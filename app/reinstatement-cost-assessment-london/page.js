@@ -8,12 +8,12 @@ import FaqSection from '../components/FaqSection'
 export const metadata = {
   title: 'Reinstatement Cost Assessment London | RICS Surveyors',
   description:
-    'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+    'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs typically delivered within 48 hours across London.',
   alternates: { canonical: '/reinstatement-cost-assessment-london' },
   openGraph: {
     title: 'Reinstatement Cost Assessment London | RICS Surveyors',
     description:
-      'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+      'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs typically delivered within 48 hours across London.',
     url: '/reinstatement-cost-assessment-london',
   },
 }
@@ -54,7 +54,7 @@ const faqItems = [
   },
   {
     question: 'How quickly can you assess a London property?',
-    answer: 'Standard assessments are delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on‑site visits quickly for period, listed, or complex buildings that need a physical inspection.',
+    answer: 'Standard assessments are typically delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on‑site visits quickly for period, listed, or complex buildings that need a physical inspection.',
   },
   {
     question: 'Do you cover listed and period buildings in London?',
@@ -149,7 +149,7 @@ export default function LondonReinstatementPage() {
               Reinstatement cost assessments in <span className="text-[#1A6B4A]">London</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              London‑based, RICS‑regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS‑indexed, insurer-accepted figures delivered within 48 hours.
+              London‑based, RICS‑regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS‑indexed, insurer-accepted figures typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

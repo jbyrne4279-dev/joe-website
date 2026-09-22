@@ -131,7 +131,7 @@ export default function ManagingAgentsPage() {
               Insurance valuations for <span className="text-[#1A6B4A]">managing agents</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Stay compliant and protect the properties you manage. A RICS building reinstatement valuation your insurers will accept, BCIS‑indexed, fully documented, and delivered within 48 hours.
+              Stay compliant and protect the properties you manage. A RICS building reinstatement valuation your insurers will accept, BCIS‑indexed, fully documented, and typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

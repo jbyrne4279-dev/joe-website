@@ -9,12 +9,12 @@ import LocationCarousel from '../components/LocationCarousel'
 export const metadata = {
   title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
   description:
-    'RICS desktop reinstatement cost assessment across the whole UK. No site visit, BCIS-indexed and broker-ready, delivered in 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
+    'RICS desktop reinstatement cost assessment across the whole UK. No site visit, BCIS-indexed and broker-ready, typically delivered within 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
   alternates: { canonical: '/desktop-reinstatement-cost-assessment-uk' },
   openGraph: {
     title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
     description:
-      'RICS-regulated desktop reinstatement cost assessment across the whole UK. No site visit required, BCIS-indexed, broker-ready, delivered in 48 hours.',
+      'RICS-regulated desktop reinstatement cost assessment across the whole UK. No site visit required, BCIS-indexed, broker-ready, typically delivered within 48 hours.',
     url: '/desktop-reinstatement-cost-assessment-uk',
   },
 }
@@ -60,7 +60,7 @@ const serviceJsonLd = {
   '@type': 'Service',
   serviceType: 'Desktop Reinstatement Cost Assessment',
   name: 'Desktop Reinstatement Cost Assessment UK',
-  description: 'RICS-regulated desktop reinstatement cost assessment for properties across the whole UK, produced remotely using property records and live BCIS data. Broker-ready and delivered in 48 hours.',
+  description: 'RICS-regulated desktop reinstatement cost assessment for properties across the whole UK, produced remotely using property records and live BCIS data. Broker-ready and typically delivered within 48 hours.',
   url: PAGE_URL,
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   provider: {

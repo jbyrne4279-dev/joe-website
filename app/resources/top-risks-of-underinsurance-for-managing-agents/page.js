@@ -78,7 +78,7 @@ export default function ArticlePage() {
               Top risks of underinsurance for managing agents.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Research consistently shows that the majority of UK commercial and residential blocks carry insufficient reinstatement values. For managing agents, this is not just a problem for property owners, it creates direct professional and financial risk.
+              In our experience, a significant number of UK commercial and residential blocks carry insufficient reinstatement values. For managing agents, this is not just a problem for property owners, it creates direct professional and financial risk.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

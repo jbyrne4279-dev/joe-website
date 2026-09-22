@@ -8,12 +8,12 @@ import StepIcon from '../components/StepIcon'
 export const metadata = {
   title: 'Commercial Reinstatement Cost Assessment | RICS UK',
   description:
-    'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, delivered in 48 hours.',
+    'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, typically delivered within 48 hours.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
     title: 'Commercial Reinstatement Cost Assessment | RICS UK',
     description:
-      'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, delivered in 48 hours.',
+      'Accurate commercial rebuild cost assessment for offices, warehouses and retail. RICS reinstatement cost assessment - BCIS-indexed, broker-ready, typically delivered within 48 hours.',
     url: '/commercial-reinstatement-costs',
   },
 }
@@ -136,7 +136,7 @@ export default function CommercialReinstatementPage() {
               <span className="text-[#1A6B4A]">Commercial</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessments.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Accurate rebuild costs for offices, warehouses, retail, and mixed‑use buildings. RICS‑regulated assessments your broker will accept, BCIS‑indexed and delivered within 48 hours.
+              Accurate rebuild costs for offices, warehouses, retail, and mixed‑use buildings. RICS‑regulated assessments your broker will accept, BCIS‑indexed and typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

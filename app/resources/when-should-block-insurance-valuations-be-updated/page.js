@@ -78,7 +78,7 @@ export default function ArticlePage() {
               When should block insurance valuations be updated?
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              For managing agents and freeholders, keeping reinstatement cost figures current is both a compliance requirement and a critical financial protection. Yet the majority of UK blocks are operating with valuations that are years out of date.
+              For managing agents and freeholders, keeping reinstatement cost figures current is both a compliance requirement and a critical financial protection. Yet many UK blocks are operating with valuations that are years out of date.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -168,7 +168,7 @@ export default function ArticlePage() {
       <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">Is your block overdue for reassessment?</h2>
-          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">We carry out RICS‑regulated reinstatement cost assessments, delivered in 48 hours.</p>
+          <p className="text-white/70 mb-8 max-w-lg leading-relaxed">We carry out RICS‑regulated reinstatement cost assessments, typically delivered within 48 hours.</p>
           <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow inline-block">Get your assessment</Link>
         </div>
       </section>

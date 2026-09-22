@@ -22,7 +22,6 @@ const routes = [
   { path: '/block-managers-reinstatement-cost-assessments', file: 'app/block-managers-reinstatement-cost-assessments/page.js', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/resources/when-should-block-insurance-valuations-be-updated', file: 'app/resources/when-should-block-insurance-valuations-be-updated/page.js', changeFrequency: 'yearly', priority: 0.6 },
   { path: '/resources/top-risks-of-underinsurance-for-managing-agents', file: 'app/resources/top-risks-of-underinsurance-for-managing-agents/page.js', changeFrequency: 'yearly', priority: 0.6 },
-  { path: '/resources/case-study-block-of-flats-undervalued', file: 'app/resources/case-study-block-of-flats-undervalued/page.js', changeFrequency: 'yearly', priority: 0.6 },
   { path: '/privacy-policy', file: 'app/privacy-policy/page.js', changeFrequency: 'yearly', priority: 0.3 },
   { path: '/cookie-policy', file: 'app/cookie-policy/page.js', changeFrequency: 'yearly', priority: 0.3 },
   { path: '/terms-and-conditions', file: 'app/terms-and-conditions/page.js', changeFrequency: 'yearly', priority: 0.3 },

@@ -369,13 +369,6 @@ export default function ResourcesPage() {
                 href: '/resources/top-risks-of-underinsurance-for-managing-agents',
                 img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&auto=format&q=80',
               },
-              {
-                tag: 'Case Study',
-                title: 'Block of Flats Undervalued by £2 Million.',
-                desc: 'A 24‑unit block index‑linked annually was found to be underinsured by £2.1 million. See how a professional reinstatement cost assessment uncovered the gap.',
-                href: '/resources/case-study-block-of-flats-undervalued',
-                img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
-              },
             ].map(({ tag, title, desc, href, img }) => (
               <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>
                 <div className="h-44 overflow-hidden">

@@ -4,7 +4,6 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollReveal from './components/ScrollReveal'
-import CookieConsent from './components/CookieConsent'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -71,22 +70,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-surface font-body text-on-surface">
-        {/* Google Consent Mode default: non-essential (advertising/analytics)
-            storage stays denied until the visitor makes a choice in the
-            CookieConsent banner below. This must run before the Google tag
-            below so its default is applied first. Does not change the
-            existing Google tag / Ads configuration in any way. */}
-        <Script id="consent-default" strategy="afterInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied',
-            'wait_for_update': 500
-          });
-        `}</Script>
         {/* Google tag (gtag.js). Loaded via next/script so it reliably renders in
             the App Router (raw <script> tags in <head> do not). GT-PJSWDCLB is the
             site's Google tag; AW-11028386067 is the linked Google Ads account. */}
@@ -114,7 +97,6 @@ export default function RootLayout({ children }) {
         </div>
         <Footer />
         <ScrollReveal />
-        <CookieConsent />
       </body>
     </html>
   )

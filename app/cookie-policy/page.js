@@ -35,7 +35,7 @@ const sections = [
     ],
   },
   {
-    heading: 'Analytics and advertising (requires your consent)',
+    heading: 'Analytics and advertising',
     body: [
       'This website loads a Google tag (Google’s gtag.js library) that is linked to a Google Ads account and used for advertising conversion tracking, so that we can measure the effectiveness of our marketing. Depending on your device and browser, this may involve Google setting cookies to recognise your browser for measurement and, where applicable, remarketing purposes.',
       {
@@ -44,7 +44,7 @@ const sections = [
           'Purpose: Google Ads conversion tracking and related advertising measurement',
           'Type: Third-party cookies/identifiers set by Google’s tag',
           'Duration: Set and controlled by Google; typically up to 13 months for advertising cookies, in line with Google’s own published policies',
-          'Consent required: Yes — this tag does not run until you choose "Accept all" or otherwise enable advertising cookies in the cookie banner',
+          'Consent required: This website does not currently display a cookie consent banner, so this tag runs by default on every visit. See "How we ask for your consent" below.',
         ],
       },
       'We have not identified a separate Google Analytics property or Google Tag Manager container in the current website code. If that changes, this section will be updated. We are not able to list the exact individual cookie names set by Google’s tag, as these are controlled by Google and may change; see Google’s own cookie documentation for full details.',
@@ -59,8 +59,8 @@ const sections = [
   {
     heading: '3. How we ask for your consent',
     body: [
-      'When you first visit this website, a cookie banner gives you the choice to Accept all, Reject non-essential, or manage your preferences. Non-essential cookies — including the Google advertising tag described above — do not run until you have given consent. No boxes are pre-ticked.',
-      'You can change your mind at any time by clearing the "cookie preference" entry stored by this website in your browser, which will cause the banner to be shown again on your next visit.',
+      'This website does not currently display a cookie consent banner. The Google advertising tag described above runs by default on every visit, without asking for your prior consent.',
+      'You can still control cookies directly through your browser settings, which let you block or delete cookies, including those set by Google. See "Managing cookies through your browser" below. If you have any questions about our use of cookies, you can contact us — see the details at the end of this policy.',
     ],
   },
   {

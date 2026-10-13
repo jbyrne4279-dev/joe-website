@@ -8,12 +8,12 @@ import StepIcon from '../components/StepIcon'
 export const metadata = {
   title: 'Block Rebuild Cost Assessment | RICS Reinstatement',
   description:
-    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
+    'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, typically delivered within 48 hours. Protect leaseholders from underinsurance.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
     title: 'Block Rebuild Cost Assessment | RICS Reinstatement',
     description:
-      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, delivered in 48 hours. Protect leaseholders from underinsurance.',
+      'RICS reinstatement cost assessment for block managers. Accurate rebuild cost assessments - BCIS-indexed, insurer-accepted, typically delivered within 48 hours. Protect leaseholders from underinsurance.',
     url: '/block-managers-reinstatement-cost-assessments',
   },
 }
@@ -127,7 +127,7 @@ export default function BlockManagersPage() {
               <span className="sm:whitespace-nowrap">Reinstatement cost</span> assessments for <span className="text-[#1A6B4A]">block managers</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Protect leaseholders from underinsurance. RICS‑regulated assessments accepted by all major insurers, BCIS‑indexed and delivered within 48 hours.
+              Protect leaseholders from underinsurance. RICS‑regulated assessments accepted by all major insurers, BCIS‑indexed and typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -167,7 +167,7 @@ export default function BlockManagersPage() {
           </div>
           <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px]">
             <Image
-              src="/managing-agents-office-block.jpg"
+              src="/managing-agents-office-block.webp"
               alt="Large modern apartment and commercial block"
               fill
               sizes="(max-width: 1024px) 0px, 40vw"

@@ -10,12 +10,12 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost Experts',
   },
   description:
-    'Get a RICS reinstatement cost assessment or rebuild cost assessment for any UK property. RICS-regulated, BCIS-indexed, broker-ready reports delivered in 48 hours from £210.',
+    'Get a RICS reinstatement cost assessment or rebuild cost assessment for any UK property. RICS-regulated, BCIS-indexed, broker-ready reports typically delivered within 48 hours from £210.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment UK | Rebuild Cost from £210',
     description:
-      '80% of UK buildings carry the wrong rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings - delivered in 48 hours across the UK.',
+      'Many UK buildings carry an inaccurate rebuild cost on their policy. RICS reinstatement cost assessment for homes, commercial, and listed buildings - typically delivered within 48 hours across the UK.',
     url: '/',
   },
 }
@@ -57,11 +57,12 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/rca48.png`,
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   description:
-    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, delivered in 48 hours.',
+    'RICS-regulated Reinstatement Cost Assessments (Rebuild Cost Assessments) for UK properties. Accurate reinstatement valuations, typically delivered within 48 hours.',
   telephone: '+44-20-3178-8099',
-  email: 'michael@reinstatementcostassessment.com',
+  email: 'joseph@reinstatementcostassessment.org',
   sameAs: [
     'https://find-and-update.company-information.service.gov.uk/company/17101918',
+    'https://www.linkedin.com/company/reinstatement-cost-assessment-limited/',
   ],
   address: {
     '@type': 'PostalAddress',
@@ -94,7 +95,7 @@ const organizationJsonLd = {
     '@type': 'ContactPoint',
     contactType: 'customer service',
     telephone: '+44-20-3178-8099',
-    email: 'michael@reinstatementcostassessment.com',
+    email: 'joseph@reinstatementcostassessment.org',
     areaServed: 'GB',
     availableLanguage: 'English',
   },
@@ -178,40 +179,50 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLinksJsonLd) }}
       />
     <main>
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Who we are */}
+      <section className="relative pt-16 pb-8 sm:py-24 overflow-hidden">
         <Image
-          src="/reinstatement-cost-assessments-uk.webp"
-          alt="RICS-regulated Reinstatement Cost Assessment for UK property"
+          src="/managing-agents-office-block.webp"
+          alt="Modern London glass skyscraper"
           fill
           priority
-          className="object-cover object-center md:object-right-bottom"
           sizes="100vw"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
-        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-              <span className="text-shine-red">80%</span> of UK buildings are <span className="text-shine-red">underinsured.</span>
-            </h1>
-            <p className="text-sm text-secondary leading-relaxed mb-8">
-              Is yours one of them? We establish your accurate{' '}
-              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and delivered in 48 hours.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
-              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Contact Surveyor
-              </Link>
-              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
-                Our Services
+        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+        <div className="relative z-10 max-w-5xl mx-auto px-8">
+          <div className="gold-outline-shine liquid-glass-dark text-center mb-8 sm:mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of Rebuild Cost Assessments in the UK.</h1>
+            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
+              <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
+                Get Report
+                <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
             </div>
-            <div className="flex justify-center">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
-                <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
-              </span>
-            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-3 sm:gap-6">
+            {[
+              { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
+              { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
+              { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
+            ].map(({ img, title, desc }, i) => (
+              <div key={title} className="service-pulse-card select-none [-webkit-tap-highlight-color:transparent] cursor-default flex flex-col items-center text-center gap-2 sm:gap-5 p-3 sm:p-8 rounded-md sm:rounded-2xl bg-white shadow-sm sm:shadow-md sm:hover:shadow-lg transition-all duration-300"
+                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
+                {title === '50+ Years Experience' ? (
+                  <div className="logo-shine w-10 h-10 sm:w-24 sm:h-24 rounded-md sm:rounded-xl pointer-events-none">
+                    <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
+                  </div>
+                ) : (
+                  <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
+                )}
+                <div className="space-y-0 sm:space-y-2">
+                  <p className="font-bold text-[0.65rem] leading-tight sm:text-base sm:leading-normal text-primary">{title}</p>
+                  <p className="hidden sm:block text-sm text-secondary leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -226,14 +237,15 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { img: '/desktop-reinstatement-cost-assessment-london.png', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk' },
-              { img: '/ongoing-reinstatement-cost-protection-london.png', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london' },
-              { img: '/onsite-reinstatement-cost-assessment-london.png', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london' },
-            ].map(({ img, name, tag, desc, accent, tintRgb, href }, i) => (
+              { img: '/desktop-reinstatement-cost-assessment-london.webp', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
+              { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
+              { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
+            ].map(({ img, name, tag, desc, accent, tintRgb, href, service }, i) => (
               <Link
                 key={name}
-                href={href}
-                className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300"
+                href={`/contact?service=${service}#contact-form`}
+                aria-label={`Contact us about ${name}`}
+                className="service-pulse-card group flex flex-col items-center text-center gap-4 rounded-2xl p-7 bg-white shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
                 style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}
               >
                 <div className="flex flex-col items-center gap-3">
@@ -244,11 +256,56 @@ export default function HomePage() {
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
-                <span className="mt-auto inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
-                  Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
-                </span>
+                <div className="mt-auto flex flex-col items-center gap-3 pt-2">
+                  <span
+                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-sm transition-all duration-200 group-hover:scale-110 group-hover:shadow-lg"
+                    style={{ background: accent }}
+                  >
+                    <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
+                    Contact
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
+                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '0.8rem' }}>arrow_forward</span>
+                  </span>
+                </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Underinsured message */}
+      <section className="scroll-reveal relative flex items-center justify-center overflow-hidden">
+        <Image
+          src="/reinstatement-cost-assessments-uk.webp"
+          alt="RICS-regulated Reinstatement Cost Assessment for UK property"
+          fill
+          className="object-cover object-center md:object-right-bottom"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
+        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
+          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
+              Most UK buildings are <span className="text-shine-red">underinsured.</span>
+            </h2>
+            <p className="text-sm text-secondary leading-relaxed mb-8">
+              Is yours one of them? We establish your accurate{' '}
+              <Link href="/building-reinstatement-cost" className="text-[#1A6B4A] font-semibold underline underline-offset-2 hover:text-[#0f3d28]">building reinstatement cost</Link>, certified by RICS‑regulated surveyors, broker‑ready and typically delivered within 48 hours.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-black/5">
+              {[
+                { img: '/precise-rebuild-figure-london-v2.webp', title: 'Accuracy', desc: 'A precise rebuild figure that reflects your building’s true construction cost.' },
+                { img: '/check-for-underinsurance-london-v2.webp', title: 'Legal Protection', desc: 'Guards you against the legal and financial exposure of underinsurance when you claim.' },
+                { img: '/rics-rebuild-cost-london-v2.webp', title: 'Broker-ready', desc: 'A RICS-regulated report accepted by UK insurers and brokers.' },
+              ].map(({ img, title, desc }) => (
+                <div key={title} className="flex flex-col items-center text-center gap-2 pt-5">
+                  <Image src={img} alt={title} width={128} height={128} className="w-32 h-32 object-contain" />
+                  <p className="font-bold text-primary text-sm">{title}</p>
+                  <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -267,11 +324,9 @@ export default function HomePage() {
               {/* Desktop Assessment */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <div className="btn-shine-blue w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
-                  </div>
+                  <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Efficient, data‑driven remote valuation for standard properties.</p>
+                  <p className="text-secondary text-sm mb-4">Efficient, data‑driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -293,17 +348,21 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1e40af', background: 'rgba(37,99,235,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>home</span>
+                    Recommended for UK homeowners
+                  </span>
+                </div>
                 <Link href="/contact?service=desktop#contact-form" className="w-full py-4 btn-shine-blue text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* On-Site Survey */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
-                  </div>
+                  <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full physical survey for listed, complex or high‑value buildings.</p>
+                  <p className="text-secondary text-sm mb-4">Full physical survey for listed, complex or high‑value buildings.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -325,20 +384,24 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1A6B4A', background: 'rgba(26,107,74,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>apartment</span>
+                    Recommended for London property managers
+                  </span>
+                </div>
                 <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On‑Site</Link>
               </div>
 
               {/* 3-Year Protection */}
               <div className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#a16207] shadow-[0_0_32px_6px_rgba(161,98,7,0.20)]">
-                <div className="absolute top-6 right-6">
-                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white shadow-md">Best Value</span>
                 </div>
                 <div className="mb-8">
-                  <div className="btn-shine-gold w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-                  </div>
+                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
+                  <p className="text-secondary text-sm mb-4">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -360,6 +423,12 @@ export default function HomePage() {
                     <span className="text-secondary text-sm font-medium">Broker‑ready report every renewal</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
+                    Recommended for London portfolio managers
+                  </span>
+                </div>
                 <Link href="/contact?service=3year#contact-form" className="btn-shine-gold w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 
@@ -381,7 +450,7 @@ export default function HomePage() {
             { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
             { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
             { icon: 'description', title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
-            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
+            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.' },
             { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
             { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
           ].map(({ icon, title, desc }) => (
@@ -398,45 +467,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Expertise */}
-      <section className="scroll-reveal relative py-24 overflow-hidden">
-        <Image
-          src="/managing-agents-office-block.jpg"
-          alt="Modern London glass skyscraper"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="relative z-10 max-w-5xl mx-auto px-8">
-          <div className="gold-outline-shine liquid-glass-dark text-center mb-16 space-y-4 max-w-2xl mx-auto rounded-3xl p-10 md:p-14 sovereign-shadow">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>workspace_premium</span>Who we are</span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white"><span className="text-[#d4af37]">50+ years</span> of collective experience.</h2>
-            <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in reliable Reinstatement Cost Assessments for property owners across the United Kingdom.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: 'history', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.', shine: 'btn-shine-gold' },
-              { icon: 'precision_manufacturing', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.', shine: 'btn-shine-blue' },
-              { icon: 'policy', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.', shine: 'btn-shine' },
-            ].map(({ icon, title, desc, shine }, i) => (
-              <div key={icon} className="service-pulse-card flex flex-col items-center text-center gap-5 p-8 rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300"
-                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                <div className={`${shine} w-14 h-14 rounded-full flex items-center justify-center`}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>{icon}</span>
-                </div>
-                <div className="space-y-2">
-                  <p className="font-bold text-base text-primary">{title}</p>
-                  <p className="text-sm text-secondary leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <ContactSection
-        image={false}
         heading={
           <>
             Get Your RICS‑Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
@@ -480,7 +511,7 @@ export default function HomePage() {
             <div className="flex flex-col">
             <div className="relative flex-1 min-h-[420px] rounded-2xl overflow-hidden sovereign-shadow">
               <Image
-                src="/rebuild-cost-assessment-london.jpeg"
+                src="/rebuild-cost-assessment-london.webp"
                 alt="RICS-regulated reinstatement cost assessment of a London commercial property"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -523,49 +554,22 @@ export default function HomePage() {
       <section className="scroll-reveal py-20 px-8 bg-[#0f3d28]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>verified_user</span>Trust &amp; Compliance</span>
-            <h2 className="text-4xl font-bold text-white">Why Managing Agents Choose Us.</h2>
-            <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Built for professionals who need compliance they can rely on, not guesswork.</p>
+            <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>calculate</span>Online calculators</span>
+            <h2 className="text-4xl font-bold text-white">Why online rebuild calculators aren&rsquo;t enough.</h2>
+            <p className="text-white/80 max-w-xl mx-auto leading-relaxed">Free calculators give a rough guide, not a figure that holds up when it matters. Here&rsquo;s why they leave you exposed.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            {[
-              { icon: 'gavel', title: 'RICS Regulated Firm', desc: 'Every assessment is conducted by or under the supervision of a RICS‑registered member. Full regulatory compliance, every time.' },
-              { icon: 'shield', title: 'Professional Indemnity Insured', desc: 'We carry comprehensive PI insurance on every instruction, giving you and your clients full protection.' },
-              { icon: 'apartment', title: 'Portfolio & Block Specialists', desc: 'Experience across blocks of flats, mixed‑use portfolios, commercial assets, and high‑value listed buildings.' },
-              { icon: 'description', title: 'Broker‑Ready Reports', desc: 'Every report is formatted for direct submission to your insurer or broker, accepted without question.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="hover-grow bg-white rounded-2xl p-7 border border-white/20 sovereign-shadow flex gap-5 items-start">
-                <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.2rem', fontVariationSettings: "'FILL' 1" }}>{icon}</span>
-                </div>
-                <div>
-                  <p className="font-bold text-primary mb-1">{title}</p>
-                  <p className="text-secondary text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Methodology */}
+          {/* Why calculators fall short */}
           <div className="bg-white rounded-2xl border border-white/20 p-8 sovereign-shadow mb-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4">Our Assessment Methodology</p>
-            <div className="flex flex-col md:flex-row gap-0 md:gap-0 items-stretch">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '1', label: 'Instruction & Data Gathering', desc: 'We collect property details, floor areas, construction type, and any specialist features.' },
-                { n: '2', label: 'BCIS‑Indexed Modelling', desc: 'Rebuild costs are calculated using live BCIS indices the same data used by major insurers.' },
-                { n: '3', label: 'RICS‑Reviewed Report', desc: 'A RICS‑registered surveyor signs off every report before it is delivered to you.' },
-              ].map(({ n, label, desc }, i, arr) => (
-                <div key={n} className="flex flex-col md:flex-row items-stretch flex-1">
-                  <div className="flex-1 p-5 text-center">
-                    <div className={`method-ring-${n} btn-shine w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm mx-auto mb-3`}>{n}</div>
-                    <p className="font-semibold text-primary text-sm mb-1">{label}</p>
-                    <p className="text-secondary text-xs leading-relaxed">{desc}</p>
-                  </div>
-                  {i < arr.length - 1 && (
-                    <div className="hidden md:flex items-center px-1 text-[#1A6B4A]/30">
-                      <span className="material-symbols-outlined">arrow_forward</span>
-                    </div>
-                  )}
+                { img: '/legal-protection-rics.webp', label: 'Not legally defensible', desc: 'Online calculators aren’t RICS‑regulated and carry no professional liability, so the figure won’t stand up if an insurer challenges it at claim.' },
+                { img: '/averaging-clause.webp', label: 'Generic averages', desc: 'They apply broad regional averages and can’t account for listed status, non‑standard construction, specialist materials or complex layouts.' },
+                { img: '/rebuild-cost-assessment-insurance.webp', label: 'No certified sign‑off', desc: 'A calculator output isn’t a certified assessment. Only a RICS‑regulated report gives you an insurer‑ and broker‑ready rebuild figure.' },
+              ].map(({ img, label, desc }) => (
+                <div key={label} className="flex flex-col items-center text-center gap-3">
+                  <Image src={img} alt={label} width={240} height={240} className="w-60 h-60 object-contain" />
+                  <p className="font-bold text-primary text-sm">{label}</p>
+                  <p className="text-secondary text-xs leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -587,15 +591,15 @@ export default function HomePage() {
                 The hidden cost of getting it wrong.
               </h2>
               <p className="text-lg text-white/70 leading-relaxed">
-                Over <span className="font-semibold text-white">80% of UK properties</span> carry an inaccurate reinstatement figure. Most owners won&rsquo;t find out until they make a claim - by which point, the financial damage is already done.
+                Many UK properties carry an inaccurate reinstatement figure. Most owners won&rsquo;t find out until they make a claim - by which point, the financial damage is already done.
               </p>
               <div className="grid grid-cols-2 gap-3 pt-4">
                 <div className="bg-white rounded-2xl p-4 space-y-1 min-w-0 shadow-md">
-                  <span className="text-2xl font-bold text-primary block truncate">£425bn</span>
-                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">Estimated UK Gap</p>
+                  <span className="text-2xl font-bold text-primary block truncate">3 yrs</span>
+                  <p className="text-xs font-bold text-secondary uppercase tracking-widest">RICS Review Cycle</p>
                 </div>
                 <div className="bg-white rounded-2xl p-4 space-y-1 min-w-0 shadow-md">
-                  <span className="text-2xl font-bold text-primary block">80%+</span>
+                  <span className="text-2xl font-bold text-primary block">UK‑wide</span>
                   <p className="text-xs font-bold text-secondary uppercase tracking-widest">Properties at Risk</p>
                 </div>
               </div>
@@ -608,7 +612,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">The Condition of Average.</h4>
-                  <p className="text-sm text-secondary leading-relaxed">If you are <span className="font-semibold text-primary">20% underinsured</span>, your insurer can reduce your payout by 20% - even on a partial claim. The clause is standard across UK policies and routinely enforced.</p>
+                  <p className="text-sm text-secondary leading-relaxed">If you are <span className="font-semibold text-primary">20% underinsured</span>, your insurer can reduce your payout by 20% - even on a partial claim. This clause is common across UK buildings policies.</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row items-start gap-4 md:gap-5 text-left">
@@ -617,7 +621,8 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary mb-1">Construction costs are rising fast.</h4>
-                  <p className="text-sm text-secondary leading-relaxed">BCIS data shows UK build costs have risen <span className="font-semibold text-primary">over 30% since 2020</span>. A valuation from three years ago is almost certainly out of date - and your insurer knows it.</p>
+                  <p className="text-sm text-secondary leading-relaxed">The BCIS Materials Cost Index shows construction material prices up more than{' '}
+                    <a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-2 hover:text-[#0f3d28]">20% since 2020</a>. A valuation from three years ago can quickly fall out of date.</p>
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row items-start gap-4 md:gap-5 text-left">

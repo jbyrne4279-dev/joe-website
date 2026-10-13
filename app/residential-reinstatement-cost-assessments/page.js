@@ -8,12 +8,12 @@ import StepIcon from '../components/StepIcon'
 export const metadata = {
   title: 'Residential Reinstatement Cost Assessment UK | RICS',
   description:
-    'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, delivered in 48 hours. Avoid underinsurance on your home.',
+    'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, typically delivered within 48 hours. Avoid underinsurance on your home.',
   alternates: { canonical: '/residential-reinstatement-cost-assessments' },
   openGraph: {
     title: 'Residential Reinstatement Cost Assessment UK | RICS',
     description:
-      'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, delivered in 48 hours. Avoid underinsurance on your home.',
+      'RICS reinstatement cost assessment for houses and flats. Accurate rebuild cost - BCIS-indexed, broker-ready, typically delivered within 48 hours. Avoid underinsurance on your home.',
     url: '/residential-reinstatement-cost-assessments',
   },
 }
@@ -136,7 +136,7 @@ export default function ResidentialReinstatementPage() {
               <span className="text-[#1A6B4A]">Residential</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessments.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Accurate rebuild costs for houses and flats across the UK. RICS‑regulated assessments your insurer will accept, BCIS‑indexed and delivered within 48 hours.
+              Accurate rebuild costs for houses and flats across the UK. RICS‑regulated assessments your insurer will accept, BCIS‑indexed and typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

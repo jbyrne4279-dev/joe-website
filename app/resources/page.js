@@ -124,7 +124,7 @@ export default function ResourcesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
                 <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                  Contact Surveyor
+                  Get Report
                 </Link>
                 <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
                   Our Services
@@ -133,7 +133,7 @@ export default function ResourcesPage() {
               <div className="flex justify-center">
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
                   <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                  RICS Regulated &middot; London &amp; UK
+                  London &amp; UK
                 </span>
               </div>
             </div>
@@ -234,15 +234,17 @@ export default function ResourcesPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>price_change</span>Rising Costs</span>
             <h2 className="text-4xl font-bold text-white leading-tight">The Surge in Construction Materials.</h2>
             <p className="text-white/70 leading-relaxed">
-              Global supply chain volatility and labour shortages have pushed rebuild costs up by over 25% since 2019. If your valuation hasn&rsquo;t been updated since 2021, you are almost certainly underinsured today.
+              Global supply chain volatility and labour shortages have pushed rebuild costs up significantly since 2019 — the{' '}
+              <a href="https://www.bcis.co.uk/insight/are-higher-construction-materials-prices-the-new-normal/" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-2 hover:text-white/80">BCIS Materials Cost Index</a>{' '}
+              shows material prices up more than 20% since 2020 alone. If your valuation hasn&rsquo;t been updated recently, you may well be underinsured today.
             </p>
           </div>
 
           <div className="w-full max-w-2xl bg-white p-10 rounded-2xl">
             <div className="flex items-start justify-between mb-8">
               <div className="text-left">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">BCIS Construction Index</span>
-                <p className="text-secondary text-xs">Rebased cost index, 2019–2024</p>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block mb-1">Construction Cost Trend</span>
+                <p className="text-secondary text-xs">Illustrative trend, 2019–2024</p>
               </div>
             </div>
             <div className="relative h-48 w-full flex items-end gap-3 mb-3">
@@ -368,13 +370,6 @@ export default function ResourcesPage() {
                 desc: 'From proportional claim settlements to personal liability exposure: the risks managing agents face when valuations are out of date.',
                 href: '/resources/top-risks-of-underinsurance-for-managing-agents',
                 img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=300&fit=crop&auto=format&q=80',
-              },
-              {
-                tag: 'Case Study',
-                title: 'Block of Flats Undervalued by £2 Million.',
-                desc: 'A 24‑unit block index‑linked annually was found to be underinsured by £2.1 million. See how a professional reinstatement cost assessment uncovered the gap.',
-                href: '/resources/case-study-block-of-flats-undervalued',
-                img: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=600&h=300&fit=crop&auto=format&q=80',
               },
             ].map(({ tag, title, desc, href, img }) => (
               <a key={href} href={href} className="grow-card group rounded-2xl overflow-hidden sovereign-shadow hover:shadow-lg transition-all duration-300 flex flex-col" style={{ background: '#0f3d28' }}>

@@ -58,7 +58,7 @@ const servicesOfferJsonLd = {
         name: 'Desktop Assessment',
         price: '210',
         priceCurrency: 'GBP',
-        description: 'RICS-regulated desktop Rebuild Cost Assessment delivered within 48 hours.',
+        description: 'RICS-regulated desktop Rebuild Cost Assessment typically delivered within 48 hours.',
       },
       {
         '@type': 'Offer',
@@ -123,11 +123,11 @@ export default function ServicesPage() {
               <span className="text-shine-red">Insurers profit</span> from your <span className="text-shine-red">underinsurance.</span>
             </h1>
             <p className="text-sm text-secondary leading-relaxed mb-8">
-              Most property owners don&rsquo;t find out they&rsquo;re underinsured until it&rsquo;s too late. A RICS reinstatement cost assessment gives you the one figure that keeps your insurer honest.
+              Choose the RICS‑regulated reinstatement cost assessment that matches your property: a fast remote valuation for a standard UK home or office, a full on‑site survey for listed and complex London buildings, or a 3‑year plan for landlords managing several addresses.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Contact Surveyor
+                Get Report
               </Link>
               <Link href="#pricing" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
                 Our Services
@@ -136,7 +136,7 @@ export default function ServicesPage() {
             <div className="flex justify-center">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
                 <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
+                London &amp; UK
               </span>
             </div>
           </div>
@@ -157,11 +157,9 @@ export default function ServicesPage() {
               {/* Desktop Assessment */}
               <div id="desktop-rca" className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <div className="btn-shine-blue w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
-                  </div>
+                  <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Efficient, data‑driven remote valuation for standard properties.</p>
+                  <p className="text-secondary text-sm mb-4">Efficient, data‑driven remote valuation for standard properties.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -183,17 +181,21 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Site visit not included</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1e40af', background: 'rgba(37,99,235,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>home</span>
+                    Recommended for UK homeowners
+                  </span>
+                </div>
                 <Link href="/contact?service=desktop#contact-form" className="w-full py-4 btn-shine-blue text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Select Desktop</Link>
               </div>
 
               {/* On-Site Survey */}
               <div id="on-site-survey" className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
                 <div className="mb-8">
-                  <div className="btn-shine w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
-                  </div>
+                  <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full physical survey for listed, complex or high‑value buildings.</p>
+                  <p className="text-secondary text-sm mb-4">Full physical survey for listed, complex or high‑value buildings.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -215,20 +217,24 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Listed buildings &amp; complex structures</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#1A6B4A', background: 'rgba(26,107,74,0.1)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>apartment</span>
+                    Recommended for London property managers
+                  </span>
+                </div>
                 <Link href="/contact?service=onsite#contact-form" className="w-full py-4 border-2 border-[#1A6B4A] text-[#1A6B4A] hover:bg-[#0f3d28] hover:text-white rounded-full font-bold active:scale-[0.97] transition-all text-center block">Request On‑Site</Link>
               </div>
 
               {/* 3-Year Protection */}
               <div id="three-year-protection" className="bg-white rounded-2xl p-8 flex flex-col relative border-2 border-[#a16207] shadow-[0_0_32px_6px_rgba(161,98,7,0.20)]">
-                <div className="absolute top-6 right-6">
-                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white">Best Value</span>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white shadow-md">Best Value</span>
                 </div>
                 <div className="mb-8">
-                  <div className="btn-shine-gold w-14 h-14 flex items-center justify-center rounded-full mb-6">
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-                  </div>
+                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
+                  <p className="text-secondary text-sm mb-4">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                 </div>
                 <ul className="space-y-2 mb-10 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
@@ -250,6 +256,12 @@ export default function ServicesPage() {
                     <span className="text-secondary text-sm font-medium">Broker‑ready report every renewal</span>
                   </li>
                 </ul>
+                <div className="mb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
+                    <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
+                    Recommended for London portfolio managers
+                  </span>
+                </div>
                 <Link href="/contact?service=3year#contact-form" className="btn-shine-gold w-full py-4 rounded-full font-bold text-white active:scale-[0.97] transition-all text-center block">Enquire Now</Link>
               </div>
 
@@ -265,22 +277,20 @@ export default function ServicesPage() {
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS‑regulated standard.</p>
         </div>
-        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 max-w-4xl mx-auto">
           {[
-            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
-            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
-            { icon: 'description', title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
-            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance.' },
-            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
-            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
-          ].map(({ icon, title, desc }) => (
-            <div key={icon} className="hover-grow snap-center shrink-0 basis-[82%] sm:basis-[46%] md:basis-auto bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
-              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
-                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
-              </div>
+            { title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
+            { title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
+            { title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.' },
+            { title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
+            { title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
+          ].map(({ title, desc }) => (
+            <div key={title} className="flex items-start gap-3">
+              <span className="material-symbols-outlined text-[#d4af37] shrink-0 mt-0.5" style={{ fontSize: '1.25rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <div>
-                <p className="font-bold text-primary text-sm mb-1">{title}</p>
-                <p className="text-secondary text-xs leading-relaxed">{desc}</p>
+                <p className="font-bold text-white text-sm mb-0.5">{title}</p>
+                <p className="text-white/60 text-xs leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}
@@ -288,16 +298,22 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Detail Cards */}
-      <section className="scroll-reveal py-16 px-4 md:px-8 bg-white">
-        <div className="max-w-6xl mx-auto space-y-8">
+      <section className="scroll-reveal relative py-16 px-4 md:px-8 overflow-hidden">
+        <Image
+          src="/managing-agents-office-block.webp"
+          alt="London skyscraper skyline"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#0f3d28]/85" aria-hidden="true" />
+        <div className="relative z-10 max-w-6xl mx-auto space-y-8">
 
           {/* Desktop Assessment */}
           <div id="desktop-rca" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>monitor</span>
-                </div>
+                <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
                 <h3 className="text-2xl font-bold text-primary mb-3">Desktop Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A fast, accurate rebuild cost assessment produced entirely remotely. No site visit required, ideal for standard residential and commercial properties.</p>
               </div>
@@ -334,9 +350,7 @@ export default function ServicesPage() {
           <div id="on-site-survey" className="grow-card service-card-shine scroll-mt-24 rounded-3xl overflow-hidden border border-zinc-200 shadow-sm grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] bg-white">
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
-                <div className="btn-shine w-12 h-12 rounded-xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem' }}>location_on</span>
-                </div>
+                <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={64} height={64} className="w-16 h-16 object-contain mb-6" />
                 <h3 className="text-2xl font-bold text-primary mb-3">On‑Site RICS Reinstatement Cost Assessment</h3>
                 <p className="text-secondary text-sm leading-relaxed">A full physical rebuild cost assessment carried out by a RICS‑regulated surveyor. The most accurate reinstatement cost assessment available, essential for listed, complex, or high‑value buildings.</p>
               </div>
@@ -374,9 +388,7 @@ export default function ServicesPage() {
             <div className="p-10 lg:p-12 flex flex-col justify-between gap-8">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>
-                    <span className="material-symbols-outlined text-white" style={{ fontSize: '1.4rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
-                  </div>
+                  <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={56} height={56} className="w-14 h-14 object-contain" />
                   <span className="px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest text-white" style={{ background: 'linear-gradient(135deg, #8a6d1a 0%, #c9a227 100%)' }}>Best Value</span>
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-3">3‑Year RICS Reinstatement Cost Assessment</h3>

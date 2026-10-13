@@ -128,7 +128,7 @@ export default function OnSiteAssessmentLondonPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img fetchPriority="high" decoding="async"
-          src="/on-site-reinstatement-cost-assessment-survey.jpg"
+          src="/on-site-reinstatement-cost-assessment-survey.webp"
           alt="RICS surveyor carrying out an on-site reinstatement cost assessment survey in London"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -140,7 +140,7 @@ export default function OnSiteAssessmentLondonPage() {
               <span style={{ color: '#1A6B4A' }}>On‑site</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              The most accurate rebuild cost available, a full physical survey by a RICS‑regulated surveyor. Essential for London&rsquo;s listed, period, complex and high‑value buildings, delivered with full site evidence.
+              Our RICS‑regulated surveyors carry out site visits across every London borough, from Mayfair and Belgravia to Greenwich and Richmond, and travel further afield to Birmingham, Manchester, Bristol and beyond, so your rebuild figure is measured in person rather than estimated from a desk.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=onsite#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -230,7 +230,7 @@ export default function OnSiteAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-why-it-matters.jpg" alt="RICS surveyor inspecting a building on site" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-why-it-matters.webp" alt="RICS surveyor inspecting a building on site" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Why it matters</p>
@@ -286,7 +286,7 @@ export default function OnSiteAssessmentLondonPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#0b5d3b' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-coverage-london.jpg" alt="Period red-brick London mansion block" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/on-site-coverage-london.webp" alt="Period red-brick London mansion block" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">London &amp; beyond</p>
@@ -318,13 +318,13 @@ export default function OnSiteAssessmentLondonPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             <Link href="/desktop-reinstatement-cost-assessment-uk" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>monitor</span>
+              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
               <h3 className="text-lg font-semibold text-white mb-2">Desktop Assessment</h3>
               <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
             <Link href="/three-year-reinstatement-cost-assessment-london" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
-              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
+              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
               <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
               <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>

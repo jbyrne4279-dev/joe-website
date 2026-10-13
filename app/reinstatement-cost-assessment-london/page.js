@@ -8,12 +8,12 @@ import FaqSection from '../components/FaqSection'
 export const metadata = {
   title: 'Reinstatement Cost Assessment London | RICS Surveyors',
   description:
-    'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+    'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs typically delivered within 48 hours across London.',
   alternates: { canonical: '/reinstatement-cost-assessment-london' },
   openGraph: {
     title: 'Reinstatement Cost Assessment London | RICS Surveyors',
     description:
-      'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs delivered in 48 hours across London.',
+      'London‑based RICS reinstatement cost assessments for homes, blocks and commercial property. BCIS‑indexed, insurer-accepted rebuild costs typically delivered within 48 hours across London.',
     url: '/reinstatement-cost-assessment-london',
   },
 }
@@ -54,7 +54,7 @@ const faqItems = [
   },
   {
     question: 'How quickly can you assess a London property?',
-    answer: 'Standard assessments are delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on‑site visits quickly for period, listed, or complex buildings that need a physical inspection.',
+    answer: 'Standard assessments are typically delivered within 48 hours of instruction. Being based in London means our surveyors can also arrange on‑site visits quickly for period, listed, or complex buildings that need a physical inspection.',
   },
   {
     question: 'Do you cover listed and period buildings in London?',
@@ -70,7 +70,7 @@ const faqItems = [
   },
   {
     question: 'Where are you based?',
-    answer: 'Our office is at 17 Hanover Square, London W1S 1BN, in the heart of the West End. We are part of the RiskSTOP Group.',
+    answer: 'Our office is at 17 Hanover Square, London W1S 1BN, in the heart of the West End.',
   },
 ]
 
@@ -149,7 +149,7 @@ export default function LondonReinstatementPage() {
               Reinstatement cost assessments in <span className="text-[#1A6B4A]">London</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              London‑based, RICS‑regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS‑indexed, insurer-accepted figures delivered within 48 hours.
+              London‑based, RICS‑regulated rebuild cost specialists for homes, blocks, and commercial property. BCIS‑indexed, insurer-accepted figures typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">
@@ -178,8 +178,8 @@ export default function LondonReinstatementPage() {
                 the land and location.
               </p>
               <p>
-                We are a London firm, based at 17 Hanover Square in the West End and part of the RiskSTOP
-                Group. Our RICS‑regulated surveyors work across the capital every day, so they understand how
+                We are a London firm, based at 17 Hanover Square in the West End. Our RICS‑regulated surveyors
+                work across the capital every day, so they understand how
                 local build costs, access, and the city&rsquo;s mix of period and modern buildings feed into
                 an accurate rebuild figure, one your broker and insurer will accept.
               </p>

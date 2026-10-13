@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import LocationCarousel from '../components/LocationCarousel'
@@ -88,7 +89,18 @@ export default function AboutPage() {
 
       {/* Who we are */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-14">
+          <div className="w-full md:w-1/2 shrink-0 flex justify-center md:justify-start">
+            <div className="bg-white rounded-2xl shadow-[0_18px_50px_rgba(0,0,0,0.15)] border border-black/5 p-8 w-full max-w-[320px] md:max-w-none">
+              <Image
+                src="/rca-logo-reinstatement-cost-assessment.webp"
+                alt="Reinstatement Cost Assessment Ltd shield logo"
+                width={400}
+                height={400}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">Who we are</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-8">A focused practice, not a general one.</h2>
@@ -143,7 +155,7 @@ export default function AboutPage() {
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 sm:gap-10 items-start">
           <img width={384} height={384} loading="lazy" decoding="async" src="/uk-coverage-map.svg" alt="Map of the United Kingdom" className="shrink-0 w-full h-60 sm:w-96 sm:h-96 rounded-2xl object-contain bg-white p-4 border border-black/5 mt-1" />
-          <div>
+          <div className="flex-1 min-w-0">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">UK‑wide coverage</p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight mb-6">London‑based, working nationwide.</h2>
           <p className="text-secondary leading-relaxed mb-8 max-w-2xl text-[1.05rem]">

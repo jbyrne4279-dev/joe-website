@@ -9,12 +9,12 @@ import LocationCarousel from '../components/LocationCarousel'
 export const metadata = {
   title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
   description:
-    'RICS desktop reinstatement cost assessment across the whole UK. No site visit, BCIS-indexed and broker-ready, delivered in 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
+    'RICS desktop reinstatement cost assessment across the whole UK. No site visit, BCIS-indexed and broker-ready, typically delivered within 48 hours. Accurate rebuild cost for houses, flats and commercial units.',
   alternates: { canonical: '/desktop-reinstatement-cost-assessment-uk' },
   openGraph: {
     title: 'Desktop Reinstatement Cost Assessment UK | RICS Rebuild Cost',
     description:
-      'RICS-regulated desktop reinstatement cost assessment across the whole UK. No site visit required, BCIS-indexed, broker-ready, delivered in 48 hours.',
+      'RICS-regulated desktop reinstatement cost assessment across the whole UK. No site visit required, BCIS-indexed, broker-ready, typically delivered within 48 hours.',
     url: '/desktop-reinstatement-cost-assessment-uk',
   },
 }
@@ -60,7 +60,7 @@ const serviceJsonLd = {
   '@type': 'Service',
   serviceType: 'Desktop Reinstatement Cost Assessment',
   name: 'Desktop Reinstatement Cost Assessment UK',
-  description: 'RICS-regulated desktop reinstatement cost assessment for properties across the whole UK, produced remotely using property records and live BCIS data. Broker-ready and delivered in 48 hours.',
+  description: 'RICS-regulated desktop reinstatement cost assessment for properties across the whole UK, produced remotely using property records and live BCIS data. Broker-ready and typically delivered within 48 hours.',
   url: PAGE_URL,
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   provider: {
@@ -122,7 +122,7 @@ export default function DesktopAssessmentUKPage() {
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <img fetchPriority="high" decoding="async"
-          src="/desktop-reinstatement-cost-assessment.jpg"
+          src="/desktop-reinstatement-cost-assessment.webp"
           alt="Surveyor producing a desktop reinstatement cost assessment from property records and a 3D building model"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -134,7 +134,7 @@ export default function DesktopAssessmentUKPage() {
               <span style={{ color: '#1e40af' }}>Desktop</span> <span className="sm:whitespace-nowrap">reinstatement cost</span> assessment.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              An accurate, RICS‑regulated rebuild cost for houses, flats and standard commercial units across the UK.<br /><br />BCIS‑indexed and delivered within 48 hours. No site visit required.
+              Wherever your property sits in England, Scotland, Wales or Northern Ireland, our RICS‑regulated surveyors calculate your rebuild figure from property records and cost data alone, ideal for buy‑to‑let landlords, homeowners and standard commercial units who need an insurer‑ready sum insured without arranging site access.
             </p>
             <div className="flex justify-center">
               <Link href="/contact?service=desktop#contact-form" className="text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
@@ -229,7 +229,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/desktop-why-it-matters.jpg" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/desktop-why-it-matters.webp" alt="House under construction being rebuilt" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">Why it matters</p>
@@ -294,7 +294,7 @@ export default function DesktopAssessmentUKPage() {
       <section className="scroll-reveal py-24 px-6" style={{ background: '#10265c' }}>
         <div className="max-w-4xl mx-auto flex flex-col gap-10">
           <div className="gold-outline-shine rounded-2xl">
-            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/managing-agents-office-block.jpg" alt="Modern London city skyline" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
+            <Image width={1200} height={560} sizes="(max-width: 640px) 100vw, 1200px" src="/managing-agents-office-block.webp" alt="Modern London city skyline" className="w-full h-72 sm:h-[440px] rounded-2xl object-cover" />
           </div>
           <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">UK‑wide coverage</p>
@@ -320,13 +320,13 @@ export default function DesktopAssessmentUKPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             <Link href="/on-site-reinstatement-cost-assessment-london" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>
-              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>location_on</span>
+              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
               <h3 className="text-lg font-semibold text-white mb-2">On‑Site RICS Survey</h3>
               <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high‑value London buildings where full detail matters.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
             <Link href="/three-year-reinstatement-cost-assessment-london" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
-              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem', fontVariationSettings: "'FILL' 1" }}>shield</span>
+              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
               <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
               <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
               <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>

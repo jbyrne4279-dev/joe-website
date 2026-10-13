@@ -4,7 +4,6 @@ import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollReveal from './components/ScrollReveal'
-import NotSureQuiz from './components/NotSureQuiz'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,7 +18,7 @@ export const metadata = {
     template: '%s',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by homeowners, landlords and asset managers across England.',
+    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, typically delivered within 48 hours. Trusted by homeowners, landlords and asset managers across England.',
   icons: {
     icon: '/rca48.png',
     shortcut: '/rca48.png',
@@ -32,7 +31,7 @@ export const metadata = {
     siteName: 'RCA Ltd',
     title: 'Reinstatement Cost Assessment UK | RICS‑Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
+      'Many UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment, typically delivered within 48 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
@@ -46,7 +45,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessment UK | RICS‑Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
+      'Many UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, typically delivered within 48 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
   robots: {
@@ -104,7 +103,6 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
-        <NotSureQuiz />
         <ScrollReveal />
       </body>
     </html>

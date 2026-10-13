@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import Breadcrumbs from '../components/Breadcrumbs'
 import FaqSection from '../components/FaqSection'
@@ -92,10 +93,10 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img fetchPriority="high" decoding="async"
+        <Image fill priority sizes="100vw"
           src="/contact-hero.webp"
           alt="Fire-damaged building - the hard way to find out you were underinsured"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">

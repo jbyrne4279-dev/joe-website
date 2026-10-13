@@ -60,12 +60,13 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img
-          fetchPriority="high"
-          decoding="async"
+        <Image
+          fill
+          priority
+          sizes="100vw"
           src="/surveyor-reinstatement-cost-assessment-rics.webp"
           alt="RICS-regulated surveyor preparing a reinstatement cost assessment"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">

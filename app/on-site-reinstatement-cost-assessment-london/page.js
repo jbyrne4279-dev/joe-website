@@ -127,10 +127,10 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img fetchPriority="high" decoding="async"
+        <Image fill priority sizes="100vw"
           src="/on-site-reinstatement-cost-assessment-survey.webp"
           alt="RICS surveyor carrying out an on-site reinstatement cost assessment survey in London"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">

@@ -46,19 +46,29 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center justify-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-7">
           {links.map(({ href, label, children }) => {
             const isActive = pathname === href
             const linkEl = (
               <Link
                 href={href}
                 className={
-                  isActive
-                    ? 'text-emerald-700 border-b-2 border-emerald-700 pb-1 font-semibold tracking-tight'
-                    : 'text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight'
+                  'inline-flex items-center gap-1 text-[15px] transition-colors ' +
+                  (isActive
+                    ? 'text-emerald-700 font-semibold'
+                    : 'text-zinc-600 hover:text-zinc-900 font-medium')
                 }
               >
                 {label}
+                {children && (
+                  <span
+                    className="material-symbols-outlined opacity-70 transition-transform duration-200 group-hover:rotate-180"
+                    style={{ fontSize: '1.1rem' }}
+                    aria-hidden="true"
+                  >
+                    expand_more
+                  </span>
+                )}
               </Link>
             )
 

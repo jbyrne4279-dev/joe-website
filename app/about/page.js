@@ -165,11 +165,11 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="max-w-4xl mx-auto mt-10">
-          <ul className="flex gap-3 overflow-x-auto pb-4 snap-x">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
             {coverageAreas.map((area) => (
-              <li key={area} className="snap-start shrink-0 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-5 py-2.5 shadow-sm">
+              <li key={area} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
                 <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
-                <span className="text-primary font-medium whitespace-nowrap">{area}</span>
+                <span className="text-primary font-medium">{area}</span>
               </li>
             ))}
           </ul>

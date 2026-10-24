@@ -127,7 +127,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Get Report
+                Get Rebuild Cost Report
               </Link>
               <Link href="#pricing" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
                 Our Services
@@ -277,20 +277,46 @@ export default function ServicesPage() {
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS‑regulated standard.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {[
-            { title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
-            { title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
-            { title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
-            { title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.' },
-            { title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
-            { title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
-          ].map(({ title, desc }) => (
-            <div key={title} className="flex items-start gap-3">
-              <span className="material-symbols-outlined text-[#d4af37] shrink-0 mt-0.5" style={{ fontSize: '1.25rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+            {
+              title: 'RICS Regulated',
+              desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.',
+              icon: (<><circle cx="12" cy="8.5" r="5.5" /><path d="m9.4 8.4 1.9 1.9 3.3-3.6" /><path d="m8.5 13.3-1.6 6.7L12 17l5.1 3-1.6-6.7" /></>),
+            },
+            {
+              title: 'Live BCIS Data',
+              desc: 'Figures are based on current Building Cost Information Service indices.',
+              icon: (<><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m6.5 14.5 3.5-4.5 3 2.2 4.5-6" /><path d="M17.5 6.2h2v2" /></>),
+            },
+            {
+              title: 'Broker‑Ready Report',
+              desc: 'Formatted for direct submission to your insurer or broker.',
+              icon: (<><path d="M14 2.5H6.5A1.5 1.5 0 0 0 5 4v16a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 20V7.5z" /><path d="M14 2.5V7.5h5" /><path d="M8.5 13h7M8.5 16.5h4.5" /></>),
+            },
+            {
+              title: 'Professional Indemnity',
+              desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.',
+              icon: (<><path d="M12 2.5 4.5 5.3V11c0 5.2 3.2 8.4 7.5 10.2C16.3 19.4 19.5 16.2 19.5 11V5.3z" /><path d="m8.8 11.6 2.2 2.2 4-4.4" /></>),
+            },
+            {
+              title: 'Dedicated Support',
+              desc: 'A named surveyor handles your assessment from instruction to delivery.',
+              icon: (<><path d="M4 13.5v-1.5a8 8 0 0 1 16 0v1.5" /><path d="M4.5 13h1a1.5 1.5 0 0 1 1.5 1.5v3A1.5 1.5 0 0 1 5.5 19h-1A1.5 1.5 0 0 1 3 17.5v-3A1.5 1.5 0 0 1 4.5 13z" /><path d="M19.5 13h-1a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h1" /><path d="M19 19a3.5 3.5 0 0 1-3.5 2.5H13" /></>),
+            },
+            {
+              title: 'All Property Types',
+              desc: 'Residential, commercial, listed, industrial, and portfolio properties.',
+              icon: (<><path d="M3 21h18" /><path d="M5.5 21V8.5l6-3.5 6 3.5V21" /><path d="M9.5 21v-3.5h4V21" /><path d="M9 10.5h.01M14 10.5h.01M9 13.8h.01M14 13.8h.01" /></>),
+            },
+          ].map(({ title, desc, icon }) => (
+            <div key={title} className="group flex flex-col gap-4 rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.07] hover:border-[#d4af37]/40 hover:-translate-y-1">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#d4af37]/12 ring-1 ring-[#d4af37]/25 transition-colors duration-300 group-hover:bg-[#d4af37]/20">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" aria-hidden="true">{icon}</svg>
+              </span>
               <div>
-                <p className="font-bold text-white text-sm mb-0.5">{title}</p>
-                <p className="text-white/60 text-xs leading-relaxed">{desc}</p>
+                <p className="font-semibold text-white text-[0.95rem] mb-1 tracking-tight">{title}</p>
+                <p className="text-white/55 text-[0.8rem] leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}

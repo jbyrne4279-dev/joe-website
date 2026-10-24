@@ -197,7 +197,7 @@ export default function HomePage() {
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
-                Get Report
+                Get Rebuild Cost Report
                 <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
             </div>
@@ -256,16 +256,13 @@ export default function HomePage() {
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
-                <div className="mt-auto flex flex-col items-center gap-3 pt-2">
+                <div className="mt-auto w-full pt-2">
                   <span
-                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-sm transition-all duration-200 group-hover:scale-110 group-hover:shadow-lg"
+                    className="flex w-full items-center justify-center gap-2 text-white text-base font-semibold px-6 py-4 rounded-2xl shadow-md transition-all duration-200 group-hover:shadow-xl group-hover:brightness-110 group-active:scale-[0.98]"
                     style={{ background: accent }}
                   >
-                    <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
+                    <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>mail</span>
                     Contact
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
-                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '0.8rem' }}>arrow_forward</span>
                   </span>
                 </div>
               </Link>

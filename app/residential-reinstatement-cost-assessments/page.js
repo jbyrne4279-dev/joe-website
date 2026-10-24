@@ -150,7 +150,7 @@ export default function ResidentialReinstatementPage() {
       {/* The basics, prose + image */}
       <section className="scroll-reveal py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-14 lg:gap-20 items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4 text-center lg:text-left">
                 The basics
@@ -169,8 +169,41 @@ export default function ResidentialReinstatementPage() {
                   other associated costs. The two figures can therefore be very different.
                 </p>
               </div>
+
+              <div className="mt-14 pt-10 border-t border-zinc-200 space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
+                <h3 className="text-2xl font-bold text-primary leading-tight">
+                  Why does an accurate assessment matter?
+                </h3>
+                <p>
+                  If your property is underinsured, you could be left seriously out of pocket when you need your
+                  insurance most.
+                </p>
+                <p>
+                  Following a major loss, the cost of rebuilding can run into hundreds of thousands or even
+                  millions of pounds. If your declared reinstatement value is lower than the true cost, your
+                  policy may apply a <strong className="font-semibold text-primary">condition of average</strong>,
+                  potentially reducing the amount your insurer pays towards the claim.
+                </p>
+                <p>
+                  A figure that has simply been carried forward year after year could therefore leave you facing a
+                  significant financial shortfall at the worst possible time.
+                </p>
+                <p>
+                  Construction costs, labour rates, materials and your property itself can all change. An accurate,
+                  professionally prepared RCA helps ensure your buildings insurance reflects the realistic cost of
+                  reinstating your property, rather than relying on an outdated or assumed figure.
+                </p>
+                <p>
+                  Don&rsquo;t wait until a claim exposes the gap. Make sure your property is adequately insured
+                  today.
+                </p>
+                <p>
+                  RICS recommends that reinstatement cost assessments are reviewed regularly, with a full
+                  reassessment generally undertaken at least every three years.
+                </p>
+              </div>
             </div>
-            <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow min-h-[420px] lg:h-full">
+            <div className="gold-outline-shine relative hidden lg:block rounded-3xl overflow-hidden sovereign-shadow h-[460px] lg:sticky lg:top-28">
               <Image
                 src="/reinstatement-cost-assessments-uk.webp"
                 alt="UK home assessed for its rebuild cost"
@@ -179,38 +212,6 @@ export default function ResidentialReinstatementPage() {
                 className="object-cover"
               />
             </div>
-          </div>
-          <div className="max-w-3xl mt-16 space-y-6 text-secondary leading-[1.75] text-[1.05rem]">
-            <h3 className="text-2xl font-bold text-primary leading-tight">
-              Why does an accurate assessment matter?
-            </h3>
-            <p>
-              If your property is underinsured, you could be left seriously out of pocket when you need your
-              insurance most.
-            </p>
-            <p>
-              Following a major loss, the cost of rebuilding can run into hundreds of thousands or even
-              millions of pounds. If your declared reinstatement value is lower than the true cost, your
-              policy may apply a <strong className="font-semibold text-primary">condition of average</strong>,
-              potentially reducing the amount your insurer pays towards the claim.
-            </p>
-            <p>
-              A figure that has simply been carried forward year after year could therefore leave you facing a
-              significant financial shortfall at the worst possible time.
-            </p>
-            <p>
-              Construction costs, labour rates, materials and your property itself can all change. An accurate,
-              professionally prepared RCA helps ensure your buildings insurance reflects the realistic cost of
-              reinstating your property, rather than relying on an outdated or assumed figure.
-            </p>
-            <p>
-              Don&rsquo;t wait until a claim exposes the gap. Make sure your property is adequately insured
-              today.
-            </p>
-            <p>
-              RICS recommends that reinstatement cost assessments are reviewed regularly, with a full
-              reassessment generally undertaken at least every three years.
-            </p>
           </div>
         </div>
       </section>

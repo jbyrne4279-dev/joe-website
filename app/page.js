@@ -201,7 +201,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 pt-6 mt-5 border-t border-white/10">
-              <span className="inline-flex items-center gap-2 text-white/85 text-sm font-medium"><span className="material-symbols-outlined text-[#d4af37]" style={{ fontSize: '1.2rem' }}>workspace_premium</span>50+ years’ experience</span>
+              <span className="inline-flex items-center gap-2 text-white/85 text-sm font-medium"><span className="material-symbols-outlined text-[#d4af37]" style={{ fontSize: '1.2rem' }}>workspace_premium</span>50+ years experience</span>
               <span className="inline-flex items-center gap-2 text-white/85 text-sm font-medium"><span className="material-symbols-outlined text-[#d4af37]" style={{ fontSize: '1.2rem' }}>verified</span>RICS Regulated</span>
             </div>
           </div>

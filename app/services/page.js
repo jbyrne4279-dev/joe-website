@@ -277,7 +277,7 @@ export default function ServicesPage() {
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS‑regulated standard.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {[
             {
               title: 'RICS Regulated',
@@ -310,13 +310,13 @@ export default function ServicesPage() {
               icon: (<><path d="M3 21h18" /><path d="M5.5 21V8.5l6-3.5 6 3.5V21" /><path d="M9.5 21v-3.5h4V21" /><path d="M9 10.5h.01M14 10.5h.01M9 13.8h.01M14 13.8h.01" /></>),
             },
           ].map(({ title, desc, icon }) => (
-            <div key={title} className="group flex flex-col gap-4 rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.07] hover:border-[#d4af37]/40 hover:-translate-y-1">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#d4af37]/12 ring-1 ring-[#d4af37]/25 transition-colors duration-300 group-hover:bg-[#d4af37]/20">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6" aria-hidden="true">{icon}</svg>
+            <div key={title} className="gold-outline-shine flex gap-4 sm:gap-5 items-center bg-white rounded-2xl p-5 sm:p-6">
+              <span className="flex w-16 h-16 sm:w-20 sm:h-20 items-center justify-center rounded-2xl bg-[#d4af37]/10 shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#b8860b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 sm:h-9 sm:w-9" aria-hidden="true">{icon}</svg>
               </span>
               <div>
-                <p className="font-semibold text-white text-[0.95rem] mb-1 tracking-tight">{title}</p>
-                <p className="text-white/55 text-[0.8rem] leading-relaxed">{desc}</p>
+                <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                <p className="text-sm text-secondary leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}

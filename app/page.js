@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
-import LocationCarousel from './components/LocationCarousel'
 import FaqSection from './components/FaqSection'
 import GrowObserver from './components/GrowObserver'
 
@@ -481,8 +480,15 @@ export default function HomePage() {
             From London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland. Wherever your property is, we deliver an accurate, RICS‑regulated rebuild figure you can rely on.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" dark />
+        <div className="max-w-4xl mx-auto">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {coverageAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-emerald-300 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

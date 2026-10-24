@@ -4,7 +4,6 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
-import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: 'Building Reinstatement Cost | RICS Assessment UK',
@@ -288,8 +287,15 @@ export default function BuildingReinstatementCostPage() {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" dark />
+        <div className="max-w-4xl mx-auto mt-10">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {coverageAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-emerald-200 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

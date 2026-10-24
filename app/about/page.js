@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
-import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: 'About Us | RICS-Regulated RCA Specialists',
@@ -165,8 +164,15 @@ export default function AboutPage() {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" />
+        <div className="max-w-4xl mx-auto mt-10">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {coverageAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-primary font-medium">{area}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

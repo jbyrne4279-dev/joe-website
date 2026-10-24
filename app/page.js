@@ -464,11 +464,11 @@ export default function HomePage() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
-          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+          <ul className="flex gap-3 overflow-x-auto pb-4 snap-x">
             {coverageAreas.map((area) => (
-              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+              <li key={area} className="snap-start shrink-0 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5">
                 <span className="material-symbols-outlined text-emerald-300 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
-                <span className="text-white font-medium">{area}</span>
+                <span className="text-white font-medium whitespace-nowrap">{area}</span>
               </li>
             ))}
           </ul>

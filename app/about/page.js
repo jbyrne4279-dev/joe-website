@@ -172,6 +172,13 @@ export default function AboutPage() {
                 <span className="text-primary font-medium">{area}</span>
               </li>
             ))}
+            <li className="py-4 border-t border-zinc-200">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#1A6B4A] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </section>

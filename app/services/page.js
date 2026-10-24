@@ -311,8 +311,8 @@ export default function ServicesPage() {
             },
           ].map(({ title, desc, icon }) => (
             <div key={title} className="gold-outline-shine flex gap-4 sm:gap-5 items-center bg-white rounded-2xl p-5 sm:p-6">
-              <span className="flex w-16 h-16 sm:w-20 sm:h-20 items-center justify-center rounded-2xl bg-[#d4af37]/10 shrink-0">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#b8860b" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 sm:h-9 sm:w-9" aria-hidden="true">{icon}</svg>
+              <span className="flex w-16 h-16 sm:w-20 sm:h-20 items-center justify-center rounded-2xl bg-zinc-100 shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 sm:h-9 sm:w-9 text-primary" aria-hidden="true">{icon}</svg>
               </span>
               <div>
                 <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>

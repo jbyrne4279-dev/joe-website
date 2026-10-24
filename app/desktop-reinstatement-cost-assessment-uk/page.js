@@ -52,6 +52,14 @@ const faqItems = [
     question: 'Where in the UK do you cover?',
     answer: 'The whole of the UK. Because a desktop assessment needs no physical site visit, we assess properties in England, Scotland, Wales and Northern Ireland with the same speed and accuracy, from London and the South East to the Midlands, the North and beyond.',
   },
+  {
+    question: 'How much does a desktop reinstatement cost assessment cost?',
+    answer: 'The fee depends on the property’s size and type, but because a desktop assessment needs no site visit it is the most cost‑effective way to obtain an accurate RICS rebuild figure. Standard houses, flats and commercial units are typically the lowest cost. Contact us with the property address for a fixed quote before you instruct.',
+  },
+  {
+    question: 'What information do you need for a desktop reinstatement cost assessment?',
+    answer: 'To produce a desktop reinstatement cost assessment we usually need the full property address, the approximate floor area, the construction type and age, the number of storeys, and details of any extensions, outbuildings or non‑standard features. We source the remaining data from property records and live BCIS indices, so no access to the building is required.',
+  },
 ]
 
 const serviceJsonLd = {

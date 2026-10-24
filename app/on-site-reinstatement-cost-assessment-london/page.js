@@ -52,6 +52,14 @@ const faqItems = [
     question: 'Do you survey listed and period buildings in London?',
     answer: 'Yes. Our surveyors are experienced in listed building requirements, specialist materials, period detailing, curtilage structures and complex M&E, which are common across central and inner London.',
   },
+  {
+    question: 'Which London areas do you cover for on‑site reinstatement cost assessments?',
+    answer: 'We carry out on‑site surveys across every London borough, from the City, Westminster, Kensington & Chelsea and Camden to Canary Wharf, Southwark, Wandsworth, Hammersmith & Fulham and Greater London. Our surveyors also attend complex and high‑value properties in the major cities and towns within reach of London, including Oxford, Cambridge, Birmingham, Bristol and Manchester.',
+  },
+  {
+    question: 'How much does an on‑site reinstatement cost assessment cost in London?',
+    answer: 'The fee reflects the size, complexity and access requirements of the building, so listed, period and high‑value London properties are priced individually. An on‑site survey costs more than a desktop assessment because it includes a full physical inspection and detailed measurement. Contact us with the property details for a tailored quote.',
+  },
 ]
 
 const serviceJsonLd = {

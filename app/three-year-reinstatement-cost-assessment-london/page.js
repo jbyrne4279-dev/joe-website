@@ -52,6 +52,14 @@ const faqItems = [
     question: 'Is the plan accepted by insurers and brokers?',
     answer: 'Yes. Both the inception report and each annual update are RICS‑regulated, BCIS‑indexed and broker‑ready, accepted by all UK insurers as evidence of an accurate, maintained sum insured.',
   },
+  {
+    question: 'How much does the 3‑Year plan cost compared with a new assessment each year?',
+    answer: 'The 3‑Year plan bundles the inception reinstatement cost assessment and three BCIS‑indexed annual updates into a single instruction, which works out more cost‑effective than commissioning separate assessments each year. Pricing depends on the property type, size and number of buildings — contact us for a tailored quote for your London property or portfolio.',
+  },
+  {
+    question: 'Can the 3‑Year plan cover a property portfolio across London?',
+    answer: 'Yes. The 3‑Year plan is well suited to landlords, freeholders and managing agents with multiple buildings. We can assess and maintain an entire London portfolio under one plan, with a consolidated schedule and individual rebuild figures for each property, keeping every sum insured compliant and up to date.',
+  },
 ]
 
 const serviceJsonLd = {

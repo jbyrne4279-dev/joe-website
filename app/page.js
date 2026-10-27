@@ -62,9 +62,9 @@ const organizationJsonLd = {
   sameAs: [
     'https://find-and-update.company-information.service.gov.uk/company/17101918',
     'https://www.linkedin.com/company/reinstatement-cost-assessment-limited/',
-    'https://share.google/uN28z51KKm39uECuE',
+    'https://www.google.com/maps?kgmid=/g/11y3kp4_wk',
   ],
-  hasMap: 'https://share.google/uN28z51KKm39uECuE',
+  hasMap: 'https://www.google.com/maps?kgmid=/g/11y3kp4_wk',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '17 Hanover Square',

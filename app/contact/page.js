@@ -90,7 +90,7 @@ export default function ContactPage() {
       <Breadcrumbs showSchema={false} items={[{ name: 'Contact' }]} accent="#1A6B4A" />
 
       <h1 className="sr-only">Contact Reinstatement Cost Assessment Ltd</h1>
-      <div>
+      <div className="pt-6">
         <ContactSection
           heading={
             <>

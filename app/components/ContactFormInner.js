@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
 
 const SERVICE_MAP = {
@@ -115,6 +116,15 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
           >
             Contact
           </button>
+          <div className="flex justify-center mt-6">
+            <Image
+              src="/rics-logo.webp"
+              alt="Regulated by RICS"
+              width={900}
+              height={600}
+              className="h-12 w-auto object-contain"
+            />
+          </div>
         </div>
       </form>
     </div>

@@ -1,6 +1,4 @@
-﻿import Link from 'next/link'
-import Image from 'next/image'
-import ContactSection from '../components/ContactSection'
+﻿import ContactSection from '../components/ContactSection'
 import Breadcrumbs from '../components/Breadcrumbs'
 import FaqSection from '../components/FaqSection'
 
@@ -91,56 +89,12 @@ export default function ContactPage() {
     <main>
       <Breadcrumbs showSchema={false} items={[{ name: 'Contact' }]} accent="#1A6B4A" />
 
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <Image fill priority sizes="100vw"
-          src="/contact-hero.webp"
-          alt="Fire-damaged building - the hard way to find out you were underinsured"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
-        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold leading-[1.15] tracking-tight text-primary mb-6">
-              Don&rsquo;t find out<br />you&rsquo;re <span className="text-shine-red">underinsured</span><br />the hard way.
-            </h1>
-            <p className="text-sm text-secondary leading-relaxed mb-8">
-              Many UK properties are insured for the wrong amount. A RICS reinstatement cost assessment typically takes less than <strong className="font-bold text-primary">48 hours</strong> and could protect you from a significantly reduced payout on a future claim.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
-              <Link href="#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Get Rebuild Cost Report
-              </Link>
-              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
-                Our Services
-              </Link>
-            </div>
-            <div className="flex flex-col items-center gap-4">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
-                <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                London &amp; UK
-              </span>
-              <a
-                href="https://www.linkedin.com/company/reinstatement-cost-assessment-limited/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Reinstatement Cost Assessment Ltd on LinkedIn"
-                className="inline-flex items-center gap-2 text-xs font-semibold text-secondary hover:text-[#1A6B4A] transition-colors"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0" aria-hidden="true">
-                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
-                </svg>
-                <span>Connect with us on LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className="scroll-reveal">
+      <h1 className="sr-only">Contact Reinstatement Cost Assessment Ltd</h1>
+      <div>
         <ContactSection
           heading={
             <>
-              Request Your UK <span className="text-shine">Rebuild Cost Assessment.</span>
+              Get Your RICS <span className="text-shine">Rebuild Cost Assessment.</span>
             </>
           }
         />

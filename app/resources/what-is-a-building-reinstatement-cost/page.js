@@ -76,12 +76,13 @@ export default function WhatIsBuildingReinstatementCostPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img
-          fetchPriority="high"
-          decoding="async"
+        <Image
+          fill
+          priority
+          sizes="100vw"
           src="/rebuild-cost-assessment-london.webp"
           alt="UK building being assessed for its reinstatement cost"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -202,23 +203,23 @@ export default function WhatIsBuildingReinstatementCostPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Three ways to establish your figure.</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-uk" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-              <span className="material-symbols-outlined text-white mb-4" style={{ fontSize: '1.6rem' }}>desktop_windows</span>
-              <h3 className="text-lg font-semibold text-white mb-2">Desktop Assessment</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A fast, remote RICS figure for standard houses, flats and commercial units anywhere in the UK.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote RICS figure for standard houses, flats and commercial units anywhere in the UK.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
-            <Link href="/on-site-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">On‑Site Survey</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full site visit for listed, complex or high‑value buildings where detail matters.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/on-site-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">On‑Site Survey</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full site visit for listed, complex or high‑value buildings where detail matters.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
-            <Link href="/three-year-reinstatement-cost-assessment-london" className="grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates to keep the figure current.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/three-year-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">3‑Year Protection Plan</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates to keep the figure current.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>
         </div>

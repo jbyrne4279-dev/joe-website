@@ -88,17 +88,17 @@ const challenges = [
   {
     img: '/rca-index-linking-drift.webp',
     title: 'High, fast-moving build costs',
-    desc: <>London rebuild costs are among the highest in the country, driven by labour rates, restricted access, and complex logistics: BCIS location factors put building costs in central London around <strong className="font-semibold text-white">20–30% above the UK average</strong> (<a href="https://www.bcis.co.uk/insight/bcis-basics-using-location-factors-in-construction/" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">BCIS</a>). They also move quickly, so a figure set a few years ago can already be well behind.</>,
+    desc: <>London rebuild costs are among the highest in the country, driven by labour rates, restricted access, and complex logistics: BCIS location factors put building costs in central London around <strong className="font-semibold text-primary">20–30% above the UK average</strong> (<a href="https://www.bcis.co.uk/insight/bcis-basics-using-location-factors-in-construction/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline underline-offset-2 hover:text-emerald-900">BCIS</a>). They also move quickly, so a figure set a few years ago can already be well behind.</>,
   },
   {
     img: '/rca-calculators-miss-detail.webp',
     title: 'Period and non‑standard buildings',
-    desc: <>The capital is full of Victorian terraces, mansion-block flats, and listed conversions: <strong className="font-semibold text-white">more than a quarter of London’s homes were built before 1919</strong> (<a href="https://www.london.gov.uk/sites/default/files/2024-11/London%27s%20Housing%20Stock%20-%20Research%20Unit%20-%20November%202024.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">London Assembly</a>), rising to around two‑thirds in Kensington and Chelsea. Their materials and construction rarely fit a standard template, and generic calculators consistently under‑count them.</>,
+    desc: <>The capital is full of Victorian terraces, mansion-block flats, and listed conversions: <strong className="font-semibold text-primary">more than a quarter of London’s homes were built before 1919</strong> (<a href="https://www.london.gov.uk/sites/default/files/2024-11/London%27s%20Housing%20Stock%20-%20Research%20Unit%20-%20November%202024.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline underline-offset-2 hover:text-emerald-900">London Assembly</a>), rising to around two‑thirds in Kensington and Chelsea. Their materials and construction rarely fit a standard template, and generic calculators consistently under‑count them.</>,
   },
   {
     img: '/rca-verified-rics-figure.webp',
     title: 'High-value cover, close scrutiny',
-    desc: <>With high property values, London insurers look closely at the sum insured, and with an estimated <strong className="font-semibold text-white">76% of UK buildings underinsured</strong> (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-300 underline underline-offset-2 hover:text-emerald-200">Insurance Age</a>) that scrutiny is warranted. A verifiable, RICS‑regulated figure keeps renewals smooth and protects owners and leaseholders from underinsurance.</>,
+    desc: <>With high property values, London insurers look closely at the sum insured, and with an estimated <strong className="font-semibold text-primary">76% of UK buildings underinsured</strong> (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Insurance Age</a>) that scrutiny is warranted. A verifiable, RICS‑regulated figure keeps renewals smooth and protects owners and leaseholders from underinsurance.</>,
   },
 ]
 
@@ -270,6 +270,13 @@ export default function LondonReinstatementPage() {
                 <span className="text-primary font-medium">{area}</span>
               </li>
             ))}
+            <li className="py-4 border-t border-zinc-200">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#1A6B4A] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
           </ul>
         </div>
       </section>

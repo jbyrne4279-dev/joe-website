@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
-import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: 'About Us | RICS-Regulated RCA Specialists',
@@ -60,12 +59,13 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img
-          fetchPriority="high"
-          decoding="async"
+        <Image
+          fill
+          priority
+          sizes="100vw"
           src="/surveyor-reinstatement-cost-assessment-rics.webp"
           alt="RICS-regulated surveyor preparing a reinstatement cost assessment"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -164,8 +164,22 @@ export default function AboutPage() {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" />
+        <div className="max-w-4xl mx-auto mt-10">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {coverageAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-zinc-200 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-[#1A6B4A] shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-primary font-medium">{area}</span>
+              </li>
+            ))}
+            <li className="py-4 border-t border-zinc-200">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#1A6B4A] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 

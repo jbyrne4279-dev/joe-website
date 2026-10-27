@@ -4,7 +4,6 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
-import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: 'On‑Site Reinstatement Cost Assessment London | RICS Surveyor',
@@ -52,6 +51,14 @@ const faqItems = [
   {
     question: 'Do you survey listed and period buildings in London?',
     answer: 'Yes. Our surveyors are experienced in listed building requirements, specialist materials, period detailing, curtilage structures and complex M&E, which are common across central and inner London.',
+  },
+  {
+    question: 'Which London areas do you cover for on‑site reinstatement cost assessments?',
+    answer: 'We carry out on‑site surveys across every London borough, from the City, Westminster, Kensington & Chelsea and Camden to Canary Wharf, Southwark, Wandsworth, Hammersmith & Fulham and Greater London. Our surveyors also attend complex and high‑value properties in the major cities and towns within reach of London, including Oxford, Cambridge, Birmingham, Bristol and Manchester.',
+  },
+  {
+    question: 'How much does an on‑site reinstatement cost assessment cost in London?',
+    answer: 'The fee reflects the size, complexity and access requirements of the building, so listed, period and high‑value London properties are priced individually. An on‑site survey costs more than a desktop assessment because it includes a full physical inspection and detailed measurement. Contact us with the property details for a tailored quote.',
   },
 ]
 
@@ -127,10 +134,10 @@ export default function OnSiteAssessmentLondonPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img fetchPriority="high" decoding="async"
+        <Image fill priority sizes="100vw"
           src="/on-site-reinstatement-cost-assessment-survey.webp"
           alt="RICS surveyor carrying out an on-site reinstatement cost assessment survey in London"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -303,9 +310,30 @@ export default function OnSiteAssessmentLondonPage() {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10 space-y-4">
-          <LocationCarousel locations={londonAreas} accent="#1A6B4A" dark />
-          <LocationCarousel locations={commutableCities} accent="#1A6B4A" dark />
+        <div className="max-w-4xl mx-auto mt-10 space-y-10">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {londonAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-emerald-200 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+          </ul>
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {commutableCities.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-emerald-200 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+            <li className="py-4 border-t border-white/15">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#d4af37] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -317,23 +345,23 @@ export default function OnSiteAssessmentLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-uk" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">Desktop Assessment</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
-            <Link href="/three-year-reinstatement-cost-assessment-london" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #a16207 0%, #d4a017 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">3‑Year Protection Plan</h3>
-              <p className="text-white/80 text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/three-year-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">3‑Year Protection Plan</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>
         </div>
       </section>
 
-      <ContactSection />
+      <ContactSection heading="Get Your On‑Site Rebuild Cost Assessment Today." />
 
       <FaqSection
         description="Common questions about on-site reinstatement cost assessments for London property."

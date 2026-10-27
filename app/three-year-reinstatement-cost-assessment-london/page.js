@@ -4,7 +4,6 @@ import Breadcrumbs from '../components/Breadcrumbs'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import StepIcon from '../components/StepIcon'
-import LocationCarousel from '../components/LocationCarousel'
 
 export const metadata = {
   title: '3‑Year Reinstatement Cost Assessment London | RICS Plan',
@@ -52,6 +51,14 @@ const faqItems = [
   {
     question: 'Is the plan accepted by insurers and brokers?',
     answer: 'Yes. Both the inception report and each annual update are RICS‑regulated, BCIS‑indexed and broker‑ready, accepted by all UK insurers as evidence of an accurate, maintained sum insured.',
+  },
+  {
+    question: 'How much does the 3‑Year plan cost compared with a new assessment each year?',
+    answer: 'The 3‑Year plan bundles the inception reinstatement cost assessment and three BCIS‑indexed annual updates into a single instruction, which works out more cost‑effective than commissioning separate assessments each year. Pricing depends on the property type, size and number of buildings — contact us for a tailored quote for your London property or portfolio.',
+  },
+  {
+    question: 'Can the 3‑Year plan cover a property portfolio across London?',
+    answer: 'Yes. The 3‑Year plan is well suited to landlords, freeholders and managing agents with multiple buildings. We can assess and maintain an entire London portfolio under one plan, with a consolidated schedule and individual rebuild figures for each property, keeping every sum insured compliant and up to date.',
   },
 ]
 
@@ -121,10 +128,10 @@ export default function ThreeYearAssessmentLondonPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <img fetchPriority="high" decoding="async"
+        <Image fill priority sizes="100vw"
           src="/three-year-reinstatement-cost-assessment.webp"
           alt="Architectural model, plans and calculator for a 3-year reinstatement cost assessment plan in London"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -285,8 +292,22 @@ export default function ThreeYearAssessmentLondonPage() {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-10">
-          <LocationCarousel locations={londonAreas} accent="#a16207" dark />
+        <div className="max-w-4xl mx-auto mt-10">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {londonAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-amber-200 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+            <li className="py-4 border-t border-white/15">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#d4af37] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -298,17 +319,17 @@ export default function ThreeYearAssessmentLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">Explore our other assessments.</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-uk" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">Desktop Assessment</h3>
-              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote rebuild figure for standard London houses, flats and units.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
-            <Link href="/on-site-reinstatement-cost-assessment-london" className="card-pulse grow-card rounded-2xl p-8 flex flex-col hover:shadow-lg transition-all duration-300 text-white" style={{ background: 'linear-gradient(135deg, #0b5d3b 0%, #1A6B4A 100%)' }}>
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-4 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-white mb-2">On‑Site RICS Survey</h3>
-              <p className="text-white/85 text-[0.95rem] leading-relaxed flex-1">For listed, complex or high‑value London buildings where full detail matters.</p>
-              <span className="inline-flex items-center gap-1 text-white text-sm font-semibold mt-4">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            <Link href="/on-site-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">On‑Site RICS Survey</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">For listed, complex or high‑value London buildings where full detail matters.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
             </Link>
           </div>
         </div>

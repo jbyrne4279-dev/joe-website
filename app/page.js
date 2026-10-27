@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
-import LocationCarousel from './components/LocationCarousel'
 import FaqSection from './components/FaqSection'
 import GrowObserver from './components/GrowObserver'
 
@@ -197,32 +196,14 @@ export default function HomePage() {
             <p className="text-white/75 text-lg leading-relaxed max-w-xl mx-auto">We are a RICS-regulated practice based in London’s West End, specialising exclusively in Reinstatement Cost Assessments.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
               <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center inline-flex items-center justify-center gap-2">
-                Get Report
+                Get Rebuild Cost Report
                 <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>ads_click</span>
               </Link>
             </div>
-          </div>
-          <div className="grid grid-cols-3 gap-3 sm:gap-6">
-            {[
-              { img: '/50-years-experience-reinstatement-cost-assessments-london.webp', title: '50+ Years Experience', desc: 'Decades of navigating evolving building codes, material costs, and insurance market shifts.' },
-              { img: '/accurate-reinstatement-cost-assessment-london.webp', title: 'Technical Precision', desc: 'Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.' },
-              { img: '/reinstatement-cost-assessment-insurance-protection-london.webp', title: 'Liability Protection', desc: 'Our reports are legally robust, providing a definitive shield against professional indemnity disputes.' },
-            ].map(({ img, title, desc }, i) => (
-              <div key={title} className="service-pulse-card select-none [-webkit-tap-highlight-color:transparent] cursor-default flex flex-col items-center text-center gap-2 sm:gap-5 p-3 sm:p-8 rounded-md sm:rounded-2xl bg-white shadow-sm sm:shadow-md sm:hover:shadow-lg transition-all duration-300"
-                style={{ animation: `card-pulse-${['left','middle','right'][i]} 9s ease-in-out infinite` }}>
-                {title === '50+ Years Experience' ? (
-                  <div className="logo-shine w-10 h-10 sm:w-24 sm:h-24 rounded-md sm:rounded-xl pointer-events-none">
-                    <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
-                  </div>
-                ) : (
-                  <Image src={img} alt={title} width={96} height={96} draggable={false} className="w-10 h-10 sm:w-24 sm:h-24 object-contain select-none pointer-events-none" />
-                )}
-                <div className="space-y-0 sm:space-y-2">
-                  <p className="font-bold text-[0.65rem] leading-tight sm:text-base sm:leading-normal text-primary">{title}</p>
-                  <p className="hidden sm:block text-sm text-secondary leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 pt-6 mt-5 border-t border-white/10">
+              <span className="inline-flex items-center gap-2 text-white/85 text-sm font-medium"><span className="material-symbols-outlined text-[#d4af37]" style={{ fontSize: '1.2rem' }}>workspace_premium</span>50+ years experience</span>
+              <span className="inline-flex items-center gap-2 text-white/85 text-sm font-medium"><span className="material-symbols-outlined text-[#d4af37]" style={{ fontSize: '1.2rem' }}>verified</span>RICS Regulated</span>
+            </div>
           </div>
         </div>
       </section>
@@ -237,9 +218,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { img: '/desktop-reinstatement-cost-assessment-london.webp', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'Best for standard residential or commercial properties needing a fast, accurate figure. No unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
-              { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'Ideal for landlords and asset managers who need ongoing RICS compliance without repeat instruction costs. Includes annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
-              { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'Essential for listed buildings, complex architecture, unusual construction, or high‑value assets where physical inspection is required for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
+              { img: '/desktop-reinstatement-cost-assessment-london.webp', name: 'Desktop Assessment', tag: 'Fast & Efficient', desc: 'A fast, accurate desktop rebuild cost assessment for standard residential or commercial properties — no unusual features, no listed status, no complex architecture.', accent: '#1e40af', tintRgb: '37,99,235', href: '/desktop-reinstatement-cost-assessment-uk', service: 'desktop' },
+              { img: '/ongoing-reinstatement-cost-protection-london.webp', name: '3-Year Protection', tag: 'Best Value', desc: 'An ongoing rebuild cost assessment for landlords and asset managers who need continuous RICS compliance without repeat instruction costs, including annual indexation updates.', accent: '#a16207', tintRgb: '212,160,23', href: '/three-year-reinstatement-cost-assessment-london', service: '3year' },
+              { img: '/onsite-reinstatement-cost-assessment-london.webp', name: 'On-Site Survey', tag: 'Complex Properties', desc: 'A detailed on‑site rebuild cost assessment for listed buildings, complex architecture, unusual construction or high‑value assets where physical inspection is essential for accuracy.', accent: '#1A6B4A', tintRgb: '26,107,74', href: '/on-site-reinstatement-cost-assessment-london', service: 'onsite' },
             ].map(({ img, name, tag, desc, accent, tintRgb, href, service }, i) => (
               <Link
                 key={name}
@@ -256,16 +237,13 @@ export default function HomePage() {
                   <p className="font-bold text-primary text-base mb-2">{name}</p>
                   <p className="text-secondary text-sm leading-relaxed">{desc}</p>
                 </div>
-                <div className="mt-auto flex flex-col items-center gap-3 pt-2">
+                <div className="mt-auto w-full pt-2">
                   <span
-                    className="inline-flex items-center justify-center gap-1.5 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-sm transition-all duration-200 group-hover:scale-110 group-hover:shadow-lg"
+                    className="flex w-full items-center justify-center gap-2 text-white text-base font-semibold px-6 py-4 rounded-2xl shadow-md transition-all duration-200 group-hover:shadow-xl group-hover:brightness-110 group-active:scale-[0.98]"
                     style={{ background: accent }}
                   >
-                    <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>mail</span>
+                    <span className="material-symbols-outlined" style={{ fontSize: '1.2rem' }}>mail</span>
                     Contact
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-[0.7rem] font-semibold group-hover:gap-2 transition-all" style={{ color: accent }}>
-                    Learn more <span className="material-symbols-outlined" style={{ fontSize: '0.8rem' }}>arrow_forward</span>
                   </span>
                 </div>
               </Link>
@@ -484,8 +462,22 @@ export default function HomePage() {
             From London and the South East to the Midlands, the North, Scotland, Wales and Northern Ireland. Wherever your property is, we deliver an accurate, RICS‑regulated rebuild figure you can rely on.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto">
-          <LocationCarousel locations={coverageAreas} accent="#1A6B4A" dark />
+        <div className="max-w-4xl mx-auto">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+            {coverageAreas.map((area) => (
+              <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
+                <span className="material-symbols-outlined text-emerald-300 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
+                <span className="text-white font-medium">{area}</span>
+              </li>
+            ))}
+            <li className="py-4 border-t border-white/15">
+              <Link href="/contact#contact-form" className="inline-flex items-center gap-2 text-[#d4af37] font-semibold hover:gap-3 transition-all">
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.15rem' }}>help</span>
+                Not sure we cover your area? Get in touch
+                <span className="material-symbols-outlined shrink-0" style={{ fontSize: '1.1rem' }}>arrow_forward</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -691,6 +683,7 @@ export default function HomePage() {
       </section>
 
       <FaqSection
+        light
         description="Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets."
         items={homeFaqItems}
       />

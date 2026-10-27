@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import Breadcrumbs from '../components/Breadcrumbs'
 import FaqSection from '../components/FaqSection'
@@ -92,10 +93,10 @@ export default function ContactPage() {
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img fetchPriority="high" decoding="async"
+        <Image fill priority sizes="100vw"
           src="/contact-hero.webp"
           alt="Fire-damaged building - the hard way to find out you were underinsured"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
         <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
@@ -108,7 +109,7 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
               <Link href="#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Get Report
+                Get Rebuild Cost Report
               </Link>
               <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
                 Our Services

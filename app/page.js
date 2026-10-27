@@ -427,16 +427,16 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {[
-            { icon: 'gavel', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
-            { icon: 'analytics', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
-            { icon: 'description', title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
-            { icon: 'shield', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.' },
-            { icon: 'support_agent', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
-            { icon: 'apartment', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
-          ].map(({ icon, title, desc }) => (
-            <div key={icon} className="grow-card bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
-              <div className="btn-shine shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
-                <span className="material-symbols-outlined text-white" style={{ fontSize: '1.1rem' }}>{icon}</span>
+            { img: '/rca-liability-claim.webp', title: 'RICS Regulated', desc: 'Every report meets the Royal Institution of Chartered Surveyors standards.' },
+            { img: '/rca-live-bcis-data.svg', title: 'Live BCIS Data', desc: 'Figures are based on current Building Cost Information Service indices.' },
+            { img: '/rca-verified-rics-figure.webp', title: 'Broker‑Ready Report', desc: 'Formatted for direct submission to your insurer or broker.' },
+            { img: '/rca-professional-indemnity.svg', title: 'Professional Indemnity', desc: 'All assessments are backed by full professional indemnity insurance, protecting your property and your position in the event of an insurance claim.' },
+            { img: '/rca-dedicated-support.svg', title: 'Dedicated Support', desc: 'A named surveyor handles your assessment from instruction to delivery.' },
+            { img: '/rca-all-property-types.svg', title: 'All Property Types', desc: 'Residential, commercial, listed, industrial, and portfolio properties.' },
+          ].map(({ img, title, desc }) => (
+            <div key={title} className="grow-card bg-white rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 flex items-start gap-4">
+              <div className="relative shrink-0 w-16 h-16 rounded-xl overflow-hidden">
+                <Image src={img} alt="" fill sizes="64px" className="object-cover" />
               </div>
               <div>
                 <p className="font-bold text-primary text-sm mb-1">{title}</p>

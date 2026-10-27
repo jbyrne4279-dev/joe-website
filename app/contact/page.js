@@ -94,7 +94,7 @@ export default function ContactPage() {
         <ContactSection
           heading={
             <>
-              Get Your RICS <span className="text-shine">Rebuild Cost Assessment.</span>
+              Get Your RICS Rebuild Cost Assessment.
             </>
           }
         />

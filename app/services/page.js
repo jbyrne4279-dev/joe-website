@@ -513,7 +513,7 @@ export default function ServicesPage() {
       <ContactSection
         heading={
           <>
-            Start Your RICS‑Certified <span className="text-shine">Rebuild Cost Assessment</span> Today.
+            Start Your RICS‑Certified Rebuild Cost Assessment Today.
           </>
         }
       />

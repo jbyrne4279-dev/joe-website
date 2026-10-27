@@ -70,26 +70,7 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
           />
         </div>
 
-        <div className="flex flex-col gap-2">
-          <label htmlFor="contact-service" className="text-[10px] font-bold text-[color:var(--accent)] uppercase tracking-widest">Service Needed <span className="text-red-400">*</span></label>
-          <div className="relative">
-            <select
-              id="contact-service"
-              name="service"
-              defaultValue={preselected}
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[color:var(--accent)] outline-none text-primary text-base appearance-none cursor-pointer py-2 transition-all"
-            >
-              <option value="" disabled>Select a service</option>
-              <option>Desktop Reinstatement Cost Assessment</option>
-              <option>3‑Year Reinstatement Cost Assessment</option>
-              <option>On‑Site Survey</option>
-              <option>Portfolio Assessment</option>
-              <option>Not Sure</option>
-            </select>
-            <span className="material-symbols-outlined text-[color:var(--accent)] absolute right-0 top-1.5 pointer-events-none" style={{ fontSize: '1rem' }}>expand_more</span>
-          </div>
-        </div>
+        {preselected && <input type="hidden" name="service" value={preselected} />}
 
         <div className="flex flex-col gap-2">
           <label htmlFor="contact-notes" className="text-[10px] font-bold text-[color:var(--accent)] uppercase tracking-widest">Notes <span className="text-red-400">*</span></label>
@@ -104,10 +85,6 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
         </div>
 
         <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
-        <p className="text-[10px] text-secondary/50 -mt-6">
-          By submitting this form, you agree that Reinstatement Cost Assessment Ltd may use the information provided to respond to your enquiry and provide the requested service. See our{' '}
-          <a href="/privacy-policy" className="underline hover:text-secondary">Privacy Policy</a>.
-        </p>
 
         <div>
           <button
@@ -116,6 +93,10 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
           >
             Contact
           </button>
+          <p className="text-[10px] text-secondary/50 text-center mt-4">
+            By submitting this form, you agree that Reinstatement Cost Assessment Ltd may use the information provided to respond to your enquiry and provide the requested service. See our{' '}
+            <a href="/privacy-policy" className="underline hover:text-secondary">Privacy Policy</a>.
+          </p>
           <div className="flex justify-center mt-6">
             <Image
               src="/rics-logo.webp"

@@ -394,7 +394,7 @@ export default function ResourcesPage() {
       <ContactSection
         heading={
           <>
-            Get an Accurate <span className="text-shine">Reinstatement Cost Assessment</span> for Your UK Property.
+            Get an Accurate Reinstatement Cost Assessment for Your UK Property.
           </>
         }
       />

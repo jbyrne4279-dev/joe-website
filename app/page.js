@@ -448,7 +448,7 @@ export default function HomePage() {
       <ContactSection
         heading={
           <>
-            Get Your RICS‑Regulated<br /><span className="text-shine">Reinstatement Cost Assessment</span><br />Today.
+            Get Your RICS‑Regulated<br />Reinstatement Cost Assessment<br />Today.
           </>
         }
       />

@@ -303,12 +303,12 @@ export default function HomePage() {
 
               {/* Desktop Assessment */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
-                <div className="mb-8">
+                <div className="mb-5">
                   <Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1e40af]">Desktop</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm mb-4">Efficient, data‑driven remote valuation for standard properties.</p>
+                  <p className="text-secondary text-sm">Efficient, data‑driven remote valuation for standard properties.</p>
                 </div>
-                <ul className="space-y-2 mb-10 flex-grow">
+                <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-blue shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>bolt</span>
@@ -339,12 +339,12 @@ export default function HomePage() {
 
               {/* On-Site Survey */}
               <div className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
-                <div className="mb-8">
+                <div className="mb-5">
                   <Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#1A6B4A]">On‑Site</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm mb-4">Full physical survey for listed, complex or high‑value buildings.</p>
+                  <p className="text-secondary text-sm">Full physical survey for listed, complex or high‑value buildings.</p>
                 </div>
-                <ul className="space-y-2 mb-10 flex-grow">
+                <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>search</span>
@@ -378,12 +378,12 @@ export default function HomePage() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <span className="btn-shine-gold px-4 py-1.5 rounded-full text-[0.7rem] font-bold uppercase tracking-widest text-white shadow-md">Best Value</span>
                 </div>
-                <div className="mb-8">
+                <div className="mb-5">
                   <Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={128} height={128} className="w-32 h-32 object-contain mb-6" />
                   <h3 className="text-2xl font-semibold mb-2 text-primary"><span className="text-[#a16207]">3‑Year</span> Reinstatement <span className="whitespace-nowrap">Cost Assessment</span></h3>
-                  <p className="text-secondary text-sm mb-4">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
+                  <p className="text-secondary text-sm">Full reinstatement cost assessment plus 3 years of RICS‑compliant annual updates.</p>
                 </div>
-                <ul className="space-y-2 mb-10 flex-grow">
+                <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-center gap-3 bg-zinc-100 rounded-xl px-4 py-3.5 min-h-[52px]">
                     <div className="btn-shine-gold shrink-0 w-7 h-7 rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-white" style={{ fontSize: '0.9rem', fontVariationSettings: "'FILL' 1" }}>update</span>

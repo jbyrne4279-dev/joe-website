@@ -28,6 +28,7 @@ const MATERIAL_ICONS_HREF = `https://fonts.googleapis.com/css2?family=Material+S
 
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
+  formatDetection: { telephone: false },
   title: {
     default: 'RICS Reinstatement Cost Assessment UK | RCA Ltd',
     template: '%s',

@@ -99,7 +99,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>call</span>
-                <a href="tel:+442031788099" className="hover:text-emerald-400 transition-colors leading-snug">020 3178 8099</a>
+                <span className="leading-snug">020 3178 8099</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>location_on</span>

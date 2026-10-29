@@ -34,9 +34,10 @@ const articleJsonLd = {
   inLanguage: 'en-GB',
   datePublished: '2026-09-05',
   dateModified: '2026-09-07',
-  author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
+  author: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },
@@ -130,7 +131,7 @@ export default function ArticlePage() {
               'Commission a RICS-regulated reinstatement cost assessment at least every three years.',
               'Trigger an earlier assessment after any significant works, change of use, or construction cost spike.',
               'Document your recommendation to clients in writing at each renewal.',
-              'Use a firm that provides BCIS-indexed assessments accepted by all major insurers.',
+              'Use a RICS-regulated firm that provides BCIS-indexed, insurer-ready assessments.',
             ].map((item) => (
               <div key={item} className="flex gap-4 items-start bg-white/[0.04] rounded-2xl p-5 sm:p-6 border border-white/10">
                 <span className="material-symbols-outlined text-emerald-300 shrink-0 mt-0.5" style={{ fontSize: '1.25rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>

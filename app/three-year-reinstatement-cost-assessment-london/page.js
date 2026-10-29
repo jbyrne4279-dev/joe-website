@@ -50,7 +50,7 @@ const faqItems = [
   },
   {
     question: 'Is the plan accepted by insurers and brokers?',
-    answer: 'Yes. Both the inception report and each annual update are RICS‑regulated, BCIS‑indexed and broker‑ready, accepted by all UK insurers as evidence of an accurate, maintained sum insured.',
+    answer: 'Yes. Both the inception report and each annual update are RICS‑regulated, BCIS‑indexed and broker‑ready, prepared as evidence of an accurate, maintained sum insured.',
   },
   {
     question: 'How much does the 3‑Year plan cost compared with a new assessment each year?',
@@ -72,6 +72,7 @@ const serviceJsonLd = {
   areaServed: { '@type': 'City', name: 'London' },
   provider: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },
@@ -108,7 +109,7 @@ const included = [
   { label: 'Broker‑ready report and certificates', detail: 'Documents formatted so your broker or insurer can accept them straight away, with no back‑and‑forth.' },
   { label: 'Continuous RICS‑recommended compliance', detail: 'Keeps you on the three‑year review cycle RICS recommends, without you having to keep track of it.' },
   { label: 'No repeat instruction each year', detail: 'One instruction covers three years, so there’s no need to commission and pay for a new assessment annually.' },
-  { label: 'Accepted by all UK insurers', detail: 'Every report and yearly update is recognised right across the UK insurance market.' },
+  { label: 'Insurer‑ready reports', detail: 'Every report and yearly update is prepared for submission to your insurer or broker.' },
 ]
 
 const londonAreas = [

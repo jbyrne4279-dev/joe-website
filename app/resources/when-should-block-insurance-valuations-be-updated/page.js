@@ -34,9 +34,10 @@ const articleJsonLd = {
   inLanguage: 'en-GB',
   datePublished: '2026-09-05',
   dateModified: '2026-09-07',
-  author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
+  author: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },

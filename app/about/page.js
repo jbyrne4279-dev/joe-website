@@ -33,7 +33,7 @@ const aboutJsonLd = {
   '@type': 'AboutPage',
   url: PAGE_URL,
   inLanguage: 'en-GB',
-  mainEntity: { '@id': `${SITE_URL}/` },
+  mainEntity: { '@id': `${SITE_URL}/#organization` },
 }
 
 const values = [

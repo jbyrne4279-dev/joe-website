@@ -48,7 +48,8 @@ const contactPageJsonLd = {
   name: 'Contact RCA Ltd',
   mainEntity: {
     '@type': 'ProfessionalService',
-    name: 'RCA Ltd',
+    '@id': `${SITE_URL}/#organization`,
+    name: 'Reinstatement Cost Assessment Ltd',
     telephone: '+44-20-3178-8099',
     email: 'joseph@reinstatementcostassessment.org',
     address: {
@@ -92,6 +93,7 @@ export default function ContactPage() {
       <h1 className="sr-only">Contact Reinstatement Cost Assessment Ltd</h1>
       <div className="pt-6">
         <ContactSection
+          imagePriority
           heading={
             <>
               Get Your RICS Rebuild Cost Assessment.

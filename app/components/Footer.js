@@ -36,7 +36,6 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/reinstatement-cost-assessment-limited/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Reinstatement Cost Assessment Ltd on LinkedIn"
                 className="inline-flex items-center gap-2 text-sm text-zinc-300 hover:text-emerald-400 transition-colors"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0" aria-hidden="true">
@@ -60,7 +59,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="md:col-span-2">
-            <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Services</h5>
+            <h2 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Services</h2>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/desktop-reinstatement-cost-assessment-uk">Desktop Assessment</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/on-site-reinstatement-cost-assessment-london">On‑Site Survey</Link></li>
@@ -70,7 +69,7 @@ export default function Footer() {
 
           {/* Sectors */}
           <div className="md:col-span-2">
-            <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Sectors</h5>
+            <h2 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Sectors</h2>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/residential-reinstatement-cost-assessments">Residential Properties</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/commercial-reinstatement-costs">Commercial Properties</Link></li>
@@ -82,7 +81,7 @@ export default function Footer() {
 
           {/* Company */}
           <div className="md:col-span-2">
-            <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Company</h5>
+            <h2 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Company</h2>
             <ul className="space-y-3.5 text-sm">
               <li><Link className="hover:text-emerald-400 transition-colors" href="/">Home</Link></li>
               <li><Link className="hover:text-emerald-400 transition-colors" href="/about">About</Link></li>
@@ -95,7 +94,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="md:col-span-2">
-            <h5 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Contact</h5>
+            <h2 className="text-white font-semibold text-xs uppercase tracking-widest mb-5">Contact</h2>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>call</span>
@@ -103,7 +102,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-emerald-500 shrink-0 mt-px" style={{ fontSize: '0.95rem' }}>location_on</span>
-                <span className="leading-snug">17 Hanover Square,<br />London W1S 1BN</span>
+                <span className="leading-snug">17 Hanover Square,{' '}<br />London W1S 1BN</span>
               </li>
             </ul>
           </div>
@@ -112,7 +111,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-emerald-200/50">
-          <p>© 2025 ReinstatementCostAssessment.org. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ReinstatementCostAssessment.org. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
             RICS Regulated Firm

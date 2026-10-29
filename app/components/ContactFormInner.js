@@ -1,17 +1,8 @@
-'use client'
+import { Suspense } from 'react'
 import Image from 'next/image'
-import { useSearchParams } from 'next/navigation'
-
-const SERVICE_MAP = {
-  desktop: 'Desktop Reinstatement Cost Assessment',
-  onsite: 'On-Site Survey',
-  '3year': '3-Year Reinstatement Cost Assessment',
-}
+import ServiceField from './ServiceField'
 
 export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb = '26,107,74', buttonStyle }) {
-  const params = useSearchParams()
-  const preselected = SERVICE_MAP[params.get('service')] ?? ''
-
   return (
     <div
       className="bg-white/95 backdrop-blur-xl rounded-3xl p-8 md:p-12 border"
@@ -70,7 +61,9 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
           />
         </div>
 
-        {preselected && <input type="hidden" name="service" value={preselected} />}
+        <Suspense fallback={null}>
+          <ServiceField />
+        </Suspense>
 
         <div className="flex flex-col gap-2">
           <label htmlFor="contact-notes" className="text-[10px] font-bold text-[color:var(--accent)] uppercase tracking-widest">Notes</label>

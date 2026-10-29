@@ -19,7 +19,7 @@ const serviceLinks = [
 ]
 
 const links = [
-  { href: '/', label: 'Home', children: sectorLinks },
+  { href: '/#who-we-help', label: 'Who we help', children: sectorLinks },
   { href: '/services', label: 'Services', children: serviceLinks },
   { href: '/resources', label: 'Resources' },
   { href: '/about', label: 'About' },
@@ -48,7 +48,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center justify-center gap-5 lg:gap-7">
           {links.map(({ href, label, children }) => {
-            const isActive = pathname === href
+            const isActive = pathname === href || children?.some((child) => child.href === pathname)
             const linkEl = (
               <Link
                 href={href}
@@ -150,7 +150,7 @@ export default function Navbar() {
         <div className="md:hidden border-t border-white/15 max-h-[calc(100vh-4.5rem)] overflow-y-auto" style={{ backgroundColor: '#1A6B4A' }}>
           <div className="flex flex-col px-4 py-4 gap-2">
             {links.map(({ href, label, children }) => {
-              const isActive = pathname === href
+              const isActive = pathname === href || children?.some((child) => child.href === pathname)
               return (
                 <div key={href} className="flex flex-col gap-1.5">
                   <Link

@@ -39,9 +39,10 @@ const articleJsonLd = {
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
   url: PAGE_URL,
   inLanguage: 'en-GB',
-  author: { '@type': 'Organization', name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
+  author: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   publisher: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },

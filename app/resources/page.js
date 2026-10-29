@@ -45,11 +45,13 @@ const resourcesArticleJsonLd = {
   inLanguage: 'en-GB',
   author: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
   },
   publisher: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: {
@@ -118,7 +120,7 @@ export default function ResourcesPage() {
           <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
             <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight text-primary mb-6">
-                The <span className="text-shine-red">quiet crisis</span><br />inside most<br />buildings <span className="text-shine">insurance.</span>
+                The <span className="text-shine-red">quiet crisis</span>{' '}<br />inside most{' '}<br />buildings <span className="text-shine">insurance.</span>
               </h1>
               <p className="text-sm text-secondary leading-relaxed mb-8">
                 The gap between what a building is worth and what it costs to rebuild is widening fast. Discover why your current valuation might be leaving you dangerously exposed.
@@ -296,7 +298,7 @@ export default function ResourcesPage() {
                     <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
                   </div>
                 )}
-                <h4 className="font-bold text-primary">{title}</h4>
+                <h3 className="font-bold text-primary">{title}</h3>
                 <p className="text-sm text-secondary leading-relaxed">{desc}</p>
               </div>
             ))}

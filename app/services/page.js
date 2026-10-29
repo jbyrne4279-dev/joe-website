@@ -47,7 +47,7 @@ const servicesOfferJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Rebuild Cost Assessment',
-  provider: { '@type': 'ProfessionalService', name: 'RCA Ltd', url: SITE_URL },
+  provider: { '@type': 'ProfessionalService', '@id': `${SITE_URL}/#organization`, name: 'Reinstatement Cost Assessment Ltd', url: SITE_URL },
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -152,7 +152,7 @@ export default function ServicesPage() {
             <p className="text-secondary max-w-xl mx-auto leading-relaxed">Every assessment is carried out by a RICS‑regulated surveyor. Contact us for a tailored quote.</p>
           </div>
           <div className="max-w-5xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-stretch">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-16 items-stretch md:max-w-xl md:mx-auto lg:max-w-none">
 
               {/* Desktop Assessment */}
               <div id="desktop-rca" className="pricing-card bg-white rounded-2xl p-10 flex flex-col transition-all duration-300">
@@ -257,7 +257,7 @@ export default function ServicesPage() {
                   </li>
                 </ul>
                 <div className="mb-4">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#a16207', background: 'rgba(212,160,23,0.12)' }}>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style={{ color: '#8a5a0a', background: 'rgba(212,160,23,0.12)' }}>
                     <span className="material-symbols-outlined" style={{ fontSize: '0.9rem' }}>domain</span>
                     Recommended for London portfolio managers
                   </span>
@@ -273,7 +273,7 @@ export default function ServicesPage() {
       {/* What's included */}
       <section className="scroll-reveal pt-10 pb-20 px-8 md:px-12 bg-[#0f3d28]">
         <div className="text-center mb-12 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-white/50 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>checklist</span>Every Assessment Includes</span>
           <h2 className="text-4xl font-bold text-white">What you always get.</h2>
           <p className="text-white/60 max-w-xl mx-auto leading-relaxed">Regardless of which service you choose, every reinstatement cost assessment is delivered to the same RICS‑regulated standard.</p>
         </div>
@@ -357,7 +357,7 @@ export default function ServicesPage() {
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'Our surveyors use property records, floor area data, and live BCIS construction cost indices to produce your RICS reinstatement cost assessment without a site visit.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Standard homes, buy‑to‑let properties, HMOs, retail units, and warehouses with straightforward construction and no listed status.' },
                 { cls: 'service-subcard-reveal-3', num: 3, title: 'Turnaround', text: 'Delivered within 48 hours of instruction. Expedited turnaround available on request. Contact us to discuss your deadline.' },
-                { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A fully RICS‑regulated reinstatement cost assessment report stating your current rebuild cost, accepted by all UK insurers and brokers without challenge.' },
+                { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A fully RICS‑regulated reinstatement cost assessment report stating your current rebuild cost, ready to send to your insurer or broker.' },
               ].map(({ cls, num, title, text }) => (
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
@@ -434,7 +434,7 @@ export default function ServicesPage() {
                 { cls: 'service-subcard-reveal-1', num: 1, title: 'How it works', text: 'We carry out a full RICS reinstatement cost assessment, then deliver BCIS‑indexed annual rebuild cost updates automatically each year for three years.' },
                 { cls: 'service-subcard-reveal-2', num: 2, title: 'Who it is for', text: 'Landlords, portfolio managers, managing agents, and property owners who need continuous RICS reinstatement compliance without commissioning a new assessment each year.' },
                 { cls: 'service-subcard-reveal-3', num: 3, title: 'Annual BCIS updates', text: 'Each annual update applies the latest BCIS construction cost indices to your rebuild cost figure, keeping your reinstatement cost assessment accurate as material and labour costs change.' },
-                { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A broker‑ready RICS reinstatement cost assessment report at inception, followed by three annual rebuild cost update certificates accepted by all UK insurers.' },
+                { cls: 'service-subcard-reveal-4', num: 4, title: 'What you receive', text: 'A broker‑ready RICS reinstatement cost assessment report at inception, followed by three annual rebuild cost update certificates, ready for each renewal.' },
               ].map(({ cls, num, title, text }) => (
                 <div key={num} className={`${cls} bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm`}>
                   <div className="flex items-center gap-2 mb-2">
@@ -513,7 +513,7 @@ export default function ServicesPage() {
       <ContactSection
         heading={
           <>
-            Start Your RICS‑Certified Rebuild Cost Assessment Today.
+            Start Your RICS‑Regulated Rebuild Cost Assessment Today.
           </>
         }
       />

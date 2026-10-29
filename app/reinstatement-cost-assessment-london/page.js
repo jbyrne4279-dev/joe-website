@@ -34,8 +34,8 @@ const businessJsonLd = {
   '@type': 'ProfessionalService',
   name: 'Reinstatement Cost Assessment Ltd',
   image: `${SITE_URL}/rebuild-cost-assessment-london.jpeg`,
-  '@id': `${SITE_URL}/reinstatement-cost-assessment-london`,
-  url: `${SITE_URL}/reinstatement-cost-assessment-london`,
+  '@id': `${SITE_URL}/#organization`,
+  url: SITE_URL,
   telephone: '+44-20-3178-8099',
   address: {
     '@type': 'PostalAddress',
@@ -105,7 +105,7 @@ const challenges = [
 const help = [
   { icon: 'place', title: 'London‑based RICS surveyors', desc: 'Based at 17 Hanover Square in the West End, working across every London borough.' },
   { icon: 'bolt', title: '48‑hour turnaround', desc: 'Fast delivery, with quick on‑site visits arranged when a property needs one.' },
-  { icon: 'verified', title: 'Insurer‑accepted reports', desc: 'RICS‑regulated and BCIS‑indexed, accepted by UK insurers without challenge.' },
+  { icon: 'verified', title: 'Insurer‑ready reports', desc: 'RICS‑regulated and BCIS‑indexed, ready for your insurer or broker.' },
 ]
 
 const areas = [

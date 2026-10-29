@@ -48,7 +48,7 @@ const faqItems = [
   },
   {
     question: 'Will insurers accept the report at renewal?',
-    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be accepted by all major insurers as evidence of an adequate sum insured, which helps avoid queries, delays, and disputes at renewal.',
+    answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to the standard insurers expect as evidence of an adequate sum insured, which helps avoid queries, delays, and disputes at renewal.',
   },
   {
     question: 'Do you offer desktop or on‑site assessments for blocks?',
@@ -86,7 +86,7 @@ const challenges = [
 
 const help = [
   { icon: 'apartment', title: 'A RICS assessment per block', desc: 'An accurate sum insured that protects every leaseholder.' },
-  { icon: 'verified', title: 'Accepted by all major insurers', desc: 'BCIS‑indexed figures ready for renewal, without challenge.' },
+  { icon: 'verified', title: 'Insurer‑ready reports', desc: 'BCIS‑indexed figures ready for renewal.' },
   { icon: 'bolt', title: 'Delivered in 48 hours', desc: 'Desktop or on‑site, so overdue blocks are quickly up to date.' },
 ]
 
@@ -127,7 +127,7 @@ export default function BlockManagersPage() {
               <span className="sm:whitespace-nowrap">Reinstatement cost</span> assessments for <span className="text-[#1A6B4A]">block managers</span>.
             </h1>
             <p className="text-base text-secondary leading-relaxed mb-9 max-w-lg mx-auto">
-              Protect leaseholders from underinsurance. RICS‑regulated assessments accepted by all major insurers, BCIS‑indexed and typically delivered within 48 hours.
+              Protect leaseholders from underinsurance. RICS‑regulated, insurer‑ready assessments, BCIS‑indexed and typically delivered within 48 hours.
             </p>
             <div className="flex justify-center">
               <Link href="/contact#contact-form" className="btn-shine text-white px-9 py-4 rounded-full font-semibold active:scale-[0.97] transition-transform sovereign-shadow text-center">

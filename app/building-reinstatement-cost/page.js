@@ -46,10 +46,6 @@ const faqItems = [
     question: 'What does a building reinstatement cost assessment include?',
     answer: 'A building reinstatement cost assessment covers the full cost of rebuilding your property after a total loss: demolition and site clearance, debris removal, the rebuild itself to current Building Regulations, professional fees such as architects, structural engineers and surveyors, and curtilage structures like boundary walls, outbuildings and hard landscaping. Where applicable, VAT is also accounted for.',
   },
-  {
-    question: 'How is a building reinstatement cost calculated?',
-    answer: 'A RICS surveyor establishes the gross internal floor area and construction type, then applies live BCIS (Building Cost Information Service) rebuild rates for the property’s specific location, adding demolition, professional fees and an allowance for inflation during the rebuild period. This produces an accurate, insurer‑defensible sum insured rather than a rough estimate or an outdated index‑linked figure.',
-  },
 ]
 
 const breadcrumbJsonLd = {
@@ -72,6 +68,7 @@ const serviceJsonLd = {
   areaServed: { '@type': 'Country', name: 'United Kingdom' },
   provider: {
     '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Reinstatement Cost Assessment Ltd',
     url: SITE_URL,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/rca48.png` },

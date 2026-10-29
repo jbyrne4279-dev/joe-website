@@ -90,7 +90,7 @@ const challenges = [
 
 const help = [
   { icon: 'summarize', title: 'Consolidated portfolio reports', desc: 'One report, with a rebuild figure per property.' },
-  { icon: 'verified', title: 'RICS‑regulated and insurer accepted', desc: 'BCIS‑indexed figures accepted without challenge.' },
+  { icon: 'verified', title: 'RICS‑regulated and insurer‑ready', desc: 'BCIS‑indexed figures ready for renewal.' },
   { icon: 'support_agent', title: 'A named surveyor throughout', desc: 'One point of contact from instruction to delivery.' },
 ]
 

@@ -49,49 +49,8 @@ export default function ThankYouPage() {
         </div>
       </section>
 
-      {/* What Happens Next */}
-      <section className="py-20 px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>format_list_numbered</span>Your next steps</span>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">What happens next.</h2>
-          </div>
-
-          <ol className="space-y-6">
-            {[
-              {
-                title: 'Confirmation email sent.',
-                body: "You'll receive an email within minutes confirming your enquiry details and reference number. Check your spam folder if it doesn't arrive.",
-              },
-              {
-                title: 'Surveyor assigned.',
-                body: 'A RICS-regulated surveyor reviews your property details and is allocated to your case based on location and property type.',
-              },
-              {
-                title: 'We contact you within 24 hours.',
-                body: 'Your surveyor calls or emails to confirm requirements, agree on timelines, and answer any questions before work begins.',
-              },
-              {
-                title: 'Your RCA report is delivered.',
-                body: 'Receive a comprehensive RICS-compliant report with the exact reinstatement figure, ready to hand straight to your broker or insurer.',
-              },
-            ].map((step, i) => (
-              <li key={i} className="flex gap-5 items-start">
-                <div className="btn-shine shrink-0 w-11 h-11 rounded-full flex items-center justify-center text-white font-bold text-sm sovereign-shadow">
-                  {i + 1}
-                </div>
-                <div className={`pt-1.5 ${i < 3 ? 'pb-6 border-b border-outline-variant/40 w-full' : 'w-full'}`}>
-                  <h3 className="font-bold text-primary text-lg mb-1">{step.title}</h3>
-                  <p className="text-secondary leading-relaxed">{step.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="pb-20 px-6">
+      <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <div className="bg-surface-container-low rounded-3xl p-10 text-center border border-[#1A6B4A]/15 sovereign-shadow">
             <span className="material-symbols-outlined text-[#1A6B4A] mb-4 block" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>info</span>

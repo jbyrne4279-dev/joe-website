@@ -127,6 +127,12 @@ const propertyTypes = [
   { icon: 'storefront', title: 'Mixed‑use & commercial', desc: 'Shops, restaurants and offices with flats above are common on London high streets. Each part is costed differently, so the figure has to reflect both.', href: '/commercial-reinstatement-costs', linkLabel: 'Commercial assessments' },
 ]
 
+const services = [
+  { href: '/desktop-reinstatement-cost-assessment-uk', title: 'Desktop Assessment', desc: 'A fast, remote RICS figure for standard London flats, houses and commercial units, typically delivered within 48 hours.' },
+  { href: '/on-site-reinstatement-cost-assessment-london', title: 'On‑Site Survey', desc: 'A full site visit for listed, period, non‑standard and high‑value London buildings.' },
+  { href: '/three-year-reinstatement-cost-assessment-london', title: '3‑Year Protection Plan', desc: 'A full assessment plus three years of BCIS‑indexed annual updates for London landlords, freeholders and managing agents.' },
+]
+
 const help = [
   { icon: 'place', title: 'London‑based RICS surveyors', desc: 'Based at 17 Hanover Square in the West End, working across every London borough.' },
   { icon: 'bolt', title: '48‑hour turnaround', desc: 'Fast delivery, with quick on‑site visits arranged when a property needs one.' },
@@ -251,66 +257,70 @@ export default function LondonReinstatementPage() {
 
       {/* London property types */}
       <section className="scroll-reveal py-24 px-6 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="max-w-2xl mb-14">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-12 lg:gap-20">
+          <div className="lg:sticky lg:top-28 self-start">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">
               London property
             </p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary leading-tight mb-6">
               From Victorian terraces to mansion blocks.
             </h2>
-            <p className="text-secondary leading-relaxed text-[1.05rem]">
+            <p className="text-secondary leading-relaxed text-[1.05rem] max-w-md">
               London&rsquo;s buildings rarely fit a standard template. Each of these property types affects the
               rebuild figure in its own way.
             </p>
+            <div className="relative mt-10 aspect-[16/10] sm:aspect-[2/1] lg:aspect-[4/3] rounded-3xl overflow-hidden">
+              <Image
+                src="/on-site-coverage-london.webp"
+                alt="Period red-brick mansion block in London"
+                fill
+                sizes="(min-width: 1024px) 36vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-5">
+          <ul className="border-b border-zinc-200">
             {propertyTypes.map(({ icon, title, desc, href, linkLabel }) => (
-              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c5ddd0]" style={{ background: '#e3efe9' }}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#1A6B4A' }}>
-                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
-                </div>
+              <li key={title} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-x-4 sm:gap-x-6 py-7 border-t border-zinc-200">
+                <span className="material-symbols-outlined text-[#1A6B4A] pt-0.5" style={{ fontSize: '1.75rem', fontVariationSettings: "'FILL' 0, 'wght' 300" }} aria-hidden="true">{icon}</span>
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
-                  <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                  <h3 className="text-xl font-semibold tracking-tight text-primary leading-snug">{title}</h3>
+                  <p className="mt-2 text-secondary leading-relaxed">{desc}</p>
                   {href && (
-                    <Link href={href} className="inline-flex items-center gap-1 text-sm font-semibold text-[#1A6B4A] hover:gap-2 transition-all mt-3">
-                      {linkLabel} <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                    <Link href={href} className="group mt-4 inline-flex items-center gap-1.5 rounded-sm text-sm font-semibold text-[#1A6B4A] hover:text-[#0f3d28] transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A6B4A]">
+                      {linkLabel}
+                      <span className="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1" style={{ fontSize: '1rem' }} aria-hidden="true">arrow_forward</span>
                     </Link>
                   )}
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* Which service */}
-      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
-        <div className="max-w-5xl mx-auto">
-          <div className="max-w-2xl mb-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Choosing a service</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">The right assessment for your London property.</h2>
+      <section className="scroll-reveal py-24 px-6 bg-[#0f3d28]">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80 mb-4">Choosing a service</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight">The right assessment for your London property.</h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-6">
-            <Link href="/desktop-reinstatement-cost-assessment-uk" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
-              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote RICS figure for standard London flats, houses and commercial units, typically delivered within 48 hours.</p>
-              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
-            </Link>
-            <Link href="/on-site-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-primary mb-2">On‑Site Survey</h3>
-              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full site visit for listed, period, non‑standard and high‑value London buildings.</p>
-              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
-            </Link>
-            <Link href="/three-year-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
-              <h3 className="text-lg font-semibold text-primary mb-2">3‑Year Protection Plan</h3>
-              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates for London landlords, freeholders and managing agents.</p>
-              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
-            </Link>
+          <div className="grid lg:grid-cols-3 border-t border-white/15">
+            {services.map(({ href, title, desc }, i) => (
+              <Link
+                key={href}
+                href={href}
+                className={'group flex flex-col py-8 lg:py-10 border-b border-white/15 lg:border-b-0 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-[#d4af37] ' + ['lg:pr-10', 'lg:px-10 lg:border-x', 'lg:pl-10'][i]}
+              >
+                <h3 className="text-2xl font-semibold tracking-tight text-white leading-snug underline decoration-2 underline-offset-[6px] decoration-transparent group-hover:decoration-[#d4af37] transition-colors">{title}</h3>
+                <p className="mt-3 text-white/75 leading-relaxed lg:flex-1 max-w-xl">{desc}</p>
+                <span className="mt-6 lg:mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#d4af37]">
+                  Learn more
+                  <span className="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1" style={{ fontSize: '1.1rem' }} aria-hidden="true">arrow_forward</span>
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

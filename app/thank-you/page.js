@@ -1,5 +1,4 @@
-﻿import Link from 'next/link'
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Script from 'next/script'
 
 export const metadata = {
@@ -45,27 +44,6 @@ export default function ThankYouPage() {
               <strong className="text-primary font-semibold whitespace-nowrap">24 working hours</strong>.
               One of our RICS‑regulated surveyors will be in touch shortly.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-surface-container-low rounded-3xl p-10 text-center border border-[#1A6B4A]/15 sovereign-shadow">
-            <span className="material-symbols-outlined text-[#1A6B4A] mb-4 block" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>info</span>
-            <h3 className="font-bold text-primary text-xl mb-3">While you wait.</h3>
-            <p className="text-secondary leading-relaxed mb-8 max-w-md mx-auto">
-              Explore our guide to understand why accurate rebuild costs matter and how underinsurance happens.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/resources" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform">
-                Read the guide
-              </Link>
-              <Link href="/" className="bg-white px-8 py-3.5 rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-black/10">
-                Back to home
-              </Link>
-            </div>
           </div>
         </div>
       </section>

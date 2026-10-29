@@ -18,7 +18,7 @@ const MATERIAL_ICONS = [
   'check', 'check_circle', 'checklist', 'chevron_right', 'close', 'cloud', 'compare_arrows',
   'construction', 'delete', 'diamond', 'domain', 'engineering', 'error', 'event_repeat',
   'expand_more', 'factory', 'fence', 'flag', 'foundation', 'gavel',
-  'groups', 'help', 'home', 'info', 'landscape', 'location_off', 'location_on', 'mail', 'menu',
+  'groups', 'help', 'home', 'landscape', 'location_off', 'location_on', 'mail', 'menu',
   'payments', 'place', 'price_change', 'public', 'quiz', 'real_estate_agent', 'report',
   'report_problem', 'restart_alt', 'schedule', 'schema', 'search', 'security', 'sell', 'shield',
   'storefront', 'summarize', 'target', 'task_alt', 'trending_down', 'trending_up', 'update',

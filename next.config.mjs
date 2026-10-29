@@ -28,6 +28,12 @@ const nextConfig = {
         destination: 'https://reinstatementcostassessment.org/:path*',
         permanent: true,
       },
+      // Duplicate guide merged into the main page so the two stop competing for the same searches
+      {
+        source: '/resources/what-is-a-building-reinstatement-cost',
+        destination: '/building-reinstatement-cost',
+        permanent: true,
+      },
     ]
   },
 };

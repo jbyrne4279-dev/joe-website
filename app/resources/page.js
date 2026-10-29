@@ -357,7 +357,7 @@ export default function ResourcesPage() {
                 tag: 'Explained',
                 title: 'What Is a Building Reinstatement Cost?',
                 desc: 'A plain-English guide to what a building reinstatement cost is, how it differs from market value and how a RICS surveyor calculates it.',
-                href: '/resources/what-is-a-building-reinstatement-cost',
+                href: '/building-reinstatement-cost',
                 img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=300&fit=crop&auto=format&q=80',
               },
               {

@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'On‑Site Reinstatement Cost Assessment London | RICS Surveyor',
     description:
-      'On-site RICS reinstatement cost assessment in London. A full physical survey for listed, complex and high-value buildings, BCIS-indexed and accepted by all UK insurers.',
+      'On-site RICS reinstatement cost assessment in London. A full physical survey for listed, complex and high-value buildings, BCIS-indexed and insurer-ready.',
     url: '/on-site-reinstatement-cost-assessment-london',
   },
 }

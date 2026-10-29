@@ -13,7 +13,6 @@ const routes = [
   { path: '/on-site-reinstatement-cost-assessment-london', file: 'app/on-site-reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/three-year-reinstatement-cost-assessment-london', file: 'app/three-year-reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/about', file: 'app/about/page.js', changeFrequency: 'yearly', priority: 0.6 },
-  { path: '/resources/what-is-a-building-reinstatement-cost', file: 'app/resources/what-is-a-building-reinstatement-cost/page.js', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/contact', file: 'app/contact/page.js', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/reinstatement-cost-assessment-london', file: 'app/reinstatement-cost-assessment-london/page.js', changeFrequency: 'monthly', priority: 0.8 },
   { path: '/residential-reinstatement-cost-assessments', file: 'app/residential-reinstatement-cost-assessments/page.js', changeFrequency: 'monthly', priority: 0.7 },

@@ -9,7 +9,7 @@ export const metadata = {
     absolute: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost UK',
   },
   description:
-    'Desktop, on-site and 3-year RICS reinstatement cost assessment services. Rebuild cost assessments for all UK property types from £210. Broker-ready reports accepted by all insurers.',
+    'Desktop, on-site and 3-year RICS reinstatement cost assessment services. Rebuild cost assessments for all UK property types from £210. Broker- and insurer-ready reports.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost UK',

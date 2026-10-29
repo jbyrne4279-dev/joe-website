@@ -11,6 +11,21 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+// Google Fonts only serves the icons listed here; a new icon not added to this list shows as plain text.
+const MATERIAL_ICONS = [
+  'account_balance', 'account_balance_wallet', 'ads_click', 'analytics', 'apartment',
+  'architecture', 'arrow_forward', 'article', 'bolt', 'calculate', 'call', 'cancel', 'chair',
+  'check', 'check_circle', 'checklist', 'chevron_right', 'close', 'cloud', 'compare_arrows',
+  'construction', 'delete', 'diamond', 'domain', 'engineering', 'error', 'event_repeat',
+  'expand_more', 'factory', 'fence', 'flag', 'format_list_numbered', 'foundation', 'gavel',
+  'groups', 'help', 'home', 'info', 'landscape', 'location_off', 'location_on', 'mail', 'menu',
+  'payments', 'place', 'price_change', 'public', 'quiz', 'real_estate_agent', 'report',
+  'report_problem', 'restart_alt', 'schedule', 'schema', 'search', 'security', 'sell', 'shield',
+  'storefront', 'summarize', 'target', 'task_alt', 'trending_down', 'trending_up', 'update',
+  'verified', 'warning', 'workspace_premium',
+]
+const MATERIAL_ICONS_HREF = `https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap&icon_names=${[...MATERIAL_ICONS].sort().join(',')}`
+
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
@@ -65,7 +80,7 @@ export default function RootLayout({ children }) {
     <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          href={MATERIAL_ICONS_HREF}
           rel="stylesheet"
         />
       </head>

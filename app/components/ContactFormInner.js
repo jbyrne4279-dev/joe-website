@@ -73,25 +73,24 @@ export default function ContactFormInner({ heading, accent = '#1A6B4A', tintRgb 
         {preselected && <input type="hidden" name="service" value={preselected} />}
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="contact-notes" className="text-[10px] font-bold text-[color:var(--accent)] uppercase tracking-widest">Notes <span className="text-red-400">*</span></label>
+          <label htmlFor="contact-notes" className="text-[10px] font-bold text-[color:var(--accent)] uppercase tracking-widest">Notes</label>
           <textarea
             id="contact-notes"
             name="notes"
-            required
             className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[color:var(--accent)] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none"
             placeholder="Briefly describe your property and requirements..."
             rows="4"
           />
         </div>
 
-        <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
+        <p className="text-[10px] text-secondary/50 -mt-4">Notes are optional.</p>
 
         <div>
           <button
             className={`${buttonStyle ? '' : 'btn-shine '}w-full text-white px-6 py-4 rounded-full font-bold text-sm sm:text-base leading-snug active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer`}
             style={buttonStyle}
           >
-            Contact
+            Get my quote
           </button>
           <p className="text-[10px] text-secondary/50 text-center mt-4">
             By submitting this form, you agree that Reinstatement Cost Assessment Ltd may use the information provided to respond to your enquiry and provide the requested service. See our{' '}

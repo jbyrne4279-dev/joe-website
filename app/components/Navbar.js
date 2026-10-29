@@ -46,7 +46,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center justify-center gap-7">
+        <div className="hidden md:flex items-center justify-center gap-5 lg:gap-7">
           {links.map(({ href, label, children }) => {
             const isActive = pathname === href
             const linkEl = (
@@ -101,17 +101,30 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center">
+        <div className="hidden md:flex flex-1 justify-end items-center gap-4 lg:gap-5">
+          <Link
+            href="/contact#contact-form"
+            className="btn-shine text-white rounded-full font-bold text-sm px-5 py-2.5 whitespace-nowrap active:scale-[0.97] transition-transform"
+          >
+            Get a quote
+          </Link>
           <Image
             src="/rics-logo.webp"
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="h-11 lg:h-12 w-auto object-contain"
+            className="hidden lg:block h-12 w-auto object-contain"
           />
         </div>
 
         <div className="md:hidden flex flex-1 justify-end items-center gap-3">
+          <Link
+            href="/contact#contact-form"
+            onClick={() => setOpen(false)}
+            className="btn-shine text-white rounded-full font-bold text-xs px-3.5 py-2 whitespace-nowrap active:scale-[0.97] transition-transform"
+          >
+            Get a quote
+          </Link>
           <Image
             src="/rics-logo.webp"
             alt="Regulated by RICS"

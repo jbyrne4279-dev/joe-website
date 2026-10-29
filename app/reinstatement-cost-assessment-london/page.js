@@ -65,12 +65,12 @@ const faqItems = [
     answer: 'London build costs are among the highest in the UK, and rebuilding on a busy London street adds costs of its own: restricted access and parking, scaffolding and skip licences, protecting neighbouring buildings and shared party walls, and higher labour rates. An accurate assessment needs to reflect these rather than a national average.',
   },
   {
-    question: 'Is the rebuild cost of a London property lower than its market value?',
-    answer: 'In most of London, yes. Much of a London property’s value is in the land and location, which you do not need to insure. Insuring for the market value or purchase price usually means paying for more cover than you need, so your sum insured should be based on a reinstatement cost assessment instead.',
+    question: 'Should I insure my London property for its market value?',
+    answer: 'No. Market value includes the land and location, which buildings insurance does not cover, while the reinstatement cost is what it would take to rebuild the structure. The two figures can be very different, so your sum insured should be based on a reinstatement cost assessment rather than the market value or purchase price.',
   },
   {
     question: 'Do I need one assessment for the whole building or one for each flat?',
-    answer: 'For buildings insurance, usually one for the whole building. In a converted house or block of flats, the freeholder, residents’ management company or managing agent normally insures the entire structure, including the common parts, so the reinstatement cost has to cover all of it.',
+    answer: 'It depends on how the building is insured. If one policy covers the whole building, the assessment needs to cover the entire structure, including the common parts. Your lease, managing agent or broker can confirm how your building is insured.',
   },
   {
     question: 'Does a basement, loft conversion or extension change my rebuild cost?',
@@ -120,8 +120,8 @@ const challenges = [
 
 const propertyTypes = [
   { icon: 'home', title: 'Victorian & Edwardian terraces', desc: 'Solid brick walls, timber floors, sash windows and decorative mouldings cost more to rebuild like‑for‑like than modern construction, so period detail has to be counted properly.', href: '/residential-reinstatement-cost-assessments', linkLabel: 'Residential assessments' },
-  { icon: 'domain', title: 'Converted houses & flats', desc: 'A house split into flats is normally insured as one building, so the figure must cover the whole structure, including the shared roof, walls and common parts.' },
-  { icon: 'apartment', title: 'Mansion blocks', desc: 'Large period blocks, often with lifts, stairwells, basements and communal areas, and usually insured through a managing agent or residents’ company.', href: '/block-managers-reinstatement-cost-assessments', linkLabel: 'Block assessments' },
+  { icon: 'domain', title: 'Converted houses & flats', desc: 'Where one policy covers the whole building, the figure has to include the shared roof, walls and common parts, not just the individual flats.' },
+  { icon: 'apartment', title: 'Mansion blocks', desc: 'Large period blocks, often with lifts, stairwells, basements and communal areas, each adding to the cost of a rebuild.', href: '/block-managers-reinstatement-cost-assessments', linkLabel: 'Block assessments' },
   { icon: 'account_balance', title: 'Listed buildings & conservation areas', desc: 'Rebuilding often has to match the original materials and appearance, with council consent and specialist trades. These are best assessed with an on‑site survey.', href: '/on-site-reinstatement-cost-assessment-london', linkLabel: 'On‑site surveys' },
   { icon: 'foundation', title: 'Basements, lofts & extensions', desc: 'Basement digs, loft conversions and rear extensions add floor area and structural work, and they are easy to miss when an old figure is simply rolled forward.' },
   { icon: 'storefront', title: 'Mixed‑use & commercial', desc: 'Shops, restaurants and offices with flats above are common on London high streets. Each part is costed differently, so the figure has to reflect both.', href: '/commercial-reinstatement-costs', linkLabel: 'Commercial assessments' },
@@ -199,8 +199,8 @@ export default function LondonReinstatementPage() {
               <p>
                 A reinstatement cost assessment sets the figure your buildings insurance should be based on:
                 what it would cost to rebuild a property from the ground up, rather than what it would sell
-                for. In London the two are worlds apart, because so much of a property&rsquo;s value sits in
-                the land and location.
+                for. In London the two can be very different, because a sale price also reflects the land
+                and location.
               </p>
               <p>
                 We are a London firm, based at 17 Hanover Square in the West End. Our RICS‑regulated surveyors

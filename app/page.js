@@ -468,7 +468,11 @@ export default function HomePage() {
             {coverageAreas.map((area) => (
               <li key={area} className="py-4 border-t border-white/15 flex gap-3 items-center">
                 <span className="material-symbols-outlined text-emerald-300 shrink-0" style={{ fontSize: '1.15rem' }}>place</span>
-                <span className="text-white font-medium">{area}</span>
+                {area === 'London' ? (
+                  <Link href="/reinstatement-cost-assessment-london" className="text-white font-medium underline underline-offset-4 decoration-white/40 hover:decoration-white transition-colors">{area}</Link>
+                ) : (
+                  <span className="text-white font-medium">{area}</span>
+                )}
               </li>
             ))}
             <li className="py-4 border-t border-white/15">

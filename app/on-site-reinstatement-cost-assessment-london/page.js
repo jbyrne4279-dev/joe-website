@@ -301,7 +301,9 @@ export default function OnSiteAssessmentLondonPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">Surveyors across the capital, and beyond.</h2>
           <p className="text-white/85 leading-relaxed mb-4 max-w-2xl text-[1.05rem]">
             We attend properties throughout Greater London, with particular experience in the listed and
-            high‑value stock of the central and inner boroughs.
+            high‑value stock of the central and inner boroughs. Not every London property needs a site visit:
+            see all our{' '}
+            <Link href="/reinstatement-cost-assessment-london" className="text-emerald-200 underline underline-offset-2 hover:text-emerald-100">reinstatement cost assessments in London</Link>.
           </p>
           <p className="text-white/85 leading-relaxed mb-8 max-w-2xl text-[1.05rem]">
             We are not limited to the capital. Our surveyors also carry out on‑site assessments across the major

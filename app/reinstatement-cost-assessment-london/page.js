@@ -61,6 +61,22 @@ const faqItems = [
     answer: 'Yes. London has a large stock of period, converted, and listed buildings with non‑standard construction. Our surveyors are experienced with these, and an on‑site survey captures the specialist detail that a desktop assessment or online calculator would miss.',
   },
   {
+    question: 'Why does rebuilding in London cost more?',
+    answer: 'London build costs are among the highest in the UK, and rebuilding on a busy London street adds costs of its own: restricted access and parking, scaffolding and skip licences, protecting neighbouring buildings and shared party walls, and higher labour rates. An accurate assessment needs to reflect these rather than a national average.',
+  },
+  {
+    question: 'Is the rebuild cost of a London property lower than its market value?',
+    answer: 'In most of London, yes. Much of a London property’s value is in the land and location, which you do not need to insure. Insuring for the market value or purchase price usually means paying for more cover than you need, so your sum insured should be based on a reinstatement cost assessment instead.',
+  },
+  {
+    question: 'Do I need one assessment for the whole building or one for each flat?',
+    answer: 'For buildings insurance, usually one for the whole building. In a converted house or block of flats, the freeholder, residents’ management company or managing agent normally insures the entire structure, including the common parts, so the reinstatement cost has to cover all of it.',
+  },
+  {
+    question: 'Does a basement, loft conversion or extension change my rebuild cost?',
+    answer: 'Yes. Basements, loft conversions and extensions add floor area and often complex structural work, which can raise the rebuild cost considerably. If any were added after your last assessment, your sum insured is likely to be too low and should be reassessed.',
+  },
+  {
     question: 'Are your London reports accepted by insurers?',
     answer: 'Yes. Every assessment is RICS‑regulated and BCIS‑indexed, and is prepared to be broker-ready and accepted by UK insurers as evidence of an accurate sum insured at renewal.',
   },
@@ -100,6 +116,15 @@ const challenges = [
     title: 'High-value cover, close scrutiny',
     desc: <>With high property values, London insurers look closely at the sum insured, and with an estimated <strong className="font-semibold text-primary">76% of UK buildings underinsured</strong> (<a href="https://www.insuranceage.co.uk/insight/7955419/six-year-low-but-76-of-uk-properties-still-underinsured" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline underline-offset-2 hover:text-emerald-900">Insurance Age</a>) that scrutiny is warranted. A verifiable, RICS‑regulated figure keeps renewals smooth and protects owners and leaseholders from underinsurance.</>,
   },
+]
+
+const propertyTypes = [
+  { icon: 'home', title: 'Victorian & Edwardian terraces', desc: 'Solid brick walls, timber floors, sash windows and decorative mouldings cost more to rebuild like‑for‑like than modern construction, so period detail has to be counted properly.', href: '/residential-reinstatement-cost-assessments', linkLabel: 'Residential assessments' },
+  { icon: 'domain', title: 'Converted houses & flats', desc: 'A house split into flats is normally insured as one building, so the figure must cover the whole structure, including the shared roof, walls and common parts.' },
+  { icon: 'apartment', title: 'Mansion blocks', desc: 'Large period blocks, often with lifts, stairwells, basements and communal areas, and usually insured through a managing agent or residents’ company.', href: '/block-managers-reinstatement-cost-assessments', linkLabel: 'Block assessments' },
+  { icon: 'account_balance', title: 'Listed buildings & conservation areas', desc: 'Rebuilding often has to match the original materials and appearance, with council consent and specialist trades. These are best assessed with an on‑site survey.', href: '/on-site-reinstatement-cost-assessment-london', linkLabel: 'On‑site surveys' },
+  { icon: 'foundation', title: 'Basements, lofts & extensions', desc: 'Basement digs, loft conversions and rear extensions add floor area and structural work, and they are easy to miss when an old figure is simply rolled forward.' },
+  { icon: 'storefront', title: 'Mixed‑use & commercial', desc: 'Shops, restaurants and offices with flats above are common on London high streets. Each part is costed differently, so the figure has to reflect both.', href: '/commercial-reinstatement-costs', linkLabel: 'Commercial assessments' },
 ]
 
 const help = [
@@ -220,6 +245,72 @@ export default function LondonReinstatementPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* London property types */}
+      <section className="scroll-reveal py-24 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A6B4A] mb-4">
+              London property
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary leading-tight mb-6">
+              From Victorian terraces to mansion blocks.
+            </h2>
+            <p className="text-secondary leading-relaxed text-[1.05rem]">
+              London&rsquo;s buildings rarely fit a standard template. Each of these property types affects the
+              rebuild figure in its own way.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {propertyTypes.map(({ icon, title, desc, href, linkLabel }) => (
+              <div key={title} className="flex gap-5 items-start rounded-2xl p-6 border border-[#c5ddd0]" style={{ background: '#e3efe9' }}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0" style={{ background: '#1A6B4A' }}>
+                  <span className="material-symbols-outlined text-white" style={{ fontSize: '1.3rem' }}>{icon}</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-1.5 leading-snug">{title}</h3>
+                  <p className="text-secondary leading-relaxed text-[0.95rem]">{desc}</p>
+                  {href && (
+                    <Link href={href} className="inline-flex items-center gap-1 text-sm font-semibold text-[#1A6B4A] hover:gap-2 transition-all mt-3">
+                      {linkLabel} <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Which service */}
+      <section className="scroll-reveal py-24 px-6" style={{ background: '#1A6B4A' }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-2xl mb-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200 mb-4">Choosing a service</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">The right assessment for your London property.</h2>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <Link href="/desktop-reinstatement-cost-assessment-uk" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/desktop-reinstatement-cost-assessment-london.webp" alt="Desktop reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Desktop Assessment</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A fast, remote RICS figure for standard London flats, houses and commercial units, typically delivered within 48 hours.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            </Link>
+            <Link href="/on-site-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/onsite-reinstatement-cost-assessment-london.webp" alt="On-site reinstatement cost assessment" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">On‑Site Survey</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full site visit for listed, period, non‑standard and high‑value London buildings.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            </Link>
+            <Link href="/three-year-reinstatement-cost-assessment-london" className="group grow-card bg-white rounded-2xl p-7 flex flex-col border border-zinc-200 shadow-[0_6px_20px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_44px_rgba(15,23,42,0.15)] hover:-translate-y-1 hover:border-[#d4af37]/60 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-zinc-50 ring-1 ring-zinc-100 flex items-center justify-center mb-5 p-2"><Image src="/ongoing-reinstatement-cost-protection-london.webp" alt="3-year reinstatement cost protection" width={40} height={40} className="w-full h-full object-contain" /></div>
+              <h3 className="text-lg font-semibold text-primary mb-2">3‑Year Protection Plan</h3>
+              <p className="text-secondary text-[0.95rem] leading-relaxed flex-1">A full assessment plus three years of BCIS‑indexed annual updates for London landlords, freeholders and managing agents.</p>
+              <span className="inline-flex items-center self-start gap-2 bg-[#1A6B4A]/8 group-hover:bg-[#1A6B4A]/15 text-[#1A6B4A] text-sm font-semibold px-4 py-2 rounded-full mt-5 transition-all duration-300 group-hover:gap-3">Learn more <span className="material-symbols-outlined" style={{ fontSize: '1rem' }}>arrow_forward</span></span>
+            </Link>
           </div>
         </div>
       </section>

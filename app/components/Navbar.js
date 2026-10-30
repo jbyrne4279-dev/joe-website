@@ -34,16 +34,14 @@ export default function Navbar() {
     <header className="sticky top-0 w-full bg-white z-50 border-b border-zinc-200">
       <nav aria-label="Main navigation" className="flex items-center px-6 md:px-8 py-4 max-w-full mx-auto">
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
-          <span className="logo-shine">
-            <Image
-              src="/rca-logo-reinstatement-cost-assessment.webp"
-              alt="RCA Ltd – Reinstatement Cost Assessment specialists"
-              width={80}
-              height={64}
-              priority
-              className="h-12 w-auto object-contain logo-levitate"
-            />
-          </span>
+          <Image
+            src="/rca-logo-reinstatement-cost-assessment.webp"
+            alt="RCA Ltd – Reinstatement Cost Assessment specialists"
+            width={80}
+            height={64}
+            priority
+            className="h-12 w-auto object-contain logo-levitate"
+          />
         </Link>
 
         <div className="hidden md:flex items-center justify-center gap-5 lg:gap-7">
